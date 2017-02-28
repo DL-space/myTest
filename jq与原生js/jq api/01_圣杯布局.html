@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>圣杯布局</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			min-width: 500px;
+		}
+
+		.header,.footer{
+			background: #bfa;
+			text-align: center;
+		}
+		.container{
+			overflow: hidden;
+			text-align: center;
+		}
+		.footer{
+			clear: both;
+		}
+		.middle,.right,.left{
+			padding-bottom: 500px;
+			float: left;
+		}
+
+		.middle{
+			background: red;
+			width: 100%;
+		}
+		.right{
+			background: blue;
+			width:200px;
+			margin-left: -200px;
+		}
+		.left{
+			background: green;
+			margin-left: -100%;
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+	<div class="header">
+		<h4>header</h4>
+	</div>
+	<div class="container">
+		<div class="middle">
+			<h4>middle</h4>
+			<p>
+				大头大头下雨不愁,<br />
+				大头大头下雨不愁,<br />
+				大头大头下雨不愁,<br />
+				大头大头下雨不愁,<br />
+				大头大头下雨不愁,<br />
+				大头大头下雨不愁,<br />
+				大头大头下雨不愁,<br />
+				大头大头下雨不愁,<br />
+				大头大头下雨不愁,
+			</p>
+		</div>
+		<div class="left">
+			<h4>left</h4>
+			<p>
+				大头大头下雨不愁,<br />
+				大头大头下雨不愁,<br />
+				大头大头下雨不愁,<br />
+				大头大头下雨不愁,<br />
+				大头大头下雨不愁,<br />
+				大头大头下雨不愁,<br />
+				大头大头下雨不愁,<br />
+				大头大头下雨不愁,<br />
+				大头大头下雨不愁,
+			</p>
+		</div>
+		<div class="right">
+			<h4>right</h4>
+			<p>
+				人家有伞,我有大头<br />
+				人家有伞,我有大头<br />
+				人家有伞,我有大头<br />
+				人家有伞,我有大头<br />
+				人家有伞,我有大头<br />
+				人家有伞,我有大头<br />
+				人家有伞,我有大头<br />
+				人家有伞,我有大头<br />
+				人家有伞,我有大头
+			</p>
+		</div>
+	</div>
+	<div class="footer">
+		<h4>footer</h4>
+	</div>
+</div>
+
+</body>
+</html>

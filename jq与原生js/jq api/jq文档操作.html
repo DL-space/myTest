@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jq文档操作</title>
+    <script src="jquery-2.1.1.js"></script>
+    <style>
+        h1{
+            text-align: center;
+        }
+        h2{
+            color: yellow;
+        }
+        .item{
+            background-color: green;
+            text-align: center;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+        .btn-area{
+            margin-bottom: 20px;
+        }
+        .clone .cloneDiv{
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            margin: 0 auto;
+            background-color: yellow;
+        }
+        .clone .cloneDiv .cloneDiv-btn{
+            background-color: #0a6cd6;
+        }
+         .a{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: #fff;
+        }
+         .b{
+            float: right;
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+        }
+         p{
+            /*float: left;*/
+        }
+        .wp{
+            float: none;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>jq API 之文档操作练习</h1>
+    <!--clone,克隆dom结构-->
+    <div class="item clone">
+        <h2>clone克隆匹配的DOM元素并且选中这些克隆的副本</h2>
+        <div class="btn-area">
+            <button class="clone-btn">点击克隆</button>
+        </div>
+        <div class="cloneDiv">
+            <button class="cloneDiv-btn">clone-div</button>
+        </div>
+    </div>
+    <!--append,添加dom结构-->
+    <div class="item append">
+        <h2>append,向元素内部添加元素（尾部添加），prepend（头部添加）</h2>
+        <div class="a">
+            <p>我是a，将会被添加到b中</p>
+        </div>
+        <div class="b">
+            <p>我是b</p>
+        </div>
+        <p></p>
+    </div>
+    <!--after,添加dom结构-->
+    <div class="item after">
+        <h2>after,向元素后面添加元素；before，像元素前面添加</h2>
+        <div class="a">
+            <p>我是a，将会被添加到b后面</p>
+        </div>
+        <div class="b">
+            <p>我是b</p>
+        </div>
+        <p></p>
+    </div>
+    <!--wrap，包裹dom元素-->
+    <div class="item wrap">
+        <h2>wrap,把所有匹配的元素用其他元素的结构化标记包裹起来。</h2>
+        <p class="wp">我是一个p元素，点击将被包裹</p>
+    </div>
+</div>
+<script>
+    //测试克隆方法，clone
+    var cloneBtn = $(".clone-btn");
+    var cloneDiv = $(".cloneDiv");
+    cloneBtn.on("click",function () {
+        $(this).clone().insertAfter(this);//参数true，指示事件处理函数是否会被复制
+    });
+    cloneDiv.on("click",function () {
+        $(this).clone(true).insertBefore(this);//参数true，指示事件处理函数是否会被复制
+    });
+    cloneDiv.find(".cloneDiv-btn").on("click",function () {
+        $(this).css({
+            backgroundColor:"red"
+        })
+    });
+
+    //dom元素添加，append,appendTo,prepend,prependTo
+    var appendDiv = $(".append");
+    var appendA = appendDiv.find(".a");
+    var appendB = appendDiv.find(".b");
+    /*appendA.on("click",function () {
+        appendA.appendTo(appendB);//将a添加到b中,添加到b的所有子元素后面
+    });
+    appendB.on("click",function () {
+        appendB.append(appendA);//b里添加a，添加到b的所有子元素后面
+    });*/
+    appendA.on("click",function () {
+        appendA.prependTo(appendB);//将a添加到b中，添加到b的所有子元素前面
+    });
+    appendB.on("click",function () {
+        appendB.prepend(appendA);//b里添加a，添加到b的所有子元素前面
+    })
+</script>
+</body>
+</html>

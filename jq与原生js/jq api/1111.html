@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-2.1.1.js"></script>
+    <style>
+        #delBoxLi li{
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            margin-bottom: 20px;
+        }
+        #delBoxLi li .a{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+        #delBoxLi li .b{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<ul id="delBoxLi">
+    <li>
+        <div class="a"></div>
+        <div class="b"></div>
+    </li>
+    <li>
+        <div class="a"></div>
+        <div class="b"></div>
+    </li>
+    <li>
+        <div class="a"></div>
+        <div class="b"></div>
+    </li>
+</ul>
+<script>
+    window.onload=onclickList;
+    function onclickList()
+    {
+        var oUl=document.getElementById("delBoxLi");
+        if(oUl == null || oUl == '')
+            return false;
+        var oLis=oUl.getElementsByTagName("li");
+        for(var i=0;i<oLis.length;i++)
+        {
+            var $divCancel = oLis[i].children;
+            $divCancel[1].onclick=(function(i)
+            {
+                return function()
+                {
+                    alert(22)
+                    var src = $('#' + img_id).val();
+                    var on_src = $('#img'+i).attr('src');
+                    $.ajax({
+                        type: 'POST',
+                        url: delete_image_url ,
+                        data: {src:src,on_src:on_src, index : i} ,
+                        success: function(data)
+                        {
+                            var obj = eval('(' + data + ')');
+                            if(obj.code == 1)
+                            {
+                                $('#num').val(obj.num);
+                                $('#' + img_id).val(obj.new_src);
+                                $('#fileBox_WU_FILE_'+i).remove();
+                            }else{
+                                location.reload();
+                            }
+                        }
+                    });
+                }
+            }(i))
+        }
+    }
+</script>
+</body>
+</html>
