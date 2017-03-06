@@ -68,15 +68,19 @@
         };
         CKobject.embedSWF('ckplayer/ckplayer.swf','video','ckplayer_video',w,h,flashvars,params);
     }
+    /*视频容器*/
+    function videoBoxShow() {
+        var videoBox = $(".video-box");
+        videoBox.show(0,function () {
+            videoBox.find(".close").on("click",function () {
+                videoBox.hide();
+            })
+        });
+    }
     $(function () {
         $(".area").on("click",".vid",function () {
             var url = $(this).attr("data-url");
-            var videoBox = $(".video-box");
-            videoBox.show(0,function () {
-                videoBox.find(".close").on("click",function () {
-                    videoBox.hide();
-                })
-            });
+            videoBoxShow();
             videoPlay(url,1,600,400);
         })
     })
