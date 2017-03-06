@@ -10,13 +10,22 @@
         height: 100px;
         cursor: pointer;
     }
-    #video{
-        position: absolute;
+    .video-box{
+        display: none;
+        position: fixed;
         width: 600px;
         height: 400px;
         top: 50%;
-        left: 400px;
-        margin-top: -200px;
+        left: 50%;
+        margin: -200px 0 0 -300px;
+    }
+    .video-box .close{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #fff;
+        z-index: 999;
+        cursor: pointer;
     }
 </style>
 <body>
@@ -32,7 +41,10 @@
 <div class="area">
     <img src="images/3.jpg" alt="" class="vid" data-url="http://localhost:3003/images/oceans.mp4">
 </div>
-<div id="video"></div>
+<div class="video-box">
+    <div id="video"></div>
+    <div class="close">X</div>
+</div>
 <script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
 <script src="js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript">
@@ -59,7 +71,13 @@
     $(function () {
         $(".area").on("click",".vid",function () {
             var url = $(this).attr("data-url");
-            videoPlay(url,1,600,400)
+            var videoBox = $(".video-box");
+            videoBox.show(0,function () {
+                videoBox.find(".close").on("click",function () {
+                    videoBox.hide();
+                })
+            });
+            videoPlay(url,1,600,400);
         })
     })
 </script>
