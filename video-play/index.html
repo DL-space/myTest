@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ckplayer flash播放器</title>
+</head>
+<style>
+    img{
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+    }
+    #video{
+        position: absolute;
+        width: 600px;
+        height: 400px;
+        top: 50%;
+        left: 400px;
+        margin-top: -200px;
+    }
+</style>
+<body>
+<div class="area">
+    <img src="images/1.jpg" alt="" class="vid" data-url="http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4">
+</div>
+<div class="area">
+    <img src="images/2.jpg" alt="" class="vid" data-url="http://vjs.zencdn.net/v/oceans.mp4">
+</div>
+<div class="area">
+    <img src="images/3.jpg" alt="" class="vid" data-url="http://localhost:3003/images/3.flv">
+</div>
+<div class="area">
+    <img src="images/3.jpg" alt="" class="vid" data-url="http://localhost:3003/images/oceans.mp4">
+</div>
+<div id="video"></div>
+<script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+    /**
+     * 视频播放：videoPlay(url,play,w,h)
+     * @param: url:视频地址
+     *        play：是否自动播放（0：不播放；1：播放）
+     *          w ：播放器宽度
+     *          h ：播放器高度
+     */
+    function videoPlay(url,play,w,h) {
+        var flashvars={
+            f:url,
+            p:play
+        };
+        var params={
+            bgcolor:'#FFF',
+            allowFullScreen:true,
+            allowScriptAccess:'always',
+            wmode:'transparent'
+        };
+        CKobject.embedSWF('ckplayer/ckplayer.swf','video','ckplayer_video',w,h,flashvars,params);
+    }
+    $(function () {
+        $(".area").on("click",".vid",function () {
+            var url = $(this).attr("data-url");
+            videoPlay(url,1,600,400)
+        })
+    })
+</script>
+</body>
+</html>
