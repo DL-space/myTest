@@ -34,13 +34,11 @@
         dl.hehe();
     });
 
-
-
     var Doctor = function (name,sex) {//定义对象
         this.name = name;
         this.sex = sex;
     };
-    Doctor.prototype = {//扩展方法
+    Doctor.prototype = {//添加扩展方法
         introduct:function () {
             alert("我是一个"+this.sex+"医生，我的名字是"+this.name)
         }
