@@ -1,0 +1,303 @@
+.header{
+    position: relative;
+    width: 90%;
+    padding: .26rem 5%;
+    border-bottom: solid 1px #eee;
+}
+.header .inn{
+    width: 100%;
+    height: .64rem;
+    line-height: .64rem;
+    color: #333;
+    font-size: .42rem;
+    overflow: hidden;
+}
+.header .big-title{
+    width: auto;
+    font-size: .42rem;
+    float: left;
+}
+.header .logo{
+    width: 1.12rem;
+    height: .64rem;
+    float: right;
+    text-indent: -9999px;
+    background: url("../images/logo.png") no-repeat;
+    background-size: 100%;
+}
+.center{
+    width: 90%;
+    padding-left: 5%;
+}
+.eva-info{
+    padding: .56rem 0;
+    overflow: hidden;
+}
+.eva-info .img-area{
+    float: left;
+}
+.eva-info .img-area img{
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+.eva-info .des{
+    float: right;
+    width: 6.45rem;
+    font-size: .29rem;
+    color: #575757;
+    margin-left: .48rem;
+}
+.eva-info .des .name,.eva-info .des .time, .eva-info .des .place{
+    height: .53rem;
+    line-height: .53rem;
+}
+.eva-info .des .name{
+    font-size: .37rem;
+    color: #333;
+}
+.eva-info .des .place{
+    height: 1.04rem;
+    overflow: hidden;
+}
+/*无意向*/
+.eva-info-wyx{
+    text-align: center;
+    padding: .56rem 0;
+    overflow: hidden;
+}
+.eva-info-wyx .img-area{
+    margin-bottom: .1rem;
+}
+.eva-info-wyx .des{
+    font-size: .37rem;
+    color: #333;
+}
+.eva{
+    border-top: solid 1px #eee;
+    margin-bottom: .45rem;
+}
+.title{
+    height: .48rem;
+    line-height: .48rem;
+    margin: -.24rem auto 0 ;
+    color: #575757;
+    background: #fff;
+    font-size: .32rem;
+    text-align: center;
+}
+.eva .title{
+    width: 1.8rem;
+}
+.eva .satisfy{
+    font-size: .32rem;
+    color: #ff8346;
+    text-align: center;
+}
+.show-area{
+    display: none;
+    margin-bottom: 1.2rem;
+}
+.show-area .eva-tags{
+    margin-bottom: .3rem;
+}
+.show-area .eva-tags .item{
+    display: none;
+}
+.show-area .eva-tags .tag-more{
+    display: none;
+}
+.show-area .eva-tags .tag{
+    display: inline-block;
+    width: auto;
+    height: .77rem;
+    line-height: .77rem;
+    margin:  0 .26rem .26rem 0;
+    padding: 0 .26rem;
+    font-size: .35rem;
+    color: #626262;
+    border: solid 1px #f1f1f1;
+    border-radius: .4rem;
+    box-sizing: border-box;
+}
+.show-area .eva-tags .active{
+    color: #ff8346;
+    border: solid 1px #ff8346;
+}
+.show-area .eva-content{
+    width: 100%;
+    height: 1.6rem;
+    padding: .21rem;
+    font-size: .35rem;
+    color: #626262;
+    box-sizing: border-box;
+    border: solid 1px #f1f1f1;
+    border-radius: 5px;
+}
+.recommend{
+    border-top: solid 1px #eee;
+    margin: 1rem 0 1.04rem 0;
+}
+.recommend .title{
+    width: 6rem;
+    margin: -.24rem auto 1.38rem;
+}
+@media screen and (width: 320px){
+    .recommend .title{
+        width: 7rem;
+        margin: -.24rem auto 1rem;
+    }
+}
+.recommend .choose{
+    width: 5rem;
+    margin: -.53rem auto 0;
+    overflow: hidden;
+    font-size: .34rem;
+    color: #575757;
+}
+.recommend .choose .ipt-area:first-child{
+    float: left;
+    margin-right: 1.82rem;
+}
+.recommend .choose .ipt{
+    margin-right: .24rem;
+    vertical-align: middle;
+    display: none;
+}
+.recommend .choose .radio-icon{
+    display: inline-block;
+    width: .4rem;
+    height: .4rem;
+    margin-right: .24rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: #eee;
+    vertical-align: top;
+}
+.recommend .choose .ipt-area{
+    height: .4rem;
+    line-height: .4rem;
+}
+.recommend .choose .checked{
+    color: #ff8346;
+}
+.recommend .choose .checked .radio-icon{
+    background: url("../images/bg-checked.png") no-repeat;
+    background-size: 100%;
+}
+.btn-area .submit{
+    width: 100%;
+    height: 1.15rem;
+    line-height: 1.15rem;
+    font-size: .42rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #cecece;
+    outline: none;
+}
+.btn-area .active{
+    color: #fff;
+    background-color: #ff8346;
+}
+.warn{
+    /*display: none;*/
+    color: #ff8346;
+    font-size: .26rem;
+    text-align: center;
+    padding: .26rem 0;
+}
+.star{
+    text-align: center;
+    margin: .4rem 0;
+}
+.star img{
+    width: .9rem;
+    height: .9rem;
+}
+.bar{
+    height: 50px;
+}
+.bar .ins-text{
+    width: 1.5rem;
+    height: 16px;
+    line-height: 16px;
+}
+.bar ins{
+    text-align: center;
+}
+/*遮罩层*/
+.mask{
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 80%;
+    z-index: 100;
+    background-color: rgba(3,3,3,.6);
+    padding: 0 10%;
+}
+.mask .bom-box{
+    position: relative;
+    top: 50%;
+    margin-top: -3.76rem;
+    height: 5.8rem;
+    padding: 1rem 0;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+}
+.mask .bom-box .msg{
+    font-size: .64rem;
+    color: #575757;
+    font-weight: bold;
+}
+.mask .bom-box .success-img{
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: .48rem auto;
+    text-indent: -9999px;
+    background: url("../images/bg-success.png") no-repeat;
+    background-size: 100%;
+}
+.mask .bom-box .text{
+    font-size: .29rem;
+    color: #575757;
+    height: .45rem;
+    line-height: .45rem;
+}
+.mask .bom-box .btn-sure{
+    width: 6.66rem;
+    height: 1.14rem;
+    margin-top: .48rem;
+    line-height: 1.14rem;
+    font-size: .42rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background: #ff8346;
+    border-radius: 5px;
+}
+.mask .bom-box .mask-close{
+    position: absolute;
+    top: .26rem;
+    right: .26rem;
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    line-height: .5rem;
+    border-radius: 50%;
+    text-indent: -9999px;
+    background: url("../images/btn-close.png") no-repeat;
+    background-size: 100%;
+}
+.mask .bom-box a:link{
+    text-decoration: none;
+}
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+}

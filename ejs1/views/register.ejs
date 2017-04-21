@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/register.css' />
+    <script src='/javascripts/jquery-3.1.1.min.js'></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <div class="ipt">
+            <span class="lab">姓名：</span>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="ipt">
+            <span class="lab">姓别：</span>
+            <input type="text" name="sex" id="sex">
+        </div>
+        <div class="ipt">
+            <span class="lab">年龄：</span>
+            <input type="number" name="age" id="age">
+        </div>
+        <button class="btn">提交</button>
+      </div>
+      <div id="popup">
+          <div id="popup-content"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      var name = $("#name");
+      var sex = $("#sex");
+      var age = $("#age");
+      var btn = $(".btn");
+      var popup = $("#popup");
+      var popupContent = $("#popup-content");
+      var close = $("#close");
+      popup.hide();
+      close.click(function () {
+        popup.hide();
+      });
+      btn.click(function () {
+        if (name.val() == "" || sex.val() == "" || age.val() == "") {
+          popup.show();
+          popupContent.html("注册信息不能为空！");
+        } else {
+          //访问服务器，将注册信息写入数据库
+          $.ajax({
+            url: "/register/register",
+            data: {
+              name: $("#name").val(),
+              sex: $("#sex").val(),
+              age: $("#age").val()
+            },
+            type: "POST",
+            timeout: 36000,
+            dataType: "text",
+            success: function (data, textStatus) {
+              var dataJson = eval("(" + data + ")");
+              if (dataJson.code == 200) {
+                alert("注册成功");
+                window.location.href = "/login";
+              } else if (dataJson.code == 300) {
+                popup.show();
+                popupContent.html("该账号已存在！");
+              } else if (dataJson.code == 400) {
+                popup.show();
+                popupContent.html("注册失败，请重新注册！");
+              } else {
+                popup.show();
+                popupContent.html("注册出错！");
+              }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+              alert("error:" + textStatus);
+            }
+          });
+        }
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8" />
+<header>
+    <title>文章列表页面</title>
+</header>
+<body>
+    <h1><%=title%></h1>
+    <p><a href="/form">发表新文章</a></p>
+    <ul>
+        <%item.forEach(function(item){%>
+            <li><%=item.title%></li>
+        <% })%>
+    </ul>
+</body>
+</html>

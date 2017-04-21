@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=2.0,minimum-scale=0.42">
+    <title>带看评价</title>
+    <link rel="stylesheet" href="raty/jquery.raty.css">
+    <link rel="stylesheet" href="bar/css/jquery.range.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/evaluate.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="inn">
+            <h1 class="big-title">侃家网带看服务反馈</h1>
+            <div class="logo">logo</div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="eva-info">
+            <div class="img-area">
+                <img src="images/person.jpg" alt="头像">
+            </div>
+            <div class="des">
+                <div class="name">赵之媛</div>
+                <div class="time">
+                    <span class="pre">服务时间：</span>
+                    <span class="text">2016年10月28日</span>
+                </div>
+                <div class="place">
+                    <span class="pre">陪看楼盘：</span>
+                    <span class="text">华润悦景湾、西山湖（商办）、华润悦景湾、西山湖（商办）、华润悦景湾、西山湖（商办）、</span>
+                </div>
+            </div>
+        </div>
+        <div class="eva">
+            <div class="title">您的评价</div>
+            <div class="star" data-score="0" data-path="images"></div>
+            <div class="satisfy"></div>
+        </div>
+        <div class="show-area">
+            <div class="eva-tags">
+                <div class="item item-F">
+                    <div class="tag-show">
+                        <span class="tag">不重视我，不用心</span>
+                        <span class="tag">迟到</span>
+                        <span class="tag">楼盘不熟悉</span>
+                        <span class="tag">购房建议没有价值</span>
+                        <span class="tag">服务态度差</span>
+                        <span class="tag more">点击展开</span>
+                    </div>
+                    <div class="tag-more">
+                        <span class="tag">仪表、举止不得体</span>
+                        <span class="tag">专车体验差</span>
+                        <span class="tag">找不到售楼处</span>
+                        <span class="tag">咨询师没有全程陪同</span>
+                    </div>
+                </div>
+                <div class="item item-S">
+                    <div class="tag-show">
+                        <span class="tag">态度好，服务棒</span>
+                        <span class="tag">守时</span>
+                        <span class="tag">熟悉楼盘</span>
+                        <span class="tag">购房建议很有帮助 </span>
+                        <span class="tag more">点击展开</span>
+                    </div>
+                    <div class="tag-more">
+                        <span class="tag">重视我，很用心</span>
+                        <span class="tag">专车体验好</span>
+                        <span class="tag">仪表、举止得体 </span>
+                        <span class="tag"> 市场分析透彻</span>
+                    </div>
+                </div>
+            </div>
+            <textArea class="eva-content" name="eva-content" placeholder="让您不满意的方面是？"></textArea>
+        </div>
+        <div class="recommend">
+            <div class="title">您愿意向身边买房的朋友推荐侃家吗？</div>
+            <div class="bar">
+                <input type="hidden" class="single-slider" value="80" />
+            </div>
+        </div>
+        <div class="btn-area">
+            <button class="submit">提交评价</button>
+        </div>
+        <div class="warn">
+            <p class="warn-title">还有问题没有回答：</p>
+            <p class="warn-txt">您愿意向身边买房的朋友推荐侃家吗？</p>
+        </div>
+    </div>
+    <!--遮罩层-->
+    <div class="mask">
+        <div class="bom-box">
+            <p class="msg">
+                评价成功
+            </p>
+            <div class="success-img">success</div>
+            <p class="text">
+                感谢您的评价！
+            </p>
+            <p class="text">
+                您的评价，将帮助我们为您提供更好的服务！
+            </p>
+            <a href="#" class="btn btn-sure">确定</a>
+            <span class="mask-close">close</span>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="raty/jquery.raty.js"></script>
+<script src="bar/js/jquery.range1.js"></script>
+<script src="js/evaluate.js"></script>
+<script>
+</script>
+</body>
+</html>

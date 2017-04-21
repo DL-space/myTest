@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/register.css' />
+    <script src='/javascripts/jquery-3.1.1.min.js'></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <div class="ipt">
+            <span class="lab">姓名：</span>
+            <input type="text" name="name" id="name">
+        </div>
+        <button class="btn">登录</button>
+      </div>
+      <div id="popup">
+          <div id="popup-content"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      var name = $("#name");
+      var btn = $(".btn");
+      var popup = $("#popup");
+      var popupContent = $("#popup-content");
+      var close = $("#close");
+      popup.hide();
+      close.click(function () {
+        popup.hide();
+      });
+      btn.click(function () {
+        if (name.val() == "") {
+          popup.show();
+          popupContent.html("信息不能为空！");
+        } else {
+          //访问服务器，将注册信息写入数据库
+          $.ajax({
+            url: "/login/login",
+            data: {
+              name: $("#name").val(),
+            },
+            type: "POST",
+            timeout: 36000,
+            dataType: "text",
+            success: function (data, textStatus) {
+              var dataJson = eval("(" + data + ")");
+              if (dataJson.code == 200) {
+                alert("登录成功");
+                window.location.href = "/";
+              } else {
+                popup.show();
+                popupContent.html("登录出错！");
+              }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+              alert("error:" + textStatus);
+            }
+          });
+        }
+      });
+    });
+  </script>
+</html>

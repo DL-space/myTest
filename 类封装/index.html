@@ -20,6 +20,7 @@
         this.sex = sex;
     };
     Person.prototype = {//扩展方法
+        constructor : Person,//手动设置构造函数为Person；
         sayHi:function () {
             alert("hellow,i am "+this.name)
         },
@@ -32,6 +33,7 @@
     $("#a").click(function () {
         dl.sayHi();
         dl.hehe();
+        console.log(dl.constructor)
     });
 
     var Doctor = function (name,sex) {//定义对象
@@ -44,7 +46,7 @@
         }
     };
     var zhnagsan = new Doctor("张三","男");//实例化对象
-    $("#b").click(function () {//调用方法
+    $("#b").click(function () {//调用方法ss
         zhnagsan.introduct();
     })
 </script>

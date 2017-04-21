@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jq与原生js/jq%20api/jquery-2.1.1.js"></script>
+</head>
+<style>
+    .a{
+        list-style: circle;
+        overflow: hidden;
+        width: 250px;
+        padding: 0;
+        margin: 100px;
+    }
+    .a li{
+        /*float: left;*/
+        width: 50px;
+        height: 200px;
+        text-align: center;
+        background: red;
+    }
+</style>
+<body>
+<ul class="a">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+<ul>
+    <li>1111</li>
+    <li>1111</li>
+    <li>1111</li>
+    <li>1111</li>
+    <li>1111</li>
+    <li>1111</li>
+</ul>
+<button id="aaa">按钮</button>
+<embed id="xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd" type="application/thunder_download_plugin" height="0" width="0">
+<script>
+    function aa() {
+        $("li").each(function () {
+            var that = $(this);
+                that.hover(function () {
+                    $("li").css("background","red");
+                    $("li").removeClass("cc");
+                    that.css("background","green");
+                },function () {
+                    that.css("background","red");
+                    that.addClass("cc");
+                    that.siblings("li").removeClass("cc")
+                });
+        })
+    }
+    aa();
+    $(".a").hover(function () {
+        aa();
+    },function () {
+        $(".cc").css("background","green")
+    })
+
+    window.onload=function () {//隐藏mac迅雷插件自动加载的代码
+        $("embed[type='application/thunder_download_plugin']").css("display","none")
+    };
+    var aaa = document.getElementsByTagName("button")[0];
+    aaa.onclick = function () {
+        alert(333)
+    }
+</script>
+</body>
+</html>

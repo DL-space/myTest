@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="wap-font-scale" content="no">
+    <title>楼盘列表页</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/module-new.css">
+    <link rel="stylesheet" href="css/house-list.css">
+</head>
+<body>
+<!--顶部app下载入口-->
+<div class="topbar">
+    <div class="fl">
+        <span class="ico ico-kan"></span>
+        <div class="t-text">
+            <h4>侃家找房</h4>
+            <p>做专业的新房搜索</p>
+        </div>
+    </div>
+    <div class="close">
+        <span class="ico ico-close">X</span>
+    </div>
+    <div class="app-download">
+        <a href="#" class="btn-donload">打开APP</a>
+    </div>
+</div>
+<div class="container">
+    <div class="header">
+    <!--返回上一页-->
+    <div class="go-back">
+        <a href="#">
+            <span class="ico ico-return">返回上一页</span>
+        </a>
+    </div>
+    <!--切换城市-->
+    <div class="city-change">
+        <a href="#">
+            <span class="text">北京</span>
+            <span class="ico ico-down2">城市切换</span></a>
+    </div>
+    <!--用户行为跳转-->
+    <ul class="u-link">
+        <li class="link-home">
+            <a href="#"><span class="ico ico-home">首页</span></a>
+        </li>
+        <li class="link-ucenter">
+            <a href="#"><span class="ico ico-user">个人中心</span></a>
+        </li>
+    </ul>
+</div>
+    <div class="center">
+        <!--搜索-->
+        <div class="search-wrap">
+            <div class="search">
+                <div class="ipt-area">
+                    <input type="text" class="ipt" placeholder="泰禾中央广场">
+                </div>
+                <div class="btn-area">
+                    <button type="button" class="btn btn-search">搜搜</button>
+                </div>
+            </div>
+        </div>
+        <!--楼盘动态-->
+        <div class="dynamic">
+            <div class=" dyn-left">
+                <div class="dyn-left-content">
+                    <a href="#"><img src="./images/newhouse_logo.png" alt="img"></a>
+                </div>
+            </div>
+                <div class="dyn-center">
+                        <div class="scrollDiv">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="scroll_news">
+                                        <span>{最新消息1} 今天加推，32套房源你知道不你知道不你知道不你知道不你知道不</span>
+                                    </div>
+                                    <div class="scroll_time">
+                                        3月15日4:30
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="scroll_news">
+                                        <span>{最新消息2}</span>
+                                        今天加推，32套房源你知道不
+                                    </div>
+                                    <div class="scroll_time">
+                                        3月15日4:30
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="scroll_news">
+                                        <span>{最新消息3}</span>
+                                        今天加推，32套房源你知道不
+                                    </div>
+                                    <div class="scroll_time">
+                                        3月15日4:30
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="scroll_news">
+                                        <span>{最新消息4}</span>
+                                        今天加推，32套房源你知道不
+                                    </div>
+                                    <div class="scroll_time">
+                                        3月15日4:30
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="scroll_news">
+                                        <span>{最新消息5}</span>
+                                        今天加推，32套房源你知道不
+                                    </div>
+                                    <div class="scroll_time">
+                                        3月15日4:30
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            <div class="dyn-right">
+                <div class="dyn-right-content">
+                    <a href="#">截获情报</a>
+                </div>
+            </div>
+        </div>
+        <div class="list-wrap">
+            <!--楼盘检索-->
+            <div class="query">
+                <ul class="query-list">
+                    <li class="query-area first">
+                        <div class="query-wrap">
+                            <span class="query-txt">区域</span>
+                        </div>
+                        <div class="tab query-panel panel-area">
+                            <div class="tab-nav">
+                                <ul class="area-type-list">
+                                    <li class="selected">区域</li>
+                                    <li>地铁</li>
+                                </ul>
+                            </div>
+                            <div class="tab-con">
+                                <div class="nrpart">
+                                    <ul class="area-type-item area-list">
+                                        <li><a href="#">昌平</a></li>
+                                        <li><a href="#">朝阳</a></li>
+                                        <li><a href="#">东城</a></li>
+                                        <li><a href="#">大兴</a></li>
+                                        <li><a href="#">房山</a></li>
+                                        <li><a href="#">丰台</a></li>
+                                        <li><a href="#">海淀</a></li>
+                                        <li><a href="#">怀柔</a></li>
+                                        <li><a href="#">门头沟</a></li>
+                                        <li><a href="#">密云</a></li>
+                                        <li><a href="#">平谷</a></li>
+                                        <li><a href="#">石景山</a></li>
+                                        <li><a href="#">顺义</a></li>
+                                        <li><a href="#">通州</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nrpart" style="display: none">
+                                    <ul class="area-type-item subway-list">
+                                        <li><a href="#">1号线</a></li>
+                                        <li><a href="#">2号线</a></li>
+                                        <li><a href="#">4号线</a></li>
+                                        <li><a href="#">5号线</a></li>
+                                        <li><a href="#">6号线</a></li>
+                                        <li><a href="#">7号线</a></li>
+                                        <li><a href="#">8号线</a></li>
+                                        <li><a href="#">9号线</a></li>
+                                        <li><a href="#">10号线</a></li>
+                                        <li><a href="#">13号线</a></li>
+                                        <li><a href="#">14号线</a></li>
+                                        <li><a href="#">15号线</a></li>
+                                        <li><a href="#">大兴线</a></li>
+                                        <li><a href="#">八通线</a></li>
+                                        <li><a href="#">房山线</a></li>
+                                        <li><a href="#">亦庄线</a></li>
+                                        <li><a href="#">机场线</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="query-price">
+                        <div class="query-wrap">
+                            <span class="query-txt">总价</span>
+                        </div>
+                        <div class="query-panel panel-price">
+                            <ul class="price-item">
+                                <li class="on"><a href="#">不限</a></li>
+                                <li><a href="#">100万以下</a></li>
+                                <li><a href="#">100-150万</a></li>
+                                <li><a href="#">150-200万</a></li>
+                                <li><a href="#">200-250万</a></li>
+                                <li><a href="#">250-300万</a></li>
+                                <li><a href="#">300-500万</a></li>
+                                <li><a href="#">500-1000万</a></li>
+                            </ul>
+                            <div class="btn-area1">
+                                <a href="#" class="btn btn-custom">自定义</a>
+
+                                <input class="btn-minimum" type="text" placeholder="最低">
+
+                                <span>
+                                    <img src="images/-img2.png" alt="">
+                                </span>
+
+                                <input class="btn-highest" type="text" placeholder="最高">
+
+                                <span class="btn-span-wan">
+                                    万
+                                </span>
+                                <a href="#" class="btn btn-confirm1">确 定</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="query-housetype">
+                        <div class="query-wrap">
+                            <span class="query-txt">户型</span>
+                        </div>
+                        <div class="query-panel panel-housetype">
+                            <ul class="housetype-item">
+                                <li class="on"><a href="#">不限</a></li>
+                                <li><a href="#">一居</a></li>
+                                <li><a href="#">二居</a></li>
+                                <li><a href="#">三居</a></li>
+                                <li><a href="#">四居</a></li>
+                                <li><a href="#">五居</a></li>
+                                <li><a href="#">五居及以上</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="query-mnore">
+                        <div class="query-wrap">
+                            <span class="query-txt">更多</span>
+                        </div>
+                        <div class="query-panel panel-more">
+                            <div class="mod3 mod3-type">
+                                <div class="tit">类型：</div>
+                                <ul class="con">
+                                    <li class="on"><a href="#">不 限</a></li>
+                                    <li><a href="#">住宅</a></li>
+                                    <li><a href="#">商住</a></li>
+                                    <li><a href="#">别墅</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="mod3 mod3-feature">
+                                <div class="tit">特色：</div>
+                                <ul class="con">
+                                    <li class="on"><a href="#">不 限</a></li>
+                                    <li><a href="#">学区房</a></li>
+                                    <li><a href="#">精装修</a></li>
+                                    <li><a href="#">地铁房</a></li>
+                                </ul>
+                            </div>
+                            <div class="mod3 mod3-loop">
+                                <div class="tit">环线：</div>
+                                <ul class="con">
+                                    <li class="on"><a href="#">不 限</a></li>
+                                    <li><a href="#">二环内</a></li>
+                                    <li><a href="#">二环至三环</a></li>
+                                    <li><a href="#">三环至四环</a></li>
+                                    <li><a href="#">四环至五环</a></li>
+                                    <li><a href="#">六环外</a></li>
+                                </ul>
+                            </div>
+                            <div class="mod3 mod3-sale">
+                                <div class="tit">售卖情况：</div>
+                                <ul class="con">
+                                    <li class="on"><a href="#">不 限</a></li>
+                                    <li><a href="#">在 售</a></li>
+                                    <li><a href="#">待 售</a></li>
+                                    <li><a href="#">未 售</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-area2">
+                                <a href="#" class="btn btn-canel">重置条件</a>
+                                <a href="#" class="btn btn-confirm">确 定</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="build-list">
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-hot">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tr">
+                                    <div class="text text-dy">最新动态：这里只显示一条最新动态显示一条最新动态显示一条最新动态</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="special-msg">
+                            <div class="special-title">
+                                <span class="ico ico-dt"></span>
+                                最新动态
+                            </div>
+                            <div class="special-content">
+                                嘉禾中央广场50-100m²火热在售火热在售火热在售
+                            </div>
+                            <div class="special-time">
+                                2017-2-5
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-on">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="special-msg">
+                            <div class="special-title">
+                               <span class="ico ico-price2"></span>
+                                价格最新变动
+                            </div>
+                            <div class="special-content">
+                                37500元／m² ——42000元／m²
+                            </div>
+                            <div class="special-time">
+                                2017-2-5
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-none">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="text">30天实地看房：35次</div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="special-msg custom-msg">
+                            <div class="special-title">
+                                <img src="images/ico-special.png" alt="">
+                                全款98折 贷款95折全款98折 贷款95折全款98折 贷款95折全款98折 贷款95折
+                            </div>
+                            <div class="special-time">
+                                2017-2-5
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-will">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-hot">
+                                    看房hot
+                                </div>
+                                <div class="text">30天实地看房：35次</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-not">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="text text-dy">最新动态：这里只显示一条最新动态显示一条最新动态显示一条最新动态</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--找房标签-->
+            <div class="help-tags">
+                <div class="tags-inn">
+                    <div class="tag">
+                        <a href="#">房山</a>
+                    </div>
+                    <div class="tag">
+                        <a href="#">不限购</a>
+                    </div>
+                    <div class="tag">
+                        <a href="#">房山新盘</a>
+                    </div>
+                    <div class="tag">
+                        <a href="#">商住两用</a>
+                    </div>
+                    <div class="tag">
+                        <a href="#">100-200万</a>
+                    </div>
+                    <div class="tag">
+                        <a href="#">门头沟新房</a>
+                    </div>
+                    <div class="tag">
+                        <a href="#">房山</a>
+                    </div>
+                    <div class="tag">
+                        <a href="#">房山新盘</a>
+                    </div>
+                </div>
+            </div>
+            <div class="build-list">
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-pkz">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-hot">
+                                    看房hot
+                                </div>
+                                <div class="text">30天实地看房：35次</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-on">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-hot">
+                                    看房hot
+                                </div>
+                                <div class="text">30天实地看房：35次</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-on">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-hot">
+                                    看房hot
+                                </div>
+                                <div class="text">30天实地看房：35次</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-on">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-hot">
+                                    看房hot
+                                </div>
+                                <div class="text">30天实地看房：35次</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-on">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-hot">
+                                    看房hot
+                                </div>
+                                <div class="text">30天实地看房：35次</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--banner-->
+            <div class="banner">
+                <img src="images/img-banner.png" alt="banner">
+            </div>
+            <div class="build-list">
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-on">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-hot">
+                                    看房hot
+                                </div>
+                                <div class="text">30天实地看房：35次</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-on">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-hot">
+                                    看房hot
+                                </div>
+                                <div class="text">30天实地看房：35次</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-on">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-hot">
+                                    看房hot
+                                </div>
+                                <div class="text">30天实地看房：35次</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-on">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-hot">
+                                    看房hot
+                                </div>
+                                <div class="text">30天实地看房：35次</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-on">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-hot">
+                                    看房hot
+                                </div>
+                                <div class="text">30天实地看房：35次</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--帮您找房-->
+            <div class="call-area find-house">
+                <div class="text">
+                    <p class="title">还没找到心仪的房子？</p>
+                    <p class="des">专属咨询师免费帮您找！</p>
+                </div>
+                <div class="btn-area">
+                    <a class="btn-zx" href="tel:400-080-7815"><span class="ico ico-find3">帮您找房</span>帮您找房</a>
+                </div>
+            </div>
+            <div class="build-list">
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-on">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-hot">
+                                    看房hot
+                                </div>
+                                <div class="text">30天实地看房：35次</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-on">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-hot">
+                                    看房hot
+                                </div>
+                                <div class="text">30天实地看房：35次</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-on">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-hot">
+                                    看房hot
+                                </div>
+                                <div class="text">30天实地看房：35次</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-on">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-hot">
+                                    看房hot
+                                </div>
+                                <div class="text">30天实地看房：35次</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-new">
+                    <a href="#">
+                        <div class="img-area">
+                            <img src="images/img-house.png" alt="楼盘">
+                        </div>
+                        <div class="des">
+                            <div class="tr">
+                                <h3>北京城建世华城建世华城建世华</h3>
+                                <div class="lb-area">
+                                    <span class="lbs lbs-on">在售</span>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="place">海淀-清河</div>
+                                <div class="price">128万-198万</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-review">
+                                    专业点评
+                                </div>
+                                <div class="text">紧凑实用 临地铁 幼儿</div>
+                            </div>
+                            <div class="tr">
+                                <div class="tag tag-hot">
+                                    看房hot
+                                </div>
+                                <div class="text">30天实地看房：35次</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--没有查询结果信息提示-->
+        <div class="no-result">
+            <div class="tips-pic"></div>
+            <div class="result-tips">
+                <p>Oops！</p>
+                <p>地球上没能找到符合您条件的楼盘呢，</p>
+                <P>换个条件试试呗～</P>
+            </div>
+        </div>
+        <!--没有查询结果推荐楼盘-->
+        <div class="case case-groom">
+            <div class="hd">
+                <h2>推荐楼盘</h2>
+            </div>
+            <div class="bd">
+                <div class="build-list">
+                    <div class="item-new">
+                        <a href="#">
+                            <div class="img-area">
+                                <img src="images/img-house.png" alt="楼盘">
+                            </div>
+                            <div class="des">
+                                <div class="tr">
+                                    <h3>北京城建世华</h3>
+                                    <div class="lb-area">
+                                        <span class="lbs lbs-on">在售</span>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="place">海淀-清河</div>
+                                    <div class="price">128万-198万</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="text">紧凑实用 临地铁 幼儿</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="tag tag-hot">
+                                        看房hot
+                                    </div>
+                                    <div class="text">30天实地看房：35次</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item-new">
+                        <a href="#">
+                            <div class="img-area">
+                                <img src="images/img-house.png" alt="楼盘">
+                            </div>
+                            <div class="des">
+                                <div class="tr">
+                                    <h3>北京城建</h3>
+                                    <div class="lb-area">
+                                        <span class="lbs lbs-on">在售</span>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="place">海淀-清河</div>
+                                    <div class="price">128万-198万</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="text">紧凑实用 临地铁 幼儿</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="text">30天实地看房：35次</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item-new">
+                        <a href="#">
+                            <div class="img-area">
+                                <img src="images/img-house.png" alt="楼盘">
+                            </div>
+                            <div class="des">
+                                <div class="tr">
+                                    <h3>北京城建世华</h3>
+                                    <div class="lb-area">
+                                        <span class="lbs lbs-on">在售</span>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="place">海淀-清河</div>
+                                    <div class="price">128万-198万</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="text">紧凑实用 临地铁 幼儿</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="text">30天实地看房：35次</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item-new">
+                        <a href="#">
+                            <div class="img-area">
+                                <img src="images/img-house.png" alt="楼盘">
+                            </div>
+                            <div class="des">
+                                <div class="tr">
+                                    <h3>北京城建</h3>
+                                    <div class="lb-area">
+                                        <span class="lbs lbs-on">在售</span>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="place">海淀-清河</div>
+                                    <div class="price">128万-198万</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="tag tag-review">
+                                        专业点评
+                                    </div>
+                                    <div class="text">紧凑实用 临地铁 幼儿</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="tag tag-hot">
+                                        看房hot
+                                    </div>
+                                    <div class="text">30天实地看房：35次</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item-new">
+                        <a href="#">
+                            <div class="img-area">
+                                <img src="images/img-house.png" alt="楼盘">
+                            </div>
+                            <div class="des">
+                                <div class="tr">
+                                    <h3>北京城建世华城建世华城建世华</h3>
+                                    <div class="lb-area">
+                                        <span class="lbs lbs-on">在售</span>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="place">海淀-清河</div>
+                                    <div class="price">128万-198万</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="text">紧凑实用 临地铁 幼儿</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="text">30天实地看房：35次</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部悬浮栏-->
+<div class="a-footer-layer">
+    <ul class="a-nav">
+        <li class="a-nav-down">
+            <a href="#">
+                <span class="ico ico-find2">帮您找房</span>
+                <span class="text">帮您找房</span>
+            </a>
+        </li>
+        <li class="a-nav-yy">
+            <a href="#">
+                <span class="ico ico-yy">在线咨询</span>
+                <span class="text">在线咨询</span>
+            </a>
+        </li>
+        <li class="a-nav-call">
+            <a href="#">
+                <span class="ico ico-call">售楼热线</span>
+                <span class="text">售楼热线</span>
+            </a>
+        </li>
+    </ul>
+</div>
+    <div id="prop" class="tsk-translayer">
+    </div>
+    <!--返回按钮-->
+    <div class="return-top">
+    </div>
+    <!--提示弹层-->
+    <div class="prop-msg">
+        <div class="msg-content">
+            <span class="ico ico-msg">提示信息</span>
+            <div class="text">
+                小侃为您在全网中找到<span class="num">200</span>个楼盘~
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/lib/jquery-2.1.4.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/list-new.js"></script>
+</body>
+</html>

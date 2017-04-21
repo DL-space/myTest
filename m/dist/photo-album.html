@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="wap-font-scale" content="no">
+    <title>楼盘图册页</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/swiper-3.4.0.min.css">
+    <link rel="stylesheet" href="css/photo-album.css">
+</head>
+<body>
+<div class="photoBox">
+    <div class="photo-t">
+        <div class="top-l">
+            <a href="javascript:void(0)">返回主页</a>
+        </div>
+        <div class="t-center">
+            <span class="t-unit"></span>/<span class="t-all">100</span>
+        </div>
+        <div class="top-r">
+            <a href="javascript:void(0)">图册列表</a>
+        </div>
+    </div>
+    <div class="photo-c">
+        <div class="swiper-container swiper-container-c">
+            <div class="swiper-wrapper">
+               <!-- <div class="swiper-slide">
+                    <img src="./images/img/1.jpg" class="swiper-lazy">
+                </div>-->
+                <div class="swiper-slide">
+                    <img data-src="./images/img/1.jpg" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                 <img data-src="./images/img/2.jpg" class="swiper-lazy">
+                 <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                  <img data-src="./images/img/3.jpg" class="swiper-lazy">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                 <img data-src="./images/img/4.jpg" class="swiper-lazy">
+                 <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="photo-b">
+        <div class="swiper-container swiper-container-p">
+            <div class="swiper-wrapper">
+                <div id="01" class=" item swiper-slide on"><a href="javascript:void(0)">效果图(<span>20</span>)</a></div>
+                <div id="02" class=" item swiper-slide"><a href="javascript:void(0)">样板间(<span>12</span>)</a></div>
+                <div id="03" class=" item swiper-slide"><a href="javascript:void(0)">楼盘实景图(<span>8</span>)</a></div>
+                <div id="04" class=" item swiper-slide"><a href="javascript:void(0)">配套实景图(<span>10</span>)</a></div>
+                <div id="05" class=" item swiper-slide"><a href="javascript:void(0)">环境规划图(<span>00</span>)</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/lib/jquery-2.1.4.min.js"></script>
+<script src="js/lib/swiper.min.js"></script>
+<script type="text/javascript" src="js/photo-album.js"></script>
+<script type="text/javascript">
+    $('.photo-b .item').click(function () {
+        $(this).addClass("on").siblings().removeClass('on');
+        // this  发送 ajax 请求
+        console.log('发送ajax');
+    });
+    var startpoint = 0;
+    var $switchover = $('.photo-c').find('.swiper-lazy');
+    // 开关函数
+    var isEnd = false;
+    var isFirst = false;
+    var isAjax = false;
+    var needID = 0;
+    // 判断是否下一张
+    var isContinue = false;
+    var $isParent= 0;
+    var $Index = $switchover.length - 1;
+
+
+
+    $switchover.on('touchstart', function (ev) {
+        startpoint = event.changedTouches[0].clientX - 0;
+        $isParent = $(this).parent('.swiper-slide').index()
+    });
+    $switchover.on('touchmove', function (ev){
+        var $swiper_all = $('.photo-b').find('.swiper-wrapper');
+        var $o_item = $swiper_all.find('.item');
+        var $on = $swiper_all.find('.on');
+        // 获取 移动距离
+        var nowpoint = event.changedTouches[0].clientX;
+        var dis = nowpoint - startpoint;
+
+        // 一张的时候
+        if($switchover.length == 1){
+            if(dis > 0){
+                if($on.index() != 0){
+                    needID = $on.prev().attr('id');
+                }else {
+                    needID = $o_item.last().attr('id');
+                }
+                isContinue = false;
+            }else if(dis < 0) {
+                if ($on.index() != $o_item.length - 1) {
+                    needID = $on.next().attr('id')
+                } else {
+                    needID = $o_item[0].id;
+                }
+                isContinue = true;
+            }
+            isAjax = true;
+        }else {
+            // 多张的时候
+            if($isParent == $Index){
+                isEnd = true;
+                // 获取 on 后面的 id
+                if($on.index() != $o_item.length - 1){
+                    needID = $on.next().attr('id')
+                }else {
+                    needID = $o_item[0].id;
+                }
+            }else if($isParent == 0){
+                isFirst = true;
+                if($on.index() != 0){
+                    needID = $on.prev().attr('id');
+                }else {
+                    needID = $o_item.last().attr('id');
+                }
+            }
+
+            if(dis <= -150 && isEnd == true){
+                isAjax = true;
+                isContinue = true;
+            }
+            if(dis >=  150 && isFirst == true){
+                isAjax = true;
+                isContinue = false
+            }
+        }
+
+    });
+
+   /* $switchover.on('touchmove', function (ev) {
+        var $Index = $switchover.length - 1;
+        var $swiper_all = $('.photo-b').find('.swiper-wrapper');
+        var $o_item = $swiper_all.find('.item');
+        var $on = $swiper_all.find('.on');
+        var nowpoint = event.changedTouches[0].clientX;
+        var dis = nowpoint - startpoint;
+        var $present = $(this).index();
+
+        if($switchover.length == 1){
+            if(dis > 0){
+                if($on.index() != 0){
+                    needID = $on.prev().attr('id');
+                }else {
+                    needID = $o_item.last().attr('id');
+                }
+                isContinue = false;
+            }else if(dis < 0) {
+                if ($on.index() != $o_item.length - 1) {
+                    needID = $on.next().attr('id')
+                } else {
+                    needID = $o_item[0].id;
+                }
+                isContinue = true;
+            }
+            isAjax = true;
+        }else {
+            // 判断 第一张还是最后一张
+            if($present == $Index){
+                isEnd = true;
+                // 获取 on 后面的 id
+                if($on.index() != $o_item.length - 1){
+                    needID = $on.next().attr('id')
+                }else {
+                    needID = $o_item[0].id;
+                }
+            }else if($present == 0){
+                isFirst = true;
+                if($on.index() != 0){
+                    needID = $on.prev().attr('id');
+                }else {
+                    needID = $o_item.last().attr('id');
+                }
+            }
+            if(dis <= -150 && isEnd == true){
+                isAjax = true;
+                isContinue = true;
+            }
+            if(dis >=  150 && isFirst == true){
+                isAjax = true;
+                isContinue = false
+            }
+        }
+    });*/
+
+    $switchover.on('touchend', function (ev) {
+        if(isAjax){
+            if(isContinue){
+                console.log('下一张');
+                console.log('发送ajax');
+                console.log(needID);
+            }else {
+                console.log('上一张');
+                console.log('发送ajax');
+                console.log(needID);
+            }
+        }
+        // 重置
+        startpoint = 0;
+        isEnd = false;
+        isFirst = false;
+        isAjax = false;
+        needID = 0;
+        $isParent = 0;
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="wap-font-scale" content="no">
+    <title>户型图详情页</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/swiper-3.4.0.min.css">
+    <link rel="stylesheet" href="css/module-new.css">
+    <link rel="stylesheet" href="css/house-detail.css"/>
+</head>
+<body>
+<!--顶部app下载入口-->
+<div class="topbar">
+    <div class="fl">
+        <span class="ico ico-kan"></span>
+        <div class="t-text">
+            <h4>侃家找房</h4>
+            <p>做专业的新房搜索</p>
+        </div>
+    </div>
+    <div class="close">
+        <span class="ico ico-close">X</span>
+    </div>
+    <div class="app-download">
+        <a href="#" class="btn-donload">打开APP</a>
+    </div>
+</div>
+<div class="container p-house-type-detail">
+    <div class="header">
+    <!--返回上一页-->
+    <div class="go-back">
+        <a href="#">
+            <span class="ico ico-return">返回上一页</span>
+        </a>
+    </div>
+    <!--切换城市-->
+    <div class="city-change">
+        <a href="#">
+            <span class="text">北京</span>
+            <span class="ico ico-down2">城市切换</span></a>
+    </div>
+    <!--用户行为跳转-->
+    <ul class="u-link">
+        <li class="link-home">
+            <a href="#"><span class="ico ico-home">首页</span></a>
+        </li>
+        <li class="link-ucenter">
+            <a href="#"><span class="ico ico-user">个人中心</span></a>
+        </li>
+    </ul>
+</div>
+    <div class="center">
+        <!--轮播-->
+        <div class="focus focus-house-type">
+            <div class="flicking_con">
+                <div class="flicking_inner">
+                    <a href="javascript:">1</a>
+                    <a href="javascript:">2</a>
+                    <a href="javascript:">3</a>
+                    <a href="javascript:">4</a>
+                    <a href="javascript:">5</a>
+                </div>
+            </div>
+            <div class="main_image">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/img/1.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/img/2.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/img/3.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/img/4.jpg"></a>
+                    </li>
+                </ul>
+                <span id="btn_prev"></span>
+                <span id="btn_next"></span>
+            </div>
+            <div class="focus-num">
+                <span class="ico ico-num"></span>
+                <span class="cur">1</span>/<span class="all">4</span>
+            </div>
+        </div>
+        <div class="row">
+            <!--基本信息-->
+            <div class="mod mod-base">
+                <div class="bd">
+                    <div class="name">
+                        <h3>
+                            开间S5户型
+                            <div class="lb-area">
+                                <span class="lbs lbs-on">在售</span>
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="house-type-lb">
+                        <span class="h-lb">户型方正</span>
+                        <span class="h-lb">面宽充足</span>
+                        <span class="h-lb">南北通透</span>
+                    </div>
+                    <ul class="base-info">
+                        <li class="price-unit">总价：112万元</li>
+                        <li>单价：43000元</li>
+                        <li>朝向：东</li>
+                        <li>面积：建面 56m²</li>
+                        <li>层高：4.2m</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row row-notop">
+            <div class="mod mod-als">
+                <div class="hd">
+                    <h2><span class="name">泰和中央广场</span>户型分析</h2>
+                </div>
+                <div class="bd">
+                    <div class="als">
+                        <div class="til">户型优势：</div>
+                        <div class="text">
+                            <p>1.户型方正，空间利用率高</p>
+                            <p>2.灵动空间，自由设计</p>
+                        </div>
+                    </div>
+                    <div class="als">
+                        <div class="til">户型劣势：</div>
+                        <div class="text">
+                            <p>无明显劣势</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-notop">
+            <!--免费咨询-->
+            <div class="call-area ser-free">
+                <div class="text">
+                    了解最新楼盘和户型详情
+                </div>
+                <div class="btn-area">
+                    <a class="btn-zx" href="tel:400-080-7815">
+                        <span class="ico ico-call">免费咨询</span>
+                        <span class="ico-text">电话沟通</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--户型图放大-->
+    <div class="pop"><img src="./images/img/1.jpg" alt="放大图"></div>
+    <div class="fade"></div>
+    <!--底部悬浮栏-->
+<div class="a-footer-layer">
+    <ul class="a-nav">
+        <li class="a-nav-down">
+            <a href="#">
+                <span class="ico ico-find2">帮您找房</span>
+                <span class="text">帮您找房</span>
+            </a>
+        </li>
+        <li class="a-nav-yy">
+            <a href="#">
+                <span class="ico ico-yy">在线咨询</span>
+                <span class="text">在线咨询</span>
+            </a>
+        </li>
+        <li class="a-nav-call">
+            <a href="#">
+                <span class="ico ico-call">售楼热线</span>
+                <span class="text">售楼热线</span>
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+<script src="js/lib/jquery-2.1.4.min.js"></script>
+<script src="js/lib/jquery.touchSlider.js"></script>
+<script src="js/lib/swiper.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/house-detail.js"></script>
+</body>
+</html>

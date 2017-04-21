@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jwplayer播放器测试</title>
+    <script type="text/javascript" src="js/jwplayer.js"></script>
+    <script type="text/javascript" src="js/jwpsrv.js"></script>
+    <script type="text/javascript" src="../../jq与原生js/jq api/jquery-2.1.1.js"></script>
+    <!-- jwplayer播放器的key是在官方网站注册之后才会给的，没有这个key就不能使用播放器，下面是我申请的key -->
+    <script type="text/javascript">jwplayer.key="W+FSSIJICMeqqi4MQCwmdLePq9iq8HQqiVT5dQ==";</script>
+</head>
+<body>
+
+<div id="container"></div>
+<input type="button" class="player-play" value="http://blog.csdn.net/gaoxuaiguoyi/article/details/播放" />
+<input type="button" class="player-stop" value="http://blog.csdn.net/gaoxuaiguoyi/article/details/停止" />
+<input type="button" class="player-status" value="http://blog.csdn.net/gaoxuaiguoyi/article/details/取得状态" />
+<input type="button" class="player-current" value="http://blog.csdn.net/gaoxuaiguoyi/article/details/当前播放秒数" />
+<input type="button" class="player-goto" value="http://blog.csdn.net/gaoxuaiguoyi/article/details/转到第4秒播放" />
+<input type="button" class="player-length" value="http://blog.csdn.net/gaoxuaiguoyi/article/details/视频时长(秒)" />
+</body>
+<script type="text/javascript">
+    var temp = 1;
+    $(function() {
+        var playerInstance = jwplayer('container');
+        //初始化视频
+        playerInstance.setup({
+            //视频文件来源
+            file: 'http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4',
+            //显示的背景图片
+            image: 'scripts/bg.jpg',
+        });
+        /* playerInstance.on('complete',function(){
+
+         alert("播放完毕");
+
+         });
+         var time = playerInstance.getPosition();
+         //监控播放时间
+         playerInstance.on('time',function(obj){
+         //总时间
+
+         //获取当前的播放时间
+         var time = obj.position;
+         });
+         //点击播放执行的事件
+         playerInstance.on('play',function(){
+
+         var v1 = parseFloat(time.toFixed(0));
+
+
+         });
+         //缓冲
+         playerInstance.on('buffer',function(obj){
+
+         var name = obj.reason;
+         if(name == "loading"){
+
+         alert("正在缓冲");
+         }
+
+         });
+         //在播放之前触发的时间
+         playerInstance.on('playAttempt',function(){
+
+         alert("开始播放了，是否检测登录?");
+
+         });
+         //加载视频的时间
+         playerInstance.on('firstFrame',function(obj){
+
+         alert("加载视频时间:"+(obj.loadTime/1000));
+         });
+
+         playerInstance.on('error',function(){
+
+         alert("视频出错了...");
+         playerInstance.play();
+         });
+         //停止播放
+         $(".player-stop").click(function(){
+
+         playerInstance.pause();
+
+         });
+         //播放
+         $(".player-play").click(function(){
+
+         playerInstance.play();
+         });
+         //获取当前播放的秒数（时间）
+         $(".player-current").click(function(){
+
+         var time = playerInstance.getPosition();
+         alert(time);
+         });
+         //转到多长时间
+         $(".player-goto").click(function(){
+
+         playerInstance.seek(4);
+
+         });*/
+        //获取播放状态
+        $(".player-status").click(function(){
+
+            /**4种状态
+             * 1:没有播放 idle
+             * 2：正在播放playing
+             * 3:停止paused
+             * 4:播放完毕complete
+             */
+            /*alert(playerInstance.getState());
+             alert(playerInstance.duration);*/
+            alert(playerInstance.getDuration());
+        });
+    });
+</script>
+</html>

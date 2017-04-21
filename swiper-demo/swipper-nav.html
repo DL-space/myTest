@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=2.0,minimum-scale=0.42">
+    <title>swipper-nav</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .area-list{
+            width: 100%;
+        }
+        .area-list .area{
+            margin: 0 20px;
+            width: auto;
+            text-align: center;
+        }
+        .t-body{
+            max-height: 110px;
+            overflow: hidden;
+        }
+        .t-body li{
+            list-style: none;
+            border-bottom: solid 1px #eaeaea;
+        }
+        .data-table-open .t-body{
+            max-height: none;
+        }
+    </style>
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper area-list">
+        <div class="area swiper-slide">通州</div>
+        <div class="area swiper-slide">房山</div>
+        <div class="area swiper-slide">大兴</div>
+        <div class="area swiper-slide">昌平</div>
+        <div class="area swiper-slide">朝阳</div>
+        <div class="area swiper-slide">房山南</div>
+        <div class="area swiper-slide">通州</div>
+        <div class="area swiper-slide">呵呵呵</div>
+    </div>
+</div>
+<div class="data-table">
+    <ul class="t-body">
+        <li>第一个</li>
+        <li>第二个</li>
+        <li>第三个</li>
+        <li>第四个</li>
+        <li>第五个</li>
+        <li>第六个</li>
+        <li>第七个</li>
+        <li>第八个</li>
+        <li>第九个</li>
+        <li>第十个</li>
+    </ul>
+    <div class="show-more" data-text="查看更多区域">查看更多区域</div>
+</div>
+<div class="data-table">
+    <ul class="t-body">
+        <li>第一个</li>
+        <li>第二个</li>
+        <li>第三个</li>
+        <li>第四个</li>
+        <li>第五个</li>
+        <li>第六个</li>
+        <li>第七个</li>
+        <li>第八个</li>
+        <li>第九个</li>
+        <li>第十个</li>
+    </ul>
+    <div class="show-more" data-text="查看更多板块">查看更多板块</div>
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: "auto",
+        paginationClickable: true,
+        freeMode: true
+    });
+    var dataTable = $(".data-table");
+    dataTable.each(function () {
+        var that = $(this);
+        var showMore = that.find(".show-more");
+        showMore.on("click",function () {
+            that.toggleClass("data-table-open");
+            if($(this).text() == $(this).attr("data-text")){
+                $(this).text("收起")
+            }else{
+                $(this).text($(this).attr("data-text"))
+            }
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*header*/
+.header {
+    position: relative;
+    height: 1.17rem;
+    line-height: 1.1rem;
+    border-bottom: 1px solid #f2f2f2;
+    overflow: hidden;
+}
+.header .go-back {
+    position: absolute;
+    left: 0.32rem;
+    width: 0.32rem;
+}
+.header .go-back .ico-return {
+    float: left;
+    margin-top: 0.3583rem;
+}
+.u-link {
+    position: absolute;
+    top: 0;
+    right: 0.32rem;
+}
+.u-link li {
+    float: left;
+}
+.u-link li.link-home {
+    margin-right: 0.37rem;
+}
+.u-link li .ico-home {
+    margin-top: 0.3516rem;
+}
+.u-link li .ico-user {
+    margin-top: 0.3585rem;
+}
+.header-hide {
+    display: none;
+}

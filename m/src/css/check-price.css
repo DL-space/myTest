@@ -1,0 +1,17 @@
+.row{
+    padding: 0.18rem 0;
+    margin-bottom: 0.18rem;
+}
+.crumb{
+    width: 100%;
+    overflow: hidden;
+}
+.crumb li{
+    float: left;
+}
+.area-plate .area-list .area{
+    width: auto;
+    margin: 0 0.32rem;
+    text-align: center;
+    font-size: 0.5rem;
+}

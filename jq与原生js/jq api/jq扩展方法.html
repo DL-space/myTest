@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jq扩展方法</title>
+    <script src="jquery-2.1.1.js"></script>
+</head>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        color: #fff;
+    }
+    .green{
+        background-color: #00B7FF;
+    }
+    .red{
+        background-color: #761c19;
+    }
+</style>
+<body>
+<div class="green">
+    绿色区块
+</div>
+<div class="red">
+    红色区块
+</div>
+<script>
+    /*style 只能获取到行间的样式，而获取不到外链样式表的样式。可以使用它currentStyle来获取，使用之前要同步一下个个浏览器*/
+    HTMLElement.prototype.__defineGetter__("currentStyle", function () {
+        return this.ownerDocument.defaultView.getComputedStyle(this, null);
+    });
+    $.fn.extend({
+        showColor:function () {
+            return this.each(function () {
+                alert(this.currentStyle.backgroundColor)
+            })
+        },
+        fangda:function () {
+            return this.each(function () {
+               this.style.width = "500px";
+               this.style.height = "500px";
+            })
+        }
+    });
+    $("div").click(function () {
+        $(this).fangda();
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+/*顶部app下载入口*/
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.3333rem;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 20;
+    overflow: hidden;
+}
+.topbar .fl {
+    padding: .2rem 0 0 .48rem;
+}
+.topbar .ico-kan, .topbar .t-text {
+    float: left;
+    overflow: hidden;
+}
+.topbar .ico-kan {
+    margin-right: .37rem;
+}
+.topbar h4 {
+    font-size: .34rem;
+    color: #fff;
+    height: .42rem;
+    line-height: .42rem;
+    overflow: hidden;
+}
+.topbar .t-text {
+    padding-top: 0.13rem;
+}
+.topbar .t-text p {
+    font-size: .26rem;
+    color: #d1d1d1;
+    height: .32rem;
+    line-height: .32rem;
+    overflow: hidden;
+}
+.topbar .close, .topbar .app-download {
+    float: right;
+}
+.app-download {
+    margin-right: .42rem;
+    padding-top: .26rem;
+}
+.btn-donload {
+    display: block;
+    color: #fff;
+    font-size: .37rem;
+    text-align: center;
+    width: 2.66rem;
+    height: .8rem;
+    line-height: .9rem;
+    background-color: #ff6d6f;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.topbar .close  {
+    width: .3rem;
+    height: .3rem;
+}
+.topbar .ico-close {
+    float: left;
+    cursor: pointer;
+}
+.topbar .close {
+    margin-right: .34rem;
+    padding-top: .516rem;
+}
