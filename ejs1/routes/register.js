@@ -12,10 +12,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/register', function (req, res, next) {
+  //获取前台请求的参数
   var name = req.body.name;
   var sex = req.body.sex;
-  var age = req.body.age; //获取前台请求的参数
-  pool.getConnection(function (err, connection) {
+  var age = req.body.age;
+  pool.getConnection(function (err, connection) {//链接数据库
     //先判断该账号是否存在
     var $sql = "select * from user1 where name=?";
     connection.query($sql, [name], function (err, result) {
@@ -30,9 +31,9 @@ router.post('/register', function (req, res, next) {
           msg: '该账号已存在'
         };
         res.json(result);
-        connection.release();
+        connection.release();//释放连接
       } else {  //账号不存在，可以注册账号
-        // 建立连接，向表中插入值  数据库表名为user-info会出错
+        // 建立连接，向表中插入值
         var $sql1 = "INSERT INTO user1(name, sex, age) VALUES(?,?,?)";
         connection.query($sql1, [name, sex, age], function (err, result) {
           console.log(result);
