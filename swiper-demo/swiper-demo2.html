@@ -63,67 +63,85 @@
     <div class="swiper-container">
         <div class="swiper-wrapper house-type-list">
             <div class="house-type-item swiper-slide">
-                <div class="pic"><a href="#"><img src="./images/img/1.jpg" alt=""></a></div>
-                <div class="text">
-                    <p>3室2厅2卫 39m²</p>
-                    <p>总价：112万元</p>
-                </div>
+                <a href="#">
+                    <div class="pic"><a href="#"><img src="./images/img/1.jpg" alt=""></a></div>
+                    <div class="text">
+                        <p>3室2厅2卫 39m²</p>
+                        <p>总价：112万元</p>
+                    </div>
+                </a>
             </div>
             <div class="house-type-item swiper-slide">
-                <div class="pic"><a href="#"><img src="./images/img/1.jpg" alt=""></a></div>
-                <div class="text">
-                    <p>3室2厅2卫 39m²</p>
-                    <p>总价：112万元</p>
-                </div>
+                <a href="#">
+                    <div class="pic"><a href="#"><img src="./images/img/1.jpg" alt=""></a></div>
+                    <div class="text">
+                        <p>3室2厅2卫 39m²</p>
+                        <p>总价：112万元</p>
+                    </div>
+                </a>
+            </div>
+            <div class="house-type-item swiper-slide" style="background-color: red">
+                <a href="#">
+                    <div class="pic"><a href="#"><img src="./images/img/1.jpg" alt=""></a></div>
+                    <div class="text">
+                        <p>3室2厅2卫 39m²</p>
+                        <p>总价：112万元</p>
+                    </div>
+                </a>
             </div>
             <div class="house-type-item swiper-slide">
-                <div class="pic"><a href="#"><img src="./images/img/1.jpg" alt=""></a></div>
-                <div class="text">
-                    <p>3室2厅2卫 39m²</p>
-                    <p>总价：112万元</p>
-                </div>
+                <a href="#">
+                    <div class="pic"><a href="#"><img src="./images/img/1.jpg" alt=""></a></div>
+                    <div class="text">
+                        <p>3室2厅2卫 39m²</p>
+                        <p>总价：112万元</p>
+                    </div>
+                </a>
             </div>
             <div class="house-type-item swiper-slide">
-                <div class="pic"><a href="#"><img src="./images/img/1.jpg" alt=""></a></div>
-                <div class="text">
-                    <p>3室2厅2卫 39m²</p>
-                    <p>总价：112万元</p>
-                </div>
+                <a href="#">
+                    <div class="pic"><a href="#"><img src="./images/img/1.jpg" alt=""></a></div>
+                    <div class="text">
+                        <p>3室2厅2卫 39m²</p>
+                        <p>总价：112万元</p>
+                    </div>
+                </a>
             </div>
             <div class="house-type-item swiper-slide">
-                <div class="pic"><a href="#"><img src="./images/img/1.jpg" alt=""></a></div>
-                <div class="text">
-                    <p>3室2厅2卫 39m²</p>
-                    <p>总价：112万元</p>
-                </div>
+                <a href="#">
+                    <div class="pic"><a href="#"><img src="./images/img/1.jpg" alt=""></a></div>
+                    <div class="text">
+                        <p>3室2厅2卫 39m²</p>
+                        <p>总价：112万元</p>
+                    </div>
+                </a>
             </div>
             <div class="house-type-item swiper-slide">
-                <div class="pic"><a href="#"><img src="./images/img/1.jpg" alt=""></a></div>
-                <div class="text">
-                    <p>3室2厅2卫 39m²</p>
-                    <p>总价：112万元</p>
-                </div>
+                <a href="#">
+                    <div class="pic"><a href="#"><img src="./images/img/1.jpg" alt=""></a></div>
+                    <div class="text">
+                        <p>3室2厅2卫 39m²</p>
+                        <p>总价：112万元</p>
+                    </div>
+                </a>
             </div>
             <div class="house-type-item swiper-slide">
-                <div class="pic"><a href="#"><img src="./images/img/1.jpg" alt=""></a></div>
-                <div class="text">
-                    <p>3室2厅2卫 39m²</p>
-                    <p>总价：112万元</p>
-                </div>
+                <a href="#">
+                    <div class="pic"><a href="#"><img src="./images/img/1.jpg" alt=""></a></div>
+                    <div class="text">
+                        <p>3室2厅2卫 39m²</p>
+                        <p>总价：112万元</p>
+                    </div>
+                </a>
             </div>
             <div class="house-type-item swiper-slide">
-                <div class="pic"><a href="#"><img src="./images/img/1.jpg" alt=""></a></div>
-                <div class="text">
-                    <p>3室2厅2卫 39m²</p>
-                    <p>总价：112万元</p>
-                </div>
-            </div>
-            <div class="house-type-item swiper-slide">
-                <div class="pic"><a href="#"><img src="./images/img/1.jpg" alt=""></a></div>
-                <div class="text">
-                    <p>3室2厅2卫 39m²</p>
-                    <p>总价：112万元</p>
-                </div>
+                <a href="#">
+                    <div class="pic"><a href="#"><img src="./images/img/1.jpg" alt=""></a></div>
+                    <div class="text">
+                        <p>3室2厅2卫 39m²</p>
+                        <p>总价：112万元</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -145,6 +163,15 @@
         $(document).on("click",".aaa,.bbb",function () {
             var that = $(this);
             alert(that[0].className);
+        })
+        var aa = $(".house-type-item")
+        aa.each(function () {
+            var that = $(this)
+            that.on("click",function () {
+                var n = that.parents(".house-type-list").attr("style")
+                //var n = "transition-duration: 0ms; transform: translate3d(-630.499px, 0px, 0px);"
+                that.parents(".house-type-list").attr("style",n)
+            })
         })
     </script>
 </body>
