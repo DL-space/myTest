@@ -1,0 +1,135 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+}
+ul, li, ol {
+    list-style: none;
+}
+body {
+    background: url("../images/bg-appdownload-footer.png") center bottom no-repeat;
+    background-size: 100%;
+}
+.container {
+    position: relative;
+    width: 10rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.header {
+    height: 1.6rem;
+    padding: 1.066rem 0 0 2.4666rem;
+    overflow: hidden;
+}
+.app-donwload-pic {
+    float: left;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 0.267rem;
+    overflow: hidden;
+}
+.header .text {
+    color: #48b3e2;
+    overflow: hidden;
+}
+.header .text h4 {
+    font-size: 0.58rem;
+    font-weight: normal;
+    height: 0.82rem;
+    line-height: 0.82rem;
+    margin-bottom: 0.3rem;
+    overflow: hidden;
+}
+.header .text p {
+    font-size: 0.4rem;
+    height: 0.56rem;
+    line-height: 0.56rem;
+    overflow: hidden;
+}
+.btn-area {
+    text-align: center;
+    padding: 1.0666rem 0;
+}
+.btn-appdownload {
+    display: block;
+    font-size: 0.4266rem;
+    color: #fff;
+    width: 5.33rem;
+    height: 1.1733rem;
+    line-height: 1.1733rem;
+    margin: 0 auto;
+    background: #48b3e2;
+    overflow: hidden;
+}
+.center {
+    height: 8.8rem;
+    margin-bottom: 0.2rem;
+    background: url("../images/bg-appdownload-main.png") 0 0 no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+.footer {
+    text-align: center;
+    height: 1.56rem;
+    padding-top: 1.72rem;
+    overflow: hidden;
+}
+.footer .copyright {
+    color: #48b3e2;
+    font-size: 0.3466rem;
+}
+.footer .copyright .website {
+    font-size: 0.2933rem;
+    padding-top: 0.16rem;
+}
+/*2017.2.13 分享提示承接页 begin*/
+.share {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.8);
+}
+.ico-sharea {
+    position: fixed;
+    top: 1.13rem;
+    right: 0.8rem;
+    width: 2.25rem;
+    height: 1.81rem;
+    background: url("../images/ico-share.png") 0 0 no-repeat;
+    background-size: 100%;
+}
+.share-text {
+    position: fixed;
+    top: 3.76rem;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+.share-text p {
+    font-size: 0.4rem;
+    height: 0.56rem;
+    line-height: 0.56rem;
+    margin-bottom: 0.2667rem;
+}
+.share-text p .b {
+    font-size: 0.43rem;
+}
+.ellipsis {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.533rem;
+    height: 0.1333rem;
+    margin-left: 0.1rem;
+    background: url("../images/ico-ell.png") 0 0 no-repeat;
+    background-size: 100%;
+}
+.share-android .ellipsis {
+    width: 0.08rem;
+    height: 0.32rem;
+    background-image: url("../images/ico-ell2.png");
+    background-size: 100%;
+}
+/*2017.2.13 分享提示承接页 end*/

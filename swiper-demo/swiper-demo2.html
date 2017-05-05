@@ -44,6 +44,9 @@
         }
     </style>-->
     <style>
+        body{
+            height: 3000px;
+        }
         .house-type-item{
             width: 290px;
             background-color: #fff;
@@ -156,7 +159,8 @@
             pagination: '.swiper-pagination',
             slidesPerView: "auto",
             paginationClickable: true,
-            freeMode: true
+            freeMode: true,
+            initialSlide: 2
         });
     </script>
     <script>
@@ -165,13 +169,34 @@
             alert(that[0].className);
         })
         var aa = $(".house-type-item")
-        aa.each(function () {
+        /*aa.each(function () {
             var that = $(this)
             that.on("click",function () {
-                var n = that.parents(".house-type-list").attr("style")
-                //var n = "transition-duration: 0ms; transform: translate3d(-630.499px, 0px, 0px);"
-                that.parents(".house-type-list").attr("style",n)
+                //var n = that.parents(".house-type-list").attr("style")
+               /!* var n = "transition-duration: 0ms; transform: translate3d(-630.499px, 0px, 0px);"
+                that.parents(".house-type-list").attr("style",n)*!/
+
+                alert(that.index())
             })
+        })*/
+    </script>
+    <script>
+        //初始化swiper
+        var index=0;
+        if(sessionStorage.getItem("index")){
+            index=sessionStorage.getItem("index");
+        }
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: "auto",
+            paginationClickable: true,
+            freeMode: true,
+            initialSlide: index,//设定初始化时slide的索引
+        });
+        //点击页面链接跳转前保存导航当前的index值
+        $("a").bind("click",function(){
+            var i= $(".swiper-slide-active").index();
+            sessionStorage.setItem("index",i);
         })
     </script>
 </body>

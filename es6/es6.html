@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>es6与原来写法对比</title>
+</head>
+<body>
+<button id="btn-old">老按钮</button>
+<button id="btn-new">新按钮</button>
+<script>
+    /*es5写法*/
+    function old() {
+        var btn = document.getElementById("btn-old");
+        btn.onclick = function () {
+            alert("老方法点击");
+            alert(this)
+        }
+    }
+    /*es6 箭头函数*/
+    let nw = (a) =>{
+        let btn = document.getElementById("btn-new");
+        btn.onclick = () =>{
+            alert(a);
+            alert(this)
+        }
+    };
+    old();
+    nw("新方法");
+
+    /*箭头函数*/
+    var obj = {
+        birth: 1990,
+        getAge: function () {
+            var b = this.birth; // 1990
+            var fn = () => new Date().getFullYear() - this.birth; // this指向obj对象
+            return fn();
+        }
+    };
+    var a = obj.getAge();
+    console.log(a);
+</script>
+</body>
+</html>
