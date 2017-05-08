@@ -66,7 +66,7 @@
 			<input id="demo1" type="text" readonly="" name="input_date" placeholder="日期选择特效" data-lcalendar="2011-01-1,2019-12-31" />
 		</div>
 		<div>
-			<input id="demo2" type="text" readonly="" name="input_date" placeholder="日期和时间选择特效" data-lcalendar="2010-01-11,2019-12-31" />
+			<input id="demo2" type="text" readonly="" name="input_date" placeholder="日期和时间选择特效" data-lcalendar="2016-01-11,2017-12-31" />
 		</div>
 		<div>
 			<input id="demo3" type="text" readonly="" name="input_date" placeholder="时间选择特效" />
@@ -74,11 +74,12 @@
 		<br />
 		<h1>原生时间对象</h1>
 		<div>
-			<input type="date"  name="input_date" placeholder="时间选择特效" />
+			<input type="date"  name="input_date" placeholder="时间选择特效" data-lcalendar="2011-01-1,2019-12-31"/>
 			<input type="datetime"  name="input_date" placeholder="时间选择特效" />
-			<input type="datetime-local" name="input_date" placeholder="时间选择特效" />
+			<input type="datetime-local" name="input_date" placeholder="时间选择特效" data-lcalendar="2016-01-11,2017-12-31"/>
 		</div>
 		<script>
+			console.log(22222);
 			var calendar = new lCalendar();
 			calendar.init({
 				'trigger': '#demo1',

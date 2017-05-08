@@ -28,6 +28,7 @@
 <div id="app-6">
     <p>{{ message }}</p>
     <input v-model="message">
+    <div v-if="seen">你能看见我</div>
 </div>
 <script>
     var app = new Vue({
@@ -70,7 +71,8 @@
     var app6 = new Vue({
         el: '#app-6',
         data: {
-            message: 'Hello Vue!'
+            message: 'Hello Vue!',
+            seen: true
         }
     });
     /*数据驱动*/

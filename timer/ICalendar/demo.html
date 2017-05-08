@@ -6,7 +6,7 @@
     <title>lCalendar纯原生js日期时间选择</title>
 
     <script src="js/lCalendar.js"></script>
-
+    <script src="js/jquery-2.1.0.min.js"></script>
     <link rel="stylesheet" href="css/lCalendar.css">
     <style type="text/css">
         * {
@@ -57,21 +57,21 @@
 <body>
 <h1>lCalendar纯原生js日期时间选择</h1>
 <div>
-    <input id="demo1" type="text" readonly="" name="input_date" placeholder="日期选择特效" data-lcalendar="2011-01-1,2019-12-31" />
+    <input id="demo0" class="aa" type="text" readonly="" name="input_date" placeholder="日期选择特效" data-lcalendar="2011-01-1,2019-12-31" />
 </div>
 <div>
-    <input id="demo2" type="text" readonly="" name="input_date" placeholder="日期和时间选择特效" data-lcalendar="2010-01-11,2019-12-31" />
+    <input id="demo1" class="aa" type="text" readonly="" name="input_date" placeholder="日期和时间选择特效" data-lcalendar="2010-01-11,2019-12-31" />
 </div>
 <div>
-    <input id="demo3" type="text" readonly="" name="input_date" placeholder="时间选择特效" />
+    <input id="demo2" class="aa" type="text" readonly="" name="input_date" placeholder="时间选择特效" />
 </div>
 <script>
-    var calendar = new lCalendar();
+    /*var calendar = new lCalendar();
     calendar.init({
-        'trigger': '#demo1',
+        'trigger': '.aa',
         'type': 'date'
-    });
-    var calendardatetime = new lCalendar();
+    });*/
+    /*var calendardatetime = new lCalendar();
     calendardatetime.init({
         'trigger': '#demo2',
         'type': 'datetime'
@@ -80,7 +80,17 @@
     calendartime.init({
         'trigger': '#demo3',
         'type': 'time'
-    });
+    });*/
+    var aa = $(".aa");
+    for(var i = 0;i<aa.length;i++){
+        aa.eq(i).addClass("aa"+i);
+        var cc = '.aa'+i;
+        var calendar = new lCalendar();
+        calendar.init({
+            'trigger': cc,
+            'type': 'date'
+        });
+    }
 </script>
 </body>
 

@@ -76,15 +76,19 @@ window.lCalendar = (function() {
 				lcalendar_cancel.addEventListener('touchstart', closeMobileCalendar);
 				var lcalendar_finish = _self.gearDate.querySelector(".lcalendar_finish");
 				lcalendar_finish.addEventListener('touchstart', finishMobileDate);
+
 				var date_yy = _self.gearDate.querySelector(".date_yy");
 				var date_mm = _self.gearDate.querySelector(".date_mm");
 				var date_dd = _self.gearDate.querySelector(".date_dd");
+
 				date_yy.addEventListener('touchstart', gearTouchStart);
 				date_mm.addEventListener('touchstart', gearTouchStart);
 				date_dd.addEventListener('touchstart', gearTouchStart);
+
 				date_yy.addEventListener('touchmove', gearTouchMove);
 				date_mm.addEventListener('touchmove', gearTouchMove);
 				date_dd.addEventListener('touchmove', gearTouchMove);
+
 				date_yy.addEventListener('touchend', gearTouchEnd);
 				date_mm.addEventListener('touchend', gearTouchEnd);
 				date_dd.addEventListener('touchend', gearTouchEnd);
