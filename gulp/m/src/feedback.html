@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="wap-font-scale" content="no">
+    <title>楼盘详情页</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/swiper-3.4.0.min.css">
+    <link rel="stylesheet" href="css/module-new.css">
+    <link rel="stylesheet" href="css/feedback.css"/>
+</head>
+<body>
+@@include("./app/topbar/topbar.html")
+<div class="container">
+    @@include("./app/header/header.html")
+    <div class="center">
+        <div class="row">
+            <div class="feedback">
+                <ul class="feedback-form">
+                    <li>
+                        <div class="label">您的联系方式</div>
+                        <div class="ipt-area">
+                            <input class="ipt" type="text" placeholder="请输入正确手机号"/>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="label">问题描述</div>
+                        <div class="ipt-area">
+                            <textarea class="ipt" placeholder="请输入要反馈的问题"></textarea>
+                        </div>
+                    </li>
+                    <li class="v-code">
+                        <div class="label">验证码<span class="require">*</span></div>
+                        <div class="ipt-area">
+                            <input class="ipt" type="text"/>
+
+                            <div class="v-pic"><img src="./images/img-vcode.png" alt=""/></div>
+                            <a class="change-v-code" href="#">换一张</a>
+                        </div>
+                        <div class="error-tips">验证码输入错误</div>
+                    </li>
+                </ul>
+                <div class="btn-area">
+                    <a class="btn btn-confirm" href="#">提交</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/lib/jquery-2.1.4.min.js"></script>
+<script src="js/lib/jquery.touchSlider.js"></script>
+<script src="js/lib/swiper.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/house-detail.js"></script>
+</body>
+</html>

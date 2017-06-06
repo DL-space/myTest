@@ -1,0 +1,75 @@
+.row{
+    margin-bottom: 0.26rem;
+}
+.p-map .center{
+    padding: 0 0.2rem 1.15rem 0.2rem;
+}
+/*map-mod*/
+.map-mod .tit{
+    height: 0.8rem;
+    line-height: 0.8rem;
+    padding: 0.1rem 0;
+    border-bottom: 1px dashed #ddd;
+    overflow: hidden;
+}
+.map-mod .tit h3{
+    font-size: 0.36rem;
+}
+.map-mod .con{
+    padding-top: 0.1rem;
+}
+.map-mod a{
+    display: inline-block;
+    color: #0074c1;
+    font-family: "微软雅黑";
+    font-size: 0.36rem;
+    line-height: 0.8rem;
+    margin-right: 0.3rem;
+}
+/*map-box*/
+.map-box{
+    clear: both;
+    overflow: hidden;
+}
+.map-box .hd{
+    height: 1.2rem;
+    line-height: 1.2rem;
+    margin-bottom: 0.3rem;
+    overflow: hidden;
+}
+.map-box .hd h2,.map-box .hd h2 a{
+    color: #0074c1;
+}
+.map-box .hd h2{
+    font-size: 0.43rem;
+    font-family: "微软雅黑";
+    margin: 0;
+}
+.map-box .bd{
+    padding: 0.42rem;
+    border: 1px solid #ddd;
+}
+.map-cons,.map-trans{
+    clear: none;
+    float: left;
+}
+.map-cons{
+    margin-right: 0.3rem;
+}
+/*面包屑*/
+.crumb {
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.38rem;
+    color: #a8a8a8;
+    border-bottom: 1px solid #eaeaea;
+}
+.crumb h1{
+    display: inline-block;
+    font-size: 0.38rem;
+    font-weight: normal;
+}
+/*关于我们*/
+.map-about .map-mod .con{
+    padding-top: 0;
+}

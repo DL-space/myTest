@@ -1,0 +1,546 @@
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+}
+/*去掉a的下划线*/
+a:link {
+    text-decoration: none;
+}
+@media screen and (min-width: 750px) {
+    .container {
+        width: 10rem;
+        margin: 0 auto;
+    }
+}
+.container {
+    padding: 1.3333rem 0 0 0;
+    overflow: hidden;
+}
+.center {
+    padding-bottom: 1.15rem;
+    overflow: hidden;
+}
+/*header*/
+.header {
+    text-align: center;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    padding: 0 .32rem;
+    background: #fff;
+    overflow: hidden;
+}
+.logo h1, .logo img {
+    width: 1.28rem;
+    height: .72rem;
+}
+.logo {
+    float: left;
+    margin-right: .48rem;
+    padding-top: .2rem;
+}
+/*case*/
+.case .hd {
+    margin-bottom: .54rem;
+    padding: 0 .32rem;
+}
+.case .hd h2 {
+    font-size: .48rem;
+    height: .64rem;
+    line-height: .64rem;
+    overflow: hidden;
+    font-weight: normal;
+}
+/*搜索*/
+.search-wrap {
+    padding: .26rem .32rem;
+    background: #f2f2f2;
+}
+.search {
+    height: .93rem;
+    line-height: .93rem;
+    padding-left: .37rem;
+    padding-right: 0;
+    border-radius: 2px;
+}
+.search .btn-area {
+    position: relative;
+    float: right;
+    height: .53rem;
+    padding: 0 .34rem;
+    margin: .2rem 0 0 0;
+    border-left: solid 1px #e5e5e5;
+    overflow: hidden;
+}
+.search .btn-search {
+    float: left;
+    text-indent: -9999px;
+    width: .39rem;
+    height: .39rem;
+    margin-top: .07rem;
+    padding: 0;
+    background: url("../images/ico-find7.png") 0 0 no-repeat;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.search .ipt-area {
+    float: left;
+    width: 7.73rem;
+    margin-right: 0;
+    overflow: hidden;
+}
+.search, .search .ipt {
+    background: #fff;
+    overflow: hidden;
+    opacity: 0.92;
+    font-size: .32rem;
+}
+.search .ipt {
+    width: 100%;
+    height: 0.93rem;
+    border: none;
+}
+/*切换城市*/
+.city-change {
+    float: left;
+    font-size: .34rem;
+    height: .4rem;
+    line-height: .4rem;
+    margin-top: .38rem;
+    overflow: hidden;
+}
+.city-change a {
+    font-weight: normal;
+    color: #333;
+    padding-right: 0;
+}
+.city-change .ico-trg {
+    float: right;
+    width: .26rem;
+    height: .13rem;
+    margin: .16rem 0 0 .13rem;
+    background: url("../images/ico-triangle2.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+/*用户中心*/
+.user {
+    float: right;
+    padding-top: .23rem;
+    font-size: .24rem;
+}
+.user li {
+    float: left;
+}
+.user li span {
+    display: block;
+}
+.user li .text {
+    color: #666;
+    height: .4rem;
+    line-height: .4rem;
+    overflow: hidden;
+}
+.user li.record {
+    margin-right: .26rem;
+}
+/*ico*/
+.ico {
+    display: inline-block;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+.ico-record, .ico-ucenter {
+    margin: 0 auto;
+}
+.ico-record {
+    width: .32rem;
+    height: .37rem;
+    background: url("../images/ico-record2.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.ico-ucenter {
+    width: .35rem;
+    height: .37rem;
+    background: url("../images/ico-ucenter2.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+/*底部悬浮栏*/
+.a-footer-layer {
+    position: fixed;
+    bottom: 0;
+    width: 10rem;
+}
+.a-footer-layer li {
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    height: 1.2rem;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+.a-footer-layer li .ico {
+    vertical-align: sub;
+    margin-right: .1rem;
+}
+.a-footer-layer li a {
+    display: block;
+    font-size: .37rem;
+    line-height: 1.2rem;
+}
+.a-footer-layer li.a-nav-att {
+    font-size: 0.24rem;
+    text-align: center;
+    color: #888;
+    width: 1.16rem;
+    border-top: 1px solid #deddde;
+    border-bottom: 1px solid #deddde;
+}
+.a-footer-layer .ico-att {
+    display: block;
+    width: 0.42rem;
+    height: 0.33rem;
+    margin: 0.26rem auto 0;
+    background: url("../images/ico-att2.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.a-footer-layer li.a-nav-down {
+    width: 2.64rem;
+    border: 0;
+}
+.a-footer-layer li.a-nav-down .text {
+    color: #666;
+}
+.a-footer-layer li.a-nav-down .ico-down {
+    width: 0.38rem;
+    height: 0.37rem;
+    vertical-align: top;
+    margin: .38rem .08rem 0 0;
+    background: url("../images/ico-find2.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.a-footer-layer li.a-nav-yy, .a-footer-layer li.a-nav-call {
+    color: #fff;
+    width: 3.68rem;
+}
+.a-footer-layer li.a-nav-yy {
+    background: #48b3e2;
+}
+.a-footer-layer li.a-nav-yy, .a-footer-layer li.a-nav-yy a, .a-footer-layer li.a-nav-call, .a-footer-layer li.a-nav-call a {
+    color: #fff;
+}
+.ico-yy {
+    width: 0.4rem;
+    height: 0.43rem;
+    background: url("../images/ico-online2.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.a-footer-layer li.a-nav-call {
+    background: #ff6d6f;
+}
+.ico-call, .ico-home {
+    width: 0.4rem;
+}
+.ico-call {
+    height: 0.4rem;
+    background: url("../images/ico-phone9.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.ico-home {
+    height: 0.3733rem;
+    background: url("../images/ico-home.png") 0 0 no-repeat;
+    background-size: 100%;
+}
+/*顶部app下载入口*/
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.3333rem;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 20;
+    overflow: hidden;
+}
+.topbar .fl {
+    padding: .2rem 0 0 .48rem;
+}
+.topbar .ico-kan, .topbar .t-text {
+    float: left;
+    overflow: hidden;
+}
+.topbar .ico-kan {
+    width: .93rem;
+    height: .93rem;
+    margin-right: .37rem;
+    background-image: url("../images/ico-kan.png");
+    background-size: 100%;
+}
+.topbar h4 {
+    font-size: .34rem;
+    color: #fff;
+    height: .42rem;
+    line-height: .42rem;
+    overflow: hidden;
+}
+.topbar .t-text {
+    padding-top: 0.13rem;
+}
+.topbar .t-text p {
+    font-size: .26rem;
+    color: #d1d1d1;
+    height: .32rem;
+    line-height: .32rem;
+    overflow: hidden;
+}
+.topbar .close, .topbar .app-download {
+    float: right;
+}
+.app-download {
+    margin-right: .42rem;
+    padding-top: .26rem;
+}
+.btn-donload {
+    display: block;
+    color: #fff;
+    font-size: .37rem;
+    text-align: center;
+    width: 2.66rem;
+    height: .8rem;
+    line-height: .9rem;
+    background-color: #ff6d6f;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.topbar .close, .topbar .ico-close {
+    width: .3rem;
+    height: .3rem;
+}
+.topbar .ico-close {
+    float: left;
+    cursor: pointer;
+    background-image: url("../images/ico-close.png");
+    background-size: 100% 100%;
+}
+.topbar .close {
+    margin-right: .34rem;
+    padding-top: .516rem;
+}
+/*以前公用样式*/
+
+input, textarea {
+    -webkit-appearance: none;
+}
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+}
+/*item-new*/
+.item-new {
+    position: relative;
+    padding: .53rem .32rem;
+    background-color: #fff;
+    opacity: 1;
+    overflow: hidden;
+    border-bottom: 1px solid #e5e5e5;
+}
+.item-new:hover {
+    background-color: #f5f5f5;
+}
+.item-new .img-area {
+    float: left;
+    margin-right: .32rem;
+    overflow: hidden;
+}
+.item-new .img-area img {
+    width: 2.66rem;
+    height: 2.15rem;
+}
+.item-new .des {
+    float: left;
+    width: 6.36rem;
+}
+.item-new .des .tr {
+    margin-bottom: .19rem;
+    overflow: hidden;
+}
+.item-new .des .tr:last-child {
+    margin-bottom: 0;
+}
+.item-new .des h3 {
+    float: left;
+    font-size: .4rem;
+    line-height: .45rem;
+    max-width: 4.5rem;
+    margin-right: .35rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.item-new .des .status {
+    float: left;
+    height: .48rem;
+    line-height: .48rem;
+    overflow: hidden;
+}
+.item-new .des .status .scale {
+    display: block;
+    text-align: center;
+    font-size: .28rem;
+    color: #48b3e2;
+    height: .42rem;
+    line-height: .4rem;
+    padding: .0rem 0.12rem;
+    border: solid 1px #48b3e2;
+    box-sizing: border-box;
+    border-radius: 5rem;
+}
+[data-type="1"] .item-new .des .status .scale {
+    line-height: .44rem;
+}
+.item-new .des .status .scale-none {
+    color: #ccc;
+    border: solid 1px #ccc;
+}
+.item-new .place {
+    float: left;
+    height: .45rem;
+    line-height: .45rem;
+    font-size: .29rem;
+    color: #666;
+    max-width: 3.2rem;
+    overflow: hidden;
+}
+.item-new .price {
+    float: right;
+    height: .45rem;
+    line-height: .45rem;
+    font-size: .34rem;
+    color: #ff6d6f;
+    overflow: hidden;
+    font-weight: bold;
+}
+.item-new .tag {
+    float: left;
+    margin-right: .12rem;
+    height: .33rem;
+    line-height: .33rem;
+    color: #fff;
+    font-size: .24rem;
+    padding: 0 .1rem;
+    border-radius: 2px;
+    overflow: hidden;
+}
+[data-type="1"] .item-new .tag {
+    line-height: .39rem;
+}
+.item-new .tag-review {
+    background-color: #7cccf0;
+}
+.item-new .tag-hot {
+    background-color: #f88d90;
+}
+.item-new .tag .ico {
+    text-indent: -9999px;
+    width: .19rem;
+    height: .19rem;
+}
+[data-type="1"] .item-new .tag .ico {
+    margin-bottom: .01rem;
+}
+.item-new .tag .ico-star {
+    margin-right: .05rem;
+    background: url("../images/ico-star.png") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-top: .07rem;
+}
+.item-new .tag .ico-hot {
+    margin-right: .12rem;
+    background: url("../images/ico-hot.png") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-top: .07rem;
+}
+.item-new .des .text {
+    float: left;
+    font-size: .29rem;
+    height: .35rem;
+    line-height: .38rem;
+    color: #666;
+    max-width: 4.2rem;
+    overflow: hidden;
+}
+/*推荐楼盘*/
+.case-groom .hd {
+    margin-bottom: 0.1rem;
+}
+.case-groom .more {
+    text-align: center;
+    height: 1.41rem;
+    line-height: 1.41rem;
+    font-size: .34rem;
+    color: #666;
+    overflow: hidden;
+}
+.case-groom .more a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #666;
+}
+/*404*/
+.p404 {
+    padding-top: 3.13rem;
+}
+.p404 .tips-pic {
+    width: 4.52rem;
+    height: 4.1rem;
+    margin: 0 auto 0.73rem;
+    background: url("../images/bg-404.png") 0 0 no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+.p404 .result-tips {
+    margin-bottom: 4.2rem;
+}
+.p404 .result-tips p {
+    font-size: 0.35rem;
+    text-align: center;
+}
+.p404 .btn-area {
+    clear: both;
+    width: 8.9rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.p404 .btn-area .ico, .p404 .btn-area .btn {
+    float: left;
+}
+.p404 .btn {
+    box-sizing: border-box;
+    font-size: 0.3733rem;
+    color: #fff;
+    width: 4.26rem;
+    height: 0.9333rem;
+    line-height: 0.9333rem;
+    padding-left: 1.1rem;
+    background-color: #48b3e2;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.p404 .btn-area .btn-call {
+    float: left;
+}
+.p404 .btn-area .btn-home {
+    float: right;
+    background-color: #ff6d6f;
+}
+.p404 .btn-area .ico-call {
+    margin: 0.266rem 0.2rem 0 0;
+}
+.p404 .btn-area .ico-home {
+    margin: 0.266rem 0.2rem 0 0;
+}

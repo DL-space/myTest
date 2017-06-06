@@ -1,0 +1,175 @@
+/*图册列表页*/
+.header {
+    border-bottom: 0;
+}
+.row {
+    margin-bottom: 0.2667rem;
+}
+.photo-nav {
+    height: 0.8rem;
+    margin-bottom: 0.4rem;
+    padding: 0 0.32rem;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+.photo-nav-wrap {
+    width: 100%;
+    overflow: hidden;
+}
+.photo-nav-wrap li {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    overflow: hidden;
+    float: left;
+    margin-right: .6rem;
+}
+.photo-nav-wrap .last-wrap {
+    margin-right: 0;
+}
+
+.photo-nav-wrap li a {
+    font-size: 0.34rem;
+}
+.case .hd {
+    margin-bottom: 0.4rem;
+}
+.case .hd h2 {
+    color: #666;
+    font-size: 0.35rem;
+    height: 0.61rem;
+    line-height: 0.6rem;
+}
+.photo-list {
+    padding-left: 0.32rem;
+    overflow: hidden;
+}
+.photo-list li,.photo-list li img {
+    width: 3.0266rem;
+    height: 2.32rem;
+    overflow: hidden;
+}
+.photo-list li {
+    float: left;
+    margin: 0 0.1333rem 0.1333rem 0;
+}
+/*图册详情页*/
+.photoBox{
+    display:block;
+    z-index: 1067 ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #989898;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+.photoBox .photo-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color:#2C2C2C;
+}
+.photoBox .swiper-container .swiper-wrapper .item{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.photoBox .swiper-container .swiper-wrapper .item img{
+    display: block;
+    max-width: 10rem;
+    max-height: 100%;
+    margin: auto;
+}
+.photoBox .photo-t .swiper-pagination-fraction{
+    width: 100%;
+    font-size: .4rem;
+    text-align: center;
+    color: #888;
+}
+.photoBox .photo-t{
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    height:1.06rem;
+    line-height: 1.06rem;
+    background: #373737;
+}
+.photoBox .photo-t .top-l{
+    position: absolute;
+    left: .32rem;
+}
+.photoBox .photo-t .top-l a{
+    color: #888;
+}
+.photoBox .photo-t .top-l img{
+    display: block;
+    width: 100%;
+}
+.photoBox .photo-t .t-center{
+    font-size: .4rem;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.photoBox .photo-t .top-r{
+    position: absolute;
+    right: .333rem;
+    top: 0;
+}
+.photoBox .photo-t .top-r a{
+    color: #888;
+}
+.photo-b{
+    position: fixed;
+    height: 1.06rem;
+    line-height: 1.06rem;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #373737;
+    overflow: hidden;
+    z-index: 1;
+}
+.photo-b .swiper-slide{
+    text-align: center;
+}
+/*选定时候的样式*/
+.photoBox .photo-b .swiper-wrapper .on a{
+    color: #fff!important;
+}
+.photoBox .photo-b .swiper-wrapper .item a {
+    color: #888;
+}
+.photoBox .photo-b .swiper-wrapper .item a:link {
+    text-decoration: none;
+}
+.photoBox{
+    width: 100%;
+    height: 100%;
+}
+.photo-c{
+    width: 100%;
+    height: 100%;
+}
+.swiper-container-c{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}

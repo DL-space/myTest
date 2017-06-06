@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="wap-font-scale" content="no">
+    <title>楼盘详情页</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/swiper-3.4.0.min.css">
+    <link rel="stylesheet" href="css/module-new.css">
+    <link rel="stylesheet" href="css/house-detail.css"/>
+</head>
+<body>
+<!--顶部app下载入口-->
+<div class="topbar topbar-juli">
+    <div class="fl">
+        <span class="ico ico-kan"></span>
+        <div class="t-text">
+            <h4>居理新房</h4>
+            <p>买新房 · 可以更专业</p>
+        </div>
+    </div>
+    <div class="close">
+        <span class="ico ico-close">X</span>
+    </div>
+    <div class="app-download">
+        <a href="#" class="btn-donload">打开APP</a>
+    </div>
+</div>
+<div class="container p-house-detail">
+    <div class="header">
+    <!--返回上一页-->
+    <div class="go-back">
+        <a href="#">
+            <span class="ico ico-return">返回上一页</span>
+        </a>
+    </div>
+    <!--切换城市-->
+    <div class="city-change">
+        <a href="#">
+            <span class="text">北京</span>
+            <span class="ico ico-down2">城市切换</span></a>
+    </div>
+    <!--用户行为跳转-->
+    <ul class="u-link">
+        <li class="link-home">
+            <a href="#"><span class="ico ico-home">首页</span></a>
+        </li>
+        <li class="link-ucenter">
+            <a href="#"><span class="ico ico-user">个人中心</span></a>
+        </li>
+    </ul>
+</div>
+    <div class="center">
+        <!--轮播 -->
+        <div class="focus focu-s">
+            <div class="flicking_con">
+                <div class="flicking_inner">
+                    <a href="javascript:">1</a>
+                    <a href="javascript:">2</a>
+                    <a href="javascript:">3</a>
+                    <a href="javascript:">4</a>
+                </div>
+            </div>
+            <div class="main_image">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)"><img src="images/img/1.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><img src="images/img/2.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><img src="images/img/3.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><img src="images/img/4.jpg"></a>
+                    </li>
+                </ul>
+                <span id="btn_prev"></span>
+                <span id="btn_next"></span>
+            </div>
+            <div class="focus-num">
+                <span class="ico ico-num"></span>
+                <span class="cur">1</span>/<span class="all">4</span>
+            </div>
+        </div>
+        <div class="row">
+            <!--基本信息-->
+            <div class="mod mod-base">
+                <div class="bd">
+                    <div class="name">
+                        <h3>
+                            远洋新仕界(商办)远洋新仕界(商办)远洋新仕界(商办)远洋新仕界(商办)远洋新仕界(商办)远洋新仕界(商办)
+                            <div class="lb-area">
+                                <span class="lbs lbs-on">在售</span>
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="price-total">参考总价：122万-122万</div>
+                    <ul class="base-info">
+                        <li class="price-unit">开发商报价：34000元/平米</li>
+                        <li>报价更新时间：2016-2-13</li>
+                        <li>最新开盘时间：2016-10-29</li>
+                        <li class="address">地址：<span class="house-zone">房山-良乡</span>房山地铁良乡大学城站东200米地铁良乡大学城北</li>
+                    </ul>
+                    <div class="text-box main-info">
+                        <div class="hd">
+                            <h3>基本信息</h3>
+                            <div class="more"><a href="#">查看详细信息<span class="ico ico-more">查看详细信息</span></a></div>
+                        </div>
+                        <div class="bd">
+                            <p>
+                                <span class="pre">交房时间：</span><span class="des">2018-11-01</span>
+                            </p>
+                            <p>
+                                <span class="pre">装修类型：</span><span class="des">精装修</span>
+                            </p>
+                            <p>
+                                <span class="pre">物业类型：</span><span class="des">商办</span>
+                            </p>
+                            <p>
+                                <span class="pre">产权时间：</span><span class="des">50年</span>
+                            </p>
+                            <p>
+                                <span class="pre">开发商：</span><span class="des">远洋地产</span>
+                            </p>
+                            <p>
+                                <span class="pre">物业公司：</span><span class="des">中远酒店物业管理公司</span>
+                            </p>
+                            <p>
+                                <span class="pre">容积率：</span><span class="des">2.80</span>
+                            </p>
+                            <p>
+                                <span class="pre">绿化率：</span><span class="des">50年</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="show-more">
+                        <a href="#" class="btn-more-info">更多信息</a>
+                    </div>
+                    <ul class="link-area">
+                        <li>
+                            <a href="#" class="link-price"><span class="ico ico-price">价钱</span>最新变价通知</a>
+                            <a href="#" class="link-notice"><span class="ico ico-notice">通知</span>最新开盘通知</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--侃家网独家优惠-->
+            <div class="mod mod-discount">
+                <div class="hd">
+                    <h2>侃家网独家优惠</h2>
+                </div>
+                <div class="bd">
+                    <div class="discount-area">
+                        <span class="ico ico-dis">优惠</span>
+                        <p class="txt">3万抵5万、3万抵5万、3万抵5万3万抵5万、3万抵5万、3万抵5万</p>
+                        <a href="#" class="btn btn-dis">点击领取</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--楼盘最新动态-->
+            <div class="mod mod-dynamic">
+                <div class="hd">
+                    <h2>楼盘最新动态（共8条）</h2>
+                    <div class="more"><a href="#">更多动态 <span class="ico ico-more"></span></a></div>
+                </div>
+                <div class="bd">
+                    <div class="text-item" style="display: none;">
+                        <div class="date">2016-11-02</div>
+                        <div class="text-ti">远洋·新仕界项目目前住宅2号顺销在售</div>
+                        <p class="text-con">项目目前住宅2#顺销在售，
+                            户型为77平，均价46000元/平方米，预计后期会推出新产品，开盘时间待定，价格待定，其他楼栋格待定，其他楼栋格待定，其他楼栋格待定，其他楼栋格待定，其他楼栋格待定，其他楼栋</p>
+                    </div>
+                    <div class="btn-area" style="display: none;">
+                        <a href="#" class="btn btn-dynamic">订阅最新楼盘动态</a>
+                    </div>
+                    <div class="no-result">
+                        <div class="result-tips">
+                            <p>小侃正在努力收集信息～</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--户型介绍-->
+            <div class="mod mod-house-type">
+                <div class="hd">
+                    <h2>户型介绍</h2>
+                </div>
+                <div class="bd">
+                    <div class="swiper-container" style="display: none;">
+                        <div class="house-type-list swiper-wrapper">
+                            <div class="house-type-item swiper-slide">
+                                <div class="pic"><img src="./images/img/1.jpg" alt=""></div>
+                                <div class="text">
+                                    <p>
+                                        <span class="hx">3室2厅2卫</span>
+                                        <span class="mj">39m²</span>
+                                    </p>
+                                    <p>总价：112万元</p>
+                                </div>
+                            </div>
+                            <div class="house-type-item swiper-slide">
+                                <div class="pic"><img src="./images/img/1.jpg" alt=""></div>
+                                <div class="text">
+                                    <p>
+                                        <span class="hx">3室2厅2卫</span>
+                                        <span class="mj">39m²</span>
+                                    </p>
+                                    <p>总价：112万元</p>
+                                </div>
+                            </div>
+                            <div class="house-type-item swiper-slide">
+                                <div class="pic"><img src="./images/img/1.jpg" alt=""></div>
+                                <div class="text">
+                                    <p>
+                                        <span class="hx">3室2厅2卫</span>
+                                        <span class="mj">39m²</span>
+                                    </p>
+                                    <p>总价：112万元</p>
+                                </div>
+                            </div>
+                            <div class="house-type-item swiper-slide">
+                                <div class="pic"><img src="./images/img/1.jpg" alt=""></div>
+                                <div class="text">
+                                    <p>
+                                        <span class="hx">3室2厅2卫</span>
+                                        <span class="mj">39m²</span>
+                                    </p>
+                                    <p>总价：112万元</p>
+                                </div>
+                            </div>
+                            <div class="house-type-item swiper-slide">
+                                <div class="pic"><img src="./images/img/1.jpg" alt=""></div>
+                                <div class="text">
+                                    <p>
+                                        <span class="hx">3室2厅2卫</span>
+                                        <span class="mj">39m²</span>
+                                    </p>
+                                    <p>总价：112万元</p>
+                                </div>
+                            </div>
+                            <div class="house-type-item swiper-slide">
+                                <div class="pic"><img src="./images/img/1.jpg" alt=""></div>
+                                <div class="text">
+                                    <p>
+                                        <span class="hx">3室2厅2卫</span>
+                                        <span class="mj">39m²</span>
+                                    </p>
+                                    <p>总价：112万元</p>
+                                </div>
+                            </div>
+                            <div class="house-type-item swiper-slide">
+                                <div class="pic"><img src="./images/img/1.jpg" alt=""></div>
+                                <div class="text">
+                                    <p>
+                                        <span class="hx">3室2厅2卫</span>
+                                        <span class="mj">39m²</span>
+                                    </p>
+                                    <p>总价：112万元</p>
+                                </div>
+                            </div>
+                            <div class="house-type-item swiper-slide">
+                                <div class="pic"><img src="./images/img/1.jpg" alt=""></div>
+                                <div class="text">
+                                    <p>
+                                        <span class="hx">3室2厅2卫</span>
+                                        <span class="mj">39m²</span>
+                                    </p>
+                                    <p>总价：112万元</p>
+                                </div>
+                            </div>
+                            <div class="house-type-item swiper-slide">
+                                <div class="pic"><img src="./images/img/1.jpg" alt=""></div>
+                                <div class="text">
+                                    <p>
+                                        <span class="hx">3室2厅2卫</span>
+                                        <span class="mj">39m²</span>
+                                    </p>
+                                    <p>总价：112万元</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-more" style="display: none;">
+                        <a href="#" class="btn-more-info">了解详细户型信息</a>
+                    </div>
+                    <div class="no-result">
+                        <div class="result-tips">
+                            <p>小侃正在努力收集信息～</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--楼盘图册-->
+            <div class="mod mod-house-photo">
+                <div class="hd">
+                    <h2>楼盘图册</h2>
+                </div>
+                <div class="bd">
+                    <div class="swiper-container" style="display: none;">
+                        <div class="house-photo-list swiper-wrapper">
+                            <div class="house-photo-item swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="pic"><img src="./images/img/1.jpg" alt=""></div>
+                                    <div class="text">
+                                        <p>效果图（<span>20</span>）</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="house-photo-item swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="pic"><img src="./images/img/1.jpg" alt=""></div>
+                                    <div class="text">
+                                        <p>楼盘规划图（<span>31</span>）</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="house-photo-item swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="pic"><img src="./images/photo-no.png" alt=""></div>
+                                    <div class="text">
+                                        <p>楼盘实景图（<span>0</span>）</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="house-photo-item swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="pic"><img src="./images/img/1.jpg" alt=""></div>
+                                    <div class="text">
+                                        <p>配套实景图（<span>10</span>）</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="house-photo-item swiper-slide">
+                                <a href="404.html">
+                                    <div class="pic"><img src="./images/img/1.jpg" alt=""></div>
+                                    <div class="text">
+                                        <p>样板间（<span>10</span>）</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-more" style="display: none;">
+                        <a href="#" class="btn-more-info">查看全部楼盘图片</a>
+                    </div>
+                    <div class="no-result">
+                        <div class="result-tips">
+                            <p>小侃正在努力收集信息～</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--周边配套-->
+            <div class="mod mod-around">
+                <div class="hd">
+                    <h2>周边配套</h2>
+                </div>
+                <div class="bd">
+                    <div class="map" style="display: none;">
+                        <img src="images/img-map.jpg" alt="">
+                    </div>
+                    <ul class="map-nav" style="display: none;">
+                        <li>
+                            <a href="#">
+                                <span class="ico ico-edu">教育</span>
+                                <span class="text">教育(50)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ico ico-traffic">交通</span>
+                                <span class="text">交通(50)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ico ico-medical">医院</span>
+                                <span class="text">医院(50)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ico ico-shopping">购物</span>
+                                <span class="text">购物(50)</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="map-layer-list" style="display: none;">
+                            <li class="list-group-item ">
+                                <span class="fcB">A</span>
+                                <div class="name" title="天鑫家园">天鑫家园</div>
+                                <div class="distance">距离:966.00米</div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="fcB">B</span>
+                                <div class="name" title="龙锦苑东五区南门">龙锦苑东五区南门</div>
+                                <div class="distance">距离:1278.00米</div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="fcB">C</span>
+                                <div class="name" title="新干线小区南门">新干线小区南门</div>
+                                <div class="distance">距离:723.00米</div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="fcB">D</span>
+                                <div class="name" title="新干线小区南门">新干线小区南门</div>
+                                <div class="distance">距离:723.00米</div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="fcB">E</span>
+                                <div class="name" title="新干线小区南门">新干线小区南门</div>
+                                <div class="distance">距离:723.00米</div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="fcB">F</span>
+                                <div class="name" title="新干线小区南门">新干线小区南门</div>
+                                <div class="distance">距离:723.00米</div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="fcB">G</span>
+                                <div class="name" title="新干线小区南门">新干线小区南门</div>
+                                <div class="distance">距离:723.00米</div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="fcB">H</span>
+                                <div class="name" title="新干线小区南门">新干线小区南门</div>
+                                <div class="distance">距离:723.00米</div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="fcB">I</span>
+                                <div class="name" title="新干线小区南门">新干线小区南门</div>
+                                <div class="distance">距离:723.00米</div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="fcB">J</span>
+                                <div class="name" title="新干线小区南门">新干线小区南门</div>
+                                <div class="distance">距离:723.00米</div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="fcB">K</span>
+                                <div class="name" title="新干线小区南门">新干线小区南门</div>
+                                <div class="distance">距离:723.00米</div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="fcB">L</span>
+                                <div class="name" title="新干线小区南门">新干线小区南门</div>
+                                <div class="distance">距离:723.00米</div>
+                                <div class="clearfix"></div>
+                            </li>
+                        </ul>
+                    <div class="show-more" style="display: none;">
+                        <a href="#" class="btn-more-info">更多周边</a>
+                    </div>
+                    <div class="no-result">
+                        <div class="result-tips">
+                            <p>小侃正在努力收集信息～</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--环境信息-->
+            <div class="mod mod-env">
+                <div class="hd">
+                    <h2>环境信息</h2>
+                </div>
+                <div class="bd">
+                    <div class="text-item" style="display: none;">
+                        <div class="text-ti">环境现状：</div>
+                        <p class="text-con">项目目前住宅2#顺销在售，
+                            户型为77平，均价46000元/平方米，预计后期会推出新产品，开盘时间待定，价格待定，其他楼栋预计后期会推出新产品，开盘时间待定，价格待定，其他楼栋</p>
+                    </div>
+                    <div class="show-more" style="display: none;">
+                        <a href="#" class="btn-more-info">了解详细环境信息</a>
+                    </div>
+                    <div class="no-result">
+                        <div class="result-tips">
+                            <p>小侃正在努力收集信息～</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--心路历程-->
+            <div class="mod mod-course">
+                <div class="hd">
+                    <h2>成交研究所</h2>
+                    <div class="lb-area">
+                        <span class="lbs lbs-djjx">独家精选</span>
+                    </div>
+                </div>
+                <div class="bd">
+                    <div class="course-list">
+                        <div class="course">
+                            <a href="#">
+                                <img src="images/img-course1.png" alt="心路历程">
+                            </a>
+                        </div>
+                        <div class="course">
+                            <a href="#">
+                                <img src="images/img-course2.png" alt="心路历程">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="show-more">
+                        <a href="#" class="btn-more-info">查看全部购房历程</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mod mod-user-cmt">
+                <div class="hd">
+                    <h2>用户点评（59）</h2>
+                    <div class="lb-area">
+                        <span class="lbs lbs-djjx">独家精选</span>
+                    </div>
+                </div>
+                <div class="bd">
+                    <div class="user-cmt-list" style="display: none;">
+                        <div class="user-cmt">
+                            <div class="face">
+                                <a href="#"><img src="./images/img-face1.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <div class="user-info">
+                                    <h4 class="name">侃家网友14226</h4>
+                                    <span class="id-lb id-yz">业主</span>
+                                </div>
+                                <div class="cmt-detail">
+                                    <p>项目目前住宅2#顺销在售， 户型为77平，均价46000元/平方米，预计后期会推出新产品， 其他楼栋项目目前住宅2#顺销在售，
+                                        户型为77平，均价46000元/平方米，预计后期会推出新产品， 其他楼栋</p>
+                                </div>
+                                <div class="cmt-pic-area">
+                                    <li><img src="./images/img/1.jpg" alt=""></li>
+                                    <li><img src="./images/img/2.jpg" alt=""></li>
+                                    <li><img src="./images/img/3.jpg" alt=""></li>
+                                    <li><img src="./images/img/4.jpg" alt=""></li>
+                                </div>
+                                <div class="cmt-opt">
+                                    <div class="date">2016-12-13</div>
+                                    <div class="opt-zan opt-yz">
+                                        <span class="ico ico-zan">赞</span>
+                                        <span class="txt">赞 246</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-cmt">
+                            <div class="face">
+                                <a href="#"><img src="./images/img-face2.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <div class="user-info">
+                                    <h4 class="name">侃家网友14234</h4>
+                                    <span class="id-lb id-yz">业主</span>
+                                </div>
+                                <div class="cmt-detail">
+                                    <p>项目目前住宅2#顺销在售， 户型为77平，均价46000元/平方米，预计后期会推出新产品， 其他楼栋项目目前住宅2#顺销在售，
+                                        户型为77平，均价46000元/平方米，预计后期会推出新产品， 其他楼栋</p>
+                                </div>
+                                <div class="cmt-pic-area">
+                                    <li><img src="./images/img/1.jpg" alt=""></li>
+                                    <li><img src="./images/img/2.jpg" alt=""></li>
+                                    <li><img src="./images/img/3.jpg" alt=""></li>
+                                    <li><img src="./images/img/4.jpg" alt=""></li>
+                                </div>
+                                <div class="cmt-opt">
+                                    <div class="date">2016-12-13</div>
+                                    <div class="opt-zan">
+                                        <span class="ico ico-zan">赞</span>
+                                        <span class="txt">赞 246</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-cmt">
+                            <div class="face">
+                                <a href="#"><img src="./images/img-face3.png" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <div class="user-info">
+                                    <h4 class="name">侃家网友14226</h4>
+                                    <span class="id-lb id-yz">业主</span>
+                                </div>
+                                <div class="cmt-detail">
+                                    <p>项目目前住宅2#顺销在售， 户型为77平，均价46000元/平方米，预计后期会推出新产品， 其他楼栋项目目前住宅2#顺销在售，
+                                        户型为77平，均价46000元/平方米，预计后期会推出新产品， 其他楼栋</p>
+                                </div>
+                                <div class="cmt-opt">
+                                    <div class="date">2016-12-13</div>
+                                    <div class="opt-zan">
+                                        <span class="ico ico-zan">赞</span>
+                                        <span class="txt">赞 246</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-more" style="display: none;">
+                        <a href="#" class="btn-more-info">全部点评</a>
+                    </div>
+                    <div class="no-result">
+                        <div class="result-tips">
+                            <p class="no-comments">
+                                <span class="txt">来写第一个点评吧～</span><a href="#" class="link-comment"><span class="ico ico-write"></span>写点评</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mod mod-pro-cmt">
+                <div class="hd">
+                    <h2>专业点评（59）</h2>
+                    <div class="lb-area">
+                        <span class="lbs lbs-djjx">独家精选</span>
+                    </div>
+                </div>
+                <div class="bd">
+                    <div class="pro-cmt-list">
+                        <div class="user-cmt">
+                            <div class="face">
+                                <a href="#"><img src="./images/img-face.png" alt=""></a>
+                                <span class="txt"><span>侃家网</span><span>咨询师</span></span>
+                            </div>
+                            <div class="text">
+                                <div class="cmt-tit">
+                                    <h4>最佳点评：</h4>
+                                </div>
+                                <div class="cmt-detail">
+                                    <p>项目目前住宅2#顺销在售， 户型为77平，均价46000元/平方米，预计后期会推出新产品， 其他楼栋项目目前住宅2#顺销在售，
+                                        户型为77平，均价46000元/平方米，预计后期会推出新产品， 其他楼栋</p>
+                                </div>
+                                <div class="cmt-pic-area">
+                                    <li><img src="./images/img/1.jpg" alt=""></li>
+                                    <li><img src="./images/img/2.jpg" alt=""></li>
+                                    <li><img src="./images/img/3.jpg" alt=""></li>
+                                    <li><img src="./images/img/4.jpg" alt=""></li>
+                                </div>
+                                <div class="cmt-opt">
+                                    <div class="date">2016-12-13</div>
+                                    <ul class="cmt-ser">
+                                        <li>
+                                            <a href="#"><span class="ico ico-zx">在线咨询</span>在线咨询</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span class="ico ico-call2">打电话</span>打电话</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-more">
+                        <a href="#" class="btn-more-info">全部点评</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="case case-groom">
+                <div class="hd">
+                    <h2>喜欢此楼盘的人还看了</h2>
+                </div>
+                <div class="bd">
+                    <div class="build-list">
+                        <div class="item-new" style="border-bottom: 0.5px solid rgb(229, 229, 229);">
+                            <a href="#">
+                                <div class="img-area">
+                                    <img src="images/img-house.png" alt="楼盘">
+                                </div>
+                                <div class="des">
+                                    <div class="tr">
+                                        <h3>北京城建世华</h3>
+                                        <div class="lb-area">
+                                            <span class="lbs lbs-on">在售</span>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="place">海淀-清河</div>
+                                        <div class="price">128万-198万</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="text">紧凑实用 临地铁 幼儿</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="tag tag-hot">
+                                            看房hot
+                                        </div>
+                                        <div class="text">30天实地看房：35次</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item-new" style="border-bottom: 0.5px solid rgb(229, 229, 229);">
+                            <a href="#">
+                                <div class="img-area">
+                                    <img src="images/img-house.png" alt="楼盘">
+                                </div>
+                                <div class="des">
+                                    <div class="tr">
+                                        <h3>北京城建</h3>
+                                        <div class="lb-area">
+                                            <span class="lbs lbs-on">在售</span>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="place">海淀-清河</div>
+                                        <div class="price">128万-198万</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="text">紧凑实用 临地铁 幼儿</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="text">30天实地看房：35次</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item-new" style="border-bottom: 0.5px solid rgb(229, 229, 229);">
+                            <a href="#">
+                                <div class="img-area">
+                                    <img src="images/img-house.png" alt="楼盘">
+                                </div>
+                                <div class="des">
+                                    <div class="tr">
+                                        <h3>北京城建世华</h3>
+                                        <div class="lb-area">
+                                            <span class="lbs lbs-on">在售</span>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="place">海淀-清河</div>
+                                        <div class="price">128万-198万</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="text">紧凑实用 临地铁 幼儿</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="text">30天实地看房：35次</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item-new" style="border-bottom: 0.5px solid rgb(229, 229, 229);">
+                            <a href="#">
+                                <div class="img-area">
+                                    <img src="images/img-house.png" alt="楼盘">
+                                </div>
+                                <div class="des">
+                                    <div class="tr">
+                                        <h3>北京城建</h3>
+                                        <div class="lb-area">
+                                            <span class="lbs lbs-on">在售</span>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="place">海淀-清河</div>
+                                        <div class="price">128万-198万</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="tag tag-review">
+                                            专业点评
+                                        </div>
+                                        <div class="text">紧凑实用 临地铁 幼儿</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="tag tag-hot">
+                                            看房hot
+                                        </div>
+                                        <div class="text">30天实地看房：35次</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item-new" style="border-bottom: 0.5px solid rgb(229, 229, 229);">
+                            <a href="#">
+                                <div class="img-area">
+                                    <img src="images/img-house.png" alt="楼盘">
+                                </div>
+                                <div class="des">
+                                    <div class="tr">
+                                        <h3>北京城建世华城建世华城建世华</h3>
+                                        <div class="lb-area">
+                                            <span class="lbs lbs-on">在售</span>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="place">海淀-清河</div>
+                                        <div class="price">128万-198万</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="text">紧凑实用 临地铁 幼儿</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="text">30天实地看房：35次</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-advice">
+            <div class="advice-free">
+                <div class="ipt-area">
+                    <input class="ipt" placeholder="输入您的手机号" type="text">
+                    <a href="javascript:void(0)" class="btn btn-cons">免费咨询</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--返回按钮-->
+    <div class="return-top">
+    </div>
+    <!--用户评论放大图-->
+    <div class="pop"><img src="./images/img/1.jpg" alt=""></div>
+    <div class="fade"></div>
+    <!--点击弹出轮播图-->
+    <!--<div class="carousel">
+        &lt;!&ndash; Swiper &ndash;&gt;
+        <div class="swiper-container2">
+            <div class="swiper-wrapper main-img">
+                <div class="item swiper-slide">
+                    <img src="images/img/1.jpg">
+                </div>
+                <div class="item swiper-slide">
+                    <img src="images/img/2.jpg">
+                </div>
+                <div class="item swiper-slide">
+                    <img src="images/img/3.jpg">
+                </div>
+                <div class="item swiper-slide">
+                    <img src="images/img/4.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="pichead pichead-s">
+            <span class="p_close"></span>
+            <div class="swiper-pagination swiper-pagination-fraction pichead-shu" id="swiper-pagination2">
+                <span class="swiper-pagination-current">1</span> / <span class="swiper-pagination-total">3</span>
+            </div>
+        </div>
+
+    </div>-->
+
+
+    <!--底部悬浮栏-->
+<div class="a-footer-layer">
+    <ul class="a-nav">
+        <li class="a-nav-down">
+            <a href="#">
+                <span class="ico ico-find2">帮您找房</span>
+                <span class="text">帮您找房</span>
+            </a>
+        </li>
+        <li class="a-nav-yy">
+            <a href="#">
+                <span class="ico ico-yy">在线咨询</span>
+                <span class="text">在线咨询</span>
+            </a>
+        </li>
+        <li class="a-nav-call">
+            <a href="#">
+                <span class="ico ico-call">售楼热线</span>
+                <span class="text">售楼热线</span>
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+<script src="js/lib/jquery-2.1.4.min.js"></script>
+<script src="js/lib/jquery.touchSlider.js"></script>
+<script src="js/lib/swiper.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/house-detail.js"></script>
+</body>
+</html>

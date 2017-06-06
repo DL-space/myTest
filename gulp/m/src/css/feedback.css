@@ -1,0 +1,119 @@
+@charset "UTF-8";
+body {
+    background-color: #f4f4f4;
+}
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+}
+.feedback, .feedback li {
+    clear: both;
+    overflow: hidden;
+}
+.feedback {
+    padding: 0.53rem 0.29rem 0;
+}
+.feedback-form {
+    margin-bottom: 1.2rem;
+}
+.feedback .require {
+    color: #f44336;
+}
+.feedback li, .feedback li .label {
+    margin-bottom: 0.1333rem;
+}
+.feedback li.txt, .feedback li .label {
+    font-size: 0.3733rem;
+    color: #666;
+}
+.feedback li.txt {
+    line-height: 0.64rem;
+}
+.feedback li .label {
+    height: 0.5867rem;
+    line-height: 0.5867rem;
+    overflow: hidden;
+}
+.feedback .ipt {
+    box-sizing: border-box;
+    font-size: 0.3466rem;
+    color: #bbb;
+    width: 100%;
+    height: 1.0666rem;
+    line-height: 1.0666rem;
+    padding: 0 0.24rem;
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.feedback textarea.ipt {
+    height: 3.12rem;
+}
+.feedback li.v-code .ipt, .feedback li.v-code .v-pic {
+    float: left;
+    margin-right: 0.24rem;
+    overflow: hidden;
+}
+.feedback li.v-code .ipt {
+    width: 3.1733rem;
+}
+.feedback li.v-code .v-pic {
+    width: 2.05rem;
+    height: 0.6266rem;
+    padding-top: 0.22rem;
+}
+.feedback li.v-code .v-pic img {
+    width: 100%;
+    height: 100%;
+}
+.change-v-code {
+    float: left;
+    color: #0074c1;
+    font-size: 0.3466rem;
+    height: 1.0666rem;
+    line-height: 1.0666rem;
+    overflow: hidden;
+}
+.feedback .btn-confirm {
+    display: block;
+    text-align: center;
+    font-size: 0.4rem;
+    color: #fff;
+    width: 100%;
+    height: 1.066rem;
+    line-height: 1.066rem;
+    margin-bottom: 0.37rem;
+    background-color: #48b3e2;
+    border-radius: 3px;
+}
+.feedback .tips {
+    font-size: 0.2933rem;
+}
+.feedback .tips a{
+    color: #0074c1;
+}
+.ipt-area .ipt::-webkit-input-placeholder {
+    color: #bbb;
+}
+.feedback-error {
+    padding-top: 2.1rem;
+}
+.feedback-error li.txt{
+    margin-bottom: 1.86rem;
+}
+.feedback-error .feedback-form {
+    margin-bottom: 0;
+}
+.feedback-error li.v-code .label,.feedback-error li.v-code .ipt-area {
+    float: left;
+}
+.feedback-error li.v-code .label {
+    height: 1.066rem;
+    line-height: 1.066rem;
+    margin-right: 0.1rem;
+}
+.error-tips {
+    clear: both;
+    font-size: 0.3733rem;
+    color: #f20;
+}

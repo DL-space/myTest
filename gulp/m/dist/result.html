@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="wap-font-scale" content="no">
+    <title>购房资质测试结果</title>
+    <script src="./js/flexible.js"></script>
+    <link rel="stylesheet" href="./css/module-new.css">
+    <link rel="stylesheet" href="./css/zizhiceshi.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+    <!--返回上一页-->
+    <div class="go-back">
+        <a href="#">
+            <span class="ico ico-return">返回上一页</span>
+        </a>
+    </div>
+    <!--切换城市-->
+    <div class="city-change">
+        <a href="#">
+            <span class="text">北京</span>
+            <span class="ico ico-down2">城市切换</span></a>
+    </div>
+    <!--用户行为跳转-->
+    <ul class="u-link">
+        <li class="link-home">
+            <a href="#"><span class="ico ico-home">首页</span></a>
+        </li>
+        <li class="link-ucenter">
+            <a href="#"><span class="ico ico-user">个人中心</span></a>
+        </li>
+    </ul>
+</div>
+    <div class="center">
+        <div class="zz-title">
+            <h2>2017北京购房资质查询</h2>
+            <div class="up-date">规则更新时间：2017-2-13</div>
+        </div>
+        <!--可以买0套房-->
+        <div class="zz-result zz-res0">
+            <div class="pic"><img src="./images/img-zz-res0.png" alt="您暂无资质购买北京住宅"/></div>
+            <ul class="zz-tips">
+                <li>您暂无资质购买北京住宅</li>
+            </ul>
+        </div>
+        <!--可以买1套房-->
+        <div class="zz-result zz-res1">
+            <div class="pic"><img src="./images/img-zz-res1.png" alt="你可以购买一套北京住宅；"/></div>
+            <ul class="zz-tips">
+                <li>你可以购买<span class="fw">一套</span>北京住宅；</li>
+                <li>首套首付比例<span class="fw">35%</span>起。</li>
+            </ul>
+        </div>
+        <!--可以买2套房-->
+        <div class="zz-result zz-res2">
+            <div class="pic"><img src="./images/img-zz-res2.png" alt="您可以购买两套北京住宅"/></div>
+            <ul class="zz-tips">
+                <li>你可以购买<span class="fw">两套</span>北京住宅；</li>
+                <li>首套首付比例<span class="fw">35%</span>起，二套首付比例 <span class="fw">50%</span>起</li>
+            </ul>
+        </div>
+        <div class="zz-btn">
+            <a href="#" class="btn-reset">重新测试</a>
+        </div>
+        <div class="zz-remark">
+            <p>备注：北京商业办公类房产不限购，通州商业办公类房产除外（个人无法购买，仅限公司购买）</p>
+        </div>
+        <!--资质测试结果-->
+        <div class="zz-box zz-case">
+            <div class="hd">
+                <h3>您的资质情况</h3>
+            </div>
+            <div class="bd">
+                <ul class="zz-list">
+                    <li><span class="txt">购房区域：</span><span class="zz-res">北京其他区域</span></li>
+                    <li><span class="txt">户籍：</span><span class="zz-res"></span></li>
+                    <li><span class="txt">婚姻状况：</span><span class="zz-res"></span></li>
+                    <li><span class="txt">已有住房情况：</span><span class="zz-res"></span></li>
+                </ul>
+            </div>
+        </div>
+        <!--留电入口-->
+        <div class="zz-tel">
+            <div class="advice-free">
+                <div class="tel-tips">判断结果仅供参考，专业咨询师帮您精准判定资质：</div>
+                <div class="ipt-area">
+                    <input class="ipt" placeholder="输入您的手机号" type="text">
+                    <button class="btn btn-cons">免费咨询</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/lib/jquery-2.1.4.min.js"></script>
+<script src="./js/zizhiceshi.js"></script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+.row{
+    padding: 0.26rem 0;
+    margin-bottom: 0.26rem;
+    background-color: #fff;
+}
+.center{
+    background: #f4f4f4;
+}
+.search-wrap{
+    background: #fff;
+    margin-bottom: 0.26rem;
+    border-bottom: solid 1px #e6e6e6;
+}
+.search,.search .ipt{
+    background: #f4f4f4;
+}
+.row-area{
+    padding-bottom: 0;
+}
+.crumb{
+    line-height: 0.44rem;
+    padding-left: 0.32rem;
+    margin-bottom: 0.28rem;
+    overflow: hidden;
+}
+.crumb,.crumb a{
+    color: #999;
+    font-size: 0.32rem;
+}
+.crumb li{
+    float: left;
+    margin-right: 0.14rem;
+}
+.area-list{
+    margin-bottom: 0.26rem;
+}
+.area-list .area,.area-list .area a{
+    font-size: 0.37rem;
+    color: #999;
+}
+.area-list .area{
+    width: auto;
+    height: 0.74rem;
+    line-height: 0.74rem;
+    margin: 0 0.48rem;
+}
+.area-list .on{
+    color: #48B3E2;
+    border-bottom: solid 2px #48B3E2;
+}
+.plate{
+    overflow: hidden;
+    padding-left: 0.26rem;
+}
+.plate li{
+    float: left;
+    height: 0.74rem;
+    line-height: 0.75rem;
+    font-size: 0.32rem;
+    color: #999;
+    padding: 0 0.26rem;
+    margin: 0 0.26rem 0.26rem 0;
+    border: solid 1px #eee;
+    border-radius: 3px;
+}
+.plate li a{
+    font-size: 0.32rem;
+    color: #999;
+}
+.plate .on{
+    border-color: #48B3E2;
+    background-color: #daf0f9;
+}
+.plate .on,.plate .on a{
+    color: #48B3E2;
+}
+.data-area{
+    overflow: hidden;
+}
+.data-area .data{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+.data-area .data .inn{
+    padding-left: 0.72rem;
+}
+.data-area .data-left .num{
+    border-right: solid 1px #e2e2e2;
+}
+.data-area .data-left .inn{
+    padding-left: 1.06rem;
+}
+.data-area .data .title,.data-area .data .num{
+    font-size: 0.32rem;
+    color: #aaa;
+}
+.data-area .data .num{
+    padding: 0.2rem 0;
+}
+.data-area .data .num-none{
+    text-align: center;
+    width: 2rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+.data-area .data .num .special{
+    font-size: 0.8rem;
+    color: #48B3E2;
+}
+.data-area .data .mom{
+    font-size: 0.34rem;
+    color: #666;
+}
+.data-area .data .mom .rose{
+    color: #151515;
+}
+.row-char .char-area{
+    width: 8.92rem;
+    height: 4.66rem;
+    margin: 0 auto;
+}
+.row-char .char-area img{
+    width: 8.92rem;
+    height: 4.66rem;
+}
+/*评论*/
+.row-comment,.row-char{
+    padding: 0.26rem 0.53rem;
+}
+.row-comment{
+    margin-bottom: 0;
+}
+.comment{
+    overflow: hidden;
+}
+.comment .face{
+    float: left;
+    width: 1.33rem;
+    text-align: center;
+    margin-right: 0.26rem;
+}
+.comment .face img{
+    width: 1.33rem;
+    height: 1.33rem;
+    border-radius: 50%;
+    margin-bottom: 0.14rem;
+}
+.comment .face .name{
+    display: block;
+    font-size: 0.26rem;
+    color: #666;
+}
+.comment .text{
+    float: left;
+    width: 7.33rem;
+}
+.comment .text h2{
+    font-size: 0.4rem;
+    color: #333;
+    margin-bottom: 0.14rem;
+}
+.comment .text p{
+    font-size: 0.34rem;
+    color: #666;
+    line-height: 0.53rem;
+}
+/*数据板块*/
+.row-tables{
+    padding: 0;
+}
+.box2 .hd{
+    height: 1.26rem;
+    line-height: 1.4rem;
+    padding-left: 0.26rem;
+    background-color: #f4f4f4;
+}
+.box2 .hd h2{
+    font-size: 0.42rem;
+    color: #333;
+}
+.data-table .t-head{
+    height: 1.08rem;
+    line-height: 1.08rem;
+    font-size: 0.37rem;
+    color: #333;
+    background-color: #D4EEF9;
+    overflow: hidden;
+}
+.data-table .t-head div{
+    float: left;
+    text-align: center;
+}
+.data-table .t-body{
+    color: #666;
+    font-size: 0.32rem;
+    padding: 0 0.53rem;
+    max-height: 4.8rem;
+    overflow: hidden;
+}
+.data-table .t-body li{
+    height: 0.96rem;
+    line-height: 0.96rem;
+    border-bottom: solid 1px #eee;
+    overflow: hidden;
+}
+.data-table .t-body li div{
+    float: left;
+}
+.data-table .t-body li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.data-table .t-body .area{
+    width: 2.18rem;
+    margin-right: 0.8rem;
+    color: #48B3E2;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.data-table .t-body .region{
+    width: 1.2rem;
+    margin-right: 0.6rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.data-table .t-body .price{
+    width: 2.4rem;
+}
+.data-table .t-body .change-down{
+    color: #4ACDA9;
+}.data-table .t-body .change-up{
+     color: #FF6E72;
+ }
+.data-table .t-head .area{
+    width: 3rem;
+}
+.data-table .t-head .region{
+    width: 2rem;
+}
+.data-table .t-head .price{
+    width: 2.5rem;
+}
+.data-table .t-head .change{
+    width: 2.5rem;
+}
+.data-table .sort{
+    float: left;
+    margin: 0.26rem 0.1rem 0 0;
+    width: 0.4rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+.data-table .t-body li:nth-child(1) .sort{
+    background-color: #FF8F76;
+}
+.data-table .t-body li:nth-child(2) .sort{
+    background-color: #F7B777;
+}
+.data-table .t-body li:nth-child(3) .sort{
+    background-color: #F6DE5C;
+}
+/*涨幅榜*/
+.box-rose .t-head .area{
+    width: 2.66rem;
+}
+.box-rose .t-head .price{
+    width: 3.66rem;
+}
+.box-rose .t-head .change{
+    width: 3.66rem;
+}
+.box-rose .t-body .area{
+    width: 2.2rem;
+    margin-right: 0.8rem;
+}
+.box-rose .t-body .price{
+    width: 2.6rem;
+}
+.box-rose .t-body .change{
+    float: right;
+    width: 2rem;
+    text-align: left;
+}
+.box-hot .t-body .change{
+    float: right;
+    width: 1.65rem;
+    text-align: left;
+}
+.data-table .t-body .deal{
+    float: right;
+    width: 1.6rem;
+    text-align: center;
+    color: #FF6E72;
+}
+.show-more{
+    font-size: 0.32rem;
+    color: #999;
+    text-align: center;
+    padding: 0.26rem 0;
+    cursor: pointer;
+}
+/*表格展开*/
+.data-table-open .t-body{
+    max-height: none;
+}
+.data-table-open .show-more .ico-showmore{
+    transform: rotate(180deg) translateY(1px);
+}
+
+

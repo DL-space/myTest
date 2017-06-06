@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="wap-font-scale" content="no">
+    <title>图册列表页</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/module-new.css">
+    <link rel="stylesheet" href="css/photo-album.css">
+</head>
+<body>
+@@include("./app/topbar/topbar.html")
+<div class="container">
+    @@include("./app/header/header.html")
+    <div class="center">
+        <!--图册导航-->
+        <div class="photo-nav">
+            <ul class="photo-nav-wrap">
+                <li><a href="#">楼盘主页</a></li>
+                <li><a href="#">楼盘详情</a></li>
+                <li><a href="#">户型详情</a></li>
+                <li><a href="#">周边配套</a></li>
+                <li class="last-wrap"><a href="#">用户点评</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <!--效果图-->
+            <div class="case case-xgt">
+                <div class="hd">
+                    <h2>效果图(20)</h2>
+                </div>
+                <div class="bd">
+                    <ul class="photo-list">
+                        <li><a href="#"><img src="./images/img-news.jpg" alt=""/></a></li>
+                        <li><a href="#"><img src="./images/img-news.jpg" alt=""/></a></li>
+                        <li><a href="#"><img src="./images/img-news.jpg" alt=""/></a></li>
+                        <li><a href="#"><img src="./images/img-news.jpg" alt=""/></a></li>
+                        <li><a href="#"><img src="./images/img-news.jpg" alt=""/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--环境规划图-->
+            <div class="case case-ght">
+                <div class="hd">
+                    <h2>环境规划图(12)</h2>
+                </div>
+                <div class="bd">
+                    <ul class="photo-list">
+                        <li><a href="#"><img src="./images/img-news.jpg" alt=""/></a></li>
+                        <li><a href="#"><img src="./images/img-news.jpg" alt=""/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--楼盘实景图-->
+            <div class="case case-ght">
+                <div class="hd">
+                    <h2>楼盘实景图(8)</h2>
+                </div>
+                <div class="bd">
+                    <ul class="photo-list">
+                        <li><a href="#"><img src="./images/img-news.jpg" alt=""/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--配套实景图-->
+            <div class="case case-ght">
+                <div class="hd">
+                    <h2>配套实景图(0)</h2>
+                </div>
+                <div class="bd">
+                    <ul class="photo-list">
+                        <li><a href="#"><img src="./images/photo-no.png" alt=""/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include("./app/footer-layer/footer-layer.html")
+    <div id="prop" class="tsk-translayer">
+    </div>
+</div>
+<script src="js/lib/jquery-2.1.4.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/list-new.js"></script>
+</body>
+</html>

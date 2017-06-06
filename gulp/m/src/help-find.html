@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="wap-font-scale" content="no">
+    <title>帮您找房</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/module-new.css">
+    <link rel="stylesheet" href="css/help-find.css">
+</head>
+<body>
+@@include("./app/topbar/topbar.html")
+<div class="container">
+    @@include("./app/header/header.html")
+    <div class="center">
+        <div class="boon boon-help">
+            <div class="title">
+                <h2>还找不到合适的房子吗？</h2>
+                <p>写下您的需求，让我们的咨询师来帮您吧！</p>
+            </div>
+            <!--帮您找房-->
+            <div class="look-house">
+                <div class="tr">
+                    <div class="input-area">
+                        <span class="ico-triangle"></span>
+                        <div class="ipt">房山</div>
+                        <ul class="dropdown-list">
+                            <li>海淀</li>
+                            <li>东城</li>
+                            <li>朝阳</li>
+                            <li>通州</li>
+                            <li>西城</li>
+                            <li>丰台</li>
+                            <li>昌平</li>
+                            <li>大兴</li>
+                            <li>房山</li>
+                            <li>门头沟</li>
+                            <li>石景山</li>
+                            <li>顺义</li>
+                            <li>石景山</li>
+                            <li>密云</li>
+                            <li>燕郊</li>
+                            <li>香河</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tr">
+                    <div class="input-area">
+                        <span class="ico-triangle"></span>
+                        <div class="ipt">200-250万</div>
+                        <ul class="dropdown-list">
+                            <li>预算1</li>
+                            <li>预算2</li>
+                            <li>预算3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tr">
+                    <div class="input-area">
+                        <span class="ico-triangle"></span>
+                        <div class="ipt">二居</div>
+                        <ul class="dropdown-list">
+                            <li>居室1</li>
+                            <li>居室2</li>
+                            <li>居室3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tr">
+                    <div class="input-area">
+                        <span class="ico-triangle"></span>
+                        <div class="ipt">80m² -100m²</div>
+                        <ul class="dropdown-list">
+                            <li>面积1</li>
+                            <li>面积2</li>
+                            <li>面积3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tr tr-phone">
+                    <div class="input-area">
+                        <input type="text" class="ipt" placeholder="您的手机号码"/>
+                    </div>
+                </div>
+                <div class="tips-info">错误提示信息</div>
+                <div class="btn-area">
+                    <button class="btn btn-send">发送给咨询师</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include("./app/footer-layer/footer-layer.html")
+</div>
+<script src="js/lib/jquery-2.1.4.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/help.js"></script>
+</body>
+</html>
