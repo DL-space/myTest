@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<div id="a">
+    <p>{{message}}</p>
+    <input type="text" v-model="message">
+    <script>
+        var vm = new Vue({
+            el:a,
+            data:{
+                message:"hello"
+            }
+        })
+
+
+
+        var o = {};
+
+        Object.defineProperty(o, 'name', {
+            value: 'erik'
+        });
+
+        console.log(Object.getOwnPropertyDescriptor(o, 'name')); // Object {value: "erik", writable: false, enumerable: false, configurable: false}
+
+        Object.defineProperty(o, 'age', {
+            value: 26,
+            configurable: true,
+            writable: true
+        });
+
+        console.log(o.age); // 26
+
+        o.age = 18;
+        console.log(o.age); // 18. 因为age属性是可重写的
+
+        console.log(Object.keys(o)); // []. name和age属性都不是可枚举的
+
+        Object.defineProperty(o, 'sex', {
+            value: 'male',
+            writable: false
+        });
+
+        o.sex = 'female'; // 这里的赋值其实是不起作用的
+        console.log(o.sex); // 'male';
+
+        delete o.sex; // false, 属性删除的动作也是无效的
+    </script>
+</div>
+</body>
+</html>

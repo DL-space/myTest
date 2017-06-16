@@ -10,6 +10,9 @@ var users = require('./routes/users');
 var register = require('./routes/register');
 var login = require('./routes/login');
 
+var mail = require('./mail');
+var config = require('./config');
+
 var app = express();
 
 // view engine setup 设置模板引擎
@@ -28,6 +31,9 @@ app.use('/', index);
 app.use('/register', register);
 app.use('/login', login);
 app.use('/users', users);
+
+app.use(mail);
+app.use(config);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

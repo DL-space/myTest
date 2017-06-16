@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原生插件</title>
+    <script src="demo-ys.js"></script>
+</head>
+<body>
+<button class="btn">弹层</button>
+<button class="btn">弹层</button>
+<script>
+    MaskShare(".btn",{
+        imgSrc:"image/flower.jpg",
+        boxDomStyle:{
+            opacity:".9"
+        },
+        imgDomStyle:{
+            opacity:".8",
+            width:"200px",
+            height:"200px",
+            margin:"220px 220px"
+        },
+        callback:function(){
+            console.log("show");
+        },
+        close:function(){
+            console.log("close");
+        }
+    });
+</script>
+</body>
+</html>

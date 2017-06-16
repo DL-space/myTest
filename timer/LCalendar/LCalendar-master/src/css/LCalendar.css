@@ -45,6 +45,9 @@
 .date_roll,
 .datetime_roll,
 .time_roll {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     width: 100%;
     height: auto;
@@ -64,7 +67,8 @@
     background-color: transparent;
     position: relative;
     overflow: hidden;
-    flex: 4
+    /*flex: 4*/
+    width: 50%;
 }
 
 .ym_roll>div .gear,
@@ -85,20 +89,24 @@
 }
 
 .date_roll>div:nth-child(2) {
-    flex: 2
+    /*flex: 2*/
+    width: 20%;
 }
 
 .date_roll>div:nth-child(1),
 .datetime_roll>div:nth-child(1) {
-    flex: 4
+    /*flex: 4*/
+    width:40%
 }
 
 .datetime_roll>div:first-child {
-    flex: 6
+    /*flex: 6*/
+    width: 60%;
 }
 
 .datetime_roll>div:last-child {
-    flex: 6
+    /*flex: 6*/
+    width: 60%;
 }
 
 .date_grid {
@@ -173,7 +181,14 @@
 }
 
 .date_btn_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: space-between;
+    -webkit-box-align: stretch;
     justify-content: space-between;
     align-items: stretch;
     background-color: #f1f2f4;

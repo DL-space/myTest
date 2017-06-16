@@ -1,0 +1,166 @@
+/*公共部分*/
+.change-show{
+    max-height: none!important;
+    height: auto!important;
+    white-space: normal!important;
+}
+.fade-back{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: #000;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+}
+.fade{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1100;
+}
+.fade-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide{
+    display: none;
+}
+.has-fade{
+    overflow: hidden;
+}
+.animate {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.animate-fade-in{
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+.animate-fade-down{
+    -webkit-animation-name: fadeDown;
+    animation-name: fadeDown;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+        -ms-transform: scale(.3);
+        transform: scale(.3);
+    }
+    80% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        -webkit-transform:  translate(0,-100%);
+        -ms-transform:   translate(0,-100%);
+        transform:  translate(0,-100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform:   translate(0,0);
+        -ms-transform:   translate(0,0);
+        transform:   translate(0,0);
+    }
+}
+/*自由部分*/
+.ico{
+    display: inline-block;
+    text-indent: -9999px;
+}
+.ico-showmore{
+    width: 20px;
+    height: 12px;
+    background: url("image/ico-showmore.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.2s linear;
+    transform-origin: 50% 50%;
+}
+.show-more-open .ico-showmore{
+    transform: rotate(180deg);
+}
+.show-more{
+    text-align: center;
+}
+.item-show .your-class{
+    max-height: 40px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.item-show .your-class2{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.btn-fade{
+    margin-top: 10px;
+}
+.fade-content{
+    background-color: #fff;
+    width: 200px;
+    height: 400px;
+    text-align: center;
+    border: solid 1px #f2f2f2;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    z-index: 1100;
+}
+.fade2 .fade-content{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    background-color: #fff;
+}
+.fade2 .fade-content .fade-close{
+    position: absolute;
+    top: -40px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.tab{
+    margin-bottom: 20px;
+}
+.tab .tab-menu{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.tab .tab-menu li{
+    flex: 1;
+    list-style: none;
+    margin-right: 10px;
+    text-align: center;
+}
+.tab .tab-menu .active{
+    background-color: green;
+    color: #fff;
+}

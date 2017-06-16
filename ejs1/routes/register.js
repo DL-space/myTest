@@ -31,7 +31,7 @@ router.post('/register', function (req, res, next) {
           msg: '该账号已存在'
         };
         res.json(result);
-        connection.release();//释放连接
+        connection.release();//释放连接，每次数据库操作之后都要释放链接
       } else {  //账号不存在，可以注册账号
         // 建立连接，向表中插入值
         var $sql1 = "INSERT INTO user1(name, sex, age) VALUES(?,?,?)";

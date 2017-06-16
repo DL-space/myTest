@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-2.1.1.js"></script>
+</head>
+<body>
+<div id="n1">
+    <div id="n2" class="abc">
+        <label id="n3">label1</label>
+        <span id="n4">span1</span>
+        <span id="n5" class="abc">span2</span>
+        <span id="n6">span3</span>
+    </div>
+    <div id="n7">
+        <span id="n0">span3</span>
+        <span id="n8" class="abc">span1</span>
+        <span id="n9">span2</span>
+    </div>
+    <div>
+        <button>button</button>
+        <p style="display: inline-block">
+            <button>222</button>
+            <span>222</span>
+        </p>
+        <span class="abc">span1</span>
+        <span >span2</span>
+    </div>
+    <span >111</span>
+    <span>2222</span>
+</div>
+<script>
+    $("span:first-of-type").css("color","red");
+</script>
+
+</body>
+</html>

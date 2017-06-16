@@ -173,7 +173,7 @@ window.LCalendar = (function() {
             //呼出日期+时间插件
             function popupDateTime(e) {
                 _self.gearDate = document.createElement("div");
-                _self.gearDate.className = "gearDate";
+                _self.gearDate.className = "gearDatetime";
                 _self.gearDate.innerHTML = '<div class="date_ctrl slideInUp">' +
                     '<div class="date_btn_box">' +
                     '<div class="date_btn lcalendar_cancel">取消</div>' +
@@ -736,7 +736,7 @@ window.LCalendar = (function() {
                 "datetime": popupDateTime,
                 "time": popupTime
             }[type]);
-        }
+        },
     }
     return MobileCalendar;
 })()

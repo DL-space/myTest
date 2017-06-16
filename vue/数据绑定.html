@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据绑定</title>
+</head>
+<body>
+<div>
+    <p>我是<span id='name'></span>，我来自侃家</p>
+</div>
+<input type="text" id="ipt">
+<script>
+    //视图控制器
+    let data = {};
+    Object.defineProperty(data, "name", {
+        /*writable:false,//是否可写，不与get，set共存
+        configurable: true,//总开关
+        enumerable: true,//对象的属性是否可以在 for...in 循环和 Object.keys() 中被枚举
+        value: "abc",//不与get，set共存*/
+        get: function(){
+            return document.getElementById('name').innerHTML;
+        },
+        set: function(name){
+            document.getElementById('name').innerHTML = name;
+        }
+    });
+
+    console.log(data.name);
+    data.name = "xxx";
+    console.log(data.name);
+
+    var ipt = document.getElementById('ipt');
+    ipt.addEventListener('input', function() {
+        data.name = this.value;
+    });
+
+</script>
+</body>
+</html>

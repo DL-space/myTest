@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="wap-font-scale" content="no">
+    <title>demo</title>
+    <link rel="stylesheet" href="demo.css">
+    <script src="lib/jquery-1.7.2.min.js"></script>
+    <script src="demo.js"></script>
+</head>
+<body style="height: 2000px">
+<div class="fade fade1">
+    <div class="fade-content">
+        <div class="fade-header">
+            <h1>弹层1</h1>
+        </div>
+        <div class="fade-body">
+            <p>弹层内容</p>
+        </div>
+        <div class="fade-footer">
+            <a href="#" class="btn-cancel">取消</a>
+            <a href="#" class="btn-sure">确认</a>
+        </div>
+    </div>
+</div>
+<div class="fade fade2">
+    <div class="fade-content">
+        <div class="fade-body">
+            <p>这是fade2</p>
+        </div>
+        <div class="fade-footer">
+            <a href="#" class="btn-cancel">我知道了</a>
+        </div>
+        <div class="fade-close">
+            X
+        </div>
+    </div>
+</div>
+<!--tab切换-->
+<div class="tab tab-click">
+    <ul class="tab-menu">
+        <li class="active">展示隐藏</li>
+        <li>弹层</li>
+        <li>第三个</li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-item">
+            <!--展示与隐藏结构-->
+            <div class="item-show show-hide">
+                <!--显示隐藏区域-->
+                <div class="your-class change-area">
+                    相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容
+                </div>
+                <!--控制按钮-->
+                <div class="show-more">
+                    <span class="ico ico-showmore">展开</span>
+                </div>
+            </div>
+            <div class="item-show show-hide">
+                <!--显示隐藏区域-->
+                <div class="your-class2 change-area">
+                    相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容相关内容
+                </div>
+                <!--控制按钮-->
+                <div class="show-more">
+                    <span class="ico ico-showmore">展开</span>
+                </div>
+            </div>
+        </div>
+        <div class="tab-item hide">
+            <!--弹层-->
+            <button class="btn-fade btn-fade1">弹层1</button>
+            <button class="btn-fade btn-fade2">弹层2</button>
+        </div>
+        <div class="tab-item hide">这是第三个tab</div>
+    </div>
+</div>
+<div class="tab tab-hover">
+    <ul class="tab-menu">
+        <li class="active">第一个</li>
+        <li>第二个</li>
+        <li>第三个</li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-item">这是第一个tab</div>
+        <div class="tab-item hide">这是第二个tab</div>
+        <div class="tab-item hide">这是第三个tab</div>
+    </div>
+</div>
+</body>
+</html>
