@@ -7,13 +7,17 @@
  * 显示隐藏区域：change-area(显示：change-show)
  * 控制按钮：show-more(展开：show-more-open)
  */
-$(document).on("click",".show-hide .show-more",function () {
+$(document).on("click touchstart",".show-hide .show-more",function () {
     var that = $(this);
+    sh(that);
+});
+function sh(i) {
+    var that = i;
     var showHide = that.parents(".show-hide");
     var changeArea = showHide.find(".change-area");
     changeArea.toggleClass("change-show");
     that.toggleClass("show-more-open");
-});
+}
 /**
  * 弹框
  */

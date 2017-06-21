@@ -3,6 +3,7 @@
     max-height: none!important;
     height: auto!important;
     white-space: normal!important;
+    -webkit-line-clamp: inherit!important;
 }
 .fade-back{
     position: fixed;
@@ -108,9 +109,9 @@
     margin-bottom: 10px;
 }
 .item-show .your-class2{
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
     overflow: hidden;
     margin-bottom: 10px;
 }
