@@ -3,7 +3,7 @@
     max-height: none!important;
     height: auto!important;
     white-space: normal!important;
-    -webkit-line-clamp: inherit!important;
+    display: block!important;
 }
 .fade-back{
     position: fixed;
@@ -95,10 +95,21 @@
     background: url("image/ico-showmore.png") no-repeat;
     background-size: 100% 100%;
     transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear; /* Firefox 4 */
+    -webkit-transition: all 0.2s linear; /* Safari 和 Chrome */
+    -o-transition: all 0.2s linear;
     transform-origin: 50% 50%;
+    -ms-transform-origin:  50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+
 }
 .show-more-open .ico-showmore{
     transform: rotate(180deg);
+    -ms-transform:rotate(180deg); 	/* IE 9 */
+    -moz-transform:rotate(180deg); 	/* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg);
 }
 .show-more{
     text-align: center;
@@ -112,6 +123,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    -moz-line-clamp: 2;
     overflow: hidden;
     margin-bottom: 10px;
 }
