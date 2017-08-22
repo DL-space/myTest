@@ -58,6 +58,10 @@ $(function () {
         closeBox(fade);
     });
     //tab切换
+    /*$(".tab").each(function () {//批量初始化
+        var that = $(this);
+        that.tabChange();
+    });*/
     $(".tab-hover").tabChange();
     $(".tab-click").tabChange({
         event: 'click'
