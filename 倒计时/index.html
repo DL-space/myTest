@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" >
+    <title>JS实现倒计时(天数,时,分,秒)</title>
+
+</head>
+<body onload="leftTimer()">
+
+<h2>剩余时间:</h2>
+<div id="timer"></div>
+</body>
+<script language="javascript" type="text/javascript">
+    //计算剩余时间
+    function leftTimer(year,month,day,hour,minute,second){
+        var leftTime = (new Date(year,month-1,day,hour,minute,second)) - (new Date()), //计算剩余的毫秒数
+            days = parseInt(leftTime / 1000 / 60 / 60 / 24 , 10), //计算剩余的天数
+            hours = parseInt(leftTime / 1000 / 60 / 60 % 24 , 10), //计算剩余的小时
+            minutes = parseInt(leftTime / 1000 / 60 % 60, 10),//计算剩余的分钟
+            seconds = parseInt(leftTime / 1000 % 60, 10);//计算剩余的秒数
+        days = formatTime(days);
+        hours = formatTime(hours);
+        minutes = formatTime(minutes);
+        seconds = formatTime(seconds);
+        document.getElementById("timer").innerHTML = days+"天" + hours+"小时" + minutes+"分"+seconds+"秒";
+    }
+    //格式化时间
+    function formatTime(i){
+        if(i<10)
+        {
+            i = "0" + i;
+        }
+        return i;
+    }
+    var data = "2017,10,21,10,57,11";
+    setInterval("leftTimer(2017,10,21,10,57,11)",1000);
+</script>
+</html>

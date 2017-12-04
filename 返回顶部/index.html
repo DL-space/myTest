@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>返回顶部</title>
+    <script src="../jQuery/jquery-3.2.0.js"></script>
+    <script src="return-top.js"></script>
+    <style>
+        .container{
+            height: 2000px;
+            background-color: green;
+        }
+        .aui-return-top{
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            cursor: pointer;
+        }
+        .return-top{
+            position: fixed;
+            top: 200px;
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="return-top">top</div>
+</div>
+<script>
+    $(function () {
+        returnTop(100,100,100);
+        returnTop(100,100,200);
+        returnTop(100,100,200);
+    })
+</script>
+</body>
+</html>

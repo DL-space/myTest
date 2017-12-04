@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.2.0.js"></script>
+    <style>
+        body{
+            height: 2000px;
+        }
+        .a{
+            height: 50px;
+            background-color: red;
+        }
+        .b{
+            height: 50px;
+            background-color: green;
+        }
+        .fixed{
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="fixed">
+    <div class="a"></div>
+    <div class="b"></div>
+</div>
+<script>
+    listenScroll();
+    function listenScroll() {
+        var beforeScrollTop = $(window).scrollTop();
+        $(window).on("scroll",function () {
+            var afterScrollTop = $(window).scrollTop(),
+                dis = afterScrollTop - beforeScrollTop;
+            //dis > 0 ? console.log("向下滚动") : console.log("向上滚动") ;
+            if(dis>0){
+                $(".a").hide();
+            }else{
+                $(".a").show();
+            }
+            beforeScrollTop = afterScrollTop;
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layer-tooltips</title>
+    <link rel="stylesheet" href="layer/skin/default/layer.css">
+    <script src="../../jQuery/jquery-3.2.0.js"></script>
+    <script src="layer/layer.js"></script>
+    <style>
+        .container{
+            width: 200px;
+            margin: 300px auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <button class="btn-l">左边</button>
+    <button class="btn-r">右边</button>
+    <button class="btn-s">上边</button>
+    <button class="btn-x">下边</button>
+</div>
+<script>
+    var layer;
+    $(".btn-l").hover(function () {
+        layer.tips('左边么么哒', '.btn-l', {
+            tips: [4, '#78BA32']
+        });
+    },function () {
+        layer.closeAll();
+    })
+    $(".btn-r").hover(function () {
+        //tips层-右
+        layer.tips('默认就是向右的', '.btn-r');
+    },function () {
+        layer.closeAll();
+    })
+    $(".btn-s").hover(function () {
+        //tips层-上
+        layer.tips('这是在上边', '.btn-s', {
+            tips: [1, '#0FA6D8'] //还可配置颜色
+        });
+    },function () {
+        layer.closeAll();
+    });
+    $(".btn-x").hover(function () {
+        //tips层-下
+        layer.tips('这是在下边', '.btn-x', {
+            tips: 3,
+        });
+    },function () {
+        layer.closeAll();
+    })
+</script>
+</body>
+</html>

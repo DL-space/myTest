@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" >
+    <title>JS实现倒计时(天数,时,分,秒)</title>
+    <script src="../jQuery/jquery-3.2.0.js"></script>
+    <style>
+        .timer span{
+            display: inline-block;
+            width: 43px;
+            height: 43px;
+            line-height: 43px;
+            color: red;
+            text-align: center;
+            vertical-align: text-bottom;
+            background-color: green;
+            border: solid 1px red;
+        }
+    </style>
+</head>
+<body>
+<div class="timer">
+    活动剩余 <span class="day"></span>天<span class="hour"></span>时<span class="minute"></span>分<span class="second"></span>秒结束
+</div>
+</body>
+<script language="javascript" type="text/javascript">
+    //计算剩余时间
+    function leftTimer(year,month,day,hour,minute,second){
+        var leftTime = (new Date(year,month-1,day,hour,minute,second)) - (new Date()),
+                days = formatTime(parseInt(leftTime / 1000 / 60 / 60 / 24 , 10)),
+                hours = formatTime(parseInt(leftTime / 1000 / 60 / 60 % 24 , 10)),
+                minutes = formatTime(parseInt(leftTime / 1000 / 60 % 60, 10)),
+                seconds = formatTime(parseInt(leftTime / 1000 % 60, 10));
+        if(leftTime > 0){
+            $(".timer").find(".day").text(days).end()
+                    .find(".hour").text(hours).end()
+                    .find(".minute").text(minutes).end()
+                    .find(".second").text(seconds)
+        }else{
+            $(".timer").text("活动已经结束");
+        }
+    }
+    //格式化时间
+    function formatTime(i){
+        if(i<10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+    //监听剩余时间
+    function setTime(data) {
+        var timeInterval = setInterval("leftTimer("+data+")",1000);
+    }
+    $(function () {
+        var data = "2017,10,23,10,57,11";
+        setTime(data);
+    })
+</script>
+</html>

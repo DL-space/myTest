@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三元表达式</title>
+    <script src="../jQuery/jquery-3.2.0.js"></script>
+    <style>
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<button class="a">按钮a</button>
+<button class="b">按钮b</button>
+<script>
+    $(function () {
+        /*if写法*/
+        $(document).on("click","button",function (e) {
+            var target = e.target;
+            if(target.className == "a"){
+                $(this).addClass("red");
+            }else{
+                $(this).addClass("green");
+            }
+        });
+        /*三元表达式*/
+        $(document).on("click","button",function (e) {
+            var target = e.target;
+            target.className == "a" ? $(this).addClass("red") : $(this).addClass("green");
+        });
+        /*多条件三元表达式（注意优先级，最好加（））*/
+        var x = 88;
+        var result = (x>=90)?"优秀":(x>=80)?"还行":(x>=60)?"合格":"不合格";
+        console.log(result);
+    });
+</script>
+</body>
+</html>

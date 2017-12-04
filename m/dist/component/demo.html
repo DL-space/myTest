@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <script src="../js/flexible.js"></script>
+    <style type="text/css">
+        header, footer, main {
+            display: block;
+        }
+
+        header {
+            position: fixed;
+            height: 50px;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+
+        footer {
+            width: 10rem;
+            text-align: center;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        main {
+            margin-top: 50px;
+            margin-bottom: 34px;
+            height: 2000px
+        }
+    </style>
+</head>
+<body class="layout-fixed">
+<!-- fixed定位的头部 -->
+<header>
+
+</header>
+
+<!-- 可以滚动的区域 -->
+<main>
+    <!-- 内容在这里... -->
+</main>
+
+<!-- fixed定位的底部 -->
+<footer>
+    <input type="text" placeholder="Footer..."/>
+    <button class="submit">提交</button>
+</footer>
+<script src="../js/lib/jquery-2.1.4.min.js"></script>
+</body>
+</html>

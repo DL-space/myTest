@@ -2,12 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>模拟监听软键盘</title>
     <script src="jQuery/jquery-3.2.0.js"></script>
-    <script src="lazyload/lazyload/js/lazyload/jquery.lazyload.js"></script>
+    <style>
+        body{
+            height: 2000px;
+        }
+    </style>
 </head>
 <body>
-<h1>lazyload图片懒加载</h1>
-<img src="" alt="">
+<input type="text">
+<input type="text">
+<input type="text">
+<input type="text">
+<script>
+    function listenSoftKeyboard(fnIn,fnOut) {
+        var winHeight = $(window).height();   //获取当前页面高度
+        $(window).resize(function(){
+            var thisHeight=$(this).height();
+            if(winHeight - thisHeight >50){//弹出软键盘,执行相关操作
+                fnIn();
+                $(window).resize(function(){
+                    var thisHeight=$(this).height();
+                    if(winHeight - thisHeight <= 0){//收起软键盘，执行相关操作
+                        fnOut();
+                    }
+                });
+            }
+        });
+        /*ios弹出软键盘不会触发resize事件*/
+        $(document).on('focusin', function () {
+            fnIn();
+        });
+        $(document).on('focusout', function () {
+            fnOut();
+        });
+    }
+    //软键盘弹出事件
+    function fnIn() {
+        $("input").val("222")
+    }
+    //软键盘收起事件（这一事件最好是复原事件）
+    function fnOut() {
+        $("input").val("111")
+    }
+    listenSoftKeyboard(fnIn,fnOut);
+</script>
 </body>
 </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            height: 400px;
+            background-color: green;
+            margin-bottom: 30px;
+        }
+        .fixed{
+            height: 100px;
+            background-color: red;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .wd-item .wd-text img{
+            height: 220px!important;
+        }
+    </style>
+</head>
+<body>
+<div class="fixed">header</div>
+<div id="a">a</div>
+<div id="b">b</div>
+<div id="c">c</div>
+<div id="d">d</div>
+<div id="e">e</div>
+<div id="f">f</div>
+<script src="../jQuery/jquery-1.11.0.min.js"></script>
+<script>
+   /* var id = window.location.href;
+    console.log(id)*/
+    $(function(){
+        var url_field_notice = document.URL;
+        var num_field_notice = url_field_notice.indexOf("#");
+        if(num_field_notice > 0){
+            var str_field_notice = url_field_notice.substr(num_field_notice + 1);
+            if(str_field_notice){
+                if($("#" + str_field_notice).length){
+                    $("html,body").delay(1000).animate({
+                        scrollTop: $("#" + str_field_notice).offset().top - 140 + "px"  //设置锚点链接地址距离屏幕顶部的距离：150px
+                    }, {
+                        duration: 500,
+                        easing: "swing"
+                    });
+                    return false;
+                }
+            }
+        }
+    });
+    $(document).ready(function () {
+        var windownHash = window.location.hash;
+        console.log(windownHash);
+        if (windownHash){
+            $("html,body").animate({scrollTop: $($('.atlas-list .list li a[href="'+ windownHash +'"]').attr("href")).offset().top - 135 + "px"}, {
+                duration: 500,
+                easing: "swing"
+            });
+        }
+    });
+</script>
+</body>
+</html>

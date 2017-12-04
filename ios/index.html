@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <title>Title</title>
+    <script src="../jQuery/jquery-3.2.0.js"></script>
+    <style>
+        .container{
+            height: 100%;
+            position: absolute;/* 绝对定位，进行内部滚动 */
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            overflow-y: scroll;/* 或者scroll */
+            -webkit-overflow-scrolling: touch;/* 解决ios滑动不流畅问题 */
+        }
+        body{
+            height: 2000px;
+        }
+        .footer{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            line-height: 60px;
+            width: 100%;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+</div>
+<div class="footer">
+    <input type="text" placeholder="111">
+</div>
+<script>
+    /*兼容ios 底部悬浮*/
+    $(".footer input").on("click", function() {
+        alert(navigator.userAgent);
+        //$(".footer").css('position','static');
+        $("html").css({"overflow":"hidden"});
+        $(document).on('touchmove',function(e){
+            e.preventDefault();
+        });
+        document.body.scrollTop = document.html.scrollHeight;
+        setTimeout(function(){
+
+            //alert(navigator.appVersion)
+            //document.body.scrollTop = document.body.clientHeight;
+            /*if(navigator.userAgent.indexOf("Safari")>0) {
+                document.body.scrollTop = document.body.clientHeight;
+            }else{
+                document.body.scrollTop = document.body.clientHeight;
+            }*/
+        },300);
+    });
+    $(".footer input").on("blur", function() {
+        $("html").css({"overflow":"auto"});
+        $(document).unbind('touchmove');
+    });
+</script>
+</body>
+</html>

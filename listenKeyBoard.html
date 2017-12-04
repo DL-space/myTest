@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>模拟监听软键盘</title>
+    <script src="jQuery/jquery-3.2.0.js"></script>
+    <style>
+        body{
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+<input type="text">
+<input type="text">
+<input type="text">
+<input type="text">
+<script>
+    function listenSoftKeyboard(fnIn,fnOut) {
+        var winHeight = $(window).height();   //获取当前页面高度
+        $(window).resize(function(){
+            var thisHeight=$(this).height();
+            if(winHeight - thisHeight >50){//弹出软键盘,执行相关操作
+                fnIn();
+                $(window).resize(function(){
+                    var thisHeight=$(this).height();
+                    if(winHeight - thisHeight <= 0){//收起软键盘，执行相关操作
+                        fnOut();
+                    }
+                });
+            }
+            /*else if(winHeight - thisHeight <= 0){//收起软键盘，执行相关操作
+             $("input").val("111")
+             }*/
+        });
+        /*ios弹出软键盘不会触发resize事件*/
+        $(document).on('focusin', function () {
+            fnIn();
+        });
+        $(document).on('focusout', function () {
+            fnOut();
+        });
+    }
+    function fnIn() {
+        $("input").val("222")
+    }
+    function fnOut() {
+        $("input").val("111")
+    }
+    listenSoftKeyboard(fnIn,fnOut);
+</script>
+</body>
+</html>

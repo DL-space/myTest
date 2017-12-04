@@ -1,0 +1,130 @@
+ol, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+.pa-flex {
+    width: auto;
+    margin: 0 auto;
+    display: table;
+    white-space: nowrap;
+}
+.pa-flex>ul{
+    display: inline-block;
+    vertical-align: text-top;
+}
+.pa-flex .parent-li {
+    padding: 30px 30px 0;
+    position: relative;
+    box-sizing: border-box;
+}
+.pa-flex .parent-li:before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    top: 0;
+    border-top: 1px solid #eee;
+    box-sizing: border-box;
+}
+.pa-flex .parent-li li .department-name {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #eee;
+}
+.pa-flex .parent-li.position-left:before {
+    width: 50%;
+    left: 50%;
+    border-left: 1px solid #eee;
+}
+.pa-flex .parent-li.position-middle:before {
+    width: 100%;
+    left: 0;
+}
+.pa-flex .parent-li.position-middle li:before {
+    content: "";
+    width: 50%;
+    height: 30px;
+    border-left: 1px solid #eee;
+    left: 50%;
+    position: absolute;
+    top: -30px;
+}
+.pa-flex .parent-li.no-siblings:before {
+    border-top: none;
+}
+.pa-flex .parent-li.position-right:before {
+    width: 50%;
+    right: 50%;
+    border-right: 1px solid #eee;
+}
+.pa-flex .parent-li .close-node-btn {
+    width: 12px;
+    height: 14px;
+    padding: 0 10px;
+    margin: auto;
+}
+.pa-flex .parent-li .close-node-btn .icon{
+    display: block;
+    width: 14px;
+    height: 14px;
+    line-height: 12px;
+    text-align: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: solid 1px green;
+    cursor: pointer;
+}
+.pa-flex .parent-li .close-node-btn:before {
+    content: "";
+    height: 30px;
+    border-left: 1px solid #eee;
+    position: absolute;
+    left: 50%;
+    bottom: 14px;
+}
+.pa-flex .parent-li li{
+    position: relative;
+    width: 220px;
+    margin: 0 auto 30px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 0 15px 10px;
+    box-sizing: border-box;
+    background-color: #20becc;
+}
+.pa-flex .parent-li li.jobNode {
+    width: 40px;
+    text-align: center;
+    max-height: 140px;
+    padding: 5px 2px 15px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #20becc;
+    background-color: #eaf8fa;
+    white-space: normal;
+}
+.pa-flex .parent-li li.jobNode .job-node {
+    padding-top: 7px;
+    width: 12px;
+    color: #20becc;
+    overflow-wrap: break-word;
+    margin: 0 auto 5px;
+    max-height: 80px;
+    overflow: hidden;
+    font-weight: bolder;
+}
+.pa-flex .parent-li li.jobNode .job-count {
+    height: 12px;
+    width: 24px;
+    border-top: 1px solid #26a69f;
+    margin: 0 auto;
+    padding-top: 5px;
+}

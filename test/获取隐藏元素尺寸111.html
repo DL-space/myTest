@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取隐藏元素尺寸</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .a{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="a" id="a">
+    你好啊
+</div>
+<div class="b" id="b">
+    你好啊
+</div>
+<button id="btn-a">a</button>
+<script src="../jQuery/jquery-3.2.0.js"></script>
+<script>
+    document.getElementById("btn-a").onclick = function () {
+        console.log($(".a").width());
+        console.log($(".a").height());
+    };
+    /*原生方法、属性、事件*/
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+function adjust(){var t=navigator.userAgent.toLowerCase();/android/.test(t)?$("html").attr("data-type",1):/ios/.test(t)&&$("html").attr("data-type",2)}$(function(){adjust()});

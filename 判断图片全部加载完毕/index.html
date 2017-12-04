@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jQuery/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+<div class="a">
+    <img src="images/index_01.jpg" alt="">
+    <img src="images/index_02.jpg" alt="">
+    <img src="images/index_03.jpg" alt="">
+    <img src="images/index_04.jpg" alt="">
+    <img src="images/index_05.jpg" alt="">
+    <img src="images/index_06.jpg" alt="">
+    <img src="images/index_07.jpg" alt="">
+    <img src="images/index_08.jpg" alt="">
+    <img src="images/index_09.jpg" alt="">
+    <img src="images/index_10.jpg" alt="">
+</div>
+<div class="a">
+    <img src="images/index_01.jpg" alt="">
+    <img src="images/index_02.jpg" alt="">
+    <img src="images/index_03.jpg" alt="">
+    <img src="images/index_04.jpg" alt="">
+    <img src="images/index_05.jpg" alt="">
+    <img src="images/index_06.jpg" alt="">
+    <img src="images/index_07.jpg" alt="">
+    <img src="images/index_08.jpg" alt="">
+    <img src="images/index_09.jpg" alt="">
+    <img src="images/index_10.jpg" alt="">
+</div>
+</body>
+<script>
+    $(function(){
+        var count = 0;
+        var imgCount = $('.a img').length;
+        $('.a img').each(function() {
+            $(this).load(function(){
+                count++;
+                console.log(count);
+                if(count===imgCount){
+                    console.log("图片已全部加载完成");//图片加载完成之后的方法
+                }
+            });
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    window.onload = function(){
+        var body = document.getElementsByTagName("body")[0];
+        //  1.创建Image对象
+        //第一种方式
+        var img = new Image('300','300'); //创建image对象并赋予宽高
+        //第二种方式
+        //var img = document.createElement('img');
+        //接受两个参数,设置宽、高
+        /*
+         创建一个Image对象：var a=new Image();
+         定义Image对象的src: a.src=”xxx.gif”;
+         这样做就相当于给浏览器缓存了一张图片。
+         图像对象：
+         建立图像对象：图像对象名称=new Image([宽度],[高度])
+         图像对象的属性： border complete height hspace lowsrc name src vspace width
+         图像对象的事件：onabort onerror onkeydown onkeypress onkeyup onload
+         需要注意的是：src属性一定要写到onload的后面，否则程序在IE中会出错。
+         * */
+
+        //hspace 设置或返回图像左侧和右侧的空白
+        img.hspace = "100";
+        //vspace 设置或返回图像的顶部和底部的空白
+        img.vspace = "100";
+
+        //当图像装载完毕时调用的事件句柄。
+        img.onload = function() {
+            console.log("当图片加载完时出现");
+            //打印图片的地址
+            console.log("src："+img.src);
+            //打印图片的高度
+            console.log("height："+img.height);
+            //是否加载完成 完成返回true
+            console.log("complete："+img.complete);
+            //打印图片的水平距离
+            console.log("hspace："+img.hspace);
+        };
+        //在装载图像的过程中发生错误时调用的事件句柄。
+        img.onerror = function(){
+            alert("图片加载错误时,发生调用");
+        };
+
+        //如果图像的加载被中断，则会显示一个对话框：
+        img.onabort = function(){
+            alert("图片图像的加载被中断");
+        };
+        //新的图像元素不一定要从添加文档后才开始下载，只要设置了src属性就会开始下载
+
+        //由于我们这个事件目的是在图片加载完之后显示某些信息，
+        // 而图片下载并不是把image对象添加到DOM中才开始下载，
+        // 而是赋予src时就开始下载了，所以为避免网速过快，src已经加载完，
+        // 事件还并没有被触发的这种极端情况，我们要将src放在事件之后添加
+
+        body.appendChild(img);
+        //img.src = "http://www.005.tv/uploads/allimg/161009/1523215548-0.jpg";
+        /*注意
+         * ie 火狐等大众浏览器均支持 Image对象的onload事件。
+         ie8及以下、opera 不支持onerror事件
+         * */
+    };
+</script>
+</html>

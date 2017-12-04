@@ -4,191 +4,463 @@
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <meta name="renderer" content="webkit">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
     <meta name="wap-font-scale" content="no">
     <title>查房价</title>
     <script src="js/flexible.js"></script>
     <link rel="stylesheet" href="css/swiper-3.4.0.min.css">
     <link rel="stylesheet" href="css/module-new.css">
-    <link rel="stylesheet" href="css/check-price.css"/>
+    <link rel="stylesheet" href="css/check-price.css" />
 </head>
 <body>
-<!--顶部app下载入口-->
-<div class="topbar">
-    <div class="fl">
-        <span class="ico ico-kan"></span>
-        <div class="t-text">
-            <h4>侃家找房</h4>
-            <p>做专业的新房搜索</p>
-        </div>
-    </div>
-    <div class="close">
-        <span class="ico ico-close">X</span>
-    </div>
-    <div class="app-download">
-        <a href="#" class="btn-donload">打开APP</a>
-    </div>
-</div>
-<div class="container">
-    <div class="header">
-    <!--返回上一页-->
-    <div class="go-back">
-        <a href="#">
-            <span class="ico ico-return">返回上一页</span>
-        </a>
-    </div>
-    <!--切换城市-->
-    <div class="city-change">
-        <a href="#">
-            <span class="text">北京</span>
-            <span class="ico ico-down2">城市切换</span></a>
-    </div>
-    <!--用户行为跳转-->
-    <ul class="u-link">
-        <li class="link-home">
-            <a href="#"><span class="ico ico-home">首页</span></a>
-        </li>
-        <li class="link-ucenter">
-            <a href="#"><span class="ico ico-user">个人中心</span></a>
-        </li>
-    </ul>
-</div>
-    <div class="center">
-        <!--搜索-->
-        <div class="search-wrap">
-            <div class="search">
-                <div class="ipt-area">
-                    <input type="text" class="ipt" placeholder="泰禾中央广场">
-                </div>
-                <div class="btn-area">
-                    <button type="button" class="btn btn-search">搜搜</button>
-                </div>
+    <!--顶部app下载入口-->
+    <div class="topbar topbar-juli">
+        <div class="fl">
+            <span class="ico ico-kan"></span>
+            <div class="t-text">
+                <h4>打开居理新房APP</h4>
+                <p>领300元京东购物卡</p>
             </div>
         </div>
-        <div class="row">
-            <!--面包屑-->
-            <ul class="crumb">
-                <li class="icon"><span class="ico ico-crumb"></span></li>
-                <li><a href="#">侃家网</a></li>
-                <li class="fgx">&gt;</li>
-                <li><a href="#">查房价</a></li>
-                <li class="fgx">&gt;</li>
-                <li><a href="#">城市</a></li>
-                <li class="fgx">&gt;</li>
-                <li><span>区域</span></li>
-            </ul>
-            <div class="area-plate">
-                <!-- Swiper 筛选区域-->
-                <div class="swiper-container">
-                    <div class="swiper-wrapper area-list">
-                        <div class="area swiper-slide">全部</div>
-                        <div class="area swiper-slide">房山</div>
-                        <div class="area swiper-slide">门头沟</div>
-                        <div class="area swiper-slide">昌平</div>
-                        <div class="area swiper-slide">朝阳</div>
-                        <div class="area swiper-slide">通州</div>
-                        <div class="area swiper-slide">大兴</div>
+        <div class="close">
+            <span class="ico ico-close">X</span>
+        </div>
+        <div class="download_btn">
+            <a href="#" class="btn-donload">立即打开</a>
+        </div>
+    </div>
+    <div class="container">
+        <header class="header03">
+            <div class="top">
+                <div class="return">
+                    <span class="icon icon-return"></span>
+                </div>
+                <div class="location">
+                    <a href="###"> <span class="icon icon-location"></span>北京</a>
+                </div>
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <div class="search-ico">
+                    <a href="#">
+                <span class="icon icon-search"></span>
+            </a>
+                </div>
+                <div class="user">
+                    <a href="#"><span class="icon icon-user"></span></a>
+                </div>
+            </div>
+        </header>
+        <div class="center">
+            <!--搜索-->
+            <div class="search-wrap">
+                <div class="search">
+                    <div class="ipt-area">
+                        <input type="text" class="ipt" placeholder="泰禾中央广场">
+                    </div>
+                    <div class="btn-area">
+                        <button type="button" class="btn-search"><span class="icon icon-search"></span></button>
                     </div>
                 </div>
-                <!--板块-->
-                <ul class="plate">
-                    <li>
-                        <a href="#">全部</a>
-                    </li>
-                    <li>
-                        <a href="#">西上园</a>
-                    </li>
-                    <li>
-                        <a href="#">梨园</a>
-                    </li>
-                    <li>
-                        <a href="#">通州北苑</a>
-                    </li>
-                    <li>
-                        <a href="#">新华大街</a>
-                    </li>
-                    <li>
-                        <a href="#">北关</a>
-                    </li>
-                    <li>
-                        <a href="#">玉桥</a>
-                    </li>
-                    <li>
-                        <a href="#">乔庄</a>
-                    </li>
+            </div>
+            <div class="row row-area">
+                <!--面包屑-->
+                <ul class="crumb">
+                    <li class="icon"><span class="ico ico-position"></span></li>
+                    <li><a href="#">侃家网</a></li>
+                    <li class="fgx">&gt;</li>
+                    <li><a href="#">查房价</a></li>
+                    <li class="fgx">&gt;</li>
+                    <li><a href="#">城市</a></li>
+                    <li class="fgx">&gt;</li>
+                    <li><span>区域</span></li>
                 </ul>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="data-area">
-                <div class="data">
-                    <p class="title">北京02月成交量</p>
-                    <div class="num">
-                        <span class="special">4755</span>套
+                <div class="area-plate">
+                    <!-- Swiper 筛选区域-->
+                    <div class="swiper-container area-list">
+                        <div class="swiper-wrapper">
+                            <div class="area swiper-slide">全部</div>
+                            <div class="area swiper-slide">房山</div>
+                            <div class="area on swiper-slide">门头沟</div>
+                            <div class="area swiper-slide">昌平</div>
+                            <div class="area swiper-slide">朝阳</div>
+                            <div class="area swiper-slide">通州</div>
+                            <div class="area swiper-slide">大兴</div>
+                        </div>
                     </div>
-                    <div class="mom">
-                        环比
-                        <span class="rose">4.88% <span class="ico ico-up"></span></span>
+                    <!--板块-->
+                    <ul class="plate">
+                        <li class="on">
+                            <a href="#">全部</a>
+                        </li>
+                        <li>
+                            <a href="#">西上园</a>
+                        </li>
+                        <li>
+                            <a href="#">梨园</a>
+                        </li>
+                        <li>
+                            <a href="#">通州北苑</a>
+                        </li>
+                        <li>
+                            <a href="#">新华大街</a>
+                        </li>
+                        <li>
+                            <a href="#">北关</a>
+                        </li>
+                        <li>
+                            <a href="#">玉桥</a>
+                        </li>
+                        <li>
+                            <a href="#">乔庄</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="data-area">
+                    <div class="data data-left">
+                        <div class="inn">
+                            <p class="title">北京02月成交量</p>
+                            <div class="num">
+                                <span class="special">4755</span> 套
+                            </div>
+                            <div class="mom">
+                                环比
+                                <span class="rose">4.88% ↑<span class="ico ico-up"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <div class="inn">
+                            <p class="title">北京02月均价</p>
+                            <div class="num">
+                                <span class="special">40927</span> 元/㎡
+                            </div>
+                            <div class="mom">
+                                环比
+                                <span class="rose">4.88% ↓<span class="ico ico-up"></span></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="data">
-                    <p class="title">北京02月均价</p>
-                    <div class="num">
-                        <span class="special">40927</span>元/㎡
+            </div>
+            <div class="row row-char">
+                <div class="char-area">
+                    <img src="images/char.jpg" alt="">
+                </div>
+            </div>
+            <div class="row row-comment">
+                <div class="comment">
+                    <div class="face">
+                        <img src="images/zxs.png" alt="咨询师">
+                        <span class="name">咨询师</span>
                     </div>
-                    <div class="mom">
-                        环比
-                        <span class="rose">4.88% <span class="ico ico-up"></span></span>
+                    <div class="text">
+                        <h2>市场点评</h2>
+                        <p>本月北京市新房总体成交4755套，环比上涨20%，新房市场回暖写字楼贡献突出；北京市新房成交均价45562元/㎡，价格浮动不大，与上月基本持平。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-tables">
+                <div class="box2 box-rose">
+                    <div class="hd">
+                        <h2>02月北京各区域涨幅榜</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="data-table">
+                            <div class="t-head">
+                                <div class="area">区域</div>
+                                <div class="price">成交均价</div>
+                                <div class="change">涨幅</div>
+                            </div>
+                            <ul class="t-body">
+                                <li>
+                                    <a href="#">
+                                        <div class="area">房山</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="change change-down">
+                                            <span class="ico ico-change"></span>100.00%
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="area">丰台</div>
+                                        <div class="price">312999元／m²</div>
+                                        <div class="change change-up">
+                                            <span class="ico ico-change"></span>19.00%
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="area">门头沟</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="change change-up">
+                                            <span class="ico ico-change"></span>19.00%
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="area">朝阳</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="change change-up">
+                                            <span class="ico ico-change"></span>19.00%
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="area">大兴</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="change change-up">
+                                            <span class="ico ico-change"></span>19.00%
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="area">大兴</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="change change-up">
+                                            <span class="ico ico-change"></span>19.00%
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="area">通州</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="change change-up">
+                                            <span class="ico ico-change"></span>19.00%
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="show-more" data-text="查看更多区域">
+                                <span class="ico ico-showmore"></span>
+                                <span class="text">查看更多区域</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box2 box-hot">
+                    <div class="hd">
+                        <h2>02月北京热门板块</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="data-table">
+                            <div class="t-head">
+                                <div class="area">板块</div>
+                                <div class="region">所属区域</div>
+                                <div class="price">成交均价</div>
+                                <div class="change">涨幅</div>
+                            </div>
+                            <ul class="t-body">
+                                <li>
+                                    <a href="">
+                                        <div class="area">顺义主城区主城区</div>
+                                        <div class="region">顺义</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="change change-down">
+                                            <span class="ico ico-change"></span>100.00%
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="area">长阳</div>
+                                        <div class="region">顺义</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="change change-down">
+                                            <span class="ico ico-change"></span>19.00%
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="area">运河核心区</div>
+                                        <div class="region">顺义</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="change change-down">
+                                            <span class="ico ico-change"></span>19.00%
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="area">亦庄</div>
+                                        <div class="region">顺义</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="change change-up">
+                                            <span class="ico ico-change"></span>19.00%
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="area">西红门</div>
+                                        <div class="region">顺义</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="change change-up">
+                                            <span class="ico ico-change"></span>19.00%
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="area">顺义主城区主城区</div>
+                                        <div class="region">顺义</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="change change-up">
+                                            <span class="ico ico-change"></span>19.00%
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="area">顺义主城区主城区</div>
+                                        <div class="region">顺义</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="change change-up">
+                                            <span class="ico ico-change"></span>19.00%
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="area">顺义主城区主城区</div>
+                                        <div class="region">顺义</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="change change-up">
+                                            <span class="ico ico-change"></span>19.00%
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="show-more" data-text="查看更多板块">
+                                <span class="ico ico-showmore"></span>
+                                <span class="text">查看更多板块</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box2 box-cell">
+                    <div class="hd">
+                        <h2>02月北京新房销售排行榜</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="data-table">
+                            <div class="t-head">
+                                <div class="area">名称</div>
+                                <div class="region">所属区域</div>
+                                <div class="price">成交均价</div>
+                                <div class="change">成交套数</div>
+                            </div>
+                            <ul class="t-body">
+                                <li>
+                                    <a href="#">
+                                        <div class="area"><span class="sort">2</span>长阳</div>
+                                        <div class="region">顺义</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="deal">361套</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="area"><span class="sort">3</span>运河核心区</div>
+                                        <div class="region">顺义</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="deal">361套</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="area"><span class="sort">4</span>亦庄</div>
+                                        <div class="region">顺义</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="deal">361套</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="area"><span class="sort">5</span>亦庄</div>
+                                        <div class="region">顺义</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="deal">361套</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="area"><span class="sort">6</span>亦庄</div>
+                                        <div class="region">顺义</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="deal">361套</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="area"><span class="sort">7</span>亦庄</div>
+                                        <div class="region">顺义</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="deal">361套</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="area"><span class="sort">8</span>亦庄</div>
+                                        <div class="region">顺义</div>
+                                        <div class="price">31299元／m²</div>
+                                        <div class="deal">361套</div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="show-more" data-text="查看更多区域">
+                                <span class="ico ico-showmore"></span>
+                                <span class="text">查看更多区域</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="char-area">
-                <img src="images/char.jpg" alt="">
-            </div>
-        </div>
-        <div class="row">
-            <div class="comment">
-                <div class="face">
-                    <img src="" alt="">
-                    <span class="name">咨询师</span>
-                </div>
-                <div class="text">
-                    <h2>市场点评</h2>
-                    <p>本月北京市新房总体成交4755套，环比上涨20%，新房市场回暖写字楼贡献突出；北京市新房成交均价45562元/㎡，价格浮动不大，与上月基本持平。</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--底部悬浮栏-->
-<div class="a-footer-layer">
-    <ul class="a-nav">
-        <li class="a-nav-down">
-            <a href="#">
+        <!--底部悬浮栏-->
+        <div class="a-footer-layer">
+            <ul class="a-nav">
+                <li class="a-nav-down">
+                    <a href="#">
                 <span class="ico ico-find2">帮您找房</span>
                 <span class="text">帮您找房</span>
             </a>
-        </li>
+                </li>
+                <li class="a-nav-yy">
+                    <a href="#">
+                <span class="ico ico-yy">打开APP</span>
+                <span class="text">打开APP</span>
+            </a>
+                </li>
+                <!--
         <li class="a-nav-yy">
             <a href="#">
-                <span class="ico ico-yy">在线咨询</span>
+                <span class="ico ico-zaix">在线咨询</span>
                 <span class="text">在线咨询</span>
             </a>
         </li>
-        <li class="a-nav-call">
-            <a href="#">
+    -->
+                <li class="a-nav-call">
+                    <a href="#">
                 <span class="ico ico-call">售楼热线</span>
                 <span class="text">售楼热线</span>
             </a>
-        </li>
-    </ul>
-</div>
-</div>
-<script src="js/lib/jquery-2.1.4.min.js"></script>
-<script src="js/lib/swiper.min.js"></script>
-<script src="js/common.js"></script>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/lib/jquery-2.1.4.min.js"></script>
+    <script src="js/lib/swiper.min.js"></script>
+    <script src="js/j-ui.js"></script>
+    <script src="js/check-price.js"></script>
 </body>
 </html>

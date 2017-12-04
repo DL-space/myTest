@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<db-info>
+		<drivername>com.mysql.jdbc.Driver</drivername>
+		<url>jdbc:mysql://localhost:3306/fullcalendar</url>
+		<username>root</username>
+		<password>1234</password>
+	</db-info>
+</config>
+

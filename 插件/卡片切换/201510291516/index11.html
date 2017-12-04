@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>14种炫酷堆叠卡片切换动画特效|DEMO_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+</head>
+<body>
+<div class="container">
+	<div class="content ddlb">
+		<ul id="stack_krisna" class="stack stack--krisna">
+			<li class="stack__item"><img src="img/3.png" alt="Tree 3" /></li>
+			<li class="stack__item"><img src="img/4.png" alt="Tree 4" /></li>
+			<li class="stack__item"><img src="img/5.png" alt="Tree 5" /></li>
+			<li class="stack__item"><img src="img/6.png" alt="Tree 6" /></li>
+			<li class="stack__item"><img src="img/1.png" alt="Tree 1" /></li>
+			<li class="stack__item"><img src="img/2.png" alt="Tree 2" /></li>
+		</ul>
+	</div>
+</div>
+<!--
+click feedback effect : see more at http://tympanus.net/codrops/2015/02/11/subtle-click-feedback-effects/
+-->
+<script src="../../../jQuery/jquery-3.2.0.js"></script>
+<script src="js/dynamic.min.js"></script>
+<script>
+	$(function () {
+		var krisna = new Stack(document.getElementById('stack_krisna'));
+		var timerKrisna = setInterval(function () {
+			krisna.reject();
+		},2000);
+		$("#stack_krisna").on("touchstart",function (e) {
+			clearInterval(timerKrisna);
+			var startX = e.originalEvent.changedTouches[0].pageX;
+			$(this).on("touchend",function (e) {
+				var EndX = e.originalEvent.changedTouches[0].pageX;
+				clearInterval(timerKrisna);
+				if((EndX-startX)>0){
+					krisna.accept();
+				}else if((EndX-startX)<0){
+					krisna.reject();
+				}
+				timerKrisna = setInterval(function () {
+					krisna.reject();
+				},2000);
+			})
+		});
+	})
+</script>
+</body>
+</html>

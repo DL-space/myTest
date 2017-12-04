@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input-change</title>
+    <script src="js/jquery-3.2.0.js"></script>
+    <style>
+        .red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<input type="text" maxlength="11">
+<button class="btn" disabled="disabled">按钮</button>
+<button class="wt">点击</button>
+<script>
+    $("input").on("input",function () {
+        var val = $("input").val();
+        var valLength = val.toString().length;
+        console.log(valLength);
+        if(valLength==11){
+            $("button").addClass("red");
+            $(".btn").removeAttr("disabled");
+        }else{
+            $("button").removeClass("red");
+            $(".btn").attr("disabled","disabled");
+        }
+    })
+    $(".btn").click(function () {
+        alert("提交")
+    })
+    $(document).on("click",".wt",function () {
+        console.log("委托点击")
+    })
+    $(".wt").click(function () {
+        console.log("直接点击")
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组织架构图</title>
+    <link rel="stylesheet" href="css/org.css">
+</head>
+<body>
+<div class="org-tree">
+    <div class="pa-flex">
+        <div class="org-parent-node">
+            <!--循环结构为parent-li（父级部门）和pa-flex（子级部门）-->
+            <div class="parent-li"><!--父级部门-->
+                <li class="depart-node">
+                    <div class="department-name">上海（78人）</div>
+                    <div class="fzr">负责人：宋晓丹</div>
+                    <div class="rs">人数（78）：63/15</div>
+                    <div class="bz">编制（12）：10/2</div>
+                </li><!--父级部门信息-->
+                <div class="close-node-btn">
+                    <span class="icon icon-add">+</span>
+                </div><!--开关按钮（若此部门没有子级则不显示此结构）-->
+            </div>
+            <div class="pa-flex" style="display: none;"><!--父级部门的子级部门-->
+                <ul>
+                <div class="parent-li position-left">
+                    <li class="depart-node">
+                        <div class="department-name">上海（78人）</div>
+                        <div class="fzr">负责人：宋晓丹</div>
+                        <div class="rs">人数（78）：63/15</div>
+                        <div class="bz">编制（12）：10/2</div>
+                    </li>
+                    <div class="close-node-btn">
+                        <span class="icon icon-add">+</span>
+                    </div>
+                </div>
+                <div class="pa-flex" style="display: none;">
+                    <ul>
+                        <div class="parent-li position-left">
+                            <li class="depart-node">
+                                <div class="department-name">上海（78人）</div>
+                                <div class="fzr">负责人：宋晓丹</div>
+                                <div class="rs">人数（78）：63/15</div>
+                                <div class="bz">编制（12）：10/2</div>
+                            </li>
+                            <div class="close-node-btn">
+                                <span class="icon icon-add">+</span>
+                            </div>
+                        </div>
+                        <div class="pa-flex" style="display: none;">
+                            <ul>
+                                <div class="parent-li position-left">
+                                    <li class="jobNode">
+                                        <div class="job-node job-node-content">
+                                            咨询师
+                                        </div>
+                                        <div class="job-count job-node-content">3人</div>
+                                    </li>
+                                </div>
+                            </ul>
+                            <ul>
+                                <div class="parent-li position-middle">
+                                    <li class="jobNode">
+                                        <div class="job-node job-node-content">
+                                            咨询师
+                                        </div>
+                                        <div class="job-count job-node-content">3人</div>
+                                    </li>
+                                </div>
+                            </ul>
+                            <ul>
+                                <div class="parent-li position-right">
+                                    <li class="jobNode">
+                                        <div class="job-node job-node-content">
+                                            咨询师
+                                        </div>
+                                        <div class="job-count job-node-content">3人</div>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </ul>
+                    <ul>
+                        <div class="parent-li position-right">
+                            <li class="depart-node">
+                                <div class="department-name">上海（78人）</div>
+                                <div class="fzr">负责人：宋晓丹</div>
+                                <div class="rs">人数（78）：63/15</div>
+                                <div class="bz">编制（12）：10/2</div>
+                            </li>
+                            <div class="close-node-btn">
+                                <span class="icon icon-add">+</span>
+                            </div>
+                        </div>
+                        <div class="pa-flex" style="display: none;">
+                            <ul>
+                                <div class="parent-li position-middle no-siblings">
+                                    <li class="jobNode">
+                                        <div class="job-node job-node-content">
+                                            咨询师
+                                        </div>
+                                        <div class="job-count job-node-content">3人</div>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </ul><!--每个ul为一个子级部门，ul内部结构还是parent-li和pa-flex（重复此结构）-->
+                <ul>
+                    <div class="parent-li position-middle">
+                        <li class="depart-node">
+                            <div class="department-name">上海（78人）</div>
+                            <div class="fzr">负责人：宋晓丹</div>
+                            <div class="rs">人数（78）：63/15</div>
+                            <div class="bz">编制（12）：10/2</div>
+                        </li>
+                        <div class="close-node-btn">
+                            <span class="icon icon-add">+</span>
+                        </div>
+                    </div>
+                    <div class="pa-flex" style="display: none;">
+                        <ul>
+                            <div class="parent-li position-left">
+                                <li class="depart-node">
+                                    <div class="department-name">上海（78人）</div>
+                                    <div class="fzr">负责人：宋晓丹</div>
+                                    <div class="rs">人数（78）：63/15</div>
+                                    <div class="bz">编制（12）：10/2</div>
+                                </li>
+                            </div>
+                        </ul>
+                        <ul>
+                            <div class="parent-li position-right">
+                                <li class="depart-node">
+                                    <div class="department-name">上海（78人）</div>
+                                    <div class="fzr">负责人：宋晓丹</div>
+                                    <div class="rs">人数（78）：63/15</div>
+                                    <div class="bz">编制（12）：10/2</div>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="parent-li position-right">
+                        <li class="depart-node">
+                            <div class="department-name">上海（78人）</div>
+                            <div class="fzr">负责人：宋晓丹</div>
+                            <div class="rs">人数（78）：63/15</div>
+                            <div class="bz">编制（12）：10/2</div>
+                        </li>
+                        <div class="close-node-btn">
+                            <span class="icon icon-add">+</span>
+                        </div>
+                    </div>
+                    <div class="pa-flex" style="display: none;">
+                        <ul>
+                            <div class="parent-li position-left">
+                                <li class="depart-node">
+                                    <div class="department-name">上海（78人）</div>
+                                    <div class="fzr">负责人：宋晓丹</div>
+                                    <div class="rs">人数（78）：63/15</div>
+                                    <div class="bz">编制（12）：10/2</div>
+                                </li>
+                            </div>
+                        </ul>
+                        <ul>
+                            <div class="parent-li position-middle">
+                                <li class="depart-node">
+                                    <div class="department-name">上海（78人）</div>
+                                    <div class="fzr">负责人：宋晓丹</div>
+                                    <div class="rs">人数（78）：63/15</div>
+                                    <div class="bz">编制（12）：10/2</div>
+                                </li>
+                            </div>
+                        </ul>
+                        <ul>
+                            <div class="parent-li position-middle">
+                                <li class="depart-node">
+                                    <div class="department-name">上海（78人）</div>
+                                    <div class="fzr">负责人：宋晓丹</div>
+                                    <div class="rs">人数（78）：63/15</div>
+                                    <div class="bz">编制（12）：10/2</div>
+                                </li>
+                                <div class="close-node-btn">
+                                    <span class="icon icon-add">+</span>
+                                </div>
+                            </div>
+                            <div class="pa-flex" style="display: none;">
+                                <ul>
+                                    <div class="parent-li position-left">
+                                        <li class="jobNode">
+                                            <div class="job-node job-node-content">
+                                                咨询师
+                                            </div>
+                                            <div class="job-count job-node-content">3人</div>
+                                        </li>
+                                    </div>
+                                </ul>
+                                <ul>
+                                    <div class="parent-li position-right">
+                                        <li class="jobNode">
+                                            <div class="job-node job-node-content">
+                                                咨询师
+                                            </div>
+                                            <div class="job-count job-node-content">3人</div>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </ul>
+                        <ul>
+                            <div class="parent-li position-middle">
+                                <li class="depart-node">
+                                    <div class="department-name">上海（78人）</div>
+                                    <div class="fzr">负责人：宋晓丹</div>
+                                    <div class="rs">人数（78）：63/15</div>
+                                    <div class="bz">编制（12）：10/2</div>
+                                </li>
+                            </div>
+                        </ul>
+                        <ul>
+                            <div class="parent-li position-right">
+                                <li class="depart-node">
+                                    <div class="department-name">上海（78人）</div>
+                                    <div class="fzr">负责人：宋晓丹</div>
+                                    <div class="rs">人数（78）：63/15</div>
+                                    <div class="bz">编制（12）：10/2</div>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.2.0.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/org.js"></script>
+</body>
+</html>

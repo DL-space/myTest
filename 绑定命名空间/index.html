@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定命名空间</title>
+</head>
+<body>
+<div class="container">
+    <h1>绑定命名空间</h1>
+    <div class="a">
+        <button class="btn">a的按钮</button>
+    </div>
+    <div class="b">
+        <button class="btn">b的按钮</button>
+    </div>
+    <button class="btn">单独的按钮</button>
+    <button class="del">移除事件</button>
+</div>
+<script src="../jQuery/jquery-3.2.0.js"></script>
+<script>
+    $(function () {
+        var aa = function () {
+            alert("ok");
+        };
+        $(document).on("click.a",".btn",aa);
+        $(document).on("click",".btn",function () {
+            alert(22)
+        });
+        $(document).on("click",".del",function () {
+            $(document).off("click.a");//直接.a也可以，移除绑定在命名空间a上的click事件。
+        });
+    })
+</script>
+</body>
+</html>
