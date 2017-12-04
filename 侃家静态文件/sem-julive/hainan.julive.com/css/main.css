@@ -1,0 +1,1475 @@
+/**
+*文件说明：新版PC网站公用样式文件
+*创建时间：2015-11-19
+*/
+body{
+    font-family: "Microsoft YaHei";
+}
+.container{
+    min-width: 1200px;
+}
+.row,.footer .inn{
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.row{
+    margin-bottom: 35px;
+}
+.col,.col2,.col3,.col4,.col5,.col6{
+    float: left;
+}
+.col{
+    width: 810px;
+    margin-right: 15px;
+}
+.col2{
+    width: 375px;
+}
+.col3{
+    width: 270px;
+    margin-right: 30px;
+}
+.col4{
+    width: 900px;
+}
+.col5{
+    width: 300px;
+    margin-left: 40px;
+}
+.col6{
+    width: 860px;
+}
+.textblue{
+    color:#0074c1;
+}
+.es-desc-null{
+    color: #e1e1e1;
+}
+.slide-down-option{
+    line-height: 24px;
+    text-align: right;
+    float:right;
+}
+.btn,.btn2,.btn3{
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    background: #f44336;
+    overflow: hidden;
+}
+.btn:hover,.btn2:hover,.btn3:hover{
+    text-decoration: none;
+    background: #c13026;
+}
+.btn2{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    border-radius: 4px;
+}
+.btn3{
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    line-height: 26px\9;
+    padding: 0 15px;
+}
+.btn3.btn-query{
+    font-size: 12px;
+}
+.btn-search{
+    float: left;
+    text-align: left;
+    height: 30px;
+    line-height: 28px;
+    padding-right: 16px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.btn-house{
+    float:right;
+    font-size:12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 16px;
+    margin-top:3px;
+    border-radius: 4px;
+}
+.ico{
+    float: left;
+    width: 18px;
+    height: 18px;
+    background: url("../images/ico-search.png") 0 0 no-repeat;
+    overflow: hidden;
+}
+.ico-search{
+    margin: 6px 8px 0;
+}
+/*mod*/
+.mod{
+    padding: 10px 0;
+    overflow: hidden;
+}
+.mod .tit h4,.area-list li,.mod-sex .sex-list li{
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+}
+.mod .tit,.query-item li{
+    float: left;
+    margin-right: 15px;
+}
+.mod-area{
+    border-bottom: 1px dashed #ddd;
+}
+.area-list li a:hover,.area-list li.on a{
+    color: #0074c1;
+}
+.mod-sex ,.mod-sex .tit,.mod-sex .con,.mod-sex .sex-list li,.mod-query .tit,.mod-query .con,.mod-sex .sex-list .chk{
+    float: left;
+}
+.mod-sex{
+    margin-right: 80px;
+}
+.mod-sex .sex-list .chk{
+    margin: 10px 5px 0 0;
+}
+.cons-search{
+	height: 24px;
+	line-height: 24px;
+    padding-top: 5px;
+    overflow: hidden;
+}
+.cons-search .ipt{
+    float: left;
+    color: #999;
+    width: 205px;
+    height: 22px;
+    line-height: 24px\0;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-right: none;
+}
+/*box*/
+.box .hd{
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+.box .hd h2{
+    float: left;
+    font-size: 16px;
+}
+.box .hd .fr li{
+    float: left;
+}
+.box .hd .online-ask{
+    background-position: left 4px;
+}
+.box .bd{
+    padding-top: 20px;
+}
+.site-error{
+    text-align: center;
+    padding: 100px 0;
+}
+/*修改搜索框开始*/
+.search{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.search .ipt{
+    float: left;
+    color: #999;
+    width: 387px;
+    height: 28px;
+    line-height: 28px\0;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.result{
+    font-size: 14px;
+    font-weight: bold;
+    color: #999;
+    height: 32px;
+    line-height: 30px;
+}
+.result-num{
+    color: #009de8;
+}
+/*楼盘信息*/
+.media{
+    width: 811px;
+}
+.media-object{
+    width: 240px;
+    height: 170px;
+    overflow: hidden;
+}
+.media-heading{
+    height: 40px;
+    overflow: hidden;
+}
+.media-heading{
+    font-size: 20px;
+}
+.media-body{
+    width: 536px;
+    overflow: hidden;
+}
+.media-body .alias {
+    color:#a8a8a8;
+}
+.media-info{
+    height: 72px;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+.media-info li{
+    float: left;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    overflow: hidden;
+}
+.media-info li.house-pos,.media-info li.house-type{
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    width: 252px;
+    margin-right: 30px;
+}
+.media-info li.house-price,.media-info li.house-total{
+    width: 250px;
+}
+.media-info li.house-price strong,.media-info li.house-total strong,.media2-num .num,.media2-useful .num{
+    color: #f44336;
+}
+.media-info li.house-price strong{
+    position: relative;
+    font-size: 30px;
+    vertical-align: bottom;
+    bottom: 6px;
+}
+.media-lbl{
+    clear: both;
+    width: 100%;
+}
+.media2{
+    clear: both;
+    height: 170px;
+    width: 100%;
+    overflow: hidden;
+}
+.media2-info{
+    height: 78px;
+    line-height: 26px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.media2-info-hover .more-option{
+    height: 24px;
+    line-height: 24px;
+}
+.media2-info-hover .more{
+    float: right;
+    color: #2680c5;
+    margin-right: 5px;
+}
+.media2-num,.media2-useful{
+    height: 24px;
+    line-height: 24px;
+}
+.media2-object{
+    width: 130px;
+    height: 170px;
+    overflow: hidden;
+}
+.cons-impression .fgx{
+    margin: 0 4px;
+}
+/*media3*/
+.media3{
+    height: 80px;
+    padding: 11px 20px;
+    background: #dbe0e5;
+    overflow: hidden;
+}
+.media3 .media3-left,.media3 .media3-left img{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+.media3 .media3-left{
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.corner-bg{
+    display: none;
+}
+.media3 .media3-heading{
+    color: #0074c1;
+    font-size: 14px;
+}
+.media3 .media3-body{
+    padding-top: 6px;
+}
+.media3 .media3-heading,.media3 .media3-body p{
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+}
+/*media4*/
+.media4, .media4 .media4-pic, .media4 .media4-pic img {
+    width: 298px;
+    height: 200px;
+    overflow: hidden;
+}
+.media4 {
+    position: relative;
+    float: left;
+    height: 270px;
+    margin: 0 20px 22px 0;
+    -webkit-box-shadow: 0 0 6px #b9b9b9;
+    -moz-box-shadow: 0 0 6px #b9b9b9;
+    box-shadow: 0 0 6px #b9b9b9;
+}
+.media4-text {
+    font-size: 14px;
+    height: 64px;
+    padding: 6px 0 0 16px;
+    background: #fff;
+}
+.media4-text .num {
+    color: #ff3d00;
+}
+.media4-text p {
+    height: 26px;
+    line-height: 26px;
+    overflow:hidden;
+}
+.media4-text2 {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    z-index: 3;
+}
+.media4-text2 .media4-lb, .media4-text2 .media4-info {
+    padding-left: 10px;
+}
+.media4-text2 .media4-lb{
+    height: 19px;
+    margin-bottom:5px;
+    overflow: hidden;
+}
+.media4-text2 .media4-lb .media4-item {
+    float: left;
+    color: #fff;
+    padding: 0 4px;
+    margin-right: 8px;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.media4-text2 .media4-lb .media4-item.feature{
+    background: #0099ff;
+    border: 1px solid #0099ff;
+}
+.media4-text2 .media4-info, .media4-price {
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+.media4-text2 .media4-info {
+    clear: both;
+    padding-right: 10px;
+}
+.media4-text2 .media4-info h4 {
+    float: left;
+    font-size: 18px;
+    font-weight: normal;
+    width: 126px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.media4-text2 .media4-info h4 a.index-pro-name{
+    color: #fff;
+}
+.media4-price {
+    float: right;
+    padding: 0 8px;
+    border-radius: 2px;
+    background: #f44336;
+}
+.media4-price em {
+    font-style: normal;
+    font-size: 18px;
+}
+.media4-layer{
+    position: absolute;
+    bottom: 70px;
+    text-indent: -9999px;
+    letter-spacing: 0;
+    width: 100%;
+    height: 113px;
+    background: url("../images/bg-media4-layer.png") 0 0 repeat-x;
+    z-index: 2;
+}
+.media4-layer a{
+    display: block;
+    text-indent: -9999em;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*关于我们*/
+.position, .area {
+    clear: both;
+    width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+}
+.position {
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #333;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+}
+.position .split {
+    font-family: "SimSun";
+    color: #bcbcbc;
+}
+.ico-pos {
+    display: inline-block;
+    float: left;
+    width: 16px;
+    height: 24px;
+    margin: 16px 10px 0 0;
+    background: url('../images/icon.png') 0 0 no-repeat;
+}
+.a1 {
+    padding-top: 20px;
+    overflow: hidden;
+}
+.s-col1, .s-col2 {
+    float: left;
+    width: 200px;
+    overflow: hidden;
+}
+.s-col1 {
+    margin-right: 55px;
+}
+.s-col2 {
+    width: 860px;
+}
+.s-col2 .box2 {
+    padding-bottom: 20px;
+}
+.about-comjia li {
+    width: 200px;
+    height: 40px;
+    margin-bottom: 2px;
+}
+.about-comjia li a {
+    display: block;
+    text-indent: -9999px;
+    width: 100%;
+    height: 100%;
+    background: url('../images/bg_about.png') 0 0 no-repeat;
+    overflow: hidden;
+}
+.about-comjia li a.contactUs {
+    background-position: 0 -45px;
+}
+.about-comjia li a.jobs {
+    background-position: 0 -90px;
+}
+.about-comjia li a.statement {
+    background-position: 0 -135px;
+}
+.about-comjia li.on a.aboutComjia {
+    background-position: 0 -180px;
+}
+.about-comjia li.on a.contactUs {
+    background-position: 0 -225px;
+}
+.about-comjia li.on a.jobs {
+    background-position: 0 -270px;
+}
+.about-comjia li.on a.statement {
+    background-position: 0 -315px;
+}
+.box2 .hd {
+    height: 38px;
+    line-height: 38px;
+    padding-bottom: 6px;
+    border-bottom: 1px dashed #ddd;
+}
+.box2 .hd h2 {
+    font-size: 16px;
+    color: #333;
+}
+.box2 .bd {
+    padding-top: 25px;
+}
+.comjia-pic, .comjia-pic img {
+    width: 650px;
+    height: 230px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.comjia-pic {
+    padding-bottom: 32px;
+}
+.s-comjia-about-info p {
+    line-height: 26px;
+    padding-bottom: 26px;
+    font-size: 14px;
+}
+.comjia-share {
+    clear: both;
+    width: 100%;
+    padding: 28px 0 30px;
+}
+.address {
+    float: left;
+}
+.address li {
+    font-size: 14px;
+    color: #333;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+}
+/*header*/
+.header, .header2-wrap {
+    width: 1200px;
+    height: 56px;
+    line-height: 40px;
+    margin: 0 auto;
+    padding: 8px 0;
+}
+.header2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #edeff1;
+    z-index: 15;
+}
+.header .logo {
+    float: left;
+    height: 40px;
+    margin-right: 42px;
+}
+.city-tip {
+    position: relative;
+}
+.city-tip-show {
+    position: absolute;
+    top: 30px;
+    left: -9px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "SimHei";
+    width: 166px;
+    height: 66px;
+    line-height: 66px;
+    padding: 12px 2px 2px;
+    background: url('../images/city-tip-pop.png') 0 0 no-repeat;
+    z-index: 13;
+}
+.header .city-position {
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 13px;
+    background: #f2f2f2;
+    border-radius: 20px;
+    padding-right: 13px;
+    margin: 3px 62px 0 0;
+}
+.city-position .ico-pos {
+    float: left;
+    width: 15px;
+    height: 21px;
+    margin: 7px 7px 0 0;
+    background: url('../images/cityPosition.png') 0 0 no-repeat;
+    overflow: hidden;
+}
+.hot-phone {
+    float: left;
+    font-size: 16px;
+}
+.hot-phone span.phone-txt {
+    color: #ff5126;
+    font-weight: bold;
+}
+.header2 .search {
+    margin: 5px 20px 0 0;
+}
+.header2 .search .ipt {
+    width: 238px;
+}
+.header2 .btn-search {
+    height: 30px;
+    line-height: 30px;
+}
+.header2 .btn-search .ico-search {
+    margin: 6px 8px 0;
+}
+.header2 .hot-phone {
+    margin-right: 20px;
+}
+/*footer*/
+.footer {
+    width: 100%;
+    height: 350px;
+    min-width: 1200px;
+    background: #2a2a2a url("../images/bg-footer.png") bottom center no-repeat;
+}
+.footer .inn {
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.f-nav, .f-link {
+    border-bottom: 1px solid #393939;
+    overflow: hidden;
+}
+.f-link .fr {
+    padding-left: 20px;
+}
+.f-nav {
+    height: 86px;
+}
+.f-nav .comjia-about {
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 31px;
+}
+.f-nav .comjia-about a {
+    color: #fff;
+    font-size: 14px;
+    margin-right: 25px;
+}
+.service-online {
+    float: right;
+    margin-top: 25px;
+}
+.service-online li {
+    float: left;
+    height: 36px;
+}
+.service-online li a {
+    display: block;
+    text-indent: -9999px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.service-online li.hot-line {
+    line-height: 36px;
+    font-size: 22px;
+    color: #68acfc;
+    text-indent: 0;
+    margin-right: 25px;
+}
+.f-link {
+    padding: 10px 0;
+}
+.comjia-wx, .comjia-wx img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.flink li {
+    float: left;
+    height: 36px;
+    margin-right: 24px;
+}
+.copyright {
+    padding-top: 5px;
+}
+.copyright p {
+    color: #999;
+    height: 22px;
+    line-height: 22px;
+}
+/*专题*/
+.font-color-f44336 {
+    color: #f44336;
+}
+.font-color-0074c1{
+    color: #0074c1;
+}
+.col7,.col8{
+    float: left;
+}
+.col7{
+    width: 850px;
+    margin-right: 50px;
+}
+.col8{
+    width: 300px;
+}
+.spread-banner{
+    width: 100%;
+    height: 300px;
+    margin-top: -15px;
+}
+.spread-banner-tongzhouxincheng{
+    background: url("../images/spread-banner-tongzhouxincheng.jpg") center 0 no-repeat;
+}
+.spread-banner .banner-text{
+    width: 540px;
+    padding: 20px 60px 0 0;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #fff;
+    line-height: 28px;
+}
+.spread-banner .banner-text h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.col8 .box{
+    margin-top: 50px;
+}
+.col8 .box.xgzt{
+    margin-top: 20px;
+}
+.col8 .box .bd{
+    margin-bottom: 50px;
+}
+.col8 .box.rxlp .media4{
+    margin: 0 0 20px;
+    box-shadow: none;
+    background: #f3f5f9;
+}
+.col8 .box.rxlp .media4 .media4-text{
+    background: #f3f5f9;
+}
+.eva-item{
+    padding-bottom: 12px;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+}
+.spread-area-info{
+    margin-bottom: 40px;
+}
+.spread-area-info .eva-item{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.eva-item .main-desc{
+    font-weight:bold;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 25px;
+    background: #dbe0e5;
+}
+.house-type-list .list-item{
+    margin-bottom: 50px;
+    padding-bottom: 24px;
+    background: url('../images/xie-line.png') 0 100% repeat-x;
+}
+.house-type-list .list-item .click-more{
+    text-align: center;
+}
+.house-type-list .list-item .click-more span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #a8a8a8;
+}
+.area-info-chart-tongzhouxincheng{
+    width: 850px;
+    height: 387px;
+    overflow: hidden;
+    background: #f3f5f9 url("../images/tongzhouxincheng-chart.jpg") no-repeat;
+}
+.media3{
+    margin-bottom: 18px;
+}
+.eva-item .media3-body span,.eva-item a{
+    color: #0074c1;
+}
+.eva-item .eva-info2{
+    position: relative;
+    line-height: 26px;
+    padding: 0 20px;
+}
+.eva-item .eva-info2 .more{
+    position: absolute;
+    right: 24px;
+    bottom: 0;
+}
+/*热门资讯*/
+.information-list li{
+    height: 30px;
+    line-height: 30px;
+}
+.information-list li .item-num{
+    float: left;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin: 7px 8px 0 0;
+    background: #ccc;
+    text-align: center;
+    color: #fff;
+}
+.information-list li .item-num.goTop{
+    background: #0074c1;
+}
+.information-list li a{
+    float: left;
+    width: 270px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+/*楼盘基本信息*/
+.pro-base-info{
+    width: 460px;
+    float: left;
+    position: relative;
+}
+.pro-base-info .base-desc{
+    margin-top: 30px;
+}
+.pro-base-info .base-desc .base-status-name{
+    width: 100%;
+    height: 26px;
+}
+.base-desc .base-status-name .pro-status{
+    float: left;
+    font-size: 14px;
+    padding: 0 5px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 3px;
+    text-align: center;
+    margin-left: 10px;
+}
+.base-desc .base-status-name .pro-status.on{
+    border: 1px solid #f44336;
+    color: #f44336;
+}
+.base-desc .base-status-name .pro-status.ed{
+    border: 1px solid #ccc;
+    color: #ccc;
+}
+.base-desc .base-status-name .pro-status.wait{
+    border: 1px solid #0074c1;
+    color: #0074c1;
+}
+.base-desc .base-status-name .pro-status.before,.base-desc .base-status-name .pro-status.ing{
+    border: 1px solid #0074c1;
+    color: #0074c1;
+}
+.base-desc .base-status-name .pro-name,.base-desc .base-status-name .pro-error-alias{
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+}
+.base-desc .base-status-name .pro-name{
+    font-size: 22px;
+}
+.base-desc .base-status-name .pro-error-alias{
+    margin-left: 10px;
+    margin-top: 4px;
+}
+.base-desc .pro-tag-list{
+    width: 430px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+.base-desc .pro-tag-list .tag-body{
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.base-desc .pro-tag-list .tag-body .pro-tag{
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    padding: 0 8px;
+    margin-right: 3px;
+}
+.base-desc .base-info-list .base-info-item{
+    width: 460px;
+    height: 30px;
+    line-height: 30px;
+}
+.base-desc .base-info-list .base-info-item .item{
+    height: 30px;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 14px;
+}
+.row.project-simply-info{
+    width: 850px;
+    background: #f3f5f9;
+    margin-bottom: 10px;
+}
+.project-simply-info .want-es-form-container{
+    margin-top:20px;
+}
+.base-desc .base-info-list .base-info-item .item .base-info-price{
+    margin-right: 20px;
+    color: #f44336;
+}
+.base-desc .base-info-list .base-info-item .item .ico-text{
+    height: 30px;
+    line-height: 30px;
+    margin-left: 15px;
+    color: #a8a8a8;
+    text-decoration: none;
+}
+.base-phone-header{
+    clear: both;
+    padding:10px 0 0;
+}
+.base-phone-header .base-phone .input-group{
+    width: 382px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.base-phone-header .base-phone .input-group input.tel{
+    width: 260px;
+    height: 28px;
+    line-height: 28px\0;
+    padding-left: 10px;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    float: left;
+}
+.base-phone-header .base-phone .input-group .tel-btn{
+    width: 110px;
+    height: 30px;
+    float: left;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 16px;
+}
+.base-phone-header .base-phone{
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.base-phone-header .base-phone .free-tel{
+    float: left;
+    font-size: 24px;
+    margin:0 20px 15px 0;
+}
+.base-phone-header .base-phone .free-tel .free-tel-text{
+    color: #f44336;
+}
+.base-phone-header .base-phone .pro-count-text{
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+}
+.base-phone-header .base-phone .pro-count-text .count-num{
+    padding: 0 3px;
+    background: #0074c1;
+    color: #fff;
+    border-radius: 2px;
+    margin: 0 2px;
+}
+.base-phone-header .base-phone .pro-count-text .comment-count{
+    color: #0074c1;
+}
+/*优惠信息*/
+.discount{
+    clear: both;
+    width: 850px;
+    height: 70px;
+    background: url("../images/bg-discount850.jpg") 0 0 no-repeat;
+    overflow: hidden;
+}
+.discount .tit,.discount-wrap,.discount .input-group{
+    float: left;
+    overflow: hidden;
+}
+.discount .tit{
+    text-align: center;
+    font-size:24px;
+    color: #f43651;
+    font-family:"微软雅黑";
+    width: 185px;
+    height: 70px;
+    line-height: 70px;
+    margin-right:25px;
+}
+.discount-wrap{
+    width: 316px;
+    height: 40px;
+    margin:15px 15px 0 0;
+    padding-right: 10px;
+    border-right:1px dashed #fff;
+}
+.discount-num{
+    display: table;
+    color: #fff;
+    font-size:14px;
+    height: 40px;
+}
+.discount-num p{
+    display: table-cell;
+    vertical-align: middle;
+    width: 316px;
+    overflow: hidden;
+}
+.discount-num span{
+    font-size:18px;
+}
+.discount .input-group,.discount .input-group .tel{
+    font-size:14px;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+.discount .input-group{
+    margin-top:20px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+.discount .input-group .tel{
+    float: left;
+    color: #fff;
+    width: 155px;
+    padding:0 10px;
+    background: rgba(245,60,48,0.4);
+    border: none;
+}
+.input-group ::-webkit-input-placeholder { /* WebKit browsers */
+    color:#fff;
+}
+.input-group :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#fff;
+}
+.input-group ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#fff;
+}
+.input-group :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#fff;
+}
+.discount .btn{
+    float: right;
+    text-align: center;
+    font-size:16px;
+    color: #f43651;
+    width: 102px;
+    height: 28px;
+    line-height: 26px;
+    background: #fff;
+}
+.project-area-info{
+    height: 50px;
+    line-height: 50px;
+    background: #dbe0e5;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+/*主推专题户型页-户型部分*/
+.spread-pro-house li.house-type-item{
+    height: 260px;
+    padding: 20px;
+    background: #f3f5f9;
+    margin-bottom: 10px;
+}
+
+.spread-pro-house .house-img{
+    height: 260px;
+    width: 360px;
+    overflow: hidden;
+    margin-right: 35px;
+    float: left;
+    position: relative;
+}
+.house-type-item .house-img:hover .magnifier-house-type{
+    top: 0;
+    position: absolute;
+    width: 360px;
+    height: 260px;
+    background-image: url("../images/detail-hold-big.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgb(0,0,0);
+    opacity: .5;
+    background-size: 20%;
+    z-index: 1;
+}
+.spread-pro-house .house-img img{
+    width: 360px;
+    height: 260px;
+}
+.house-type-info{
+    float: left;
+    width: 400px;
+    height: 260px;
+}
+.house-type-info .house-type-title{
+    height: 26px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+.house-type-info .house-type-title .house-type-status{
+    display: block;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+    margin-left: 10px;
+    float: left;
+    padding: 0 5px;
+}
+.house-type-info .house-type-title .house-type-status.on{
+    border: 1px solid #f44336;
+    color: #f44336;
+    border-radius: 3px;
+}
+.house-type-info .house-type-title .house-type-status.ed{
+    border: 1px solid #ccc;
+    color: #ccc;
+    border-radius: 3px;
+}
+.house-type-info .house-type-title .house-type-status.wait{
+    border: 1px solid #0074c1;
+    color: #0074c1;
+    border-radius: 3px;
+}
+.house-type-info .house-type-title .house-type-status.before{
+    border: 1px solid #0074c1;
+    color: #0074c1;
+    border-radius: 3px;
+}
+.house-type-info .house-type-title .house-type-status.ing{
+    border: 1px solid #0074c1;
+    color: #0074c1;
+    border-radius: 3px;
+}
+.house-type-info .house-type-title .house-type-summary-big{
+    font-size: 18px;
+    display: block;
+    float: left;
+}
+.house-type-base-text{
+    width: 200px;
+    float: left;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.house-type-base-text .base-text-item{
+    font-size: 12px;
+    display: block;
+    width: 200px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.house-type-review{
+    height: 118px;
+    width: 200px;
+    float: left;
+}
+.house-type-review .review-item{
+    height: 52px;
+    margin-bottom: 10px;
+}
+.house-type-review .review-item .review-text{
+    display: block;
+    float: left;
+    width: 130px;
+    padding: 5px 0 5px 10px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 3px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.house-type-review .review-item .review-text.line-two{
+    height: 40px;
+    margin-top: 0;
+}
+.house-type-review .review-item.review-good .review-text{
+    color: #0074c1;
+    border: 1px solid #0074c1;
+}
+.house-type-review .review-item.review-bad .review-text{
+    color: #898989;
+    border: 1px solid #898989;
+}
+.house-type-review .review-item .review-item-header-name{
+    color: #0074c1;
+}
+.house-type-review .review-item .review-item-header{
+    float: left;
+    width: 120px;
+    height: 26px;
+    line-height: 26px;
+}
+.house-type-review .house-type-header-link{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 3px 0;
+    padding: 0 8px;
+    font-size: 12px;
+}
+/*主推楼盘  -楼盘页面*/
+.spread-pro-item .media4{
+    width: 850px;
+    height: 300px;
+    margin: 0;
+}
+.spread-pro-item .media4 .media4-layer{
+    text-indent: -9999px;
+    height: 170px;
+    bottom: 0;
+    background-position: left bottom;
+}
+.spread-pro-item .media4 .media4-pic,.spread-pro-item .media4 .media4-pic img{
+    width: 850px;
+    height: 300px;
+}
+.spread-pro-item .media4-text2,.spread-pro-item .media4-text2 a{
+    color: #fff;
+}
+.spread-pro-item .media4-text2{
+    height: auto;
+    bottom: 10px;
+}
+.spread-pro-item .media4-text2 .media4-info h4{
+    width: 100%;
+    float: none;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.spread-pro-item .media4-text2 .media4-info{
+    height: auto;
+    padding:0 40px;
+}
+.spread-pro-item .media4-text2 .media4-price{
+    float: left;
+}
+.spread-pro-item .media4-text2 .media4-lb{
+    float: right;
+}
+.spread-pro-item .media4-text2 .media4-lb .media4-item{
+    height: 16px;
+    line-height: 16px;
+    margin: 0 0 0 8px;
+}
+.spread-pro-item .media4-text2 .media4-base{
+    width: 50%;
+    float: left;
+}
+.spread-pro-item .media4-text2 .media4-num{
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+.spread-pro-item .project-description{
+    padding: 24px 0 24px 30px;
+    background: #f3f5f9;
+    margin: 10px 0;
+}
+.spread-pro-item .project-description .project-desc{
+    width: 600px;
+    line-height: 24px;
+    float: left;
+    padding-right: 40px;
+    border-right: 1px dashed #dfdfdf;
+}
+.spread-pro-item .project-description .project-desc .des-tit{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.spread-pro-item .project-description .project-desc-header{
+    width: 178px;
+    float: right;
+    margin-top: 12px;
+}
+.project-description .project-desc-header .desc-header-img{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 20px 0 49px;
+}
+.project-description .project-desc-header .desc-header-img img{
+    width: 80px;
+    height: 80px;
+}
+.project-description .project-desc-header .desc-header-name{
+    text-align: center;
+    margin: 15px;
+    font-size: 12px;
+}
+.project-description .project-desc-header .ask-header-btn{
+    display: block;
+    border: 1px solid #696d6f;
+    padding: 3px 10px;
+    border-radius: 2px;
+    width: 50px;
+    margin: 0 auto;
+}
+/*定量户型分样式展示*/
+.house-type-switch{
+    width: 861px;
+}
+.switch-2 li.house-type-item{
+    float: left;
+    width: 380px;
+    height: auto;
+}
+.switch-2 .house-type-item{
+    margin-right: 10px;
+}
+.switch-2 .house-img,.switch-2 .house-img img,.switch-2 .house-img:hover .magnifier-house-type{
+    width: 250px;
+    height: 180px;
+    overflow: hidden;
+}
+.switch-2 .house-type-info{
+    width: 95px;
+    height: auto;
+}
+.switch-3 li.house-type-item{
+    float: left;
+    width: 250px;
+    height: auto;
+    padding: 13px;
+}
+.switch-3 .house-type-item{
+    margin-right: 11px;
+}
+.switch-3 .house-img{
+    overflow: hidden;
+    margin-right: 0;
+}
+.switch-3 .house-img,.switch-3 .house-img:hover .magnifier-house-type,.switch-3 .house-img img{
+    width: 250px;
+    height: 180px;
+}
+.switch-3 .house-type-info{
+    width: 250px;
+    height: auto;
+}
+.switch-3 .house-type-info .house-type-title{
+    height: 48px;
+    line-height: 48px;
+    margin: 10px 0 0 5%;
+}
+.switch-3 .house-type-info .house-type-title,.switch-3 .house-type-info .house-type-base-text{
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+}
+.switch-3 .house-type-info .house-type-base-text .base-text-item{
+    width: 100%;
+}
+.switch-4 li.house-type-item{
+    float: left;
+    width: 187px;
+    height: auto;
+    padding: 10px 9px;
+}
+.switch-4 .house-type-item{
+    margin-right: 10px;
+}
+.house-type-item.last{
+    margin-right: 0;
+}
+.switch-4 .house-img{
+    width: 187px;
+    height: 136px;
+    overflow: hidden;
+    margin-right: 0;
+}
+.switch-4 .house-img:hover .magnifier-house-type{
+    width: 187px;
+    height: 136px;
+}
+.switch-4 .house-img img{
+    width: 187px;
+    height: 136px;
+}
+.switch-4 .house-type-info{
+    width: 187px;
+    height: auto;
+}
+.switch-4 .house-type-info .house-type-title{
+    width: 45%;
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    margin: 10px 0 0 5%;
+}
+.switch-4 .house-type-info .house-type-base-text{
+    width: 45%;
+    float: left;
+    margin-left: 5%;
+}
+.switch-4 .house-type-info .house-type-base-text .base-text-item{
+    width: 100%;
+}
+.house-type-switch .house-type-item .house-img .house-type-summary{
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    height: 56px;
+    line-height: 72px;
+    font-size: 16px;
+    text-align: right;
+    padding-right: 5%;
+    background: url('../images/bg-house-summary.png') ;
+    color: #fff;
+    z-index: 2;
+}
+.house-type-switch .house-type-item .house-img:hover .house-type-summary{
+    background: none;
+}

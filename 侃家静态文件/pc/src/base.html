@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>楼盘基础信息页</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/house-detail-base.css">
+</head>
+<body>
+<div class="container">
+    @@include("./app/header/header2.html")
+    <div class="center">
+        <div class="row row-search">
+            <div class="wrap">
+                @@include("./app/search/search.html")
+            </div>
+        </div>
+        <div class="row row-crumb">
+            @@include("./app/crumbs/crumb.html")
+        </div>
+        <div class="row row-top-nav">
+            @@include("./app/detail-top/index.html")
+        </div>
+        <div class="row row-baseinfo">
+            <div class="col5-wrap">
+                <div class="col5">
+                    <!--楼盘基础信息-->
+                    <div class="box box-base">
+                        <div class="hd">
+                            <h2>基本信息</h2>
+                        </div>
+                        <div class="bd">
+                            <ul class="base-info-list">
+                                <li>
+                                    <div class="th">楼盘地址</div>
+                                    <div class="txt"><p>顺义顺于路与南焦路交叉口东北方向（地铁15号线南法信站向北150米）</p></div>
+                                </li>
+                                <li>
+                                    <div class="th">物业类型</div>
+                                    <div class="txt"><p>商住</p></div>
+                                </li>
+                                <li>
+                                    <div class="th">建筑类型</div>
+                                    <div class="txt"><p>loft</p></div>
+                                </li>
+                                <li>
+                                    <div class="th">环&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;线</div>
+                                    <div class="txt"><p>5环至6之间，距5环13km，距6环3km</p></div>
+                                </li>
+                                <li>
+                                    <div class="th">开&nbsp;&nbsp;发&nbsp;&nbsp;商</div>
+                                    <div class="txt"><p>华远</p></div>
+                                </li>
+                                <li>
+                                    <div class="th">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区</div>
+                                    <div class="txt"><p>北京小学</p></div>
+                                </li>
+                                <li>
+                                    <div class="th">楼盘特点</div>
+                                    <div class="txt txt-trait txt-on"><p>三环以内</p></div>
+                                    <div class="txt txt-trait"><p>豪宅</p></div>
+                                    <div class="txt txt-trait"><p>高端会所</p></div>
+                                    <div class="txt txt-trait"><p>全朝南</p></div>
+                                    <div class="txt txt-trait"><p>双卫</p></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--销售信息-->
+                    <div class="box box-sale">
+                        <div class="hd">
+                            <h2>销售信息</h2>
+                        </div>
+                        <div class="bd">
+                            <ul class="base-info-list">
+                                <li>
+                                    <div class="th">开发商报价</div>
+                                    <div class="txt">
+                                        <p>35,000元/平米</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">销售状态</div>
+                                    <div class="txt"><p>在售</p></div>
+                                </li>
+                                <li>
+                                    <div class="th">优惠信息</div>
+                                    <div class="txt"><p>10万抵20万</p></div>
+                                </li>
+                                <li>
+                                    <div class="th">最新开盘</div>
+                                    <div class="txt"><p>2016-08-31</p></div>
+                                </li>
+                                <li>
+                                    <div class="th">最早交房</div>
+                                    <div class="txt"><p>2016-12-31</p></div>
+                                </li>
+                                <li>
+                                    <div class="th">楼盘户型</div>
+                                    <div class="txt">
+                                        <p>一室一厅(3) 两室一厅（3）</p>
+                                        <div class="info-more">
+                                            <a href="#">
+                                                <span class="ico ico-htype">趋势</span>
+                                                户型分析
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">产权年限</div>
+                                    <div class="txt"><p>50年</p></div>
+                                </li>
+                                <li>
+                                    <div class="th">剩余产权年限</div>
+                                    <div class="txt"><p>49年</p></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--小区详情-->
+                    <div class="box house-details">
+                        <div class="hd">
+                            <h2>小区详情</h2>
+                        </div>
+                        <div class="bd">
+                            <ul class="base-info-list">
+                                <li>
+                                    <div class="th">物业公司</div>
+                                    <div class="txt">
+                                        <p>北京鼎泽物业管理公司</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">物业费用</div>
+                                    <div class="txt"><p>4.2元/m²/月</p>
+                                        <div class="tip-box">
+                                            <span class="ico ico-tips"></span>
+                                            <div class="tips">
+                                                <div class="help-tips">
+                                                    <span class="ico-trangle"></span>
+                                                    <div class="inn">
+                                                        物业是一个小区生活品质的保障，小区定位不同，物业费差异也较大。通常而言，普通住宅小区物业费2-5元/m²/月，改善及高端小区的物业费5-10元/m²/月甚至更高，办公、公寓、商业的物业费通常高于同总价位的住宅。
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">水电燃气</div>
+                                    <div class="txt"><p>商水商电，平层有燃气</p>
+                                        <div class="tip-box">
+                                            <span class="ico ico-tips"></span>
+                                            <div class="tips">
+                                                <div class="help-tips">
+                                                    <span class="ico-trangle"></span>
+                                                    <div class="inn">
+                                                        物业是一个小区生活品质的保障，小区定位不同，物业费差异也较大。通常而言，普通住宅小区物业费2-5元/m²/月，改善及高端小区的物业费5-10元/m²/月甚至更高，办公、公寓、商业的物业费通常高于同总价位的住宅。
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">供暖方式</div>
+                                    <div class="txt"><p>市政供暖</p></div>
+                                </li>
+                                <li>
+                                    <div class="th">绿化率</div>
+                                    <div class="txt"><p>30%</p></div>
+                                </li>
+                                <li>
+                                    <div class="th">车位情况</div>
+                                    <div class="txt">
+                                        <p>1:1</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">容积率</div>
+                                    <div class="txt"><p>2.0</p>
+                                        <div class="tip-box">
+                                            <span class="ico ico-tips"></span>
+                                            <div class="tips">
+                                                <div class="help-tips">
+                                                    <span class="ico-trangle"></span>
+                                                    <div class="inn">
+                                                        物业是一个小区生活品质的保障，小区定位不同，物业费差异也较大。通常而言，普通住宅小区物业费2-5元/m²/月，改善及高端小区的物业费5-10元/m²/月甚至更高，办公、公寓、商业的物业费通常高于同总价位的住宅。
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">装修状况</div>
+                                    <div class="txt"><p>精装修，精装标准：4000元/m²</p></div>
+                                </li>
+                                <li class="remark">
+                                    <div class="th">楼栋信息</div>
+                                    <div class="txt">
+                                        <p>2016年9月20日：1#、2#、3#：13层，3梯10户，520户</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--楼盘附加信息-->
+                    <div class="additional">
+                        <h4>关于楼盘详情，我想知道…</h4>
+                        <p>这个开发商资质如何？靠不靠谱？</p>
+                        <p>我有没有购房资质？</p>
+                        <p>……</p>
+                        <h4>找咨询师问问清楚吧</h4>
+                    </div>
+                    <!--免费咨询-->
+                    <div class="mfzx">
+                        @@include("./app/advice-free/advice.html")
+                    </div>
+                </div>
+                <div class="house-more-info">
+                    <a href="#">继续了解该楼盘户型分析 <span class="ico ico-more"></span></a>
+                </div>
+            </div>
+            <div class="col6">
+                <!--订阅信息-->
+                <div class="box4 box-sub">
+                    <div class="hd">
+                        <h2>订阅信息</h2>
+                    </div>
+                    <div class="bd">
+                        <ul class="sub-list">
+                            <li><span class="ico ico-check">选择</span>价格变动通知我</li>
+                            <li><span class="ico ico-check-on">选择</span>优惠信息通知我</li>
+                            <li><span class="ico ico-check">选择</span>楼盘最新动态</li>
+                            <li><span class="ico ico-check">选择</span>开盘通知我</li>
+                            <li><span class="ico ico-check">选择</span>最新楼盘分析报告</li>
+                        </ul>
+                        <div class="info">
+                            <p>还想了解了解其他资讯动态？留电告诉我们吧。</p>
+                        </div>
+                        <div class="ipt-area">
+                            <input type="text" class="ipt" value="输入您的手机号">
+                            <a href="#" class="btn btn-dy">立即订阅</a>
+                        </div>
+                    </div>
+                </div>
+                <!--推荐楼盘-->
+                <div class="box4 box-tjlp">
+                    <div class="hd">
+                        <h2>看过此楼盘的人还看过</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="media">
+                            <div class="pic">
+                                <a href="#">
+                                    <img src="images/img-small-house.png" alt="北京城建琨廷">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <h4 class="name"><a href="#">北京城北京城建琨廷北京城建琨廷建琨廷</a></h4>
+                                <p class="total">468-2,899 万</p>
+                            </div>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="pic">
+                                <a href="#">
+                                    <img src="images/img-small-house.png" alt="北京城建琨廷">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <h4 class="name"><a href="#">北京城北京城建琨廷北京城建琨廷建琨廷</a></h4>
+                                <p class="total">468-2,899 万</p>
+                            </div>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="pic">
+                                <a href="#">
+                                    <img src="images/img-small-house.png" alt="北京城建琨廷">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <h4 class="name"><a href="#">北京城北京城建琨廷北京城建琨廷建琨廷</a></h4>
+                                <p class="total">468-2,899 万</p>
+                            </div>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="pic">
+                                <a href="#">
+                                    <img src="images/img-small-house.png" alt="北京城建琨廷">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <h4 class="name"><a href="#">北京城北京城建琨廷北京城建琨廷建琨廷</a></h4>
+                                <p class="total">468-2,899 万</p>
+                            </div>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="pic">
+                                <a href="#">
+                                    <img src="images/img-small-house.png" alt="北京城建琨廷">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <h4 class="name"><a href="#">北京城北京城建琨廷北京城建琨廷建琨廷</a></h4>
+                                <p class="total">468-2,899 万</p>
+                            </div>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include("./app/footer/footer.html")
+    @@include("./app/sidebar/sidebar.html")
+    @@include("./app/app-download/app-download.html")
+</div>
+<script src="./js/lib/jquery/jquery-1.9.1.min.js"></script>
+<script src="./js/lib/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/house-detail.js"></script>
+</body>
+</html>

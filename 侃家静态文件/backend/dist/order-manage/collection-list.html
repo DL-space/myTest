@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>客户备忘</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/albums-detail2.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+    <div class="page-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo fl">
+                        <h1><a href="#"><img src="../images/logo.png" alt="欢迎登录侃家网业务管理系统！"></a></h1>
+                        <p class="info">欢迎登录侃家网业务管理系统！</p>
+                    </div>
+                    <div class="h-user">
+                        <div class="link-user">
+                            <span class="ico ico-user"></span>
+
+                            <div class="dropdown-menu-user">
+                                <span class="triangle"></span>
+                                <ul class="dropdown-menu">
+                                    <li class="first"><a href="#"><span class="dropdown-text">个人设置</span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">我的消息</span><span
+                                        class="badge myMsg"></span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">待办事项</span><span
+                                        class="badge toMsg"></span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">个人资料</span></a>
+                                    </li>
+                                    <li class="last"><a href="#"><span class="dropdown-text">退出</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ucenter">
+                            <span class="uname">徐立</span>
+                            <span class="fgx">|</span>
+                            <a class="logout" href="#">退出</a>
+                        </div>
+                        <div class="schedule"><a href="#">我的日程</a></div>
+                        <div class="tips-msg">
+                            <a class="ico ico-msg" href="#" title="消息">
+                            <span class="dot">28</span>
+                        </a>
+                            <a class="ico ico-todo" href="#" title="待办事项">
+                            <span class="dot">65</span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-all-wrap">
+        <div class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">咨询师业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">订单列表</a></li>
+                                <li><a href="#">关键带看管理列表</a></li>
+                                <li><a href="#">联系列表</a></li>
+                                <li><a href="#">带看列表</a></li>
+                                <li><a href="#">认购列表页</a></li>
+                                <li><a href="#">签约列表页</a></li>
+                                <li><a href="#">首次联系延迟列表</a></li>
+                                <li class="last"><a href="#">匹配工具</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">客服业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">客服订单管理</a></li>
+                                <li><a href="#">客服联系记录管理</a></li>
+                                <li><a href="#">带看评价管理</a></li>
+                                <li><a href="#">带看评价回访纪录</a></li>
+                                <li><a href="#">已关闭订单跟进</a></li>
+                                <li><a href="#">已关闭订单跟进回访记录</a></li>
+                                <li><a href="#">无效客户标记</a></li>
+                                <li><a href="#">400电话订单匹配</a></li>
+                                <li><a href="#">评价追回页面</a></li>
+                                <li class="last"><a href="#">投诉列表页</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">驻场拓展业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">报备管理</a></li>
+                                <li><a href="#">楼盘备案管理</a></li>
+                                <li><a href="#">合作方管理</a></li>
+                                <li><a href="#">楼盘拓展相关字段维护</a></li>
+                                <li><a href="#">添加报备</a></li>
+                                <li><a href="#">代理中介管理</a></li>
+                                <li class="last"><a href="#">代理客户订单管理</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">服务管理员业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">服务评价管理</a></li>
+                                <li><a href="#">咨询师带看情况查询</a></li>
+                                <li class="last"><a href="#">咨询师审核</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">系统管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">权限管理</a></li>
+                                <li><a href="#">员工管理</a></li>
+                                <li><a href="#">员工作息时间管理</a></li>
+                                <li><a href="#">咨询师分配管理</a></li>
+                                <li><a href="#">客服分配管理</a></li>
+                                <li><a href="#">用户管理</a></li>
+                                <li><a href="#">短信模板管理</a></li>
+                                <li><a href="#">咨询师分组管理</a></li>
+                                <li><a href="#">员工操作日志</a></li>
+                                <li><a href="#">批量转移咨询师客户</a></li>
+                                <li><a href="#">联系取消</a></li>
+                                <li><a href="#">雨燕档案</a></li>
+                                <li><a href="#">上线日志管理</a></li>
+                                <li><a href="#">城市管理</a></li>
+                                <li class="last"><a href="#">字段常量配置</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">报表管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">客户数据分析</a></li>
+                                <li><a href="#">网站统计报表</a></li>
+                                <li><a href="#">周期维度统计</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">咨询师延迟录入统计</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">联系延迟录入统计</a></li>
+                                        <li><a href="#">带看延迟录入统计</a></li>
+                                        <li><a href="#">咨询师分配时间到首次联系时间超时统计列表</a></li>
+                                        <li><a href="#">咨询师认购超时统计列表</a></li>
+                                        <li class="last"><a href="#">咨询师签约超时统计列表</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">核算日月周年报表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算统计</a></li>
+                                        <li><a href="#">咨询师组核算统计</a></li>
+                                        <li><a href="#">楼盘核算统计</a></li>
+                                        <li><a href="#">区域核算统计</a></li>
+                                        <li class="last"><a href="#">渠道核算统计</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">核算汇总表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算统计汇总表</a></li>
+                                        <li><a href="#">咨询师组核算统计汇总表</a></li>
+                                        <li><a href="#">楼盘核算统计汇总表</a></li>
+                                        <li><a href="#">区域核算统计汇总表</a></li>
+                                        <li><a href="#">渠道核算统计汇总表</a></li>
+                                        <li class="last"><a href="#">资金核算报表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">咨询师满意度表格</a></li>
+                                <li><a href="#">咨询师组满意度表格</a></li>
+                                <li><a href="#">带看评价统计列表</a></li>
+                                <li><a href="#">已关闭订单客户评价统计列表</a></li>
+                                <li><a href="#">成交订单服务评价统计列表</a></li>
+                                <li><a href="#">咨询师楼盘点评统计</a></li>
+                                <li><a href="#">客服首次联系超时统计报表</a></li>
+                                <li><a href="#">带看回访客服联系记录</a></li>
+                                <li><a href="#">已关闭订单回访客服联系记录</a></li>
+                                <li><a href="#">咨询师订单详情统计列表</a></li>
+                                <li><a href="#">咨询师正常订单统计列表</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">客户业务详情统计</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">客户线索详情统计列表</a></li>
+                                        <li><a href="#">客户上户详情统计列表</a></li>
+                                        <li><a href="#">带看详情统计报表</a></li>
+                                        <li><a href="#">认购详情统计列表</a></li>
+                                        <li class="last"><a href="#">签约详情统计列表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">客户留电行为详情列表</a></li>
+                                <li><a href="#">消息详情列表</a></li>
+                                <li><a href="#">定时消息详情列表</a></li>
+                                <li><a href="#">重新分配记录报表</a></li>
+                                <li><a href="#">短信记录报表</a></li>
+                                <li><a href="#">订单恢复报表</a></li>
+                                <li><a href="#">线索质量统计报表</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">业务统计报表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">楼盘业务统计</a></li>
+                                        <li><a href="#">渠道业务统计报表</a></li>
+                                        <li><a href="#">喜报业务统计报表</a></li>
+                                        <li><a href="#">咨询师首次正式认购核算报表</a></li>
+                                        <li><a href="#">区域业务统计</a></li>
+                                        <li class="last"><a href="#">订单业务详情统计报表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">楼盘数据维护审核记录</a></li>
+                                <li><a href="#">高端客户详情统计列表</a></li>
+                                <li><a href="#">评价追回客服记录统计</a></li>
+                                <li><a href="#">楼盘信息报表</a></li>
+                                <li><a href="#">市场部咨询合作详情</a></li>
+                                <li class="dropdown-submenu last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">咨询师订单核算详情</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算详情-签约</a></li>
+                                        <li><a href="#">咨询师核算详情-上户</a></li>
+                                        <li><a href="#">咨询师核算详情-带看</a></li>
+                                        <li class="last"><a href="#">咨询师核算详情-认购</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">楼盘管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">楼盘数据维护</a></li>
+                                <li><a href="#">楼盘点评列表</a></li>
+                                <li><a href="#">楼盘商务信息管理</a></li>
+                                <li><a href="#">区域报告楼盘定位</a></li>
+                                <li><a href="#">楼盘维护提醒设置</a></li>
+                                <li><a href="#">楼盘列表</a></li>
+                                <li><a href="#">市调测评</a></li>
+                                <li class="dropdown-submenu last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">楼盘审核</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">楼盘点评审核</a></li>
+                                        <li class="last"><a href="#">楼盘数据维护审核</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">楼盘字典<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="dropdown-submenu first last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">楼盘管理</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">全部楼盘列表</a></li>
+                                        <li><a href="#">创建楼盘</a></li>
+                                        <li class="last"><a href="#">价格维护</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--意见反馈入口-->
+                <div class="nav-feedback">
+                    <span class="btn-feedback">不爽就点我</span>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <ul class="breadcrumb">
+                            <li><a href="#">首页</a></li>
+                            <li class="active">订单列表</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!--订单列表-->
+                        <div class="panel panel-order-list">
+                            <div class="panel-body">
+                                <div class="all-house-lbs">
+                                    <h3>所有标签</h3>
+                                    <ul class="house-lb-area">
+                                        <li>头部客户</li>
+                                        <li class="on">我是系统标签2</li>
+                                        <li>我是自定义标签</li>
+                                        <li>我是自定义标签</li>
+                                        <li>我是最长的自定义标签我是最长的自定义标签</li>
+                                        <li>我是最长的自定义标签我是最长的</li>
+                                        <li>我是自定义标签</li>
+                                        <li>我是自定义标签</li>
+                                        <li>我是最长的自定义标签我是最长的自定义标签</li>
+                                        <li>我是最长的自定义标签我是最长的</li>
+                                        <li>我是自定义标签</li>
+                                        <li>我是自定义标签</li>
+                                        <li>我是最长的自定义标签我是最长的自定义标签</li>
+                                        <li>我是最长的自定义标签我是最长的</li>
+                                    </ul>
+                                    <div class="btn-area">
+                                        <button class="btn btn-default">重置</button>
+                                        <button class="btn btn-primary">搜索</button>
+                                    </div>
+                                </div>
+                                <div class="order-list">
+                                    <div class="tit">
+                                        <!--订单概要-->
+                                        <div class="order-info">
+                                            <p>共499992个订单，其中可跟进XXX个，认购XXX个，签约XXX个，保留XXX个，已关闭XXX个</p>
+                                        </div>
+                                        <!--排序-->
+                                        <ul class="sort">
+                                            <li class="sort-tit">排序：</li>
+                                            <li>
+                                                <a href="#" class="asc">更新时间</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="desc">分配时间</a>
+                                            </li>
+                                        </ul>
+                                        <!--添加/备忘订单-->
+                                        <div class="order-act">
+                                            <div class="vip-cus">
+                                                <input class="chk" type="checkbox">头部客户
+                                            </div>
+                                            <a href="#" class="link-memo">客户备忘</a>
+                                            <a href="#" class="link-add">添加客户</a>
+                                        </div>
+                                    </div>
+                                    <div class="con">
+                                        <div class="c-order-item">
+                                            <!--订单状态-->
+                                            <div class="order-status">
+                                                <p class="order-place">北京</p>
+
+                                                <p class="lbl-staus-area">
+                                                    <span class="lbl-sta">未分配</span>
+                                                </p>
+                                            </div>
+                                            <!--订单详情-->
+                                            <div class="c-order-detail">
+                                                <div class="tr">
+                                                    <div class="td">订单号：2000000</div>
+                                                    <div class="td">客户姓名：测试1</div>
+                                                    <div class="td">客户性别：男</div>
+                                                    <div class="td">客户电话：13493822220</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td c-td-2">订单创建时间：2016-10-01 19:00:00</div>
+                                                    <div class="td c-td-2">订单更新时间： 2016-10-01 21:10:02</div>
+                                                </div>
+                                            </div>
+                                            <!--收藏-->
+                                            <div class="link-coll">
+                                                <div class="link-opt">
+                                                    <button class="link-collection">备忘标签</button>
+                                                    <button class="link-edit-lb">编辑标签</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-order-item">
+                                            <!--订单状态-->
+                                            <div class="order-status">
+                                                <p class="order-place">北京</p>
+
+                                                <p class="lbl-staus-area">
+                                                    <span class="lbl-sta">未分配</span>
+                                                </p>
+                                            </div>
+                                            <!--订单详情-->
+                                            <div class="c-order-detail">
+                                                <div class="tr">
+                                                    <div class="td">订单号：2000000</div>
+                                                    <div class="td">客户姓名：测试1</div>
+                                                    <div class="td">客户性别：男</div>
+                                                    <div class="td">客户电话：13493822220</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td c-td-2">订单创建时间：2016-10-01 19:00:00</div>
+                                                    <div class="td c-td-2">订单更新时间： 2016-10-01 21:10:02</div>
+                                                </div>
+                                            </div>
+                                            <!--收藏-->
+                                            <div class="link-coll">
+                                                <div class="link-opt">
+                                                    <button class="link-collection">备忘标签</button>
+                                                    <button class="link-edit-lb">编辑标签</button>
+                                                </div>
+                                                <div class="lb-house lb-vip">
+                                                    <span class="txt">头部客户</span><span class="ico-del2">x</span></div>
+                                                <div class="lb-house lb-cus">
+                                                    <span class="txt">通州商住</span><span class="ico-del2">x</span></div>
+                                                <div class="lb-house lb-type-b">
+                                                    <span class="txt">B类客户</span><span class="ico-del2">x</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="c-order-item">
+                                            <!--订单状态-->
+                                            <div class="order-status">
+                                                <p class="order-place">北京</p>
+
+                                                <p class="lbl-staus-area">
+                                                    <span class="lbl-sta">无效线索</span>
+                                                </p>
+                                            </div>
+                                            <!--订单详情-->
+                                            <div class="c-order-detail">
+                                                <div class="tr">
+                                                    <div class="td">订单号：2000000</div>
+                                                    <div class="td">客户姓名：测试1</div>
+                                                    <div class="td">客户性别：男</div>
+                                                    <div class="td">客户电话：13493822220</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td c-td-2">历史咨询师：张一 21，张二 22，张三 33</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td c-td-2">订单创建时间：2016-10-01 19:00:00</div>
+                                                    <div class="td c-td-2">订单分配时间：2016-10-01 21:10:02</div>
+                                                    <div class="td c-td-2">订单更新时间： 2016-10-01 21:10:02</div>
+                                                </div>
+                                            </div>
+                                            <!--收藏-->
+                                            <div class="link-coll">
+                                                <div class="link-opt">
+                                                    <button class="link-collection">备忘标签</button>
+                                                    <button class="link-edit-lb">编辑标签</button>
+                                                </div>
+                                                <div class="lb-house lb-vip">
+                                                    <span class="txt">头部客户</span><span class="ico-del2">x</span></div>
+                                                <div class="lb-house lb-cus">
+                                                    <span class="txt">通州商住通州商住通州商住</span><span class="ico-del2">x</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-order-item">
+                                            <!--订单状态-->
+                                            <div class="order-status">
+                                                <p class="order-place">北京</p>
+
+                                                <p class="lbl-staus-area">
+                                                    <span class="lbl-sta">未确认收到分配</span>
+                                                </p>
+                                            </div>
+                                            <!--订单详情-->
+                                            <div class="c-order-detail">
+                                                <div class="tr">
+                                                    <div class="td">订单号：2000000</div>
+                                                    <div class="td">客户姓名：测试1</div>
+                                                    <div class="td">客户性别：男</div>
+                                                    <div class="td">客户电话：13493822220</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td">所属咨询师：张四 34</div>
+                                                    <div class="td c-td-2">历史咨询师：张一 21，张二 22，张三 33</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td c-td-2">订单创建时间：2016-10-01 19:00:00</div>
+                                                    <div class="td c-td-2">订单分配时间：2016-10-01 21:10:02</div>
+                                                    <div class="td c-td-2">订单更新时间： 2016-10-01 21:10:02</div>
+                                                </div>
+                                            </div>
+                                            <!--收藏-->
+                                            <div class="link-coll">
+                                                <div class="link-opt">
+                                                    <button class="link-collection">备忘标签</button>
+                                                    <button class="link-edit-lb">编辑标签</button>
+                                                </div>
+                                                <div class="lb-house lb-vip">
+                                                    <span class="txt">头部客户头部客户</span><span class="ico-del2">x</span></div>
+                                                <div class="lb-house lb-cus">
+                                                    <span class="txt">通州商住通州商住通州商住</span><span class="ico-del2">x</span>
+                                                </div>
+                                            </div>
+                                            <!--按钮-->
+                                            <div class="c-btn-area">
+                                                <a href="#" class="btn btn-danger">有新用户分配</a>
+                                                <a href="#" class="btn btn-warning">修改咨询师</a>
+                                            </div>
+                                        </div>
+                                        <div class="c-order-item">
+                                            <!--订单状态-->
+                                            <div class="order-status">
+                                                <p class="order-place">北京</p>
+
+                                                <p class="lbl-staus-area">
+                                                    <span class="lbl-sta">未联系</span>
+                                                </p>
+
+                                                <p class="lbl-staus-area">
+                                                    <span class="lbl2-sta">正常订单</span>
+                                                </p>
+                                            </div>
+                                            <!--订单详情-->
+                                            <div class="c-order-detail">
+                                                <div class="tr">
+                                                    <div class="td">订单号：2000000</div>
+                                                    <div class="td">客户姓名：测试1</div>
+                                                    <div class="td">客户性别：男</div>
+                                                    <div class="td">客户电话：13493822220</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td">所属咨询师：张四 34</div>
+                                                    <div class="td c-td-2">历史咨询师：张一 21，张二 22，张三 33</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td c-td-2">订单创建时间：2016-10-01 19:00:00</div>
+                                                    <div class="td c-td-2">订单分配时间：2016-10-01 21:10:02</div>
+                                                    <div class="td c-td-2">订单更新时间： 2016-10-01 21:10:02</div>
+                                                </div>
+                                                <div class="tr tr-remark">
+                                                    <div class="th">最后一次实际联系：</div>
+                                                    <div class="td">
+                                                        最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--收藏-->
+                                            <div class="link-coll">
+                                                <div class="link-opt">
+                                                    <button class="link-collection">备忘标签</button>
+                                                    <button class="link-edit-lb">编辑标签</button>
+                                                </div>
+                                                <div class="lb-house lb-vip">
+                                                    <span class="txt">头部客户头部客户头部客户头部客</span><span class="ico-del2">x</span>
+                                                </div>
+                                                <div class="lb-house lb-cus">
+                                                    <span class="txt">通州商住通州商住通州商住</span><span class="ico-del2">x</span>
+                                                </div>
+                                            </div>
+                                            <!--按钮-->
+                                            <div class="c-btn-area">
+                                                <a href="#" class="btn btn-info">更新客户跟进</a>
+                                                <a href="#" class="btn btn-warning">修改咨询师</a>
+                                            </div>
+                                        </div>
+                                        <div class="c-order-item">
+                                            <!--订单状态-->
+                                            <div class="order-status">
+                                                <p class="order-place">北京</p>
+
+                                                <p class="lbl-staus-area">
+                                                    <span class="lbl-sta">联系未带看</span>
+                                                </p>
+
+                                                <p class="lbl-staus-area">
+                                                    <span class="lbl2-sta">保留订单</span>
+                                                </p>
+                                            </div>
+                                            <!--订单详情-->
+                                            <div class="c-order-detail">
+                                                <div class="tr">
+                                                    <div class="td">订单号：52345678</div>
+                                                    <div class="td">客户姓名：测试1</div>
+                                                    <div class="td">客户性别：男</div>
+                                                    <div class="td">客户电话：13493822220</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td">所属咨询师：张四 34</div>
+                                                    <div class="td c-td-2">历史咨询师：张一 21，张二 22，张三 33</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td c-td-2">订单创建时间：2016-10-01 19:00:00</div>
+                                                    <div class="td c-td-2">订单分配时间：2016-10-01 21:10:02</div>
+                                                    <div class="td c-td-2">订单更新时间： 2016-10-01 21:10:02</div>
+                                                </div>
+                                                <div class="tr tr-remark">
+                                                    <div class="th">最后一次实际联系：</div>
+                                                    <div class="td">
+                                                        XXXXXXXXXXXXXXXXXXXXXXXXX
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--收藏-->
+                                            <div class="link-coll">
+                                                <div class="link-opt">
+                                                    <button class="link-collection">备忘标签</button>
+                                                    <button class="link-edit-lb">编辑标签</button>
+                                                </div>
+                                                <div class="lb-house lb-vip">
+                                                    <span class="txt">头部客户头部客户头部客户头部客户头部客户</span><span class="ico-del2">x</span>
+                                                </div>
+                                                <div class="lb-house lb-cus">
+                                                    <span class="txt">通州商住通州商住通州商住通州商</span><span class="ico-del2">x</span>
+                                                </div>
+                                                <div class="lb-house lb-cus">
+                                                    <span class="txt">通州商住通州商住通州商住通州商</span><span class="ico-del2">x</span>
+                                                </div>
+                                            </div>
+                                            <!--按钮-->
+                                            <div class="c-btn-area">
+                                                <a href="#" class="btn btn-warning">修改咨询师</a>
+                                            </div>
+                                        </div>
+                                        <div class="c-order-item">
+                                            <!--订单状态-->
+                                            <div class="order-status">
+                                                <p class="order-place">北京</p>
+
+                                                <p class="lbl-staus-area">
+                                                    <span class="lbl-sta">已带看</span>
+                                                </p>
+
+                                                <p class="lbl-staus-area">
+                                                    <span class="lbl2-sta">已关闭订单</span>
+                                                </p>
+                                            </div>
+                                            <!--订单详情-->
+                                            <div class="c-order-detail">
+                                                <div class="tr">
+                                                    <div class="td">订单号：2000000</div>
+                                                    <div class="td">客户姓名：测试1</div>
+                                                    <div class="td">客户性别：男</div>
+                                                    <div class="td">客户电话：13493822220</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td">所属咨询师：张四 34</div>
+                                                    <div class="td c-td-2">历史咨询师：张一 21，张二 22，张三 33</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td c-td-2">订单创建时间：2016-10-01 19:00:00</div>
+                                                    <div class="td c-td-2">订单分配时间：2016-10-01 21:10:02</div>
+                                                    <div class="td c-td-2">订单更新时间： 2016-10-01 21:10:02</div>
+                                                </div>
+                                                <div class="tr tr-remark">
+                                                    <div class="th">最后一次实际联系：</div>
+                                                    <div class="td">
+                                                        XXXXXXXXXXXXXXXXXXXXXXXXX
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--按钮-->
+                                            <div class="c-btn-area">
+                                                <a href="#" class="btn btn-warning">重新上户</a>
+                                                <a href="#" class="btn btn-default">恢复订单</a>
+                                            </div>
+                                        </div>
+                                        <div class="c-order-item">
+                                            <!--订单状态-->
+                                            <div class="order-status">
+                                                <p class="order-place">北京</p>
+
+                                                <p class="lbl-staus-area">
+                                                    <span class="lbl-sta">排号</span>
+                                                </p>
+                                            </div>
+                                            <!--订单详情-->
+                                            <div class="c-order-detail">
+                                                <div class="tr">
+                                                    <div class="td">订单号：2000000</div>
+                                                    <div class="td">客户姓名：测试1</div>
+                                                    <div class="td">客户性别：男</div>
+                                                    <div class="td">客户电话：13493822220</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td">所属咨询师：张四 34</div>
+                                                    <div class="td c-td-2">历史咨询师：张一 21，张二 22，张三 33</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td c-td-2">订单创建时间：2016-10-01 19:00:00</div>
+                                                    <div class="td c-td-2">订单分配时间：2016-10-01 21:10:02</div>
+                                                    <div class="td c-td-2">订单更新时间： 2016-10-01 21:10:02</div>
+                                                </div>
+                                                <div class="tr tr-remark">
+                                                    <div class="th">最后一次实际联系：</div>
+                                                    <div class="td">
+                                                        最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer">
+            <p class="copyright"><span>北京高因科技有限公司</span><span>www.comjia.com</span></p>
+        </div>
+    </div>
+    <!--标签弹层-->
+    <div class="dialog-lb">
+        <div class="dialog">
+            <div class="dialog-header">
+                <h3>选择标签</h3>
+            </div>
+            <div class="dialog-body">
+                <ul class="house-lb-area">
+                    <li>头部客户</li>
+                    <li class="on">我是系统标签2</li>
+                    <li>我是自定义标签</li>
+                    <li>我是自定义标签</li>
+                    <li>我是最长的自定义标签我是最长的自定义标签</li>
+                    <li>我是最长的自定义标签我是最长的</li>
+                </ul>
+                <!--新增标签-->
+                <div class="house-lb-add">
+                    <h3>新增收藏标签</h3>
+                    <input class="form-control" type="text" placeholder="不得超过15个汉字(30个字符)" />
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <button type="reset" class="btn btn-default layer-btn-reset">取消</button>
+                <button type="button" class="btn btn-primary btn-commit fr">确定</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/jquery.pin.js"></script>
+    <script src="../js/layer/layer.js"></script>
+    <script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/order-manage.js"></script>
+    <script src="../js/order-2.1.4.js"></script>
+</body>
+</html>

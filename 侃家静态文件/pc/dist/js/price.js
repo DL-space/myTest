@@ -1,0 +1,1 @@
+function fixedDetailTop(){var n=$(document).scrollTop(),o=$(".top-menu-wrap").height(),t=$(".top-menu-wrap").offset().top;n>o+t?$(".top-menu-banner").fadeIn("slow",function(){$(this).css("display","block")}):$(".top-menu-banner").fadeOut("slow",function(){$(this).css("display","none")})}$(function(){fixedDetailTop(),$(window).scroll(function(){fixedDetailTop()})});

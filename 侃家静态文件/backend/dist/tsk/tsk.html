@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>需求5.2交互效果演示页面</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+    <style type="text/css">
+        @media screen and (max-width: 768px) {
+            .btn-area .btn {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>V5.2、V5.3弹层</h1>
+
+    <div class="btn-area">
+        <button class="btn btn-primary btn-tj1">不满足提交情况的弹层1</button>
+        <button class="btn btn-primary btn-tj2">不满足提交情况的弹层2</button>
+        <button class="btn btn-primary btn-tj3">不满足提交情况的弹层3</button>
+        <button class="btn btn-primary btn-customer">修改客户基本信息</button>
+        <button class="btn btn-primary btn-send-again">再次发送信息给客户</button>
+        <button class="btn btn-primary btn-modify">修改本次预约</button>
+        <button class="btn btn-primary btn-modify-next">修改下次预约</button>
+        <button class="btn btn-primary btn-wd">问答完成情况弹框</button>
+        <button class="btn btn-primary btn-order">接单操作记录弹框</button>
+        <button class="btn btn-primary btn-no-pass">报备审核不通过</button>
+        <button class="btn btn-primary btn-stock">库存结构配置</button>
+        <button class="btn btn-primary btn-contract-commission">合同佣金金额</button>
+        <button class="btn btn-primary btn-actual-received">实际回款审核</button>
+        <button class="btn btn-primary btn-modify2">修改下次预约-回款跟进</button>
+        <button class="btn btn-primary btn-hkfzr">修改回款负责人</button>
+        <button class="btn btn-primary btn-change-mobile">更换虚拟号</button>
+    </div>
+    <div class="wd-tj" style="display: none;">
+        <div class="dialog dialog-v5">
+            <div class="dialog-body">
+                <div class="tips-txt">
+                    <p>对不起，客户的问题&我的回答、客户的需求变更，</p>
+                    <p>以及其他补充记录，这3类内容必须填写至少1类</p>
+                    <p>请认真填写，然后提交</p>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <a href="#" class="btn btn-primary btn-commit">确定</a>
+            </div>
+        </div>
+    </div>
+    <div class="wd-tj2" style="display: none;">
+        <div class="dialog dialog-v5">
+            <div class="dialog-body">
+                <div class="tips-txt">
+                    <p>对不起，你的问答必须输入问题，问题类型和答案</p>
+                    <p>3者缺一不可</p>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <a href="#" class="btn btn-primary btn-commit">确定</a>
+            </div>
+        </div>
+    </div>
+    <div class="wd-tj3" style="display: none;">
+        <div class="dialog dialog-v5">
+            <div class="dialog-body">
+                <div class="tips-txt">
+                    <p>对不起，请完善客户需求里的所有字段</p>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <a href="#" class="btn btn-primary btn-commit">确定</a>
+            </div>
+        </div>
+    </div>
+    <!--修改客户基本信息-->
+    <div class="dialog-customer-info" style="display: none;">
+        <div class="dialog">
+            <div class="dialog-header">
+                <h3>变更客户基本信息</h3>
+            </div>
+            <div class="dialog-body">
+                <ul class="d-query d-query-2">
+                    <li>
+                        <div class="th"><label class="required"></label>首要联系方式：</div>
+                        <div class="td"><input class="form-control" type="text" /></div>
+                    </li>
+                    <li>
+                        <div class="th">备用联系方式：</div>
+                        <div class="td"><input class="form-control" type="text" /></div>
+                    </li>
+                    <li>
+                        <div class="th"><label class="required"></label>姓名：</div>
+                        <div class="td"><input class="form-control" type="text" /></div>
+                    </li>
+                    <li>
+                        <div class="th"><label class="required"></label>性别：</div>
+                        <div class="td">
+                            <select class="form-control">
+                            <option value="0">不限</option>
+                            <option value="1" selected>男</option>
+                            <option value="2">女</option>
+                        </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="th"><label class="required"></label>联系途径：</div>
+                        <div class="td"><input class="form-control" type="text" value="员工友介" /></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dialog-footer">
+                <button type="reset" class="btn btn-default layer-btn-reset">取消</button>
+                <button type="button" class="btn btn-primary btn-commit">保存</button>
+            </div>
+        </div>
+    </div>
+    <!--再次发送信息给用户-->
+    <div class="dialog-send-again" style="display: none;">
+        <div class="dialog dialog-v5">
+            <div class="dialog-body">
+                <ul class="d-query d-query-send">
+                    <li>
+                        <div class="th">发送手机号：</div>
+                        <div class="td">
+                            <input class="form-control" type="text" />
+                            <a class="layer-close link" href="#">预览落地页</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dialog-footer">
+                <button type="reset" class="btn btn-default layer-btn-reset">取消</button>
+                <button type="button" class="btn btn-primary btn-commit">确认发送</button>
+            </div>
+        </div>
+    </div>
+    <!--修改下次预约联系-->
+    <div class="modify-appointment" style="display: none;">
+        <div class="dialog dialog-v5">
+            <div class="dialog-header">
+                <h3>修改下次预约联系</h3>
+            </div>
+            <div class="dialog-body">
+                <ul class="d-query d-query-app">
+                    <li>
+                        <div class="th">联系时间：</div>
+                        <div class="td">
+                            <input class="form-control" type="text" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="th">联系人：</div>
+                        <div class="td">
+                            <input class="form-control" type="text" />
+                        </div>
+                    </li>
+                    <li class="rmk">
+                        <div class="th">联系计划：</div>
+                        <div class="td">
+                            <input class="form-control" type="text" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dialog-footer">
+                <button type="reset" class="btn btn-default layer-btn-reset">取消</button>
+                <button type="button" class="btn btn-primary btn-commit">保存</button>
+            </div>
+        </div>
+    </div>
+    <!--修改下次预约带看-->
+    <div class="modify-appointment-next" style="display: none;">
+        <div class="dialog dialog-v5">
+            <div class="dialog-header">
+                <h3>修改下次预约带看</h3>
+            </div>
+            <div class="dialog-body">
+                <ul class="d-query d-query-app-next">
+                    <li>
+                        <div class="th">带看时间：</div>
+                        <div class="td">
+                            <input class="form-control" type="text" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="th">邀约人：</div>
+                        <div class="td">
+                            <input class="form-control" type="text" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="th">带看人：</div>
+                        <div class="td">
+                            <input class="form-control" type="text" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="th">有无专车：</div>
+                        <div class="td">
+                            <ul class="c-chked">
+                                <li>
+                                    <input type="radio" class="c-rd" />无
+                                </li>
+                                <li>
+                                    <input type="radio" class="c-rd" />有
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="c-li-2">
+                        <div class="th">约见地点：</div>
+                        <div class="td">
+                            <input class="form-control" type="text" />
+                        </div>
+                    </li>
+                    <li class="rmk">
+                        <div class="th">带看楼盘：</div>
+                        <div class="td">
+                            <input class="form-control" type="text" placeholder="请注意带看楼盘顺序的输入，靠前的是要优先带看的" />
+                        </div>
+                    </li>
+                    <li class="rmk rmk-txt">
+                        <div class="th">To客户短信：</div>
+                        <div class="td">
+                            <p class="txt">您预约看房时间是YYYY年M月D日hh:mm，咨询师［咨询师姓名］将全程陪同您，已对目标区域做足功课，请期待一次愉快的看房之旅吧！ 您预约看房时间是YYYY年M月D日hh:mm，咨询师［咨询师姓名］将全程陪同您，已对目标区域做足功课，请期待一次愉快的看房之旅吧！
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dialog-footer">
+                <button type="reset" class="btn btn-default layer-btn-reset">取消</button>
+                <button type="button" class="btn btn-primary btn-commit">保存</button>
+            </div>
+        </div>
+    </div>
+    <!--问答完成情况弹框-->
+    <div class="dialog-wd" style="display: none;">
+        <div class="dialog">
+            <div class="dialog-header">
+                <h3>问答完成情况</h3>
+                <a class="layer-close" href="javascript:void(0);"><span class="icon icon-close"></span></a>
+            </div>
+            <div class="dialog-body">
+                <ul class="d-query d-wd">
+                    <li>
+                        <div class="th">未完成：</div>
+                        <div class="td">咨询师1，咨询师2，咨询师3，咨询师4，咨询师5，咨询师6，咨询师7，咨询师8，咨询师9，咨询师10</div>
+                    </li>
+                    <li>
+                        <div class="th">已完成：</div>
+                        <div class="td">咨询师1，咨询师2，咨询师3，咨询师4</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dialog-footer">
+                <button type="reset" class="btn btn-default layer-btn-reset">取消</button>
+                <button type="button" class="btn btn-primary btn-commit">确认</button>
+            </div>
+        </div>
+    </div>
+    <!--接单操作记录弹框-->
+    <div class="dialog-order" style="display: none;">
+        <div class="dialog dialog-order-operate">
+            <div class="dialog-header">
+                <h3>客服姓名-工号 2017-09-09 的接单操作记录</h3>
+                <a class="layer-close" href="javascript:void(0);"><span class="icon icon-close"></span></a>
+            </div>
+            <div class="dialog-body">
+                <div class="table-area">
+                    <table>
+                        <tr>
+                            <th>
+                                <div class="t-time">修改时间</div>
+                            </th>
+                            <th>
+                                <div class="t-job-number">修改接单状态</div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="t-time">2017-09-09 22:34:34</div>
+                            </td>
+                            <td>
+                                <div class="t-ope">开接单</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="t-time">2017-09-09 22:34:34</div>
+                            </td>
+                            <td>
+                                <div class="t-ope">开接单</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--报备审核不通过提示弹层-->
+    <div class="report-no-pass" style="display: none;">
+        <div class="dialog dialog-report-check">
+            <div class="dialog-header">
+                <h3>备注</h3>
+            </div>
+            <div class="dialog-body">
+                <ul class="d-query d-query-app">
+                    <li class="rmk">
+                        <div class="th">填写备注：</div>
+                        <div class="td">
+                            <textarea class="form-control" placeholder="不超过50个字"></textarea>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dialog-footer">
+                <button type="reset" class="btn btn-default layer-btn-reset">取消</button>
+                <button type="button" class="btn btn-primary btn-commit">发送</button>
+            </div>
+        </div>
+    </div>
+    <!--库存结构配置-->
+    <div class="dialog-stock" style="display: none;">
+        <div class="dialog">
+            <div class="dialog-header">
+                <h3>库存结构配置</h3>
+            </div>
+            <div class="dialog-body">
+                <div class="stock-config">
+                    <ul class="c-query">
+                        <li>
+                            <div class="th">一级分类</div>
+                            <div class="td">
+                                <select class="form-control">
+                                <option value="0">总价预算</option>
+                                <option value="1">首付预算</option>
+                            </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="th">二级分类</div>
+                            <div class="td">
+                                <select class="form-control">
+                                <option value="0">区域</option>
+                                <option value="1">教育</option>
+                            </select>
+                            </div>
+                        </li>
+                        <li class="btn-area">
+                            <button class="btn btn-default layer-btn-reset" type="reset">取消</button>
+                            <button class="btn btn-primary btn-commit">确定</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--合同应收佣金金额-->
+    <div class="contract-commission" style="display: none;">
+        <div class="dialog dialog-contract-commission">
+            <div class="dialog-header">
+                <h3>合同应收佣金金额</h3>
+            </div>
+            <div class="dialog-body">
+                <div class="j-ipt-area in-line">
+                    <label class="j-label">电商金额</label>
+
+                    <div class="j-suf">元/套</div>
+                    <div class="j-ipt-wrap">
+                        <input type="text" class="j-ipt" placeholder="请输入内容">
+                    </div>
+                </div>
+                <div class="j-ipt-area in-line">
+                    <label class="j-label">排号刷电商</label>
+
+                    <div class="j-suf">元/套</div>
+                    <div class="j-ipt-wrap">
+                        <input type="text" class="j-ipt" placeholder="请输入内容">
+                    </div>
+                </div>
+                <div class="j-ipt-area in-line">
+                    <label class="j-label">排号刷电商</label>
+
+                    <div class="j-suf">元/套</div>
+                    <div class="j-ipt-wrap">
+                        <input type="text" class="j-ipt" placeholder="请输入内容">
+                    </div>
+                </div>
+                <div class="j-ipt-area in-line">
+                    <label class="j-label">排号刷电商</label>
+
+                    <div class="j-suf">元/套</div>
+                    <div class="j-ipt-wrap">
+                        <input type="text" class="j-ipt" placeholder="请输入内容">
+                    </div>
+                </div>
+                <div class="j-ipt-area in-line">
+                    <label class="j-label">排号刷电商</label>
+
+                    <div class="j-suf">元/套</div>
+                    <div class="j-ipt-wrap">
+                        <input type="text" class="j-ipt" placeholder="请输入内容">
+                    </div>
+                </div>
+                <div class="j-ipt-area in-line">
+                    <label class="j-label">返费金额：按房价的</label>
+
+                    <div class="j-suf">%</div>
+                    <div class="j-ipt-wrap">
+                        <input type="text" class="j-ipt" placeholder="请输入内容">
+                    </div>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <button type="reset" class="j-btn j-btn-gray layer-btn-reset">取消</button>
+                <button type="button" class="j-btn j-btn-blue btn-commit">保存</button>
+            </div>
+        </div>
+    </div>
+    <!--实际回款审核-->
+    <div class="actual-received" style="display: none;">
+        <div class="dialog dialog-actual-received">
+            <div class="dialog-header">
+                <h3>实际回款审核</h3>
+            </div>
+            <div class="dialog-body">
+                <div class="received-item">
+                    <div class="pro">
+                        <div class="time">2017-09-11</div>
+                        <div class="money">实收返费25000元</div>
+                        <div class="state">财务审核通过</div>
+                    </div>
+                </div>
+                <div class="received-item">
+                    <div class="pro">
+                        <div class="time">2017-09-11</div>
+                        <div class="money">实收返费25000元</div>
+                        <div class="state">财务审核驳回</div>
+                    </div>
+                    <div class="res">
+                        <div class="text">驳回原因：XXXXXXXXXXXXXXXXXX</div>
+                    </div>
+                </div>
+                <div class="received-item">
+                    <div class="pro">
+                        <div class="time">2017-09-11</div>
+                        <div class="money">实收返费25000元</div>
+                        <div class="state">财务未审核</div>
+                        <div class="operate">
+                            <div class="j-ipt-area in-line">
+                                <div class="j-ipt-wrap">
+                                    <div class="j-radio adopt">
+                                        <span class="ico"></span>
+                                        <span class="txt">审核通过</span>
+                                    </div>
+                                    <div class="j-radio reject">
+                                        <span class="ico"></span>
+                                        <span class="txt">审核驳回</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="res">
+                        <div class="j-ipt-area">
+                            <div class="j-ipt-wrap">
+                                <input type="text" class="j-ipt" placeholder="请输入驳回原因，限30个字">
+                                <span class="ico"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <button type="reset" class="j-btn j-btn-gray layer-btn-reset">取消</button>
+                <button type="button" class="j-btn j-btn-blue btn-commit">保存</button>
+            </div>
+        </div>
+    </div>
+    <!--修改下次预约联系 回款跟进展示页-->
+    <div class="modify-appointment2" style="display: none;">
+        <div class="dialog dialog-v5">
+            <div class="dialog-header">
+                <h3>修改下次预约联系</h3>
+            </div>
+            <div class="dialog-body">
+                <ul class="d-query d-query-app">
+                    <li>
+                        <div class="th">联系时间：</div>
+                        <div class="td">
+                            <p class="txt">2017-11-13 11:33:00</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="th">联系人：</div>
+                        <div class="td">
+                            <input class="form-control" type="text" />
+                        </div>
+                    </li>
+                    <li class="rmk">
+                        <div class="th">联系计划：</div>
+                        <div class="td">
+                            <ul class="dialog-gjcjd">
+                                <li>跟进成交单[BJ]CJ-10002774 首付交齐，贷款审批通过；</li>
+                                <li>跟进成交单[BJ]CJ-10002774 全款到账</li>
+                                <li>跟进成交单[BJ]CJ-10002774 第一期到账，第二期到账</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dialog-footer">
+                <button type="reset" class="btn btn-default layer-btn-reset">取消</button>
+                <button type="button" class="btn btn-primary btn-commit">保存</button>
+            </div>
+        </div>
+    </div>
+    <!--修改回款负责人-->
+    <div class="dialog-hkfzr" style="display: none;">
+        <div class="dialog">
+            <div class="dialog-header">
+                <h3>修改回款负责人</h3>
+                <a class="layer-close" href="javascript:void(0);"><span class="icon icon-close"></span></a>
+            </div>
+            <div class="dialog-body">
+                <div class="j-query j-query-hkfzr">
+                    <div class="j-ipt-area">
+                        <label class="j-label">回款负责人</label>
+
+                        <div class="j-ipt-wrap">
+                            <div class="j-select">
+                                <input type="text" class="content" placeholder="请选择">
+                                <ul class="option" style="display: none;">
+                                    <li>李四1</li>
+                                    <li>李四2</li>
+                                    <li>李四3</li>
+                                    <li>李四4</li>
+                                    <li>李四5</li>
+                                </ul>
+                                <span class="ico"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <button class="j-btn j-btn-green btn-commit">确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--更改虚拟号-->
+    <div class="dialog-change-mobile" style="display: none;">
+        <div class="dialog">
+            <div class="dialog-header">
+                <h3>更改虚拟号</h3>
+                <a class="layer-close" href="javascript:void(0);"><span class="icon icon-close"></span></a>
+            </div>
+            <div class="dialog-body">
+                <div class="j-query j-query-hkfzr">
+                    <div class="j-ipt-area">
+                        <label class="j-label">回款负责人</label>
+
+                        <div class="j-ipt-wrap">
+                            <div class="j-select">
+                                <input type="text" class="content" placeholder="请选择">
+                                <ul class="option" style="display: none;">
+                                    <li>李四1</li>
+                                    <li>李四2</li>
+                                    <li>李四3</li>
+                                    <li>李四4</li>
+                                    <li>李四5</li>
+                                </ul>
+                                <span class="ico"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <button class="j-btn j-btn-green btn-commit">确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/jquery.pin.js"></script>
+    <script src="../js/layer/layer.js"></script>
+    <script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/module.js"></script>
+    <script src="../js/v5.2.js"></script>
+    <script src="../js/tsk.js"></script>
+</body>
+</html>

@@ -1,0 +1,1947 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>结佣合同录入-初始页面</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active"><a href="#"> 添加结佣合同</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--合同录入-->
+            <div class="row contract-lr">
+                <div class="panel">
+                    <div class="panel-body">
+                        <!--订单基本信息-->
+                        <div class="v-box">
+                            <div class="hd">
+                                <h2>华业东方玫瑰（住宅）</h2>
+                            </div>
+                            <div class="bd">
+                                <div class="contract-cont">
+                                    <!--必须填字段-->
+                                    <div class="con-half">
+                                        <div class="contract-id">
+                                            <div class="j-ipt-area in-line">
+                                                <label class="j-label">合同编号</label>
+                                                <div class="j-ipt-wrap">
+                                                    <input type="text" class="j-ipt" placeholder="请输入内容">
+                                                    <span class="ico"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--合同生效时间-->
+                                    <div class="con-all">
+                                        <div class="contract-time">
+                                            <div class="contract-time-1">
+                                                <div class="j-ipt-area in-line">
+                                                    <label class="j-label">合同生效时间</label>
+                                                    <div class="j-ipt-wrap">
+                                                        <div class="j-select">
+                                                            <input type="text" class="content" placeholder="请选择">
+                                                            <ul class="option">
+                                                                <li>1</li>
+                                                                <li>2</li>
+                                                                <li>3</li>
+                                                                <li>4</li>
+                                                                <li>5</li>
+                                                            </ul>
+                                                            <span class="ico"></span>
+                                                        </div>
+                                                    </div>
+                                                    <span class="span-gd"></span>
+                                                    <div class="j-ipt-wrap">
+                                                        <div class="j-select">
+                                                            <input type="text" class="content" placeholder="请选择">
+                                                            <ul class="option">
+                                                                <li>1</li>
+                                                                <li>2</li>
+                                                                <li>3</li>
+                                                                <li>4</li>
+                                                                <li>5</li>
+                                                            </ul>
+                                                            <span class="ico"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="j-suf con-half">
+                                                （注：该楼盘合作时间为2015-01-01至2016-01-01，2017-01-01至2018-01-01）
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--成交确认关键节点-->
+                                    <div class="con-half">
+                                        <div class="contract-cjqr">
+                                            <div class="j-ipt-area in-line">
+                                                <label class="j-label">成交确认关键节点</label>
+                                                <div class="j-ipt-wrap">
+                                                    <div class="j-select">
+                                                        <input type="text" class="content" placeholder="请选择">
+                                                        <ul class="option">
+                                                            <li>认购</li>
+                                                            <li>网签</li>
+                                                        </ul>
+                                                        <span class="ico"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--从这里开始筛选-->
+                                    <div class="filtrate">
+                                        <div class="filtrate-hd">
+                                            <div class="filtrate-t1">
+                                                <div class="j-ipt-area in-line">
+                                                    <label class="j-label">结佣条款是否基于不同条件有不同分类</label>
+                                                    <div class="j-ipt-wrap">
+                                                        <div class="j-radio is-classify-t">
+                                                            <span class="ico"></span>
+                                                            <span class="txt">是</span>
+                                                        </div>
+                                                        <div class="j-radio is-classify-f">
+                                                            <span class="ico is-false"></span>
+                                                            <span class="txt">否</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="filtrate-t2">
+                                                <div class="j-ipt-area in-line">
+                                                    <label class="j-label">分类条件</label>
+                                                    <div class="j-ipt-wrap">
+                                                        <div class="j-check-box inp2-dglx">
+                                                            <span class="ico"></span>
+                                                            <span class="txt">楼栋类型</span>
+                                                        </div>
+                                                        <div class="j-check-box inp2-dghm">
+                                                            <span class="ico"></span>
+                                                            <span class="txt">楼栋号码</span>
+                                                        </div>
+                                                        <div class="j-check-box inp2-hxlx">
+                                                            <span class="ico"></span>
+                                                            <span class="txt">户型类型</span>
+                                                        </div>
+                                                        <div class="j-check-box inp2-hxjs">
+                                                            <span class="ico"></span>
+                                                            <span class="txt">户型居室</span>
+                                                        </div>
+                                                        <div class="j-check-box inp2-mj">
+                                                            <span class="ico"></span>
+                                                            <span class="txt">面积</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--table 切换-->
+                                        <div class="filtrate-bd">
+                                            <!--table 切换内容01  -->
+                                            <ul class="filtrate-bd-item table01">
+                                                <!--佣金类型-->
+                                                <li class="li-item6">
+                                                    <div class="filtrate-t1">
+                                                        <div class="j-ipt-area in-line">
+                                                            <label class="j-label">佣金类型</label>
+                                                            <div class="j-ipt-wrap">
+                                                                <div class="j-check-box inp-qzds">
+                                                                    <span class="ico"></span>
+                                                                    <span class="txt">前置电商</span>
+                                                                </div>
+                                                                <div class="j-check-box inp-hzff">
+                                                                    <span class="ico"></span>
+                                                                    <span class="txt">后置返费</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!--仅当佣金类型选择了“前置电商”时，展示的字段-->
+                                                <ul class="is-qzds-t">
+                                                    <!--电商金额-->
+                                                    <li>
+                                                        <div class="filtrate-t3">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">电商金额</label>
+                                                                <div class="j-suf">元／套</div>
+                                                                <div class="j-ipt-wrap">
+                                                                    <input type="text" class="j-ipt" placeholder="请输入内容">
+                                                                    <span class="ico"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--电商结佣分阶段情况-->
+                                                    <li>
+                                                        <div class="filtrate-t1">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">电商结佣分阶段情况</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-radio inp-ycxj">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">一次性结</span>
+                                                                    </div>
+                                                                    <div class="j-radio inp-fjdj">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">分阶段结</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--电商结佣阶段-->
+                                                    <li>
+                                                        <div class="filtrate-t1">
+                                                            <div class="inp-fjdj-cont">
+                                                                <div class="j-ipt-area in-line">
+                                                                    <label class="j-label">电商结佣阶段</label>
+                                                                    <div class="j-ipt-wrap">
+                                                                        <div class="j-check-box inp-ds-ph">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">排号</span>
+                                                                        </div>
+                                                                        <div class="j-check-box inp-ds-rg">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">认购</span>
+                                                                        </div>
+                                                                        <div class="j-check-box inp-ds-cq">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">草签</span>
+                                                                        </div>
+                                                                        <div class="j-check-box inp-ds-wq">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">网签</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="inp-ycxj-cont">
+                                                                <div class="j-ipt-area in-line">
+                                                                    <label class="j-label">电商结佣阶段</label>
+                                                                    <div class="j-ipt-wrap">
+                                                                        <div class="j-radio">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">排号</span>
+                                                                        </div>
+                                                                        <div class="j-radio">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">认购</span>
+                                                                        </div>
+                                                                        <div class="j-radio">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">草签</span>
+                                                                        </div>
+                                                                        <div class="j-radio">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">网签</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--分阶段结 选项内容-->
+                                                    <div class="fjdj-cont">
+                                                        <li class="ds-ph">
+                                                            <div class="filtrate-t3">
+                                                                <div class="j-ipt-area in-line">
+                                                                    <label class="j-label">排号刷电商</label>
+                                                                    <div class="j-suf">元／套</div>
+                                                                    <div class="j-ipt-wrap">
+                                                                        <input type="text" class="j-ipt" placeholder="请输入内容">
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ds-rg">
+                                                            <div class="filtrate-t3">
+                                                                <div class="j-ipt-area in-line">
+                                                                    <label class="j-label">认购刷电商</label>
+                                                                    <div class="j-suf">元／套</div>
+                                                                    <div class="j-ipt-wrap">
+                                                                        <input type="text" class="j-ipt" placeholder="请输入内容">
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ds-cq">
+                                                            <div class="filtrate-t3">
+                                                                <div class="j-ipt-area in-line">
+                                                                    <label class="j-label">草签刷电商</label>
+                                                                    <div class="j-suf">元／套</div>
+                                                                    <div class="j-ipt-wrap">
+                                                                        <input type="text" class="j-ipt" placeholder="请输入内容">
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ds-wq">
+                                                            <div class="filtrate-t3">
+                                                                <div class="j-ipt-area in-line">
+                                                                    <label class="j-label">网签刷电商</label>
+                                                                    <div class="j-suf">元／套</div>
+                                                                    <div class="j-ipt-wrap">
+                                                                        <input type="text" class="j-ipt" placeholder="请输入内容">
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </div>
+                                                </ul>
+                                                <!--仅当佣金类型选择了“后置反费”时，展示的字段-->
+                                                <ul class="is-hzff-t">
+                                                    <!--返费金额算法-->
+                                                    <li>
+                                                        <div class="filtrate-t1">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">返费金额算法</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-radio inp-cjts">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">按成交套数结佣</span>
+                                                                    </div>
+                                                                    <div class="j-radio inp-jydw">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">按成交额点位结佣</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--返费金额算法 /套／成交额--->
+                                                    <!--返费金额 成交额--->
+                                                    <ul class="ffje-cje">
+                                                        <li>
+                                                            <div class="filtrate-t3">
+                                                                <div class="j-ipt-area in-line">
+                                                                    <label class="j-label">返费金额</label>
+                                                                    <label class="j-label j-label-t">按房价的</label>
+                                                                    <div class="j-suf">%</div>
+                                                                    <div class="j-ipt-wrap">
+                                                                        <input type="text" class="j-ipt" placeholder="">
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <!--返费金额 套-->
+                                                    <ul class="ffje-ts">
+                                                        <li>
+                                                            <div class="filtrate-t3">
+                                                                <div class="j-ipt-area in-line">
+                                                                    <label class="j-label">返费金额</label>
+                                                                    <div class="j-suf">元／套（若有点用请输入点用打折前进入）</div>
+                                                                    <div class="j-ipt-wrap">
+                                                                        <input type="text" class="j-ipt" placeholder="">
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <!--是否有垫佣-->
+                                                    <li class="li-item6">
+                                                        <div class="filtrate-t1">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">是否有垫佣</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-radio inp-dydz-s">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">是</span>
+                                                                    </div>
+                                                                    <div class="j-radio inp-dydz-f">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">否</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--是否有垫佣 是／否-->
+                                                    <ul class="dydzb-t">
+                                                        <!--垫佣打折比-->
+                                                        <li class="li-item6">
+                                                            <div class="filtrate-t3">
+                                                                <div class="j-ipt-area in-line">
+                                                                    <label class="j-label">垫佣打折比</label>
+                                                                    <div class="j-suf">%</div>
+                                                                    <div class="j-ipt-wrap">
+                                                                        <input type="text" class="j-ipt" placeholder="">
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="dydzb-f"></ul>
+                                                    <!--返费结算方式-->
+                                                    <li class="li-item4">
+                                                        <div class="filtrate-t1">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">返费结算方式</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-radio inp-dbju">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">单笔结佣</span>
+                                                                    </div>
+                                                                    <div class="j-radio inp-pcju">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">按批次结佣</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--返费结算方式内容-->
+                                                    <!--当选择为次月或次次月时，第二个为输入框，仅可输入31以内的正整数；（如上方原型图）-->
+                                                    <!--单笔结佣 没有内容-->
+                                                    <!--按批次结佣-->
+                                                    <ul class="ffjs-pc">
+                                                        <li>
+                                                            <div class="filtrate-t3">
+                                                                <div class="filtrate-time">
+                                                                    <div class="j-ipt-area in-line">
+                                                                        <div class="j-ipt-wrap">
+                                                                            <div class="j-select">
+                                                                                <input type="text" class="content" placeholder="">
+                                                                                <ul class="option">
+                                                                                    <li>1</li>
+                                                                                    <li>2</li>
+                                                                                </ul>
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="j-ipt-area in-line">
+                                                                        <div class="j-ipt-wrap">
+                                                                            <div class="j-select">
+                                                                                <input type="text" class="content" placeholder="">
+                                                                                <ul class="option">
+                                                                                    <li>1</li>
+                                                                                    <li>2</li>
+                                                                                </ul>
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <!--返费到账时长-->
+                                                    <li class="li-item6">
+                                                        <div class="filtrate-t3">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">返费到账时长</label>
+                                                                <div class="j-suf">天佣金到账</div>
+                                                                <div class="j-input-center">
+                                                                    <input type="text" class="j-ipt" placeholder="">
+                                                                    <span class="ico"></span>
+                                                                </div>
+                                                                <div class="j-suf">预计结佣申请后</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--返费申请分阶段情况-->
+                                                    <li class="li-item6">
+                                                        <div class="filtrate-t1">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">返费申请分阶段情况</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-radio inp-ffsq-yc">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">一次性申请结</span>
+                                                                    </div>
+                                                                    <div class="j-radio inp-ffsq-fd">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">分阶段申请结</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--一次性申请结内容-->
+                                                    <ul class="ffsq-cont-yc">
+                                                        <!--返费申请阶段-->
+                                                        <li class="li-item6">
+                                                            <div class="filtrate-t6-cont">
+                                                                <div class="j-ipt-area in-line">
+                                                                    <label class="j-label">返费申请阶段</label>
+                                                                    <div class="j-ipt-wrap">
+                                                                        <div class="j-radio">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">草签</span>
+                                                                        </div>
+                                                                        <div class="j-radio">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">网签</span>
+                                                                        </div>
+                                                                        <div class="j-radio">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">网签且首付款交齐</span>
+                                                                        </div>
+                                                                        <div class="j-radio">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">网签首付后提交完贷款资料</span>
+                                                                        </div>
+                                                                        <div class="j-radio">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">网签且贷款审批通过</span>
+                                                                        </div>
+                                                                        <div class="j-radio">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">网签且全款到账</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="j-ipt-area in-line">
+                                                                    <label class="j-label">全款可分期</label>
+                                                                    <div class="j-ipt-wrap">
+                                                                        <div class="j-select">
+                                                                            <input type="text" class="content" placeholder="请选择">
+                                                                            <ul class="option">
+                                                                                <li>1次</li>
+                                                                            </ul>
+                                                                            <span class="ico"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <!--分阶段申请结内容-->
+                                                    <ul class="ffsq-cont">
+                                                        <!--返费申请阶段选项-->
+                                                        <li class="li-item6">
+                                                            <div class="filtrate-t6-cont">
+                                                                <div class="j-ipt-area in-line">
+                                                                    <label class="j-label">返费申请阶段</label>
+                                                                    <div class="j-ipt-wrap">
+                                                                        <div class="j-check-box inp-sq-cq">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">草签</span>
+                                                                        </div>
+                                                                        <div class="j-check-box inp-sq-wq">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">网签</span>
+                                                                        </div>
+                                                                        <div class="j-check-box inp-sq-sf">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">网签且首付款交齐</span>
+                                                                        </div>
+                                                                        <div class="j-check-box inp-sq-sf2">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">网签首付后提交完贷款资料</span>
+                                                                        </div>
+                                                                        <div class="j-check-box inp-sq-sf3">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">网签且贷款审批通过</span>
+                                                                        </div>
+                                                                        <div class="j-check-box inp-sq-sf4">
+                                                                            <span class="ico"></span>
+                                                                            <span class="txt">网签且全款到账</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qkfq-cs">
+                                                                    <div class="j-ipt-area in-line">
+                                                                        <label class="j-label">全款可分期</label>
+                                                                        <div class="j-ipt-wrap">
+                                                                            <div class="j-select">
+                                                                                <input type="text" class="content" value="1次">
+                                                                                <ul class="option">
+                                                                                    <li class="qkfq-cs-1">1次</li>
+                                                                                    <li class="qkfq-cs-2">2次</li>
+                                                                                    <li class="qkfq-cs-3">3次</li>
+                                                                                    <li class="qkfq-cs-4">4次</li>
+                                                                                </ul>
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <!--草签返费百分比-->
+                                                        <ul>
+                                                            <li class="sq-cq-cont">
+                                                                <div class="filtrate-t3">
+                                                                    <div class="j-ipt-area in-line">
+                                                                        <label class="j-label">草签返费百分比</label>
+                                                                        <div class="j-suf">%</div>
+                                                                        <div class="j-ipt-wrap">
+                                                                            <input type="text" class="j-ipt" placeholder="">
+                                                                            <span class="ico"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <!--网签返费百分比-->
+                                                            <li  class="sq-wq-cont">
+                                                                <div class="filtrate-t3">
+                                                                    <div class="j-ipt-area in-line">
+                                                                        <label class="j-label">网签返费百分比</label>
+                                                                        <div class="j-suf">%</div>
+                                                                        <div class="j-ipt-wrap">
+                                                                            <input type="text" class="j-ipt" placeholder="">
+                                                                            <span class="ico"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <!--网签且首付款交齐返费百分比-->
+                                                            <li  class="sq-sf-cont">
+                                                                <div class="filtrate-t3">
+                                                                    <div class="j-ipt-area in-line">
+                                                                        <label class="j-label">网签且首付款交齐返费百分比</label>
+                                                                        <div class="j-suf">%</div>
+                                                                        <div class="j-ipt-wrap">
+                                                                            <input type="text" class="j-ipt" placeholder="">
+                                                                            <span class="ico"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <!--首付且提交完贷款资料返费百分比-->
+                                                            <li class="sq-sf-cont2">
+                                                                <div class="filtrate-t3">
+                                                                    <div class="j-ipt-area in-line">
+                                                                        <label class="j-label">首付且提交完贷款资料返费百分比</label>
+                                                                        <div class="j-suf">%</div>
+                                                                        <div class="j-ipt-wrap">
+                                                                            <input type="text" class="j-ipt" placeholder="">
+                                                                            <span class="ico"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <!--网签且贷款审批通过返费百分比-->
+                                                            <li class="sq-sf-cont3">
+                                                                <div class="filtrate-t3">
+                                                                    <div class="j-ipt-area in-line">
+                                                                        <label class="j-label">网签且贷款审批通过返费百分比</label>
+                                                                        <div class="j-suf">%</div>
+                                                                        <div class="j-ipt-wrap">
+                                                                            <input type="text" class="j-ipt" placeholder="">
+                                                                            <span class="ico"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <!--网签且全款到账返费百分比 联动容器-->
+                                                            <div class="qk-wq-ld">
+                                                                <li class="li-item1 sq-sf-cont4">
+                                                                    <div class="filtrate-t3">
+                                                                        <div class="j-ipt-area in-line">
+                                                                            <label class="j-label">网签且全款到账返费百分比</label>
+                                                                            <div class="j-suf">%</div>
+                                                                            <div class="j-ipt-wrap">
+                                                                                <input type="text" class="j-ipt" placeholder="">
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <!--全款分期第1 2, 3, 4次交钱后返费百分比-->
+                                                                <li class="qkfq-1">
+                                                                    <div class="filtrate-t3">
+                                                                        <div class="j-ipt-area in-line">
+                                                                            <label class="j-label">网签且全款到账返费百分比</label>
+                                                                            <div class="j-suf">%</div>
+                                                                            <div class="j-ipt-wrap">
+                                                                                <input type="text" class="j-ipt" placeholder="">
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="qkfq-2 li-item6">
+                                                                    <div class="filtrate-t3">
+                                                                        <div class="j-ipt-area in-line">
+                                                                            <label class="j-label">全款分期第1次交钱后返费百分比</label>
+                                                                            <div class="j-suf">%</div>
+                                                                            <div class="j-ipt-wrap">
+                                                                                <input type="text" class="j-ipt" placeholder="">
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="filtrate-t3">
+                                                                        <div class="j-ipt-area in-line">
+                                                                            <label class="j-label">全款分期第2次交钱后返费百分比</label>
+                                                                            <div class="j-suf">%</div>
+                                                                            <div class="j-ipt-wrap">
+                                                                                <input type="text" class="j-ipt" placeholder="">
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="qkfq-3 li-item6">
+                                                                    <div class="filtrate-t3">
+                                                                        <div class="j-ipt-area in-line">
+                                                                            <label class="j-label">全款分期第1次交钱后返费百分比</label>
+                                                                            <div class="j-suf">%</div>
+                                                                            <div class="j-ipt-wrap">
+                                                                                <input type="text" class="j-ipt" placeholder="">
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="filtrate-t3">
+                                                                        <div class="j-ipt-area in-line">
+                                                                            <label class="j-label">全款分期第2次交钱后返费百分比</label>
+                                                                            <div class="j-suf">%</div>
+                                                                            <div class="j-ipt-wrap">
+                                                                                <input type="text" class="j-ipt" placeholder="">
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="filtrate-t3">
+                                                                        <div class="j-ipt-area in-line">
+                                                                            <label class="j-label">全款分期第3次交钱后返费百分比</label>
+                                                                            <div class="j-suf">%</div>
+                                                                            <div class="j-ipt-wrap">
+                                                                                <input type="text" class="j-ipt" placeholder="">
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="qkfq-4 li-item6">
+                                                                    <div class="filtrate-t3">
+                                                                        <div class="j-ipt-area in-line">
+                                                                            <label class="j-label">全款分期第1次交钱后返费百分比</label>
+                                                                            <div class="j-suf">%</div>
+                                                                            <div class="j-ipt-wrap">
+                                                                                <input type="text" class="j-ipt" placeholder="">
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="filtrate-t3">
+                                                                        <div class="j-ipt-area in-line">
+                                                                            <label class="j-label">全款分期第2次交钱后返费百分比</label>
+                                                                            <div class="j-suf">%</div>
+                                                                            <div class="j-ipt-wrap">
+                                                                                <input type="text" class="j-ipt" placeholder="">
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="filtrate-t3">
+                                                                        <div class="j-ipt-area in-line">
+                                                                            <label class="j-label">全款分期第3次交钱后返费百分比</label>
+                                                                            <div class="j-suf">%</div>
+                                                                            <div class="j-ipt-wrap">
+                                                                                <input type="text" class="j-ipt" placeholder="">
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="filtrate-t3">
+                                                                        <div class="j-ipt-area in-line">
+                                                                            <label class="j-label">全款分期第4次交钱后返费百分比</label>
+                                                                            <div class="j-suf">%</div>
+                                                                            <div class="j-ipt-wrap">
+                                                                                <input type="text" class="j-ipt" placeholder="">
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </div>
+                                                        </ul>
+                                                    </ul>
+                                                    <!--返费申请阶段内容-->
+                                                </ul>
+                                            </ul>
+                                            <!--table 切换内容 02-->
+                                            <div class="filtrate-bd-cont table02">
+                                                <div class="filtrate-list">
+                                                    <div class="filtrate-bd-cont-item">
+                                                        <div class="cont-title">
+                                                            <h3>分类1</h3>
+                                                        </div>
+                                                        <ul class="filtrate-bd-item">
+                                                            <!--自由分类2中具有的数据-->
+                                                            <!--楼栋类型-->
+                                                            <li class="dglx-cont">
+                                                                <div class="filtrate-t1">
+                                                                    <div class="j-ipt-area in-line">
+                                                                        <label class="j-label">楼栋类型</label>
+                                                                        <div class="j-ipt-wrap">
+                                                                            <div class="j-check-box">
+                                                                                <span class="ico"></span>
+                                                                                <span class="txt">洋房</span>
+                                                                            </div>
+                                                                            <div class="j-check-box">
+                                                                                <span class="ico"></span>
+                                                                                <span class="txt">小高层</span>
+                                                                            </div>
+                                                                            <div class="j-check-box">
+                                                                                <span class="ico"></span>
+                                                                                <span class="txt">高层</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <!--楼栋号码-->
+                                                            <li class="dghm-cont">
+                                                                <div class="filtrate-t3">
+                                                                    <div class="j-ipt-area in-line">
+                                                                        <label class="j-label">楼栋号码</label>
+                                                                        <div class="j-ipt-wrap">
+                                                                            <div class="j-select">
+                                                                                <input type="text" class="content" placeholder="请选择">
+                                                                                <ul class="option">
+                                                                                    <li>1</li>
+                                                                                    <li>2</li>
+                                                                                    <li>3</li>
+                                                                                    <li>4</li>
+                                                                                    <li>5</li>
+                                                                                </ul>
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <!--户型类型-->
+                                                            <li class="hxlx-cont">
+                                                                <div class="filtrate-t3">
+                                                                    <div class="j-ipt-area in-line">
+                                                                        <label class="j-label">户型类型</label>
+                                                                        <div class="j-ipt-wrap">
+                                                                            <div class="j-check-box checked">
+                                                                                <span class="ico"></span>
+                                                                                <span class="txt">平层</span>
+                                                                            </div>
+                                                                            <div class="j-check-box">
+                                                                                <span class="ico"></span>
+                                                                                <span class="txt">复式</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <!--户型居室-->
+                                                            <li class="li-item1 hxjs-cont">
+                                                                <div class="filtrate-t3">
+                                                                    <div class="j-ipt-area in-line">
+                                                                        <label class="j-label">户型居室</label>
+                                                                        <div class="j-ipt-wrap">
+                                                                            <div class="j-select">
+                                                                                <input type="text" class="content" placeholder="请选择">
+                                                                                <ul class="option">
+                                                                                    <li>1</li>
+                                                                                    <li>2</li>
+                                                                                    <li>3</li>
+                                                                                    <li>4</li>
+                                                                                    <li>5</li>
+                                                                                </ul>
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <!--面积-->
+                                                            <li class="li-item2 mj-cont">
+                                                                <div class="filtrate-t5">
+                                                                    <div class="j-ipt-area in-line">
+                                                                        <div class="j-ipt-wrap">
+                                                                            <div class="j-select">
+                                                                                <input type="text" class="content" placeholder="">
+                                                                                <ul class="option">
+                                                                                    <li>建筑面积</li>
+                                                                                    <li>室内面积</li>
+                                                                                </ul>
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--默认输入框-->
+                                                                    <div class="j-ipt-area in-line">
+                                                                        <div class="j-ipt-wrap">
+                                                                            <input type="text" class="j-ipt" placeholder="">
+                                                                            <span class="ico"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--动态输入框-->
+                                                                    <div class="j-ipt-area in-line inp-mj-dt">
+                                                                        <span class="span-gd"></span>
+                                                                        <div class="j-ipt-wrap">
+                                                                            <input type="text" class="j-ipt" placeholder="">
+                                                                            <span class="ico"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--添加／取消 范围-->
+                                                                    <div class="filteate-dw">
+                                                                        <span>平米</span>
+                                                                    </div>
+                                                                    <div class="btn-area add-qx-fw">
+                                                                        <button class="j-btn j-btn-green">添加范围</button>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <!--自由分类2中具有的数据-->
+                                                            <!--可以复制内容字段-->
+                                                            <!--佣金类型-->
+                                                            <li class="li-item6">
+                                                                <div class="filtrate-t1">
+                                                                    <div class="j-ipt-area in-line">
+                                                                        <label class="j-label">佣金类型</label>
+                                                                        <div class="j-ipt-wrap">
+                                                                            <div class="j-check-box inp-qzds">
+                                                                                <span class="ico"></span>
+                                                                                <span class="txt">前置电商</span>
+                                                                            </div>
+                                                                            <div class="j-check-box inp-hzff">
+                                                                                <span class="ico"></span>
+                                                                                <span class="txt">后置返费</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <!--仅当佣金类型选择了“前置电商”时，展示的字段-->
+                                                            <ul class="is-qzds-t">
+                                                                <!--电商金额-->
+                                                                <li>
+                                                                    <div class="filtrate-t3">
+                                                                        <div class="j-ipt-area in-line">
+                                                                            <label class="j-label">电商金额</label>
+                                                                            <div class="j-suf">元／套</div>
+                                                                            <div class="j-ipt-wrap">
+                                                                                <input type="text" class="j-ipt" placeholder="请输入内容">
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <!--电商结佣分阶段情况-->
+                                                                <li>
+                                                                    <div class="filtrate-t1">
+                                                                        <div class="j-ipt-area in-line">
+                                                                            <label class="j-label">电商结佣分阶段情况</label>
+                                                                            <div class="j-ipt-wrap">
+                                                                                <div class="j-radio inp-ycxj">
+                                                                                    <span class="ico"></span>
+                                                                                    <span class="txt">一次性结</span>
+                                                                                </div>
+                                                                                <div class="j-radio inp-fjdj">
+                                                                                    <span class="ico"></span>
+                                                                                    <span class="txt">分阶段结</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <!--电商结佣阶段-->
+                                                                <li>
+                                                                    <div class="filtrate-t1">
+                                                                        <div class="inp-fjdj-cont">
+                                                                            <div class="j-ipt-area in-line">
+                                                                                <label class="j-label">电商结佣阶段</label>
+                                                                                <div class="j-ipt-wrap">
+                                                                                    <div class="j-check-box inp-ds-ph">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">排号</span>
+                                                                                    </div>
+                                                                                    <div class="j-check-box inp-ds-rg">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">认购</span>
+                                                                                    </div>
+                                                                                    <div class="j-check-box inp-ds-cq">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">草签</span>
+                                                                                    </div>
+                                                                                    <div class="j-check-box inp-ds-wq">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">网签</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="inp-ycxj-cont">
+                                                                            <div class="j-ipt-area in-line">
+                                                                                <label class="j-label">电商结佣阶段</label>
+                                                                                <div class="j-ipt-wrap">
+                                                                                    <div class="j-radio">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">排号</span>
+                                                                                    </div>
+                                                                                    <div class="j-radio">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">认购</span>
+                                                                                    </div>
+                                                                                    <div class="j-radio">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">草签</span>
+                                                                                    </div>
+                                                                                    <div class="j-radio">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">网签</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <!--分阶段结 选项内容-->
+                                                                <div class="fjdj-cont">
+                                                                    <li class="ds-ph">
+                                                                        <div class="filtrate-t3">
+                                                                            <div class="j-ipt-area in-line">
+                                                                                <label class="j-label">排号刷电商</label>
+                                                                                <div class="j-suf">元／套</div>
+                                                                                <div class="j-ipt-wrap">
+                                                                                    <input type="text" class="j-ipt" placeholder="请输入内容">
+                                                                                    <span class="ico"></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="ds-rg">
+                                                                        <div class="filtrate-t3">
+                                                                            <div class="j-ipt-area in-line">
+                                                                                <label class="j-label">认购刷电商</label>
+                                                                                <div class="j-suf">元／套</div>
+                                                                                <div class="j-ipt-wrap">
+                                                                                    <input type="text" class="j-ipt" placeholder="请输入内容">
+                                                                                    <span class="ico"></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="ds-cq">
+                                                                        <div class="filtrate-t3">
+                                                                            <div class="j-ipt-area in-line">
+                                                                                <label class="j-label">草签刷电商</label>
+                                                                                <div class="j-suf">元／套</div>
+                                                                                <div class="j-ipt-wrap">
+                                                                                    <input type="text" class="j-ipt" placeholder="请输入内容">
+                                                                                    <span class="ico"></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="ds-wq">
+                                                                        <div class="filtrate-t3">
+                                                                            <div class="j-ipt-area in-line">
+                                                                                <label class="j-label">网签刷电商</label>
+                                                                                <div class="j-suf">元／套</div>
+                                                                                <div class="j-ipt-wrap">
+                                                                                    <input type="text" class="j-ipt" placeholder="请输入内容">
+                                                                                    <span class="ico"></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </div>
+                                                            </ul>
+                                                            <!--仅当佣金类型选择了“后置反费”时，展示的字段-->
+                                                            <ul class="is-hzff-t">
+                                                                <!--返费金额算法-->
+                                                                <li>
+                                                                    <div class="filtrate-t1">
+                                                                        <div class="j-ipt-area in-line">
+                                                                            <label class="j-label">返费金额算法</label>
+                                                                            <div class="j-ipt-wrap">
+                                                                                <div class="j-radio inp-cjts">
+                                                                                    <span class="ico"></span>
+                                                                                    <span class="txt">按成交套数结佣</span>
+                                                                                </div>
+                                                                                <div class="j-radio inp-jydw">
+                                                                                    <span class="ico"></span>
+                                                                                    <span class="txt">按成交额点位结佣</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <!--返费金额算法 /套／成交额--->
+                                                                <!--返费金额 成交额--->
+                                                                <ul class="ffje-cje">
+                                                                    <li>
+                                                                        <div class="filtrate-t3">
+                                                                            <div class="j-ipt-area in-line">
+                                                                                <label class="j-label">返费金额</label>
+                                                                                <label class="j-label j-label-t">按房价的</label>
+                                                                                <div class="j-suf">%</div>
+                                                                                <div class="j-ipt-wrap">
+                                                                                    <input type="text" class="j-ipt" placeholder="">
+                                                                                    <span class="ico"></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                                <!--返费金额 套-->
+                                                                <ul class="ffje-ts">
+                                                                    <li>
+                                                                        <div class="filtrate-t3">
+                                                                            <div class="j-ipt-area in-line">
+                                                                                <label class="j-label">返费金额</label>
+                                                                                <div class="j-suf">元／套（若有点用请输入点用打折前进入）</div>
+                                                                                <div class="j-ipt-wrap">
+                                                                                    <input type="text" class="j-ipt" placeholder="">
+                                                                                    <span class="ico"></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                                <!--是否有垫佣-->
+                                                                <li class="li-item6">
+                                                                    <div class="filtrate-t1">
+                                                                        <div class="j-ipt-area in-line">
+                                                                            <label class="j-label">是否有垫佣</label>
+                                                                            <div class="j-ipt-wrap">
+                                                                                <div class="j-radio inp-dydz-s">
+                                                                                    <span class="ico"></span>
+                                                                                    <span class="txt">是</span>
+                                                                                </div>
+                                                                                <div class="j-radio inp-dydz-f">
+                                                                                    <span class="ico"></span>
+                                                                                    <span class="txt">否</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <!--是否有垫佣 是／否-->
+                                                                <ul class="dydzb-t">
+                                                                    <!--垫佣打折比-->
+                                                                    <li class="li-item6">
+                                                                        <div class="filtrate-t3">
+                                                                            <div class="j-ipt-area in-line">
+                                                                                <label class="j-label">垫佣打折比</label>
+                                                                                <div class="j-suf">%</div>
+                                                                                <div class="j-ipt-wrap">
+                                                                                    <input type="text" class="j-ipt" placeholder="">
+                                                                                    <span class="ico"></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                                <ul class="dydzb-f"></ul>
+                                                                <!--返费结算方式-->
+                                                                <li class="li-item4">
+                                                                    <div class="filtrate-t1">
+                                                                        <div class="j-ipt-area in-line">
+                                                                            <label class="j-label">返费结算方式</label>
+                                                                            <div class="j-ipt-wrap">
+                                                                                <div class="j-radio inp-dbju">
+                                                                                    <span class="ico"></span>
+                                                                                    <span class="txt">单笔结佣</span>
+                                                                                </div>
+                                                                                <div class="j-radio inp-pcju">
+                                                                                    <span class="ico"></span>
+                                                                                    <span class="txt">按批次结佣</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <!--返费结算方式内容-->
+                                                                <!--当选择为次月或次次月时，第二个为输入框，仅可输入31以内的正整数；（如上方原型图）-->
+                                                                <!--单笔结佣 没有内容-->
+                                                                <!--按批次结佣-->
+                                                                <ul class="ffjs-pc">
+                                                                    <li>
+                                                                        <div class="filtrate-t3">
+                                                                            <div class="filtrate-time">
+                                                                                <div class="j-ipt-area in-line">
+                                                                                    <div class="j-ipt-wrap">
+                                                                                        <div class="j-select">
+                                                                                            <input type="text" class="content" placeholder="">
+                                                                                            <ul class="option">
+                                                                                                <li>1</li>
+                                                                                                <li>2</li>
+                                                                                            </ul>
+                                                                                            <span class="ico"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="j-ipt-area in-line">
+                                                                                    <div class="j-ipt-wrap">
+                                                                                        <div class="j-select">
+                                                                                            <input type="text" class="content" placeholder="">
+                                                                                            <ul class="option">
+                                                                                                <li>1</li>
+                                                                                                <li>2</li>
+                                                                                            </ul>
+                                                                                            <span class="ico"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                                <!--返费到账时长-->
+                                                                <li class="li-item6">
+                                                                    <div class="filtrate-t3">
+                                                                        <div class="j-ipt-area in-line">
+                                                                            <label class="j-label">返费到账时长</label>
+                                                                            <div class="j-suf">天佣金到账</div>
+                                                                            <div class="j-input-center">
+                                                                                <input type="text" class="j-ipt" placeholder="">
+                                                                                <span class="ico"></span>
+                                                                            </div>
+                                                                            <div class="j-suf">预计结佣申请后</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <!--返费申请分阶段情况-->
+                                                                <li class="li-item6">
+                                                                    <div class="filtrate-t1">
+                                                                        <div class="j-ipt-area in-line">
+                                                                            <label class="j-label">返费申请分阶段情况</label>
+                                                                            <div class="j-ipt-wrap">
+                                                                                <div class="j-radio inp-ffsq-yc">
+                                                                                    <span class="ico"></span>
+                                                                                    <span class="txt">一次性申请结</span>
+                                                                                </div>
+                                                                                <div class="j-radio inp-ffsq-fd">
+                                                                                    <span class="ico"></span>
+                                                                                    <span class="txt">分阶段申请结</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <!--一次性申请结内容-->
+                                                                <ul class="ffsq-cont-yc">
+                                                                    <!--返费申请阶段-->
+                                                                    <li class="li-item6">
+                                                                        <div class="filtrate-t6-cont">
+                                                                            <div class="j-ipt-area in-line">
+                                                                                <label class="j-label">返费申请阶段</label>
+                                                                                <div class="j-ipt-wrap">
+                                                                                    <div class="j-radio">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">草签</span>
+                                                                                    </div>
+                                                                                    <div class="j-radio">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">网签</span>
+                                                                                    </div>
+                                                                                    <div class="j-radio">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">网签且首付款交齐</span>
+                                                                                    </div>
+                                                                                    <div class="j-radio">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">网签首付后提交完贷款资料</span>
+                                                                                    </div>
+                                                                                    <div class="j-radio">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">网签且贷款审批通过</span>
+                                                                                    </div>
+                                                                                    <div class="j-radio">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">网签且全款到账</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="j-ipt-area in-line">
+                                                                                <label class="j-label">全款可分期</label>
+                                                                                <div class="j-ipt-wrap">
+                                                                                    <div class="j-select">
+                                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                                        <ul class="option">
+                                                                                            <li>1次</li>
+                                                                                        </ul>
+                                                                                        <span class="ico"></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                                <!--分阶段申请结内容-->
+                                                                <ul class="ffsq-cont">
+                                                                    <!--返费申请阶段选项-->
+                                                                    <li class="li-item6">
+                                                                        <div class="filtrate-t6-cont">
+                                                                            <div class="j-ipt-area in-line">
+                                                                                <label class="j-label">返费申请阶段</label>
+                                                                                <div class="j-ipt-wrap">
+                                                                                    <div class="j-check-box inp-sq-cq">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">草签</span>
+                                                                                    </div>
+                                                                                    <div class="j-check-box inp-sq-wq">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">网签</span>
+                                                                                    </div>
+                                                                                    <div class="j-check-box inp-sq-sf">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">网签且首付款交齐</span>
+                                                                                    </div>
+                                                                                    <div class="j-check-box inp-sq-sf2">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">网签首付后提交完贷款资料</span>
+                                                                                    </div>
+                                                                                    <div class="j-check-box inp-sq-sf3">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">网签且贷款审批通过</span>
+                                                                                    </div>
+                                                                                    <div class="j-check-box inp-sq-sf4">
+                                                                                        <span class="ico"></span>
+                                                                                        <span class="txt">网签且全款到账</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="qkfq-cs">
+                                                                                <div class="j-ipt-area in-line">
+                                                                                    <label class="j-label">全款可分期</label>
+                                                                                    <div class="j-ipt-wrap">
+                                                                                        <div class="j-select">
+                                                                                            <input type="text" class="content" value="1次">
+                                                                                            <ul class="option">
+                                                                                                <li class="qkfq-cs-1">1次</li>
+                                                                                                <li class="qkfq-cs-2">2次</li>
+                                                                                                <li class="qkfq-cs-3">3次</li>
+                                                                                                <li class="qkfq-cs-4">4次</li>
+                                                                                            </ul>
+                                                                                            <span class="ico"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <!--草签返费百分比-->
+                                                                    <ul>
+                                                                        <li class="sq-cq-cont">
+                                                                            <div class="filtrate-t3">
+                                                                                <div class="j-ipt-area in-line">
+                                                                                    <label class="j-label">草签返费百分比</label>
+                                                                                    <div class="j-suf">%</div>
+                                                                                    <div class="j-ipt-wrap">
+                                                                                        <input type="text" class="j-ipt" placeholder="">
+                                                                                        <span class="ico"></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <!--网签返费百分比-->
+                                                                        <li  class="sq-wq-cont">
+                                                                            <div class="filtrate-t3">
+                                                                                <div class="j-ipt-area in-line">
+                                                                                    <label class="j-label">网签返费百分比</label>
+                                                                                    <div class="j-suf">%</div>
+                                                                                    <div class="j-ipt-wrap">
+                                                                                        <input type="text" class="j-ipt" placeholder="">
+                                                                                        <span class="ico"></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <!--网签且首付款交齐返费百分比-->
+                                                                        <li  class="sq-sf-cont">
+                                                                            <div class="filtrate-t3">
+                                                                                <div class="j-ipt-area in-line">
+                                                                                    <label class="j-label">网签且首付款交齐返费百分比</label>
+                                                                                    <div class="j-suf">%</div>
+                                                                                    <div class="j-ipt-wrap">
+                                                                                        <input type="text" class="j-ipt" placeholder="">
+                                                                                        <span class="ico"></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <!--首付且提交完贷款资料返费百分比-->
+                                                                        <li class="sq-sf-cont2">
+                                                                            <div class="filtrate-t3">
+                                                                                <div class="j-ipt-area in-line">
+                                                                                    <label class="j-label">首付且提交完贷款资料返费百分比</label>
+                                                                                    <div class="j-suf">%</div>
+                                                                                    <div class="j-ipt-wrap">
+                                                                                        <input type="text" class="j-ipt" placeholder="">
+                                                                                        <span class="ico"></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <!--网签且贷款审批通过返费百分比-->
+                                                                        <li class="sq-sf-cont3">
+                                                                            <div class="filtrate-t3">
+                                                                                <div class="j-ipt-area in-line">
+                                                                                    <label class="j-label">网签且贷款审批通过返费百分比</label>
+                                                                                    <div class="j-suf">%</div>
+                                                                                    <div class="j-ipt-wrap">
+                                                                                        <input type="text" class="j-ipt" placeholder="">
+                                                                                        <span class="ico"></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <!--网签且全款到账返费百分比 联动容器-->
+                                                                        <div class="qk-wq-ld">
+                                                                            <li class="li-item1 sq-sf-cont4">
+                                                                                <div class="filtrate-t3">
+                                                                                    <div class="j-ipt-area in-line">
+                                                                                        <label class="j-label">网签且全款到账返费百分比</label>
+                                                                                        <div class="j-suf">%</div>
+                                                                                        <div class="j-ipt-wrap">
+                                                                                            <input type="text" class="j-ipt" placeholder="">
+                                                                                            <span class="ico"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <!--全款分期第1 2, 3, 4次交钱后返费百分比-->
+                                                                            <li class="qkfq-1">
+                                                                                <div class="filtrate-t3">
+                                                                                    <div class="j-ipt-area in-line">
+                                                                                        <label class="j-label">网签且全款到账返费百分比</label>
+                                                                                        <div class="j-suf">%</div>
+                                                                                        <div class="j-ipt-wrap">
+                                                                                            <input type="text" class="j-ipt" placeholder="">
+                                                                                            <span class="ico"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="qkfq-2 li-item6">
+                                                                                <div class="filtrate-t3">
+                                                                                    <div class="j-ipt-area in-line">
+                                                                                        <label class="j-label">全款分期第1次交钱后返费百分比</label>
+                                                                                        <div class="j-suf">%</div>
+                                                                                        <div class="j-ipt-wrap">
+                                                                                            <input type="text" class="j-ipt" placeholder="">
+                                                                                            <span class="ico"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="filtrate-t3">
+                                                                                    <div class="j-ipt-area in-line">
+                                                                                        <label class="j-label">全款分期第2次交钱后返费百分比</label>
+                                                                                        <div class="j-suf">%</div>
+                                                                                        <div class="j-ipt-wrap">
+                                                                                            <input type="text" class="j-ipt" placeholder="">
+                                                                                            <span class="ico"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="qkfq-3 li-item6">
+                                                                                <div class="filtrate-t3">
+                                                                                    <div class="j-ipt-area in-line">
+                                                                                        <label class="j-label">全款分期第1次交钱后返费百分比</label>
+                                                                                        <div class="j-suf">%</div>
+                                                                                        <div class="j-ipt-wrap">
+                                                                                            <input type="text" class="j-ipt" placeholder="">
+                                                                                            <span class="ico"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="filtrate-t3">
+                                                                                    <div class="j-ipt-area in-line">
+                                                                                        <label class="j-label">全款分期第2次交钱后返费百分比</label>
+                                                                                        <div class="j-suf">%</div>
+                                                                                        <div class="j-ipt-wrap">
+                                                                                            <input type="text" class="j-ipt" placeholder="">
+                                                                                            <span class="ico"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="filtrate-t3">
+                                                                                    <div class="j-ipt-area in-line">
+                                                                                        <label class="j-label">全款分期第3次交钱后返费百分比</label>
+                                                                                        <div class="j-suf">%</div>
+                                                                                        <div class="j-ipt-wrap">
+                                                                                            <input type="text" class="j-ipt" placeholder="">
+                                                                                            <span class="ico"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="qkfq-4 li-item6">
+                                                                                <div class="filtrate-t3">
+                                                                                    <div class="j-ipt-area in-line">
+                                                                                        <label class="j-label">全款分期第1次交钱后返费百分比</label>
+                                                                                        <div class="j-suf">%</div>
+                                                                                        <div class="j-ipt-wrap">
+                                                                                            <input type="text" class="j-ipt" placeholder="">
+                                                                                            <span class="ico"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="filtrate-t3">
+                                                                                    <div class="j-ipt-area in-line">
+                                                                                        <label class="j-label">全款分期第2次交钱后返费百分比</label>
+                                                                                        <div class="j-suf">%</div>
+                                                                                        <div class="j-ipt-wrap">
+                                                                                            <input type="text" class="j-ipt" placeholder="">
+                                                                                            <span class="ico"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="filtrate-t3">
+                                                                                    <div class="j-ipt-area in-line">
+                                                                                        <label class="j-label">全款分期第3次交钱后返费百分比</label>
+                                                                                        <div class="j-suf">%</div>
+                                                                                        <div class="j-ipt-wrap">
+                                                                                            <input type="text" class="j-ipt" placeholder="">
+                                                                                            <span class="ico"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="filtrate-t3">
+                                                                                    <div class="j-ipt-area in-line">
+                                                                                        <label class="j-label">全款分期第4次交钱后返费百分比</label>
+                                                                                        <div class="j-suf">%</div>
+                                                                                        <div class="j-ipt-wrap">
+                                                                                            <input type="text" class="j-ipt" placeholder="">
+                                                                                            <span class="ico"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                        </div>
+                                                                    </ul>
+                                                                </ul>
+                                                                <!--返费申请阶段内容-->
+                                                            </ul>
+                                                        </ul>
+                                                        <!--删除按钮-->
+                                                        <div class="btn-area remove-bd-cont-item">
+                                                            <button class="j-btn j-btn-red">删除分类</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--增加分类-->
+                                                <div class="btn-area add-bd-cont-item">
+                                                    <button class="j-btn j-btn-green">增加分类</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--必须填字段02-->
+                                    <!--是否有跳佣/跳点-->
+                                    <div class="con-half">
+                                        <div class="td-inp contract-inp">
+                                            <div class="j-ipt-area in-line">
+                                                <label class="j-label">是否有跳佣/跳点</label>
+                                                <div class="j-ipt-wrap">
+                                                    <div class="j-radio is-text-t">
+                                                        <span class="ico"></span>
+                                                        <span class="txt">是</span>
+                                                    </div>
+                                                    <div class="j-radio is-text-f">
+                                                        <span class="ico"></span>
+                                                        <span class="txt">否</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--跳佣/跳点规则-->
+                                        <div class="td-txt contract-txt">
+                                            <div class="j-ipt-area in-line">
+                                                <label class="j-label">跳佣/跳点规则</label>
+                                                <div class="j-ipt-wrap">
+                                                    <textarea class="j-ipt" placeholder="请输入内容"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--是否还有其他特殊规则-->
+                                    <div class="con-half">
+                                        <div class="thgz-inp contract-inp">
+                                            <div class="j-ipt-area in-line">
+                                                <label class="j-label">是否还有其他特殊规则</label>
+                                                <div class="j-ipt-wrap">
+                                                    <div class="j-radio is-text-t">
+                                                        <span class="ico"></span>
+                                                        <span class="txt">是</span>
+                                                    </div>
+                                                    <div class="j-radio is-text-f">
+                                                        <span class="ico"></span>
+                                                        <span class="txt">否</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--其他特殊规则-->
+                                        <div class="qtgz-txt contract-txt">
+                                            <div class="j-ipt-area in-line">
+                                                <label class="j-label">其他特殊规则</label>
+                                                <div class="j-ipt-wrap">
+                                                    <textarea class="j-ipt" placeholder="请输入内容"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--上传合同附件-->
+                                    <div class="schtfj clearfix">
+                                        <div class="upload-area">
+                                            <div class="up-area">
+                                                <input type="file" class="input-file">
+                                                <button class="btn-input-file">选择附件上传</button>
+                                            </div>
+                                            <div class="num">1/2</div>
+                                        </div>
+                                        <ul class="annexes-list">
+                                            <li>
+                                                <svg class="icon" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-doc"></use>
+                                            </svg>
+                                                <div class="file-name">
+                                                    <span class="annexes-name">居里入职欢迎新.docx</span>
+                                                    <span class="annexes-size">(56.8K)</span>
+                                                    <span class="up-loading">上传中……</span>
+                                                    <span class="annexes-del">删除</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <svg class="icon" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ppt"></use>
+                                            </svg>
+                                                <div class="file-name">
+                                                    <span class="annexes-name">居里入职欢迎新.ppt</span>
+                                                    <span class="annexes-size">(56.8K)</span>
+                                                    <span class="up-loading">上传中……</span>
+                                                    <span class="annexes-del">删除</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <svg class="icon" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                                <div class="file-name">
+                                                    <span class="annexes-name">居里入职欢迎新.pdf</span>
+                                                    <span class="annexes-size">(56.8K)</span>
+                                                    <span class="up-loading">上传中……</span>
+                                                    <span class="annexes-del">删除</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <svg class="icon" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xls"></use>
+                                            </svg>
+                                                <div class="file-name">
+                                                    <span class="annexes-name">居里入职欢迎新.xls</span>
+                                                    <span class="annexes-size">(56.8K)</span>
+                                                    <span class="up-loading">上传中……</span>
+                                                    <span class="annexes-del">删除</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--操作按钮-->
+                                    <div class="jyhy-btn">
+                                        <div class="btn-area">
+                                            <button class="j-btn j-btn-gray">取消</button>
+                                            <button class="j-btn j-btn-blue">保存</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/iconfont.js"></script>
+<script src="../js/common.js"></script>
+<script type="text/javascript">
+    $(function() {
+        /*默认首页*/
+
+        // 是否基于分类 最高级  不用区分
+        $(".is-classify-t").click(function() {
+            $('.filtrate-t2').show();
+            // 隐藏 否 所有字段
+            $('.table01').hide();
+            // 显示 是 所有字段
+            $('.table02').show();
+
+        });
+        $(".is-classify-f").click(function() {
+            $('.filtrate-t2').hide();
+            // 显示 否 所有字段
+            $('.table01').show();
+            // 隐藏 是 所有字段
+            $('.table02').hide();
+        });
+
+        // 结佣条款是否基于不同条件有不同分类 '是' 不用区分
+        //分类条件
+        $('.inp2-dglx').click(function () {
+            $('.dglx-cont').toggle();
+        });
+        $('.inp2-dghm').click(function () {
+            $('.dghm-cont').toggle();
+        });
+        $('.inp2-hxlx').click(function () {
+            $('.hxlx-cont').toggle();
+        });
+        $('.inp2-hxjs').click(function () {
+            $('.hxjs-cont').toggle();
+        });
+        $('.inp2-mj').click(function () {
+            $('.mj-cont').toggle();
+        });
+
+        // 结佣条款是否基于不同条件有不同分类 否
+        // 前置电商01
+        Duox_Change('.inp-qzds','.filtrate-bd-item','.is-qzds-t');
+        //Duox_Change('.inp-qzds','.table02','.is-qzds-t');
+        // 后置返费01
+        Duox_Change('.inp-hzff','.filtrate-bd-item','.is-hzff-t');
+        //Duox_Change('.inp-hzff','.table02','.is-hzff-t');
+        // 电商结佣分阶段情况 一次  分段
+        // 一次性结
+        Dx_Change1('.inp-ycxj', '.inp-ycxj-cont', '.inp-fjdj-cont','.fjdj-cont', '.filtrate-bd-item');
+        // 分段结算
+        Dx_Change2('.inp-fjdj', '.inp-fjdj-cont', '.fjdj-cont','.inp-ycxj-cont', '.filtrate-bd-item');
+        // 电商结佣分阶段情况 分段ph rg cq  wq
+        // ph
+        Duox_Change('.inp-ds-ph','.filtrate-bd-item','.ds-ph');
+        // rg
+        Duox_Change('.inp-ds-rg','.filtrate-bd-item','.ds-rg');
+        // cq
+        Duox_Change('.inp-ds-cq','.filtrate-bd-item','.ds-cq');
+        //wq
+        Duox_Change('.inp-ds-wq','.filtrate-bd-item','.ds-wq');
+
+        /*返费申请阶段 草签*/
+        // cq
+        Duox_Change('.inp-sq-cq','.filtrate-bd-item','.sq-cq-cont');
+
+        // wq
+        Duox_Change('.inp-sq-wq','.filtrate-bd-item','.sq-wq-cont');
+
+        //sf
+        Duox_Change('.inp-sq-sf','.filtrate-bd-item','.sq-sf-cont');
+
+        //sf2
+        Duox_Change('.inp-sq-sf2','.filtrate-bd-item','.sq-sf-cont2');
+
+        //sf3
+        Duox_Change('.inp-sq-sf3','.filtrate-bd-item','.sq-sf-cont3');
+
+        // sf4 qk-wq-ld
+        Duox_Change('.inp-sq-sf4','.filtrate-bd-item','.qk-wq-ld');
+
+        // 联动兄弟元素隐藏
+        $(document).on('click','.inp-sq-sf4',function () {
+            // 避免windowr5
+            var that = $(this);
+            // 找到 父亲下的需要显示的div 和隐藏的div
+            var Dx_show = that.parents('.filtrate-bd-item').find('.qkfq-cs');
+            if(Dx_show.length == 0){
+                Dx_show = that.parents('.filtrate-bd-item').find('.qkfq-cs:hidden');
+            }
+            Dx_show.toggle();
+        });
+        // 下拉框 点击事件响应对应关系
+        $(document).on('change', '.content', function () {
+            var that = $(this);
+            var $that_index = parseInt(that.attr("value"));
+
+            var $that_par = that.parents(".filtrate-bd-item");
+            if($that_par){
+                // 对应的所有 li 结构
+                var $target_li = $that_par.find('.qk-wq-ld li')
+            }else {
+                return;
+            }
+            // 隐藏所有
+            $target_li.hide()
+            // 展示对应结构
+            $target_li.eq($that_index).show()
+        })
+        // 返费金额算法（ 按成交套数结佣／按成交额点位结佣）
+        Dxfl_Change('.inp-cjts','.ffje-ts','.ffje-cje','.filtrate-bd-item');
+        Dxfl_Change('.inp-jydw','.ffje-cje','.ffje-ts','.filtrate-bd-item');
+
+
+        // 是否有垫佣  是／否
+        Dxfl_Change('.inp-dydz-s','.dydzb-t','.dydzb-f','.filtrate-bd-item');
+        Dxfl_Change('.inp-dydz-f','.dydzb-f','.dydzb-t','.filtrate-bd-item');
+
+
+        /*单笔结佣金*/
+        $(document).on('click','.inp-dbju',function () {
+            // 避免windowr5
+            var that = $(this);
+            // 找到 父亲下的需要显示的div 和隐藏的div
+            var Dx_show = that.parents('.filtrate-bd-item').find('.ffjs-pc');
+            if(Dx_show.length == 0){
+                Dx_show = that.parents(target).find('.ffjs-pc:hidden');
+            }
+            Dx_show.hide();
+        })
+        /*按批次接*/
+        $(document).on('click','.inp-pcju',function () {
+            // 避免windowr5
+            var that = $(this);
+            // 找到 父亲下的需要显示的div 和隐藏的div
+            var Dx_show = that.parents('.filtrate-bd-item').find('.ffjs-pc');
+            if(Dx_show.length == 0){
+                Dx_show = that.parents(target).find('.ffjs-pc:hidden');
+            }
+            Dx_show.show();
+        })
+        /*返费申请分阶段情况*/
+        Dxfl_Change('.inp-ffsq-yc','.ffsq-cont-yc','.ffsq-cont','.filtrate-bd-item');
+        Dxfl_Change('.inp-ffsq-fd','.ffsq-cont','.ffsq-cont-yc','.filtrate-bd-item');
+
+
+        // 分类1 面积／ 动态 添加和取消
+        $(document).on('click','.add-qx-fw',function () {
+            // 避免windo
+            var that = $(this);
+            // 找到 父亲下的需要显示的 隐藏div
+            var par = that.parents('.filtrate-t5').find('.inp-mj-dt');
+            if(par.length == 0){
+                par = that.parents(table).find('.inp-mj-dt:hidden');
+            }
+            par.toggle();
+        })
+
+        // 是否有跳佣/跳点  必须填入字段02 不用区分
+        $('.is-text-t').click(function() {
+            var that = $(this);
+            that.parents('.con-half').find('.contract-txt').show()
+        });
+        $('.is-text-f').click(function() {
+            var that = $(this);
+            that.parents('.con-half').find('.contract-txt').hide()
+        });
+
+        // 一次性结 封装函数
+        function Dx_Change1(index,show,hide01, hide02, table) {
+            $(document).on('click',index,function () {
+                // 避免windo
+                var that = $(this);
+                // 找到 父亲下的需要显示的div 和隐藏的div
+                var Dx_show = that.parents(table).find(show);
+                if(Dx_show.length == 0){
+                    Dx_show = that.parents(table).find(show+':hidden');
+                }
+                var Dx_hide01 = that.parents(table).find(hide01);
+                if(Dx_hide01.length == 0){
+                    Dx_hide01 = that.parents(table).find(hide01+':hidden');
+                }
+                var Dx_hide02 = that.parents(table).find(hide02);
+                if(Dx_hide02.length == 0){
+                    Dx_hide02 = that.parents(table).find(hide02+':hidden');
+                }
+                Dx_show.show();
+                Dx_hide01.hide();
+                Dx_hide02.hide();
+            })
+        }
+        // 分段结算 封装函数
+        function Dx_Change2(index,show,show02, hide, table) {
+            $(document).on('click',index,function () {
+                // 避免windo
+                var that = $(this);
+                // 找到 父亲下的需要显示的div 和隐藏的div
+                var Dx_show = that.parents(table).find(show);
+                if(Dx_show.length == 0){
+                    Dx_show = that.parents(table).find(show+':hidden');
+                }
+                var Dx_show02 = that.parents(table).find(show02);
+                if(Dx_show02.length == 0){
+                    Dx_show02 = that.parents(table).find(show02+':hidden');
+                }
+                var Dx_hide = that.parents(table).find(hide);
+                if(Dx_hide.length == 0){
+                    Dx_hide = that.parents(table).find(hide+':hidden');
+                }
+                Dx_show.show();
+                Dx_show02.show();
+                Dx_hide.hide();
+            })
+        }
+        // 点击函数封装 显示／隐藏方法; 多选 切换
+        function Duox_Change(index,table, target) {
+            $(document).on('click',index,function () {
+                // 避免windo
+                var that = $(this);
+                // 找到 父亲下的需要显示的 隐藏div
+                var par = that.parents(table).find(target);
+                if(par.length == 0){
+                    par = that.parents(table).find(target+':hidden');
+                }
+                par.toggle();
+            })
+        }
+        // 点击显示隐藏 不同内容
+        function Dxfl_Change(index,show,hide,target) {
+            $(document).on('click',index,function () {
+                // 避免windowr5
+                var that = $(this);
+                // 找到 父亲下的需要显示的div 和隐藏的div
+                var Dx_show = that.parents(target).find(show);
+                if(Dx_show.length == 0){
+                    Dx_show = that.parents(target).find(show+':hidden');
+                }
+                var Dx_hide = that.parents(target).find(hide);
+                if(Dx_hide.length == 0){
+                    Dx_hide = that.parents(target).find(hide+':hidden');
+                }
+                Dx_show.show();
+                Dx_hide.hide();
+            })
+        }
+
+        // 添加分类
+        var num = 1;
+        var Cont_Item_html = $('.filtrate-list').html();
+        $('.add-bd-cont-item').click(function() {
+            $('.filtrate-list').append(Cont_Item_html)
+            num++;
+            $('.filtrate-list').find('.filtrate-bd-cont-item:last-child').find('.cont-title h3').html('分类'+num);
+        })
+        //删除分类
+        $(document).on('click', '.remove-bd-cont-item', function() {
+            $(this).parents('.filtrate-bd-cont-item').remove();
+        })
+    })
+</script>
+</body>
+</html>

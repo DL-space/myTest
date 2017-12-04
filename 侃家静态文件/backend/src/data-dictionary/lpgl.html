@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>楼盘管理</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/d-dictionary.css">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">带看记录</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="panel panel-record">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">带看记录</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="tab tab-record tab-kyyh">
+                                <ul class="nav tab-nav nav-justified">
+                                    <li role="presentation"><a href="contact-record.html"> 联系记录</a></li>
+                                    <li role="presentation" class="active"><a href="dk-record.html">带看记录</a></li>
+                                    <li role="presentation"><a href="#">认购记录</a></li>
+                                    <li role="presentation"><a href="#">签约记录</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="tab-btn">
+                                                    <a class="btn btn-t03" href="dk-update.html" role="button"><span
+                                                            class="ico ico-eye"></span>更新客户跟进</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--2016.10.21 客户需求-->
+                                        <div class="panel panel-khxq">
+                                            <div class="panel-heading">
+                                                <div class="panel-heading-wrap">
+                                                    <h2 class="panel-title">客户需求</h2>
+
+                                                    <div class="date">更新时间：2016-10-17 22：01</div>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="mod2 mod2-baseinfo">
+                                                    <div class="tit">1.关键信息</div>
+                                                    <ul class="con clearfix">
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>客户购房紧迫度：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <div class="txr">高</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>购房目的：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <div class="txt">投资+自住</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>首付预算：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <div class="txt">100万元</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>总价预算：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <div class="txt">400-600万元</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>有无资质：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <div class="txt">有</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>名下房产：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <div class="txt">一套房</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="mod2 mod2-baseinfo">
+                                                    <div class="tit">2.区域需求</div>
+                                                    <ul class="con clearfix">
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>关注区域：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <div class="txr">大兴、顺义、房山</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>工作地点：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <div class="txt">望京</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>是否接受其他区域：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <div class="txt">是</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="mod2 mod2-baseinfo">
+                                                    <div class="tit">3.户型需求</div>
+                                                    <ul class="con clearfix">
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>业态类型：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <div class="txr">住宅</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>面积要求：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <div class="txt">100m²</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>户型：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <div class="txt">两居室 三居室</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="mod2 mod2-baseinfo">
+                                                    <div class="tit">4.个性需求</div>
+                                                    <ul class="con clearfix">
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>可看房时间：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <div class="txr">随时</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>配合程度：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <div class="txt">高</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>关注点：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <div class="txt">无</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>抗性点：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <div class="txt">价格不能太高</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="mod2 mod2-baseinfo">
+                                                    <div class="tit">5.相关楼盘</div>
+                                                    <ul class="con clearfix">
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>客户感兴趣楼盘：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <div class="txr">旭辉26街区</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>竞品楼盘：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <div class="txt">北京新干线</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="mod2 mod2-bzxx">
+                                                    <ul class="con clearfix">
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>备注：</label>
+
+                                                                <div class="txr">客户很年轻，二十几岁人很好</div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="btn-area">
+                                                    <a href="#" class="link-edit">编辑需求</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="dk-record ky-record clearfix">
+                                                <div class="dk-record-list clearfix">
+                                                    <div class="dk-record-list-wrap clearfix">
+                                                        <div class="dk-record-property">联系ID：20007472</div>
+                                                        <div class="dk-partner">联系时间：2016-10-19</div>
+                                                        <div class="dk-lxr">联系人：袁雪婷</div>
+                                                        <div class="record-order">1</div>
+                                                    </div>
+                                                    <div class="record-text">
+                                                        <div class="tit">
+                                                            <h4>计划联系:</h4>
+                                                        </div>
+                                                        <div class="con clearfix">
+                                                            <textarea class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="record-text">
+                                                        <div class="tit">
+                                                            <h4>实际联系记录:</h4>
+                                                        </div>
+                                                        <div class="con clearfix">
+                                                            <textarea class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn-area">
+                                                        <a href="#" class="link-edit">编辑</a>
+                                                    </div>
+                                                </div>
+                                                <div class="dk-record-list clearfix">
+                                                    <div class="dk-record-list-wrap clearfix">
+                                                        <div class="dk-record-property">联系ID：20007472</div>
+                                                        <div class="dk-partner">联系时间：2016-10-19</div>
+                                                        <div class="dk-lxr">联系人：袁雪婷</div>
+                                                        <div class="record-order">2</div>
+                                                    </div>
+                                                    <div class="record-text">
+                                                        <div class="tit">
+                                                            <h4>计划联系:</h4>
+                                                        </div>
+                                                        <div class="con clearfix">
+                                                            <textarea class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="record-text">
+                                                        <div class="tit">
+                                                            <h4>实际联系记录:</h4>
+                                                        </div>
+                                                        <div class="con clearfix">
+                                                            <textarea class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn-area">
+                                                        <a href="#" class="link-edit">编辑</a>
+                                                    </div>
+                                                </div>
+                                                <div class="dk-record-list clearfix">
+                                                    <div class="dk-record-list-wrap clearfix">
+                                                        <div class="dk-record-property">联系ID：20007472</div>
+                                                        <div class="dk-partner">联系时间：2016-10-19</div>
+                                                        <div class="dk-lxr">联系人：袁雪婷</div>
+                                                        <div class="record-order">3</div>
+                                                    </div>
+                                                    <div class="record-text">
+                                                        <div class="tit">
+                                                            <h4>计划联系:</h4>
+                                                        </div>
+                                                        <div class="con clearfix">
+                                                            <textarea class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="record-text">
+                                                        <div class="tit">
+                                                            <h4>实际联系记录:</h4>
+                                                        </div>
+                                                        <div class="con clearfix">
+                                                            <textarea class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn-area">
+                                                        <a href="#" class="link-edit">编辑</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!--动态信息-->
+                    <div class="d-tab tab-dynamic">
+                        <div class="tab-t">
+                            <ul>
+                                <li class="on"><a href="#">变更通知</a></li>
+                                <li><a href="#">动态信息</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-c">
+                            <div class="nrpart show">
+                                <div class="tz-mod tz-bgtz">
+                                    <div class="tit"><span class="date">2015-10-20</span><span class="name">冯开凯</span>
+                                    </div>
+                                    <div class="con">
+                                        <div class="d-label">
+                                            <span class="d-lb d-lb-jt">加推</span>
+                                        </div>
+                                        <ul class="d-list">
+                                            <li>炫立方今天加推2套大平米房源：</li>
+                                            <li>2～544，79.24平米，2133113元；</li>
+                                            <li>2～644，79.24平米，2210809元；</li>
+                                            <li>备注：以上两套房源签约时间15～20天。</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tz-mod tz-bgtz">
+                                    <div class="tit"><span class="date">2015-10-06</span><span class="name">赵崇岩</span>
+                                    </div>
+                                    <div class="con">
+                                        <div class="d-label">
+                                            <span class="d-lb d-lb-tj">特价</span>
+                                            <span class="d-lb d-lb-hz">合作变化</span>
+                                            <span class="d-lb d-lb-hf">恢复带看</span>
+                                        </div>
+                                        <ul class="d-list">
+                                            <li>16号楼五套一口价房源：️</li>
+                                            <li>2-101 面积88.42 总价474</li>
+                                            <li>3-501 面积87.67 总价488</li>
+                                            <li>3-701 面积87.67 总价492</li>
+                                            <li>3-302 面积88.42 总价484</li>
+                                            <li>4-301面积88.88 总价498</li>
+                                            <li>以上房源均为10万抵一口价</li>
+                                            <li>小三居</li>
+                                            <li>楼号：3#1单元</li>
+                                            <li>面积：90㎡</li>
+                                            <li>均价：59500元</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tz-mod tz-bgtz last">
+                                    <div class="tit"><span class="date">2015-05-19</span><span class="name">邢芮</span>
+                                    </div>
+                                    <div class="con">
+                                        <div class="d-label">
+                                            <span class="d-lb d-lb-tk">停止带看</span>
+                                        </div>
+                                        <ul class="d-list">
+                                            <li>明天（10月17日）公园懿府渠道停止带看，具体恢复时间等通知。</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="d-tz-more"><a href="bgtzjjl.html">查看更多&gt;&gt;</a></div>
+                            </div>
+                            <div class="nrpart">
+                                <!--合作方-->
+                                <div class="d-hz-mod">
+                                    <div class="tr">
+                                        <div class="td">合作方：开发商</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td">是否刷电商：是</div>
+                                        <div class="td">是否外联：是</div>
+                                    </div>
+                                </div>
+                                <!--楼盘动态信息-->
+                                <div class="d-bbsx">
+                                    <div class="tit">
+                                        <h4>楼盘动态信息：</h4>
+                                        <span class="d-bb-more">2016-06-01  12:02:03 邢芮</span>
+                                    </div>
+                                    <ul class="d-list">
+                                        <li class="d-t">2016/6/6下午收到K2清水湾项目的通知：</li>
+                                        <li>
+                                            1.清水湾现在咱们没法卖。因为发商老板的关系户已经不够分，所以开发商决定这些房源就不对外出售，直接让老板的关系户内部消化，项目营销总也没办法，老板下的通知。
+                                        </li>
+                                        <li>2.接下来这个项目咱们就不要再推。</li>
+                                    </ul>
+                                    <div class="pic-area">
+                                        <ul class="pic-list">
+                                            <li><img src="../images/d-dictionary/img-01.jpg" alt=""></li>
+                                        </ul>
+                                        <div class="v-picture">
+                                            <div class="v-content">
+                                                <!--幻灯-->
+                                                <div class="v-slide">
+                                                    <ul class="v-slide-ul">
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/5.png" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/1.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/2.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/3.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/4.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/5.png" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/1.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/2.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/3.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/4.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/5.png" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/1.jpg" alt=""></a>
+                                                        </li>
+                                                    </ul>
+                                                    <!--按钮-->
+                                                    <div>
+                                                        <a class="v-slide-btnz v-slide-btn1 v-zno" href="javascript:void(0);"><img src="images/btnz.png" alt=""></a>
+                                                        <a class="v-slide-btny v-slide-btn1" href="javascript:void(0);"><img src="images/btny.png" alt=""></a>
+                                                    </div>
+                                                </div>
+                                                <!--走马灯-->
+                                                <div class="v-zmd">
+                                                    <div class="v-zmd-container">
+                                                        <div class="v-move">
+                                                            <ul class="v-zmd-container-ul">
+                                                                <li id="v-first" class="v-zon">
+                                                                    <a href="javascript:void(0);">
+                                                                        <img class="v-zmd-index" src="images/11.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/11.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/11.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/11.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);"><img src="images/1.jpg" alt=""></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);"><img src="images/11.jpg" alt=""></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);"><img src="images/1.jpg" alt=""></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);"><img src="images/1.jpg" alt=""></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);"><img src="images/1.jpg" alt=""></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);"><img src="images/1.jpg" alt=""></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <a class="v-zmd-btnz v-zmd-btn2 v-zno" href="javascript:void(0);">上一个</a>
+                                                        <a class="v-zmd-btny v-zmd-btn2" href="javascript:void(0);">下一个</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--叉-->
+                                            <div>
+                                                <a class="v-cha" href="javascript:void(0);"><img src="images/cha.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-tz-more"><a href="#">查看更多&gt;&gt;</a></div>
+                                </div>
+                                <!--报备注意事项-->
+                                <div class="d-bbsx">
+                                    <div class="tit">
+                                        <h4>报备注意事项：</h4>
+                                    </div>
+                                    <ul class="d-list">
+                                        <li>微信提前一小时报备， 到访后找前台报侃家网；</li>
+                                        <li>填写侃家自带的客户确认单，首页留给案场</li>
+                                    </ul>
+                                    <div class="pic-area">
+                                        <ul class="pic-list">
+                                            <li><img src="../images/d-dictionary/img-01.jpg" alt=""></li>
+                                        </ul>
+                                        <div class="v-picture">
+                                            <div class="v-content">
+                                                <!--幻灯-->
+                                                <div class="v-slide">
+                                                    <ul class="v-slide-ul">
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/5.png" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/1.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/2.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/3.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/4.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/5.png" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/1.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/2.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/3.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/4.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/5.png" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="images/1.jpg" alt=""></a>
+                                                        </li>
+                                                    </ul>
+                                                    <!--按钮-->
+                                                    <div>
+                                                        <a class="v-slide-btnz v-slide-btn1 v-zno" href="javascript:void(0);"><img src="images/btnz.png" alt=""></a>
+                                                        <a class="v-slide-btny v-slide-btn1" href="javascript:void(0);"><img src="images/btny.png" alt=""></a>
+                                                    </div>
+                                                </div>
+                                                <!--走马灯-->
+                                                <div class="v-zmd">
+                                                    <div class="v-zmd-container">
+                                                        <div class="v-move">
+                                                            <ul class="v-zmd-container-ul">
+                                                                <li id="v-first" class="v-zon">
+                                                                    <a href="javascript:void(0);">
+                                                                        <img class="v-zmd-index" src="images/11.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/11.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/11.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/11.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);"><img src="images/1.jpg" alt=""></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);"><img src="images/11.jpg" alt=""></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);"><img src="images/1.jpg" alt=""></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);"><img src="images/1.jpg" alt=""></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);"><img src="images/1.jpg" alt=""></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);"><img src="images/1.jpg" alt=""></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <a class="v-zmd-btnz v-zmd-btn2 v-zno" href="javascript:void(0);">上一个</a>
+                                                        <a class="v-zmd-btny v-zmd-btn2" href="javascript:void(0);">下一个</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--叉-->
+                                            <div>
+                                                <a class="v-cha" href="javascript:void(0);"><img src="images/cha.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/d-dictionary.js"></script>
+</body>
+</html>

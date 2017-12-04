@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <title>弹层</title>
+    <script src="../../js/flexible.js"></script>
+    <link rel="stylesheet" href="css/dialog.css">
+</head>
+<body>
+<div class="dialog3 dialog-success1" style="display: none">
+    <div class="dialog-body">
+        <div class="app-tips">
+            <span class="ico-success"></span>
+            <p class="title">提交成功</p>
+            <p class="msg">咨询师将稍后与您联系，免费为您提供专业服务！</p>
+            <div class="look-house">
+                <p class="look-house-msg">您还可以填写需求，让咨询师提前为您准备</p>
+                <div class="tr">
+                    <div class="input-area">
+                    <span class="ico-triangle"></span>
+                    <div class="ipt">您购房总价预算</div>
+                    <ul class="dropdown-list">
+                        <li>500万</li>
+                        <li>1000万</li>
+                        <li>1500万</li>
+                        <li>2000万</li>
+                        <li>2500万</li>
+                        <li>3000万</li>
+                    </ul>
+                </div>
+                </div>
+                <div class="tr">
+                    <div class="input-area">
+                        <span class="ico-triangle"></span>
+                        <div class="ipt">您购房的目标区域</div>
+                        <ul class="dropdown-list">
+                            <li>朝阳区</li>
+                            <li>通州区</li>
+                            <li>东城区</li>
+                            <li>西城区</li>
+                            <li>海淀区</li>
+                            <li>怀柔区</li>
+                            <li>大兴区</li>
+                            <li>房山区</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-area">
+                <button class="btn dialog-btn-commit">提 交</button>
+            </div>
+            <div class="close-dialog">
+                <a href="#"></a>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dialog3 dialog-success2" style="display: none">
+    <div class="dialog-body">
+        <div class="app-tips">
+            <span class="ico-success"></span>
+            <p class="title">已成功提交给咨询师</p>
+            <p class="msg">咨询师将根据您的需求,为您提供1V1专属服务。</p>
+            <div class="download-app">
+                <p class="download-msg">解锁更多买房技能？快去下载APP吧！</p>
+                <img src="images/img-dialog-download-app.png" alt="img" class="download-img">
+                <div class="btn-area">
+                    <button class="btn dialog-btn-commit">
+                        <span class="ico ico-download-app"></span>
+                        <span class="txt">APP 下载</span>
+                    </button>
+                </div>
+            </div>
+            <div class="close-dialog">
+                <a href="#"></a>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<button class="btn-success1">成功1</button>
+<button class="btn-success2">成功2</button>
+<script src="../../js/lib/jquery-2.1.4.min.js"></script>
+<script src="../../js/lib/layer/layer.js"></script>
+<script src="js/dialog.js"></script>
+<script>
+    var successHtml1 = $(".dialog-success1");
+    var successHtml2 = $(".dialog-success2");
+$(".btn-success1").click(function () {
+    showDialog(1,successHtml1);
+});
+$(".btn-success2").click(function () {
+    showDialog(1,successHtml2);
+})
+</script>
+</body>
+</html>

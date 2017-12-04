@@ -1,0 +1,155 @@
+.sus-bottom{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    overflow: hidden;
+}
+.sus-bottom .tab-content{
+    margin-bottom: 20px;
+}
+.sus-bottom .tab-content .tab-item{
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.sus-bottom .tab-content .active{
+    display: block;
+}
+.sus-bottom .tab-content .item-phone{
+    font-size: 20px;
+    color: #fff;
+    background-color: #0599d9;
+}
+.sus-bottom .tab-content .item-phone:after{
+    content: "";
+    position: absolute;
+    left: 54px;
+    top: 100%;
+    width:0;
+    height:0;
+    border-left:7px solid transparent;
+    border-right:7px solid transparent;
+    border-top:11px solid #0599d9;
+}
+.sus-bottom .tab-content .item-zx{
+    background-color: #0599d9;
+}
+.sus-bottom .tab-content .item-zx:after{
+    content: "";
+    position: absolute;
+    left: 176px;
+    top: 100%;
+    width:0;
+    height:0;
+    border-left:7px solid transparent;
+    border-right:7px solid transparent;
+    border-top:11px solid #0599d9;
+}
+.sus-bottom .tab-content .item-zx .ipt-zx{
+    float: none;
+    width: 240px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #b7b7b7;
+    border: none;
+    padding:  0 0 0 18px;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+.sus-bottom .tab-content .item-zx .btn-zx{
+    width: 100px;
+    height: 30px;
+    line-height: 26px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+    background-color: #0599d9\9;
+    border: solid 1px #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.sus-bottom .tab-content .item-ewm{
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    margin-left: 242px;
+    background-color: #0599d9;
+    box-sizing: border-box;
+}
+.sus-bottom .tab-content .item-ewm:after{
+    content: "";
+    position: absolute;
+    left: 52px;
+    top: 100%;
+    width:0;
+    height:0;
+    font-size: 0;
+    line-height: 0;
+    border-left:7px solid transparent;
+    border-right:7px solid transparent;
+    border-top:11px solid #0599d9;
+}
+.sus-bottom .tab-content .item-ewm img{
+    width: 100%;
+    height: 100%;
+}
+.sus-bottom .tab-menu{
+    height: 50px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.sus-bottom .tab-menu .menu-item{
+    float: left;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-right: 1px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #727272;
+}
+.sus-bottom .tab-menu .active{
+    background-color: #0599d9;
+}
+.sus-bottom .tab-menu .return-top{
+    width: 60px;
+    margin-right: 0;
+}
+.ico-phone8{
+    width: 16px;
+    height: 16px;
+    background: url("../images/ico-phone8.png") no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+.ico-phone9{
+    width: 16px;
+    height: 16px;
+    background: url("../images/ico-phone9.png") no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+.ico-download-app{
+    width: 12px;
+    height: 20px;
+    background: url("../images/ico-download-app.png") no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+.ico-top{
+    width: 18px;
+    height: 16px;
+    background: url("../images/ico-top.png") no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}

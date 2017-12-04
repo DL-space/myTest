@@ -1,0 +1,24 @@
+.statement{
+    padding: 0.4rem 0.26rem;
+    background: #fff;
+}
+.statement .text-box{
+    margin-bottom: 0.4rem;
+}
+.statement h2{
+    font-size: 0.53rem;
+    color: #333;
+    margin-bottom: 0.14rem;
+    font-weight: 700;
+}
+.statement h3{
+    font-size: 0.4rem;
+    color: #333;
+    margin-bottom: 0.14rem;
+    font-weight: 700;
+}
+.statement p{
+    font-size: 0.34rem;
+    color: #666;
+    line-height: 0.53rem;
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>价格走势</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/price.css">
+</head>
+<body>
+<div class="container">
+    @@include("./app/header/header2.html")
+    <div class="center">
+        <div class="row row-search">
+            <div class="wrap">
+                @@include("./app/search/search.html")
+            </div>
+        </div>
+        <div class="row row-crumb">
+            @@include("./app/crumbs/crumb.html")
+        </div>
+        <div class="row row-top-nav">
+            @@include("./app/detail-top/index.html")
+        </div>
+        <div class="row">
+            <div class="box box-chart">
+                <div class="hd">
+                    <h2 class="title">价格决策图</h2>
+                </div>
+                <div class="bd">
+                    <div class="legend">
+                        <img src="images/price/img-legend.png" alt="图例">
+                    </div>
+                    <div class="advice-free">
+                        <p class="aim">价格趋势变动有疑问，找咨询师问清楚吧</p>
+                        <div class="ipt-area">
+                            <input type="text" class="ipt" value="输入您的手机号">
+                            <a href="#" class="btn btn-cons">免费咨询</a>
+                            <div class="tips error-tips">您输入的手机号码格式有误，请核对后重新输入</div>
+                            <div class="tips right-tips">预约成功，我们将用010-89191132号码联系您免费专车带您看房！</div>
+                        </div>
+                    </div>
+                    <div class="chart-img">
+                        <img src="images/price/img-chart.png" alt="价格折线图">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box box-decision">
+                <div class="box-total box-left">
+                    <div class="box-hd">
+                        <h2 class="title">绿地诺亚方舟周边楼盘房价</h2>
+                    </div>
+                    <div class="box-bd">
+                        <div class="data-area">
+                            <div class="thead">
+                                <div class="t-hot">楼盘</div>
+                                <div class="t-price">最新价格</div>
+                                <div class="t-rose">上月成交量</div>
+                            </div>
+                            <ul class="order">
+                                <li>
+                                    <div class="t-hot"><a href="#">房山超级蜂巢房山超级蜂巢房山超级蜂巢房山超级蜂巢</a></div>
+                                    <div class="t-price"><span>4001</span>  元 / <em>㎡</em></div>
+                                    <div class="t-rose">20</div>
+                                </li>
+                                <li>
+                                    <div class="t-hot"><a href="#">房山超级蜂巢</a></div>
+                                    <div class="t-price"><span>4001</span>  元 / <em>㎡</em></div>
+                                    <div class="t-rose">20</div>
+                                </li>
+                                <li>
+                                    <div class="t-hot"><a href="#">房山超级蜂巢</a></div>
+                                    <div class="t-price"><span>4001</span> 元 / <em>㎡</em></div>
+                                    <div class="t-rose">20</div>
+                                </li>
+                                <li>
+                                    <div class="t-hot"><a href="#">房山超级蜂巢</a></div>
+                                    <div class="t-price"><span>4001</span>  元 / <em>㎡</em></div>
+                                    <div class="t-rose">20</div>
+                                </li>
+                                <li>
+                                    <div class="t-hot"><a href="#">房山超级蜂巢</a></div>
+                                    <div class="t-price"><span>4001</span>  元 / <em>㎡</em></div>
+                                    <div class="t-rose">20</div>
+                                </li>
+                                <li>
+                                    <div class="t-hot"><a href="#">房山超级蜂巢</a></div>
+                                    <div class="t-price"><span>4001</span>  元 / <em>㎡</em></div>
+                                    <div class="t-rose">20</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-total box-right">
+                    <div class="box-hd">
+                        <h2 class="title">绿地诺亚方舟同价位楼盘房价</h2>
+                    </div>
+                    <div class="box-bd">
+                        <div class="data-area">
+                            <div class="thead">
+                                <div class="t-hot">楼盘</div>
+                                <div class="t-price">最新价格</div>
+                                <div class="t-rose">上月成交量</div>
+                            </div>
+                            <ul class="order">
+                                <li>
+                                    <div class="t-hot"><a href="#">房山超级蜂巢</a></div>
+                                    <div class="t-price"><span>4001</span> 元 / <em>㎡</em></div>
+                                    <div class="t-rose">20</div>
+                                </li>
+                                <li>
+                                    <div class="t-hot"><a href="#">房山超级蜂巢</a></div>
+                                    <div class="t-price"><span>4001</span>  元 / <em>㎡</em></div>
+                                    <div class="t-rose">20</div>
+                                </li>
+                                <li>
+                                    <div class="t-hot"><a href="#">房山超级蜂巢</a></div>
+                                    <div class="t-price">4001 元 / <em>㎡</em></div>
+                                    <div class="t-rose">20</div>
+                                </li>
+                                <li>
+                                    <div class="t-hot"><a href="#">房山超级蜂巢</a></div>
+                                    <div class="t-price"><span>4001</span>  元 / <em>㎡</em></div>
+                                    <div class="t-rose">20</div>
+                                </li>
+                                <li>
+                                    <div class="t-hot"><a href="#">房山超级蜂巢</a></div>
+                                    <div class="t-price"><span>4001</span>  元 / <em>㎡</em></div>
+                                    <div class="t-rose">20</div>
+                                </li>
+                                <li>
+                                    <div class="t-hot"><a href="#">房山超级蜂巢</a></div>
+                                    <div class="t-price"><span>4001</span>  元 / <em>㎡</em></div>
+                                    <div class="t-rose">20</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box box-chart">
+                <div class="hd">
+                    <h2 class="title">楼盘成交量</h2>
+                </div>
+                <div class="bd">
+                    <div class="advice-free">
+                        <p class="aim">了解最新成交量余量数据，请联系咨询师</p>
+                        <div class="ipt-area">
+                            <input type="text" class="ipt" value="输入您的手机号">
+                            <a href="#" class="btn btn-cons">免费咨询</a>
+                            <div class="tips error-tips">您输入的手机号码格式有误，请核对后重新输入</div>
+                            <div class="tips right-tips">预约成功，我们将用010-89191132号码联系您免费专车带您看房！</div>
+                        </div>
+                    </div>
+                    <div class="chart-img">
+                        <img src="images/price/img-chart2.png" alt="成交量">
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <a href="#">继续了解该楼盘周边分析<span class="ico ico-more"></span></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box  box-decision box-rise">
+                <div class="box-total box-left">
+                    <div class="box-hd">
+                        <h2 class="title">通州涨幅榜</h2>
+                        <a href="#">
+                            更多
+                            <span class="ico ico-more"></span>
+                        </a>
+                    </div>
+                    <div class="box-bd">
+                        <div class="data-rise">
+                            <div class="rise">
+                                <div class="r-ranking">排行</div>
+                                <div class="r-hot">热门板块</div>
+                                <div class="r-price">成交均价</div>
+                                <div class="r-amount">涨幅</div>
+                            </div>
+                            <ul class="data-order">
+                                <li>
+                                    <div class="r-ranking"><span>1</span></div>
+                                    <div class="r-hot"><a href="#">亦庄</a></div>
+                                    <div class="r-price"><span>4001</span>  元 / <em>㎡</em></div>
+                                    <div class="r-amount"><span class="on">19.87%</span></div>
+                                </li>
+                                <li>
+                                    <div class="r-ranking"><span>2</span></div>
+                                    <div class="r-hot"><a href="#">黄村</a></div>
+                                    <div class="r-price"><span>4001</span>  元 / <em>㎡</em></div>
+                                    <div class="r-amount"><span class="on">19.87%</span></div>
+                                </li>
+                                <li>
+                                    <div class="r-ranking"><span>3</span></div>
+                                    <div class="r-hot"><a href="#">新华大街</a></div>
+                                    <div class="r-price"><span>4001</span>  元 / <em>㎡</em></div>
+                                    <div class="r-amount"><span>19.87%</span></div>
+                                </li>
+                                <li>
+                                    <div class="r-ranking"><span>4</span></div>
+                                    <div class="r-hot"><a href="#">望京</a></div>
+                                    <div class="r-price"><span>4001</span>  元 / <em>㎡</em></div>
+                                    <div class="r-amount"><span>19.87%</span></div>
+                                </li>
+                                <li>
+                                    <div class="r-ranking"><span>5</span></div>
+                                    <div class="r-hot"><a href="#">太阳宫</a></div>
+                                    <div class="r-price"><span>4001</span>  元 / <em>㎡</em></div>
+                                    <div class="r-amount"><span>19.87%</span></div>
+                                </li>
+                                <li>
+                                    <div class="r-ranking"><span>6</span></div>
+                                    <div class="r-hot"><a href="#">南通州</a></div>
+                                    <div class="r-price"><span>4001</span>  元 / <em>㎡</em></div>
+                                    <div class="r-amount"><span>19.87%</span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-total box-right">
+                    <div class="box-hd">
+                        <h2 class="title">通州热销楼盘房价</h2>
+                        <a href="#">
+                            更多
+                            <span class="ico ico-more"></span>
+                        </a>
+                    </div>
+                    <div class="box-bd">
+                        <div class="data-rise">
+                            <div class="rise">
+                                <div class="r-ranking">排行</div>
+                                <div class="r-hot">热门楼盘</div>
+                                <div class="r-price">成交均价</div>
+                                <div class="r-amount">成交量</div>
+                            </div>
+                            <ul class="data-order">
+                                <li>
+                                    <div class="r-ranking"><span>1</span></div>
+                                    <div class="r-hot"><a href="#">亦庄</a></div>
+                                    <div class="r-price"><span>4001</span> 元 / <em>㎡</em></div>
+                                    <div class="r-amount"><span>350</span> 套</div>
+                                </li>
+                                <li>
+                                    <div class="r-ranking"><span>2</span></div>
+                                    <div class="r-hot"><a href="#">黄村</a></div>
+                                    <div class="r-price"><span>4001</span> 元 / <em>㎡</em></div>
+                                    <div class="r-amount"><span>350</span> 套</div>
+                                </li>
+                                <li>
+                                    <div class="r-ranking"><span>3</span></div>
+                                    <div class="r-hot"><a href="#">新华大街</a></div>
+                                    <div class="r-price"><span>4001</span> 元 / <em>㎡</em></div>
+                                    <div class="r-amount"><span>350</span> 套</div>
+                                </li>
+                                <li>
+                                    <div class="r-ranking"><span>4</span></div>
+                                    <div class="r-hot"><a href="#">望京</a></div>
+                                    <div class="r-price"><span>4001</span>  元 / <em>㎡</em></div>
+                                    <div class="r-amount"><span>350</span> 套</div>
+                                </li>
+                                <li>
+                                    <div class="r-ranking"><span>5</span></div>
+                                    <div class="r-hot"><a href="#">太阳宫</a></div>
+                                    <div class="r-price"><span>4001</span>  元 / <em>㎡</em></div>
+                                    <div class="r-amount"><span>350</span> 套</div>
+                                </li>
+                                <li>
+                                    <div class="r-ranking"><span>6</span></div>
+                                    <div class="r-hot"><a href="#">南通州</a></div>
+                                    <div class="r-price"><span>4001</span>  元 / <em>㎡</em></div>
+                                    <div class="r-amount"><span>350</span> 套</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--gou-->
+        <div class="row">
+            <div class="box2 recommend">
+                <div class="hd">
+                    <h2 class="title">购房早知道</h2>
+                </div>
+                <div class="bd">
+                    <ul class="house-know-left">
+                        <li class="house-item">
+                            <span>1</span>
+                            <a href="#">买房常识之住宅分类介绍，天润福熙大道开发商怎么样？靠谱</a>
+                        </li>
+                        <li class="house-item">
+                            <span>2</span>
+                            <a href="#">购买学区房有哪些注意事项？公积金贷款可以提前还款吗？北京公</a>
+                        </li>
+                        <li class="house-item">
+                            <span>3</span>
+                            <a href="#">购买学区房有哪些注意事项？公积金贷款可以提前还款吗？北京公购买学区房</a>
+                        </li>
+                        <li class="house-item">
+                            <span>4</span>
+                            <a href="#">买房常识之住宅分类介绍，天润福熙大道开发商怎么样？靠谱</a>
+                        </li>
+                    </ul>
+                    <ul class="house-know-right">
+                        <li class="house-item">
+                            <span class="r-span">5</span>
+                            <a href="#">买房常识之住宅分类介绍，天润福熙大道开发商怎么样？靠谱</a>
+                        </li>
+                        <li class="house-item">
+                            <span class="r-span">6</span>
+                            <a href="#">购买学区房有哪些注意事项？公积金贷款可以提前还款吗？北京公</a>
+                        </li>
+                        <li class="house-item">
+                            <span class="r-span">7</span>
+                            <a href="#">买房常识之住宅分类介绍，天润福熙大道开发商怎么样？靠谱</a>
+                        </li>
+                        <li class="house-item">
+                            <span class="r-span">8</span>
+                            <a href="#">买房常识之住宅分类介绍，天润福熙大道开发商怎么样？靠谱</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include("./app/footer/footer.html")
+    @@include("./app/sidebar/sidebar.html")
+    @@include("./app/app-download/app-download.html")
+</div>
+<script src="./js/lib/jquery/jquery-1.9.1.min.js"></script>
+<script src="./js/lib/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/price.js"></script>
+</body>
+</html>

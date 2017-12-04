@@ -1,0 +1,32 @@
+/*导航tab*/
+.nav-tab{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 0.93rem;
+    background: #fff;
+    border-bottom: 1px solid #e2e2e2;
+    overflow: hidden;
+    z-index: 99;
+}
+.nav-tab li{
+    flex: 1;
+    color: #666;
+    font-size: 0.37rem;
+    height: 0.53rem;
+    line-height: 0.53rem;
+    text-align: center;
+    border-right: solid 1px #e2e2e2;
+}
+.nav-tab li:last-child{
+    border-right: none;
+}
+.nav-tab li a{
+    color: #666;
+}
+.nav-tab .active,.nav-tab .active a{
+    color: #48b3e2;
+}

@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="bTQ2RGhvQjUJVRsABQUuWgJRR3QNXXdfKkVHfAY8KUwUa0QmHRYNdw==">
+    <title>客服订单列表</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+    <div class="page-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo fl">
+                        <h1><a href="#"><img src="../images/logo.png" alt="欢迎登录侃家网业务管理系统！"></a></h1>
+                        <p class="info">欢迎登录侃家网业务管理系统！</p>
+                    </div>
+                    <div class="h-user">
+                        <div class="link-user">
+                            <span class="ico ico-user"></span>
+
+                            <div class="dropdown-menu-user">
+                                <span class="triangle"></span>
+                                <ul class="dropdown-menu">
+                                    <li class="first"><a href="#"><span class="dropdown-text">个人设置</span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">我的消息</span><span
+                                        class="badge myMsg"></span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">待办事项</span><span
+                                        class="badge toMsg"></span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">个人资料</span></a>
+                                    </li>
+                                    <li class="last"><a href="#"><span class="dropdown-text">退出</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ucenter">
+                            <span class="uname">徐立</span>
+                            <span class="fgx">|</span>
+                            <a class="logout" href="#">退出</a>
+                        </div>
+                        <div class="schedule"><a href="#">我的日程</a></div>
+                        <div class="tips-msg">
+                            <a class="ico ico-msg" href="#" title="消息">
+                            <span class="dot">28</span>
+                        </a>
+                            <a class="ico ico-todo" href="#" title="待办事项">
+                            <span class="dot">65</span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-all-wrap">
+        <div class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">咨询师业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">订单列表</a></li>
+                                <li><a href="#">关键带看管理列表</a></li>
+                                <li><a href="#">联系列表</a></li>
+                                <li><a href="#">带看列表</a></li>
+                                <li><a href="#">认购列表页</a></li>
+                                <li><a href="#">签约列表页</a></li>
+                                <li><a href="#">首次联系延迟列表</a></li>
+                                <li class="last"><a href="#">匹配工具</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">客服业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">客服订单管理</a></li>
+                                <li><a href="#">客服联系记录管理</a></li>
+                                <li><a href="#">带看评价管理</a></li>
+                                <li><a href="#">带看评价回访纪录</a></li>
+                                <li><a href="#">已关闭订单跟进</a></li>
+                                <li><a href="#">已关闭订单跟进回访记录</a></li>
+                                <li><a href="#">无效客户标记</a></li>
+                                <li><a href="#">400电话订单匹配</a></li>
+                                <li><a href="#">评价追回页面</a></li>
+                                <li class="last"><a href="#">投诉列表页</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">驻场拓展业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">报备管理</a></li>
+                                <li><a href="#">楼盘备案管理</a></li>
+                                <li><a href="#">合作方管理</a></li>
+                                <li><a href="#">楼盘拓展相关字段维护</a></li>
+                                <li><a href="#">添加报备</a></li>
+                                <li><a href="#">代理中介管理</a></li>
+                                <li class="last"><a href="#">代理客户订单管理</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">服务管理员业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">服务评价管理</a></li>
+                                <li><a href="#">咨询师带看情况查询</a></li>
+                                <li class="last"><a href="#">咨询师审核</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">系统管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">权限管理</a></li>
+                                <li><a href="#">员工管理</a></li>
+                                <li><a href="#">员工作息时间管理</a></li>
+                                <li><a href="#">咨询师分配管理</a></li>
+                                <li><a href="#">客服分配管理</a></li>
+                                <li><a href="#">用户管理</a></li>
+                                <li><a href="#">短信模板管理</a></li>
+                                <li><a href="#">咨询师分组管理</a></li>
+                                <li><a href="#">员工操作日志</a></li>
+                                <li><a href="#">批量转移咨询师客户</a></li>
+                                <li><a href="#">联系取消</a></li>
+                                <li><a href="#">雨燕档案</a></li>
+                                <li><a href="#">上线日志管理</a></li>
+                                <li><a href="#">城市管理</a></li>
+                                <li class="last"><a href="#">字段常量配置</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">报表管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">客户数据分析</a></li>
+                                <li><a href="#">网站统计报表</a></li>
+                                <li><a href="#">周期维度统计</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">咨询师延迟录入统计</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">联系延迟录入统计</a></li>
+                                        <li><a href="#">带看延迟录入统计</a></li>
+                                        <li><a href="#">咨询师分配时间到首次联系时间超时统计列表</a></li>
+                                        <li><a href="#">咨询师认购超时统计列表</a></li>
+                                        <li class="last"><a href="#">咨询师签约超时统计列表</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">核算日月周年报表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算统计</a></li>
+                                        <li><a href="#">咨询师组核算统计</a></li>
+                                        <li><a href="#">楼盘核算统计</a></li>
+                                        <li><a href="#">区域核算统计</a></li>
+                                        <li class="last"><a href="#">渠道核算统计</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">核算汇总表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算统计汇总表</a></li>
+                                        <li><a href="#">咨询师组核算统计汇总表</a></li>
+                                        <li><a href="#">楼盘核算统计汇总表</a></li>
+                                        <li><a href="#">区域核算统计汇总表</a></li>
+                                        <li><a href="#">渠道核算统计汇总表</a></li>
+                                        <li class="last"><a href="#">资金核算报表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">咨询师满意度表格</a></li>
+                                <li><a href="#">咨询师组满意度表格</a></li>
+                                <li><a href="#">带看评价统计列表</a></li>
+                                <li><a href="#">已关闭订单客户评价统计列表</a></li>
+                                <li><a href="#">成交订单服务评价统计列表</a></li>
+                                <li><a href="#">咨询师楼盘点评统计</a></li>
+                                <li><a href="#">客服首次联系超时统计报表</a></li>
+                                <li><a href="#">带看回访客服联系记录</a></li>
+                                <li><a href="#">已关闭订单回访客服联系记录</a></li>
+                                <li><a href="#">咨询师订单详情统计列表</a></li>
+                                <li><a href="#">咨询师正常订单统计列表</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">客户业务详情统计</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">客户线索详情统计列表</a></li>
+                                        <li><a href="#">客户上户详情统计列表</a></li>
+                                        <li><a href="#">带看详情统计报表</a></li>
+                                        <li><a href="#">认购详情统计列表</a></li>
+                                        <li class="last"><a href="#">签约详情统计列表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">客户留电行为详情列表</a></li>
+                                <li><a href="#">消息详情列表</a></li>
+                                <li><a href="#">定时消息详情列表</a></li>
+                                <li><a href="#">重新分配记录报表</a></li>
+                                <li><a href="#">短信记录报表</a></li>
+                                <li><a href="#">订单恢复报表</a></li>
+                                <li><a href="#">线索质量统计报表</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">业务统计报表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">楼盘业务统计</a></li>
+                                        <li><a href="#">渠道业务统计报表</a></li>
+                                        <li><a href="#">喜报业务统计报表</a></li>
+                                        <li><a href="#">咨询师首次正式认购核算报表</a></li>
+                                        <li><a href="#">区域业务统计</a></li>
+                                        <li class="last"><a href="#">订单业务详情统计报表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">楼盘数据维护审核记录</a></li>
+                                <li><a href="#">高端客户详情统计列表</a></li>
+                                <li><a href="#">评价追回客服记录统计</a></li>
+                                <li><a href="#">楼盘信息报表</a></li>
+                                <li><a href="#">市场部咨询合作详情</a></li>
+                                <li class="dropdown-submenu last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">咨询师订单核算详情</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算详情-签约</a></li>
+                                        <li><a href="#">咨询师核算详情-上户</a></li>
+                                        <li><a href="#">咨询师核算详情-带看</a></li>
+                                        <li class="last"><a href="#">咨询师核算详情-认购</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">楼盘管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">楼盘数据维护</a></li>
+                                <li><a href="#">楼盘点评列表</a></li>
+                                <li><a href="#">楼盘商务信息管理</a></li>
+                                <li><a href="#">区域报告楼盘定位</a></li>
+                                <li><a href="#">楼盘维护提醒设置</a></li>
+                                <li><a href="#">楼盘列表</a></li>
+                                <li><a href="#">市调测评</a></li>
+                                <li class="dropdown-submenu last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">楼盘审核</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">楼盘点评审核</a></li>
+                                        <li class="last"><a href="#">楼盘数据维护审核</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">楼盘字典<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="dropdown-submenu first last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">楼盘管理</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">全部楼盘列表</a></li>
+                                        <li><a href="#">创建楼盘</a></li>
+                                        <li class="last"><a href="#">价格维护</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--意见反馈入口-->
+                <div class="nav-feedback">
+                    <span class="btn-feedback">不爽就点我</span>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <ul class="breadcrumb">
+                            <li><a href="/index.php">首页</a></li>
+                            <li class="active">订单列表</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-index">
+                    <p>
+                        <a class="btn btn-success" href="#">添加联系记录</a>
+                        <a class="btn btn-success add">批量重新分配客服</a>
+                        <a class="btn btn-success pull-right change_status">我要接单</a></p>
+
+                    <div id="w0" class="grid-view">
+                        <div class="summary">第<b>1-20</b>条，共<b>64,865</b>条数据.</div>
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" class="select-on-check-all" name="selection_all" value="1"></th>
+                                    <th width="60"><a href="#" data-sort="id">订单ID</a>
+                                    </th>
+                                    <th width="90">
+                                        <a href="#" data-sort="city_id">城市</a>
+                                    </th>
+                                    <th width="60">
+                                        <a href="#" data-sort="user_realname">用户</a>
+                                    </th>
+                                    <th>
+                                        <a href="#" data-sort="user_mobile">手机号</a>
+                                    </th>
+                                    <th width="60">备用手机号</th>
+                                    <th width="70">感兴趣的楼盘</th>
+                                    <th>
+                                        <a class="desc" href="/index.php?r=yw-server-order%2Findex&amp;sort=create_datetime" data-sort="create_datetime">线索时间</a>
+                                    </th>
+                                    <th>
+                                        <a class="desc" href="/index.php?r=yw-server-order%2Findex&amp;sort=distribute_datetime" data-sort="distribute_datetime">分配时间</a>
+                                    </th>
+                                    <th>创建者</th>
+                                    <th>
+                                        <a href="/index.php?r=yw-server-order%2Findex&amp;sort=channel_id" data-sort="channel_id">了解途径</a>
+                                    </th>
+                                    <th>
+                                        <a href="/index.php?r=yw-server-order%2Findex&amp;sort=source" data-sort="source">联系途径</a>
+                                    </th>
+                                    <th>
+                                        <a href="/index.php?r=yw-server-order%2Findex&amp;sort=employee_realname" data-sort="employee_realname">咨询师姓名</a>
+                                    </th>
+                                    <th>
+                                        <a href="/index.php?r=yw-server-order%2Findex&amp;sort=follow_service" data-sort="follow_service">跟进客服</a>
+                                    </th>
+                                    <th>
+                                        <a href="/index.php?r=yw-server-order%2Findex&amp;sort=status" data-sort="status">订单状态</a>
+                                    </th>
+                                    <th>
+                                        <a href="/index.php?r=yw-server-order%2Findex&amp;sort=is_distribute" data-sort="is_distribute">是否分配咨询师</a>
+                                    </th>
+                                    <th><a href="/index.php?r=yw-server-order%2Findex&amp;sort=note" data-sort="note">备注</a>
+                                    </th>
+                                    <th width="110">操作</th>
+                                </tr>
+                                <tr id="w0-filters" class="filters">
+                                    <td>&nbsp;</td>
+                                    <td><input type="text" class="form-control" name="YwServerOrderSearch[id]"></td>
+                                    <td><select class="form-control" name="YwServerOrderSearch[city_id]">
+                                <option value=""></option>
+                                <option value="0">全国</option>
+                                <option value="2">北京</option>
+                                <option value="20000001">上海</option>
+                                <option value="20000019">天津</option>
+                            </select></td>
+                                    <td><input type="text" class="form-control" name="YwServerOrderSearch[user_realname]"></td>
+                                    <td><input type="text" class="form-control" name="YwServerOrderSearch[user_mobile]"></td>
+                                    <td><input type="text" class="form-control" name="YwServerOrderSearch[more_mobiles]"></td>
+                                    <td>
+                                        <input type="text" class="form-control" name="YwServerOrderSearch[interest_project_name]">
+                                    </td>
+                                    <td><input type="text" class="form-control" name="YwServerOrderSearch[create_datetime]">
+                                    </td>
+                                    <td><input type="text" class="form-control" name="YwServerOrderSearch[distribute_datetime]">
+                                    </td>
+                                    <td><input type="text" class="form-control" name="YwServerOrderSearch[order_creator]"></td>
+                                    <td><select class="form-control" name="YwServerOrderSearch[channel_id]">
+                                <option value="101">10号线地铁广告</option>
+                                <option value="20000020">订单</option>
+                                <option value="129">超奕CPA</option>
+                                <option value="134">金山导航</option>
+                                <option value="128">麦恩CPA</option>
+                            </select></td>
+                                    <td><select class="form-control" name="YwServerOrderSearch[source]">
+                                <option value=""></option>
+                                <option value="9">400来电</option>
+                                <option value="12">在线客服</option>
+                                <option value="10">端口来电</option>
+                                <option value="1">PC主动注册</option>
+                                <option value="2">微信主动注册</option>
+                                <option value="3">PC预约看房</option>
+                            </select></td>
+                                    <td><input type="text" class="form-control" name="YwServerOrderSearch[employee_realname]">
+                                    </td>
+                                    <td><input type="text" class="form-control" name="YwServerOrderSearch[follow_service]"></td>
+                                    <td><select class="form-control" name="YwServerOrderSearch[status]">
+                                <option value="0">无效线索</option>
+                            </select></td>
+                                    <td><select class="form-control" name="YwServerOrderSearch[is_distribute]">
+                                <option value=""></option>
+                                <option value="1">分配</option>
+                            </select></td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr data-key="20004439">
+                                    <td><input type="checkbox" name="selection[]" value="20004439"></td>
+                                    <td>20004439</td>
+                                    <td>上海</td>
+                                    <td>撒擦</td>
+                                    <td>0222</td>
+                                    <td></td>
+                                    <td><span class="not-set">(未设置)</span></td>
+                                    <td>2017-02-13 05:43:21</td>
+                                    <td>2017-02-13 05:43:22</td>
+                                    <td>雷雅茹</td>
+                                    <td>928新增</td>
+                                    <td>400来电</td>
+                                    <td>袁雪婷</td>
+                                    <td>雷雅茹</td>
+                                    <td>已带看</td>
+                                    <td>分配</td>
+                                    <td></td>
+                                    <td>
+                                        <a class="hand " href="#"><br/>详情</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004439"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004438">
+                                    <td><input type="checkbox" name="selection[]" value="20004438"></td>
+                                    <td>20004438</td>
+                                    <td>上海</td>
+                                    <td>联系121</td>
+                                    <td>2003</td>
+                                    <td></td>
+                                    <td>保集澜湾红墅,嘉宝梦之缘景庭</td>
+                                    <td>2017-02-13 05:42:40</td>
+                                    <td>2017-02-13 05:42:41</td>
+                                    <td>雷雅茹</td>
+                                    <td>928新增</td>
+                                    <td>在线客服</td>
+                                    <td>袁雪婷</td>
+                                    <td>雷雅茹</td>
+                                    <td>已带看</td>
+                                    <td>分配</td>
+                                    <td></td>
+                                    <td>
+                                        <a class="hand " href="#"><br/>详情</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004438"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004437">
+                                    <td><input type="checkbox" name="selection[]" value="20004437"></td>
+                                    <td>20004437</td>
+                                    <td>北京</td>
+                                    <td>测试</td>
+                                    <td>0403</td>
+                                    <td></td>
+                                    <td>中铁花溪渡</td>
+                                    <td>2017-02-13 05:36:09</td>
+                                    <td>2017-02-13 05:36:09</td>
+                                    <td>李小艳</td>
+                                    <td>咨询师(北京)默认了解途径</td>
+                                    <td>员工友介</td>
+                                    <td>李小艳</td>
+                                    <td></td>
+                                    <td>认购</td>
+                                    <td>分配</td>
+                                    <td></td>
+                                    <td><a class="hand " href="/index.php?r=yw-order-contact/index&amp;order_id=20004437"><br/>详情</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004437"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004436">
+                                    <td><input type="checkbox" name="selection[]" value="20004436"></td>
+                                    <td>20004436</td>
+                                    <td>北京</td>
+                                    <td>市场</td>
+                                    <td>0402</td>
+                                    <td></td>
+                                    <td>帅府园二期</td>
+                                    <td>2017-02-13 04:20:07</td>
+                                    <td>2017-02-13 04:20:07</td>
+                                    <td>李小艳</td>
+                                    <td>咨询师(北京)默认了解途径</td>
+                                    <td>员工友介</td>
+                                    <td>李小艳</td>
+                                    <td></td>
+                                    <td>联系未带看</td>
+                                    <td>分配</td>
+                                    <td></td>
+                                    <td><a class="hand " href="/index.php?r=yw-order-contact/index&amp;order_id=20004436"><br/>详情</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004436"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004435">
+                                    <td><input type="checkbox" name="selection[]" value="20004435"></td>
+                                    <td>20004435</td>
+                                    <td>北京</td>
+                                    <td>测试</td>
+                                    <td>401</td>
+                                    <td></td>
+                                    <td>帅府园二期</td>
+                                    <td>2017-02-13 04:17:18</td>
+                                    <td>2017-02-13 04:17:18</td>
+                                    <td>孔维晨</td>
+                                    <td>咨询师(北京)默认了解途径</td>
+                                    <td>员工友介</td>
+                                    <td>孔维晨</td>
+                                    <td></td>
+                                    <td>联系未带看</td>
+                                    <td>分配</td>
+                                    <td></td>
+                                    <td><a class="hand " href="/index.php?r=yw-order-contact/index&amp;order_id=20004435"><br/>详情</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004435"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004434">
+                                    <td><input type="checkbox" name="selection[]" value="20004434"></td>
+                                    <td>20004434</td>
+                                    <td>北京</td>
+                                    <td>测试</td>
+                                    <td>0400</td>
+                                    <td></td>
+                                    <td>华业华业11</td>
+                                    <td>2017-02-13 03:54:16</td>
+                                    <td>2017-02-13 03:54:16</td>
+                                    <td>孔维晨</td>
+                                    <td>咨询师(北京)默认了解途径</td>
+                                    <td>员工友介</td>
+                                    <td>孔维晨</td>
+                                    <td></td>
+                                    <td>已带看</td>
+                                    <td>分配</td>
+                                    <td></td>
+                                    <td><a class="hand " href="/index.php?r=yw-order-contact/index&amp;order_id=20004434"><br/>详情</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004434"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004433">
+                                    <td><input type="checkbox" name="selection[]" value="20004433"></td>
+                                    <td>20004433</td>
+                                    <td>上海</td>
+                                    <td>2323</td>
+                                    <td>22220</td>
+                                    <td></td>
+                                    <td><span class="not-set">(未设置)</span></td>
+                                    <td>2017-02-13 03:49:39</td>
+                                    <td>2017-02-13 03:49:39</td>
+                                    <td>袁雪婷</td>
+                                    <td>咨询师(上海)默认了解途径</td>
+                                    <td>员工友介</td>
+                                    <td>袁雪婷</td>
+                                    <td></td>
+                                    <td>已带看</td>
+                                    <td>分配</td>
+                                    <td></td>
+                                    <td><a class="hand " href="/index.php?r=yw-order-contact/index&amp;order_id=20004433"><br/>详情</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004433"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004432">
+                                    <td><input type="checkbox" name="selection[]" value="20004432"></td>
+                                    <td>20004432</td>
+                                    <td>北京</td>
+                                    <td>1213</td>
+                                    <td>1213</td>
+                                    <td></td>
+                                    <td><span class="not-set">(未设置)</span></td>
+                                    <td>2017-02-13 03:25:16</td>
+                                    <td>2017-02-13 03:25:19</td>
+                                    <td>宋超</td>
+                                    <td>百度PC</td>
+                                    <td>400来电</td>
+                                    <td>王晓亚</td>
+                                    <td>宋超</td>
+                                    <td>未确认收到分配</td>
+                                    <td>分配</td>
+                                    <td></td>
+                                    <td><a class="hand " href="/index.php?r=yw-order-contact/index&amp;order_id=20004432"><br/>详情</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004432"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004431">
+                                    <td><input type="checkbox" name="selection[]" value="20004431"></td>
+                                    <td>20004431</td>
+                                    <td>上海</td>
+                                    <td>重新分配后逇保留订单延迟</td>
+                                    <td>01111</td>
+                                    <td></td>
+                                    <td><span class="not-set">(未设置)</span></td>
+                                    <td>2017-02-13 02:05:52</td>
+                                    <td>2017-02-13 02:05:53</td>
+                                    <td>雷雅茹</td>
+                                    <td>928新增</td>
+                                    <td>在线客服</td>
+                                    <td>王惠莹</td>
+                                    <td>雷雅茹</td>
+                                    <td>未确认收到分配</td>
+                                    <td>分配</td>
+                                    <td></td>
+                                    <td><a class="hand " href="/index.php?r=yw-order-contact/index&amp;order_id=20004431"><br/>详情</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004431"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004430">
+                                    <td><input type="checkbox" name="selection[]" value="20004430"></td>
+                                    <td>20004430</td>
+                                    <td>上海</td>
+                                    <td>联系延迟10点06</td>
+                                    <td>2213</td>
+                                    <td></td>
+                                    <td><span class="not-set">(未设置)</span></td>
+                                    <td>2017-02-13 02:04:00</td>
+                                    <td>2017-02-13 02:04:01</td>
+                                    <td>雷雅茹</td>
+                                    <td>928沙盒</td>
+                                    <td>员工友介</td>
+                                    <td>张甜</td>
+                                    <td>雷雅茹</td>
+                                    <td>未确认收到分配</td>
+                                    <td>分配</td>
+                                    <td></td>
+                                    <td><a class="hand " href="/index.php?r=yw-order-contact/index&amp;order_id=20004430"><br/>详情</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004430"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004429">
+                                    <td><input type="checkbox" name="selection[]" value="20004429"></td>
+                                    <td>20004429</td>
+                                    <td>上海</td>
+                                    <td>联系延迟10点05</td>
+                                    <td>233032</td>
+                                    <td></td>
+                                    <td><span class="not-set">(未设置)</span></td>
+                                    <td>2017-02-13 02:03:13</td>
+                                    <td>2017-02-13 02:03:14</td>
+                                    <td>雷雅茹</td>
+                                    <td>928沙盒</td>
+                                    <td>400来电</td>
+                                    <td>袁雪婷</td>
+                                    <td>雷雅茹</td>
+                                    <td>未确认收到分配</td>
+                                    <td>分配</td>
+                                    <td></td>
+                                    <td><a class="hand " href="/index.php?r=yw-order-contact/index&amp;order_id=20004429"><br/>详情</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004429"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004428">
+                                    <td><input type="checkbox" name="selection[]" value="20004428"></td>
+                                    <td>20004428</td>
+                                    <td>北京</td>
+                                    <td>14</td>
+                                    <td>9771</td>
+                                    <td></td>
+                                    <td><span class="not-set">(未设置)</span></td>
+                                    <td>2017-02-10 10:27:37</td>
+                                    <td>2017-02-10 10:27:40</td>
+                                    <td>宋超</td>
+                                    <td>百度PC</td>
+                                    <td>400来电</td>
+                                    <td>钱敏</td>
+                                    <td>宋超</td>
+                                    <td>未确认收到分配</td>
+                                    <td>分配</td>
+                                    <td></td>
+                                    <td><a class="hand " href="/index.php?r=yw-order-contact/index&amp;order_id=20004428"><br/>详情</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004428"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004427">
+                                    <td><input type="checkbox" name="selection[]" value="20004427"></td>
+                                    <td>20004427</td>
+                                    <td>北京</td>
+                                    <td>14</td>
+                                    <td>9771</td>
+                                    <td></td>
+                                    <td><span class="not-set">(未设置)</span></td>
+                                    <td>2017-02-10 10:27:04</td>
+                                    <td></td>
+                                    <td>宋超</td>
+                                    <td>百度PC</td>
+                                    <td>400来电</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>无效线索</td>
+                                    <td>不分配原因：不愿留信息</td>
+                                    <td></td>
+                                    <td>
+                                        <a href="/index.php?r=yw-order%2Fupdate&amp;id=20004427&amp;from=server&amp;need_call_log=need_call_log"><br/>编辑</a>
+                                        <a class="hand reset_server" data-url="/index.php?r=yw-server-order%2Freset-server&amp;id=20004427" data-id="20004427"><br/>重新分配客服</a>
+                                        <a class="hand"><br/>发短信</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004427"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004426">
+                                    <td><input type="checkbox" name="selection[]" value="20004426"></td>
+                                    <td>20004426</td>
+                                    <td>北京</td>
+                                    <td>556</td>
+                                    <td>6870</td>
+                                    <td></td>
+                                    <td><span class="not-set">(未设置)</span></td>
+                                    <td>2017-02-10 10:25:01</td>
+                                    <td></td>
+                                    <td>宋超</td>
+                                    <td>第三方端口（搜房）</td>
+                                    <td>400来电</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>未分配</td>
+                                    <td>不分配原因：待上户</td>
+                                    <td></td>
+                                    <td>
+                                        <a href="/index.php?r=yw-order%2Fupdate&amp;id=20004426&amp;from=server&amp;need_call_log=need_call_log"><br/>编辑</a>
+                                        <a class="hand reset_server" data-url="/index.php?r=yw-server-order%2Freset-server&amp;id=20004426" data-id="20004426"><br/>重新分配客服</a>
+                                        <a class="hand"><br/>发短信</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004426"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004425">
+                                    <td><input type="checkbox" name="selection[]" value="20004425"></td>
+                                    <td>20004425</td>
+                                    <td>天津</td>
+                                    <td></td>
+                                    <td>5737</td>
+                                    <td></td>
+                                    <td><span class="not-set">(未设置)</span></td>
+                                    <td>2017-02-10 10:11:49</td>
+                                    <td>2017-02-10 10:11:49</td>
+                                    <td>贾雪朋</td>
+                                    <td>咨询师(上海)默认了解途径</td>
+                                    <td>员工友介</td>
+                                    <td>贾雪朋</td>
+                                    <td></td>
+                                    <td>未确认收到分配</td>
+                                    <td>分配</td>
+                                    <td></td>
+                                    <td><a class="hand " href="/index.php?r=yw-order-contact/index&amp;order_id=20004425"><br/>详情</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004425"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004424">
+                                    <td><input type="checkbox" name="selection[]" value="20004424"></td>
+                                    <td>20004424</td>
+                                    <td>北京</td>
+                                    <td></td>
+                                    <td>5737</td>
+                                    <td></td>
+                                    <td><span class="not-set">(未设置)</span></td>
+                                    <td>2017-02-10 09:54:05</td>
+                                    <td>2017-02-10 09:54:08</td>
+                                    <td>宋超</td>
+                                    <td>百度PC</td>
+                                    <td>400来电</td>
+                                    <td>李佳</td>
+                                    <td>宋超</td>
+                                    <td>未确认收到分配</td>
+                                    <td>分配</td>
+                                    <td></td>
+                                    <td>
+                                        <a class="hand " href="#"><br/>详情</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004424"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004423">
+                                    <td><input type="checkbox" name="selection[]" value="20004423"></td>
+                                    <td>20004423</td>
+                                    <td>北京</td>
+                                    <td>234</td>
+                                    <td>4957</td>
+                                    <td></td>
+                                    <td><span class="not-set">(未设置)</span></td>
+                                    <td>2017-02-10 09:46:36</td>
+                                    <td>2017-02-10 09:46:37</td>
+                                    <td>宋超</td>
+                                    <td>百度PC</td>
+                                    <td>400来电</td>
+                                    <td>熊峰</td>
+                                    <td>宋超</td>
+                                    <td>未确认收到分配</td>
+                                    <td>分配</td>
+                                    <td></td>
+                                    <td><a class="hand " href="/index.php?r=yw-order-contact/index&amp;order_id=20004423"><br/>详情</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004423"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004422">
+                                    <td><input type="checkbox" name="selection[]" value="20004422"></td>
+                                    <td>20004422</td>
+                                    <td>北京</td>
+                                    <td>456</td>
+                                    <td>6869</td>
+                                    <td></td>
+                                    <td><span class="not-set">(未设置)</span></td>
+                                    <td>2017-02-10 09:30:52</td>
+                                    <td></td>
+                                    <td>宋超</td>
+                                    <td>百度PC</td>
+                                    <td>400来电</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>未分配</td>
+                                    <td>不分配原因：待上户</td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#"><br/>编辑</a>
+                                        <a class="hand reset_server" data-url="/index.php?r=yw-server-order%2Freset-server&amp;id=20004422" data-id="20004422"><br/>重新分配客服</a>
+                                        <a class="hand"><br/>发短信</a><a href="#"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004421">
+                                    <td><input type="checkbox" name="selection[]" value="20004421"></td>
+                                    <td>20004421</td>
+                                    <td>北京</td>
+                                    <td>123</td>
+                                    <td>8978</td>
+                                    <td></td>
+                                    <td><span class="not-set">(未设置)</span></td>
+                                    <td>2017-02-10 09:25:14</td>
+                                    <td>2017-02-10 09:25:17</td>
+                                    <td>宋超</td>
+                                    <td>第三方端口（搜房）</td>
+                                    <td>400来电</td>
+                                    <td>高旭</td>
+                                    <td>宋超</td>
+                                    <td>联系未带看</td>
+                                    <td>分配</td>
+                                    <td></td>
+                                    <td><a class="hand " href="/index.php?r=yw-order-contact/index&amp;order_id=20004421"><br/>详情</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004421"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                                <tr data-key="20004420">
+                                    <td><input type="checkbox" name="selection[]" value="20004420"></td>
+                                    <td>20004420</td>
+                                    <td>上海</td>
+                                    <td>首次联系123</td>
+                                    <td>2131</td>
+                                    <td></td>
+                                    <td>景瑞遇道</td>
+                                    <td>2017-02-10 09:16:18</td>
+                                    <td>2017-02-10 09:16:19</td>
+                                    <td>雷雅茹</td>
+                                    <td>928沙盒</td>
+                                    <td>员工友介</td>
+                                    <td>王惠莹</td>
+                                    <td>雷雅茹</td>
+                                    <td>联系未带看</td>
+                                    <td>分配</td>
+                                    <td></td>
+                                    <td><a class="hand " href="/index.php?r=yw-order-contact/index&amp;order_id=20004420"><br/>详情</a><a href="/index.php?r=yw-complaint%2Fcreate&amp;order_id=20004420"><br/>添加投诉</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="pagination">
+                            <li class="prev disabled"><span>&laquo;</span></li>
+                            <li class="active"><a href="/index.php?r=yw-server-order%2Findex&amp;page=1" data-page="0">1</a>
+                            </li>
+                            <li><a href="/index.php?r=yw-server-order%2Findex&amp;page=2" data-page="1">2</a></li>
+                            <li><a href="/index.php?r=yw-server-order%2Findex&amp;page=3" data-page="2">3</a></li>
+                            <li><a href="/index.php?r=yw-server-order%2Findex&amp;page=4" data-page="3">4</a></li>
+                            <li><a href="/index.php?r=yw-server-order%2Findex&amp;page=5" data-page="4">5</a></li>
+                            <li><a href="/index.php?r=yw-server-order%2Findex&amp;page=6" data-page="5">6</a></li>
+                            <li><a href="/index.php?r=yw-server-order%2Findex&amp;page=7" data-page="6">7</a></li>
+                            <li><a href="/index.php?r=yw-server-order%2Findex&amp;page=8" data-page="7">8</a></li>
+                            <li><a href="/index.php?r=yw-server-order%2Findex&amp;page=9" data-page="8">9</a></li>
+                            <li><a href="/index.php?r=yw-server-order%2Findex&amp;page=10" data-page="9">10</a></li>
+                            <li class="next">
+                                <a href="/index.php?r=yw-server-order%2Findex&amp;page=2" data-page="1">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="page-footer">
+            <p class="copyright"><span>北京高因科技有限公司</span><span>www.comjia.com</span></p>
+        </div>
+    </div>
+    <script src="./js/jquery-1.9.1.min.js"></script>
+    <script src="./js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html>

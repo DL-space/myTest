@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/*header*/
+.header {
+    position: relative;
+    height: 1.17rem;
+    line-height: 1.1rem;
+    border-bottom: 1px solid #f2f2f2;
+    overflow: hidden;
+}
+.header .go-back {
+    position: absolute;
+    left: 0.15rem;
+}
+.header .go-back a:hover {
+    text-decoration: none;
+}
+.header .go-back .icon-left {
+    color: #666;
+}
+.u-link {
+    position: absolute;
+    top: 0;
+    right: 0.32rem;
+}
+.u-link li {
+    float: left;
+}
+.u-link li.link-home {
+    margin-right: 0.37rem;
+}
+.u-link li .ico-home {
+    margin-top: 0.3516rem;
+}
+.u-link li .ico-user {
+    margin-top: 0.3585rem;
+}
+.header-hide {
+    display: none;
+}
+/*header-ask*/
+.header-ask .city-change {
+    float: left;
+    margin-left: 0.8rem;
+}
+.header-ask-title{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    width: 5.5rem;
+    margin-left: -2.75rem;
+    overflow: hidden;
+}
+.header-ask-logo {
+    width: 2.29rem;
+    height: 0.51rem;
+    margin-top: 0.33rem;
+}
+.header-ask-title h3{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #666;
+    font-size: 0.4533rem;
+    margin-left: 0.5rem;
+    overflow: hidden;
+}
+/*11.02 新版头部*/
+/*头部*/
+header{
+    position: fixed;
+    top:1.3rem;
+    margin: 0 auto;
+    width: 10rem;
+    background: #fff;
+    box-shadow: 0 0 .26rem 0 rgba(0,0,0,0.30);
+    z-index: 22;
+}
+.header-top{
+    box-shadow: 0 0 .26rem 0 rgba(0,0,0,0.30);
+}
+/*top*/
+header .top{
+    position: relative;
+    height: 1.16rem;
+    line-height: 1.1rem;
+    overflow: hidden;
+}
+header .top .location{
+    position: absolute;
+    left: .26rem;
+    font-size:.373rem;
+}
+header .top .location .icon-location{
+    margin-right: .133rem;
+    font-size: .4rem;
+}
+header .top .logo{
+    text-align: center;
+    overflow: hidden;
+}
+header .top .logo img{
+    width:2.21rem;
+    height: .53rem;
+    vertical-align: middle;
+}
+header .top .user{
+    position: absolute;
+    top: 0;
+    right: .4rem;
+}
+.header-top .icon-search{
+    font-size: .45rem;
+}
+.header02, .header03{
+    margin: 0 auto;
+    position: fixed;
+    top: 1.3333rem;
+    width: 10rem;
+    height: 1.16rem;
+    z-index: 22;
+}
+.header-top-0{
+    top: 0;
+}
+.header02 .search-ico, .header-top .top .search-ico{
+    position: absolute;
+    top: 0;
+    left:8.25rem;
+}
+.header-top .top .search-ico{
+    opacity: 0;
+}
+.header03 .return{
+    position: absolute;
+    left:.46rem;
+}
+.header03 .top .location{
+    left: 1.3rem;
+}
+.header03 .search-ico{
+    position: absolute;
+    top: 0;
+    left:8.25rem;
+}
+/*搜索*/
+header .search-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: .56rem;
+    margin: 0 .53rem;
+    padding: .4rem 0;
+    border-bottom: 2px solid #f1f1f1;
+    margin-bottom: .4rem;
+    overflow: hidden;
+}
+header .search-cont .search-ico{
+    padding-left: 1px;
+}
+[data-type="1"] header.search-ico{
+    top: 1.55rem;
+}
+.search-ico .icon-search,header .top .user .icon-user{
+    font-size: .45rem;
+}
+.search-text{
+    margin: 0 1.97rem 0 .13rem;
+    width: 5.97rem;
+    height: .56rem;
+    line-height: .56rem;
+    text-align: left;
+    font-size: .4rem;
+    color: #37394c;
+    overflow: hidden;
+}
+.search-rt .icon-arrow-right{
+    font-size: .373rem;
+}
+.center{
+    padding-top: 0;
+}

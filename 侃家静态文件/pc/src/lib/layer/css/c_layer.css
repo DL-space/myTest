@@ -1,0 +1,109 @@
+/*layer弹层*/
+.layui-layer.layui-anim{
+    background: none;
+    box-shadow: none;
+}
+.layui-layer-setwin{
+    display: none;
+}
+.layer{
+    position: relative;
+    margin: 0 auto;
+    padding: 30px;
+}
+.layer .close{
+    position: absolute;
+    right: 4px;
+    top: 6px;
+    width: 26px;
+    height: 26px;
+    background: url("../images/bg-close2.png") 0 0 no-repeat;
+    overflow: hidden;
+}
+.layer .close a{
+    display: block;
+    text-indent: -9999px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.layer-wrapper{
+    padding: 45px 55px;
+    background: #fff;
+    border-radius: 20px;
+}
+.layer-box .hd{
+    height: 26px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.layer-box .hd h2{
+    float: left;
+    font-size: 16px;
+}
+.layer-box .hd .more{
+    float: right;
+    font-size: 14px;
+}
+.layer-box .hd .more li{
+    float: left;
+    color: #888;
+}
+.layer-box .hd .more li.btn-area{
+    padding-left: 10px;
+}
+.layer-box .layer-btn{
+    display: inline-block;
+    color: #333;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 12px;
+    border: 1px solid #888;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.layer-box .user-info li{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.layer-box .user-info li .tips-ipt{
+    clear: both;
+    color: #f44336;
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+    padding-top: 5px;
+    overflow: hidden;
+    display: none;
+}
+.layer-box .ipt-area,.layer-box .ipt-area .ipt{
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+}
+.layer-box .ipt-area{
+    padding: 0 10px 0 40px;
+    background: url("../images/bg-login.png") 10px 8px no-repeat;
+    border: 1px solid #e3e3e3;
+}
+.layer-box .ipt-pwd{
+    background-position: 10px -44px;
+}
+.layer-box .ipt-area .ipt{
+    color: #888;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+}
+.layer-box .chk{
+    float: left;
+    font-size: 12px;
+}
+.layer-box .chk input[type='checkbox']{
+    margin-right: 5px;
+}
+.layer-box .link-fpwd{
+    float: right;
+    font-size: 12px;
+}

@@ -1,0 +1,2274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>网签列表</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/albums-detail2.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">订单列表</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--网签列表-->
+                    <div class="panel panel-wqlb">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">网签列表</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="order-search order-search-cq">
+                                <!--排号订单查询-->
+                                <ul class="c-query wq-query">
+                                    <li>
+                                        <div class="th">城市：</div>
+                                        <div class="td">
+                                            <input type="text" class="form-control"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">订单ID：</div>
+                                        <div class="td">
+                                            <input type="text" class="form-control" placeholder="精确搜索"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">网签ID：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text" placeholder="精确搜索"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">成交类型：</div>
+                                        <div class="td">
+                                            <input type="text" class="form-control"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">网签状态：</div>
+                                        <div class="td">
+                                            <input type="text" class="form-control"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">所属咨询师：</div>
+                                        <div class="td">
+                                            <input type="text" class="form-control"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">楼盘：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">客户姓名：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text" placeholder="模糊搜索"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">客户电话：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text" placeholder="模糊搜索"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">审核状态：</div>
+                                        <div class="td">
+                                            <input type="text" class="form-control"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">成交有效性：</div>
+                                        <div class="td">
+                                            <input type="text" class="form-control"/>
+                                        </div>
+                                    </li>
+                                    <li class="c-ext">
+                                        <div class="th">网签时间：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                            <div class="ext">-</div>
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-area">
+                                    <input type="button" class="btn btn-default" value="重置">
+                                    <input type="button" class="btn btn-primary" value="搜索">
+                                </div>
+                            </div>
+                            <div class="order-list">
+                                <div class="tit">
+                                    <!--订单概要-->
+                                    <div class="order-info">
+                                        <p>当前搜索条件下共200个网签单，320个订单</p>
+                                    </div>
+                                    <!--显示筛选-->
+                                    <div class="xssx">
+                                        <input type="checkbox" class="c-chk">仅显示延迟排号
+                                    </div>
+                                </div>
+                                <div class="con trans-list">
+                                    <div class="c-order-item">
+                                        <!--订单相关图片-->
+                                        <div class="c-order-pic-area">
+                                            <div class="c-booth">
+                                                <img src="../images/order-manage/img-1-mid.jpg"
+                                                     rel="../images/order-manage/img-1-big.jpg" class="jqzoom" alt=""/>
+                                            </div>
+                                        </div>
+                                        <!--订单详情-->
+                                        <div class="order-detail">
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">城市：</div>
+                                                    <div class="td">
+                                                        <p class="txt">北京</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">订单ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2000010</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">20000333</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交类型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">合作</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">已网签</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">付款方式：</div>
+                                                    <div class="td">
+                                                        <p class="txt">全款</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">所属咨询师：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张四34</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">签约服务人：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13300000000</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">楼盘：</div>
+                                                    <div class="td">
+                                                        <p class="txt">绿地新干线（合作）</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">认购价：</div>
+                                                    <div class="td">
+                                                        <p class="txt">1000000元</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">面积：</div>
+                                                    <div class="td">
+                                                        <p class="txt">100㎡</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">户型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">三居</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">房号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">待定</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">客户姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">测试7</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">客户电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13493822226</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">身份证号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">500333333333333333</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">网签时间：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-01</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">预计全款到账日期：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-03</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">审核状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交有效性：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li class="c-li-3">
+                                                    <div class="th">驳回原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">右边第二行增加“所属咨询师”，展示所属咨询师的姓名及工号右边第二行增加“所属咨询师”，展示所属咨询师的姓名及工号</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">无效原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">右边第二行增加“所属咨询师”，展示所属咨询师的姓名及工号</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show c-show-rmk">
+                                                <li>
+                                                    <div class="th">备注：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未确认收到分配：右边第二行增加“所属咨询师”，展示所属咨询师的姓名及工号。右下角【有新用户分配】按钮展示给分配的咨询师及其主管；【修改咨询师】按钮展示给服满</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--放大镜效果缩略图-->
+                                        <ul class="c-thumb">
+                                            <li class="c-selected">
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-1-small.jpg"
+                                                     data-mid="../images/order-manage/img-1-mid.jpg"
+                                                     data-big="../images/order-manage/img-1-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-2-small.jpg"
+                                                     data-mid="../images/order-manage/img-2-mid.jpg"
+                                                     data-big="../images/order-manage/img-2-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-3-small.jpg"
+                                                     data-mid="../images/order-manage/img-3-mid.jpg"
+                                                     data-big="../images/order-manage/img-3-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-4-small.jpg"
+                                                     data-mid="../images/order-manage/img-4-mid.jpg"
+                                                     data-big="../images/order-manage/img-4-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-5-small.jpg"
+                                                     data-mid="../images/order-manage/img-5-mid.jpg"
+                                                     data-big="../images/order-manage/img-5-big.jpg">
+                                            </li>
+                                        </ul>
+                                        <div class="c-btn-area">
+                                            <!--<a href="#" class="btn btn-warning">主管审核</a>-->
+                                            <!--<a href="#" class="btn btn-warning">拓展审核</a>-->
+                                            <!--<a href="#" class="btn btn-default">重置为有效订单</a>-->
+                                            <!--<a href="#" class="btn btn-warning">财务审核</a>-->
+                                            <!--<a href="#" class="btn btn-warning">查看评价</a>-->
+                                            <a class="btn btn-warning btn-sjhk" href="javascript:void(0);">新增实际回款</a>
+                                            <a href="#" class="btn btn-info">查看详情</a>
+                                            <a href="#" class="btn btn-primary">取消延迟</a>
+                                        </div>
+                                    </div>
+                                    <div class="c-order-item">
+                                        <!--订单相关图片-->
+                                        <div class="c-order-pic-area">
+                                            <div class="c-booth">
+                                                <img src="../images/order-manage/img-1-mid.jpg"
+                                                     rel="../images/order-manage/img-1-big.jpg" class="jqzoom" alt=""/>
+                                            </div>
+                                        </div>
+                                        <!--订单详情-->
+                                        <div class="order-detail">
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">城市：</div>
+                                                    <div class="td">
+                                                        <p class="txt">北京</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">订单ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2000010</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">20000333</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交类型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">合作</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">已网签</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">付款方式：</div>
+                                                    <div class="td">
+                                                        <p class="txt">全款</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">所属咨询师：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张四34</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">签约服务人：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13300000000</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">楼盘：</div>
+                                                    <div class="td">
+                                                        <p class="txt">绿地新干线（合作）</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">认购价：</div>
+                                                    <div class="td">
+                                                        <p class="txt">1000000元</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">面积：</div>
+                                                    <div class="td">
+                                                        <p class="txt">100㎡</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">户型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">三居</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">房号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">待定</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">客户姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">测试7</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">客户电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13493822226</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">身份证号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">500333333333333333</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">网签时间：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-01</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">预计全款到账日期：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-03</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">审核状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交有效性：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li class="c-li-3">
+                                                    <div class="th">驳回原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">右边第二行增加“所属咨询师”，展示所属咨询师的姓名及工号</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">无效原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">右边第二行增加“所属咨询师”，展示所属咨询师的姓名及工号</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show c-show-rmk">
+                                                <li>
+                                                    <div class="th">备注：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未确认收到分配：右边第二行增加“所属咨询师”，展示所属咨询师的姓名及工号。右下角【有新用户分配】按钮展示给分配的咨询师及其主管；【修改咨询师】按钮展示给服满未确认收到分配：右边第二行增加“所属咨询师”，展示所属咨询师的姓名及工号。右下角【有新用户分配】按钮展示给分配的咨询师及其主管；【修改咨询师】按钮展示给服满</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--放大镜效果缩略图-->
+                                        <ul class="c-thumb">
+                                            <li class="c-selected">
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-1-small.jpg"
+                                                     data-mid="../images/order-manage/img-1-mid.jpg"
+                                                     data-big="../images/order-manage/img-1-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-2-small.jpg"
+                                                     data-mid="../images/order-manage/img-2-mid.jpg"
+                                                     data-big="../images/order-manage/img-2-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-3-small.jpg"
+                                                     data-mid="../images/order-manage/img-3-mid.jpg"
+                                                     data-big="../images/order-manage/img-3-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-4-small.jpg"
+                                                     data-mid="../images/order-manage/img-4-mid.jpg"
+                                                     data-big="../images/order-manage/img-4-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-5-small.jpg"
+                                                     data-mid="../images/order-manage/img-5-mid.jpg"
+                                                     data-big="../images/order-manage/img-5-big.jpg">
+                                            </li>
+                                        </ul>
+                                        <div class="c-btn-area">
+                                            <a href="#" class="btn btn-warning">主管审核</a>
+                                            <a href="#" class="btn btn-warning">拓展审核</a>
+                                            <a href="#" class="btn btn-info">查看评价</a>
+                                            <a href="#" class="btn btn-info">查看详情</a>
+                                        </div>
+                                    </div>
+                                    <div class="c-order-item">
+                                        <!--订单相关图片-->
+                                        <div class="c-order-pic-area">
+                                            <div class="c-booth">
+                                                <img src="../images/order-manage/img-1-mid.jpg"
+                                                     rel="../images/order-manage/img-1-big.jpg" class="jqzoom" alt=""/>
+                                            </div>
+                                        </div>
+                                        <!--订单详情-->
+                                        <div class="order-detail">
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">城市：</div>
+                                                    <div class="td">
+                                                        <p class="txt">北京</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">订单ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2000010</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">20000333</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交类型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">合作</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">已网签</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">付款方式：</div>
+                                                    <div class="td">
+                                                        <p class="txt">全款</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">所属咨询师：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张四34</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">签约服务人：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13300000000</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">楼盘：</div>
+                                                    <div class="td">
+                                                        <p class="txt">绿地新干线（合作）</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">认购价：</div>
+                                                    <div class="td">
+                                                        <p class="txt">1000000元</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">面积：</div>
+                                                    <div class="td">
+                                                        <p class="txt">100㎡</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">户型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">三居</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">房号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">待定</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">客户姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">测试7</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">客户电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13493822226</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">身份证号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">500333333333333333</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">网签时间：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-01</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">预计全款到账日期：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-03</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">审核状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交有效性：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li class="c-li-3">
+                                                    <div class="th">驳回原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">右边第二行增加“所属咨询师”，展示所属咨询师的姓名及工号</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">无效原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">右边第二行增加“所属咨询师”，展示所属咨询师的姓名及工号</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show c-show-rmk">
+                                                <li>
+                                                    <div class="th">备注：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未确认收到分配：右边第二行增加“所属咨询师”，展示所属咨询师的姓名及工号。</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--放大镜效果缩略图-->
+                                        <ul class="c-thumb">
+                                            <li class="c-selected">
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-1-small.jpg"
+                                                     data-mid="../images/order-manage/img-1-mid.jpg"
+                                                     data-big="../images/order-manage/img-1-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-2-small.jpg"
+                                                     data-mid="../images/order-manage/img-2-mid.jpg"
+                                                     data-big="../images/order-manage/img-2-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-3-small.jpg"
+                                                     data-mid="../images/order-manage/img-3-mid.jpg"
+                                                     data-big="../images/order-manage/img-3-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-4-small.jpg"
+                                                     data-mid="../images/order-manage/img-4-mid.jpg"
+                                                     data-big="../images/order-manage/img-4-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-5-small.jpg"
+                                                     data-mid="../images/order-manage/img-5-mid.jpg"
+                                                     data-big="../images/order-manage/img-5-big.jpg">
+                                            </li>
+                                        </ul>
+                                        <div class="c-btn-area">
+                                            <a href="#" class="btn btn-warning">主管审核</a>
+                                            <a href="#" class="btn btn-warning">拓展审核</a>
+                                            <a href="#" class="btn btn-info">查看评价</a>
+                                            <a href="#" class="btn btn-info">查看详情</a>
+                                        </div>
+                                    </div>
+                                    <div class="c-order-item">
+                                        <!--订单相关图片-->
+                                        <div class="c-order-pic-area">
+                                            <div class="c-booth">
+                                                <img src="../images/order-manage/img-1-mid.jpg"
+                                                     rel="../images/order-manage/img-1-big.jpg" class="jqzoom" alt=""/>
+                                            </div>
+                                        </div>
+                                        <!--订单详情-->
+                                        <div class="order-detail">
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">城市：</div>
+                                                    <div class="td">
+                                                        <p class="txt">北京</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">订单ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2000010</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">20000333</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交类型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">合作</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">已网签</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">付款方式：</div>
+                                                    <div class="td">
+                                                        <p class="txt">全款</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">所属咨询师：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张四34</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">签约服务人：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13300000000</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">楼盘：</div>
+                                                    <div class="td">
+                                                        <p class="txt">绿地新干线（合作）</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">认购价：</div>
+                                                    <div class="td">
+                                                        <p class="txt">1000000元</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">面积：</div>
+                                                    <div class="td">
+                                                        <p class="txt">100㎡</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">户型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">三居</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">房号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">待定</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">客户姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">测试7</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">客户电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13493822226</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">身份证号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">500333333333333333</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">网签时间：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-01</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">预计全款到账日期：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-03</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">审核状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交有效性：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li class="c-li-3">
+                                                    <div class="th">驳回原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">无效原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show c-show-rmk">
+                                                <li>
+                                                    <div class="th">备注：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--放大镜效果缩略图-->
+                                        <ul class="c-thumb">
+                                            <li class="c-selected">
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-1-small.jpg"
+                                                     data-mid="../images/order-manage/img-1-mid.jpg"
+                                                     data-big="../images/order-manage/img-1-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-2-small.jpg"
+                                                     data-mid="../images/order-manage/img-2-mid.jpg"
+                                                     data-big="../images/order-manage/img-2-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-3-small.jpg"
+                                                     data-mid="../images/order-manage/img-3-mid.jpg"
+                                                     data-big="../images/order-manage/img-3-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-4-small.jpg"
+                                                     data-mid="../images/order-manage/img-4-mid.jpg"
+                                                     data-big="../images/order-manage/img-4-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-5-small.jpg"
+                                                     data-mid="../images/order-manage/img-5-mid.jpg"
+                                                     data-big="../images/order-manage/img-5-big.jpg">
+                                            </li>
+                                        </ul>
+                                        <div class="c-btn-area">
+                                            <a href="#" class="btn btn-warning">主管审核</a>
+                                            <a href="#" class="btn btn-warning">拓展审核</a>
+                                            <a href="#" class="btn btn-info">查看评价</a>
+                                            <a href="#" class="btn btn-info">查看详情</a>
+                                        </div>
+                                    </div>
+                                    <div class="c-order-item">
+                                        <!--订单相关图片-->
+                                        <div class="c-order-pic-area">
+                                            <div class="c-booth">
+                                                <img src="../images/order-manage/img-1-mid.jpg"
+                                                     rel="../images/order-manage/img-1-big.jpg" class="jqzoom" alt=""/>
+                                            </div>
+                                        </div>
+                                        <!--订单详情-->
+                                        <div class="order-detail">
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">城市：</div>
+                                                    <div class="td">
+                                                        <p class="txt">北京</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">订单ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2000010</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">20000333</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交类型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">合作</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">已网签</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">付款方式：</div>
+                                                    <div class="td">
+                                                        <p class="txt">全款</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">所属咨询师：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张四34</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">签约服务人：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13300000000</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">楼盘：</div>
+                                                    <div class="td">
+                                                        <p class="txt">绿地新干线（合作）</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">认购价：</div>
+                                                    <div class="td">
+                                                        <p class="txt">1000000元</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">面积：</div>
+                                                    <div class="td">
+                                                        <p class="txt">100㎡</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">户型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">三居</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">房号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">待定</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">客户姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">测试7</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">客户电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13493822226</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">身份证号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">500333333333333333</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">网签时间：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-01</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">预计全款到账日期：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-03</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">审核状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交有效性：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li class="c-li-3">
+                                                    <div class="th">驳回原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">无效原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show c-show-rmk">
+                                                <li>
+                                                    <div class="th">备注：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--放大镜效果缩略图-->
+                                        <ul class="c-thumb">
+                                            <li class="c-selected">
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-1-small.jpg"
+                                                     data-mid="../images/order-manage/img-1-mid.jpg"
+                                                     data-big="../images/order-manage/img-1-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-2-small.jpg"
+                                                     data-mid="../images/order-manage/img-2-mid.jpg"
+                                                     data-big="../images/order-manage/img-2-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-3-small.jpg"
+                                                     data-mid="../images/order-manage/img-3-mid.jpg"
+                                                     data-big="../images/order-manage/img-3-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-4-small.jpg"
+                                                     data-mid="../images/order-manage/img-4-mid.jpg"
+                                                     data-big="../images/order-manage/img-4-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-5-small.jpg"
+                                                     data-mid="../images/order-manage/img-5-mid.jpg"
+                                                     data-big="../images/order-manage/img-5-big.jpg">
+                                            </li>
+                                        </ul>
+                                        <div class="c-btn-area">
+                                            <a href="#" class="btn btn-warning">主管审核</a>
+                                            <a href="#" class="btn btn-warning">拓展审核</a>
+                                            <a href="#" class="btn btn-info">查看评价</a>
+                                            <a href="#" class="btn btn-info">查看详情</a>
+                                        </div>
+                                    </div>
+                                    <div class="c-order-item">
+                                        <!--订单相关图片-->
+                                        <div class="c-order-pic-area">
+                                            <div class="c-booth">
+                                                <img src="../images/order-manage/img-1-mid.jpg"
+                                                     rel="../images/order-manage/img-1-big.jpg" class="jqzoom" alt=""/>
+                                            </div>
+                                        </div>
+                                        <!--订单详情-->
+                                        <div class="order-detail">
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">城市：</div>
+                                                    <div class="td">
+                                                        <p class="txt">北京</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">订单ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2000010</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">20000333</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交类型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">合作</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">已网签</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">付款方式：</div>
+                                                    <div class="td">
+                                                        <p class="txt">全款</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">所属咨询师：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张四34</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">签约服务人：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13300000000</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">楼盘：</div>
+                                                    <div class="td">
+                                                        <p class="txt">绿地新干线（合作）</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">认购价：</div>
+                                                    <div class="td">
+                                                        <p class="txt">1000000元</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">面积：</div>
+                                                    <div class="td">
+                                                        <p class="txt">100㎡</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">户型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">三居</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">房号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">待定</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">客户姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">测试7</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">客户电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13493822226</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">身份证号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">500333333333333333</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">网签时间：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-01</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">预计全款到账日期：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-03</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">审核状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交有效性：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li class="c-li-3">
+                                                    <div class="th">驳回原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">无效原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show c-show-rmk">
+                                                <li>
+                                                    <div class="th">备注：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--放大镜效果缩略图-->
+                                        <ul class="c-thumb">
+                                            <li class="c-selected">
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-1-small.jpg"
+                                                     data-mid="../images/order-manage/img-1-mid.jpg"
+                                                     data-big="../images/order-manage/img-1-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-2-small.jpg"
+                                                     data-mid="../images/order-manage/img-2-mid.jpg"
+                                                     data-big="../images/order-manage/img-2-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-3-small.jpg"
+                                                     data-mid="../images/order-manage/img-3-mid.jpg"
+                                                     data-big="../images/order-manage/img-3-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-4-small.jpg"
+                                                     data-mid="../images/order-manage/img-4-mid.jpg"
+                                                     data-big="../images/order-manage/img-4-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-5-small.jpg"
+                                                     data-mid="../images/order-manage/img-5-mid.jpg"
+                                                     data-big="../images/order-manage/img-5-big.jpg">
+                                            </li>
+                                        </ul>
+                                        <div class="c-btn-area">
+                                            <a href="#" class="btn btn-warning">主管审核</a>
+                                            <a href="#" class="btn btn-warning">拓展审核</a>
+                                            <a href="#" class="btn btn-info">查看评价</a>
+                                            <a href="#" class="btn btn-info">查看详情</a>
+                                        </div>
+                                    </div>
+                                    <div class="c-order-item">
+                                        <!--订单相关图片-->
+                                        <div class="c-order-pic-area">
+                                            <div class="c-booth">
+                                                <img src="../images/order-manage/img-1-mid.jpg"
+                                                     rel="../images/order-manage/img-1-big.jpg" class="jqzoom" alt=""/>
+                                            </div>
+                                        </div>
+                                        <!--订单详情-->
+                                        <div class="order-detail">
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">城市：</div>
+                                                    <div class="td">
+                                                        <p class="txt">北京</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">订单ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2000010</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">20000333</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交类型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">合作</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">已网签</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">付款方式：</div>
+                                                    <div class="td">
+                                                        <p class="txt">全款</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">所属咨询师：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张四34</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">签约服务人：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13300000000</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">楼盘：</div>
+                                                    <div class="td">
+                                                        <p class="txt">绿地新干线（合作）</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">认购价：</div>
+                                                    <div class="td">
+                                                        <p class="txt">1000000元</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">面积：</div>
+                                                    <div class="td">
+                                                        <p class="txt">100㎡</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">户型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">三居</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">房号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">待定</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">客户姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">测试7</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">客户电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13493822226</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">身份证号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">500333333333333333</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">网签时间：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-01</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">预计全款到账日期：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-03</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">审核状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交有效性：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li class="c-li-3">
+                                                    <div class="th">驳回原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">无效原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show c-show-rmk">
+                                                <li>
+                                                    <div class="th">备注：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--放大镜效果缩略图-->
+                                        <ul class="c-thumb">
+                                            <li class="c-selected">
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-1-small.jpg"
+                                                     data-mid="../images/order-manage/img-1-mid.jpg"
+                                                     data-big="../images/order-manage/img-1-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-2-small.jpg"
+                                                     data-mid="../images/order-manage/img-2-mid.jpg"
+                                                     data-big="../images/order-manage/img-2-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-3-small.jpg"
+                                                     data-mid="../images/order-manage/img-3-mid.jpg"
+                                                     data-big="../images/order-manage/img-3-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-4-small.jpg"
+                                                     data-mid="../images/order-manage/img-4-mid.jpg"
+                                                     data-big="../images/order-manage/img-4-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-5-small.jpg"
+                                                     data-mid="../images/order-manage/img-5-mid.jpg"
+                                                     data-big="../images/order-manage/img-5-big.jpg">
+                                            </li>
+                                        </ul>
+                                        <div class="c-btn-area">
+                                            <a href="#" class="btn btn-warning">主管审核</a>
+                                            <a href="#" class="btn btn-warning">拓展审核</a>
+                                            <a href="#" class="btn btn-info">查看评价</a>
+                                            <a href="#" class="btn btn-info">查看详情</a>
+                                        </div>
+                                    </div>
+                                    <div class="c-order-item">
+                                        <!--订单相关图片-->
+                                        <div class="c-order-pic-area">
+                                            <div class="c-booth">
+                                                <img src="../images/order-manage/img-1-mid.jpg"
+                                                     rel="../images/order-manage/img-1-big.jpg" class="jqzoom" alt=""/>
+                                            </div>
+                                        </div>
+                                        <!--订单详情-->
+                                        <div class="order-detail">
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">城市：</div>
+                                                    <div class="td">
+                                                        <p class="txt">北京</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">订单ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2000010</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">20000333</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交类型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">合作</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">已网签</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">付款方式：</div>
+                                                    <div class="td">
+                                                        <p class="txt">全款</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">所属咨询师：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张四34</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">签约服务人：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13300000000</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">楼盘：</div>
+                                                    <div class="td">
+                                                        <p class="txt">绿地新干线（合作）</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">认购价：</div>
+                                                    <div class="td">
+                                                        <p class="txt">1000000元</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">面积：</div>
+                                                    <div class="td">
+                                                        <p class="txt">100㎡</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">户型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">三居</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">房号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">待定</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">客户姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">测试7</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">客户电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13493822226</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">身份证号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">500333333333333333</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">网签时间：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-01</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">预计全款到账日期：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-03</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">审核状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交有效性：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li class="c-li-3">
+                                                    <div class="th">驳回原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">无效原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show c-show-rmk">
+                                                <li>
+                                                    <div class="th">备注：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--放大镜效果缩略图-->
+                                        <ul class="c-thumb">
+                                            <li class="c-selected">
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-1-small.jpg"
+                                                     data-mid="../images/order-manage/img-1-mid.jpg"
+                                                     data-big="../images/order-manage/img-1-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-2-small.jpg"
+                                                     data-mid="../images/order-manage/img-2-mid.jpg"
+                                                     data-big="../images/order-manage/img-2-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-3-small.jpg"
+                                                     data-mid="../images/order-manage/img-3-mid.jpg"
+                                                     data-big="../images/order-manage/img-3-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-4-small.jpg"
+                                                     data-mid="../images/order-manage/img-4-mid.jpg"
+                                                     data-big="../images/order-manage/img-4-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-5-small.jpg"
+                                                     data-mid="../images/order-manage/img-5-mid.jpg"
+                                                     data-big="../images/order-manage/img-5-big.jpg">
+                                            </li>
+                                        </ul>
+                                        <div class="c-btn-area">
+                                            <a href="#" class="btn btn-warning">主管审核</a>
+                                            <a href="#" class="btn btn-warning">拓展审核</a>
+                                            <a href="#" class="btn btn-info">查看评价</a>
+                                            <a href="#" class="btn btn-info">查看详情</a>
+                                        </div>
+                                    </div>
+                                    <div class="c-order-item">
+                                        <!--订单相关图片-->
+                                        <div class="c-order-pic-area">
+                                            <div class="c-booth">
+                                                <img src="../images/order-manage/img-1-mid.jpg"
+                                                     rel="../images/order-manage/img-1-big.jpg" class="jqzoom" alt=""/>
+                                            </div>
+                                        </div>
+                                        <!--订单详情-->
+                                        <div class="order-detail">
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">城市：</div>
+                                                    <div class="td">
+                                                        <p class="txt">北京</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">订单ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2000010</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">20000333</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交类型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">合作</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">已网签</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">付款方式：</div>
+                                                    <div class="td">
+                                                        <p class="txt">全款</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">所属咨询师：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张四34</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">签约服务人：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13300000000</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">楼盘：</div>
+                                                    <div class="td">
+                                                        <p class="txt">绿地新干线（合作）</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">认购价：</div>
+                                                    <div class="td">
+                                                        <p class="txt">1000000元</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">面积：</div>
+                                                    <div class="td">
+                                                        <p class="txt">100㎡</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">户型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">三居</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">房号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">待定</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">客户姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">测试7</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">客户电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13493822226</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">身份证号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">500333333333333333</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">网签时间：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-01</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">预计全款到账日期：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-03</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">审核状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交有效性：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li class="c-li-3">
+                                                    <div class="th">驳回原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">无效原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show c-show-rmk">
+                                                <li>
+                                                    <div class="th">备注：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--放大镜效果缩略图-->
+                                        <ul class="c-thumb">
+                                            <li class="c-selected">
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-1-small.jpg"
+                                                     data-mid="../images/order-manage/img-1-mid.jpg"
+                                                     data-big="../images/order-manage/img-1-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-2-small.jpg"
+                                                     data-mid="../images/order-manage/img-2-mid.jpg"
+                                                     data-big="../images/order-manage/img-2-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-3-small.jpg"
+                                                     data-mid="../images/order-manage/img-3-mid.jpg"
+                                                     data-big="../images/order-manage/img-3-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-4-small.jpg"
+                                                     data-mid="../images/order-manage/img-4-mid.jpg"
+                                                     data-big="../images/order-manage/img-4-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-5-small.jpg"
+                                                     data-mid="../images/order-manage/img-5-mid.jpg"
+                                                     data-big="../images/order-manage/img-5-big.jpg">
+                                            </li>
+                                        </ul>
+                                        <div class="c-btn-area">
+                                            <a href="#" class="btn btn-warning">主管审核</a>
+                                            <a href="#" class="btn btn-warning">拓展审核</a>
+                                            <a href="#" class="btn btn-info">查看评价</a>
+                                            <a href="#" class="btn btn-info">查看详情</a>
+                                        </div>
+                                    </div>
+                                    <div class="c-order-item">
+                                        <!--订单相关图片-->
+                                        <div class="c-order-pic-area">
+                                            <div class="c-booth">
+                                                <img src="../images/order-manage/img-1-mid.jpg"
+                                                     rel="../images/order-manage/img-1-big.jpg" class="jqzoom" alt=""/>
+                                            </div>
+                                        </div>
+                                        <!--订单详情-->
+                                        <div class="order-detail">
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">城市：</div>
+                                                    <div class="td">
+                                                        <p class="txt">北京</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">订单ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2000010</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签ID：</div>
+                                                    <div class="td">
+                                                        <p class="txt">20000333</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交类型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">合作</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">网签状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">已网签</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">付款方式：</div>
+                                                    <div class="td">
+                                                        <p class="txt">全款</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">所属咨询师：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张四34</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">签约服务人：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">张二</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">销售电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13300000000</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">楼盘：</div>
+                                                    <div class="td">
+                                                        <p class="txt">绿地新干线（合作）</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">认购价：</div>
+                                                    <div class="td">
+                                                        <p class="txt">1000000元</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">面积：</div>
+                                                    <div class="td">
+                                                        <p class="txt">100㎡</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">户型：</div>
+                                                    <div class="td">
+                                                        <p class="txt">三居</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">房号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">待定</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">客户姓名：</div>
+                                                    <div class="td">
+                                                        <p class="txt">测试7</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">客户电话：</div>
+                                                    <div class="td">
+                                                        <p class="txt">13493822226</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">身份证号：</div>
+                                                    <div class="td">
+                                                        <p class="txt">500333333333333333</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li>
+                                                    <div class="th">网签时间：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-01</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">预计全款到账日期：</div>
+                                                    <div class="td">
+                                                        <p class="txt">2016-10-03</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">审核状态：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">成交有效性：</div>
+                                                    <div class="td">
+                                                        <p class="txt">未审核</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show">
+                                                <li class="c-li-3">
+                                                    <div class="th">驳回原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                                <li class="c-li-2">
+                                                    <div class="th">无效原因：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-show c-show-rmk">
+                                                <li>
+                                                    <div class="th">备注：</div>
+                                                    <div class="td">
+                                                        <p class="txt">无</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--放大镜效果缩略图-->
+                                        <ul class="c-thumb">
+                                            <li class="c-selected">
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-1-small.jpg"
+                                                     data-mid="../images/order-manage/img-1-mid.jpg"
+                                                     data-big="../images/order-manage/img-1-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-2-small.jpg"
+                                                     data-mid="../images/order-manage/img-2-mid.jpg"
+                                                     data-big="../images/order-manage/img-2-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-3-small.jpg"
+                                                     data-mid="../images/order-manage/img-3-mid.jpg"
+                                                     data-big="../images/order-manage/img-3-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-4-small.jpg"
+                                                     data-mid="../images/order-manage/img-4-mid.jpg"
+                                                     data-big="../images/order-manage/img-4-big.jpg">
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-5-small.jpg"
+                                                     data-mid="../images/order-manage/img-5-mid.jpg"
+                                                     data-big="../images/order-manage/img-5-big.jpg">
+                                            </li>
+                                        </ul>
+                                        <div class="c-btn-area">
+                                            <a href="#" class="btn btn-warning">主管审核</a>
+                                            <a href="#" class="btn btn-warning">拓展审核</a>
+                                            <a href="#" class="btn btn-info">查看评价</a>
+                                            <a href="#" class="btn btn-info">查看详情</a>
+                                        </div>
+                                    </div>
+                                    <div class="page">
+                                        <ul class="pagination">
+                                            <li class="prev disabled"><span>«</span></li>
+                                            <li class="active"><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">6</a></li>
+                                            <li><a href="#">7</a></li>
+                                            <li><a href="#">8</a></li>
+                                            <li><a href="#">9</a></li>
+                                            <li><a href="#">10</a></li>
+                                            <li class="next"><a href="#">»</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/jquery.imagezoom.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.photo.gallery.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/order-manage.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+.row {
+    margin-bottom: 60px;
+}
+.app-txt{
+    float: left;
+    width: 720px;
+    margin-right: 150px;
+    padding-left: 10px;
+}
+.app-txt h3 {
+    font-weight: normal;
+    color: #48b3e2;
+    font-size: 64px;
+    height: 90px;
+    line-height: 90px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.app-txt p {
+    font-size: 28px;
+    color: #666;
+    line-height: 50px;
+    overflow: hidden;
+}
+.app-qr-code {
+    float: left;
+    width: 250px;
+    height: 294px;
+    overflow: hidden;
+}
+.app-qr-code img {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+.app-qr-code .txt{
+    color: #6b6b6b;
+    font-size: 16px;
+    text-align: center;
+    height: 44px;
+    line-height: 22px;
+    overflow: hidden;
+}
+.app-advantage {
+    clear: both;
+    padding-left: 10px;
+    overflow: hidden;
+}
+.app-advantage li{
+    float: left;
+}
+.app-advantage li,.app-advantage li img{
+    width: 295px;
+    height: 426px;
+    overflow: hidden;
+}

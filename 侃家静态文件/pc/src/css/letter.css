@@ -1,0 +1,8 @@
+@charset "UTF-8";
+.letter,.letter img{
+    width: 1000px;
+    overflow: hidden;
+}
+.letter{
+    margin: 0 auto;
+}

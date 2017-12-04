@@ -1,0 +1,27 @@
+/*面包屑*/
+.row-crumb {
+    height: 34px;
+    margin-bottom: 0;
+    padding-top: 12px;
+}
+.crumb-on {
+    border-bottom: 1px solid #e7e7e7;
+}
+.crumb li {
+    float: left;
+    height: 24px;
+    line-height: 24px;
+}
+.crumb li.icon {
+    margin-right: 5px;
+}
+.crumb li.icon .ico {
+    float: left;
+    margin-top: 5px;
+}
+.crumb li.fgx {
+    margin: 0 4px;
+}
+.crumb li, .crumb li a {
+    color: #555;
+}

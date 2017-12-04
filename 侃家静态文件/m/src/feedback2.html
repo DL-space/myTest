@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="wap-font-scale" content="no">
+    <title>楼盘详情页</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/swiper-3.4.0.min.css">
+    <link rel="stylesheet" href="css/module-new.css">
+    <link rel="stylesheet" href="css/feedback.css"/>
+</head>
+<body>
+@@include("./app/topbar/topbar.html")
+<div class="container">
+    @@include("./app/header/header.html")
+    <div class="center">
+        <div class="row">
+            <div class="feedback feedback-error">
+                <ul class="feedback-form">
+                    <li class="txt">用户您好，系统检测您最近的访问存在异常，为保证您的正常访问，请您帮忙验证</li>
+                    <li class="v-code">
+                        <div class="label">验证码：</div>
+                        <div class="ipt-area">
+                            <input class="ipt" type="text"/>
+                            <div class="v-pic"><img src="./images/img-vcode.png" alt=""/></div>
+                            <a class="change-v-code" href="#">换一张</a>
+                        </div>
+                        <div class="error-tips">验证码输入错误</div>
+                    </li>
+                </ul>
+                <div class="btn-area">
+                    <a class="btn btn-confirm" href="#">提交</a>
+                    <span class="tips">提交后没解决问题？欢迎<a href="#">反馈</a>。</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/lib/jquery-2.1.4.min.js"></script>
+<script src="js/lib/jquery.touchSlider.js"></script>
+<script src="js/lib/swiper.min.js"></script>
+<script src="js/j-ui.js"></script>
+<script src="js/house-detail.js"></script>
+</body>
+</html>

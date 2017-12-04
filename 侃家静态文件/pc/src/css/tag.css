@@ -1,0 +1,343 @@
+.tag{
+    overflow: visible;
+}
+.tag-all li{
+    font-size: 12px;
+}
+.header-contetn{
+    margin-top: 30px;
+}
+.header-contetn .tag-header{
+    font-weight: 700;
+    overflow: hidden;
+    border-bottom: 1px solid #EAEAEA;
+}
+.header-contetn .tag-header li{
+    text-align: center;
+    float: left;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #333;
+}
+.header-contetn .tag-header .t-sel{
+    background-color: #0074c1;
+    color: #fff;
+}
+/*.header-tags, .tag-all .main-content .building-below, .header-tags .header-tags-libs{
+    overflow: hidden;
+}*/
+.header-tags .header-tags-libs{
+    margin-top: 10px;
+}
+.header-tags .header-tags-libs li{
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 2px 13px;
+    border: 1px solid #bec0c5;
+    color: #333;
+}
+.header-tags .header-tags-libs .header-on{
+    border: 1px solid #0074c1;
+}
+.header-tags .header-tags-libs .header-on a{
+    color:#0074c1;
+}
+
+.main-content .special-label{
+    margin: 30px 0;
+}
+.main-content .special-label span{
+    color: #0074c1;
+}
+/*公共样式*/
+.main-content .bl-content-a{
+    overflow: hidden;
+    height: 58px;
+    line-height: 58px;
+}
+.main-content .bl-content-a span{
+    float: left;
+    max-width: 125px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.main-content .bl-content-a .bla-r{
+    float: left;
+    font-size: 12px;
+    color: #333;
+    padding-left: 8px;
+}
+.main-content .bl-content-b span{
+    font-size: 18px;
+    color: #e85045;
+    font-weight: 700;
+}
+.main-content .small .bl-content-b .bl-content-r{
+    margin-left: 10px;
+    color: #333;
+    line-height: 20px;
+}
+.building-list .bl-content-b .bl-content-r{
+    float: left;
+}
+.main-content .bl-content .bl-content-b .bl-xlibs .blx-ul .blx-ul-li{
+    float: left;
+    border: 1px solid #bec0c5;
+    margin: 0 0 10px 10px;
+    background-color: #fff;
+}
+.main-content .bl-content .bl-content-b .bl-xlibs .blx-ul .blx-ul-li a{
+    display: block;
+    padding: 4px 14px;
+    color: #666;
+}
+.building-list .bl-content .bl-content-b .bl-xlibs{
+    overflow: hidden;
+    margin-top: 10px;
+    background-color: #f8f8f8;
+}
+.building-list .small .bl-content .bl-content-b .bl-xlibs{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 1;
+    max-height: 35px;
+    background: #f8f8f8;
+}
+.building-list .small .bl-content .bl-content-b span{
+    font-size: 18px;
+    color: #e85045;
+    display: block;
+    float: right;
+    font-weight: 700;
+    height: 20px;
+    line-height: 20px;
+    width: 120px;
+    overflow: hidden;
+    margin-right: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*遮罩*/
+.main-content .building-list .big .cover, .main-content .building-list .small .cover, .main-content .building-below .small .cover{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    background: #000;
+    filter: alpha(opacity=20);
+    -moz-opacity: .2;
+    -khtml-opacity: .2;
+    opacity: .2;
+}
+.main-content .building-list .big .cover{
+    height: 310px;
+}
+.main-content .building-list .small .cover{
+    height: 145px;
+}
+.main-content .building-below .small .cover{
+    width: 250px;
+    height: 170px;
+}
+.main-content .cover a{
+    display: block;
+    height: 100%;
+}
+ /*楼盘列表*/
+.building-list li{
+    float: left;
+    margin-bottom: 30px;
+    position: relative;
+}
+.building-list .big{
+    width: 465px;
+}
+.building-list .big .bl-content{
+    padding: 0 20px;
+    background-color: #f8f8f8;
+}
+.building-list .big .small-i{
+    display: block;
+    width: 100%;
+    height: 310px;
+}
+.building-list .big .small-i  img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.building-list .big .bl-content-a{
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.building-list .big .bl-content-a span{
+    max-width: 310px;
+}
+
+.building-list .big .bl-content-b{
+    position: relative;
+    height: 120px;
+    margin-top: 10px;
+}
+.main-content .building-list .big .bl-xlibs{
+    position: absolute;
+    top: 24px;
+    left: -20px;
+    width: 465px;
+    max-height: 75px;
+    z-index: 4;
+}
+.main-content .building-list .big .bl-xlibs .blx-ul{
+    margin: 3px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+.main-content .building-list .big .bl-xlibs .blx-ul .blx-ul-li{
+    margin-left: 0;
+    margin-right: 10px;
+}
+.building-list .small{
+    margin-left: 30px;
+    position: relative;
+    width: 215px;
+    height: 236px;
+}
+.building-list .small .small-i{
+    display: block;
+    width: 100%;
+    height: 145px;
+}
+.building-list .small .small-i img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.building-list .small .bl-content .bl-content-a{
+    position: absolute;
+    top: 105px;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    background: rgba(0,0,0,.5);
+}
+.building-list .small .bl-content .bl-content-a span{
+    margin-left: 10px;
+}
+.building-list .small .bl-content .bl-content-a span a, .building-list .small .bl-content .bl-content-a .bla-r{
+    color: #fff;
+}
+
+.building-list .small .bl-content .bl-content-b{
+    position: relative;
+    background-color: #f8f8f8;
+    height: 72px;
+    text-align: center;
+    padding-top: 15px;
+}
+/*row 结构*/
+.building-list .small .bl-content .bl-content-b .building-list .rows{
+    width: 585px;
+    height: 170px;
+    background-color: red;
+}
+.building-list .small .bl-content .bl-content-b .building-list .rows .rows-i{
+    display: block;
+    width: 250px;
+    height: 170px;
+    float: left;
+}
+.building-list .small .bl-content .bl-content-b .building-list .rows .rows-i img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.building-list .small .bl-content .bl-content-b .building-list .rows .rows-content{
+    float: right;
+    width: 335px;
+    height: 170px;
+}
+/*2排 结构*/
+.tag-all .main-content .building-below{
+    width: 100%;
+}
+.main-content .building-left{
+    float: left;
+    width: 585px;
+}
+.main-content .building-right{
+    float: right;
+    width: 585px;
+}
+.main-content .building-below .small{
+    width: 100%;
+    height: 170px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.main-content .building-below .small .small-i{
+    width: 250px;
+    height: 170px;
+    float: left;
+}
+.main-content .building-below .small .bl-content{
+    width: 295px;
+    float: right;
+    background: #f8f8f8;
+    padding: 0 20px;
+    height: 170px;
+}
+.building-below .small .bl-content  .bl-content-a span{
+    max-width: 210px;
+}
+.main-content .building-below .small .bl-content .bl-content-b{
+    position: relative;
+    height: 112px;
+}
+.main-content .building-below .small .bl-content .bl-content-b .bl-xlibs{
+    position: absolute;
+    top: 40px;
+    left: -20px;
+    width: 335px;
+    max-height: 70px;
+    background-color: #f8f8f8;
+    overflow: hidden;
+    z-index: 1;
+}
+.main-content .building-below .small .bl-content .bl-content-b .bl-xlibs .blx-ul{
+    overflow: hidden;
+    margin-left: 20px;
+}
+.main-content .building-below .small .bl-content .bl-content-b .bl-xlibs .blx-ul .blx-ul-li{
+    float: left;
+    border: 1px solid #bec0c5;
+    margin-left: 0;
+    margin-right: 10px;
+}
+.main-content .building-below .small .bl-content .bl-content-b .bl-xlibs .blx-ul .blx-ul-li a{
+    display: block;
+    padding: 4px 14px;
+}
+.main-content .building-below img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*移入添加 样式 取消 max-height*/
+.main-content .building-list .bl-content .bl-content-b  .lihover{
+    max-height: none;
+}
+.main-content .building-below .small .bl-content .bl-content-b .lihover{
+    max-height: none;
+}

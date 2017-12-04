@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>楼盘图册列表页</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/atlas.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+    <div class="inn">
+        <div class="logo">
+            <a href="#">
+                <img src="./images/logo.png" alt="侃家网">
+            </a>
+        </div>
+        <div class="city-position city-tip">
+            <span class="ico ico-city"></span><span class="text">北京</span>
+            <div class="city-change-list">
+                <div class="top"></div>
+                <ul class="city-list">
+                    <li class="tit">选择城市</li>
+                    <li><a href="#">北京</a></li>
+                    <li><a href="#">上海</a></li>
+                    <li class="tips">其他城市将陆续开放！</li>
+                </ul>
+            </div>
+        </div>
+        <ul class="menu">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">楼盘查询</a></li>
+            <li><a href="#">咨询师</a></li>
+            <li><a href="#">成交记录</a></li>
+            <li><a href="#">查房价</a></li>
+            <li><a href="#">买房知识</a></li>
+        </ul>
+        <div class="fr">
+            <div class="hot-phone">咨询热线：<span class="phone-txt">400-080-7815</span></div>
+            <div class="online-ask"><span class="ico ico-server"></span>在线咨询</div>
+            <div class="user-set">
+                <!--登录状态显示手机号-->
+                <div class="user-option" style="display: none;">
+                    <a href="#" class="link-reg"><span class="ico ico-user"></span>注册</a>
+                    <a href="#" class="link-login">登录</a>
+                </div>
+                <!--登录后-->
+                <div class="user-phone">
+                    <a href="#"><span class="ico ico-user"></span>132****0804</a>
+                </div>
+                <div class="exit"><a href="#">退出</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="center">
+        <div class="row row-search">
+            <div class="wrap">
+                <!--搜索-->
+<div class="search">
+    <!--找房-->
+    <div class="search-area">
+        <input type="text" class="ipt" value="请输入楼盘名、区域">
+        <!--<button class="btn btn-search"><span class="ico ico-search">搜索</span>我要找房</button>-->
+        <a href="#" class="btn btn-search"><span class="ico ico-search">搜索</span>我要找房</a>
+    </div>
+    <!--热词-->
+    <div class="hot-words">
+        <span class="ico ico-pos"></span>
+        <a href="#">小户型</a>
+        <a href="#">loft</a>
+    </div>
+    <!--侃家服务-->
+    <div class="cj-service">
+        <a href="#">每4位购房者中，就有1位接受过侃家服务<span class="ico ico-more"></span></a>
+    </div>
+</div>
+
+<!--无右侧搜索-->
+<div class="search search-nopic" style="display: none">
+    <!--找房-->
+    <div class="search-area">
+        <input type="text" class="ipt" value="请输入楼盘名、区域">
+        <a href="#" class="btn btn-search"><span class="ico ico-search">搜索</span>我要找房</a>
+    </div>
+    <!--热词-->
+    <div class="hot-words">
+        <span class="ico ico-pos"></span>
+        <a href="#">小户型</a>
+        <a href="#">loft</a>
+        <a href="#">小户型</a>
+        <a href="#">loft</a>
+        <a href="#">小户型</a>
+        <a href="#">loft</a>
+    </div>
+</div>
+            </div>
+        </div>
+        <div class="row row-crumb">
+            <!--面包屑-->
+<ul class="crumb">
+    <li class="icon"><span class="ico ico-crumb"></span></li>
+    <li><a href="#">侃家网</a></li>
+    <li class="fgx">&gt;</li>
+    <li><a href="#">我要找房</a></li>
+</ul>
+        </div>
+        <div class="row row-top-nav">
+            <div class="top-menu-wrap">
+    <div class="house-name">
+        <div class="name">
+            <h1>华远西红世</h1>
+            <ul class="house-tag">
+                <li class="tag active"><a href="#">排卡中</a></li>
+                <li class="tag"><a href="#">精品</a></li>
+                <li class="tag"><a href="#">商住</a></li>
+                <li class="tag"><a href="#">小户型</a></li>
+            </ul>
+        </div>
+        <div class="subtitle">别名：花园西红柿花园西红柿花园西红柿花园西红柿</div>
+    </div>
+    <div class="detail-nav-six">
+        <ul>
+            <li class="first"><a href="#">楼盘主页</a></li>
+            <li class="on"><a href="#">楼盘详情</a></li>
+            <li><a href="#">户型分析</a></li>
+            <li><a href="#">周边分析</a></li>
+            <li><a href="#">楼盘图册</a></li>
+            <li class="last"><a href="#">我要看房</a></li>
+        </ul>
+    </div>
+</div>
+<!--通栏-->
+<div class="top-menu-banner">
+    <div class="house-name">
+        <div class="name">
+            <h1>华远西红世</h1>
+            <div class="dev-price">开发商报价：<em>48000元/m²</em></div>
+            <div class="discount">
+                <p class="youhui" title="电商4万抵12万；全款96折；按揭98折">电商4万抵12万；全款96折；按揭98折</p>
+                <p class="hot-phone">咨询热线：400-080-7815</p>
+                <a href="#" class="btn btn-bm">报名看房</a>
+            </div>
+        </div>
+    </div>
+    <div class="detail-nav">
+        <ul>
+            <li class="first"><a href="#">楼盘主页</a></li>
+            <li class="on"><a href="#">楼盘详情</a></li>
+            <li><a href="#">户型分析</a></li>
+            <li><a href="#">价格走势</a></li>
+            <li><a href="#">周边分析</a></li>
+            <li><a href="#">楼盘图册</a></li>
+            <li class="last"><a href="#">我要看房</a></li>
+        </ul>
+    </div>
+</div>
+        </div>
+        <div class="row row-suspend">
+            <div class="col7">
+                    <div class="box atlas" id="lpsjt">
+                        <div class="hd">
+                            <h2 class="title">楼盘实景图（8）</h2>
+                        </div>
+                        <div class="bd">
+                            <div class="house-list">
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box atlas" id="ptsjt">
+                        <div class="hd">
+                            <h2 class="title">配套实景图（28）</h2>
+                        </div>
+                        <div class="bd">
+                            <div class="house-list">
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box atlas" id="ybj">
+                        <div class="hd">
+                            <h2 class="title">样板间（8）</h2>
+                        </div>
+                        <div class="bd">
+                            <div class="house-list">
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box atlas" id="xgt">
+                        <div class="hd">
+                            <h2 class="title">效果图（8）</h2>
+                        </div>
+                        <div class="bd">
+                            <div class="house-list">
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box atlas" id="ght">
+                        <div class="hd">
+                            <h2 class="title">规划图（8）</h2>
+                        </div>
+                        <div class="bd">
+                            <div class="house-list">
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                                <div class="media6">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="images/atlas/img-house2.jpg" alt="图册">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">天恒金融街公园效果图</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="col8">
+                <div class="suspend">
+                    <div class="atlas-list">
+                        <ul class="list">
+                            <li><a href="#">全部（79）</a></li>
+                            <li><a href="#lpsjt">楼盘实景图（28）</a></li>
+                            <li><a href="#ptsjt">配套实景图（28）</a></li>
+                            <li><a href="#ybj">样板间（23）</a></li>
+                            <li><a href="#xgt">效果图（23）</a></li>
+                            <li><a href="#ght">规划图（23）</a></li>
+                        </ul>
+                        <div class="know-more">
+                            <a href="#">了解户型分析（6）</a>
+                        </div>
+                    </div>
+                    <div class="entry3">
+                        <div class="text">
+                            <p class="small">想360度实地看房？</p>
+                            <p class="small">来坐侃家免费看房专车吧！</p>
+                        </div>
+                        <div class="ipt-area">
+                            <input type="text" class="ipt" value="输入您的手机号">
+                            <button class="btn3">立即预约</button>
+                        </div>
+                        <div class="text">
+                            <p class="big">免费咨询我们：</p>
+                            <p class="big">400-080-7815</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    <div class="inn">
+        <div class="f-nav">
+            <p class="comjia-about">
+                <a href="#">关于侃家网</a>
+                <a href="#">联系我们</a>
+                <a href="#">招聘信息</a>
+                <a href="#">服务声明</a>
+                <a href="#">网站地图</a>
+            </p>
+            <ul class="service-online">
+                <li class="hot-line">热线：<em>400-080-7815</em></li>
+                <li class="call-free"><a href="#">免费通话</a></li>
+                <li class="comjia-wb"><a href="#">侃家网官方微博</a></li>
+            </ul>
+        </div>
+        <div class="f-link">
+            <div class="fr">
+                <div class="comjia-wx"><img src="./images/img-qrcode.png" alt="侃家公众号"></div>
+            </div>
+            <div class="footer-hot">
+                <ul class="flink">
+                    <li><a href="#"><img src="./images/img-ifeng.png" alt="凤凰网"></a></li>
+                    <li><a href="#"><img src="./images/img-caijing.png" alt="第一财经"></a></li>
+                    <li><a href="#"><img src="./images/img-36k.png" alt="36氪"></a></li>
+                    <li><a href="#"><img src="./images/img-chinadaily.png" alt="中国日报"></a></li>
+                    <li><a href="#"><img src="./images/img-ly.png" alt="猎云网"></a></li>
+                </ul>
+                <div class="tab tab-hot">
+                    <div class="tab-t">
+                        <ul>
+                            <li class="on">北京区域楼盘</li>
+                            <li>手机找房</li>
+                            <li>北京房价走势</li>
+                            <li>大兴房价</li>
+                            <li>顺义房价</li>
+                            <li>房山房价</li>
+                        </ul>
+                    </div>
+                    <div class="tab-c">
+                        <div class="nrpart">
+                            <ul class="link-hot">
+                                <li><a href="#">通州楼盘</a></li>
+                                <li><a href="#">房山楼盘</a></li>
+                                <li><a href="#">大兴楼盘</a></li>
+                                <li><a href="#">门头沟楼盘</a></li>
+                                <li><a href="#">昌平楼盘</a></li>
+                                <li><a href="#">顺义楼盘</a></li>
+                                <li><a href="#">朝阳楼盘</a></li>
+                                <li><a href="#">海淀楼盘</a></li>
+                                <li><a href="#">丰台楼盘</a></li>
+                                <li><a href="#">东城楼盘</a></li>
+                                <li><a href="#">西城楼盘</a></li>
+                                <li><a href="#">密云楼盘</a></li>
+                                <li><a href="#">石景山楼盘</a></li>
+                                <li><a href="#">燕郊楼盘</a></li>
+                            </ul>
+                        </div>
+                        <div class="nrpart">
+                            <ul class="link-hot">
+                                <li><a href="#">通州新房</a></li>
+                                <li><a href="#">大兴新房</a></li>
+                                <li><a href="#">房山新房</a></li>
+                                <li><a href="#">顺义新房</a></li>
+                                <li><a href="#">丰台新房</a></li>
+                                <li><a href="#">昌平新房</a></li>
+                                <li><a href="#">海淀新房</a></li>
+                                <li><a href="#">朝阳新房</a></li>
+                                <li><a href="#">西城新房</a></li>
+                                <li><a href="#">东城新房</a></li>
+                                <li><a href="#">门头沟新房</a></li>
+                                <li><a href="#">密云新房</a></li>
+                                <li><a href="#">石景山新房</a></li>
+                            </ul>
+                        </div>
+                        <div class="nrpart">
+                            <ul class="link-hot">
+                                <li><a href="#">北京房价</a></li>
+                                <li><a href="#">通州房价走势</a></li>
+                                <li><a href="#">朝阳房价走势</a></li>
+                                <li><a href="#">东城房价走势</a></li>
+                                <li><a href="#">西城房价走势</a></li>
+                                <li><a href="#">海淀房价走势</a></li>
+                                <li><a href="#">石景山房价走势</a></li>
+                                <li><a href="#">门头沟房价走势</a></li>
+                                <li><a href="#">丰台房价走势</a></li>
+                            </ul>
+                        </div>
+                        <div class="nrpart">
+                            <ul class="link-hot">
+                                <li><a href="#">黄村房价</a></li>
+                                <li><a href="#">亦庄房价</a></li>
+                                <li><a href="#">西红门房价</a></li>
+                                <li><a href="#">大兴新城</a></li>
+                                <li><a href="#">孙村房价</a></li>
+                                <li><a href="#">庞各庄房价</a></li>
+                                <li><a href="#">旧宫房价</a></li>
+                            </ul>
+                        </div>
+                        <div class="nrpart">
+                            <ul class="link-hot">
+                                <li><a href="#">顺义主城区房价</a></li>
+                                <li><a href="#">中央别墅区房价</a></li>
+                                <li><a href="#">空港开发区房价</a></li>
+                                <li><a href="#">潮白河别墅区房价</a></li>
+                            </ul>
+                        </div>
+                        <div class="nrpart">
+                            <ul class="link-hot">
+                                <li><a href="#">阎村房价</a></li>
+                                <li><a href="#">长阳房价</a></li>
+                                <li><a href="#">长辛店房价</a></li>
+                                <li><a href="#">良乡房价</a></li>
+                                <li><a href="#">窦店房价</a></li>
+                                <li><a href="#">房山老城区房价</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--友情链接-->
+                <ul class="f-flink">
+                    <li><a href="#">绿地诺亚方舟</a></li>
+                    <li><a href="#">远洋新仕界（商住）</a></li>
+                    <li><a href="#">智汇雅苑</a></li>
+                    <li><a href="#">北京城建北京密码</a></li>
+                    <li><a href="#">恒华湖公馆</a></li>
+                    <li><a href="#">鑫苑鑫都汇</a></li>
+                    <li><a href="#">澜馨墅</a></li>
+                    <li><a href="#">江南山水</a></li>
+                    <li><a href="#">银河湾</a></li>
+                    <li><a href="#">翠林漫步</a></li>
+                    <li><a href="#">胜古誉园</a></li>
+                    <li><a href="#">华侨城</a></li>
+                    <li><a href="#">夏威夷蓝湾</a></li>
+                    <li><a href="#">金地世家广场MINI墅</a></li>
+                    <li><a href="#">远洋万和公馆</a></li>
+                    <li><a href="#">爱上岛</a></li>
+                    <li><a href="#">玫瑰SOHO</a></li>
+                    <li><a href="#">天和嘉园</a></li>
+                    <li><a href="#">美林君渡</a></li>
+                </ul>
+            </div>
+            <!--友情链接-->
+            <ul class="flink2">
+                <li>友情链接:</li>
+                <li><a href="#">北京个人房源</a></li>
+                <li><a href="#">朝阳购房</a></li>
+                <li><a href="#">朝阳装修</a></li>
+                <li><a href="#">北京日租房</a></li>
+                <li><a href="#">装修效果图</a></li>
+                <li><a href="#">北京天气预报30天</a></li>
+                <li><a href="#">安康论坛</a></li>
+                <li><a href="#">宝鸡房产</a></li>
+                <li><a href="#">宜春房产网</a></li>
+                <li><a href="#">搜房源网</a></li>
+                <li><a href="#">装修效果图</a></li>
+                <li><a href="#">北京装修网</a></li>
+                <li><a href="#">北京搜房源</a></li>
+                <li><a href="#">哈尔滨58同城</a></li>
+                <li><a href="#">北京家装</a></li>
+                <li><a href="#">民生信息网</a></li>
+                <li><a href="#">北京写字楼出租</a></li>
+                <li><a href="#">北京装修公司</a></li>
+                <li><a href="#">北京装修网</a></li>
+                <li><a href="#">天津装修</a></li>
+                <li><a href="#">衡水二手房</a></li>
+                <li><a href="#">北京租房网</a></li>
+                <li><a href="#">武汉装修网</a></li>
+                <li><a href="#">深圳写字楼出租</a></li>
+                <li><a href="#">苏州房产网</a></li>
+                <li><a href="#">北京租房网</a></li>
+                <li><a href="#">土地转让</a></li>
+                <li><a href="#">北京房贷利率</a></li>
+                <li><a href="#">中央净水</a></li>
+                <li><a href="#">吴江房产网</a></li>
+                <li><a href="#">南昌二手房</a></li>
+                <li><a href="#">澳洲房产网</a></li>
+                <li><a href="#">北京装修</a></li>
+                <li><a href="#">家居产品</a></li>
+                <li><a href="#">整体橱柜</a></li>
+                <li><a href="#">哈尔滨房地产门户</a></li>
+                <li><a href="#">宿迁房产网</a></li>
+                <li><a href="#">房产信息</a></li>
+                <li><a href="#">六安房产网</a></li>
+                <li><a href="#">沈阳房产网</a></li>
+                <li><a href="#">商丘房产网</a></li>
+                <li><a href="#">长沙家装公司</a></li>
+                <li><a href="#">西安房地产门户</a></li>
+                <li><a href="#">北京装修网</a></li>
+                <li><a href="#">厦门装修公司</a></li>
+                <li><a href="#">简约风格装修效果图</a></li>
+                <li><a href="#">石家庄装修网</a></li>
+                <li><a href="#">盐城房产网</a></li>
+                <li><a href="#">卧室装修效果图</a></li>
+            </ul>
+            <div class="original-copy-left">
+                北京房产网-侃家网提供2016北京楼盘动态，包括北京新楼盘、在售楼盘信息、新房开盘和北京房价查询等信息。真实的北京新房数据和实时北京新楼盘信息，尽在侃家网北京楼盘栏目！
+            </div>
+            <div class="original-copy-right">本站所有点评内容均为独家原创内容，请勿转载</div>
+        </div>
+        <div class="copyright">
+            <p>北京侃家科技有限公司</p>
+            <p>&copy;2014-2016 comjia.com, all rights reversed. <a href="http://www.miitbeian.gov.cn">京ICP备15012099号</a>
+            </p>
+        </div>
+    </div>
+</div>
+    <div class="right-flow" style="right: -240px">
+    <div class="sidebar">
+        <div class="upper">
+            <div class="s-item s-login">
+                <a href="#" class="bg-img">登录</a>
+                <div class="des">登录</div>
+                <div class="login animated">
+                    <div class="layer-wrapper">
+    <div class="close">
+        <span class="ico ico-clear">清空</span>
+    </div>
+    <div class="layer-box">
+        <div class="hd">
+            <h2>用户登录</h2>
+            <ul class="more">
+                <li>还没有侃家账号？</li>
+                <li class="btn-area">
+                    <a href="#" class="layer-btn layer-btn-reg">马上注册</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bd">
+            <ul class="user-info">
+                <li>
+                    <div class="ipt-area ipt-mobile">
+                        <input type="text" placeholder="请输入手机号" class="ipt">
+                    </div>
+                    <p class="tips-ipt">手机号不能为空</p>
+                </li>
+                <li>
+                    <div class="ipt-area ipt-pwd">
+                        <input type="password" placeholder="请输入密码"  data-placeholder="请输入密码" class="ipt">
+                    </div>
+                    <p class="tips-ipt">密码不能为空</p>
+                </li>
+                <li>
+                    <div class="chk">
+                        <input type="checkbox">下次自动登录
+                    </div>
+                    <a href="#" class="link-fpwd">找回密码</a>
+                </li>
+            </ul>
+            <div class="layer-btn-area">
+                <a class="btn4" href="#" id="btn-login">立即登录</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+            <div class="s-item s-login1" style="display: none;">
+                <a href="#" class="bg-img">已登录</a>
+                <div class="des">你好，15701201968</div>
+            </div>
+            <div class="s-item s-footprint">
+                <a href="#" class="bg-img">我的足迹</a>
+                <div class="des">我的足迹</div>
+            </div>
+            <div class="s-item s-look">
+                <a href="#" class="bg-img">预约看房</a>
+                <div class="des">预约看房</div>
+            </div>
+            <hr class="s-line">
+            <div class="s-item s-customer">
+                <a href="#" class="bg-img">在线客服</a>
+                <div class="des">在线客服</div>
+            </div>
+        </div>
+        <div class="lower">
+            <div class="s-item s-erweima">
+                <a href="#" class="bg-img">微信二维码</a>
+                <div class="des">
+                    <img src="images/img-ewm.png" alt="二维码">
+                    <span class="text">侃家安卓</span>
+                    <span class="text">app下载</span>
+                </div>
+            </div>
+            <div class="s-item s-top">
+                <a href="#" class="bg-img">返回顶部</a>
+                <div class="des">返回顶部</div>
+            </div>
+            <div class="s-item s-survey">
+                <a href="#" class="bg-img">在线调研</a>
+                <div class="des">在线调研</div>
+            </div>
+            <div class="s-item s-feedback">
+                <a href="#" class="bg-img">意见反馈</a>
+                <div class="des">意见反馈</div>
+            </div>
+        </div>
+    </div>
+    <div class="content-sh">
+        <div class="s-look-house animated">
+            <div class="hd">
+                <div class="img-area">
+                    <img src="images/img-head.png" alt="头像">
+                </div>
+                <div class="ipt-area">
+                    <input type="text" class="phone" value="请输入您的手机号">
+                    <button class="ipt-btn">我要预约</button>
+                </div>
+                <p class="hot-line">免费咨询热线：400-080-7815</p>
+            </div>
+            <div class="bd">
+                <h2 class="title">侃家全程服务您看房</h2>
+                <div class="service-list">
+                    <div class="item">
+                        <div class="icon-down"></div>
+                        <div class="img-area">
+                            <img src="images/img-look1.png" alt="咨询">
+                            <div class="name">报名咨询</div>
+                        </div>
+                        <div class="item-des">倾听你的买房需求</div>
+                    </div>
+                    <div class="item">
+                        <div class="icon-down"></div>
+                        <div class="img-area">
+                            <img src="images/img-look2.png" alt="咨询">
+                            <div class="name">专车看房</div>
+                        </div>
+                        <div class="item-des">一对一免费专车全程接送</div>
+                    </div>
+                    <div class="item">
+                        <div class="icon-down"></div>
+                        <div class="img-area">
+                            <img src="images/img-look3.png" alt="咨询">
+                            <div class="name">楼盘解析</div>
+                        </div>
+                        <div class="item-des">市场、区域、政策、楼盘全面解析</div>
+                    </div>
+                    <div class="item">
+                        <div class="icon-down"></div>
+                        <div class="img-area">
+                            <img src="images/img-look4.png" alt="咨询">
+                            <div class="name">签约把关</div>
+                        </div>
+                        <div class="item-des">合同解读免你后顾之忧</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footprint animated">
+            <div class="hd">
+                <a href="#" class="close"></a>
+                <div class="user">
+                    <span class="head"></span>
+                    <span class="name">hi~135...1323</span>
+                </div>
+                <div class="user-none" style="display: none;">
+                    <p class="title">您还没有登录</p>
+                    <div class="content">
+                        <a href="#">登录一下</a>
+                        就能为您记录每天的足迹哟~
+                    </div>
+                </div>
+            </div>
+            <div class="bd">
+                <h2 class="title">我的足迹</h2>
+                <div class="house-list">
+                    <div class="media">
+                        <div class="pic">
+                            <a href="#">
+                                <img src="images/img-house.png" alt="北京城建琨廷">
+                            </a>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4 class="name"><a href="#">泰和中央广场</a></h4>
+                            <p class="total">122-258万</p>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="pic">
+                            <a href="#">
+                                <img src="images/img-house.png" alt="北京城建琨廷">
+                            </a>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4 class="name"><a href="#">泰和中央广场</a></h4>
+                            <p class="total">122-258万</p>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="pic">
+                            <a href="#">
+                                <img src="images/img-house.png" alt="北京城建琨廷">
+                            </a>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4 class="name"><a href="#">泰和中央广场</a></h4>
+                            <p class="total">122-258万</p>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="pic">
+                            <a href="#">
+                                <img src="images/img-house.png" alt="北京城建琨廷">
+                            </a>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4 class="name"><a href="#">泰和中央广场</a></h4>
+                            <p class="total">122-258万</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="no-list" style="display:none;">
+                    <p>没有您的足迹~</p>
+                    <a href="#">去看看房吧</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="./js/lib/jquery/jquery-1.9.1.min.js"></script>
+<script src="./js/lib/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/lib/jquerypin/jquery.pin.min.js"></script>
+<script src="./js/house-detail-albums.js"></script>
+</body>
+</html>

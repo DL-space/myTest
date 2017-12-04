@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>用户评论审核</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/albums-detail2.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/data-audit.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">人工审核</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--审核模块选择-->
+                    <div class="review-sel">
+                        <select class="form-control">
+                            <option value="0" data-url="http://www.baidu.com">图片审核</option>
+                            <option value="1" data-url="http://www.comjia.com">楼盘动态审核</option>
+                            <option value="2" data-url="http://www.renren.com">用户评论审核</option>
+                        </select>
+                    </div>
+                    <!--用户评论审核-->
+                    <div class="panel panel-plsh">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">用户评论审核</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="order-search">
+                                <!--排号订单查询-->
+                                <ul class="c-query house-query">
+                                    <li>
+                                        <div class="th">城市：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">北京</option>
+                                                <option value="1">上海</option>
+                                                <option value="2">全国</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">审核对象：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">请选择</option>
+                                                <option value="1">侃家已有楼盘</option>
+                                                <option value="2">侃家新增楼盘</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">是否合作：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">请选择</option>
+                                                <option value="1">合作</option>
+                                                <option value="2">非合作</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">楼盘名称：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="form-area">
+                                    <li>
+                                        <div class="th">区域：</div>
+                                        <div class="td">
+                                            <ul class="d-chked">
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">不限
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">海淀
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">朝阳
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">顺义
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">通州
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">丰台
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">门头沟
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">密云
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">东城
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">西城
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">业态：</div>
+                                        <div class="td">
+                                            <ul class="d-chked">
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">不限
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">住宅
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">商办
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">别墅
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">楼盘审核状态：</div>
+                                        <div class="td">
+                                            <ul class="d-chked">
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">不限
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">未审核
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">部分审核
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">全部审核
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">评论审核结果：</div>
+                                        <div class="td">
+                                            <ul class="d-chked">
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">不限
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">未审核
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">通过
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">不通过
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="c-ext">
+                                        <div class="th">动态日期：</div>
+                                        <div class="td">
+                                            <div class="ext">从</div>
+                                            <input type="text" class="form-control">
+                                            <div class="ext">到</div>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">数据源：</div>
+                                        <div class="td">
+                                            <ul class="d-chked">
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">不限
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">搜房网
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">安居客
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">搜狐焦点
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">看房网
+                                                </li>
+                                                <li>
+                                                    <input class="d-chk" type="checkbox">侃家
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-area">
+                                    <input type="button" class="btn btn-default" value="重置">
+                                    <input type="button" class="btn btn-primary" value="搜索">
+                                </div>
+                            </div>
+                            <div class="exa-area-wrap">
+                                <!--信息切换-->
+                                <div class="info-switch pl-switch">
+                                    <div class="fl">
+                                        <div class="project-switch">
+                                            <a href="#" class="project-prev">上一个楼盘</a>
+                                            <span class="project-current">当前审核楼盘：华润悦景湾</span>
+                                            <a href="#" class="project-next">下一个楼盘</a>
+                                        </div>
+                                        <div class="examine-info">共400个楼盘，未审核80个，部分审核100个，全部审核 220个</div>
+                                    </div>
+                                    <div class="fr">
+                                        <div class="exa-opt">
+                                            <span class="lb">批量操作：</span>
+                                            <button class="btn btn-success">批量已审</button>
+                                            <button class="btn btn-danger">批量不显示</button>
+                                        </div>
+                                        <div class="opt-info">批量操作只对未审核状态的数据有效</div>
+                                    </div>
+                                </div>
+                                <div class="exa-area">
+                                    <div class="pl-item">
+                                        <div class="tit">
+                                            <h5>游客00000001</h5>
+                                            <div class="date">2016-12-2 10:23:11</div>
+                                            <div class="score">评分：好评</div>
+                                            <div class="source">来源：PC</div>
+                                            <div class="btn-area">
+                                                <button type="button" class="btn btn-success">已审</button>
+                                                <button type="button" class="btn btn-danger">不显示</button>
+                                            </div>
+                                        </div>
+                                        <div class="con">
+                                            <p>
+                                                位置比较偏，五环外了，没地铁交通也不是很方便，自驾还好吧，不过只能南边工作，开车去北城不现实，价位太高28000，而且都是大户型感觉根本买不起位置比较偏，五环外了，没地铁交通也不是很方便，自驾还好吧，不过只能南边工作，开车去北城不现实，价位太高28000，而且都是大户型感觉根本买不起</p>
+                                            <ul class="pic-list">
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="pl-item">
+                                        <span class="ico ico-ys">已审</span>
+                                        <div class="tit">
+                                            <h5>游客00000001</h5>
+                                            <div class="date">2016-12-2 10:23:11</div>
+                                            <div class="score">评分：好评</div>
+                                            <div class="source">来源：PC</div>
+                                            <div class="btn-area">
+                                                <button type="button" class="btn btn-success">已审</button>
+                                                <button type="button" class="btn btn-danger">不显示</button>
+                                            </div>
+                                        </div>
+                                        <div class="con">
+                                            <p>
+                                                位置比较偏，五环外了，没地铁交通也不是很方便，自驾还好吧，不过只能南边工作，开车去北城不现实，价位太高28000，而且都是大户型感觉根本买不起位置比较偏，五环外了，没地铁交通也不是很方便，自驾还好吧，不过只能南边工作，开车去北城不现实，价位太高28000，而且都是大户型感觉根本买不起</p>
+                                            <ul class="pic-list">
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="pl-item">
+                                        <span class="ico ico-bxs">不显示</span>
+                                        <div class="tit">
+                                            <h5>游客00000001</h5>
+                                            <div class="date">2016-12-2 10:23:11</div>
+                                            <div class="score">评分：好评</div>
+                                            <div class="source">来源：PC</div>
+                                            <div class="btn-area">
+                                                <button type="button" class="btn btn-success">已审</button>
+                                                <button type="button" class="btn btn-danger">不显示</button>
+                                            </div>
+                                        </div>
+                                        <div class="con">
+                                            <p>
+                                                位置比较偏，五环外了，没地铁交通也不是很方便，自驾还好吧，不过只能南边工作，开车去北城不现实，价位太高28000，而且都是大户型感觉根本买不起位置比较偏，五环外了，没地铁交通也不是很方便，自驾还好吧，不过只能南边工作，开车去北城不现实，价位太高28000，而且都是大户型感觉根本买不起</p>
+                                            <ul class="pic-list">
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                                <li><img src="../images/img-exa.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="page">
+                                        <div class="page-info">第1-50条，共1200条数据</div>
+                                        <ul class="pagination">
+                                            <li class="prev disabled"><span>«</span></li>
+                                            <li class="active"><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">6</a></li>
+                                            <li><a href="#">7</a></li>
+                                            <li><a href="#">8</a></li>
+                                            <li><a href="#">9</a></li>
+                                            <li><a href="#">10</a></li>
+                                            <li class="next"><a href="#">»</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/data-audit.js"></script>
+</body>

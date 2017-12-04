@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>楼盘列表页-改版3.4</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/house-list.css">
+</head>
+<body>
+<div class="container">
+    @@include("./app/header/header.html")
+    <div class="center">
+        <div class="row row-search">
+            <div class="wrap">
+                @@include("./app/search/search-1.html")
+            </div>
+        </div>
+        <div class="row row-crumb">
+            @@include("./app/crumbs/crumb.html")
+        </div>
+        <div class="row row-query">
+            <!--搜索条件-->
+            <div class="search-wrap">
+                <div class="selector">
+                    <div class="c-select">
+                        <div class="sel-key position-key">位置：</div>
+                        <div class="sel-item sel-position">
+                            <div class="tab">
+                                <div class="tab-t">
+                                    <ul class="position">
+                                        <li class="on area">
+                                            <a href="#">区域</a>
+                                        </li>
+                                        <li class="subway">
+                                            <a href="#">地铁</a>
+                                        </li>
+                                        <li class="circle-line">
+                                            <a href="#">环线</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-c">
+                                    <div class="nrpart nrpart-area">
+                                        <ul class="sel-value">
+                                            <li><a href="#" class="checked">不限</a></li>
+                                            <li><a href="#">海淀</a></li>
+                                            <li><a href="#">东城</a></li>
+                                            <li><a href="#">朝阳</a></li>
+                                            <li><a class="textblue" href="#">通州</a></li>
+                                            <li><a href="#">西城</a></li>
+                                            <li><a href="#">丰台</a></li>
+                                            <li><a href="#">昌平</a></li>
+                                            <li><a href="#">大兴</a></li>
+                                            <li><a href="#">房山</a></li>
+                                            <li><a href="#">门头沟</a></li>
+                                            <li><a href="#">石景山</a></li>
+                                            <li><a href="#">顺义</a></li>
+                                            <li>（即将开放更多区域）</li>
+                                        </ul>
+                                    </div>
+                                    <div class="nrpart nrpart-subway">
+                                        <ul class="sel-value">
+                                            <li><a href="#" class="checked">不限</a></li>
+                                            <li><a href="#">1号线</a></li>
+                                            <li><a href="#">2号线</a></li>
+                                            <li><a href="#" class="textblue">4号线</a></li>
+                                            <li><a href="#">5号线</a></li>
+                                            <li><a href="#">6号线</a></li>
+                                            <li><a href="#">7号线</a></li>
+                                            <li><a href="#">8号线</a></li>
+                                            <li><a href="#">9号线</a></li>
+                                            <li><a href="#">10号线</a></li>
+                                            <li><a href="#">13号线</a></li>
+                                            <li><a href="#">14号线</a></li>
+                                            <li><a href="#">15号线</a></li>
+                                            <li><a href="#">八通线</a></li>
+                                            <li><a href="#">亦庄线</a></li>
+                                            <li><a href="#">昌平线</a></li>
+                                            <li><a href="#">房山线</a></li>
+                                            <li><a href="#">大兴线</a></li>
+                                            <li><a href="#">机场线</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nrpart nrpart-circle-line">
+                                        <ul class="sel-value">
+                                            <li><a href="#" class="checked">不限</a></li>
+                                            <li><a href="#">二环内</a></li>
+                                            <li><a href="#">二-三环</a></li>
+                                            <li><a href="#" class="textblue">三-四环</a></li>
+                                            <li><a href="#">四-五环</a></li>
+                                            <li><a href="#">五-六环</a></li>
+                                            <li><a href="#">六环外</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-select">
+                        <div class="sel-key">总价：</div>
+                        <div class="sel-item item-price">
+                            <ul class="sel-value">
+                                <li><a href="#" class="checked">不限</a></li>
+                                <li><a href="#">&lt;100万</a></li>
+                                <li><a href="#">100-150万</a></li>
+                                <li><a href="#">150-200万</a></li>
+                                <li><a href="#">200-250万</a></li>
+                                <li><a href="#">250-300万</a></li>
+                                <li><a href="#">300-500万</a></li>
+                                <li><a href="#">500-800万</a></li>
+                                <li><a href="#">800-1000万</a></li>
+                                <li><a href="#">&gt;1000万</a></li>
+                            </ul>
+                        </div>
+                        <div class="sel-price">
+                            <input type="text" class="ipt">
+                            <span>-</span>
+                            <input type="text" class="ipt">
+                            <span class="lb">万</span> <a class="btn-commit" href="#">确定</a></div>
+                    </div>
+                    <div class="c-select">
+                        <div class="sel-key">类型：</div>
+                        <div class="sel-item">
+                            <ul class="sel-value">
+                                <li><a href="#" class="checked">不限</a></li>
+                                <li><a href="#">住宅</a></li>
+                                <li><a href="#">别墅</a></li>
+                                <li><a href="#">商住</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="c-select">
+                        <div class="sel-key">户型：</div>
+                        <div class="sel-item">
+                            <ul class="sel-value">
+                                <li><a href="#">不限</a></li>
+                                <li><a href="#">一居</a></li>
+                                <li><a href="#">二居</a></li>
+                                <li><a href="#" class="checked">三居</a></li>
+                                <li><a href="#">四居</a></li>
+                                <li><a href="#">五居</a></li>
+                                <li><a href="#">五居及以上</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="c-select">
+                        <div class="sel-key">特色：</div>
+                        <div class="sel-item">
+                            <ul class="sel-value">
+                                <li><a href="#" class="checked">不限</a></li>
+                                <li><a href="#">学区房</a></li>
+                                <li><a href="#">临地铁</a></li>
+                                <li><a href="#">精装修</a></li>
+                                <li><a href="#">loft</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="c-select select-h">
+                        <div class="sel-key">其他：</div>
+                        <div class="sel-item">
+                            <ul class="sel-value">
+                                <li>
+                                    <div class="select-area">
+                                        <div class="opt-wrap">
+                                            <span class="ico-drop">下拉</span>
+
+                                            <div class="con">单价</div>
+                                        </div>
+                                        <ul class="option">
+                                            <li class="checked">不限</li>
+                                            <li><4万</li>
+                                            <li>4万-5万</li>
+                                            <li>5万-6万</li>
+                                            <li>6万-7万</li>
+                                            <li>7万-8万</li>
+                                            <li>8万-8万</li>
+                                            <li>9万-10万</li>
+                                            <li>10万-15万</li>
+                                            <li>大于15万</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-area">
+                                        <div class="opt-wrap">
+                                            <span class="ico-drop">下拉</span>
+
+                                            <div class="con">面积</div>
+                                        </div>
+                                        <ul class="option">
+                                            <li class="checked">不限</li>
+                                            <li><50㎡</li>
+                                            <li>50-80㎡</li>
+                                            <li>80-120㎡</li>
+                                            <li>120-140㎡</li>
+                                            <li>>160㎡</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-area">
+                                        <div class="opt-wrap">
+                                            <span class="ico-drop">下拉</span>
+
+                                            <div class="con">销售情况</div>
+                                        </div>
+                                        <ul class="option">
+                                            <li class="checked">不限</li>
+                                            <li>在售</li>
+                                            <li>待售</li>
+                                            <li>售罄</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="selected">
+                    <div class="sel-key">已选条件:</div>
+                    <div class="sel-item">
+                        <ul class="sel-value">
+                            <li><a class="search-item" href="#"><em>通州</em><span class="ico ico-del">删除</span></a></li>
+                            <li><a class="search-item" href="#"><em>八通线</em><span class="ico ico-del">删除</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="del-all"><a href="#"><span class="ico ico-clear">清空</span>清空所有</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-house-list">
+            <div class="col">
+                <div class="house-area">
+                    <div class="search-condition">
+                        <ul class="sort">
+                            <li>
+                                <a href="#" class="on">默认排序</a>
+                            </li>
+                            <li>
+                                <a href="#">总价</a>
+                            </li>
+                            <li>
+                                <a href="#">单价</a>
+                            </li>
+                            <li>
+                                <a href="#">看房次数</a>
+                            </li>
+                            <li>
+                                <a href="#">成交量</a>
+                            </li>
+                        </ul>
+                        <div class="num">共找到<span>9999</span>个符合条件的北京楼盘</div>
+                    </div>
+                    <!--推荐位-->
+                    <div class="recommend-area">
+                        <a href="#">
+                            <ul class="pic-area">
+                                <li class="p1"><img src="./images/img-r1.jpg" alt=""/></li>
+                                <li class="p2"><img src="./images/img-r2.jpg" alt=""/></li>
+                                <li class="p3"><img src="./images/img-r3.jpg" alt=""/></li>
+                            </ul>
+                            <ul class="r-reason">
+                                <li class="r1">
+                                    <span class="icon-r"></span>
+                                    需求分析、匹配房源
+                                </li>
+                                <li class="r2">
+                                    <span class="icon-r"></span>
+                                    免费专车看房
+                                </li>
+                                <li class="r3">
+                                    <span class="icon-r"></span>
+                                    全程陪同、签约把关
+                                </li>
+                                <li class="r4">
+                                    <span class="icon-r"></span>
+                                    1V1专业咨询
+                                </li>
+                            </ul>
+                            <div class="text">
+                                <p class="strong">热卖楼盘</p>
+                                <p class="info">看看大家最近都在关注哪些楼盘</p>
+                                <span class="btn-all">查看所有热销楼盘</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="house-list">
+                        <div class="house-item">
+                            <div class="icon-corner icon-hot">火爆</div>
+                            <div class="house-des">
+                                <div class="pic">
+                                    <a href="#">
+                                        <img src="images/img-house.png" alt="">
+                                    </a>
+
+                                    <div class="qj-img">
+                                        <img src="./images/qu-label01.png" alt="全景看房">
+                                    </div>
+                                </div>
+                                <div class="des-area">
+                                    <div class="des-info">
+                                        <h4 class="title">
+                                            <a href="#" class="name">泰禾中央广场</a>
+                                            <a class="tag-sale" href="#">排卡中</a>
+                                        </h4>
+
+                                        <div class="position">
+                                            <span class="position-des">
+                                                <a href="#">大兴西红门镇南五环与京开高速相交界交界交界交界</a>
+                                            </span>
+                                            <span class="map">
+                                                <span class="ico ico-pos">位置</span>
+                                                <a href="#">查看地图</a>
+                                            </span>
+                                        </div>
+                                        <div class="house-type">
+                                            <div class="types">
+                                                <a href="#">
+                                                    三居(1)，三居(1) 三居(1)，三居(1)三居(1)三居(1)三居(1)三居(1)三居(1)
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="house-tag">
+                                            <li class="tag active"><a href="#">刚需住宅</a></li>
+                                            <li class="tag active"><a href="#">紧邻地铁</a></li>
+                                            <li class="tag active"><a href="#">高性价比</a></li>
+                                            <li class="tag"><a href="#">精品</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="des-more">
+                                        <div class="cell-point">
+                                            <div class="cell">
+                                                <p class="celling">
+                                                    <a href="#">
+                                                        <span class="title">2016.12.26</span>
+                                                        元旦假期一来，优惠就没有了呦元旦假期一来，优惠就没有了呦
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <div class="update-new">
+                                                <img class="pic-new" src="./images/img-new.gif" alt=""/>
+                                                <span class="txt">24小时内此楼盘有新的：</span>
+                                                <a href="#">价格变动</a>、<a href="#">楼盘动态</a>、<a href="#">售卖信息</a>
+                                            </div>
+                                        </div>
+                                        <div class="review">
+                                            <ul class="review-list">
+                                                <li class="reviews">
+                                                    <a href="#">
+                                                        <img src="images/img-person.png" class="r-pic" alt="">
+                                                        <p class="txt">袁雪婷</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!--向他咨询-->
+                                            <div class="c-zx">
+                                                <span class="txt">向TA<br>
+                                                    咨询</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="house-price">
+                                <div class="price">
+                                    <div class="total-price">
+                                        <span class="reference-total">参考总价：</span>
+                                        <span class="number">156万-200万</span>
+                                    </div>
+                                    <div class="developer">
+                                        <span class="developer-price">开发商报价：</span>
+                                        <span class="number">49,000元/平米</span>
+
+                                        <div class="price-cmt">
+                                            <span class="ico ico-cmt"></span>
+
+                                            <div class="tips-price-cmt">
+                                                <div class="top"></div>
+                                                <div class="txt-cmt">报价更新时间：2016-2-13</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="our-price">
+                                        <span class="our-special">1万抵30万</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="house-item">
+                            <div class="icon-corner icon-sun">火爆</div>
+                            <div class="house-des">
+                                <div class="pic">
+                                    <a href="#">
+                                        <img src="images/img-house.png" alt="">
+                                    </a>
+
+                                    <div class="qj-img">
+                                        <img src="./images/qu-label01.png" alt="全景看房">
+                                    </div>
+                                </div>
+                                <div class="des-area">
+                                    <div class="des-info">
+                                        <h4 class="title">
+                                            <a href="#" class="name">泰禾中央广场</a>
+                                            <a class="tag-sale" href="#">排卡中</a>
+                                        </h4>
+
+                                        <div class="position">
+                                            <span class="position-des">
+                                                <a href="">大兴西红门镇南五环与京开高速相交界交界交界交界</a>
+                                            </span>
+                                            <span class="map">
+                                                <span class="ico ico-pos">位置</span>
+                                                <a href="#">查看地图</a>
+                                            </span>
+                                        </div>
+                                        <div class="house-type">
+                                            <div class="types">
+                                                <a href="#">三居(1)，三居(1) 三居(1)，三居(1)三居(1)三居(1)三居(1)三居(1)三居(1)</a>
+                                            </div>
+                                        </div>
+                                        <ul class="house-tag">
+                                            <li class="tag active"><a href="#">刚需住宅</a></li>
+                                            <li class="tag active"><a href="#">紧邻地铁</a></li>
+                                            <li class="tag active"><a href="#">高性价比</a></li>
+                                            <li class="tag"><a href="#">精品</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="des-more">
+                                        <div class="cell-point">
+                                            <div class="cell">
+                                                <p class="celling">
+                                                    <a href="#">
+                                                        <span class="title">2016.12.26</span>
+                                                        元旦假期一来，优惠就没有了呦元旦假期一来，优惠就没有了呦
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <div class="update-new">
+                                                <img class="pic-new" src="./images/img-new.gif" alt=""/>
+                                                <span class="txt">24小时内此楼盘有新的：</span>
+                                                <a href="#">价格变动</a>、<a href="#">楼盘动态</a>、<a href="#">售卖信息</a>
+                                            </div>
+                                        </div>
+                                        <div class="review">
+                                            <ul class="review-list">
+                                                <li class="reviews">
+                                                    <a href="#">
+                                                        <img src="images/img-person.png" class="r-pic" alt="">
+                                                        <p class="txt">袁雪婷</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!--向他咨询-->
+                                            <div class="c-zx">
+                                                <span class="txt">向TA<br>
+                                                    咨询</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="house-price">
+                                <div class="price">
+                                    <div class="total-price">
+                                        <span class="reference-total">参考总价：</span>
+                                        <span class="number">156万-200万</span>
+                                    </div>
+                                    <div class="developer">
+                                        <span class="developer-price">开发商报价：</span>
+                                        <span class="number">49,000元/平米</span>
+
+                                        <div class="price-cmt">
+                                            <span class="ico ico-cmt"></span>
+
+                                            <div class="tips-price-cmt">
+                                                <div class="top"></div>
+                                                <div class="txt-cmt">报价更新时间：2016-2-13</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="our-price">
+                                        <span class="our-special">1万抵30万</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="house-item house-item-2">
+                            <div class="icon-corner icon-warm">特惠送温暖</div>
+                            <div class="house-des">
+                                <div class="pic">
+                                    <a href="#">
+                                        <img src="images/img-house.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="des-area">
+                                    <div class="des-info">
+                                        <h4 class="title">
+                                            <a href="#" class="name">泰禾中央广场</a>
+                                            <a class="tag-sale" href="#">排卡中</a>
+                                        </h4>
+
+                                        <div class="position">
+                                            <span class="position-des">
+                                                <a href="#">大兴西红门镇南五环与京开高速相交界交界交界交界</a>
+                                            </span>
+                                            <span class="map">
+                                                <span class="ico ico-pos">位置</span>
+                                                <a href="#">查看地图</a>
+                                            </span>
+                                        </div>
+                                        <div class="house-type">
+                                            <div class="types">
+                                                <a href="#">
+                                                    三居(1)，三居(1) 三居(1)，三居(1)三居(1)三居(1)三居(1)三居(1)三居(1)
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="des-more">
+                                        <div class="cell-point">
+                                            <ul class="house-tag">
+                                                <li class="tag active"><a href="#">紧邻地铁</a></li>
+                                                <li class="tag"><a href="#">精品</a></li>
+                                                <li class="tag"><a href="#">小户型</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="review">
+                                            <ul class="review-list">
+                                                <li class="reviews">
+                                                    <a href="#">
+                                                        <img src="images/img-person.png" class="r-pic" alt="">
+                                                        <p class="txt">袁雪婷</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!--向他咨询-->
+                                            <div class="c-zx">
+                                                <span class="txt">向TA咨询</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="house-price">
+                                <div class="price">
+                                    <div class="total-price">
+                                        <span class="reference-total">参考总价：</span>
+                                        <span class="number">156万-200万</span>
+                                    </div>
+                                    <div class="developer">
+                                        <span class="developer-price">开发商报价：</span>
+                                        <span class="number">49,000元/平米</span>
+
+                                        <div class="price-cmt">
+                                            <span class="ico ico-cmt"></span>
+
+                                            <div class="tips-price-cmt">
+                                                <div class="top"></div>
+                                                <div class="txt-cmt">报价更新时间：2016-2-13</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="our-price">
+                                        <span class="our-special">1万抵30万</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="house-item house-item-2">
+                            <div class="house-des">
+                                <div class="pic">
+                                    <a href="#">
+                                        <img src="images/img-house.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="des-area">
+                                    <div class="des-info">
+                                        <h4 class="title">
+                                            <a href="#" class="name">泰禾中央广场</a>
+                                            <a class="tag-sale" href="#">排卡中</a>
+                                        </h4>
+
+                                        <div class="position">
+                                            <span class="position-des">
+                                                <a href="#">大兴西红门镇南五环与京开高速相交界交界交界交界</a>
+                                            </span>
+                                            <span class="map">
+                                                <span class="ico ico-pos">位置</span>
+                                                <a href="#">查看地图</a>
+                                            </span>
+                                        </div>
+                                        <div class="house-type">
+                                            <div class="types">
+                                                <a href="#">三居(1)，三居(1) 三居(1)，三居(1)三居(1)三居(1)三居(1)三居(1)三居(1)</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="des-more">
+                                        <div class="cell-point">
+                                            <ul class="house-tag">
+                                                <li class="tag active"><a href="#">紧邻地铁</a></li>
+                                                <li class="tag"><a href="#">精品</a></li>
+                                                <li class="tag"><a href="#">小户型</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="review">
+                                            <ul class="review-list">
+                                                <li class="reviews">
+                                                    <a href="#">
+                                                        <img src="images/img-person.png" class="r-pic" alt="">
+                                                        <p class="txt">袁雪婷</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!--向他咨询-->
+                                            <div class="c-zx">
+                                                <span class="txt">向TA咨询</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="house-price">
+                                <div class="price">
+                                    <div class="total-price">
+                                        <span class="reference-total">参考总价：</span>
+                                        <span class="number">156万-200万</span>
+                                    </div>
+                                    <div class="developer">
+                                        <span class="developer-price">开发商报价：</span>
+                                        <span class="number">49,000元/平米</span>
+
+                                        <div class="price-cmt">
+                                            <span class="ico ico-cmt"></span>
+
+                                            <div class="tips-price-cmt">
+                                                <div class="top"></div>
+                                                <div class="txt-cmt">报价更新时间：2016-2-13</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="our-price">
+                                        <span class="our-special">十四个字十四个字十四个字十四个字</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--专车看房-->
+                        <div class="zckf">
+                            <div class="inn">
+                                <div class="text">免费专车·1V1带看·高效省心不受累</div>
+                                <div class="input-area">
+                                    <input type="text" class="ipt" value="输入预约手机号">
+                                    <a href="#" class="btn btn-cons">立即预约</a>
+                                </div>
+                                <div class="phone-num">或者免费咨询我们：400-080-7815</div>
+                            </div>
+                        </div>
+                        <div class="house-item house-item-2 top-border">
+                            <div class="house-des">
+                                <div class="pic">
+                                    <a href="#">
+                                        <img src="images/img-house.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="des-area">
+                                    <div class="des-info">
+                                        <h4 class="title">
+                                            <a href="#" class="name">泰禾中央广场</a>
+                                            <a class="tag-sale" href="#">排卡中</a>
+                                        </h4>
+
+                                        <div class="position">
+                                            <span class="position-des">
+                                                <a href="">大兴西红门镇南五环与京开高速相交界交界交界交界</a>
+                                            </span>
+                                            <span class="map">
+                                                <span class="ico ico-pos">位置</span>
+                                                <a href="#">查看地图</a>
+                                            </span>
+                                        </div>
+                                        <div class="house-type">
+                                            <div class="types">
+                                                <a href="#">三居(1)，三居(1) 三居(1)，三居(1)三居(1)三居(1)三居(1)三居(1)三居(1)</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="des-more">
+                                        <div class="cell-point">
+                                            <ul class="house-tag">
+                                                <li class="tag active"><a href="#">紧邻地铁</a></li>
+                                                <li class="tag"><a href="#">精品</a></li>
+                                                <li class="tag"><a href="#">小户型</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="review">
+                                            <ul class="review-list">
+                                                <li class="reviews">
+                                                    <a href="#">
+                                                        <img src="images/img-person.png" class="r-pic" alt="">
+                                                        <p class="txt">袁雪婷</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!--向他咨询-->
+                                            <div class="c-zx">
+                                                <span class="txt">向TA咨询</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="house-price">
+                                <div class="price">
+                                    <div class="total-price">
+                                        <span class="reference-total">参考总价：</span>
+                                        <span class="number">156万-200万</span>
+                                    </div>
+                                    <div class="developer">
+                                        <span class="developer-price">开发商报价：</span>
+                                        <span class="number">49,000元/平米</span>
+
+                                        <div class="price-cmt">
+                                            <span class="ico ico-cmt"></span>
+
+                                            <div class="tips-price-cmt">
+                                                <div class="top"></div>
+                                                <div class="txt-cmt">报价更新时间：2016-2-13</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="our-price">
+                                        <span class="our-special">1万抵30万</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="house-item house-item-2">
+                            <div class="house-des">
+                                <div class="pic">
+                                    <a href="#">
+                                        <img src="images/img-house.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="des-area">
+                                    <div class="des-info">
+                                        <h4 class="title">
+                                            <a href="#" class="name">泰禾中央广场</a>
+                                            <a class="tag-sale" href="#">排卡中</a>
+                                        </h4>
+
+                                        <div class="position">
+                                            <span class="position-des">
+                                                <a href="">大兴西红门镇南五环与京开高速相交界交界交界交界</a>
+                                            </span>
+                                            <span class="map">
+                                                <span class="ico ico-pos">位置</span>
+                                                <a href="#">查看地图</a>
+                                            </span>
+                                        </div>
+                                        <div class="house-type">
+                                            <div class="types">
+                                                <a href="#">三居(1)，三居(1) 三居(1)，三居(1)三居(1)三居(1)三居(1)三居(1)三居(1)</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="des-more">
+                                        <div class="cell-point">
+                                            <ul class="house-tag">
+                                                <li class="tag active"><a href="#">紧邻地铁</a></li>
+                                                <li class="tag"><a href="#">精品</a></li>
+                                                <li class="tag"><a href="#">小户型</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="review">
+                                            <ul class="review-list">
+                                                <li class="reviews">
+                                                    <a href="#">
+                                                        <img src="images/img-person.png" class="r-pic" alt="">
+                                                        <p class="txt">袁雪婷</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!--向他咨询-->
+                                            <div class="c-zx">
+                                                <span class="txt">向TA咨询</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="house-price">
+                                <div class="price">
+                                    <div class="total-price">
+                                        <span class="reference-total">参考总价：</span>
+                                        <span class="number">156万-200万</span>
+                                    </div>
+                                    <div class="developer">
+                                        <span class="developer-price">开发商报价：</span>
+                                        <span class="number">49,000元/平米</span>
+
+                                        <div class="price-cmt">
+                                            <span class="ico ico-cmt"></span>
+
+                                            <div class="tips-price-cmt">
+                                                <div class="top"></div>
+                                                <div class="txt-cmt">报价更新时间：2016-2-13</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="our-price">
+                                        <span class="our-special">十四个字十四个字十四个字十四个字</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-wrap">
+                        @@include("./app/page/page.html")
+                        <div class="result-num">
+                            共找到<em>471</em>个符合条件的北京楼盘
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+                <!--推荐楼盘-->
+                <div class="box box-tjlp">
+                    <div class="hd">
+                        <h2>看过此楼盘的人还看过</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="media">
+                            <div class="pic">
+                                <a href="#">
+                                    <img src="images/img-small-house.png" alt="北京城建琨廷">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <h4 class="name"><a href="#">北京城北京城建琨廷北京城建琨廷建琨廷</a></h4>
+                                <p class="total">468-2,899 万</p>
+                            </div>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="pic">
+                                <a href="#">
+                                    <img src="images/img-small-house.png" alt="北京城建琨廷">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <h4 class="name"><a href="#">北京城北京城建琨廷北京城建琨廷建琨廷</a></h4>
+                                <p class="total">468-2,899 万</p>
+                            </div>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="pic">
+                                <a href="#">
+                                    <img src="images/img-small-house.png" alt="北京城建琨廷">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <h4 class="name"><a href="#">北京城北京城建琨廷北京城建琨廷建琨廷</a></h4>
+                                <p class="total">468-2,899 万</p>
+                            </div>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="pic">
+                                <a href="#">
+                                    <img src="images/img-small-house.png" alt="北京城建琨廷">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <h4 class="name"><a href="#">北京城北京城建琨廷北京城建琨廷建琨廷</a></h4>
+                                <p class="total">468-2,899 万</p>
+                            </div>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="pic">
+                                <a href="#">
+                                    <img src="images/img-small-house.png" alt="北京城建琨廷">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <h4 class="name"><a href="#">北京城北京城建琨廷北京城建琨廷建琨廷</a></h4>
+                                <p class="total">468-2,899 万</p>
+                            </div>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--购房早知道-->
+                <div class="box box2-zzd">
+                    <div class="hd">
+                        <h2>购房早知道</h2>
+                    </div>
+                    <div class="bd">
+                        <ul class="o-list">
+                            <li>
+                                <a href="#">买房常识之住宅分类介绍，天润福熙大道开发商怎么样？靠谱</a>
+                            </li>
+                            <li>
+                                <a href="#">购买学区房有哪些注意事项？公积金贷款可以提前还款吗？北京公</a>
+                            </li>
+                            <li>
+                                <a href="#">购买学区房有哪些注意事项？公积金贷款可以提前还款吗？北京公购买学区房</a>
+                            </li>
+                            <li>
+                                <a href="#">买房常识之住宅分类介绍，天润福熙大道开发商怎么样？靠谱</a>
+                            </li>
+                            <li>
+                                <a href="#">购买学区房有哪些注意事项？公积金贷款可以提前还款吗？北京公</a>
+                            </li>
+                            <li>
+                                <a href="#">购买学区房有哪些注意事项？公积金贷款可以提前还款吗？北京公购买学区房</a>
+                            </li>
+                            <li>
+                                <a href="#">买房常识之住宅分类介绍，天润福熙大道开发商怎么样？靠谱</a>
+                            </li>
+                            <li>
+                                <a href="#">购买学区房有哪些注意事项？公积金贷款可以提前还款吗？北京公</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--感兴趣楼盘-->
+            <div class="box2 box-inter">
+                <div class="hd">
+                    <h2>你可能感兴趣的楼盘</h2>
+                </div>
+                <div class="bd">
+                    <div class="house-list">
+                        <div class="media2">
+                            <div class="pic"><a href="#"><img alt="小房子" src="images/img-house2.jpg"></a></div>
+                            <div class="text">
+                                <h4><a href="#">V7荷塘月色</a></h4>
+
+                                <div class="price">开发商报价：<em>42,000元/平米</em></div>
+                                <div class="info">楼盘户型：一居(2)三居(1),二局(5)</div>
+                                <div class="info">楼盘地址：顺义南法信顺平路与南路</div>
+                            </div>
+                        </div>
+                        <div class="media2">
+                            <div class="pic"><a href="#"><img alt="小房子" src="images/img-house2.jpg"></a></div>
+                            <div class="text">
+                                <h4><a href="#">V7荷塘月色</a></h4>
+
+                                <div class="price">开发商报价：<em>42,000元/平米</em></div>
+                                <div class="info">楼盘户型：一居(2)三居(1),二局(5)</div>
+                                <div class="info">楼盘地址：顺义南法信顺平路与南路</div>
+                            </div>
+                        </div>
+                        <div class="media2">
+                            <div class="pic"><a href="#"><img alt="小房子" src="images/img-house2.jpg"></a></div>
+                            <div class="text">
+                                <h4><a href="#">V7荷塘月色</a></h4>
+
+                                <div class="price">开发商报价：<em>42,000元/平米</em></div>
+                                <div class="info">楼盘户型：一居(2)三居(1),二局(5)</div>
+                                <div class="info">楼盘地址：顺义南法信顺平路与南路</div>
+                            </div>
+                        </div>
+                        <div class="media2">
+                            <div class="pic"><a href="#"><img alt="小房子" src="images/img-house2.jpg"></a></div>
+                            <div class="text">
+                                <h4><a href="#">V7荷塘月色</a></h4>
+
+                                <div class="price">开发商报价：<em>42,000元/平米</em></div>
+                                <div class="info">楼盘户型：一居(2)三居(1),二局(5)</div>
+                                <div class="info">楼盘地址：顺义南法信顺平路与南路</div>
+                            </div>
+                        </div>
+                        <div class="media2">
+                            <div class="pic"><a href="#"><img alt="小房子" src="images/img-house2.jpg"></a></div>
+                            <div class="text">
+                                <h4><a href="#">V7荷塘月色</a></h4>
+
+                                <div class="price">开发商报价：<em>42,000元/平米</em></div>
+                                <div class="info">楼盘户型：一居(2)三居(1),二局(5)</div>
+                                <div class="info">楼盘地址：顺义南法信顺平路与南路</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--特色找楼盘-->
+            <div class="box2 box-inter">
+                <div class="hd">
+                    <h2>特色找楼盘</h2>
+                </div>
+                <div class="bd">
+                    <div class="house-feature">
+                        <ul class="house-feature-s">
+                            <li class="subhead-on"><a href="#">建筑特点</a></li>
+                            <li><a href="#">户型特点</a></li>
+                            <li><a href="#">周边配套</a></li>
+                            <li><a href="#">楼盘特点</a></li>
+                            <li><a href="#">周边环境</a></li>
+                            <li><a href="#">开发商家</a></li>
+                        </ul>
+                    </div>
+                    <div class="house-label">
+                        <ul class="house-label-s">
+                            <li class="label-on"><a href="#">洋房</a></li>
+                            <li><a href="#">别墅</a></li>
+                            <li><a href="#">纯板房</a></li>
+                            <li><a href="#">小高层</a></li>
+                            <li><a href="#">一楼两户</a></li>
+                            <li><a href="#">超大赠送</a></li>
+                            <li><a href="#">复式小户型</a></li>
+                            <li><a href="#">洋房</a></li>
+                            <li><a href="#">别墅</a></li>
+                            <li><a href="#">别墅</a></li>
+                            <li><a href="#">一楼两户</a></li>
+                            <li><a href="#">超大赠送</a></li>
+                            <li><a href="#">复式小户型</a></li>
+                            <li><a href="#">洋房</a></li>
+                            <li><a href="#">别墅</a></li>
+                            <li><a href="#">别墅</a></li>
+                            <li><a href="#">洋房</a></li>
+                            <li><a href="#">别墅</a></li>
+                            <li><a href="#">纯板房</a></li>
+                            <li><a href="#">小高层</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include("./app/footer/footer.html")
+    @@include("./app/sus-bottom/sus-bottom.html")
+</div>
+<script src="./js/lib/jquery/jquery-1.9.1.min.js"></script>
+<script src="./js/lib/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/house-list.js"></script>
+</body>
+</html>

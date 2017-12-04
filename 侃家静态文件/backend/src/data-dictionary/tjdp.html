@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>添加点评</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/d-dictionary.css">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">带看记录</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <!--添加楼盘点评-->
+                    <div class="panel d-panel-tjdp">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">添加楼盘点评</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="d-mod-tj d-mod-tjdp">
+                                <div class="content">
+                                    <div class="d-form-area">
+                                        <ul class="d-query">
+                                            <li>
+                                                <div class="th">城市：</div>
+                                                <div class="td">
+                                                    <select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                        <option value="1">北京</option>
+                                                        <option value="2">上海</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="th">楼盘名称：</div>
+                                                <div class="td">
+                                                    <input class="form-control" type="text">
+                                                </div>
+                                            </li>
+                                            <li class="d-ipt-remark">
+                                                <div class="th">点评内容：</div>
+                                                <div class="td">
+                                                    <textarea type="text" class="form-control"></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="d-ipt-remark">
+                                                <div class="th"></div>
+                                                <div class="td">
+                                                    <div class="up-area">
+                                                        <input class="input-file" type="file">
+                                                        <button class="btn-input-file">选择图片上传</button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-area">
+                                        <a href="#" class="btn btn-return">返回</a>
+                                        <a href="#" class="btn btn-save">提交</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="dp-rules">
+                        <h3>请注意楼盘点评规则:</h3>
+                        <div class="dp-con">
+                            <p>请注意这里点评规则,有规则1，规则2，还有更重要的规则3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/d-dictionary.js"></script>
+</body>
+</html>

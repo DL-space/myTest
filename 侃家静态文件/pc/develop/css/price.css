@@ -1,0 +1,394 @@
+/*楼盘详情页公用样式*/
+.sub-list {
+    clear: both;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.sub-list li {
+    cursor: pointer;
+    color: #666;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+.sub-list li .ico {
+    float: left;
+    margin: 5px 8px 0 0;
+}
+/*楼盘附加信息*/
+.additional {
+    clear: both;
+    padding-top: 35px;
+    border-top: 1px solid #eaeaea;
+    overflow: hidden;
+}
+.additional h4, .additional p {
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+.additional h4 {
+    font-size: 16px;
+}
+.additional p.a {
+    color: #888;
+}
+/*看过此楼盘的人还看过*/
+.box-tjlp .bd {
+    padding-top: 20px;
+}
+/*分页*/
+.tab-comment .page {
+    padding-top: 30px;
+}
+.tab-comment .page .prev, .tab-comment .page .next {
+    display: inline-block;
+    width: 98px;
+    height: 22px;
+    line-height: 22px;
+    margin: 0 8px;
+    border: 1px solid #eaeaea;
+    overflow: hidden;
+}
+.tab-comment .page .prev:hover, .tab-comment .page .next:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #888;
+    border-color: #888;
+}
+.tab-comment .page span.disabled, .tab-comment .page span.disabled:hover {
+    cursor: not-allowed;
+    color: #333;
+    background: none;
+    border-color: #eaeaea;
+}
+.tab-comment .page .page-tips {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+/*推荐列表item*/
+.recommend .media {
+    width: 183px;
+}
+.recommend .media .pic {
+    position: relative;
+    margin-bottom: 0;
+}
+.recommend .media .pic, .recommend .media .pic img {
+    width: 184px;
+    height: 124px;
+}
+.recommend .media .price {
+    width: auto;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 8px;
+}
+.recommend .media .text .name, .recommend .media .text .total {
+    color: #666;
+    height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+.recommend .media .text {
+    height: 58px;
+    font-weight: bold;
+    background-color: #f8f8f8;
+    padding: 10px 10px 0 10px;
+}
+.recommend .media .text, .recommend .media .text a {
+    color: #333;
+}
+.recommend .media .text a {
+    background: none;
+}
+.box .hd {
+    border-bottom: 0;
+}
+.box .hd h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+/*添加模块样式1*/
+/*价格决策*/
+.box-decision .box-hd {
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 18px;
+}
+.thead {
+    height: 25px;
+    line-height: 25px;
+    margin-top: 24px;
+}
+.t-hot, .t-price, .t-rose, .r-hot, .r-price, .r-amount, .house-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.thead .t-price, .thead .t-hot {
+    float: left;
+    font-weight: 700;
+    font-size: 14px;
+}
+.thead .t-rose {
+    width: 95px;
+    float: right;
+    font-weight: 700;
+    font-size: 14px;
+}
+.box-bd, .data-area .order {
+    overflow: hidden;
+}
+.data-area .order li {
+    margin-top: 16px;
+    height: 25px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 12px;
+}
+.data-area .order li a {
+    font-size: 14px;
+}
+.order {
+    margin-top: 2px;
+}
+.order .t-price, .order .t-hot, .order .t-rose {
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+}
+.thead .t-hot, .order .t-hot {
+    width: 226px;
+    padding-right: 30px;
+    float: left;
+}
+.thead .t-price, .order .t-price {
+    width: 220px;
+    float: left;
+}
+.order .t-price em {
+    font-family: "宋体";
+    font-style: normal;
+}
+.thead .t-price, .order .t-rose {
+    width: 95px;
+    float: left;
+}
+.box-decision .box-left {
+    width: 571px;
+    float: left;
+}
+.box-decision .box-right {
+    width: 571px;
+    float: right;
+}
+/*涨幅榜*/
+.box-rise {
+
+}
+.box-rise .box-hd {
+    overflow: hidden;
+}
+.box-rise .box-hd .title {
+    float: left;
+}
+.box-rise .box-hd a {
+    display: block;
+    float: right;
+    padding-top: 4px;
+    color: #888;
+}
+.data-rise {
+    margin-top: 30px;
+}
+.data-rise .rise{
+    overflow: hidden;
+}
+.data-rise .r-ranking, .data-rise .r-hot, .data-rise .r-price, .data-rise .r-amount {
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+}
+.data-rise .r-amount span {
+    color: #f44336;
+}
+.box-left .data-rise .r-amount span {
+    padding-right: 10px;
+    background: url('../images/bg-sort.png') no-repeat;
+    background-position-x: right;
+    background-position-y: 3px;
+}
+.box-left .data-rise .r-amount .on {
+    color: #49D586;
+    padding-right: 10px;
+    background: url('../images/bg-sort.png') no-repeat;
+    background-position-x: right;
+    background-position-y: -57px;
+}
+.data-rise .r-ranking {
+    width: 110px;
+}
+.data-rise .r-hot {
+    width: 145px;
+    padding-right: 30px;
+}
+.data-rise .r-price {
+    width: 189px;
+}
+.data-rise .data-order .r-price em {
+    font-family: "宋体";
+    font-style: normal;
+}
+.data-rise .r-amount {
+    text-align: right;
+    width: 70px;
+}
+.data-order {
+    clear: both;
+    margin-top: 13px;
+    overflow: hidden;
+}
+.data-order .r-amount,.box-right .data-rise .r-amount {
+    text-align: right;
+    width: 70px;
+}
+.data-order li {
+    clear: both;
+    padding: 15px 0 18px;
+    border-bottom: 1px solid #E8E8E8;
+    overflow: hidden;
+}
+.data-order li:nth-child(1) .r-ranking span {
+    background-color: #F24F45;
+}
+.data-order li:nth-child(2) .r-ranking span {
+    background-color: #FF9600;
+}
+.data-order li:nth-child(3) .r-ranking span {
+    background-color: #FCD41B;
+}
+.data-order .r-ranking span {
+    color: #fff;
+    display: block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    background-color: #B1B1B1;
+}
+/*购房早知道*/
+.row .recommend .bd {
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+.house-know-left, .house-know-right {
+    height: 122px;
+    margin-top: 20px;
+    float: left;
+    color: #575757;
+}
+.house-know-left {
+    width: 590px;
+    float: left;
+    border-right: 1px dashed #E8E8E8;
+}
+.house-know-right {
+    width: 489px;
+    margin-left: 120px;
+}
+.house-item {
+    height: 14px;
+    line-height: 14px;
+    margin-bottom: 16px;
+}
+.house-item span {
+    display: inline-block;
+    margin-right: 19px;
+    text-align: center;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    background-color: #0074C1;
+    color: #fff;
+}
+.house-item .r-span {
+    background-color: #66727A;
+    color: #fff;
+}
+/*添加模块样式1*/
+
+.box-chart {
+    padding: 35px 40px;
+    border: solid 1px #e4e4e4;
+}
+.box-chart .legend {
+    float: left;
+    margin-top: 10px;
+}
+.box-chart .advice-free {
+    float: right;
+    height: auto;
+    background-color: #fff;
+    clear: none;
+    margin-bottom: -30px;
+    position: relative;
+    z-index: 4;
+}
+.box-chart .advice-free .btn {
+    padding: 0 24px;
+}
+.box-chart .advice-free .aim, .box-chart .advice-free .ipt-area {
+    float: left;
+}
+.box-chart .advice-free .aim {
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    color: #888;
+    margin-right: 30px;
+}
+.box-chart .chart-img {
+    position: relative;
+    width: 1118px;
+    height: 345px;
+    overflow: hidden;
+}
+.box-chart .chart-img img {
+    width: 100%;
+    height: 100%;
+}
+.more {
+    float: right;
+    margin-top: 10px;
+}
+.more a {
+    font-size: 14px;
+    color: #888;
+}
+.more .ico-more {
+    margin-left: 10px;
+}
+/*输入框*/
+.box-chart .ipt {
+    width: 190px;
+}
+.recommend {
+    overflow: hidden;
+}
+.house-list {
+    width: 1218px;
+    padding-top: 22px;
+}
+.house-list .media {
+    float: left;
+    margin-right: 20px;
+}
+.house-list .media:last-child {
+    margin-right: 0;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>弹窗</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/d-dictionary.css">
+</head>
+<body>
+<div class="btn-area">
+    <a href="#" class="btn btn-primary btn-save">信息未保存提示</a>
+    <a href="#" class="btn btn-primary btn-null">字段非空提示</a>
+    <a href="#" class="btn btn-primary btn-del">删除提示</a>
+    <a href="#" class="btn btn-primary btn-sel">标签最多选择5个</a>
+</div>
+<!--当前页面信息未保存提示-->
+<div class="d-layer d-layer-wbc">
+    <div class="text">
+        <p>当前页面信息未保存，确定前往新页面？</p>
+    </div>
+    <div class="btn-area">
+        <a href="#" class="btn btn-primary">回到当前页面</a>
+        <a href="#" class="btn btn-success">前往新页面</a>
+    </div>
+</div>
+<!--字段非空项提示-->
+<div class="d-layer d-layer-btx">
+    <div class="text">
+        <p>必填字段未填写，请核查！</p>
+    </div>
+    <div class="btn-area">
+        <a href="#" class="btn btn-success">确定</a>
+    </div>
+</div>
+<!--删除提示-->
+<div class="d-layer d-layer-del">
+    <div class="text">
+        <p>是否删除</p>
+    </div>
+    <div class="btn-area">
+        <a href="#" class="btn btn-primary">取消</a>
+        <a href="#" class="btn btn-success">删除</a>
+    </div>
+</div>
+<!--选择多项提示-->
+<div class="d-layer d-layer-sel">
+    <div class="text">
+        <p>标签最多选择5个，您多选了N个</p>
+    </div>
+    <div class="btn-area">
+        <a href="#" class="btn btn-success">确定</a>
+    </div>
+</div>
+<!--删除户型提示弹层-->
+<div class="dialog dialog-del-housetype">
+    <div class="dialog-header">
+        <h2>提醒</h2>
+        <a class="dialog-close layer-close" href="#"><span class="icon icon-close"></span></a>
+    </div>
+    <div class="dialog-body">
+        <div class="txt-tips">
+            <p>本部门还有员工尚未移除</p>
+            <p>请优先更新这些员工的部门信息，然后进行删除部门操作</p>
+        </div>
+    </div>
+    <div class="dialog-footer">
+        <div class="btn-area">
+            <a class="btn btn-info btn-commit" href="#">确定</a>
+        </div>
+    </div>
+</div>
+<div class="d-fade"></div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/d-dictionary.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+.top-menu-wrap, .top-menu-banner {
+    padding-top: 20px;
+}
+.top-menu-wrap, .house-name, .detail-nav ul {
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.top-menu-wrap, .house-name, .detail-nav-six ul {
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.house-name {
+    margin-bottom: 20px;
+}
+.house-name h1, .house-name .subtitle, .house-name .house-tag {
+    float: left;
+}
+.house-name .name {
+    clear: both;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.house-name .subtitle {
+    color: #888;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.house-name .house-tag {
+    margin-top: 9px;
+}
+.house-name h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-right: 15px;
+}
+.house-name .house-tag .active {
+    border-color: #73b5e8;
+}
+.house-name .house-tag .active, .house-name .house-tag .active a {
+    color: #73b5e8;
+}
+.house-name .subtitle {
+    margin: 5px 10px 0 0;
+}
+.detail-nav {
+    clear: both;
+    height: 40px;
+    background: url("../images/bg-top-nav.png") 0 0 repeat-x;
+    overflow: hidden;
+}
+.detail-nav li {
+    float: left;
+    font-size: 16px;
+    width: 171px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.detail-nav li.first {
+    border-left: 1px solid #eaeaea;
+}
+.detail-nav li.last {
+    border-right: 1px solid #eaeaea;
+}
+.detail-nav li a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.detail-nav li.on {
+    height: 38px;
+    line-height: 38px;
+    border-top: 1px solid #0074c1;
+    border-bottom: 1px solid #0074c1;
+    background: #0074c1;
+}
+.detail-nav li.last {
+    width: 172px;
+}
+.detail-nav li.on a {
+    color: #fff;
+}
+/*6个li 样式*/
+.detail-nav-six{
+    clear: both;
+    height: 40px;
+    background: url("../images/bg-top-nav.png") 0 0 repeat-x;
+    overflow: hidden;
+}
+.detail-nav-six li{
+    float: left;
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.detail-nav-six li.first {
+    border-left: 1px solid #eaeaea;
+}
+.detail-nav-six li.last {
+    border-right: 1px solid #eaeaea;
+}
+.detail-nav-six li a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.detail-nav-six li.on {
+    height: 38px;
+    line-height: 38px;
+    border-top: 1px solid #0074c1;
+    border-bottom: 1px solid #0074c1;
+    background: #0074c1;
+}
+.detail-nav-six li.last {
+    width: 198px;
+}
+.detail-nav-six li.on a {
+    color: #fff;
+}
+/*楼盘详情页悬浮导航*/
+.top-menu-banner {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*background: rgba(255, 255, 255, 0.98);*/
+    background: #fff;
+    opacity: 0.98;
+    filter: "alpha(opacity=98)";
+    -ms-filter: "alpha(opacity=98)";
+    z-index: 5;
+}
+.top-menu-banner .detail-nav li.first {
+    border-left: 0;
+}
+.top-menu-banner .detail-nav li.last {
+    border-right: 0;
+}
+.top-menu-banner .detail-nav-six li.first {
+    border-left: 0;
+}
+.top-menu-banner .detail-nav-six li.last {
+    width: 198px;
+    border-right: 0;
+}
+.dev-price {
+    float: left;
+    color: #888;
+    line-height: 46px;
+}
+.dev-price em {
+    font-style: normal;
+    color: #e85045;
+    font-size: 22px;
+}
+.top-menu-banner .discount {
+    float: right;
+}
+.top-menu-banner .discount p {
+    float: left;
+    font-size: 16px;
+    color: #e95046;
+    font-weight: bold;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.top-menu-banner .discount .youhui {
+    max-width: 400px;
+    margin-right: 46px;
+}
+.top-menu-banner .discount .hot-phone {
+    margin-right: 20px;
+}
+.top-menu-banner .discount .btn-bm {
+    padding: 0 32px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+/*免费咨询*/
+.advice-free {
+    clear: both;
+    height: 100px;
+    background-color: #f3f3f3;
+    overflow: hidden;
+}
+.advice-free .pic {
+    float: left;
+    margin-right: 32px;
+    padding: 20px 0 0 30px;
+}
+.advice-free .pic img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.advice-free .input-area {
+    float: left;
+    margin-right: 35px;
+    padding-top: 33px;
+}
+.advice-free .input-area .ico-phone {
+    float: left;
+    margin: 8px 10px 0 0;
+}
+.advice-free .free-number {
+    float: left;
+    padding-top: 33px;
+}
+.advice-free .free-number .number {
+    height: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.advice-free .free-number .color-number {
+    color: #e85045;
+}
+.advice-free .tips {
+    display: none;
+}
+.advice-free .error-tips {
+    color: #e85045;
+}
+.advice-free .right-tips {
+    color: #0074c1;
+}
+.no-pic {
+    height: auto;
+    background: none;
+}
+/*楼盘动态*/
+.dy-item {
+    clear: both;
+    padding: 22px 0;
+    border-top: 1px dashed #ddd;
+    overflow: hidden;
+}
+.dy-list .first {
+    border-top: 0;
+}
+.dy-item .tit {
+    height: 54px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+.dy-item h4 {
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+}
+.dy-item .tit .date {
+    color: #999;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+}
+.dy-item .con p {
+    color: #666;
+    line-height: 26px;
+    overflow: hidden;
+}
+.see-more {
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #eaeaea;
+    overflow: hidden;
+}
+.see-more a {
+    display: block;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*咨询解答*/
+.col10 .box4 {
+    margin-bottom: 18px;
+}
+.info-solution .bd {
+    padding: 15px 0 22px;
+}
+.info-solution .info {
+    color: #999;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.info-solution .info p {
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+}
+.info-solution .ipt {
+    width: 116px;
+    height: 28px;
+    line-height: 28px;
+}
+.info-solution .btn-dy {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+}
+.sub-list li {
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+}
+.sub-list li .txt {
+    font-size: 12px;
+    color: #999;
+}
+.info-solution .sub-list li .ico {
+    margin-top: 6px;
+}
+/*返回首页*/
+.link-return {
+    display: block;
+    color: #0074c1;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+.link-return .ico-left {
+    margin-right: 6px;
+}
+/*查看更多*/
+.box4-ckgd .bd {
+    padding-top: 15px;
+}
+.look-more {
+    width: 258px;
+}
+.look-more li {
+    float: left;
+    text-align: center;
+    width: 108px;
+    height: 28px;
+    line-height: 27px;
+    margin: 0 19px 19px 0;
+    border: 1px solid #73b5e8;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.look-more li a {
+    font-size: 14px;
+    color: #73b5e8;
+}
+.lp-list li {
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+.lp-list li a {
+    float: left;
+    color: #666;
+    max-width: 130px;
+}
+.lp-list li .price {
+    float: right;
+    color: #666;
+    max-width: 105px;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>编辑楼盘-环境信息-编辑页</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/d-dictionary.css">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">带看记录</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--楼盘基础信息-->
+                    <div class="lpnc">
+                        <h1>华业东方玫瑰（合作）</h1>
+                    </div>
+                    <div class="d-menu">
+                        <ul>
+                            <li><a href="#">常用信息</a></li>
+                            <li><a href="#">动态信息</a></li>
+                            <li><a href="#">图片信息</a></li>
+                            <li class="on"><a href="＃">其他信息</a></li>
+                        </ul>
+                    </div>
+                    <!--基础信息-->
+                    <div class="panel d-panel-jcxx d-panel-hjxx-bj">
+                        <div class="panel-body">
+                            <!--环线信息-->
+                            <div class="d-mod-tj d-mod-hxxx">
+                                <div class="title">环线信息</div>
+                                <div class="content">
+                                    <div class="d-form-area">
+                                        <ul class="d-query">
+                                            <li>
+                                                <div class="th">环线：</div>
+                                                <div class="td">
+                                                    <input class="form-control" type="text" placeholder="2.3">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="th">距近环（km）：</div>
+                                                <div class="td">
+                                                    <input class="form-control" type="text" placeholder="4">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="th">距远环：</div>
+                                                <div class="td">
+                                                    <input class="form-control" type="text" placeholder="6">
+                                                </div>
+                                            </li>
+                                            <li class="d-ipt-remark">
+                                                <div class="th">位置描述：</div>
+                                                <div class="td">
+                                                    <textarea class="form-control"></textarea>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--周边分析-->
+                            <div class="d-mod-tj d-mod-zbfx">
+                                <div class="title">周边分析</div>
+                                <div class="content">
+                                    <div class="d-form-area">
+                                        <ul class="d-query">
+                                            <li>
+                                                <div class="th">环境空气数值：</div>
+                                                <div class="td">
+                                                    <input class="form-control" type="text" placeholder="50">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="th">环境噪音数值：</div>
+                                                <div class="td">
+                                                    <input class="form-control" type="text" placeholder="304">
+                                                </div>
+                                            </li>
+                                            <li class="d-ipt-remark">
+                                                <div class="th">周边描述：</div>
+                                                <div class="td">
+                                                    <textarea class="form-control"></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="d-ipt-remark">
+                                                <div class="th">环境现状：</div>
+                                                <div class="td">
+                                                    <textarea class="form-control"></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="d-ipt-remark">
+                                                <div class="th">环境不利因素：</div>
+                                                <div class="td">
+                                                    <textarea class="form-control"></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="d-ipt-remark">
+                                                <div class="th">环境规划描述：</div>
+                                                <div class="td">
+                                                    <textarea class="form-control"></textarea>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--位置信息-->
+                            <div class="d-mod-tj d-mod-wzxx">
+                                <div class="title">位置信息</span></div>
+                                <div class="content">
+                                    <div class="d-mod-wz d-mod-lpwz">
+                                        <div class="th">楼盘位置</div>
+                                        <div class="pic">
+                                            <a href="#"><img src="../images/d-dictionary/img-01.jpg" alt=""></a></div>
+                                        <div class="text">
+                                            <div class="ipt-area">
+                                                <span class="d-mod-lb">经度：</span>
+                                                <input type="text" class="d-wz-ipt" placeholder="121.396646">
+                                            </div>
+                                            <div class="ipt-area">
+                                                <span class="d-mod-lb">纬度：</span>
+                                                <input type="text" class="d-wz-ipt" placeholder="31.313068">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-mod-wz d-mod-lpwz">
+                                        <div class="th">售楼处位置</div>
+                                        <div class="pic">
+                                            <a href="#"><img src="../images/d-dictionary/img-01.jpg" alt=""></a></div>
+                                        <div class="text">
+                                            <div class="ipt-area">
+                                                <span class="d-mod-lb">经度：</span>
+                                                <input type="text" class="d-wz-ipt" placeholder="121.396646">
+                                            </div>
+                                            <div class="ipt-area">
+                                                <span class="d-mod-lb">纬度：</span>
+                                                <input type="text" class="d-wz-ipt" placeholder="31.313068">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-area">
+                                <a href="bjlp-hj-zs.html" class="btn btn-return">返回</a>
+                                <a href="#" class="btn btn-save">保存</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/d-dictionary.js"></script>
+</body>
+</html>

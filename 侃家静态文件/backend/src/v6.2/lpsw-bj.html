@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>楼盘商务信息-编辑</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">商务信息列表页</li>
+                        <li class="active">楼盘商务详情页</li>
+                        <li class="active">编辑楼盘商务信息</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="s2">
+                    <div class="panel">
+                        <div class="panel-body lpsw-bj">
+                            <!--基本信息-->
+                            <div class="v-box">
+                                <div class="hd">
+                                    <h2>广州  保利罗兰国际（住宅）</h2>
+                                </div>
+                                <div class="bd">
+                                    <ul class="lpbj-z">
+                                        <li>
+                                            <div class="j-ipt-area">
+                                                <label class="j-label">楼盘对接人</label>
+                                                <div class="j-ipt-wrap">
+                                                    <input type="text" class="j-ipt">
+                                                    <span class="ico"></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="j-ipt-area">
+                                                <label class="j-label">联系方式</label>
+                                                <div class="j-ipt-wrap">
+                                                    <input type="text" class="j-ipt">
+                                                    <span class="ico"></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="j-ipt-area">
+                                                <label class="j-label">合作类型</label>
+                                                <div class="j-ipt-wrap">
+                                                    <div class="j-select">
+                                                        <input type="text" class="content" placeholder="请选择">
+                                                        <ul class="option" style="display: none;">
+                                                            <li>1</li>
+                                                            <li>2</li>
+                                                        </ul>
+                                                        <span class="ico"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="j-ipt-area">
+                                                <label class="j-label">合作方名称</label>
+                                                <div class="j-ipt-wrap">
+                                                    <div class="j-select">
+                                                        <input type="text" class="content" placeholder="请选择">
+                                                        <ul class="option" style="display: none;">
+                                                            <li>1</li>
+                                                            <li>2</li>
+                                                        </ul>
+                                                        <span class="ico"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="j-ipt-area">
+                                                <label class="j-label">是否外联</label>
+                                                <div class="j-ipt-wrap">
+                                                    <div class="j-select">
+                                                        <input type="text" class="content" placeholder="请选择">
+                                                        <ul class="option" style="display: none;">
+                                                            <li>1</li>
+                                                            <li>2</li>
+                                                        </ul>
+                                                        <span class="ico"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-seek">
+                                                <a href="#" class="link link-ckht"><span class="ico icon-seek"></span>查看合同详情</a>
+                                            </div>
+                                        </li>
+                                        <li class="all-table-c">
+                                            <div class="tw-table-c">
+                                                <div class="j-ipt-area">
+                                                    <label class="j-label">合作周期</label>
+                                                    <div class="hzzq-l">
+                                                        <div class="j-ipt-wrap">
+                                                            <div class="j-select">
+                                                                <input type="text" class="content" placeholder="请选择">
+                                                                <ul class="option" style="display: none;">
+                                                                    <li>1</li>
+                                                                    <li>2</li>
+                                                                </ul>
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="span-gd"></span>
+                                                    <div class="hzzq-r">
+                                                        <div class="j-ipt-wrap">
+                                                            <div class="j-select">
+                                                                <input type="text" class="content" placeholder="请选择">
+                                                                <ul class="option" style="display: none;">
+                                                                    <li>1</li>
+                                                                    <li>2</li>
+                                                                </ul>
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn-area hzzq-del">
+                                                        <button class="j-btn j-btn-red">删除</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="btn-area lp-add-zd">
+                                        <button class="j-btn j-btn-green">+添加合作时间</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--带看信息-->
+                            <div class="v-box">
+                                <div class="hd">
+                                    <h2>带看信息</h2>
+                                </div>
+                                <div class="bd">
+                                    <ul class="lpbj-z">
+                                        <li>
+                                            <div class="j-ipt-area">
+                                                <label class="j-label">是否可以带看</label>
+                                                <div class="j-ipt-wrap">
+                                                    <div class="j-select">
+                                                        <input type="text" class="content" placeholder="请选择">
+                                                        <ul class="option" style="display: none;">
+                                                            <li>是</li>
+                                                            <li>否</li>
+                                                        </ul>
+                                                        <span class="ico"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="tw-table-c">
+                                            <div class="j-ipt-area">
+                                                <label class="j-label">近期可带看时间</label>
+                                                <div class="hzzq-l">
+                                                    <div class="j-ipt-wrap">
+                                                        <div class="j-select">
+                                                            <input type="text" class="content" placeholder="请选择">
+                                                            <ul class="option" style="display: none;">
+                                                                <li>1</li>
+                                                                <li>2</li>
+                                                            </ul>
+                                                            <span class="ico"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="span-gd"></span>
+                                                <div class="hzzq-r">
+                                                    <div class="j-ipt-wrap">
+                                                        <div class="j-select">
+                                                            <input type="text" class="content" placeholder="请选择">
+                                                            <ul class="option" style="display: none;">
+                                                                <li>1</li>
+                                                                <li>2</li>
+                                                            </ul>
+                                                            <span class="ico"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="tw-table-c">
+                                            <div class="j-ipt-area">
+                                                <label class="j-label">带看备注</label>
+                                                <div class="j-ipt-wrap">
+                                                    <textarea class="j-ipt" placeholder="请输入内容"></textarea>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="tw-table-c">
+                                            <div class="j-ipt-area">
+                                                <label class="j-label">可售房源说明</label>
+                                                <div class="j-ipt-wrap">
+                                                    <textarea class="j-ipt" placeholder="请输入内容"></textarea>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--带看流程-->
+                            <div class="v-box">
+                                <div class="hd">
+                                    <h2>带看流程</h2>
+                                </div>
+                                <div class="bd">
+                                    <!--报备信息-->
+                                    <div class="v-box-t">
+                                        <div class="hd">
+                                            <h2>报备信息</h2>
+                                        </div>
+                                        <div class="bd">
+                                            <ul class="lpbj-z">
+                                                <li class="tw-table-c">
+                                                    <div class="bbsj-l">
+                                                        <div class="j-ipt-area">
+                                                            <label class="j-label">报备时间</label>
+                                                            <div class="j-ipt-wrap">
+                                                                <input type="text" class="j-ipt" placeholder="请输入内容">
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bbsj-r">
+                                                        <div class="j-ipt-area">
+                                                            <div class="j-ipt-wrap">
+                                                                <div class="j-radio checked">
+                                                                    <span class="ico"></span>
+                                                                    <span class="txt">分支</span>
+                                                                </div>
+                                                                <div class="j-radio">
+                                                                    <span class="ico"></span>
+                                                                    <span class="txt">小时</span>
+                                                                </div>
+                                                                <div class="j-radio">
+                                                                    <span class="ico"></span>
+                                                                    <span class="txt">天</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="j-ipt-area">
+                                                        <label class="j-label">复访是否报备</label>
+                                                        <div class="j-ipt-wrap">
+                                                            <div class="j-select">
+                                                                <input type="text" class="content" placeholder="请选择">
+                                                                <ul class="option" style="display: none;">
+                                                                    <li>是</li>
+                                                                    <li>否</li>
+                                                                </ul>
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="j-ipt-area">
+                                                        <label class="j-label">报备方式</label>
+                                                        <div class="j-ipt-wrap">
+                                                            <div class="j-select">
+                                                                <input type="text" class="content" placeholder="请选择">
+                                                                <ul class="option" style="display: none;">
+                                                                    <li>是</li>
+                                                                    <li>否</li>
+                                                                </ul>
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="j-ipt-area">
+                                                        <label class="j-label">需要咨询师给合作方报备</label>
+                                                        <div class="j-ipt-wrap">
+                                                            <div class="j-select">
+                                                                <input type="text" class="content" placeholder="请选择">
+                                                                <ul class="option" style="display: none;">
+                                                                    <li>是</li>
+                                                                    <li>否</li>
+                                                                </ul>
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--模版内容-->
+                                    <div class="v-box-t mbnr">
+                                        <div class="hd">
+                                            <h2>模版内容</h2>
+                                        </div>
+                                        <div class="bd lpsw-mb-cont">
+                                            <ul class="tpl-tit tpl-tit-lpsw">
+                                                <li>类型</li>
+                                                <li>字段名称</li>
+                                                <li>预设信息</li>
+                                                <li>操作</li>
+                                            </ul>
+                                            <ul class="tpl-con tpl-con-edit" id="tpl-edit">
+                                                <li>
+                                                    <div class="tpl-item">项目</div>
+                                                    <div class="tpl-item">
+                                                        <div class="ipl-itme-inp">
+                                                            <div class="j-ipt-area">
+                                                                <div class="j-ipt-wrap">
+                                                                    <input type="text" class="j-ipt" value="项目名称">
+                                                                    <span class="ico"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tpl-item">
+                                                        <div class="ipl-itme-inp">
+                                                            <div class="j-ipt-area">
+                                                                <div class="j-ipt-wrap">
+                                                                    <input type="text" class="j-ipt" value="项目名称">
+                                                                    <span class="ico"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tpl-item">
+                                                        <div class="tpl-opt">
+                                                            <div class="move">
+                                                                <span class="icon icon-caidan"></span>
+                                                            </div>
+                                                            <button class="btn-remove">移除</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="custom-field">
+                                                    <div class="tpl-item">自定义字段</div>
+                                                    <div class="tpl-item">
+                                                        <div class="ipl-itme-inp">
+                                                            <div class="j-ipt-area">
+                                                                <div class="j-ipt-wrap">
+                                                                    <input type="text" class="j-ipt" value="客户姓名">
+                                                                    <span class="ico"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tpl-item"></div>
+                                                    <div class="tpl-item">
+                                                        <div class="tpl-opt">
+                                                            <div class="move">
+                                                                <span class="icon icon-caidan"></span>
+                                                            </div>
+                                                            <button class="btn-remove">移除</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="tpl-item">客户姓名</div>
+                                                    <div class="tpl-item">
+                                                        <div class="ipl-itme-inp">
+                                                            <div class="j-ipt-area">
+                                                                <div class="j-ipt-wrap">
+                                                                    <input type="text" class="j-ipt" value="客户姓名">
+                                                                    <span class="ico"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tpl-item">
+                                                        <div class="j-ipt-area in-line">
+                                                            <div class="j-ipt-wrap">
+                                                                <div class="j-radio checked">
+                                                                    <span class="ico"></span>
+                                                                    <span class="txt">前3</span>
+                                                                </div>
+                                                                <div class="j-radio">
+                                                                    <span class="ico"></span>
+                                                                    <span class="txt">后4</span>
+                                                                </div>
+                                                                <div class="j-radio">
+                                                                    <span class="ico"></span>
+                                                                    <span class="txt">全号码</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tpl-item">
+                                                        <div class="tpl-opt">
+                                                            <div class="move">
+                                                                <span class="icon icon-caidan"></span>
+                                                            </div>
+                                                            <button class="btn-remove-cur">移除</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="tpl-item">客户电话</div>
+                                                    <div class="tpl-item">
+                                                        <div class="ipl-itme-inp">
+                                                            <div class="j-ipt-area">
+                                                                <div class="j-ipt-wrap">
+                                                                    <input type="text" class="j-ipt" value="渠道公司">
+                                                                    <span class="ico"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tpl-item">
+                                                        <div class="ipl-itme-inp">
+                                                            <div class="j-ipt-area">
+                                                                <div class="j-ipt-wrap">
+                                                                    <input type="text" class="j-ipt" value="居理新房">
+                                                                    <span class="ico"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tpl-item">
+                                                            <div class="tpl-opt">
+                                                                <div class="move">
+                                                                    <span class="icon icon-caidan"></span>
+                                                                </div>
+                                                                <button class="btn-remove-cur">移除</button>
+                                                            </div>
+                                                        </div>
+                                                </li>
+                                                <li>
+                                                    <div class="tpl-item">咨询师姓名</div>
+                                                    <div class="tpl-item">
+                                                        <div class="ipl-itme-inp">
+                                                            <div class="j-ipt-area">
+                                                                <div class="j-ipt-wrap">
+                                                                    <input type="text" class="j-ipt" value="渠道经纪人">
+                                                                    <span class="ico"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tpl-item">
+                                                    </div>
+                                                    <div class="tpl-item">
+                                                        <div class="tpl-opt">
+                                                            <div class="move">
+                                                                <span class="icon icon-caidan"></span>
+                                                            </div>
+                                                            <button class="btn-remove-cur">移除</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="tpl-item">咨询师电话</div>
+                                                    <div class="tpl-item">
+                                                        <div class="ipl-itme-inp">
+                                                            <div class="j-ipt-area">
+                                                                <div class="j-ipt-wrap">
+                                                                    <input type="text" class="j-ipt" value="经纪人电话">
+                                                                    <span class="ico"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tpl-item">
+                                                    </div>
+                                                    <div class="tpl-item">
+                                                        <div class="tpl-opt">
+                                                            <div class="move">
+                                                                <span class="icon icon-caidan"></span>
+                                                            </div>
+                                                            <button class="btn-remove-cur">移除</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="tpl-item">到访时间</div>
+                                                    <div class="tpl-item">
+                                                        <div class="ipl-itme-inp">
+                                                            <div class="j-ipt-area">
+                                                                <div class="j-ipt-wrap">
+                                                                    <input type="text" class="j-ipt" value="到访时间">
+                                                                    <span class="ico"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tpl-item">
+                                                    </div>
+                                                    <div class="tpl-item">
+                                                        <div class="tpl-opt">
+                                                            <div class="move">
+                                                                <span class="icon icon-caidan"></span>
+                                                            </div>
+                                                            <button class="btn-remove-cur">移除</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="btn-area lp-add-zd">
+                                                <button class="j-btn j-btn-green">+添加自定义字段</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--案场规则-->
+                                    <div class="v-box-t">
+                                        <div class="hd">
+                                            <h2>案场规则</h2>
+                                        </div>
+                                        <div class="v-box-s">
+                                            <div class="hd">
+                                                <h2>案场登记规则</h2>
+                                            </div>
+                                            <div class="bd">
+                                                <ul class="acgz-con">
+                                                    <li>
+                                                        <div class="j-ipt-area">
+                                                            <label class="j-label">是否需要登记</label>
+                                                            <div class="j-ipt-wrap">
+                                                                <div class="j-select">
+                                                                    <input type="text" class="content" placeholder="请选择">
+                                                                    <ul class="option" style="display: none;">
+                                                                        <li>需要</li>
+                                                                        <li>否</li>
+                                                                    </ul>
+                                                                    <span class="ico"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="j-ipt-area">
+                                                            <label class="j-label">谁来登记来访信息</label>
+                                                            <div class="j-ipt-wrap">
+                                                                <input type="text" class="j-ipt">
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="j-ipt-area">
+                                                            <label class="j-label">在哪登记来访信息</label>
+                                                            <div class="j-ipt-wrap">
+                                                                <input type="text" class="j-ipt">
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="j-ipt-area">
+                                                            <label class="j-label">是否登记客户电话全号</label>
+                                                            <div class="j-ipt-wrap">
+                                                                <div class="j-select">
+                                                                    <input type="text" class="content" placeholder="请选择">
+                                                                    <ul class="option" style="display: none;">
+                                                                        <li>需要</li>
+                                                                        <li>否</li>
+                                                                    </ul>
+                                                                    <span class="ico"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="v-box-s">
+                                            <div class="hd">
+                                                <h2>确认单填写规则</h2>
+                                            </div>
+                                            <div class="bd">
+                                                <ul class="acgz-con">
+                                                    <li>
+                                                        <div class="j-ipt-area">
+                                                            <label class="j-label">有无确认单</label>
+                                                            <div class="j-ipt-wrap">
+                                                                <div class="j-select">
+                                                                    <input type="text" class="content" placeholder="请选择">
+                                                                    <ul class="option" style="display: none;">
+                                                                        <li>有</li>
+                                                                        <li>没有</li>
+                                                                    </ul>
+                                                                    <span class="ico"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="j-ipt-area">
+                                                            <label class="j-label">从哪拿确认单</label>
+                                                            <div class="j-ipt-wrap">
+                                                                <input type="text" class="j-ipt">
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="j-ipt-area">
+                                                            <label class="j-label">谁填写确认单</label>
+                                                            <div class="j-ipt-wrap">
+                                                                <input type="text" class="j-ipt">
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="j-ipt-area">
+                                                            <label class="j-label">需要谁签字</label>
+                                                            <div class="j-ipt-wrap">
+                                                                <input type="text" class="j-ipt">
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="j-ipt-area">
+                                                            <label class="j-label">填写哪些内容</label>
+                                                            <div class="j-ipt-wrap">
+                                                                <input type="text" class="j-ipt">
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="j-ipt-area">
+                                                            <label class="j-label">是否拍照留存</label>
+                                                            <div class="j-ipt-wrap">
+                                                                <input type="text" class="j-ipt">
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="j-ipt-area">
+                                                            <label class="j-label">填完交给谁</label>
+                                                            <div class="j-ipt-wrap">
+                                                                <input type="text" class="j-ipt">
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--客户判定-->
+                            <div class="v-box">
+                                <div class="hd">
+                                    <h2>客户判定</h2>
+                                </div>
+                                <div class="bd">
+                                    <!--渠道侧-->
+                                    <div class="v-box-t">
+                                        <div class="hd">
+                                            <h2>渠道侧</h2>
+                                        </div>
+                                        <div class="bd">
+                                            <ul class="lpbj-z lpbj-pd">
+                                                <li>
+                                                    <div class="j-ipt-area">
+                                                        <label class="j-label">报备保存期</label>
+                                                        <div class="j-ipt-wrap">
+                                                            <div class="j-select">
+                                                                <input type="text" class="content" placeholder="请选择">
+                                                                <ul class="option" style="display: none;">
+                                                                    <li>1</li>
+                                                                    <li>2</li>
+                                                                </ul>
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="j-ipt-area">
+                                                        <label class="j-label">首访保护期</label>
+                                                        <div class="j-ipt-wrap">
+                                                            <div class="j-select">
+                                                                <input type="text" class="content" placeholder="请选择">
+                                                                <ul class="option" style="display: none;">
+                                                                    <li>1</li>
+                                                                    <li>2</li>
+                                                                </ul>
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="j-ipt-area">
+                                                        <label class="j-label">复访保护期</label>
+                                                        <div class="j-ipt-wrap">
+                                                            <div class="j-select">
+                                                                <input type="text" class="content" placeholder="请选择">
+                                                                <ul class="option" style="display: none;">
+                                                                    <li>1</li>
+                                                                    <li>2</li>
+                                                                </ul>
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--开放商测-->
+                                    <div class="v-box-t">
+                                        <div class="hd">
+                                            <h2>开放商测</h2>
+                                        </div>
+                                        <div class="bd">
+                                            <ul class="lpbj-z lpbj-pd">
+                                                <li>
+                                                    <div class="j-ipt-area">
+                                                        <label class="j-label">来电保存期</label>
+                                                        <div class="j-ipt-wrap">
+                                                            <div class="j-select">
+                                                                <input type="text" class="content" placeholder="请选择">
+                                                                <ul class="option" style="display: none;">
+                                                                    <li>1</li>
+                                                                    <li>2</li>
+                                                                </ul>
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="j-ipt-area">
+                                                        <label class="j-label">客户保护期</label>
+                                                        <div class="j-ipt-wrap">
+                                                            <div class="j-select">
+                                                                <input type="text" class="content" placeholder="请选择">
+                                                                <ul class="option" style="display: none;">
+                                                                    <li>1</li>
+                                                                    <li>2</li>
+                                                                </ul>
+                                                                <span class="ico"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--撞单判定原则／有无老带新制度-->
+                                    <div class="v-box-inp">
+                                        <div class="v-box-inp-contl">
+                                            <div class="hd">
+                                                <h2>撞单判定原则</h2>
+                                            </div>
+                                            <div class="bd">
+                                                <div class="j-ipt-area">
+                                                    <div class="j-ipt-wrap">
+                                                        <textarea class="j-ipt" placeholder="请输入内容"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="v-box-inp">
+                                        <div class="v-box-inp-contr">
+                                            <div class="hd">
+                                                <h2>有无老带新制度</h2>
+                                            </div>
+                                            <div class="bd">
+                                                <div class="j-ipt-area">
+                                                    <div class="j-ipt-wrap">
+                                                        <textarea class="j-ipt" placeholder="请输入内容"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--案场其他要求-->
+                            <div class="v-box">
+                                <div class="hd">
+                                    <h2>案场其他要求</h2>
+                                </div>
+                                <div class="bd">
+                                    <!--输入框-->
+                                    <div class="inp-qt">
+                                        <div class="j-ipt-area">
+                                            <div class="j-ipt-wrap">
+                                                <textarea class="j-ipt" placeholder="请输入内容"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/Sortable.min.js"></script>
+<script src="../js/iconfont.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/v5.2.js"></script>
+<script src="../js/report.js"></script>
+</body>
+</html>

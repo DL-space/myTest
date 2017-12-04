@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="wap-font-scale" content="no">
+    <title>弹窗</title>
+    <script src="../js/flexible.js"></script>
+    <link rel="stylesheet" href="../css/module-new.css">
+    <link rel="stylesheet" href="../css/ask.css">
+</head>
+<body>
+    <button class="btn btn-wyww btn-find">我要问问</button>
+    <button class="btn btn-xttw btn-find">向他提问</button>
+    <button class="btn btn-twcg btn-find">提问成功</button>
+    <!--我要问问-->
+    <div class="dialog-go-ask">
+        <div class="dialog dialog-ask">
+            <div class="dialog-bd">
+                <textarea class="dialog-text" placeholder="在此输入你的问题（非必填）"></textarea>
+                <input class="ipt" type="text" maxlength="11" placeholder="输入手机号预约咨询" />
+
+                <div class="error-tips"><span>请输入正确的手机号码</span></div>
+                <div class="btn-area">
+                    <button class="btn btn-find btn-commit" disabled>我要问问</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--向他提问-->
+    <div class="dialog-ask-for">
+        <div class="dialog dialog-ask">
+            <div class="dialog-bd">
+                <textarea class="dialog-text" placeholder="在此输入你的问题（非必填）"></textarea>
+                <input class="ipt" type="text" maxlength="11" placeholder="输入手机号预约咨询" />
+
+                <div class="error-tips"><span>请输入正确的手机号码</span></div>
+                <div class="btn-area">
+                    <button class="btn btn-find" disabled>向王宝强提问</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--提问成功-->
+    <div class="dialog-ask-success">
+        <div class="dialog3 dialog-success1">
+            <div class="dialog-body">
+                <div class="app-tips">
+                    <span class="ico-success"></span>
+                    <p class="title">问题提交成功！</p>
+                    <p class="msg">
+                        居理正在努力帮你召唤咨询师王宝强居理正在努力帮你召唤咨询师王宝强
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </p>
+                    <div class="look-house">
+                        <p class="look-house-msg">您还可以填写需求，让咨询师提前为您准备</p>
+                        <div class="tr">
+                            <div class="input-area">
+                                <span class="ico-triangle"></span>
+                                <div class="ipt">您购房总价预算</div>
+                                <ul class="dropdown-list">
+                                    <li>500万</li>
+                                    <li>1000万</li>
+                                    <li>1500万</li>
+                                    <li>2000万</li>
+                                    <li>2500万</li>
+                                    <li>3000万</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="input-area">
+                                <span class="ico-triangle"></span>
+                                <div class="ipt">您购房的目标区域</div>
+                                <ul class="dropdown-list">
+                                    <li>朝阳区</li>
+                                    <li>通州区</li>
+                                    <li>东城区</li>
+                                    <li>西城区</li>
+                                    <li>海淀区</li>
+                                    <li>怀柔区</li>
+                                    <li>大兴区</li>
+                                    <li>房山区</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <button class="btn dialog-btn-commit">提 交</button>
+                    </div>
+                    <div class="close-dialog">
+                        <a href="#"></a>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/lib/jquery-2.1.4.min.js"></script>
+    <script src="../js/lib/layer/layer.js"></script>
+    <script src="../js/ask.js"></script>
+    <script>
+        $(function() {
+            $(".btn-wyww").click(function() {
+                showDialog(1, $(".dialog-go-ask").html(), aa);
+            });
+
+            $(".btn-xttw").click(function() {
+                showDialog(1, $(".dialog-ask-for").html(), aa);
+            });
+
+            $(".btn-twcg").click(function() {
+                showDialog(1, $(".dialog-ask-success").html(), selectMoreCondition);
+            });
+        });
+
+        function aa() {
+            $(document).on("click", ".layui-layer .btn", function() {
+                closeDialog();
+            });
+            $(".layui-layer .btn-find").click(function() {
+                showDialog(1, $(".dialog-ask-success").html(), selectMoreCondition);
+            })
+        }
+    </script>
+</body>
+</html>

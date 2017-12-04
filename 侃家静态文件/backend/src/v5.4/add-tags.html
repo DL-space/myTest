@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>新增标签</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">变更通知记录</a></li>
+                        <li><a href="#">新增变更通知</a></li>
+                        <li class="active">新增类别</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--基础信息-->
+                    <div class="panel">
+                        <div class="panel-body">
+                            <!--检索区域-->
+                            <div class="d-mod-tj d-mod-new-tag">
+                                <div class="content">
+                                    <div class="d-form-area">
+                                        <ul class="c-query">
+                                            <li class="c-ext">
+                                                <div class="th">类别编号：</div>
+                                                <div class="td">
+                                                    <p class="txt">8</p>
+
+                                                    <div class="ext ext-notice">目前最新的通知类别编号</div>
+                                                </div>
+                                            </li>
+                                            <li class="c-ext">
+                                                <div class="th">类别名称：</div>
+                                                <div class="td">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <a href="#" class="btn btn-primary">创建</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/d-dictionary.js"></script>
+</body>
+</html>

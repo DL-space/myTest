@@ -1,0 +1,3276 @@
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0
+}
+body, button, input, select, textarea {
+    font-size: 12px;
+    font-family: "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", SimHei, Tahoma, "宋体b8b体", SimSun, sans-serif;
+    color: #333;
+    background: #fff
+}
+ul, ol, li {
+    list-style: none
+}
+img {
+    vertical-align: top;
+    border: 0
+}
+a {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: underline
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+table td {
+    padding: 0;
+    margin: 0
+}
+table th.wztop {
+    vertical-align: top
+}
+.clearfix {
+    *zoom: 1
+}
+.clearfix:after {
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    content: "."
+}
+input, button, select, textarea {
+    outline: 0
+}
+textarea {
+    resize: none
+}
+.fl {
+    float: left
+}
+.fr {
+    float: right
+}
+section, article, aside, header, footer, nav, dialog, figure {
+    display: block;
+    padding: 0;
+    margin: 0
+}
+html, body {
+    height: 100%
+}
+.none, .small-eye::-ms-reveal, .small-eye2::-ms-clear {
+    display: none;
+}
+.header {
+    background: #fff;
+}
+.header .inn, .header2-wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header .inn {
+    height: 40px;
+    line-height: 40px;
+    padding: 8px 0;
+}
+.header2-wrap {
+    height: 40px;
+    line-height: 40px;
+    padding: 8px 0;
+}
+.header2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #edeff1;
+    z-index: 15;
+}
+.header .logo, .header .logo img {
+    width: 72px;
+    height: 40px;
+    overflow: hidden;
+}
+.header .logo {
+    float: left;
+    margin-right: 30px;
+}
+.city-tip {
+    position: relative;
+}
+.city-change-list {
+    display: none;
+    position: absolute;
+    top: 32px;
+    left: -30px;
+    font-family: "SimHei";
+    width: 166px;
+    z-index: 13;
+}
+.city-change-list .top {
+    width: 158px;
+    height: 10px;
+    background: url('../images/city-tip-pop.png') 0 0 no-repeat;
+    overflow: hidden;
+}
+.city-list {
+    width: 156px;
+    padding: 6px 0 8px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: 0;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.city-list li {
+    font-size: 14px;
+    height: 35px;
+    line-height: 36px;
+    overflow: hidden;
+}
+.city-list li.tit, .city-list li a, .city-list li.tips {
+    padding-left: 20px;
+}
+.city-list li.tit, .city-list li.tips {
+    color: #888;
+}
+.city-list li.tips {
+    font-size: 12px;
+}
+.city-list li a {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+.city-list li a:hover {
+    color: #0074c1;
+}
+.header .city-position {
+    float: left;
+    cursor: pointer;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 13px;
+    background: #f2f2f2;
+    border-radius: 20px;
+    padding-right: 13px;
+    margin: 3px 30px 0 0;
+}
+.city-position .ico-city {
+    float: left;
+    margin: 8px 8px 0 0;
+}
+.city-position span.text {
+    font-size: 14px;
+    color: #0074c1;
+}
+.online-ask {
+    float: left;
+    cursor: pointer;
+    text-align: right;
+    margin-right: 18px;
+    color: #0074c1;
+    opacity: 0.8;
+}
+.online-ask:hover {
+    opacity: 1;
+}
+.online-ask .ico-server {
+    float: left;
+    margin: 13px 8px 0 0;
+}
+.menu {
+    float: left;
+    font-size: 16px;
+}
+.menu li {
+    float: left;
+    margin-right: 20px;
+}
+.menu li a:hover {
+    text-decoration: none;
+    color: #0075c1;
+}
+.hot-phone {
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: #e85045;
+    margin-right: 40px;
+}
+.header .user-set {
+    float: left;
+}
+.header .user-set .user-phone, .header .user-set .exit {
+    float: left;
+    margin-right: 5px;
+}
+.user-phone .ico-user {
+    float: left;
+    margin: 10px 5px 0 0;
+}
+.header .user-set .user-option a {
+    margin-right: 3px;
+}
+.user-option .ico-user {
+    float: left;
+    margin: 10px 6px 0 0;
+}
+.header2 .menu {
+    padding: 0 10px;
+}
+.header2 .search {
+    float: left;
+    margin: 5px 20px 0 0;
+}
+.header2 .search .ipt {
+    width: 180px;
+    height: 28px;
+    line-height: 28px;
+}
+.header2 .search .btn{
+    height: 30px;
+    line-height: 30px;
+}
+.header2 .hot-phone {
+    margin-right: 20px;
+}
+.header2 .btn-reg {
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+.header2 .disabled, .header2 .disabled:hover {
+    color: #fff;
+    cursor: default;
+    background: #999;
+}
+.header2 .online-ask .ico-server {
+    margin-top: 12px;
+}
+.header2 .search .ico-search {
+    float: left;
+    margin: 8px 6px 0 0;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-width: 1200px;
+    background: #2a2a2a url("../images/bg-footer.png") bottom center no-repeat;
+}
+.footer .inn{
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.f-nav,.f-link{
+    border-bottom: 1px solid #393939;
+    overflow: hidden;
+}
+.f-link .fr{
+    padding-left: 20px;
+}
+.footer-hot{
+    overflow: hidden;
+}
+.footer .original-copy-right{
+    width: 25%;
+    height: 24px;
+    line-height: 24px;
+    text-align: right;
+    color: #fff;
+    margin: 0;
+    float:right;
+}
+.footer .original-copy-left{
+    width: 73%;
+    float:left;
+    color: #575757;
+}
+.f-nav{
+    height: 86px;
+}
+.f-nav .comjia-about{
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 31px;
+}
+.f-nav .comjia-about a{
+    color: #fff;
+    font-size: 14px;
+    margin-right: 25px;
+}
+.service-online{
+    float: right;
+    margin-top: 25px;
+}
+.service-online li{
+    float: left;
+    height: 36px;
+}
+.service-online li a{
+    display: block;
+    text-indent: -9999px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.service-online li.hot-line{
+    line-height: 36px;
+    font-size: 22px;
+    color:#68acfc;
+    text-indent: 0;
+    margin-right: 25px;
+    overflow: visible;
+}
+.service-online li.call-free,.service-online li.comjia-wb{
+    width: 36px;
+    background: url("../images/bg-public.png") 0 0 no-repeat;
+}
+.service-online li.call-free{
+    margin-right: 18px;
+}
+.service-online li.comjia-wb{
+    background-position: -54px 0;
+}
+.f-link{
+    padding: 10px 0;
+}
+.f-link .fl{
+    padding-top: 20px;
+}
+.text-link{
+    display: inline-block;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 8px;
+    margin-bottom: 36px;
+    background: #393939;
+}
+.comjia-wx,.comjia-wx img{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.flink li{
+    float: left;
+    height: 36px;
+    margin-right: 24px;
+}
+.copyright{
+    padding-top: 5px;
+}
+.copyright p,.copyright p a{
+    color: #999;
+}
+.copyright p{
+    height: 22px;
+    line-height: 22px;
+}
+/*tab切换*/
+.tab-hot{
+    clear: both;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.tab-hot .tab-t li{
+    float: left;
+    color: #999;
+    padding: 8px 10px;
+    margin-right: 12px;
+    background: #121212;
+}
+.tab-hot .tab-t li.hover,.tab-hot .tab-t li.on{
+    color: #fff;
+    background: #3d3d3d;
+}
+.tab-hot .tab-c{
+    padding-top: 10px;
+}
+.link-hot span{
+    color: #999;
+}
+.link-hot li,.f-flink li{
+    float: left;
+    color: #999;
+    white-space: nowrap;
+    line-height: 28px;
+    margin: 0 8px 0 0;
+}
+.link-hot li a,.f-flink li a{
+    color: #999;
+}
+.f-flink {
+    clear: both;
+    overflow: hidden;
+}
+/*友情链接*/
+.flink2{
+    padding-top: 10px;
+}
+.flink2,.flink2 a{
+    color:#575757;
+}
+.flink2 li{
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.btn, .btn2 {
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 12px;
+    border: 0;
+}
+.btn {
+    background: #e85045;
+    border-radius: 0 2px 2px 0;
+    overflow: hidden;
+}
+.btn:hover {
+    text-decoration: none;
+    background-color: #f3574b;
+}
+.btn2 {
+    border-radius: 2px;
+    background-color: #6dafdc;
+}
+.btn2:hover {
+    text-decoration: none;
+    background-color: #7ab9e4;
+}
+.ico {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    width: 16px;
+    height: 18px;
+    background: url("../images/bg-icon.png") 0 0 no-repeat;
+    overflow: hidden;
+}
+.ico-pos, .ico-area, .ico-area-on, .ico-subway, .ico-subway-on {
+    width: 14px;
+    height: 16px;
+}
+.ico-pos {
+    background-position: 0 -40px;
+}
+.ico-server {
+    width: 22px;
+    height: 18px;
+    background-position: 0 -80px;
+}
+.ico-user {
+    width: 20px;
+    height: 20px;
+    background-position: 0 -120px;
+}
+.ico-area {
+    background-position: -40px -200px;
+}
+.ico-area-on {
+    background-position: 0 -200px;
+}
+.ico-subway {
+    background-position: -40px -240px;
+}
+.ico-subway-on {
+    background-position: 0 -240px;
+}
+.ico-ring, .ico-ring-on {
+    width: 14px;
+    height: 18px;
+}
+.ico-ring {
+    background-position: -40px -280px;
+}
+.ico-ring-on {
+    background-position: 0 -280px;
+}
+.ico-search {
+    width: 18px;
+    height: 18px;
+    background-position: 0 -160px;
+}
+.ico-crumb {
+    width: 12px;
+    height: 14px;
+    background-position: 0 -520px;
+}
+.ico-del {
+    cursor: pointer;
+    width: 20px;
+    height: 18px;
+    background-position: 0 -320px;
+}
+.ico-del2 {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-position: -40px -320px;
+}
+.ico-clear {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background-position: 0 -360px;
+}
+.ico-show, .ico-hide {
+    width: 16px;
+    height: 8px;
+}
+.ico-show {
+    background-position: 0 -400px;
+}
+.ico-hide {
+    background-position: -40px -400px;
+}
+.ico-phone {
+    width: 16px;
+    height: 18px;
+    background-position: 0 -560px;
+}
+.ico-ana {
+    width: 35px;
+    height: 40px;
+    background-position: -40px -440px;
+}
+.ico-ana2 {
+    width: 40px;
+    height: 36px;
+    background-position: 0 -480px;
+}
+.ico-tips {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    background-position: 0 -600px;
+}
+.ico-right, .ico-left {
+    width: 11px;
+    height: 10px;
+}
+.ico-right {
+    background-position: -40px -720px;
+}
+.ico-left {
+    background-position: -80px -720px;
+}
+.ico-price {
+    width: 26px;
+    height: 24px;
+    background-position: -50px -40px;
+}
+.ico-phone2 {
+    width: 32px;
+    height: 30px;
+    background-position: -43px 0;
+}
+.ico-trend, .ico-htype {
+    width: 18px;
+    height: 16px;
+}
+.ico-trend {
+    background-position: 0 -640px;
+}
+.ico-htype {
+    background-position: 0 -680px;
+}
+.ico-more {
+    width: 11px;
+    height: 10px;
+    background-position: 0 -720px;
+}
+.ico-check, .ico-check-on {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+.ico-check {
+    background-position: 0 -760px;
+}
+.ico-check-on {
+    background-position: -40px -760px;
+}
+.ico-offer {
+    width: 24px;
+    background-position: -50px -79px;
+}
+.ico-payment {
+    width: 24px;
+    height: 24px;
+    background-position: -50px -119px;
+}
+.ico-num {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    width: 21px;
+    height: 27px;
+    line-height: 20px;
+    background-position: 0 -800px;
+}
+.markLink .ico-num {
+    height: 31px;
+    background-position: -40px -800px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .ico-num {
+        line-height: 22px;
+    }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ico-num {
+        line-height: 24px;
+    }
+}
+.ico-triangle {
+    width: 6px;
+    height: 7px;
+    background-position: -80px 0;
+}
+.ico-triangle2 {
+    width: 7px;
+    height: 6px;
+    background-position: -80px -80px;
+}
+.ico-zan {
+    width: 21px;
+    height: 22px;
+    background-position: -80px -40px;
+}
+/*1. BASIC STYLE*/
+.mCustomScrollbar {
+    -ms-touch-action: pinch-zoom;
+    touch-action: pinch-zoom;
+}
+.mCustomScrollbar.mCS_no_scrollbar, .mCustomScrollbar.mCS_touch_action {
+    -ms-touch-action: auto;
+    touch-action: auto;
+}
+.mCustomScrollBox {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100%;
+    outline: none;
+    direction: ltr;
+}
+.mCSB_container {
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+/*2. VERTICAL SCROLLBAR */
+.mCSB_inside > .mCSB_container {
+    margin-right: 30px;
+}
+.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+    margin-right: 0;
+}
+/* non-visible scrollbar */
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container {
+    margin-right: 0;
+    margin-left: 30px;
+}
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+    margin-left: 0;
+}
+/* RTL direction/left-side scrollbar */
+.mCSB_scrollTools {
+    position: absolute;
+    width: 16px;
+    height: auto;
+    left: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.mCSB_outside + .mCSB_scrollTools {
+    right: -26px;
+}
+/* scrollbar position: outside */
+.mCS-dir-rtl > .mCSB_inside > .mCSB_scrollTools,
+.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools {
+    right: auto;
+    left: 0;
+}
+.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools {
+    left: -26px;
+}
+.mCSB_scrollTools .mCSB_draggerContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+}
+.mCSB_scrollTools a + .mCSB_draggerContainer {
+    margin: 20px 0;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+    width: 2px;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+}
+.mCSB_scrollTools .mCSB_dragger {
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    position: relative;
+    width: 6px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+    width: 12px;
+}
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+    width: 8px;
+}
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown {
+    display: block;
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.mCSB_scrollTools .mCSB_buttonDown {
+    bottom: 0;
+}
+/*3. HORIZONTAL SCROLLBAR x-axis*/
+.mCSB_horizontal.mCSB_inside > .mCSB_container {
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+.mCSB_horizontal.mCSB_outside > .mCSB_container {
+    min-height: 100%;
+}
+.mCSB_horizontal > .mCSB_container.mCS_no_scrollbar_x.mCS_x_hidden {
+    margin-bottom: 0;
+}
+/* non-visible scrollbar */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    width: auto;
+    height: 16px;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.mCustomScrollBox + .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCustomScrollBox + .mCSB_scrollTools + .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    bottom: -26px;
+}
+/* scrollbar position: outside */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal a + .mCSB_draggerContainer {
+    margin: 0 20px;
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+    width: 100%;
+    height: 2px;
+    margin: 7px 0;
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger {
+    width: 30px;
+    height: 100%;
+    left: 0;
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+    width: 100%;
+    height: 4px;
+    margin: 6px auto;
+}
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+    height: 12px;
+    margin: 2px auto;
+}
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+    height: 8px;
+    margin: 4px 0;
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft,
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft {
+    left: 0;
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight {
+    right: 0;
+}
+/*4. VERTICAL AND HORIZONTAL SCROLLBARS yx-axis */
+.mCSB_container_wrapper {
+    position: absolute;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.mCSB_container_wrapper > .mCSB_container {
+    padding-right: 30px;
+    padding-bottom: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_vertical {
+    bottom: 20px;
+}
+.mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    right: 20px;
+}
+/* non-visible horizontal scrollbar */
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden + .mCSB_scrollTools.mCSB_scrollTools_vertical {
+    bottom: 0;
+}
+/* non-visible vertical scrollbar/RTL direction/left-side scrollbar */
+.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden + .mCSB_scrollTools ~ .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    right: 0;
+}
+/* RTL direction/left-side scrollbar */
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    left: 20px;
+}
+/* non-visible scrollbar/RTL direction/left-side scrollbar */
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden + .mCSB_scrollTools ~ .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    left: 0;
+}
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container_wrapper {
+    margin-right: 0;
+    margin-left: 30px;
+}
+.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden > .mCSB_container {
+    padding-right: 0;
+}
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden > .mCSB_container {
+    padding-bottom: 0;
+}
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden {
+    margin-right: 0;
+    margin-left: 0;
+}
+/* non-visible horizontal scrollbar */
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden {
+    margin-bottom: 0;
+}
+/*5. TRANSITIONS*/
+.mCSB_scrollTools,
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight {
+    -webkit-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+    transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+}
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar, /* auto-expanded scrollbar */
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail {
+    -webkit-transition: width .2s ease-out .2s, height .2s ease-out .2s,
+    margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,
+    margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s,
+    opacity .2s ease-in-out, background-color .2s ease-in-out;
+    -moz-transition: width .2s ease-out .2s, height .2s ease-out .2s,
+    margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,
+    margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s,
+    opacity .2s ease-in-out, background-color .2s ease-in-out;
+    -o-transition: width .2s ease-out .2s, height .2s ease-out .2s,
+    margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,
+    margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s,
+    opacity .2s ease-in-out, background-color .2s ease-in-out;
+    transition: width .2s ease-out .2s, height .2s ease-out .2s,
+    margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,
+    margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s,
+    opacity .2s ease-in-out, background-color .2s ease-in-out;
+}
+/*6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS
+  6.1 THEMES default theme ("light") */
+.mCSB_scrollTools {
+    opacity: 0.75;
+    filter: "alpha(opacity=75)";
+    -ms-filter: "alpha(opacity=75)";
+}
+.mCS-autoHide > .mCustomScrollBox > .mCSB_scrollTools,
+.mCS-autoHide > .mCustomScrollBox ~ .mCSB_scrollTools {
+    opacity: 0;
+    filter: "alpha(opacity=0)";
+    -ms-filter: "alpha(opacity=0)";
+}
+.mCustomScrollbar > .mCustomScrollBox > .mCSB_scrollTools.mCSB_scrollTools_onDrag,
+.mCustomScrollbar > .mCustomScrollBox ~ .mCSB_scrollTools.mCSB_scrollTools_onDrag,
+.mCustomScrollBox:hover > .mCSB_scrollTools,
+.mCustomScrollBox:hover ~ .mCSB_scrollTools,
+.mCS-autoHide:hover > .mCustomScrollBox > .mCSB_scrollTools,
+.mCS-autoHide:hover > .mCustomScrollBox ~ .mCSB_scrollTools {
+    opacity: 1;
+    filter: "alpha(opacity=100)";
+    -ms-filter: "alpha(opacity=100)";
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #be9f64;
+    filter: "alpha(opacity=40)";
+    -ms-filter: "alpha(opacity=40)";
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #be9f64;
+    filter: "alpha(opacity=75)";
+    -ms-filter: "alpha(opacity=75)";
+}
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #be9f64;
+    background-color: rgba(190, 159, 100, 0.85);
+    filter: "alpha(opacity=85)";
+    -ms-filter: "alpha(opacity=85)";
+}
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #be9f64;
+    background-color: rgba(190, 159, 100, 0.9);
+    filter: "alpha(opacity=90)";
+    -ms-filter: "alpha(opacity=90)";
+}
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight {
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    filter: "alpha(opacity=40)";
+    -ms-filter: "alpha(opacity=40)";
+}
+.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: 0 0;
+}
+.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: 0 -20px;
+}
+.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: 0 -40px;
+}
+.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: 0 -56px;
+}
+.mCSB_scrollTools .mCSB_buttonUp:hover,
+.mCSB_scrollTools .mCSB_buttonDown:hover,
+.mCSB_scrollTools .mCSB_buttonLeft:hover,
+.mCSB_scrollTools .mCSB_buttonRight:hover {
+    opacity: 0.75;
+    filter: "alpha(opacity=75)";
+    -ms-filter: "alpha(opacity=75)";
+}
+.mCSB_scrollTools .mCSB_buttonUp:active,
+.mCSB_scrollTools .mCSB_buttonDown:active,
+.mCSB_scrollTools .mCSB_buttonLeft:active,
+.mCSB_scrollTools .mCSB_buttonRight:active {
+    opacity: 0.9;
+    filter: "alpha(opacity=90)";
+    -ms-filter: "alpha(opacity=90)";
+}
+/* theme: "dark" */
+.mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.mCS-dark.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -80px 0;
+}
+.mCS-dark.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -80px -20px;
+}
+.mCS-dark.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -80px -40px;
+}
+.mCS-dark.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -80px -56px;
+}
+/* theme: "light-2", "dark-2" */
+.mCS-light-2.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-dark-2.mCSB_scrollTools .mCSB_draggerRail {
+    width: 4px;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 4px;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.75);
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+.mCS-light-2.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-dark-2.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-light-2.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-2.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+    width: 100%;
+    height: 4px;
+    margin: 6px auto;
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-light-2.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -32px 0;
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -32px -20px;
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -40px -40px;
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -40px -56px;
+}
+/* theme: "dark-2" */
+.mCS-dark-2.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.75);
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -112px 0;
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -112px -20px;
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -120px -40px;
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -120px -56px;
+}
+/* theme: "light-thick", "dark-thick" */
+.mCS-light-thick.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-dark-thick.mCSB_scrollTools .mCSB_draggerRail {
+    width: 4px;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 6px;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.75);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.mCS-light-thick.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-dark-thick.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+    width: 100%;
+    height: 4px;
+    margin: 6px 0;
+}
+.mCS-light-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+    width: 100%;
+    height: 6px;
+    margin: 5px auto;
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-light-thick.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -16px 0;
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -16px -20px;
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -20px -40px;
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -20px -56px;
+}
+/* theme: "dark-thick" */
+.mCS-dark-thick.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.75);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -96px 0;
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -96px -20px;
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -100px -40px;
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -100px -56px;
+}
+/* theme: "light-thin", "dark-thin" */
+.mCS-light-thin.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.mCS-light-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 2px;
+}
+.mCS-light-thin.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-dark-thin.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+    width: 100%;
+}
+.mCS-light-thin.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-thin.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+    width: 100%;
+    height: 2px;
+    margin: 7px auto;
+}
+/* theme "dark-thin" */
+.mCS-dark-thin.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -80px 0;
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -80px -20px;
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -80px -40px;
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -80px -56px;
+}
+/* theme "rounded", "rounded-dark", "rounded-dots", "rounded-dots-dark" */
+.mCS-rounded.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.mCS-rounded.mCSB_scrollTools .mCSB_dragger,
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger,
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger {
+    height: 14px;
+}
+.mCS-rounded.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 14px;
+    margin: 0 1px;
+}
+.mCS-rounded.mCSB_scrollTools_horizontal .mCSB_dragger,
+.mCS-rounded-dark.mCSB_scrollTools_horizontal .mCSB_dragger,
+.mCS-rounded-dots.mCSB_scrollTools_horizontal .mCSB_dragger,
+.mCS-rounded-dots-dark.mCSB_scrollTools_horizontal .mCSB_dragger {
+    width: 14px;
+}
+.mCS-rounded.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+    height: 14px;
+    margin: 1px 0;
+}
+.mCS-rounded.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCS-rounded.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+    width: 16px;
+    height: 16px;
+    margin: -1px 0;
+}
+.mCS-rounded.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-rounded.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail,
+.mCS-rounded-dark.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-rounded-dark.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+    width: 4px;
+}
+.mCS-rounded.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCS-rounded.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+    height: 16px;
+    width: 16px;
+    margin: 0 -1px;
+}
+.mCS-rounded.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-rounded.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail,
+.mCS-rounded-dark.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-rounded-dark.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+    height: 4px;
+    margin: 6px 0;
+}
+.mCS-rounded.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: 0 -72px;
+}
+.mCS-rounded.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: 0 -92px;
+}
+.mCS-rounded.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: 0 -112px;
+}
+.mCS-rounded.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: 0 -128px;
+}
+/* theme "rounded-dark", "rounded-dots-dark" */
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -80px -72px;
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -80px -92px;
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -80px -112px;
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -80px -128px;
+}
+/* theme "rounded-dots", "rounded-dots-dark" */
+.mCS-rounded-dots.mCSB_scrollTools_vertical .mCSB_draggerRail,
+.mCS-rounded-dots-dark.mCSB_scrollTools_vertical .mCSB_draggerRail {
+    width: 4px;
+}
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-rounded-dots.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-rounded-dots-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+    background-color: transparent;
+    background-position: center;
+}
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAANElEQVQYV2NkIAAYiVbw//9/Y6DiM1ANJoyMjGdBbLgJQAX/kU0DKgDLkaQAvxW4HEvQFwCRcxIJK1XznAAAAABJRU5ErkJggg==");
+    background-repeat: repeat-y;
+    opacity: 0.3;
+    filter: "alpha(opacity=30)";
+    -ms-filter: "alpha(opacity=30)";
+}
+.mCS-rounded-dots.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-rounded-dots-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+    height: 4px;
+    margin: 6px 0;
+    background-repeat: repeat-x;
+}
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -16px -72px;
+}
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -16px -92px;
+}
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -20px -112px;
+}
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -20px -128px;
+}
+/* theme "rounded-dots-dark" */
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAALElEQVQYV2NkIAAYSVFgDFR8BqrBBEifBbGRTfiPZhpYjiQFBK3A6l6CvgAAE9kGCd1mvgEAAAAASUVORK5CYII=");
+}
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -96px -72px;
+}
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -96px -92px;
+}
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -100px -112px;
+}
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -100px -128px;
+}
+/* theme "3d", "3d-dark", "3d-thick", "3d-thick-dark" */
+.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-repeat: repeat-y;
+    background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.mCS-3d.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0)));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+}
+/* theme "3d", "3d-dark" */
+.mCS-3d.mCSB_scrollTools_vertical .mCSB_dragger,
+.mCS-3d-dark.mCSB_scrollTools_vertical .mCSB_dragger {
+    height: 70px;
+}
+.mCS-3d.mCSB_scrollTools_horizontal .mCSB_dragger,
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_dragger {
+    width: 70px;
+}
+.mCS-3d.mCSB_scrollTools,
+.mCS-3d-dark.mCSB_scrollTools {
+    opacity: 1;
+    filter: "alpha(opacity=30)";
+    -ms-filter: "alpha(opacity=30)";
+}
+.mCS-3d.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+}
+.mCS-3d.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_draggerRail {
+    width: 8px;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 1px 0 1px rgba(0, 0, 0, 0.5), inset -1px 0 1px rgba(255, 255, 255, 0.2);
+}
+.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-3d.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-3d.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #555;
+}
+.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 8px;
+}
+.mCS-3d.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+    width: 100%;
+    height: 8px;
+    margin: 4px 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5), inset 0 -1px 1px rgba(255, 255, 255, 0.2);
+}
+.mCS-3d.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+    width: 100%;
+    height: 8px;
+    margin: 4px auto;
+}
+.mCS-3d.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -32px -72px;
+}
+.mCS-3d.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -32px -92px;
+}
+.mCS-3d.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -40px -112px;
+}
+.mCS-3d.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -40px -128px;
+}
+/* theme "3d-dark" */
+.mCS-3d-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 1px 0 1px rgba(0, 0, 0, 0.1);
+}
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -112px -72px;
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -112px -92px;
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -120px -112px;
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -120px -128px;
+}
+/* theme: "3d-thick", "3d-thick-dark" */
+.mCS-3d-thick.mCSB_scrollTools,
+.mCS-3d-thick-dark.mCSB_scrollTools {
+    opacity: 1;
+    filter: "alpha(opacity=30)";
+    -ms-filter: "alpha(opacity=30)";
+}
+.mCS-3d-thick.mCSB_scrollTools,
+.mCS-3d-thick-dark.mCSB_scrollTools,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_draggerContainer,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_draggerContainer {
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.mCSB_inside + .mCS-3d-thick.mCSB_scrollTools_vertical,
+.mCSB_inside + .mCS-3d-thick-dark.mCSB_scrollTools_vertical {
+    right: 1px;
+}
+.mCS-3d-thick.mCSB_scrollTools_vertical,
+.mCS-3d-thick-dark.mCSB_scrollTools_vertical {
+    box-shadow: inset 1px 0 1px rgba(0, 0, 0, 0.1), inset 0 0 14px rgba(0, 0, 0, 0.5);
+}
+.mCS-3d-thick.mCSB_scrollTools_horizontal,
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal {
+    bottom: 1px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 0 14px rgba(0, 0, 0, 0.5);
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.4);
+    width: 12px;
+    margin: 2px;
+    position: absolute;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.mCS-3d-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #555;
+}
+.mCS-3d-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+    height: 12px;
+    width: auto;
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_draggerContainer {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: inset 1px 1px 16px rgba(0, 0, 0, 0.1);
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: transparent;
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -32px -72px;
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -32px -92px;
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -40px -112px;
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -40px -128px;
+}
+/* theme: "3d-thick-dark" */
+.mCS-3d-thick-dark.mCSB_scrollTools {
+    box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.2);
+}
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 0 14px rgba(0, 0, 0, 0.2);
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.4), inset -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #777;
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_draggerContainer {
+    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: inset 1px 1px 16px rgba(0, 0, 0, 0.1);
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: transparent;
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -112px -72px;
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -112px -92px;
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -120px -112px;
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -120px -128px;
+}
+/* theme: "minimal", "minimal-dark" */
+.mCSB_outside + .mCS-minimal.mCSB_scrollTools_vertical,
+.mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical {
+    right: 0;
+    margin: 12px 0;
+}
+.mCustomScrollBox.mCS-minimal + .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCustomScrollBox.mCS-minimal + .mCSB_scrollTools + .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCustomScrollBox.mCS-minimal-dark + .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCustomScrollBox.mCS-minimal-dark + .mCSB_scrollTools + .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    bottom: 0;
+    margin: 0 12px;
+}
+/* RTL direction/left-side scrollbar */
+.mCS-dir-rtl > .mCSB_outside + .mCS-minimal.mCSB_scrollTools_vertical,
+.mCS-dir-rtl > .mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical {
+    left: 0;
+    right: auto;
+}
+.mCS-minimal.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: transparent;
+}
+.mCS-minimal.mCSB_scrollTools_vertical .mCSB_dragger,
+.mCS-minimal-dark.mCSB_scrollTools_vertical .mCSB_dragger {
+    height: 50px;
+}
+.mCS-minimal.mCSB_scrollTools_horizontal .mCSB_dragger,
+.mCS-minimal-dark.mCSB_scrollTools_horizontal .mCSB_dragger {
+    width: 50px;
+}
+.mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    filter: "alpha(opacity=20)";
+    -ms-filter: "alpha(opacity=20)";
+}
+.mCS-minimal.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-minimal.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    filter: "alpha(opacity=50)";
+    -ms-filter: "alpha(opacity=50)";
+}
+/* theme: "minimal-dark" */
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.2);
+    filter: "alpha(opacity=20)";
+    -ms-filter: "alpha(opacity=20)";
+}
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: "alpha(opacity=50)";
+    -ms-filter: "alpha(opacity=50)";
+}
+/* theme "light-3", "dark-3" */
+.mCS-light-3.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
+    width: 6px;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.mCS-light-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 6px;
+}
+.mCS-light-3.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-3.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-light-3.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+    width: 100%;
+    height: 6px;
+    margin: 5px 0;
+}
+.mCS-light-3.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-light-3.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+    width: 12px;
+}
+.mCS-light-3.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-light-3.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+    height: 12px;
+    margin: 2px 0;
+}
+.mCS-light-3.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -32px -72px;
+}
+.mCS-light-3.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -32px -92px;
+}
+.mCS-light-3.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -40px -112px;
+}
+.mCS-light-3.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -40px -128px;
+}
+/* theme "dark-3" */
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -112px -72px;
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -112px -92px;
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -120px -112px;
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -120px -128px;
+}
+/* theme "inset", "inset-dark", "inset-2", "inset-2-dark", "inset-3", "inset-3-dark" */
+.mCS-inset.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-2.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-3.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_draggerRail {
+    width: 12px;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.mCS-inset.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 6px;
+    margin: 3px 5px;
+    position: absolute;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.mCS-inset.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+    height: 6px;
+    margin: 5px 3px;
+    position: absolute;
+    width: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.mCS-inset.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-2.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-2-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-3.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-3-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+    width: 100%;
+    height: 12px;
+    margin: 2px 0;
+}
+.mCS-inset.mCSB_scrollTools .mCSB_buttonUp,
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonUp,
+.mCS-inset-3.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -32px -72px;
+}
+.mCS-inset.mCSB_scrollTools .mCSB_buttonDown,
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonDown,
+.mCS-inset-3.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -32px -92px;
+}
+.mCS-inset.mCSB_scrollTools .mCSB_buttonLeft,
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonLeft,
+.mCS-inset-3.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -40px -112px;
+}
+.mCS-inset.mCSB_scrollTools .mCSB_buttonRight,
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonRight,
+.mCS-inset-3.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -40px -128px;
+}
+/* theme "inset-dark", "inset-2-dark", "inset-3-dark" */
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.mCS-inset-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonUp,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonUp,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -112px -72px;
+}
+.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonDown,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonDown,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -112px -92px;
+}
+.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonLeft,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonLeft,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -120px -112px;
+}
+.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonRight,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonRight,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -120px -128px;
+}
+/* theme "inset-2", "inset-2-dark" */
+.mCS-inset-2.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    border-color: rgba(255, 255, 255, 0.2);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail {
+    border-color: #000;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+/* theme "inset-3", "inset-3-dark" */
+.mCS-inset-3.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+/*布局*/
+.container {
+    position: relative;
+    min-height: 100%;
+    min-width: 1200px;
+}
+.row, .wrap {
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.row {
+    margin-bottom: 30px;
+}
+.row-search {
+    width: 100%;
+    min-width: 1200px;
+    height: 45px;
+    margin-bottom: 0;
+    padding-top: 15px;
+    background-color: #eef0f2;
+}
+.col, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10 {
+    float: left;
+    overflow: hidden;
+}
+.col {
+    width: 1020px;
+    margin-right: 40px;
+}
+.col2 {
+    width: 140px;
+}
+.col3 {
+    width: 240px;
+    margin-right: 40px;
+}
+.col4 {
+    width: 920px;
+}
+.col5 {
+    width: 990px;
+    margin-right: 30px;
+}
+.col6 {
+    width: 180px;
+}
+.col7 {
+    width: 980px;
+    margin-right: 30px;
+}
+.col8 {
+    width: 190px;
+}
+.col9 {
+    width: 890px;
+    margin-right: 30px;
+}
+.col10 {
+    width: 280px;
+}
+/*box*/
+.box .hd, .box .bd {
+    clear: both;
+    overflow: hidden;
+}
+.box .hd, .box2 .hd {
+    height: 28px;
+    line-height: 28px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.box .hd h2, .box .hd h2 a {
+    font-size: 14px;
+    color: #363d40;
+}
+/*box2*/
+.box2 .hd {
+    padding-bottom: 15px;
+}
+.box2 .hd h2, .box2 .hd h2 a {
+    font-size: 18px;
+}
+/*box3*/
+.box3, .box3 .hd, .box3 .bd {
+    clear: both;
+    overflow: hidden;
+}
+.box3 {
+    padding: 30px 40px;
+    border: 1px solid #eaeaea;
+}
+.box3 .hd {
+    height: 38px;
+    line-height: 38px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.box3 .hd h2, .box3 .hd h2 a {
+    font-size: 18px;
+    font-weight: normal;
+}
+.box3 .hd h2 {
+    float: left;
+}
+.box3 .hd .house-type, .box3 .hd .more {
+    float: right;
+}
+.box3 .hd .more a {
+    color: #888;
+}
+.box3 .hd .more .ico-more {
+    margin-left: 8px;
+}
+.box3 .hd .more a:hover {
+    color: #0074c1;
+}
+.box3 .hd .more a:hover .ico-more {
+    background-position: -40px -720px;
+}
+/*box4*/
+.box4 {
+    padding: 10px 19px 0;
+    border: 1px solid #eaeaea;
+    overflow: hidden;
+}
+.box4 .hd, .box4 .bd {
+    clear: both;
+    overflow: hidden;
+}
+.box4 .hd {
+    height: 32px;
+    line-height: 32px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.box4 .hd h2, .box4 .hd h2 a {
+    font-size: 14px;
+}
+/*tab切换*/
+.nrpart {
+    display: none;
+}
+.show {
+    display: block;
+}
+/*标签*/
+.house-tag {
+    height: 24px;
+    overflow: hidden;
+}
+.house-type {
+    margin-bottom: 16px;
+}
+.house-item .house-type .types {
+    margin-right: 0;
+}
+.house-tag .tag {
+    float: left;
+    padding: 0 10px;
+    margin-right: 10px;
+    height: 22px;
+    line-height: 22px;
+    border: solid 1px #bec0c5;
+}
+.house-tag .tag, .house-tag .tag a {
+    color: #bec0c5;
+}
+.house-tag .active, .house-tag .active a {
+    color: #43aaef;
+}
+.house-tag .active {
+    border-color: #43aaef;
+}
+/*推荐列表item*/
+.media {
+    position: relative;
+    width: 140px;
+}
+.media .pic, .media .pic img {
+    width: 140px;
+    height: 100px;
+    overflow: hidden;
+}
+.media .pic {
+    margin-bottom: 15px;
+}
+.media .price {
+    position: absolute;
+    bottom: 59px;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #394043;
+}
+.media .text .name, .media .text .total {
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+}
+.media .text .name {
+    font-weight: normal;
+}
+.media .text, .media .text a {
+    color: #888;
+}
+/*tab切换*/
+.tab-t, .tab-c {
+    clear: both;
+    overflow: hidden;
+}
+/*输入框*/
+.ipt {
+    float: left;
+    color: #b7b7b7;
+    width: 366px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 12px;
+    border: 1px solid #e4e4e4;
+    border-right: 0;
+    border-radius: 3px 0 0 3px;
+    background: #fff;
+    overflow: hidden;
+}
+/*media2*/
+.media2 {
+    width: 224px;
+    overflow: hidden;
+}
+.media2 .text {
+    color: #888;
+    height: 120px;
+    line-height: 26px;
+    padding: 20px 10px 0 10px;
+    background: #f8f8f8;
+}
+.media2 .text h4, .media2 .text h4 a {
+    color: #363d40;
+}
+.media2 .text h4 {
+    font-size: 16px;
+    white-space: nowrap;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.media2 .text .info {
+    clear: both;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 26px;
+    line-height: 26px;
+    max-width: 190px;
+    overflow: hidden;
+}
+.media2 .pic, .media2 .pic img {
+    width: 224px;
+    height: 160px;
+}
+.media2 .price {
+    height: 26px;
+    overflow: hidden;
+}
+.media2 .price em {
+    float: right;
+    color: #f44336;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 124px;
+    overflow: hidden;
+}
+/*media3*/
+.media3 {
+    position: relative;
+    width: 260px;
+    overflow: hidden;
+}
+.media3 .pic, .media3 .pic img {
+    width: 260px;
+    height: 180px;
+    overflow: hidden;
+}
+.media3 .text {
+    height: 57px;
+    padding: 10px 15px 0 15px;
+    background: #fff;
+}
+.media3 .text .name, .media3 .text .info {
+    clear: both;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.media3 .text .name h4 {
+    float: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 130px;
+    overflow: hidden;
+}
+.media3 .text .name .total {
+    float: right;
+}
+.media3 .unit-price {
+    position: absolute;
+    right: 20px;
+    bottom: 87px;
+    color: #fff;
+    text-align: center;
+    width: 90px;
+    height: 22px;
+    line-height: 22px;
+    background: #e85045;
+    overflow: hidden;
+}
+/*media4*/
+.media4 {
+    position: relative;
+    float: left;
+    width: 265px;
+    height: 228px;
+    overflow: hidden;
+}
+.media4 .pic, .media4 .pic img {
+    width: 263px;
+    height: 188px;
+    overflow: hidden;
+}
+.media4 .pic {
+    margin-bottom: 14px;
+    border: 1px solid #eaeaea;
+}
+.media4 .info {
+    position: absolute;
+    left: 0;
+    bottom: 38px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+.media4 .lbl, .media4 .h-txt {
+    float: left;
+}
+.media4 .info .lbl {
+    margin: 6px 0 0 20px;
+}
+.media4 .info .h-type {
+    float: right;
+    color: #fff;
+    padding-right: 20px;
+}
+.media4 .h-info {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.media4 .h-txt2 {
+    padding-left: 16px;
+}
+/*o-list*/
+.o-list {
+    clear: both;
+    overflow: hidden;
+}
+.o-list li {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.o-list li a {
+    color: #575757;
+}
+.o-list li .num {
+    float: left;
+    color: #fff;
+    text-align: center;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    margin: 8px 18px 0 0;
+    background: #66727a;
+    overflow: hidden;
+}
+/*免费咨询*/
+.ipt-area .tips {
+    display: none;
+}
+.ipt-area .error-tips {
+    color: #f20;
+}
+.ipt-area .right-tips {
+    color: #119a11;
+}
+/*销售状态标签*/
+.lbl {
+    display: inline-block;
+    color: #fff;
+    height: 18px;
+    line-height: 17px;
+    padding: 0 12px;
+    background: #6dafdc;
+    overflow: hidden;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .lbl {
+        line-height: 18px;
+    }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .lbl {
+        line-height: 20px;
+    }
+}
+.lbl-for {
+    background: #6dafdc;
+}
+.lbl-not {
+    background: #6dafdc;
+}
+.lbl-card {
+    background: #6dafdc;
+}
+.lbl-out {
+    background: #aaa;
+}
+/*面包屑*/
+.row-crumb {
+    height: 34px;
+    margin-bottom: 0;
+    padding-top: 12px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.crumb li {
+    float: left;
+    height: 24px;
+    line-height: 24px;
+}
+.crumb li.icon {
+    margin-right: 5px;
+}
+.crumb li.icon .ico {
+    float: left;
+    margin-top: 5px;
+}
+.crumb li.fgx {
+    margin: 0 4px;
+}
+.crumb li, .crumb li a {
+    color: #555;
+}
+/*搜索*/
+.search {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.search-area {
+    float: left;
+    margin-right: 16px;
+}
+.search-area .ico-search {
+    float: left;
+    margin: 8px 6px 0 0;
+}
+.hot-words {
+    float: left;
+    max-width: 330px;
+    margin-right: 15px;
+}
+.hot-words .ico-pos {
+    float: left;
+    margin: 7px 5px 0 0;
+}
+.hot-words a {
+    margin-right: 12px;
+}
+.cj-service {
+    float: right;
+    width: 340px;
+    height: 28px;
+    text-align: center;
+    overflow: hidden;
+    border: solid 1px #e4e4e4;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.cj-service a {
+    display: block;
+    height: 100%;
+    line-height: 28px;
+    font-size: 14px;
+    color: #888;
+}
+.cj-service a:hover {
+    text-decoration: underline;
+}
+.cj-service .ico {
+    margin-left: 10px;
+}
+.cj-service .tit, .cj-service .con {
+    float: left;
+}
+.cj-service .tit {
+    font-family: "黑体";
+    font-size: 14px;
+    font-weight: bold;
+    color: #575757;
+}
+/*没有图片*/
+.search-nopic {
+    display: table;
+    *display: inline-block;
+    margin: 0 auto;
+}
+.search-nopic .hot-words {
+    width: auto;
+    height: 32px;
+    max-width: 500px;
+    overflow: hidden;
+}
+.search-nopic .cj-service {
+    display: none;
+}
+/*按照原来网站修改输入框的高度（并没有修改btn文件）*/
+.search .search-area .ipt {
+    height: 28px;
+    line-height: 28px;
+}
+.search .search-area .btn {
+    height: 30px;
+    line-height: 30px;
+}
+.search .search-area .btn-search .ico {
+    margin: 6px 6px 0 0;
+}
+.right-flow {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 9999;
+}
+.sidebar {
+    float: left;
+    position: relative;
+    width: 38px;
+    height: 100%;
+    min-height: 660px;
+    background: rgba(0, 0, 0, 0.8);
+    background: #000\9;
+}
+.content-sh {
+    float: left;
+    height: 100%;
+    width: 240px;
+    background-color: #434343;
+}
+.sidebar .upper {
+    position: absolute;
+    width: 100%;
+    top: 166px;
+}
+.sidebar .lower {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+}
+.sidebar .s-item {
+    position: relative;
+    height: 34px;
+    margin-bottom: 6px;
+}
+.sidebar .s-login .login {
+    position: absolute;
+    right: 38px;
+    display: none;
+}
+.sidebar .s-login .login:after {
+    position: absolute;
+    left: 100%;
+    top: 14px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 5px solid #fff;
+    border-bottom: 4px solid transparent;
+    content: "";
+}
+.sidebar .s-item .bg-img {
+    float: left;
+    width: 38px;
+    height: 34px;
+    cursor: pointer;
+    text-indent: -9999px;
+    background: url("../images/bg-icon-s.png") no-repeat 10px 7px;
+}
+.sidebar .s-footprint .bg-img {
+    background-position: 8px -22px;
+}
+.sidebar .s-look .bg-img {
+    background-position: 8px -52px;
+}
+.sidebar .s-customer .bg-img {
+    background-position: 8px -82px;
+}
+.sidebar .s-erweima .bg-img {
+    background-position: 10px -112px;
+}
+.sidebar .s-top .bg-img {
+    background-position: 8px -148px;
+}
+.sidebar .s-survey .bg-img {
+    background-position: 10px -184px;
+}
+.sidebar .s-feedback .bg-img {
+    background-position: 10px -213px;
+}
+.sidebar .s-item .hover {
+    background-color: #666;
+}
+.sidebar .s-item .checked {
+    background-color: #666;
+}
+.sidebar .des {
+    display: none;
+    position: absolute;
+    right: 45px;
+    width: 60px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 12px;
+    color: #fffefe;
+    padding: 0 10px;
+    background-color: #0074c1;
+    cursor: pointer;
+}
+.sidebar .des:after {
+    position: absolute;
+    left: 100%;
+    top: 14px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 5px solid #0074c1;
+    border-bottom: 4px solid transparent;
+    content: "";
+}
+.sidebar .s-erweima .des {
+    width: 66px;
+    height: auto;
+    line-height: 26px;
+    padding: 10px 10px 0 10px;
+}
+.sidebar .s-erweima .erweima {
+    display: block;
+    width: 66px;
+    height: 66px;
+    background: url("../images/bg-code.png");
+}
+.sidebar .s-line {
+    width: 26px;
+    margin: 10px 0 10px 6px;
+    border: 0;
+    border-bottom: solid 1px #666;
+}
+/*预约看房*/
+.s-look-house {
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    background-color: #434343;
+    padding: 0 20px;
+    float: left;
+    overflow: hidden;
+}
+.s-look-house1 {
+    display: block;
+}
+.s-look-house .hd {
+    padding: 24px 0;
+}
+.s-look-house .img-area {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.s-look-house .img-area img {
+    width: 76px;
+    height: 76px;
+}
+.s-look-house .ipt-area {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.s-look-house .ipt-area .phone, .s-look-house .ipt-area .ipt-btn {
+    width: 160px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.s-look-house .ipt-area .phone {
+    font-size: 12px;
+    margin-bottom: 20px;
+    background-color: #888;
+}
+.s-look-house .ipt-area .ipt-btn {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #e85045;
+}
+.s-look-house .hot-line {
+    font-size: 14px;
+    color: #fff;
+}
+.s-look-house .bd {
+    width: 184px;
+    text-align: center;
+    padding: 24px 0;
+    margin: auto;
+    border-top: dashed 1px #888;
+}
+.s-look-house .bd .service-list {
+    height: 360px;
+}
+.s-look-house .bd .title {
+    font-size: 16px;
+    color: #fff;
+}
+.s-look-house .bd .item:first-child .icon-down {
+    display: none;
+}
+.s-look-house .bd .item {
+    margin-bottom: 38px;
+}
+.s-look-house .bd .item .img-area {
+    position: relative;
+    margin: 15px auto;
+    width: 96px;
+    height: 60px;
+    border: solid 1px #888;
+}
+.s-look-house .bd .item .icon-down {
+    height: 12px;
+    width: 12px;
+    margin: -15px auto;
+    background: url("../images/bg-down.png") no-repeat;
+}
+.s-look-house .bd .item .name {
+    position: absolute;
+    bottom: -8px;
+    width: 60px;
+    left: 18px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #434343;
+}
+.s-look-house .bd .item .item-des {
+    font-size: 12px;
+    color: #fff;
+    max-width: 190px;
+    overflow: hidden;
+}
+.s-look-house .bd .item .img-area img {
+    width: 36px;
+    height: 36px;
+    margin-top: 10px;
+}
+/*我的足迹*/
+.footprint {
+    position: absolute;
+    width: 192px;
+    height: 100%;
+    background-color: #434343;
+    padding: 0 18px 0 40px;
+    float: left;
+    overflow: hidden;
+}
+.footprint .hd {
+    width: 162px;
+    padding: 40px 0;
+    border-bottom: dashed 1px #888;
+}
+.footprint .hd .close {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 28px;
+    height: 28px;
+    background: url("../images/bg-close.png") no-repeat;
+}
+.footprint .user .name {
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    color: #fff;
+}
+.footprint .user .head {
+    float: left;
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+    background: url("../images/bd-user-head.png") no-repeat;
+}
+.footprint .bd .title {
+    font-size: 14px;
+    color: #fff;
+    margin: 40px 0 20px 0;
+}
+.footprint .bd .house-list {
+    height: 465px;
+    width: 192px;
+    padding-top: 0;
+}
+.footprint .no-list {
+    text-align: center;
+    margin-top: 44px;
+    padding-right: 30px;
+    font-size: 16px;
+    color: #fff;
+}
+.footprint .no-list p {
+    height: 24px;
+    line-height: 24px;
+}
+.footprint .no-list a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: underline;
+}
+.footprint .user-none {
+    font-size: 14px;
+    color: #fff;
+    padding-top: 30px;
+}
+.footprint .user-none a {
+    color: #fff;
+    text-decoration: underline;
+    padding-right: 10px;
+}
+/*足迹列表item*/
+.right-flow .house-list .media {
+    width: 160px;
+    margin: 0 0 20px;
+}
+.right-flow .media .pic, .right-flow .media .pic img {
+    width: 160px;
+    height: 110px;
+    overflow: hidden;
+}
+.right-flow .media .pic {
+    position: relative;
+    margin-bottom: 0;
+}
+.right-flow .media .price {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    width: 110px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #e85045;
+}
+.right-flow .media .text {
+    background-color: #fff;
+    padding: 5px 10px;
+    line-height: 22px;
+}
+.right-flow .media .text .total {
+    color: #666;
+    font-size: 12px;
+}
+/*添加样式*/
+.right-flow .media .text .total .sole {
+    text-align: center;
+    width: 35px;
+    height: 22px;
+    line-height: 22px;
+    background-color: #aaa;
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+    float: right;
+}
+/*添加样式完成*/
+.right-flow .media .text, .right-flow .media .text a {
+    background-color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    height: 45px;
+}
+.right-flow .mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #666;
+}
+.right-flow .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #a0a0a0;
+}
+.right-flow .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #a0a0a0;
+}
+.right-flow .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.right-flow .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #a0a0a0;
+}
+/*登录后显示头像*/
+.sidebar .s-login1 .des {
+    width: 130px;
+}
+.sidebar .s-login1 .bg-img {
+    width: 32px;
+    height: 32px;
+    margin-left: 3px;
+    background: #0175c2 url("../images/bg-icon-s.png") no-repeat 7px 5px;
+    border-radius: 50%;
+}
+.sidebar .s-login1 .bg-img:hover {
+    background-color: #0175c2;
+}
+/*在线客服默认打开*/
+.s-customer .des{
+    display: block;
+    right: 38px;
+}
+/*二维码*/
+.sidebar .s-erweima img{
+    width: 68px;
+    height: 68px;
+    margin-bottom: 5px;
+}
+.sidebar .s-erweima .des{
+    display: block;
+    right: 38px;
+    line-height: 18px;
+    padding: 10px;
+    background-color: #48b3e2;
+}
+.sidebar .s-erweima .des:after{
+    content: none;
+}
+.right-flow .layer-wrapper{
+    position: relative;
+    width: 300px;
+    height: 262px;
+    padding: 70px 40px;
+    background: #fff;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.right-flow .layer-wrapper .close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.right-flow .layer-box .hd{
+    height: 26px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.right-flow .layer-box .hd h2{
+    float: left;
+    font-size: 16px;
+}
+.right-flow .layer-box .hd .more{
+    float: right;
+    font-size: 14px;
+    margin-top: 0;
+}
+.right-flow .layer-box .hd .more li{
+    float: left;
+    color: #888;
+}
+.layer-box .hd .more li.btn-area{
+    padding-left: 10px;
+}
+.right-flow .layer-box .hd .more li.btn-area a:link{
+    text-decoration: none;
+}
+.right-flow .layer-box .layer-btn{
+    display: inline-block;
+    color: #fff;
+    height: 24px;
+    background-color: #696d6f;
+    line-height: 24px;
+    padding: 0 12px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.right-flow .layer-box .layer-btn-area a:link{
+    text-decoration: none;
+}
+.right-flow .layer-box .user-info li{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.right-flow .layer-box .user-info li .tips-ipt{
+    clear: both;
+    color: #f44336;
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+    padding-top: 5px;
+    overflow: hidden;
+    display: none;
+}
+.right-flow .layer-box .ipt-area,.layer-box .ipt-area .ipt{
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+}
+.right-flow .layer-box .ipt-area{
+    padding: 0 10px 0 40px;
+    background: url("../images/bg-login.png") 10px 8px no-repeat;
+    border: 1px solid #e3e3e3;
+}
+.right-flow .layer-box .ipt-pwd{
+    background-position: 10px -44px;
+}
+.right-flow .layer-box .ipt-area .ipt{
+    color: #888;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+}
+.right-flow .layer-box .chk{
+    float: left;
+    font-size: 12px;
+}
+.right-flow .layer-box .chk input[type='checkbox']{
+    margin-right: 5px;
+}
+.right-flow .layer-box .link-fpwd{
+    float: right;
+    font-size: 12px;
+}
+.right-flow .btn4{
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    background: #e85045;
+    border: none;
+    border-radius: 2px;
+    overflow: hidden;
+}
+/*免费咨询*/
+.advice-free {
+    clear: both;
+    height: 100px;
+    background-color: #f3f3f3;
+    overflow: hidden;
+}
+.advice-free .pic {
+    float: left;
+    margin-right: 32px;
+    padding: 20px 0 0 30px;
+}
+.advice-free .pic img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.advice-free .input-area {
+    float: left;
+    margin-right: 35px;
+    padding-top: 33px;
+}
+.advice-free .input-area .ico-phone {
+    float: left;
+    margin: 8px 10px 0 0;
+}
+.advice-free .free-number {
+    float: left;
+    padding-top: 33px;
+}
+.advice-free .free-number .number {
+    height: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.advice-free .free-number .color-number {
+    color: #e85045;
+}
+.advice-free .tips {
+    display: none;
+}
+.advice-free .error-tips {
+    color: #e85045;
+}
+.advice-free .right-tips {
+    color: #0074c1;
+}
+.no-pic {
+    height: auto;
+    background: none;
+}
+.top-menu-wrap, .top-menu-banner {
+    padding-top: 20px;
+}
+.top-menu-wrap, .house-name, .detail-nav ul {
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.top-menu-wrap, .house-name, .detail-nav-six ul {
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.house-name {
+    margin-bottom: 20px;
+}
+.house-name h1, .house-name .subtitle, .house-name .house-tag {
+    float: left;
+}
+.house-name .name {
+    clear: both;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.house-name .subtitle {
+    color: #888;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.house-name .house-tag {
+    margin-top: 9px;
+}
+.house-name h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-right: 15px;
+}
+.house-name .house-tag .active {
+    border-color: #73b5e8;
+}
+.house-name .house-tag .active, .house-name .house-tag .active a {
+    color: #73b5e8;
+}
+.house-name .subtitle {
+    margin: 5px 10px 0 0;
+}
+.detail-nav {
+    clear: both;
+    height: 40px;
+    background: url("../images/bg-top-nav.png") 0 0 repeat-x;
+    overflow: hidden;
+}
+.detail-nav li {
+    float: left;
+    font-size: 16px;
+    width: 171px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.detail-nav li.first {
+    border-left: 1px solid #eaeaea;
+}
+.detail-nav li.last {
+    border-right: 1px solid #eaeaea;
+}
+.detail-nav li a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.detail-nav li.on {
+    height: 38px;
+    line-height: 38px;
+    border-top: 1px solid #0074c1;
+    border-bottom: 1px solid #0074c1;
+    background: #0074c1;
+}
+.detail-nav li.last {
+    width: 172px;
+}
+.detail-nav li.on a {
+    color: #fff;
+}
+/*8个li 样式*/
+.detail-nav-six{
+    clear: both;
+    height: 40px;
+    background: url("../images/bg-top-nav.png") 0 0 repeat-x;
+    overflow: hidden;
+}
+.detail-nav-six li{
+    float: left;
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.detail-nav-six li.first {
+    border-left: 1px solid #eaeaea;
+    width: 152px;
+}
+.detail-nav-six li.last {
+    border-right: 1px solid #eaeaea;
+}
+.detail-nav-six li a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.detail-nav-six li.on {
+    height: 38px;
+    line-height: 38px;
+    border-top: 1px solid #0074c1;
+    border-bottom: 1px solid #0074c1;
+    background: #0074c1;
+}
+.detail-nav-six li.last {
+    width: 146px;
+}
+.detail-nav-six li.on a {
+    color: #fff;
+}
+/*楼盘详情页悬浮导航*/
+.top-menu-banner {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    opacity: 0.98;
+    filter: "alpha(opacity=98)";
+    -ms-filter: "alpha(opacity=98)";
+    z-index: 15;
+}
+.top-menu-banner .detail-nav li.first {
+    border-left: 0;
+}
+.top-menu-banner .detail-nav li.last {
+    border-right: 0;
+}
+.top-menu-banner .detail-nav-six li.first {
+    border-left: 0;
+}
+.top-menu-banner .detail-nav-six li.last {
+    border-right: 0;
+}
+.dev-price {
+    float: left;
+    color: #888;
+    line-height: 46px;
+}
+.dev-price em {
+    font-style: normal;
+    color: #e85045;
+    font-size: 22px;
+}
+.top-menu-banner .discount {
+    float: right;
+}
+.top-menu-banner .discount p {
+    float: left;
+    font-size: 16px;
+    color: #e95046;
+    font-weight: bold;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.top-menu-banner .discount .youhui {
+    max-width: 400px;
+    margin-right: 46px;
+}
+.top-menu-banner .discount .hot-phone {
+    margin-right: 20px;
+}
+.top-menu-banner .discount .btn-bm {
+    padding: 0 32px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}

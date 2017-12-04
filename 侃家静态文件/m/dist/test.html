@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="wap-font-scale" content="no">
+    <title>首页</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/swiper-3.4.0.min.css">
+    <link rel="stylesheet" href="css/module-new.css">
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+<div class="ddlb">
+    <ul id="stack_krisna" class="stack stack--krisna">
+        <li class="stack__item">
+            <a href="" data-source="1">
+                <img src="images/banner9.jpg" alt="" />
+            </a>
+        </li>
+        <li class="stack__item">
+            <a href="#" data-source="2">
+                <img src="images/banner9.jpg" alt="" />
+            </a>
+        </li>
+        <li class="stack__item">
+            <a href="#" data-source="3">
+                <img src="images/banner9.jpg" alt="" />
+            </a>
+        </li>
+        <li class="stack__item">
+            <a href="#" data-source="4">
+                <img src="images/banner9.jpg" alt="" />
+            </a>
+        </li>
+        <li class="stack__item">
+            <a href="#" data-source="5">
+                <img src="images/banner9.jpg" alt="" />
+            </a>
+        </li>
+    </ul>
+</div>
+    <script src="js/lib/jquery-2.1.4.min.js"></script>
+    <script src="js/lib/swiper.min.js"></script>
+    <script src="js/lib/dynamic.min.js"></script>
+    <script src="js/lib/laydate/laydate.js"></script>
+    <!--<script src="js/j-ui.js"></script>-->
+    <script src="js/index.js"></script>
+    <script>
+        /*banner堆叠轮播插件*/
+        if($("#stack_krisna > li").length > 1){
+            var startX,
+                    EndX ;
+            var krisna = new Stack(document.getElementById('stack_krisna'));
+            var timerKrisna = setInterval(function () {
+                krisna.reject();
+            },2000);
+            $("#stack_krisna li").on("touchstart",function (e) {
+                event.preventDefault();
+                clearInterval(timerKrisna);
+                startX = e.originalEvent.changedTouches[0].pageX;
+                $(this).on("touchend",function (e) {
+                    EndX = e.originalEvent.changedTouches[0].pageX;
+                    clearInterval(timerKrisna);
+                    if((EndX-startX)==0){//点击
+                        if($(this).find("a").length > 0){
+                            window.location.href = $(this).find("a").attr("href");
+                        }
+                    }else{//滑动
+                        EndX-startX > 0 ? krisna.accept():krisna.reject();
+                    }
+                    timerKrisna = setInterval(function () {
+                        krisna.reject();
+                    },2000);
+                    e.originalEvent.changedTouches = null;
+                })
+            });
+        }else{
+            $("#stack_krisna .stack__item").css({
+                "opacity":1
+            });
+        }
+        $(document).on("touchend","#stack_krisna a",function(){
+
+        })
+//        $("#stack_krisna a").touchend(function(){
+//            alert(3);
+//        });
+    </script>
+</body>
+</html>

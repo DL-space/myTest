@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>渠道列表</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row row-crumbs">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">BD单列表页</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--BD单列表-->
+                    <div class="panel panel-bd">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">BD单列表</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="c-search">
+                                <ul class="c-query">
+                                    <li>
+                                        <div class="th">城市：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">全国</option>
+                                                <option value="1">北京</option>
+                                                <option value="2">上海</option>
+                                                <option value="3">天津</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">项目名称：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">决策人：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">跟进BD：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">合作方式：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">BD1</option>
+                                                <option value="1">BD2</option>
+                                                <option value="2">BD3</option>
+                                                <option value="3">BD4</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">订单状态：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">BD1</option>
+                                                <option value="1">BD2</option>
+                                                <option value="2">BD3</option>
+                                                <option value="3">BD4</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="c-ext">
+                                        <div class="th">计划时间：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                            <spa class="ext">-</spa>
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li class="c-ext c-ext-2">
+                                        <div class="th">收回入场函/框架日期：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                            <spa class="ext">-</spa>
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-area">
+                                    <input class="btn btn-default" type="button" value="重置"/>
+                                    <input class="btn btn-primary" type="button" value="搜索"/>
+                                </div>
+                            </div>
+                            <!--渠道列表-->
+                            <div class="c-list bd-list">
+                                <div class="tit">
+                                    <div class="list-info">
+                                        <p>第1-15条，共13890条数据</p>
+                                    </div>
+                                    <div class="list-opt">
+                                        <a class="btn btn-primary" href="bd-add.html">新增BD单</a>
+                                    </div>
+                                </div>
+                                <div class="con">
+                                    <div class="list-item">
+                                        <div class="bd-tit">
+                                            <h4>万泽经海广场</h4>
+                                            <span class="bd-area">北京</span>
+                                            <div class="lb-area mr10"><span class="c-lb">膜拜</span></div>
+                                            <div class="date">收回合同补充日期：2017-10-24</div>
+                                            <div class="u-time">最近更新：2017-03-02 13:34:56</div>
+                                        </div>
+                                        <ul class="list-con">
+                                            <li>决策人:暂无</li>
+                                            <li>联系方式:暂无</li>
+                                            <li>合作跟进BD:赵崇岩</li>
+                                            <li>合同号:暂无</li>
+                                            <li>合作方式:暂无</li>
+                                            <li class="remark">
+                                                <div class="rmk-tit">
+                                                    <h5>最新推进计划</h5>
+                                                    <span class="n-time">2017-03-02 13:34:56</span>
+                                                </div>
+                                                <div class="rmk-con">
+                                                    <h6>预计结果</h6>
+                                                    <p>
+                                                        本来打算按原计划走，但是原计划太6了，牛逼的不要不要的，然后就没有然后了。然后山里有个庙，庙里有个老和尚，小和尚跟着老和尚挑水被水怪吃了。本来打算按原计划走，但是原计划太6了，牛逼的不要不要的，然后就没有然后了。然后山里有个庙，庙里有个老和尚，小和尚跟着老和尚挑水被水怪吃了。</p>
+                                                </div>
+                                                <div class="rmk-con">
+                                                    <h6>推进计划</h6>
+                                                    <p>
+                                                        本来打算按原计划走，但是原计划太6了，牛逼的不要不要的，然后就没有然后了。然后山里有个庙，庙里有个老和尚，小和尚跟着老和尚挑水被水怪吃了。本来打算按原计划走，但是原计划太6了，牛逼的不要不要的，然后就没有然后了。然后山里有个庙，庙里有个老和尚，小和尚跟着老和尚挑水被水怪吃了。</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="btn-area">
+                                            <a class="btn btn-primary" href="#">详情</a>
+                                        </div>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="bd-tit">
+                                            <h4>首开华润城</h4>
+                                            <span class="bd-area">北京</span>
+
+                                            <div class="lb-area"><span class="c-lb">条款阶段</span></div>
+                                            <div class="u-time">最近更新：2017-03-02 13:34:56</div>
+                                        </div>
+                                        <ul class="list-con">
+                                            <li>决策人:暂无</li>
+                                            <li>联系方式:暂无</li>
+                                            <li>合作跟进BD:赵崇岩</li>
+                                            <li>合同号:暂无</li>
+                                            <li>合作方式:暂无</li>
+                                            <li class="remark">
+                                                <div class="rmk-tit">
+                                                    <h5>最新推进计划</h5>
+                                                    <span class="n-time">2017-03-02 13:34:56</span>
+                                                </div>
+                                                <div class="rmk-con">
+                                                    <h6>预计结果</h6>
+                                                    <p>
+                                                        本来打算按原计划走，但是原计划太6了，牛逼的不要不要的，然后就没有然后了。然后山里有个庙，庙里有个老和尚，小和尚跟着老和尚挑水被水怪吃了。本来打算按原计划走，但是原计划太6了，牛逼的不要不要的，然后就没有然后了。然后山里有个庙，庙里有个老和尚，小和尚跟着老和尚挑水被水怪吃了。</p>
+                                                </div>
+                                                <div class="rmk-con">
+                                                    <h6>推进计划</h6>
+                                                    <p>
+                                                        本来打算按原计划走，但是原计划太6了，牛逼的不要不要的，然后就没有然后了。然后山里有个庙，庙里有个老和尚，小和尚跟着老和尚挑水被水怪吃了。本来打算按原计划走，但是原计划太6了，牛逼的不要不要的，然后就没有然后了。然后山里有个庙，庙里有个老和尚，小和尚跟着老和尚挑水被水怪吃了。</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="btn-area">
+                                            <a class="btn btn-primary" href="#">详情</a>
+                                        </div>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="bd-tit">
+                                            <h4>城市之光(商住)</h4>
+                                            <span class="bd-area">北京</span>
+
+                                            <div class="lb-area"><span class="c-lb">签约合作</span></div>
+                                            <div class="u-time">最近更新：2017-03-02 13:34:56</div>
+                                        </div>
+                                        <ul class="list-con">
+                                            <li>决策人:暂无</li>
+                                            <li>联系方式:暂无</li>
+                                            <li>合作跟进BD:赵崇岩</li>
+                                            <li>合同号:暂无</li>
+                                            <li>合作方式:暂无</li>
+                                            <li class="remark">
+                                                <div class="rmk-tit">
+                                                    <h5>最新推进计划</h5>
+                                                    <span class="n-time">2017-03-02 13:34:56</span>
+                                                </div>
+                                                <div class="rmk-con">
+                                                    <h6>预计结果</h6>
+                                                    <p>
+                                                        本来打算按原计划走，但是原计划太6了，牛逼的不要不要的，然后就没有然后了。然后山里有个庙，庙里有个老和尚，小和尚跟着老和尚挑水被水怪吃了。本来打算按原计划走，但是原计划太6了，牛逼的不要不要的，然后就没有然后了。然后山里有个庙，庙里有个老和尚，小和尚跟着老和尚挑水被水怪吃了。</p>
+                                                </div>
+                                                <div class="rmk-con">
+                                                    <h6>推进计划</h6>
+                                                    <p>
+                                                        本来打算按原计划走，但是原计划太6了，牛逼的不要不要的，然后就没有然后了。然后山里有个庙，庙里有个老和尚，小和尚跟着老和尚挑水被水怪吃了。本来打算按原计划走，但是原计划太6了，牛逼的不要不要的，然后就没有然后了。然后山里有个庙，庙里有个老和尚，小和尚跟着老和尚挑水被水怪吃了。</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="btn-area">
+                                            <a class="btn btn-primary" href="#">详情</a>
+                                        </div>
+                                    </div>
+                                    <div class="page">
+                                        <ul class="pagination">
+                                            <ul class="pagination">
+                                                <li class="prev disabled"><span>«</span></li>
+                                                <li class="active"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">6</a></li>
+                                                <li><a href="#">7</a></li>
+                                                <li><a href="#">8</a></li>
+                                                <li><a href="#">9</a></li>
+                                                <li><a href="#">10</a></li>
+                                                <li class="next"><a href="#">»</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/consultant-operation/consultant-operation.js"></script>
+</body>
+</html>

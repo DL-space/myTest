@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>楼盘列表页</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/d-dictionary.css">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">带看记录</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel d-panel-lplb">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">楼盘列表</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <!--检索区域-->
+                            <div class="d-search-area">
+                                <ul class="d-query">
+                                    <li>
+                                        <div class="th">城市：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">全国</option>
+                                                <option value="1">北京</option>
+                                                <option value="2">上海</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">区域：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">请选择</option>
+                                                <option value="1">大兴</option>
+                                                <option value="2">朝阳</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">楼盘名称：</div>
+                                        <div class="td">
+                                            <input type="text" class="form-control" placeholder="请输入楼盘名称">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">业态类型：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">请选择</option>
+                                                <option value="1">商住</option>
+                                                <option value="2">住宅</option>
+                                                <option value="3">别墅</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">销售状态：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">请选择</option>
+                                                <option value="1">未售</option>
+                                                <option value="2">待售</option>
+                                                <option value="3">在售</option>
+                                                <option value="4">售罄</option>
+                                                <option value="5">排卡中</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">合作类型：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">请选择</option>
+                                                <option value="1">合作</option>
+                                                <option value="2">非合作</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">维护咨询师：</div>
+                                        <div class="td">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">显示状态：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">请选择</option>
+                                                <option value="1">显示</option>
+                                                <option value="2">隐藏</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-area">
+                                    <button type="reset" class="btn btn-t03">取消</button>
+                                    <button type="button" class="btn btn-t01">确定</button>
+                                </div>
+                            </div>
+                            <!--楼盘列表-->
+                            <div class="d-h-list">
+                                <div class="btn-area">
+                                    <a href="#" class="btn btn-primary">新增楼盘</a>
+                                    <a href="#" class="btn btn-success">新增楼盘点评</a>
+                                </div>
+                                <div class="d-h-house">
+                                    <img class="t-pic" src="../images/d-dictionary/img-lplb.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/d-dictionary.js"></script>
+</body>
+</html>

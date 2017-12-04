@@ -1,0 +1,2870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>楼盘详情页</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/house-detail.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header header-juli">
+            <div class="inn">
+                <div class="logo">
+                    <a href="#">
+                <img src="./images/logo-juli.png" alt="侃家网">
+            </a>
+                </div>
+                <div class="city-position city-tip">
+                    <span class="ico ico-city"></span><span class="text">北京</span>
+                    <div class="city-change-list">
+                        <div class="top"></div>
+                        <ul class="city-list">
+                            <li class="tit">选择城市</li>
+                            <li><a href="#">北京</a></li>
+                            <li><a href="#">上海</a></li>
+                            <li><a href="#">其他城市陆续开放，见列表！</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">楼盘查询</a></li>
+                    <li><a href="#">咨询师</a></li>
+                    <li><a href="#">成交记录</a></li>
+                    <li><a href="#">买房问问 <span class="ico ico-ww-d"></span></a></li>
+                    <li><a href="#">买房知识</a></li>
+                </ul>
+                <div class="fr">
+                    <div class="hot-phone">咨询热线：<span class="phone-txt">400-080-7815</span></div>
+                    <div class="online-ask"><span class="ico ico-server"></span>在线咨询</div>
+                    <div class="user-set">
+                        <!--登录状态显示手机号-->
+                        <div class="user-option" style="display: none;">
+                            <a href="#" class="link-reg"><span class="ico ico-user"></span>注册</a>
+                            <a href="#" class="link-login">登录</a>
+                        </div>
+                        <!--登录后-->
+                        <div class="user-phone">
+                            <a href="#"><span class="ico ico-user"></span>132****0804</a>
+                        </div>
+                        <div class="exit"><a href="#">退出</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="row row-search">
+                <div class="wrap">
+                    <!--搜索-->
+                    <div class="search">
+                        <!--找房-->
+                        <div class="search-area">
+                            <div class="ipt-area">
+                                <input type="text" class="ipt" placeholder="请输入楼盘名、区域">
+                                <div class="option">
+                                    <ul class="option-1">
+                                        <li class="title">热门搜索</li>
+                                        <li>
+                                            <a href="#">五和万科长阳天地</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">中骏·西山天璟</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">北京城建海梓府</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">金樾和著</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">中海·国际城</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="option-2">
+                                        <li class="title">历史搜索</li>
+                                        <li>
+                                            <a href="#">中海·国际城</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">泰禾拾景园</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">中骏·西山天璟</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">泰和中央广场</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="option-3">
+                                        <li class="title">与“<span class="name">中骏</span>”相关的新房<span class="num">约2条</span></li>
+                                        <li>
+                                            <a href="#">中海·国际城</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">泰禾拾景园</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">中骏·西山天璟</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">泰和中央广场</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-search">搜索</a>
+                        </div>
+                        <!--热词-->
+                        <div class="hot-words">
+                            <span class="ico ico-pos"></span>
+                            <a href="#">小户型</a>
+                            <a href="#">loft</a>
+                        </div>
+                        <!--侃家服务-->
+                        <div class="cj-service">
+                            <a href="#">每4位购房者中，就有1位接受过侃家服务<span class="ico ico-more"></span></a>
+                        </div>
+                    </div>
+
+                    <!--无右侧搜索-->
+                    <div class="search search-nopic" style="display: none">
+                        <!--找房-->
+                        <div class="search-area">
+                            <div class="ipt-area">
+                                <input type="text" class="ipt" placeholder="请输入楼盘名、区域">
+                                <div class="option">
+                                    <ul class="option-1">
+                                        <li class="title">热门搜索</li>
+                                        <li>五和万科长阳天地</li>
+                                        <li>中骏·西山天璟</li>
+                                        <li>北京城建海梓府</li>
+                                        <li>金樾和著</li>
+                                        <li>中海·国际城</li>
+                                    </ul>
+                                    <ul class="option-2">
+                                        <li class="title">历史搜索</li>
+                                        <li>中海·国际城</li>
+                                        <li>泰禾拾景园</li>
+                                        <li>中骏·西山天璟</li>
+                                        <li>泰和中央广场</li>
+                                    </ul>
+                                    <ul class="option-3">
+                                        <li class="title">与“<span class="name">中骏</span>”相关的新房<span class="num">约2条</span></li>
+                                        <li>中海·国际城</li>
+                                        <li>泰禾拾景园</li>
+                                        <li>中骏·西山天璟</li>
+                                        <li>泰和中央广场</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-search">搜索</a>
+                        </div>
+                        <!--热词-->
+                        <div class="hot-words">
+                            <span class="ico ico-pos"></span>
+                            <a href="#">小户型</a>
+                            <a href="#">loft</a>
+                            <a href="#">小户型</a>
+                            <a href="#">loft</a>
+                            <a href="#">小户型</a>
+                            <a href="#">loft</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-crumb">
+                <!--面包屑-->
+                <ul class="crumb">
+                    <li class="icon"><span class="icon icon-coordinates_fill"></span></li>
+                    <li><a href="#">侃家网</a></li>
+                    <li class="fgx">&gt;</li>
+                    <li><a href="#">我要找房</a></li>
+                </ul>
+            </div>
+            <div class="row row-top-nav">
+                <div class="top-menu-wrap">
+                    <div class="house-name">
+                        <div class="name">
+                            <h1>华远西红世</h1>
+                            <ul class="house-tag">
+                                <li class="tag active"><a href="#">排卡中</a></li>
+                                <li class="tag"><a href="#">精品</a></li>
+                                <li class="tag"><a href="#">商住</a></li>
+                                <li class="tag"><a href="#">小户型</a></li>
+                            </ul>
+                        </div>
+                        <div class="subtitle">别名：花园西红柿花园西红柿花园西红柿花园西红柿</div>
+                    </div>
+                    <div class="detail-nav detail-nav-nine">
+                        <ul>
+                            <li class="first"><a href="#">楼盘主页</a></li>
+                            <li>
+                                <a href="#">楼盘问问<span class="ico ico-new1">new</span></a>
+                            </li>
+                            <li class="on"><a href="#">楼盘动态</a></li>
+                            <li><a href="#">用户点评</a></li>
+                            <li><a href="#">楼盘详情</a></li>
+                            <li><a href="#">户型分析</a></li>
+                            <!-- <li><a href="#">价格走势</a></li> -->
+                            <li><a href="#">周边分析</a></li>
+                            <li><a href="#">楼盘图册</a></li>
+                            <li class="last"><a href="#">我要看房</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--通栏-->
+                <div class="top-menu-banner">
+                    <div class="house-name">
+                        <div class="name">
+                            <h1>华远西红世</h1>
+                            <div class="dev-price">开发商报价：<em>48000元/m²</em></div>
+                            <div class="discount">
+                                <p class="youhui" title="电商4万抵12万；全款96折；按揭98折">电商4万抵12万；全款96折；按揭98折</p>
+                                <p class="hot-phone">咨询热线：400-080-7815</p>
+                                <a href="#" class="btn btn-bm">报名看房</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-nav detail-nav-nine">
+                        <ul>
+                            <li class="first"><a href="#">楼盘主页</a></li>
+                            <li><a href="#">楼盘问问<span class="ico ico-new1">new</span></a></li>
+                            <li class="on"><a href="#">楼盘动态</a></li>
+                            <li><a href="#">用户点评</a></li>
+                            <li><a href="#">楼盘详情</a></li>
+                            <li><a href="#">户型分析</a></li>
+                            <!-- <li><a href="#">价格走势</a></li> -->
+                            <li><a href="#">周边分析</a></li>
+                            <li><a href="#">楼盘图册</a></li>
+                            <li class="last"><a href="#">我要看房</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--楼盘相册-->
+                <div class="focus">
+                    <div class="albums-detail">
+                        <div class="albums">
+                            <div class="content">
+                                <!--幻灯-->
+                                <div class="slide">
+                                    <ul class="slide-ul">
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/1.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/2.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/3.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/4.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/5.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/1.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/2.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/3.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/4.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/5.png" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!--按钮-->
+                                    <div>
+                                        <span class="slide-btnz slide-btn1">前一个</span>
+                                        <span class="slide-btny slide-btn1">后一个</span>
+                                    </div>
+                                    <!--全景看房-->
+                                    <div class="qj-img">
+                                        <a href="###">
+                                            <img src="./images/qj-label02.png" alt="全景看房">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--走马灯-->
+                                <div class="zmd">
+                                    <div class="zmd-container">
+                                        <div class="move">
+                                            <ul class="zmd-container-ul">
+                                                <li class="first zmd-on">
+                                                    <a href="javascript:void(0);">
+                                                        <img class="zmd-index" src="./images/11.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">效果图</p>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./images/11.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">样板间</p>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./images/11.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">规划图</p>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./images/11.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">楼盘实景图</p>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./images/1.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">配套实景图</p>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./images/11.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">效果图</p>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./images/1.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">样板间</p>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./images/1.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">规划图</p>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./images/1.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">楼盘实景图</p>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./images/1.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">配套实景图</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--楼盘详情信息-->
+                <div class="house-info house-info-a">
+                    <!--楼盘基础信息-->
+                    <div class="base-info">
+                        <ul class="info-list">
+                            <li>
+                                <span class="lb">开发商报价：</span>
+
+                                <div class="txt">
+                                    <em>53,800元/平米</em>
+                                    <a href="#" class="link-tel">获取最新价格变动
+                                        <span class="ico ico-right2">向右</span>
+                                    </a>
+
+                                    <div class="price-cmt">
+                                        <span class="ico ico-cmt"></span>
+                                        <span class="txt">价格说明</span>
+
+                                        <div class="tips-price-cmt">
+                                            <div class="top"></div>
+                                            <div class="txt-cmt">报价更新时间：2016-2-13</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="lb">参考总价：</span>
+                                <p class="txt">194-581万</p>
+                            </li>
+                            <li>
+                                <span class="lb">楼盘户型：</span>
+                                <p class="txt">
+                                    <a href="#">开间(6)</a>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="lb">楼盘地址：</span>
+                                <p class="txt">
+                                    <a href="#">大兴-地铁4号线义和庄站B口北1公里内</a>
+                                </p>
+                            </li>
+                            <li class="date">
+                                <span class="lb">最新开盘时间：</span>
+                                <p class="txt">2017-01-07</p>
+                                <!--关注下次开盘时间-->
+                                <div class="advice-free">
+                                    <div class="ipt-area">
+                                        <input class="ipt" value="输入您的手机号" type="text">
+                                        <a href="javascript:void(0)" class="btn btn-cons">关注下次开盘时间</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--楼盘动态-->
+                    <div class="house-news">
+                        <div class="tit">
+                            <h4>最新动态</h4>
+                            <img class="dh-ico" src="./images/ico-xuan.gif" alt="最新动态">
+                            <a href="#" class="more">更多动态
+                                <span class="ico ico-right"></span>
+                            </a>
+                        </div>
+                        <ul class="con list">
+                            <li>
+                                <a href="#">【内部消息】6号将推出3号楼小户型！！先到先得！ </a>
+                                <span class="date">2017-02-04</span>
+                            </li>
+                            <li>
+                                <a href="#">2号楼加推啦！！大家的选择又多了哟～ </a>
+                                <span class="date">2017-01-17</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hot-advice">
+                        <!--咨询热线-->
+                        <div class="hot-line">
+                            <p class="hot-line-num">
+                                咨询热线：400-080-7815 </p>
+                            <p class="info">预约后一小时内会有一对一高学历咨询师与您联系，当天即可免费专车看房。</p>
+                        </div>
+                        <!--免费咨询-->
+                        <div class="advice-free">
+                            <div class="ipt-area">
+                                <input class="ipt common-free-mobile-ipt" value="输入您的手机号" type="text">
+                                <a href="javascript:void(0)" class="btn btn-cons">立即预约</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--楼盘相册-->
+                <div class="focus">
+                    <div class="albums-detail">
+                        <div class="albums">
+                            <div class="content">
+                                <!--幻灯-->
+                                <div class="slide">
+                                    <ul class="slide-ul">
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/1.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/2.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/3.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/4.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/5.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/1.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/2.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/3.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/4.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./images/5.png" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!--按钮-->
+                                    <div>
+                                        <span class="slide-btnz slide-btn1">前一个</span>
+                                        <span class="slide-btny slide-btn1">后一个</span>
+                                    </div>
+                                    <!--全景看房-->
+                                    <div class="qj-img">
+                                        <a href="###">
+                                            <img src="./images/qj-label02.png" alt="全景看房">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--走马灯-->
+                                <div class="zmd">
+                                    <div class="zmd-container">
+                                        <div class="move">
+                                            <ul class="zmd-container-ul">
+                                                <li class="first zmd-on">
+                                                    <a href="javascript:void(0);">
+                                                        <img class="zmd-index" src="./images/11.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">效果图</p>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./images/11.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">样板间</p>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./images/11.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">规划图</p>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./images/11.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">楼盘实景图</p>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./images/1.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">配套实景图</p>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./images/11.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">效果图</p>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./images/1.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">样板间</p>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./images/1.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">规划图</p>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./images/1.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">楼盘实景图</p>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="./images/1.jpg" alt="">
+                                                    </a>
+                                                    <p class="text">配套实景图</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--楼盘详情信息-->
+                <div class="house-info">
+                    <!--楼盘基础信息-->
+                    <div class="base-info">
+                        <ul class="info-list">
+                            <li class="date">
+                                <span class="lb">最新开盘时间：</span>
+                                <p class="txt">2016-11-11</p>
+                                <!--关注下次开盘时间-->
+                                <div class="advice-free">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" value="输入您的手机号">
+                                        <a href="#" class="btn btn-cons">关注下次开盘时间</a>
+
+                                        <div class="tips error-tips">您输入的手机号码格式有误，请核对后重新输入</div>
+                                        <div class="tips right-tips">预约成功，我们将用010-89191132号码联系您免费专车带您看房！</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="lb">开发商报价：</span>
+
+                                <div class="txt">
+                                    <em>40,000元/平米</em>
+
+                                    <div class="price-cmt">
+                                        <span class="ico ico-cmt"></span>
+                                        <span class="txt">价格说明</span>
+
+                                        <div class="tips-price-cmt">
+                                            <div class="top"></div>
+                                            <div class="txt-cmt">报价更新时间：2016-2-13</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="lb">参考总价：</span>
+                                <p class="txt">156 万~ 200 万</p>
+                            </li>
+                            <li>
+                                <span class="lb">楼盘户型：</span>
+                                <p class="txt">一居(2) 二居(2)</p>
+                            </li>
+                            <li>
+                                <span class="lb">楼盘地址：</span>
+                                <p class="txt">大兴 - 亦庄经济技术开发区三海子东路</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hot-advice">
+                        <!--咨询热线-->
+                        <div class="hot-line">
+                            <p class="hot-line-num">
+                                <span class="ico ico-phone2">销售热线：400-080-7815</span> 销售热线：400-080-7815
+                            </p>
+
+                            <div class="hot-zxzx">
+                                <a href="#">
+                                    <span class="ico ico-zxzx"></span>在线咨询</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="base-discount">
+                        <div class="th">
+                            <span class="ico-discount"></span>
+                        </div>
+                        <div class="td">
+                            <div class="txt">
+                                <b>优惠信息：</b>侃家网客户优惠10万，贷款97折，全款95折;侃家网客户优惠10万， 贷款97折，全款95折
+                            </div>
+                            <div class="advice-free">
+                                <div class="ipt-area">
+                                    <input class="ipt" value="留下您的电话" type="text">
+                                    <a href="#" class="btn btn-cons">限时领取</a>
+
+                                    <div class="tips error-tips">您输入的手机号码格式有误，请核对后重新输入</div>
+                                    <div class="tips right-tips">预约成功，我们将用010-89191132号码联系您免费专车带您看房！</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--优惠信息-->
+                <div class="preferential">
+                    <div class="title">
+                        独家优惠
+                    </div>
+                    <div class="content">
+                        <ul class="list">
+                            <li>电商4万抵12万</li>
+                            <li>全款96折</li>
+                            <li>全款96折</li>
+                            <li>按揭98折</li>
+                        </ul>
+                    </div>
+                    <div class="btn-area">
+                        <a href="#" class="btn-pre">
+                            <span class="ico ico-price">优惠</span>领优惠</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col9">
+                    <!--楼盘动态-->
+                    <div class="box4 lpdt">
+                        <div class="hd">
+                            <h2>楼盘动态</h2>
+
+                            <div class="more">
+                                <a href="#">全部动态
+                                    <span class="ico ico-more"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bd">
+                            <div class="dt-mod">
+                                <div class="tit">
+                                    <h3>
+                                        <a href="#">华远西红柿楼盘动态</a>
+                                        <img src="./images/img-new.png" alt="" />
+                                    </h3>
+                                </div>
+                                <div class="timeline">
+                                    <div class="feed">
+                                        <a href="#">
+                                            <div class="date">2017.1.17</div>
+                                            <em class="circle"></em>
+
+                                            <div class="feed-detail">
+                                                <h4>
+                                                    元旦假期一来，优惠就没有了哟元旦假期一来，优惠就没有了哟元旦假期一来，优惠就没有了哟元旦假期一来，优惠就没有了哟元旦假期一来，优惠就没有了哟元旦假期一来，优惠就没有了哟元旦假期一来，优惠就没有了哟元旦假期一来，优惠就没有了哟</h4>
+                                                <p>
+                                                    目前4号楼、6号楼房源已售罄，预计2017年上半年推出3号楼或5号楼，具体户型及价格待定。本期售罄前户型为50-80平米复式，均价30000元/平，精装修交房，装修标准参考样板间。</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="feed">
+                                        <a href="#">
+                                            <div class="date">2017.1.17</div>
+                                            <em class="circle"></em>
+
+                                            <div class="feed-detail">
+                                                <h4>元旦假期一来，优惠就没有了哟~</h4>
+                                                <p>目前4号楼、6号楼房源已售罄，预计2017年上半年推出3号楼或5号楼，具体户型及价格待定。</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="feed">
+                                        <a href="#">
+                                            <div class="date">2017.1.17</div>
+                                            <em class="circle"></em>
+
+                                            <div class="feed-detail">
+                                                <h4>元旦假期一来，优惠就没有了哟~</h4>
+                                                <p>
+                                                    目前4号楼、6号楼房源已售罄，预计2017年上半年推出3号楼或5号楼，具体户型及价格待定。本期售罄前户型为50-80平米复式，均价30000元/平，精装修交房，装修标准参考样板间。</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col10">
+                    <!--资讯解答-->
+                    <div class="box4 info-solution">
+                        <div class="hd">
+                            <h2>订阅动态</h2>
+                        </div>
+                        <div class="bd">
+                            <ul class="sub-list">
+                                <li>担心错过楼盘开盘？</li>
+                                <li>担心不能第一时间获取楼盘动态？</li>
+                                <li>点击下方订阅</li>
+                                <li>楼盘一手情报抢先知道!</li>
+                            </ul>
+                            <div class="ipt-area">
+                                <input type="text" class="ipt" value="输入您的手机号">
+                                <a href="#" class="btn btn-dy">我要咨询</a>
+                                <p class="ipt-area-num">
+                                    <span class="ico ico-phone3">免费咨询：400-080-7815</span> 免费咨询：400-080-7815
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--楼盘户型-->
+                <div class="box3 box3-hxfx">
+                    <div class="hd">
+                        <h2>楼盘户型</h2>
+
+                        <div class="more">
+                            <a href="#">查看全部户型分析
+                                <span class="ico ico-more"></span>
+                            </a>
+                        </div>
+                        <ul class="house-type">
+                            <li>
+                                <a href="#">一居(1)</a>
+                            </li>
+                            <li>
+                                <a href="#">两居(2)</a>
+                            </li>
+                            <li>
+                                <a href="#">三居(3)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bd">
+                        <div class="htype-list">
+                            <div class="media4">
+                                <div class="pic">
+                                    <a href="#">
+                                        <img src="images/img-house-type.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <div class="info">
+                                        <span class="lbl lbl-on">在售</span>
+                                        <span class="h-type">两室一厅 A1</span>
+                                    </div>
+                                    <div class="h-info">
+                                        <span class="h-txt">面积：建面49㎡</span>
+
+                                        <div class="fr">
+                                            <span class="h-txt2">总价159万</span>
+                                            <span class="h-txt2">首付88万</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media4">
+                                <div class="pic">
+                                    <a href="#">
+                                        <img src="images/img-house-type.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <div class="info">
+                                        <span class="lbl lbl-on">在售</span>
+                                        <span class="h-type">两室一厅 A1</span>
+                                    </div>
+                                    <div class="h-info">
+                                        <span class="h-txt">面积：建面49㎡</span>
+
+                                        <div class="fr">
+                                            <span class="h-txt2">总价159万</span>
+                                            <span class="h-txt2">首付88万</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media4">
+                                <div class="pic">
+                                    <a href="#">
+                                        <img src="images/img-house-type.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <div class="info">
+                                        <span class="lbl lbl-on">在售</span>
+                                        <span class="h-type">两室一厅 A1</span>
+                                    </div>
+                                    <div class="h-info">
+                                        <span class="h-txt">面积：建面49㎡</span>
+
+                                        <div class="fr">
+                                            <span class="h-txt2">总价159万</span>
+                                            <span class="h-txt2">首付88万</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media4">
+                                <div class="pic">
+                                    <a href="#">
+                                        <img src="images/img-house-type.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <div class="info">
+                                        <span class="lbl lbl-out">售罄</span>
+                                        <span class="h-type">两室一厅 A1</span>
+                                    </div>
+                                    <div class="h-info">
+                                        <span class="h-txt">面积：建面49㎡</span>
+
+                                        <div class="fr">
+                                            <span class="h-txt2">总价159万</span>
+                                            <span class="h-txt2">首付88万</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="htype-list-right" style="display: none;">
+                                <div class="advice-free">
+                                    <p class="aim">没有想要的户型？和咨询师聊聊你的户型需求吧~</p>
+
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" value="输入您的手机号">
+                                        <a href="#" class="btn btn-cons">咨询一下</a>
+
+                                        <div class="tips error-tips">您的手机号输入有误，请重新输入</div>
+                                        <div class="tips right-tips">预约成功，咨询师会马上联系您</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--购房早知道-->
+                <div class="box3 zzd">
+                    <div class="hd">
+                        <h2>购房早知道</h2>
+                    </div>
+                    <div class="bd">
+                        <ul class="o-list">
+                            <li class="even">
+                                <span class="num">1</span>
+                                <a href="#">买房子楼层有讲究吗？应该注意哪些问题？</a>
+                            </li>
+                            <li>
+                                <span class="num">2</span>
+                                <a href="#">公积金贷款买房划算吗 流程是什么公积金贷款买房划算吗 流程是什么</a>
+                            </li>
+                            <li class="even">
+                                <span class="num">3</span>
+                                <a href="#">通州房价走势2017预测 涨还是跌</a>
+                            </li>
+                            <li>
+                                <span class="num">4</span>
+                                <a href="#">北京昌平房价最低多少，买什么样的楼盘比较</a>
+                            </li>
+                            <li class="even">
+                                <span class="num">5</span>
+                                <a href="#">房屋认购书的定金可以退吗？</a>
+                            </li>
+                            <li>
+                                <span class="num">6</span>
+                                <a href="#">北京房山房价会跌吗？</a>
+                            </li>
+                            <li class="even">
+                                <span class="num">7</span>
+                                <a href="#">门头沟房价最新消息，为什么要选择门头沟</a>
+                            </li>
+                            <li>
+                                <span class="num">8</span>
+                                <a href="#">北京天资华府怎么样，值不值得买呢？</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--周边配套-->
+                <div class="box3 box3-zbpt">
+                    <div class="hd">
+                        <h2>周边配套</h2>
+
+                        <div class="more">
+                            <a href="#">查看更详细的周边分析
+                                <span class="ico ico-more"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bd">
+                        <div class="zb-map">
+                            <img src="images/img-zb.jpg" alt="">
+                        </div>
+                        <!--周边环境-->
+                        <div class="tab tab-zb">
+                            <div class="tab-t">
+                                <ul>
+                                    <li class="t-sel">
+                                        <a href="javascript:void(0);">交通</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">生活</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">医疗</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">学校</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-c">
+                                <div class="nrpart show">
+                                    <ul class="zb-list">
+                                        <li>
+                                            <span class="ico ico-num">1</span>
+                                            <p class="txt">交通-永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">2</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">3</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">4</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">5</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">6</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nrpart">
+                                    <ul class="zb-list">
+                                        <li>
+                                            <span class="ico ico-num">1</span>
+                                            <p class="txt">生活-永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">2</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">3</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">4</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">5</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nrpart">
+                                    <ul class="zb-list">
+                                        <li>
+                                            <span class="ico ico-num">1</span>
+                                            <p class="txt">医疗-永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">2</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">3</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">4</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">5</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">4</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">5</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nrpart">
+                                    <ul class="zb-list">
+                                        <li>
+                                            <span class="ico ico-num">1</span>
+                                            <p class="txt">学校-永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">2</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">3</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">4</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">5</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">4</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                        <li>
+                                            <span class="ico ico-num">5</span>
+                                            <p class="txt">永定镇何各庄</p>
+                                            <span class="more">279米</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="als">
+                            <div class="pic-area">
+                                <img src="images/img-djfx.png" alt="独家分析">
+                            </div>
+                            <div class="content">
+                                <p class="text">
+                                    新华联YOYO新天地位于京平高速马坊出口， 地铁22号线马坊站附近。周边教育资源丰富，西侧一路之隔是北京师范大学附属中学平谷第一分校（初高中），东侧50米是东交民巷小学 （北京重点小学） 。自驾便捷，京平高速直达市区。公交852路走高速两站到东直门。周边有新华联自持商业，基本生活均可满足， 大的商场超市可以去平谷城区。整体来看， 配套相对齐全……
+                                </p>
+                                <p class="text-more">
+                                    新华联YOYO新天地位于京平高速马坊出口， 地铁22号线马坊站附近。周边教育资源丰富，西侧一路之隔是北京师范大学附属 新华联YOYO新天地位于京平高速马坊出口， 地铁22号线马坊站附近。周边教育资源丰富，西侧一路之隔是北京师范大学附属 新华联YOYO新天地位于京平高速马坊出口， 地铁22号线马坊站附近。周边教育资源丰富，西侧一路之隔是北京师范大学附属 新华联YOYO新天地位于京平高速马坊出口， 地铁22号线马坊站附近。周边教育资源丰富，西侧一路之隔是北京师范大学附属 新华联YOYO新天地位于京平高速马坊出口，
+                                    地铁22号线马坊站附近。周边教育资源丰富，西侧一路之隔是北京师范大学附属 新华联YOYO新天地位于京平高速马坊出口， 地铁22号线马坊站附近。周边教育资源丰富，西侧一路之隔是北京师范大学附属 新华联YOYO新天地位于京平高速马坊出口， 地铁22号线马坊站附近。周边教育资源丰富，西侧一路之隔是北京师范大学附属
+                                </p>
+
+                                <div class="more">
+                                    <a href="###" class="show-more">
+                                        <span class="more-text">查看全文</span>
+                                        <span class="ico ico-show-more"></span>
+                                    </a>
+                                    <a href="###" class="hide-more">
+                                        <span class="more-text">收起</span>
+                                        <span class="ico ico-hide-more"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <span class="line"></span>
+                            <!--留电口-->
+                            <div class="advice-free">
+                                <div class="ipt-area">
+                                    <input type="text" class="ipt" value="输入您的手机号">
+                                    <a href="#" class="btn btn-cons">获取配套实施进度</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col7">
+                    <!--成交评论-->
+                    <div class="box3 box3-comment tab-comment">
+                        <div class="hd">
+                            <h2>用户点评 (30)</h2>
+                        </div>
+                        <div class="bd">
+                            <div class="nrpart">
+                                <!--用户点评-->
+                                <div class="user-cmt">
+                                    <div class="user-customer">
+                                        <div class="face">
+                                            <img src="./images/img-face1.png" alt="">
+                                        </div>
+                                        <div class="user-info">
+                                            <h4 class="name">1游客游客游客游客游客游客游客游客游客游客游客</h4>
+                                            <span class="id-lb">业主</span>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <div class="cmt-detail">
+                                            <p>
+                                                城市综合体，是类似于三里屯soho吗？ 如果是那样就不错，除了主还能办公出租，社区真正的成熟后升值潜力还可以长度长城市综合体，是类似于三里屯soho吗？ 如果是那样就不错，除了主还能办公出租，社区真正的成熟后升值潜力还可以长度长度长度长度长度...城市综合体，是类似于三里屯soho吗？城市综合体，是类似于三里屯soho吗？ 如果是那样就不错，除了主还能办公出租，社区真正的成熟后升值潜力还可以长度长城市综合体，是类似于三里屯soho吗？ 如果是那样就不错，除了主还能办公出租，社区真正的成熟后升值潜力还可以长度长度长度长度长度...城市综合体，是类似于三里屯soho吗？
+                                                城市综合体，是类似于三里屯soho吗？ 如果是那样就不错，除了主还能办公出租，社区真正的成熟后升值潜力还可以长度长城市综合体。
+                                            </p>
+                                        </div>
+                                        <div class="show-more">
+                                            <span class="ico-showmore">
+                                                <a href="javascript:void(0);">查看全文</a>
+                                            </span>
+                                        </div>
+                                        <div class="pic-area">
+                                            <ul class="pic-list">
+                                                <li>
+                                                    <img src="./images/1.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="./images/2.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="./images/3.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="./images/4.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="./images/5.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="./images/6.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="./images/7.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="./images/8.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="./images/9.jpg" alt="">
+                                                </li>
+                                            </ul>
+                                            <div class="v-picture">
+                                                <div class="v-content">
+                                                    <!--幻灯-->
+                                                    <div class="v-slide">
+                                                        <ul class="v-slide-ul v-slide-t">
+                                                            <li>
+                                                                <img src="images/1.jpg" alt="">
+                                                            </li>
+                                                            <li>
+                                                                <img src="images/2.jpg" alt="">
+                                                            </li>
+                                                            <li>
+                                                                <img src="images/3.jpg" alt="">
+                                                            </li>
+                                                            <li>
+                                                                <img src="images/4.jpg" alt="">
+                                                            </li>
+                                                            <li>
+                                                                <img src="images/5.jpg" alt="">
+                                                            </li>
+                                                            <li>
+                                                                <img src="images/6.jpg" alt="">
+                                                            </li>
+                                                            <li>
+                                                                <img src="images/7.jpg" alt="">
+                                                            </li>
+                                                            <li>
+                                                                <img src="images/8.jpg" alt="">
+                                                            </li>
+                                                            <li>
+                                                                <img src="images/9.jpg" alt="">
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!--按钮-->
+                                                    <div class="slide-btn-area">
+                                                        <img class="v-slide-btnz v-slide-btn1" src="images/btnz.png" alt="">
+                                                        <img class="v-slide-btny v-slide-btn1" src="images/btny.png" alt="">
+                                                    </div>
+                                                    <!--走马灯-->
+                                                    <div class="v-zmd">
+                                                        <div class="v-zmd-container">
+                                                            <div class="v-move">
+                                                                <ul class="v-zmd-container-ul">
+                                                                    <li class="v-first v-zon">
+                                                                        <img src="images/1.jpg" alt="">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="images/2.jpg" alt="">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="images/3.jpg" alt="">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="images/4.jpg" alt="">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="images/5.jpg" alt="">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="images/6.jpg" alt="">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="images/7.jpg" alt="">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="images/8.jpg" alt="">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="images/9.jpg" alt="">
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <a class="v-zmd-btnz v-zmd-btn2" href="javascript:void(0);">上一个</a>
+                                                            <a class="v-zmd-btny v-zmd-btn2" href="javascript:void(0);">下一个</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--叉-->
+                                                <div>
+                                                    <a class="v-cha" href="javascript:void(0);">
+                                                        <img src="images/cha.png" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cmt-opt">
+                                            <div class="date">2016年12月13日</div>
+                                            <div class="opt-zan opt-yz">
+                                                <span class="ico-opt-zan ico-opt-on">赞 246</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-cmt">
+                                    <div class="user-customer">
+                                        <div class="face">
+                                            <img src="./images/img-face2.png" alt="">
+                                        </div>
+                                        <div class="user-info">
+                                            <h4 class="name">132****0987</h4>
+                                            <span class="id-lb">看过房</span>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <div class="cmt-detail">
+                                            <p>
+                                                城市综合体，是类似于三里屯soho吗？ 如果是那样就不错，除了主还能办公出租，社区真正的成熟后升值潜力还可以长度长城市综合体，是类似于三里屯soho吗？
+                                            </p>
+                                        </div>
+                                        <div class="show-more">
+                                            <span class="ico-showmore">
+                                                <a href="javascript:void(0);">查看全文</a>
+                                            </span>
+                                        </div>
+                                        <div class="pic-area">
+                                            <ul class="pic-list">
+                                                <li>
+                                                    <img src="./images/cmt-1.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="./images/cmt-2.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="./images/cmt-3.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="./images/cmt-4.jpg" alt="">
+                                                </li>
+                                            </ul>
+                                            <div class="v-picture">
+                                                <div class="v-content">
+                                                    <!--幻灯-->
+                                                    <div class="v-slide">
+                                                        <ul class="v-slide-ul v-slide-t">
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/1.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/2.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/3.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/4.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/5.png" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/1.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/2.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/3.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/4.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/5.png" alt="">
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                        <!--按钮-->
+                                                        <div>
+                                                            <a class="v-slide-btnz v-slide-btn1" href="javascript:void(0);">
+                                                                <img src="images/btnz.png" alt="">
+                                                            </a>
+                                                            <a class="v-slide-btny v-slide-btn1" href="javascript:void(0);">
+                                                                <img src="images/btny.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <!--走马灯-->
+                                                    <div class="v-zmd">
+                                                        <div class="v-zmd-container">
+                                                            <div class="v-move">
+                                                                <ul class="v-zmd-container-ul">
+                                                                    <li class="v-first v-zon">
+                                                                        <a href="javascript:void(0);">
+                                                                            <img class="v-zmd-index" src="images/11.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <img src="images/11.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <img src="images/11.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <img src="images/11.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <img src="images/1.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <img src="images/11.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <img src="images/1.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <img src="images/1.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <img src="images/1.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <img src="images/1.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <a class="v-zmd-btnz v-zmd-btn2" href="javascript:void(0);">上一个</a>
+                                                            <a class="v-zmd-btny v-zmd-btn2" href="javascript:void(0);">下一个</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--叉-->
+                                                <div>
+                                                    <a class="v-cha" href="javascript:void(0);">
+                                                        <img src="images/cha.png" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cmt-opt">
+                                            <div class="date">2016年12月13日</div>
+                                            <div class="opt-zan opt-yz">
+                                                <span class="ico-opt-zan ico-opt-on">赞 246</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-cmt">
+                                    <div class="user-customer">
+                                        <div class="face">
+                                            <img src="./images/img-face3.png" alt="">
+                                        </div>
+                                        <div class="user-info">
+                                            <h4 class="name">游客233434334343434343</h4>
+                                            <span class="id-lb">看过房</span>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <div class="cmt-detail">
+                                            <p>
+                                                城市综合体，是类似于三里屯soho吗？ 如果是那样就不错，除了主还能办公出租，社区真正的成熟后升值潜力还可以长度长城市综合体，是类似于三里屯soho吗？ 如果是那样就不错，除了主还能办公出租，社区真正的成熟后升值潜力还可以长度长度长度长度长度...城市综合体，是类似于三里屯soho吗？城市综合体，是类似于三里屯soho吗？ 如果是那样就不错，除了主还能办公出租，社区真正的成熟后升值潜力还可以长度长城市综合体，是类似于三里屯soho吗？ 如果是那样就不错，除了主还能办公出租，社区真正的成熟后升值潜力还可以长度长度长度长度长度...城市综合体，是类似于三里屯soho吗？
+                                                城市综合体，是类似于三里屯soho吗？ 如果是那样就不错，除了主还能办公出租，社区真正的成熟后升值潜力还可以长度长城市综合体。
+                                            </p>
+                                        </div>
+                                        <div class="show-more">
+                                            <span class="ico-showmore">
+                                                <a href="javascript:void(0);">查看全文</a>
+                                            </span>
+                                        </div>
+                                        <div class="pic-area">
+                                            <ul class="pic-list">
+                                                <li>
+                                                    <img src="./images/cmt-1.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="./images/cmt-2.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="./images/cmt-3.jpg" alt="">
+                                                </li>
+                                                <li>
+                                                    <img src="./images/cmt-4.jpg" alt="">
+                                                </li>
+                                            </ul>
+                                            <div class="v-picture">
+                                                <div class="v-content">
+                                                    <!--幻灯-->
+                                                    <div class="v-slide">
+                                                        <ul class="v-slide-ul v-slide-t">
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/1.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/2.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/3.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/4.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/5.png" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/1.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/2.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/3.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/4.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <img src="images/5.png" alt="">
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                        <!--按钮-->
+                                                        <div>
+                                                            <a class="v-slide-btnz v-slide-btn1" href="javascript:void(0);">
+                                                                <img src="images/btnz.png" alt="">
+                                                            </a>
+                                                            <a class="v-slide-btny v-slide-btn1" href="javascript:void(0);">
+                                                                <img src="images/btny.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <!--走马灯-->
+                                                    <div class="v-zmd">
+                                                        <div class="v-zmd-container">
+                                                            <div class="v-move">
+                                                                <ul class="v-zmd-container-ul">
+                                                                    <li class="v-first v-zon">
+                                                                        <a href="javascript:void(0);">
+                                                                            <img class="v-zmd-index" src="images/11.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <img src="images/11.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <img src="images/11.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <img src="images/11.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <img src="images/1.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <img src="images/11.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <img src="images/1.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <img src="images/1.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <img src="images/1.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <img src="images/1.jpg" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <a class="v-zmd-btnz v-zmd-btn2" href="javascript:void(0);">上一个</a>
+                                                            <a class="v-zmd-btny v-zmd-btn2" href="javascript:void(0);">下一个</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--叉-->
+                                                <div>
+                                                    <a class="v-cha" href="javascript:void(0);">
+                                                        <img src="images/cha.png" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cmt-opt">
+                                            <div class="date">2016年12月13日</div>
+                                            <div class="opt-zan">
+                                                <span class="ico-opt-zan ico-opt-on">赞 246</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--全部点评 我要点评-->
+                                <div class="user-remark">
+                                    <div class="remark m-remark">
+                                        <a href="#">
+                                            <span>我要点评</span>
+                                        </a>
+                                    </div>
+                                    <div class="remark all-remark">
+                                        <a href="#">全部点评
+                                            <span>(30)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--专家点评-->
+                    <div class="box3 box3-comment tab-comment">
+                        <div class="hd">
+                            <h2>专家点评 (12)</h2>
+                        </div>
+                        <div class="bd">
+                            <div class="nrpart">
+                                <div class="dp-sort">
+                                    <div class="dp-sort-list">
+                                        <ul class="select-box-wrap">
+                                            <li class="select-box">
+                                                <div class="txt">
+                                                    <span class="text">点赞数从多到少</span>
+                                                    <span class="ico ico-triangle"></span>
+                                                </div>
+                                                <ul class="son-ul">
+                                                    <li class="on">点赞数从多到少</li>
+                                                    <li class="last">按时间从新到旧</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dp-hot-words">
+                                        <ul>
+                                            <li class="on">
+                                                <a href="#">全部(23)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">有图(5)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">投资潜力(5)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">住房舒适度(5)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">学区(5)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">周边医院(5)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">交通出行(5)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">项目绿化(5)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">商业配套(5)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">未来规划(5)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">小区设施(5)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">楼盘优点(5)</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <br clear="all">
+                                </div>
+                                <div class="dp-list">
+                                    <div class="dp-item">
+                                        <div class="fwzxs">
+                                            <div class="inn">
+                                                <div class="pic">
+                                                    <a href="#">
+                                                        <img src="images/img-person.png" alt="">
+                                                    </a>
+
+                                                    <div class="ico-zjdp">最佳点评</div>
+                                                </div>
+                                                <div class="text">
+                                                    <h4 class="name">
+                                                        <a href="#">王珊珊</a>
+                                                    </h4>
+                                                    <p class="info">已为
+                                                        <em>1261</em>人提供帮助</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--点评内容-->
+                                        <div class="dp-detail">
+                                            <p class="date">2016-04-27</p>
+                                            <!--基本评论-->
+                                            <div class="dp-base data-short">
+                                                <p>项目位于地铁亦庄线经海路站西南角100米。</p>
+                                                <p>
+                                                    开发商是通泰，
+                                                    <span class="fc-pink">通泰投资集团</span>继天津，辽宁，内蒙古，
+                                                    <span class="fc-pink">福建四地</span>之后，首次在北京地区地区开发的开发通泰投资集团继天津，辽宁，内蒙古，福建四地之后，首次在北京地区地区开发的开发
+                                                </p>
+                                            </div>
+                                            <div class="dp-base data-detail">
+                                                <p>项目位于地铁亦庄线经海路站西南角100米。</p>
+                                                <p>
+                                                    开发商是通泰，
+                                                    <span class="fc-pink">通泰投资集团</span>继天津，辽宁，内蒙古，
+                                                    <span class="fc-pink">福建四地</span>之后，首次在北京地区地区开发的开发开发商是通泰，通泰投资集团继天津，辽宁，内蒙古，福建四地之后，首次在北京地区地区开发的开发
+                                                </p>
+                                            </div>
+                                            <!--优势-->
+                                            <div class="dp-advantage">
+                                                <h4>基本优势：</h4>
+
+                                                <div class="dp-con data-short">
+                                                    <p>1、价格优势。亦庄内单价算是比较低的新盘，相比其他楼盘，价格便宜不少；</p>
+                                                    <p>
+                                                        2、交通优势。特别是地铁，距经海路地铁站就是100米，地铁房。小区周围公路发达公路发达路发达特别是地铁，距经海路地铁站就是100米，地铁房。小区周围公路发达公路发达路发达</p>
+                                                </div>
+                                                <div class="dp-con data-detail">
+                                                    <p>1、价格优势。亦庄内单价算是比较低的新盘，相比其他楼盘，价格便宜不少；</p>
+                                                    <p>
+                                                        2、交通优势。特别是地铁，距经海路地铁站就是100米，地铁房。小区周围公路发达公路发达路发达交通优势。特别是地铁，距经海路地铁站就是100米，地铁房。小区周围公路发达公路发达路发达</p>
+                                                </div>
+                                            </div>
+                                            <!--评论图册-->
+                                            <div class="pic-area">
+                                                <ul class="pic-list">
+                                                    <li>
+                                                        <img src="./images/atlas/img-house2.jpg" alt="">
+                                                    </li>
+                                                    <li>
+                                                        <img src="./images/atlas/img-house2.jpg" alt="">
+                                                    </li>
+                                                    <li>
+                                                        <img src="./images/atlas/img-house2.jpg" alt="">
+                                                    </li>
+                                                    <li>
+                                                        <img src="./images/atlas/img-house2.jpg" alt="">
+                                                    </li>
+                                                    <li>
+                                                        <img src="./images/atlas/img-house2.jpg" alt="">
+                                                    </li>
+                                                </ul>
+                                                <div class="v-picture">
+                                                    <div class="v-content">
+                                                        <!--幻灯-->
+                                                        <div class="v-slide">
+                                                            <ul class="v-slide-ul">
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/1.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/2.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/3.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/4.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/5.png" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/1.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/2.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/3.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/4.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/5.png" alt="">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <!--按钮-->
+                                                            <div>
+                                                                <a class="v-slide-btnz v-slide-btn1" href="javascript:void(0);">
+                                                                    <img src="images/btnz.png" alt="">
+                                                                </a>
+                                                                <a class="v-slide-btny v-slide-btn1" href="javascript:void(0);">
+                                                                    <img src="images/btny.png" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <!--走马灯-->
+                                                        <div class="v-zmd">
+                                                            <div class="v-zmd-container">
+                                                                <div class="v-move">
+                                                                    <ul class="v-zmd-container-ul">
+                                                                        <li class="v-first" class="v-zon">
+                                                                            <a href="javascript:void(0);">
+                                                                                <img class="v-zmd-index" src="images/11.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="images/11.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="images/11.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="images/11.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="images/1.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="images/11.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="images/1.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="images/1.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="images/1.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="images/1.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <a class="v-zmd-btnz v-zmd-btn2" href="javascript:void(0);">上一个</a>
+                                                                <a class="v-zmd-btny v-zmd-btn2" href="javascript:void(0);">下一个</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--叉-->
+                                                    <div>
+                                                        <a class="v-cha" href="javascript:void(0);">
+                                                            <img src="images/cha.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="show-more">
+                                                <a href="javascript:void(0);">
+                                                    <span class="text">查看全文</span>
+                                                    <span class="ico ico-triangle"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!--互动-->
+                                        <div class="interaction">
+                                            <div class="inn">
+                                                <div class="act act-zan">
+                                                    <a href="#" class="zan">
+                                                        <span class="ico ico-zan"></span>
+                                                    </a>
+                                                    <p>50个赞</p>
+                                                </div>
+                                                <div class="act act-zx">
+                                                    <a href="#">我要咨询</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dp-item">
+                                        <div class="fwzxs">
+                                            <div class="inn">
+                                                <div class="pic">
+                                                    <a href="#">
+                                                        <img src="images/img-person.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="text">
+                                                    <h4 class="name">
+                                                        <a href="#">王珊珊</a>
+                                                    </h4>
+                                                    <p class="info">已为
+                                                        <em>1261</em>人提供帮助</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--点评内容-->
+                                        <div class="dp-detail">
+                                            <p class="date">2016-04-27</p>
+                                            <!--基本评论-->
+                                            <div class="dp-base data-short">
+                                                <p>项目位于地铁亦庄线经海路站西南角100米。</p>
+                                                <p>
+                                                    开发商是通泰，通泰投资集团继天津，辽宁，内蒙古，福建四地之后，首次在北京地区地区开发的开发通泰投资集团继天津，辽宁，内蒙古，福建四地之后，首次在北京地区地区开发的开发</p>
+                                            </div>
+                                            <div class="dp-base data-detail">
+                                                <p>项目位于地铁亦庄线经海路站西南角100米。</p>
+                                                <p>
+                                                    开发商是通泰，通泰投资集团继天津，辽宁，内蒙古，福建四地之后，首次在北京地区地区开发的开发开发商是通泰，通泰投资集团继天津，辽宁，内蒙古，福建四地之后，首次在北京地区地区开发的开发</p>
+                                            </div>
+                                            <!--优势-->
+                                            <div class="dp-advantage">
+                                                <h4>基本优势：</h4>
+
+                                                <div class="dp-con data-short">
+                                                    <p>1、价格优势。亦庄内单价算是比较低的新盘，相比其他楼盘，价格便宜不少；</p>
+                                                    <p>2、交通优势。特别是地铁，距经海路地铁站就是100米，地铁房。小区周围公路发达公路发达路发达……</p>
+                                                </div>
+                                                <div class="dp-con data-detail">
+                                                    <p>1、价格优势。亦庄内单价算是比较低的新盘，相比其他楼盘，价格便宜不少；</p>
+                                                    <p>
+                                                        2、交通优势。特别是地铁，距经海路地铁站就是100米，地铁房。小区周围公路发达公路发达路发达交通优势。特别是地铁，距经海路地铁站就是100米，地铁房。小区周围公路发达公路发达路发达</p>
+                                                </div>
+                                            </div>
+                                            <!--评论图册-->
+                                            <div class="pic-area">
+                                                <ul class="pic-list">
+                                                    <li>
+                                                        <img src="./images/atlas/img-house2.jpg" alt="">
+                                                    </li>
+                                                    <li>
+                                                        <img src="./images/atlas/img-house2.jpg" alt="">
+                                                    </li>
+                                                    <li>
+                                                        <img src="./images/atlas/img-house2.jpg" alt="">
+                                                    </li>
+                                                    <li>
+                                                        <img src="./images/atlas/img-house2.jpg" alt="">
+                                                    </li>
+                                                    <li>
+                                                        <img src="./images/atlas/img-house2.jpg" alt="">
+                                                    </li>
+                                                </ul>
+                                                <div class="v-picture">
+                                                    <div class="v-content">
+                                                        <!--幻灯-->
+                                                        <div class="v-slide">
+                                                            <ul class="v-slide-ul">
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/1.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/2.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/3.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/4.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/5.png" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/1.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/2.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/3.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/4.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="images/5.png" alt="">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <!--按钮-->
+                                                            <div>
+                                                                <a class="v-slide-btnz v-slide-btn1" href="javascript:void(0);">
+                                                                    <img src="images/btnz.png" alt="">
+                                                                </a>
+                                                                <a class="v-slide-btny v-slide-btn1" href="javascript:void(0);">
+                                                                    <img src="images/btny.png" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <!--走马灯-->
+                                                        <div class="v-zmd">
+                                                            <div class="v-zmd-container">
+                                                                <div class="v-move">
+                                                                    <ul class="v-zmd-container-ul">
+                                                                        <li class="v-first v-zon">
+                                                                            <a href="javascript:void(0);">
+                                                                                <img class="v-zmd-index" src="images/11.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="images/11.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="images/11.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="images/11.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="images/1.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="images/11.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="images/1.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="images/1.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="images/1.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="images/1.jpg" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <a class="v-zmd-btnz v-zmd-btn2" href="javascript:void(0);">上一个</a>
+                                                                <a class="v-zmd-btny v-zmd-btn2" href="javascript:void(0);">下一个</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--叉-->
+                                                    <div>
+                                                        <a class="v-cha" href="javascript:void(0);">
+                                                            <img src="images/cha.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="show-more">
+                                                <a href="javascript:void(0);">
+                                                    <span class="text">查看全文</span>
+                                                    <span class="ico ico-triangle"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!--互动-->
+                                        <div class="interaction">
+                                            <div class="inn">
+                                                <div class="act act-zan">
+                                                    <a href="#" class="zan">
+                                                        <span class="ico ico-zan"></span>
+                                                    </a>
+                                                    <p>50个赞</p>
+                                                </div>
+                                                <div class="act act-zx">
+                                                    <a href="#">我要咨询</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-remark">
+                                    <div class="remark all-remark">
+                                        <a href="#">全部点评
+                                            <span>(30)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--带看服务点评-->
+                    <div class="box3 box3-comment tab-comment">
+                        <div class="hd">
+                            <h2>带看服务点评 (23)</h2>
+                        </div>
+                        <div class="bd">
+                            <div class="nrpart">
+                                <!--看房记录-->
+                                <div class="kf-record">
+                                    <div class="tit">
+                                        <h3>他们去过
+                                            <em>中国铁建源香汇</em>
+                                        </h3>
+                                    </div>
+                                    <div class="con">
+                                        <div class="dk-list">
+                                            <div class="dk-item">
+                                                <div class="dk-item-detail">
+                                                    <ul class="dk-info">
+                                                        <li class="c-name">王女士</li>
+                                                        <li class="date">看盘时间：2016年09月11日</li>
+                                                        <li class="dkpj">服务评价：
+                                                            <span class="txt">非常满意</span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="dk-pj">
+                                                        <p>第一次接触侃家 小熊的服务及专业都给予我们非常好的看房体验 全程的专业优质服务代表了侃家的企业文化宗旨 之后也会向周围买房的朋友推荐侃家 推荐小熊
+                                                        </p>
+                                                    </div>
+                                                    <div class="tsdk">
+                                                        同时还看了楼盘：
+                                                        <a href="#">天恒世界集</a>
+                                                        <a href="#">万科天地</a>
+                                                        <a href="#">恒大未来城</a>
+                                                    </div>
+                                                </div>
+                                                <!--服务咨询师-->
+                                                <div class="fwzxs">
+                                                    <div class="pic">
+                                                        <a href="#">
+                                                            <img src="images/img-person.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="text">
+                                                        <h4 class="name">
+                                                            <a href="#">王珊珊</a>
+                                                        </h4>
+                                                        <p class="info">已为
+                                                            <span class="num">1261</span>人提供帮助</p>
+                                                    </div>
+                                                    <div class="btn-area">
+                                                        <a href="#" class="btn btn-zx">我要咨询</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dk-item">
+                                                <div class="dk-item-detail">
+                                                    <ul class="dk-info">
+                                                        <li class="c-name">王女士</li>
+                                                        <li class="date">看盘时间：2016年09月11日</li>
+                                                        <li class="dkpj">服务评价：
+                                                            <span class="txt">非常满意</span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="dk-pj">
+                                                        <p>第一次接触侃家 小熊的服务及专业都给予我们非常好的看房体验 全程的专业优质服务代表了侃家的企业文化宗旨 之后也会向周围买房的朋友推荐侃家 推荐小熊
+                                                        </p>
+                                                    </div>
+                                                    <div class="tsdk">
+                                                        同时还看了楼盘：
+                                                        <a href="#">天恒世界集</a>
+                                                        <a href="#">万科天地</a>
+                                                        <a href="#">恒大未来城</a>
+                                                    </div>
+                                                </div>
+                                                <!--服务咨询师-->
+                                                <div class="fwzxs">
+                                                    <div class="pic">
+                                                        <a href="#">
+                                                            <img src="images/img-person.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="text">
+                                                        <h4 class="name">
+                                                            <a href="#">王珊珊</a>
+                                                        </h4>
+                                                        <p class="info">已为
+                                                            <span class="num">1261</span>人提供帮助</p>
+                                                    </div>
+                                                    <div class="btn-area">
+                                                        <a href="#" class="btn btn-zx">我要咨询</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dk-item">
+                                                <div class="dk-item-detail">
+                                                    <ul class="dk-info">
+                                                        <li class="c-name">王女士</li>
+                                                        <li class="date">看盘时间：2016年09月11日</li>
+                                                        <li class="dkpj">服务评价：
+                                                            <span class="txt">非常满意</span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="dk-pj">
+                                                        <p>第一次接触侃家 小熊的服务及专业都给予我们非常好的看房体验 全程的专业优质服务代表了侃家的企业文化宗旨 之后也会向周围买房的朋友推荐侃家 推荐小熊
+                                                        </p>
+                                                    </div>
+                                                    <div class="tsdk">
+                                                        同时还看了楼盘：
+                                                        <a href="#">天恒世界集</a>
+                                                        <a href="#">万科天地</a>
+                                                        <a href="#">恒大未来城</a>
+                                                    </div>
+                                                </div>
+                                                <!--服务咨询师-->
+                                                <div class="fwzxs">
+                                                    <div class="pic">
+                                                        <a href="#">
+                                                            <img src="images/img-person.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="text">
+                                                        <h4 class="name">
+                                                            <a href="#">王珊珊</a>
+                                                        </h4>
+                                                        <p class="info">已为
+                                                            <span class="num">1261</span>人提供帮助</p>
+                                                    </div>
+                                                    <div class="btn-area">
+                                                        <a href="#" class="btn btn-zx">我要咨询</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-remark">
+                                            <div class="remark all-remark">
+                                                <a href="#">全部点评
+                                                    <span>(30)</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--成交服务点评-->
+                    <div class="box3 box3-comment box3-deal tab-comment">
+                        <div class="hd">
+                            <h2>成交服务点评 (3)</h2>
+                        </div>
+                        <div class="bd">
+                            <div class="nrpart">
+                                <!--成交评价-->
+                                <div class="cjdp">
+                                    <div class="cjdp-list">
+                                        <div class="cjdp-item">
+                                            <div class="pic">
+                                                <img class="c-pic" src="./images/img-dp.jpg" alt="">
+
+                                                <div class="dp-zxs">
+                                                    <div class="face">
+                                                        <a href="#">
+                                                            <img src="./images/img-person.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>服务咨询师：</p>
+                                                        <p class="name">陈友</p>
+                                                    </div>
+                                                    <div class="btn-area">
+                                                        <a href="#" class="btn btn-zx">我要咨询</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cjpj-detail">
+                                                <div class="title">
+                                                    <h4 class="h-name">北京城建北京密码</h4>
+                                                    <span class="date">时间：2016/09/05</span>
+                                                    <span class="c-name">用户：吴女士</span>
+                                                </div>
+                                                <div class="content">
+                                                    <p>
+                                                        因跟同事谈起房子的问题，在网上无意的翻着房源信息，看到侃家网就点了进去，侃家的网站顾问先了解了一下我的需求，把刘勇咨询师介绍推荐给我。刘勇了解我的需求后给我推荐了几个楼盘，相约周末的时间去看房子！原本以为会像其他网站一样随意收费等问题！但是这个显然是多虑了。从第一天看房就很惊喜，全程的陪同，很敬业的提醒我们这几个楼盘的优劣势！还有哪个对我们现况是比较适合的！当天我们就订了房子，因为我们订的时间晚财务下班了，第二天一大早就来我们居住的地方接我们过去交的定金！然后提醒我们应该准备什么！在签约的时候也是陪着我们，签合同的时候每页合同都有仔细帮我们检查还提醒我们要拍照！签完合同时……</p>
+                                                </div>
+                                                <!--看房历程-->
+                                                <div class="kflc">
+                                                    <div class="tit">
+                                                        <h4>看房历程：2天</h4>
+                                                    </div>
+                                                    <ul class="con">
+                                                        <li class="media6">
+                                                            <div class="pic">
+                                                                <a href="#">
+                                                                    <img src="./images/img-house2.jpg" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="text">
+                                                                <a href="#">华远西红世</a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="media6">
+                                                            <div class="pic">
+                                                                <a href="#">
+                                                                    <img src="./images/img-house2.jpg" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="text">
+                                                                <a href="#">华远西红世</a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="media6">
+                                                            <div class="pic">
+                                                                <a href="#">
+                                                                    <img src="./images/img-house2.jpg" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="text">
+                                                                <a href="#">华远西红世</a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="media6">
+                                                            <div class="pic">
+                                                                <a href="#">
+                                                                    <img src="./images/img-house2.jpg" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="text">
+                                                                <a href="#">华远西红世</a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="media6">
+                                                            <div class="pic">
+                                                                <a href="#">
+                                                                    <img src="./images/img-house2.jpg" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="text">
+                                                                <a href="#">华远西红世</a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-remark">
+                                        <div class="remark all-remark">
+                                            <a href="#">全部点评
+                                                <span>(30)</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col8">
+                    <!--看过此楼盘的人还看过-->
+                    <div class="box4 box-tjlp">
+                        <div class="hd">
+                            <h2>看过此楼盘的人还看过</h2>
+                        </div>
+                        <div class="bd">
+                            <div class="media">
+                                <div class="pic">
+                                    <a href="#">
+                                        <img src="images/img-small-house.png" alt="北京城建琨廷">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <h4 class="name">
+                                        <a href="#">北京城北京城建琨廷北京城建琨廷建琨廷</a>
+                                    </h4>
+                                    <p class="total">468-2,899 万</p>
+                                </div>
+                                <div class="price">
+                                    53,000元/平
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pic">
+                                    <a href="#">
+                                        <img src="images/img-small-house.png" alt="北京城建琨廷">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <h4 class="name">
+                                        <a href="#">北京城北京城建琨廷北京城建琨廷建琨廷</a>
+                                    </h4>
+                                    <p class="total">468-2,899 万</p>
+                                </div>
+                                <div class="price">
+                                    53,000元/平
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pic">
+                                    <a href="#">
+                                        <img src="images/img-small-house.png" alt="北京城建琨廷">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <h4 class="name">
+                                        <a href="#">北京城北京城建琨廷北京城建琨廷建琨廷</a>
+                                    </h4>
+                                    <p class="total">468-2,899 万</p>
+                                </div>
+                                <div class="price">
+                                    53,000元/平
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pic">
+                                    <a href="#">
+                                        <img src="images/img-small-house.png" alt="北京城建琨廷">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <h4 class="name">
+                                        <a href="#">北京城北京城建琨廷北京城建琨廷建琨廷</a>
+                                    </h4>
+                                    <p class="total">468-2,899 万</p>
+                                </div>
+                                <div class="price">
+                                    53,000元/平
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--咨询师简介-->
+            <div class="row row-constant">
+                <div class="col7">
+                    <div class="constants">
+                        <div class="hd">
+                            <h2>咨询师他们不是你见过的那种房产经纪人</h2>
+
+                            <div class="info">咨询师使命: 站在客户立场提供专业服务帮客户选对房</div>
+                        </div>
+                        <div class="bd">
+                            <div class="constant-desc">
+                                <img src="./images/img-high.jpg" alt="高素质人才" class="pic">
+                                <img src="./images/img-mission.jpg" alt="咨询师使命" class="pic">
+                            </div>
+                            <div class="additional">
+                                <h4>关于咨询师，你可能想知道…</h4>
+                                <p class="q">Q1: 为什么咨询师都要名校毕业生？</p>
+                                <p class="a">A: 为了保证客户能享受到舒适的高品质服务以及专业的房产解说，侃家对咨询师的素质要求十分严格。</p>
+                                <p class="q">Q2: 咨询师能给我提供哪些专业服务？</p>
+                                <p class="a">A: 咨询师提供一对一专属咨询、看房全程陪同、市场政策区域楼盘分析、根据需求匹配楼盘和签约把关五大专业服务。</p>
+                                <p class="q">Q3: 相比传统销售中介，侃家咨询师为什么能站在我的角度挑选房子？</p>
+                                <p class="a">A: 因为侃家把客户满意度作为咨询师的业绩考核标准，客户满意对咨询师最重要。</p>
+                                <p>……</p>
+                                <h4>还有其他问题？</h4>
+                            </div>
+                            <div class="advice-free no-pic">
+                                <div class="input-area">
+                                    <input type="text" class="ipt" value="近百位咨询师一对一分析楼盘">
+                                    <a href="#" class="btn btn-cons"><span class="ico ico-phone">电话</span>免费咨询</a>
+                                    <div class="tips error-tips">您输入的手机号码格式有误，请核对后重新输入</div>
+                                    <div class="tips right-tips">预约成功，我们将用010-89191132号码联系您免费专车带您看房！</div>
+                                </div>
+                                <div class="free-number">
+                                    <p class="number">或者<span class="color-number">免费咨询我们：400-080-7815</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="inn">
+                <div class="f-nav">
+                    <p class="comjia-about">
+                        <a href="#">关于侃家网</a>
+                        <a href="#">联系我们</a>
+                        <a href="#">招聘信息</a>
+                        <a href="#">服务声明</a>
+                        <a href="#">网站地图</a>
+                    </p>
+                    <ul class="service-online">
+                        <li class="hot-line">热线：<em>400-080-7815</em></li>
+                        <li class="call-free"><a href="#">免费通话</a></li>
+                        <li class="comjia-wb"><a href="#">侃家网官方微博</a></li>
+                    </ul>
+                </div>
+                <div class="f-link">
+                    <div class="fr">
+                        <div class="m-link"><a href="#"><img src="./images/bg-mobile.png" alt="移动版居理新房"/></a></div>
+                        <div class="comjia-wx"><img src="./images/img-qrcode.png" alt="侃家公众号"></div>
+                    </div>
+                    <div class="footer-hot">
+                        <ul class="flink">
+                            <li><a href="#"><img src="./images/img-ifeng.png" alt="凤凰网"></a></li>
+                            <li><a href="#"><img src="./images/img-caijing.png" alt="第一财经"></a></li>
+                            <li><a href="#"><img src="./images/img-36k.png" alt="36氪"></a></li>
+                            <li><a href="#"><img src="./images/img-chinadaily.png" alt="中国日报"></a></li>
+                            <li><a href="#"><img src="./images/img-ly.png" alt="猎云网"></a></li>
+                        </ul>
+                        <div class="tab tab-hot">
+                            <div class="tab-t">
+                                <ul>
+                                    <li class="on">北京区域楼盘</li>
+                                    <li>手机找房</li>
+                                    <li>北京房价走势</li>
+                                    <li>大兴房价</li>
+                                    <li>顺义房价</li>
+                                    <li>房山房价</li>
+                                </ul>
+                            </div>
+                            <div class="tab-c">
+                                <div class="nrpart">
+                                    <ul class="link-hot">
+                                        <li><a href="#">通州楼盘</a></li>
+                                        <li><a href="#">房山楼盘</a></li>
+                                        <li><a href="#">大兴楼盘</a></li>
+                                        <li><a href="#">门头沟楼盘</a></li>
+                                        <li><a href="#">昌平楼盘</a></li>
+                                        <li><a href="#">顺义楼盘</a></li>
+                                        <li><a href="#">朝阳楼盘</a></li>
+                                        <li><a href="#">海淀楼盘</a></li>
+                                        <li><a href="#">丰台楼盘</a></li>
+                                        <li><a href="#">东城楼盘</a></li>
+                                        <li><a href="#">西城楼盘</a></li>
+                                        <li><a href="#">密云楼盘</a></li>
+                                        <li><a href="#">石景山楼盘</a></li>
+                                        <li><a href="#">燕郊楼盘</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nrpart">
+                                    <ul class="link-hot">
+                                        <li><a href="#">通州新房</a></li>
+                                        <li><a href="#">大兴新房</a></li>
+                                        <li><a href="#">房山新房</a></li>
+                                        <li><a href="#">顺义新房</a></li>
+                                        <li><a href="#">丰台新房</a></li>
+                                        <li><a href="#">昌平新房</a></li>
+                                        <li><a href="#">海淀新房</a></li>
+                                        <li><a href="#">朝阳新房</a></li>
+                                        <li><a href="#">西城新房</a></li>
+                                        <li><a href="#">东城新房</a></li>
+                                        <li><a href="#">门头沟新房</a></li>
+                                        <li><a href="#">密云新房</a></li>
+                                        <li><a href="#">石景山新房</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nrpart">
+                                    <ul class="link-hot">
+                                        <li><a href="#">北京房价</a></li>
+                                        <li><a href="#">通州房价走势</a></li>
+                                        <li><a href="#">朝阳房价走势</a></li>
+                                        <li><a href="#">东城房价走势</a></li>
+                                        <li><a href="#">西城房价走势</a></li>
+                                        <li><a href="#">海淀房价走势</a></li>
+                                        <li><a href="#">石景山房价走势</a></li>
+                                        <li><a href="#">门头沟房价走势</a></li>
+                                        <li><a href="#">丰台房价走势</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nrpart">
+                                    <ul class="link-hot">
+                                        <li><a href="#">黄村房价</a></li>
+                                        <li><a href="#">亦庄房价</a></li>
+                                        <li><a href="#">西红门房价</a></li>
+                                        <li><a href="#">大兴新城</a></li>
+                                        <li><a href="#">孙村房价</a></li>
+                                        <li><a href="#">庞各庄房价</a></li>
+                                        <li><a href="#">旧宫房价</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nrpart">
+                                    <ul class="link-hot">
+                                        <li><a href="#">顺义主城区房价</a></li>
+                                        <li><a href="#">中央别墅区房价</a></li>
+                                        <li><a href="#">空港开发区房价</a></li>
+                                        <li><a href="#">潮白河别墅区房价</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nrpart">
+                                    <ul class="link-hot">
+                                        <li><a href="#">阎村房价</a></li>
+                                        <li><a href="#">长阳房价</a></li>
+                                        <li><a href="#">长辛店房价</a></li>
+                                        <li><a href="#">良乡房价</a></li>
+                                        <li><a href="#">窦店房价</a></li>
+                                        <li><a href="#">房山老城区房价</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--友情链接-->
+                        <ul class="f-flink">
+                            <li><a href="#">绿地诺亚方舟</a></li>
+                            <li><a href="#">远洋新仕界（商住）</a></li>
+                            <li><a href="#">智汇雅苑</a></li>
+                            <li><a href="#">北京城建北京密码</a></li>
+                            <li><a href="#">恒华湖公馆</a></li>
+                            <li><a href="#">鑫苑鑫都汇</a></li>
+                            <li><a href="#">澜馨墅</a></li>
+                            <li><a href="#">江南山水</a></li>
+                            <li><a href="#">银河湾</a></li>
+                            <li><a href="#">翠林漫步</a></li>
+                            <li><a href="#">胜古誉园</a></li>
+                            <li><a href="#">华侨城</a></li>
+                            <li><a href="#">夏威夷蓝湾</a></li>
+                            <li><a href="#">金地世家广场MINI墅</a></li>
+                            <li><a href="#">远洋万和公馆</a></li>
+                            <li><a href="#">爱上岛</a></li>
+                            <li><a href="#">玫瑰SOHO</a></li>
+                            <li><a href="#">天和嘉园</a></li>
+                            <li><a href="#">美林君渡</a></li>
+                        </ul>
+                    </div>
+                    <!--友情链接-->
+                    <ul class="flink2">
+                        <li>友情链接:</li>
+                        <li><a href="#">北京个人房源</a></li>
+                        <li><a href="#">朝阳购房</a></li>
+                        <li><a href="#">朝阳装修</a></li>
+                        <li><a href="#">北京日租房</a></li>
+                        <li><a href="#">装修效果图</a></li>
+                        <li><a href="#">北京天气预报30天</a></li>
+                        <li><a href="#">安康论坛</a></li>
+                        <li><a href="#">宝鸡房产</a></li>
+                        <li><a href="#">宜春房产网</a></li>
+                        <li><a href="#">搜房源网</a></li>
+                        <li><a href="#">装修效果图</a></li>
+                        <li><a href="#">北京装修网</a></li>
+                        <li><a href="#">北京搜房源</a></li>
+                        <li><a href="#">哈尔滨58同城</a></li>
+                        <li><a href="#">北京家装</a></li>
+                        <li><a href="#">民生信息网</a></li>
+                        <li><a href="#">北京写字楼出租</a></li>
+                        <li><a href="#">北京装修公司</a></li>
+                        <li><a href="#">北京装修网</a></li>
+                        <li><a href="#">天津装修</a></li>
+                        <li><a href="#">衡水二手房</a></li>
+                        <li><a href="#">北京租房网</a></li>
+                        <li><a href="#">武汉装修网</a></li>
+                        <li><a href="#">深圳写字楼出租</a></li>
+                        <li><a href="#">苏州房产网</a></li>
+                        <li><a href="#">北京租房网</a></li>
+                        <li><a href="#">土地转让</a></li>
+                        <li><a href="#">北京房贷利率</a></li>
+                        <li><a href="#">中央净水</a></li>
+                        <li><a href="#">吴江房产网</a></li>
+                        <li><a href="#">南昌二手房</a></li>
+                        <li><a href="#">澳洲房产网</a></li>
+                        <li><a href="#">北京装修</a></li>
+                        <li><a href="#">家居产品</a></li>
+                        <li><a href="#">整体橱柜</a></li>
+                        <li><a href="#">哈尔滨房地产门户</a></li>
+                        <li><a href="#">宿迁房产网</a></li>
+                        <li><a href="#">房产信息</a></li>
+                        <li><a href="#">六安房产网</a></li>
+                        <li><a href="#">沈阳房产网</a></li>
+                        <li><a href="#">商丘房产网</a></li>
+                        <li><a href="#">长沙家装公司</a></li>
+                        <li><a href="#">西安房地产门户</a></li>
+                        <li><a href="#">北京装修网</a></li>
+                        <li><a href="#">厦门装修公司</a></li>
+                        <li><a href="#">简约风格装修效果图</a></li>
+                        <li><a href="#">石家庄装修网</a></li>
+                        <li><a href="#">盐城房产网</a></li>
+                        <li><a href="#">卧室装修效果图</a></li>
+                    </ul>
+                    <div class="original-copy-left">
+                        北京房产网-侃家网提供2016北京楼盘动态，包括北京新楼盘、在售楼盘信息、新房开盘和北京房价查询等信息。真实的北京新房数据和实时北京新楼盘信息，尽在侃家网北京楼盘栏目！
+                    </div>
+                    <div class="original-copy-right">本站所有点评内容均为独家原创内容，请勿转载</div>
+                </div>
+                <div class="copyright">
+                    <p>北京侃家科技有限公司</p>
+                    <p>&copy;2014-2016 comjia.com, all rights reversed. <a href="http://www.miitbeian.gov.cn">京ICP备15012099号</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <!--弹出层-->
+    <div id="v-fade"></div>
+    <script src="./js/lib/jquery/jquery-1.9.1.min.js"></script>
+    <script src="./js/lib/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/house-detail.js"></script>
+    <script src="./js/albums-detail2.js"></script>
+</body>
+</html>

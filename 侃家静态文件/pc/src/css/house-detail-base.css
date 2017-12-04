@@ -1,0 +1,164 @@
+/*基础信息*/
+.row-baseinfo .col5-wrap {
+    float: left;
+    width: 1020px;
+    overflow: hidden;
+}
+.row-baseinfo .col5 {
+    width: 908px;
+    padding: 10px 40px 40px;
+    border: 1px solid #eaeaea;
+}
+.row-baseinfo .col5 .box {
+    margin-bottom: 10px;
+}
+.row-baseinfo .col5 .box .hd {
+    height: 40px;
+    line-height: 40px;
+}
+.row-baseinfo .col5 .box .hd h2 {
+    font-size: 18px;
+}
+.row-baseinfo .col5 .box .bd {
+    padding-top: 10px;
+}
+.base-info-list li {
+    clear: both;
+    height: 30px;
+    line-height: 30px;
+}
+.base-info-list li.remark {
+    height: auto;
+}
+.base-info-list .th, .base-info-list .txt p {
+    font-size: 14px;
+    overflow: hidden;
+}
+.base-info-list .th {
+    float: left;
+    color: #888;
+    width: 105px;
+}
+.base-info-list li.remark .txt {
+    overflow: hidden;
+}
+.base-info-list .txt p {
+    float: left;
+    color: #666;
+    margin-right: 15px;
+}
+/*新增加标签*/
+.base-info-list .txt-trait p{
+    display: inline-block;
+    border: 1px solid #BEC0C5;
+    padding: 0 10px;
+    height: 21px;
+    line-height: 21px;
+    margin-top: 5px;
+}
+
+.base-info-list .txt-on p {
+    border: 1px solid #0074C1;
+    color:#0074C1 ;
+}
+
+/*新增加标签*/
+
+.base-info-list .tip-box {
+    position: relative;
+    float: left;
+}
+.base-info-list .tip-box .tips {
+    position: absolute;
+    width: 440px;
+}
+.base-info-list .tip-box .help-tips {
+    display: none;
+    position: relative;
+    left: 12px;
+    top: -20px;
+    box-shadow: 0 0 5px #e7e7e7;
+    width: 360px;
+    line-height: 22px;
+    padding: 15px 24px;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 2px;
+    z-index: 20;
+}
+.base-info-list .tip-box .ico-tips {
+    float: left;
+    margin-top: 8px;
+}
+.ico-trangle {
+    position: absolute;
+    top: 26px;
+    left: -8px;
+    width: 14px;
+    height: 14px;
+    transform: rotate(45deg);
+    background: #fff;
+    border-bottom: 1px solid #e7e7e7;
+    border-left: 1px solid #e7e7e7;
+    z-index: 22;
+}
+.box-sale .ico-htype {
+    float: left;
+    margin: 7px 5px 0 0;
+}
+.box-sale .info-more a {
+    color: #0074c1;
+}
+.row-baseinfo .house-details {
+    margin-bottom: 30px;
+}
+.house-more-info {
+    clear: both;
+    text-align: right;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 30px;
+    padding-top: 15px;
+    overflow: hidden;
+}
+.house-more-info a {
+    color: #888;
+}
+.house-more-info a:hover {
+    color: #0074c1;
+}
+.house-more-info a:hover .ico-more {
+    background-position: -40px -720px;
+}
+.row-baseinfo .col6 .box4 {
+    margin-bottom: 30px;
+}
+.box-sub .bd {
+    padding: 15px 0 22px;
+}
+.box-sub .info {
+    color: #999;
+    line-height: 18px;
+    margin-bottom: 16px;
+}
+.box-sub .ipt {
+    text-align: center;
+    width: 114px;
+    height: 28px;
+    line-height: 28px;
+    margin-bottom: 14px;
+    border-right: 1px solid #e4e4e4;
+}
+.box-sub .btn-dy {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+.row-baseinfo .box-tjlp .media {
+    margin-bottom: 15px;
+}
+.house-details .bd {
+    overflow: visible;
+}

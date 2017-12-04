@@ -1,0 +1,484 @@
+@charset "UTF-8";
+/*楼盘数据审核*/
+.panel-dtsh, .panel-tpsh {
+    box-shadow: none;
+    border: 0;
+}
+.panel-dtsh .panel-body, .panel-tpsh .panel-body {
+    padding: 15px 0;
+}
+.order-list .con {
+    padding: 20px 15px;
+}
+.house-query > li{
+    margin-bottom: 15px;
+}
+.house-query .th{
+    text-align: right;
+}
+.house-query .td, .rg-query .td {
+    width: 120px;
+}
+.house-query .d-chked{
+    padding-top: 5px;
+}
+.house-query li.c-ext .td {
+    width: 339px;
+}
+.house-query li.c-ext .td .form-control {
+    float: left;
+    width: 120px;
+}
+.order-list .match {
+    margin-right: 50px;
+}
+.order-list .btn-match {
+    color: #337ab7;
+    cursor: pointer;
+}
+.c-house-item, .c-house-item .title, .c-house-item .content {
+    clear: both;
+    overflow: hidden;
+}
+.c-house-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.c-house-item .title {
+    height: 34px;
+    line-height: 34px;
+    border-bottom: 1px solid #ddd;
+}
+.c-house-item .title .num, .c-house-item .title h4, .c-house-item .title .yt, .c-house-item .title .t-info, .c-house-item .title .lb-area {
+    float: left;
+    margin-right: 10px;
+}
+.c-house-item .title h4 {
+    font-size: 16px;
+    height: 34px;
+    line-height: 34px;
+    margin: 0 10px 0 0;
+}
+.c-house-item .title .t-info, .c-house-item .title .yt {
+    color: #999;
+    margin-top: 4px;
+}
+.c-house-item .lb-check {
+    color: #f20;
+    padding: 4px 6px;
+    border: 1px solid #f20;
+    border-radius: 4px;
+}
+.c-house-item .lb-ysh {
+    color: #117936;
+    border-color: #117936;
+}
+.c-house-item .lb-dd {
+    color: #087a73;
+    border-color: #087a73;
+}
+.c-house-item .lb-dsh {
+    color: #c58412;
+    border-color: #c58412;
+}
+.c-house-item .title .date, .c-house-item .title .match {
+    float: right;
+}
+.c-house-item .title .date {
+    color: #999;
+}
+.c-house-item .content {
+    padding-top: 15px;
+}
+.h-mod {
+    clear: both;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.h-mod .h-tit, .h-mod .h-tit h5 {
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+}
+.h-mod .h-tit h5 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 25px;
+}
+.h-con .h-data {
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 25px;
+    overflow: hidden;
+}
+.h-con .dai {
+    background: url("../images/ico-dai.png") 0 0 no-repeat;
+    background-size: 20px 20px;
+}
+.h-con .h-data .h-link, .h-con .h-data .opt-area, .h-con .h-data .btn-opt {
+    float: left;
+}
+.h-con .h-data .h-link, .h-con .h-data .btn-opt {
+    margin-right: 10px;
+}
+.h-con .h-data .btn-opt {
+    cursor: pointer;
+    color: #0bced0;
+}
+.c-house-item .content .m-area {
+    overflow: hidden;
+}
+.c-house-item .content .btn-area {
+    float: right;
+    width: 120px;
+    overflow: hidden;
+}
+.c-house-item .content .btn-area .btn {
+    width: 120px;
+    margin: 0 0 15px;
+    padding: 8px 0;
+}
+.c-house-item .content .btn-area .btn-default {
+    color: #333;
+}
+.c-house-item .update-info {
+    clear: both;
+    text-align: right;
+    font-size: 14px;
+    color: #999;
+    overflow: hidden;
+}
+.layer-query > li {
+    clear: both;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.layer-query > li.form-li {
+    margin-bottom: 15px;
+}
+.layer-query li.c-ext .form-control {
+    float: left;
+    width: 180px;
+    margin-right: 10px;
+}
+.layer-query li input.form-control {
+    width: 350px;
+}
+.layer-query li.mul .th, .layer-query li.mul .td {
+    float: none;
+}
+.layer-query li .th, .layer-query li .td {
+    font-size: 14px;
+    overflow: hidden;
+}
+.layer-query li .th {
+    float: left;
+}
+.layer-query li .th, .layer-query li .td .txt {
+    line-height: 24px;
+    overflow: hidden;
+}
+.layer-query li .td p, .layer-query .c-house-item, .layer-query li.mul {
+    margin-bottom: 0;
+}
+.layer-query .c-house-item {
+    height: 152px;
+    overflow-y: auto;
+}
+.layer-query .add-tips {
+    font-size: 12px;
+    color: #f20;
+    padding-top: 10px;
+}
+/*重新匹配*/
+.layer-cxpp .layer-body, .layer-pplpz .layer-body {
+    max-height: 380px;
+    overflow-y: auto;
+}
+/*r-mod*/
+.r-mod .tit, .r-mod .con {
+    clear: both;
+    overflow: hidden;
+}
+.r-mod {
+    margin-bottom: 10px;
+}
+.r-mod .tit {
+    font-weight: bold;
+}
+.r-mod .con li {
+    line-height: 24px;
+}
+.r-mod .con li .th, .r-mod .con li .td {
+    overflow: hidden;
+}
+.r-mod .con li .th {
+    float: left;
+}
+/*d-chked*/
+.d-chked {
+    padding-left: 0;
+}
+.d-chked li {
+    float: left;
+    line-height: 26px;
+    margin-right: 15px;
+}
+.d-chked .d-rd, .d-chked .d-chk {
+    float: left;
+    margin: 6px 4px 0 0;
+}
+/*数据源楼盘展示*/
+.lpz-sjy .tb-area .img-test {
+    width: 100%;
+}
+/*人工审核*/
+.order-search .btn-area {
+    padding-top: 15px;
+}
+.review-sel {
+    clear: both;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.review-sel select.form-control {
+    width: 200px;
+}
+.form-area{
+    padding: 0 15px;
+}
+.form-area > li.li-area{
+    padding: 0 0 10px 0;
+}
+.form-area > li.fgx {
+    border-bottom: 1px dashed #999;
+}
+.form-area .th, .form-area .td {
+    overflow: hidden;
+}
+.form-area .th {
+    float: left;
+    text-align: right;
+    width: 84px;
+    height: 26px;
+    line-height: 26px;
+}
+.form-area li.c-ext .th, .form-area li.c-ext .ext {
+    height: 32px;
+    line-height: 32px;
+}
+.form-area li.c-ext .ext, .form-area li.c-ext .form-control {
+    float: left;
+    overflow: hidden;
+}
+.form-area li.c-ext .ext {
+    padding: 0 5px;
+}
+.form-area li.c-ext .form-control {
+    width: 150px;
+}
+/*exa-item*/
+.exa-area {
+    padding: 20px 15px 0;
+}
+.exa-area .pic-area {
+    width: 1128px;
+}
+.exa-item {
+    float: left;
+    width: 262px;
+    margin: 0 20px 20px 0;
+    overflow: hidden;
+}
+.exa-item .pic {
+    text-align: center;
+    width: 262px;
+    height: 180px;
+    line-height: 180px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.exa-item .pic img {
+    cursor: pointer;
+}
+.exa-item .text .txt {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.exa-item .btn-area {
+    float: right;
+}
+.exa-item .btn-area .btn {
+    margin: 0 0 0 10px;
+    padding: 4px 6px;
+}
+/*p-mod*/
+.p-mod {
+    clear: both;
+    overflow: hidden;
+}
+.p-mod .tit {
+    font-weight: bold;
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px;
+}
+.data-source {
+    clear: both;
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+}
+.exa-area .page-info {
+    margin-bottom: 10px;
+}
+.exa-area .pagination {
+    margin-top: 0;
+}
+/*info-switch*/
+.info-switch {
+    clear: both;
+    padding: 10px 20px;
+    background: #ebebeb;
+    overflow: hidden;
+    z-index: 1;
+}
+.info-switch .fl {
+    float: left;
+    width: 750px;
+    overflow: hidden;
+}
+.info-switch .fr, .info-switch .fr .exa-opt {
+    float: right;
+    overflow: hidden;
+}
+.info-switch .fr {
+    width: 250px;
+}
+.info-switch .fr .lb {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.info-switch .fr .btn {
+    margin-left: 10px;
+    padding: 4px 8px;
+}
+.info-switch .fr .opt-info {
+    clear: both;
+    text-align: right;
+    font-size: 12px;
+    color: #999;
+    padding-top: 10px;
+    overflow: hidden;
+}
+.project-switch, .examine-info {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.project-switch .project-prev, .project-switch .project-current {
+    margin-right: 20px;
+}
+.dt-item, .dt-item .tit, .dt-item .con, .pl-item, .pl-item .tit, .pl-item .con {
+    clear: both;
+    overflow: hidden;
+}
+.dt-item, .pl-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+.dt-item .ico, .pl-item .ico {
+    position: absolute;
+    top: 0;
+    left: 720px;
+    width: 55px;
+    height: 55px;
+}
+.dt-item .ico {
+    left: 420px;
+}
+.dt-item .tit, .pl-item .tit {
+    padding: 10px 0;
+}
+.dt-item .tit h5, .dt-item .tit .date, .dt-item .tit .source, .pl-item .tit h5, .pl-item .tit .date, .pl-item .tit .source, .pl-item .tit .score {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.dt-item .tit h5, .pl-item .tit h5 {
+    font-weight: bold;
+   /* width: 500px;*/
+    margin: 0 110px 0 0;
+}
+.dt-item .tit .date, .pl-item .tit .date, .pl-item .tit .score {
+    margin-right: 20px;
+}
+.dt-item .tit .btn-area, .pl-item .tit .btn-area {
+    float: right;
+}
+.dt-item .tit .btn-area .btn, .pl-item .tit .btn-area .btn {
+    margin: 0 5px;
+    padding: 4px 6px;
+}
+.dt-item .tit .btn-area .btn-default {
+    color: #333;
+}
+.dt-item .tit .btn-area .btn-cancel, .dt-item .tit .btn-area .btn-save {
+    display: none;
+}
+.dt-item .con {
+    padding: 10px 10px 0;
+    border: 1px solid #ccc;
+}
+.dt-item .dt-edit {
+    display: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, .6);
+    border-color: #66afe9;
+}
+.dt-item .dt-edit .form-control {
+    overflow-y: visible;
+}
+.pl-item .tit h5 {
+    width: 350px;
+}
+.pl-item .con p {
+    line-height: 26px;
+}
+.pl-item .pic-list {
+    width: 1230px;
+    padding-left: 10px;
+}
+.pl-item .pic-list li, .pl-item .pic-list li img {
+    width: 250px;
+    height: 180px;
+    overflow: hidden;
+}
+.pl-item .pic-list li {
+    float: left;
+    margin: 0 30px 30px 0;
+}
+.ico-ys {
+    background: url("../images/ico-ys.png") 0 0 no-repeat;
+    background-size: 55px 55px;
+}
+.ico-bxs {
+    background: url("../images/ico-bxs.png") 0 0 no-repeat;
+    background-size: 55px 55px;
+}
+.ico-tg {
+    background: url("../images/ico-tg.png") 0 0 no-repeat;
+    background-size: 55px 55px;
+}
+.ico-wtg {
+    background: url("../images/ico-wtg.png") 0 0 no-repeat;
+    background-size: 55px 55px;
+}

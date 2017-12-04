@@ -1,0 +1,58 @@
+/*分页*/
+.page {
+    text-align: center;
+}
+.pagination {
+    border-radius: 4px;
+    display: inline-block;
+    padding-left: 0;
+}
+.pagination > li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.pagination > li > a, .pagination > li > span {
+    float: left;
+    font-size: 14px;
+    color: #363c40;
+    text-align: center;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #fff;
+    border: 1px solid #b0b4b9;
+    position: relative;
+    text-decoration: none;
+}
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+    color: #fff;
+    background-color: #0074c1;
+    border-color: #0074c1;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #337ab7;
+    border-color: #337ab7;
+    color: #fff;
+    cursor: default;
+    z-index: 2;
+}
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+    background-color: #fff;
+    border-color: #ddd;
+    color: #777;
+    cursor: not-allowed;
+}
+.pagination > li.next a, .pagination > li.prev a, .pagination > li.next span, .pagination > li.prev span {
+    width: 58px;
+}
+.pagination > li.more {
+    margin: 0 -7px;
+}
+.pagination > li.more span, .pagination > li.more span:hover {
+    color: #363c40;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 0;
+    background: none;
+}

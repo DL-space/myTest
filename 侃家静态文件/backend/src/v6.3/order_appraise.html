@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>订单评价页面</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center order-appraise">
+        <div class="container-fluid">
+            <div class="row row-crumbs">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">订单评价</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--网签单服务评级-->
+                    <div class="panel panel-rules">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">网签单服务评级</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="c-list c-rule-list">
+                                <div class="con">
+                                    <table class="table table-bordered table-responsive">
+                                        <tr>
+                                            <th>成交单编号</th>
+                                            <th>网签时间</th>
+                                            <th>楼盘</th>
+                                            <th>所属咨询师</th>
+                                            <th>评论内容</th>
+                                            <th>用户照片</th>
+                                            <th>操作</th>
+                                        </tr>
+                                        <tr>
+                                            <td>[SU]CJ-1007264</td>
+                                            <td>2017-10-27 00:00:00</td>
+                                            <td>大唐印象</td>
+                                            <td>白超超</td>
+                                            <td>
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                            </td>
+                                            <td>
+                                                <img src="../images/addhouse.png" alt="">
+                                            </td>
+                                            <td><a href="###" class="alter_picture">修改照片</a></td>
+                                        </tr>
+                                        <tr class="img_cont">
+                                            <td colspan="7">
+                                                <img src="../images/addhouse.png" alt="">
+                                                <button class="btn btn-primary">确定裁剪</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>[SU]CJ-1007264</td>
+                                            <td>2017-10-27 00:00:00</td>
+                                            <td>大唐印象</td>
+                                            <td>白超超</td>
+                                            <td>
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                            </td>
+                                            <td>
+                                                <img src="../images/addhouse.png" alt="">
+                                            </td>
+                                            <td><a href="###" class="alter_picture">修改照片</a></td>
+                                        </tr>
+                                        <tr class="img_cont">
+                                            <td colspan="7">
+                                                <img src="../images/addhouse.png" alt="">
+                                                <button class="btn btn-primary">确定裁剪</button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--带看评价-->
+                    <div class="panel panel-rules">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">带看评价</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="c-list c-rule-list">
+                                <div class="con">
+                                    <table class="table table-bordered table-responsive">
+                                        <tr>
+                                            <th>带看ID</th>
+                                            <th>带看开始时间</th>
+                                            <th>所属咨询师</th>
+                                            <th>带看咨询师</th>
+                                            <th>带看楼盘</th>
+                                            <th>咨询师评价3满意2一般0不满意</th>
+                                            <th>整体评价</th>
+                                        </tr>
+                                        <tr>
+                                            <td>20020453</td>
+                                            <td>2017-10-27 00:00:01</td>
+                                            <td>徐静文</td>
+                                            <td>徐静文</td>
+                                            <td>中旅水泊堂前，太湖相王府</td>
+                                            <td>6</td>
+                                            <td>很熟悉楼盘的信息，给出的建议非常专业，对我的帮助很大哦。这次体验很满意</td>
+                                        </tr>
+                                        <tr>
+                                            <td>20020453</td>
+                                            <td>2017-10-27 00:00:01</td>
+                                            <td>徐静文</td>
+                                            <td>徐静文</td>
+                                            <td>中旅水泊堂前，太湖相王府</td>
+                                            <td>6</td>
+                                            <td>很熟悉楼盘的信息，给出的建议非常专业，对我的帮助很大哦。这次体验很满意</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--带看评价追回客服联系记录-->
+                    <div class="panel panel-rules">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">带看评价追回客服联系记录</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="c-list c-rule-list">
+                                <div class="con">
+                                    <table class="table table-bordered table-responsive">
+                                        <tr>
+                                            <th>带看ID</th>
+                                            <th>带看开始时间</th>
+                                            <th>追回评价时间</th>
+                                            <th>所属咨询师</th>
+                                            <th>所属咨询师主管</th>
+                                            <th>带看咨询师</th>
+                                            <th>带看咨询师组长</th>
+                                            <th>追回状态</th>
+                                            <th>满意度</th>
+                                            <th>追回满意度</th>
+                                            <th>绩效满意度</th>
+                                            <th>追回原因类型</th>
+                                            <th>操作者</th>
+                                            <th>操作</th>
+                                        </tr>
+                                        <tr>
+                                            <td>20020454</td>
+                                            <td>2017-10-27 00:00:01</td>
+                                            <td>017-10-27 00:00:22</td>
+                                            <td>徐静文</td>
+                                            <td>孙岩</td>
+                                            <td>高艳波</td>
+                                            <td>孙岩</td>
+                                            <td>已完成</td>
+                                            <td>满意</td>
+                                            <td>满意</td>
+                                            <td>5</td>
+                                            <td>客户点错评价</td>
+                                            <td>郑文豪</td>
+                                            <td><a href="#">查看</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>20020454</td>
+                                            <td>2017-10-27 00:00:01</td>
+                                            <td>017-10-27 00:00:22</td>
+                                            <td>徐静文</td>
+                                            <td>孙岩</td>
+                                            <td>高艳波</td>
+                                            <td>孙岩</td>
+                                            <td>已完成</td>
+                                            <td>满意</td>
+                                            <td>满意</td>
+                                            <td>5</td>
+                                            <td>客户点错评价</td>
+                                            <td>郑文豪</td>
+                                            <td><a href="#">查看</a></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--已关闭订单服务评价-->
+                    <div class="panel panel-rules">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">已关闭订单服务评价</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="c-list c-rule-list">
+                                <div class="con">
+                                    <table class="table table-bordered table-responsive">
+                                        <tr>
+                                            <th>订单关闭时间</th>
+                                            <th>所属咨询师</th>
+                                            <th>咨询师评价3满意2一般0不满意</th>
+                                            <th>订单关闭原因</th>
+                                            <th>评价</th>
+                                            <th>1已经回访2回访失败3放弃回访4未回访</th>
+                                            <th>是否仍需要看家侃家服务0未知1不2继续</th>
+                                        </tr>
+                                        <tr>
+                                            <td>2017-10-27 00:00:01</td>
+                                            <td>你猜</td>
+                                            <td>3</td>
+                                            <td>等待购房资质／等待资金</td>
+                                            <td>能针对市场，政策和顾客的世纪提出比较合理的建议</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--已关闭订单回访客服联系记录-->
+                    <div class="panel panel-rules">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">已关闭订单回访客服联系记录</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="c-list c-rule-list">
+                                <div class="con">
+                                    <table class="table table-bordered table-responsive">
+                                        <tr>
+                                            <th>订单关闭时间</th>
+                                            <th>所属咨询师</th>
+                                            <th>回访时间</th>
+                                            <th>1已经回访2回访失败3放弃回访4未回访</th>
+                                            <th>回访人</th>
+                                            <th>回访记录</th>
+                                            <th>操作</th>
+                                        </tr>
+                                        <tr>
+                                            <td>2017-07-26 13:52:54</td>
+                                            <td>许静</td>
+                                            <td>2017-07-26 13:52:54</td>
+                                            <td>3</td>
+                                            <td>宋朝</td>
+                                            <td>非常满意，服务很周到，很热情</td>
+                                            <td><a href="###">查看</a></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--订单投诉记录-->
+                    <div class="panel panel-rules">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">订单投诉记录</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="c-list c-rule-list">
+                                <div class="con">
+                                    <table class="table table-bordered table-responsive">
+                                        <tr>
+                                            <th>投诉时间</th>
+                                            <th>投诉咨询师</th>
+                                            <th>投诉原因／内容</th>
+                                        </tr>
+                                        <tr>
+                                            <td>2017-10-15 15:22:00</td>
+                                            <td>三个字</td>
+                                            <td>
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--订单投诉回访客服联系记录-->
+                    <div class="panel panel-rules">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">订单投诉回访客服联系记录</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="c-list c-rule-list">
+                                <div class="con">
+                                    <table class="table table-bordered table-responsive">
+                                        <tr>
+                                            <th>投诉时间</th>
+                                            <th>追回评价时间</th>
+                                            <th>所属咨询师</th>
+                                            <th>所属咨询师主管</th>
+                                            <th>追回状态</th>
+                                            <th>追回满意度</th>
+                                            <th>追回原因类型</th>
+                                            <th>操作者</th>
+                                            <th>操作</th>
+                                        </tr>
+                                        <tr>
+                                            <td>2017-10-15 15:22:00</td>
+                                            <td>2017-10-16 15:44:55</td>
+                                            <td>赵明明</td>
+                                            <td>赵明明</td>
+                                            <td>咨询部跟进</td>
+                                            <td>继续投诉</td>
+                                            <td>撤销投诉</td>
+                                            <td>赵明明</td>
+                                            <td><a href="###">查看</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2017-10-15 15:22:00</td>
+                                            <td>2017-10-16 15:44:55</td>
+                                            <td>赵明明</td>
+                                            <td>赵明明</td>
+                                            <td>咨询部跟进</td>
+                                            <td>继续投诉</td>
+                                            <td>撤销投诉</td>
+                                            <td>赵明明</td>
+                                            <td><a href="###">查看</a></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.alter_picture').click(function () {
+            $(this).parents('tr').next('.img_cont').show();
+        })
+        $('.btn-primary').click(function () {
+            $(this).parents('.img_cont').hide()
+        })
+    })
+</script>
+</body>
+</html>

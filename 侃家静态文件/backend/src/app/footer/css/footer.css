@@ -1,0 +1,25 @@
+/*page-footer*/
+.page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 116px;
+    background: #2f3742;
+}
+.page-footer .copyright {
+    text-align: center;
+    color: #606c7d;
+    margin: 0;
+    padding-top: 50px;
+}
+.page-footer .copyright span {
+    margin: 0 8px;
+}
+@media screen and (max-width: 750px) {
+    .page-footer {
+        height: 40px;
+    }
+    .page-footer .copyright {
+        padding-top: 12px;
+    }
+}

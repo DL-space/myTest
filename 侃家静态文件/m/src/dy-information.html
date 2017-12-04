@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="wap-font-scale" content="no">
+    <title>订阅最新情报</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/module-new.css">
+    <link rel="stylesheet" href="css/help-find.css">
+    <link rel="stylesheet" href="css/information-flow.css">
+</head>
+<body>
+@@include("./app/topbar/topbar.html")
+<div class="container">
+    @@include("./app/header/header.html")
+    <div class="center">
+        <div class="boon">
+            <div class="data-info">
+                <p>
+                    截止目前，今日共更新
+                    <span class="special-data">101</span>
+                    条情报
+                </p>
+                <p>
+                    最新情报更新时间
+                    <span class="special-data">5分钟前</span>
+                </p>
+            </div>
+            <div class="latest-information">
+                <div class="info-item">
+                    <div class="info-detail">
+                        <div class="tit">
+                            <h2>通泰国际公馆今天加推，32套！</h2>
+                            <span class="tag">标签1</span>
+                        </div>
+                        <div class="text">
+                            小侃今天得到案场消息，通泰国际公馆今天会加推F2号楼2单元的90平三居，共22套，以及F16号楼的二居房源，面积88/89平米
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--留电口-->
+            <div class="look-house">
+                <div class="title">
+                    <h3>订阅新房一手情报</h3>
+                </div>
+                <div class="tr tr-phone">
+                    <div class="input-area">
+                        <input type="text" class="ipt" placeholder="请输入您的手机号">
+                    </div>
+                </div>
+                <div class="tips-info" style="display: none">错误提示信息</div>
+                <div class="btn-area">
+                    <button class="btn btn-send">订阅</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/lib/jquery-2.1.4.min.js"></script>
+<script src="js/j-ui.js"></script>
+</body>
+</html>

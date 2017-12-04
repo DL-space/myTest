@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>添加草签</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/albums-detail2.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">订单列表</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="s1">
+                    @@include("../app/base-info/index.html")
+                </div>
+                <div class="s2">
+                    <!--添加草签-->
+                    <div class="panel panel-tjcq">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">添加草签</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="c-forms">
+                                <ul class="c-query tj-rg">
+                                    <li>
+                                        <div class="th">草签楼盘：</div>
+                                        <div class="td">
+                                            <p class="txt fcR">中海枫丹公馆（非合作）</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"><span class="ico-xh"></span>成交类型：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">合作</option>
+                                                <option value="1">其他</option>
+                                            </select>
+                                            <div class="error-tips"><p>成交类型不能为空</p></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"><span class="ico-xh"></span>客户姓名：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text">
+                                            <div class="error-tips"><p>客户姓名不能为空</p></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"><span class="ico-xh"></span>证件类型：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">大陆身份证</option>
+                                                <option value="1">其他</option>
+                                            </select>
+                                            <div class="error-tips"><p>证件类型不能为空</p></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"><span class="ico-xh"></span>证件号：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text">
+                                            <div class="error-tips"><p>证件号不能为空</p></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">销售姓名：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">销售电话：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"><span class="ico-xh"></span>房屋总价（元）：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text">
+                                            <div class="error-tips"><p>房屋总价不能为空</p></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">
+                                            <span class="ico-xh"></span>楼栋类型：
+                                        </div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="1">类型1</option>
+                                                <option value="2">类型2</option>
+                                            </select>
+                                            <div class="error-tips"><p>楼栋类型不能为空</p></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">
+                                            <span class="ico-xh"></span>楼栋号码：
+                                        </div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="1">类型1</option>
+                                                <option value="2">类型2</option>
+                                            </select>
+                                            <div class="error-tips"><p>楼栋号码不能为空</p></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">
+                                            <span class="ico-xh"></span>户型类型：
+                                        </div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="1">类型1</option>
+                                                <option value="2">类型2</option>
+                                            </select>
+                                            <div class="error-tips"><p>户型类型不能为空</p></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">
+                                            <span class="ico-xh"></span>户型居室：
+                                        </div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="1">类型1</option>
+                                                <option value="2">类型2</option>
+                                            </select>
+                                            <div class="error-tips"><p>户型居室不能为空</p></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">
+                                            <span class="ico-xh"></span>建筑面积（㎡）：
+                                        </div>
+                                        <div class="td">
+                                            <input class="form-control" type="text">
+                                            <div class="error-tips"><p>建筑面积不能为空</p></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"><span class="ico-xh"></span>房号：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"><span class="ico-xh"></span>草签时间：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"><span class="ico-xh"></span>预计网签时间：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"><span class="ico-xh"></span>付款方式：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">全款</option>
+                                                <option value="1">其他</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"><span class="ico-xh"></span>报备人：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"><span class="ico-xh"></span>草签服务人：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text">
+                                            <p class="tips">通常指陪同客户完成签约的咨询师</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"><span class="ico-xh"></span>首付收齐：</div>
+                                        <div class="td">
+                                            <div class="sel-area">
+                                                <ul class="d-chked">
+                                                    <li>
+                                                        <input class="d-chk d-cjd" name="payments" type="radio" data-action="real">是
+                                                    </li>
+                                                    <li>
+                                                        <input class="d-chk d-cjd" name="payments" type="radio" data-action="estimate">否
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="payment-all payments-real">
+                                                <ul class="c-query">
+                                                    <div class="th">首付收齐时间：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                        <div class="error-tips"><p>预计审批通过时间不能为空</p></div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="payment-all payments-estimate">
+                                                <ul class="c-query">
+                                                    <div class="th">预计首付收齐时间：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                        <div class="error-tips"><p>预计审批通过时间不能为空</p></div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"><span class="ico-xh"></span>提交完贷款资料：</div>
+                                        <div class="td">
+                                            <div class="sel-area">
+                                                <ul class="d-chked">
+                                                    <li>
+                                                        <input class="d-chk d-cjd" name="loan-data" type="radio" data-action="real">是
+                                                    </li>
+                                                    <li>
+                                                        <input class="d-chk d-cjd" name="loan-data" type="radio" data-action="estimate">否
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="payment-all loan-data-real">
+                                                <ul class="c-query">
+                                                    <div class="th">资料提交时间：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                        <div class="error-tips"><p>预计审批通过时间不能为空</p></div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="payment-all loan-data-estimate">
+                                                <ul class="c-query">
+                                                    <div class="th">预计资料提交时间：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                        <div class="error-tips"><p>预计审批通过时间不能为空</p></div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"><span class="ico-xh"></span>贷款审批通过：</div>
+                                        <div class="td">
+                                            <div class="sel-area">
+                                                <ul class="d-chked">
+                                                    <li>
+                                                        <input class="d-chk d-cjd" name="examine" type="radio" data-action="real">是
+                                                    </li>
+                                                    <li>
+                                                        <input class="d-chk d-cjd" name="examine" type="radio" data-action="estimate">否
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="payment-all examine-real">
+                                                <ul class="c-query">
+                                                    <div class="th">审批通过时间：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                        <div class="error-tips"><p>预计审批通过时间不能为空</p></div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="payment-all examine-estimate">
+                                                <ul class="c-query">
+                                                    <div class="th">预计审批通过时间：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                        <div class="error-tips"><p>预计审批通过时间不能为空</p></div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"><span class="ico-xh"></span>全款到账：</div>
+                                        <div class="td">
+                                            <div class="sel-area">
+                                                <ul class="d-chked">
+                                                    <li>
+                                                        <input class="d-chk d-cjd" name="payment" type="radio" data-action="real">是
+                                                    </li>
+                                                    <li>
+                                                        <input class="d-chk d-cjd" name="payment" type="radio" data-action="estimate">否
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="payment-all payment-real">
+                                                <ul class="c-query">
+                                                    <div class="th">全款到账时间：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                        <div class="error-tips"><p>全款到账时间不能为空</p></div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="payment-all payment-estimate">
+                                                <ul class="c-query">
+                                                    <div class="th">预计全款到账时间：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                        <div class="error-tips"><p>预计全款到账时间不能为空</p></div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"><span class="ico-xh"></span>分期：</div>
+                                        <div class="td">
+                                            <div class="sel-area">
+                                                <label class="sel-lb">第一期到账</label>
+                                                <ul class="d-chked">
+                                                    <li>
+                                                        <input class="d-chk d-cjd" name="payment-1" type="radio" data-action="real">是
+                                                    </li>
+                                                    <li>
+                                                        <input class="d-chk d-cjd" name="payment-1" type="radio" data-action="estimate">否
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="payment-all payment-1-real">
+                                                <ul class="c-query">
+                                                    <div class="th">到账时间：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                        <div class="error-tips"><p>到账时间不能为空</p></div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="payment-all payment-1-estimate">
+                                                <ul class="c-query">
+                                                    <div class="th">预计到账时间：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                        <div class="error-tips"><p>预计到账时间不能为空</p></div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"></div>
+                                        <div class="td">
+                                            <div class="sel-area">
+                                                <label class="sel-lb">第二期到账</label>
+                                                <ul class="d-chked">
+                                                    <li>
+                                                        <input class="d-chk d-cjd" name="payment-2" type="radio" data-action="real">是
+                                                    </li>
+                                                    <li>
+                                                        <input class="d-chk d-cjd" name="payment-2" type="radio" data-action="estimate">否
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="payment-all payment-2-real">
+                                                <ul class="c-query">
+                                                    <div class="th">到账时间：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                        <div class="error-tips"><p>到账时间不能为空</p></div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="payment-all payment-2-estimate">
+                                                <ul class="c-query">
+                                                    <div class="th">预计到账时间：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                        <div class="error-tips"><p>预计到账时间不能为空</p></div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"></div>
+                                        <div class="td">
+                                            <div class="sel-area">
+                                                <label class="sel-lb">第三期到账</label>
+                                                <ul class="d-chked">
+                                                    <li>
+                                                        <input class="d-chk d-cjd" name="payment-3" type="radio" data-action="real">是
+                                                    </li>
+                                                    <li>
+                                                        <input class="d-chk d-cjd" name="payment-3" type="radio" data-action="estimate">否
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="payment-all payment-3-real">
+                                                <ul class="c-query">
+                                                    <div class="th">到账时间：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                        <div class="error-tips"><p>到账时间不能为空</p></div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="payment-all payment-3-estimate">
+                                                <ul class="c-query">
+                                                    <div class="th">预计到账时间：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                        <div class="error-tips"><p>预计到账时间不能为空</p></div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"></div>
+                                        <div class="td">
+                                            <div class="sel-area">
+                                                <label class="sel-lb">第四期到账</label>
+                                                <ul class="d-chked">
+                                                    <li>
+                                                        <input class="d-chk d-cjd" name="payment-4" type="radio" data-action="real">是
+                                                    </li>
+                                                    <li>
+                                                        <input class="d-chk d-cjd" name="payment-4" type="radio" data-action="estimate">否
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="payment-all payment-4-real">
+                                                <ul class="c-query">
+                                                    <div class="th">到账时间：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                        <div class="error-tips"><p>到账时间不能为空</p></div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="payment-all payment-4-estimate">
+                                                <ul class="c-query">
+                                                    <div class="th">预计到账时间：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                        <div class="error-tips"><p>预计到账时间不能为空</p></div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="c-remark">
+                                        <div class="th">备注：</div>
+                                        <div class="td">
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                    </li>
+                                    <li class="c-upload">
+                                        <div class="th">
+                                            <span class="ico-xh"></span>草签合同照片：
+                                        </div>
+                                        <div class="td">
+                                            <div class="up-area">
+                                                <input class="input-file" type="file">
+                                                <button class="btn-input-file">选择图片上传</button>
+                                            </div>
+                                            <p class="tips">请上传包含用户姓名、身份证、签约时间、签约房号、签约总价的合同照片，最多可上传5张照片。</p>
+                                        </div>
+                                    </li>
+                                    <li class="c-upload-pic">
+                                        <div class="td">
+                                            <ul class="c-upload-pic-list">
+                                                <li>
+                                                    <img class="c-thumb-pic" src="../images/order-manage/img-1-small.jpg" rel="../images/order-manage/img-1-big.jpg">
+                                                    <span class="c-ico-del">删除</span>
+                                                </li>
+                                                <li>
+                                                    <img class="c-thumb-pic" src="../images/order-manage/img-2-small.jpg" rel="../images/order-manage/img-2-big.jpg">
+                                                    <span class="c-ico-del">删除</span>
+                                                </li>
+                                                <li>
+                                                    <img class="c-thumb-pic" src="../images/order-manage/img-3-small.jpg" rel="../images/order-manage/img-3-big.jpg">
+                                                    <span class="c-ico-del">删除</span>
+                                                </li>
+                                                <li>
+                                                    <img class="c-thumb-pic" src="../images/order-manage/img-4-small.jpg" rel="../images/order-manage/img-4-big.jpg">
+                                                    <span class="c-ico-del">删除</span>
+                                                </li>
+                                                <li>
+                                                    <img class="c-thumb-pic" src="../images/order-manage/img-5-small.jpg" rel="../images/order-manage/img-5-big.jpg">
+                                                    <span class="c-ico-del">删除</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-area">
+                                    <input class="btn btn-default" value="取消" type="button">
+                                    <input class="btn btn-primary" value="确认" type="button">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.imagezoom.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/order-manage.js"></script>
+</body>
+</html>

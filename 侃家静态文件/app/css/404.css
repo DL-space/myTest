@@ -1,0 +1,49 @@
+.container{
+    width: 10rem;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.header{
+    height: 0.66rem;
+    overflow: hidden;
+    padding: 0.26rem;
+}
+.center{
+    text-align: center;
+}
+.ico-back{
+    float: left;
+    width: 0.66rem;
+    height: 0.66rem;
+    background: url("../images/ico_leftarrow.png") no-repeat;
+    background-size: 100% 100%;
+    text-indent: -9999px;
+}
+.pic-area,.pic-area img{
+    width: 6.4rem;
+    height: 5.6rem;
+}
+.pic-area{
+    padding-top: 1.35rem;
+    margin: 0 auto 0.4rem;
+}
+.text{
+    margin-bottom: 1.33rem;
+}
+.text p{
+    font-size: 0.37rem;
+    color: #999;
+    line-height: 0.66rem;
+}
+.btn{
+    width: 5.33rem;
+    height: 1.17rem;
+    line-height: 1.17rem;
+    font-size: 0.42rem;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    background-color: #48B3E2;
+}

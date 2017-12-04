@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>带看记录</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+    <div class="page-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo fl">
+                        <h1><a href="#"><img src="../images/logo.png" alt="欢迎登录侃家网业务管理系统！"></a></h1>
+                        <p class="info">欢迎登录侃家网业务管理系统！</p>
+                    </div>
+                    <div class="h-user">
+                        <div class="link-user">
+                            <span class="ico ico-user"></span>
+
+                            <div class="dropdown-menu-user">
+                                <span class="triangle"></span>
+                                <ul class="dropdown-menu">
+                                    <li class="first"><a href="#"><span class="dropdown-text">个人设置</span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">我的消息</span><span
+                                        class="badge myMsg"></span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">待办事项</span><span
+                                        class="badge toMsg"></span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">个人资料</span></a>
+                                    </li>
+                                    <li class="last"><a href="#"><span class="dropdown-text">退出</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ucenter">
+                            <span class="uname">徐立</span>
+                            <span class="fgx">|</span>
+                            <a class="logout" href="#">退出</a>
+                        </div>
+                        <div class="schedule"><a href="#">我的日程</a></div>
+                        <div class="tips-msg">
+                            <a class="ico ico-msg" href="#" title="消息">
+                            <span class="dot">28</span>
+                        </a>
+                            <a class="ico ico-todo" href="#" title="待办事项">
+                            <span class="dot">65</span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-all-wrap">
+        <div class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">咨询师业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">订单列表</a></li>
+                                <li><a href="#">关键带看管理列表</a></li>
+                                <li><a href="#">联系列表</a></li>
+                                <li><a href="#">带看列表</a></li>
+                                <li><a href="#">认购列表页</a></li>
+                                <li><a href="#">签约列表页</a></li>
+                                <li><a href="#">首次联系延迟列表</a></li>
+                                <li class="last"><a href="#">匹配工具</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">客服业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">客服订单管理</a></li>
+                                <li><a href="#">客服联系记录管理</a></li>
+                                <li><a href="#">带看评价管理</a></li>
+                                <li><a href="#">带看评价回访纪录</a></li>
+                                <li><a href="#">已关闭订单跟进</a></li>
+                                <li><a href="#">已关闭订单跟进回访记录</a></li>
+                                <li><a href="#">无效客户标记</a></li>
+                                <li><a href="#">400电话订单匹配</a></li>
+                                <li><a href="#">评价追回页面</a></li>
+                                <li class="last"><a href="#">投诉列表页</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">驻场拓展业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">报备管理</a></li>
+                                <li><a href="#">楼盘备案管理</a></li>
+                                <li><a href="#">合作方管理</a></li>
+                                <li><a href="#">楼盘拓展相关字段维护</a></li>
+                                <li><a href="#">添加报备</a></li>
+                                <li><a href="#">代理中介管理</a></li>
+                                <li class="last"><a href="#">代理客户订单管理</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">服务管理员业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">服务评价管理</a></li>
+                                <li><a href="#">咨询师带看情况查询</a></li>
+                                <li class="last"><a href="#">咨询师审核</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">系统管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">权限管理</a></li>
+                                <li><a href="#">员工管理</a></li>
+                                <li><a href="#">员工作息时间管理</a></li>
+                                <li><a href="#">咨询师分配管理</a></li>
+                                <li><a href="#">客服分配管理</a></li>
+                                <li><a href="#">用户管理</a></li>
+                                <li><a href="#">短信模板管理</a></li>
+                                <li><a href="#">咨询师分组管理</a></li>
+                                <li><a href="#">员工操作日志</a></li>
+                                <li><a href="#">批量转移咨询师客户</a></li>
+                                <li><a href="#">联系取消</a></li>
+                                <li><a href="#">雨燕档案</a></li>
+                                <li><a href="#">上线日志管理</a></li>
+                                <li><a href="#">城市管理</a></li>
+                                <li class="last"><a href="#">字段常量配置</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">报表管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">客户数据分析</a></li>
+                                <li><a href="#">网站统计报表</a></li>
+                                <li><a href="#">周期维度统计</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">咨询师延迟录入统计</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">联系延迟录入统计</a></li>
+                                        <li><a href="#">带看延迟录入统计</a></li>
+                                        <li><a href="#">咨询师分配时间到首次联系时间超时统计列表</a></li>
+                                        <li><a href="#">咨询师认购超时统计列表</a></li>
+                                        <li class="last"><a href="#">咨询师签约超时统计列表</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">核算日月周年报表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算统计</a></li>
+                                        <li><a href="#">咨询师组核算统计</a></li>
+                                        <li><a href="#">楼盘核算统计</a></li>
+                                        <li><a href="#">区域核算统计</a></li>
+                                        <li class="last"><a href="#">渠道核算统计</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">核算汇总表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算统计汇总表</a></li>
+                                        <li><a href="#">咨询师组核算统计汇总表</a></li>
+                                        <li><a href="#">楼盘核算统计汇总表</a></li>
+                                        <li><a href="#">区域核算统计汇总表</a></li>
+                                        <li><a href="#">渠道核算统计汇总表</a></li>
+                                        <li class="last"><a href="#">资金核算报表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">咨询师满意度表格</a></li>
+                                <li><a href="#">咨询师组满意度表格</a></li>
+                                <li><a href="#">带看评价统计列表</a></li>
+                                <li><a href="#">已关闭订单客户评价统计列表</a></li>
+                                <li><a href="#">成交订单服务评价统计列表</a></li>
+                                <li><a href="#">咨询师楼盘点评统计</a></li>
+                                <li><a href="#">客服首次联系超时统计报表</a></li>
+                                <li><a href="#">带看回访客服联系记录</a></li>
+                                <li><a href="#">已关闭订单回访客服联系记录</a></li>
+                                <li><a href="#">咨询师订单详情统计列表</a></li>
+                                <li><a href="#">咨询师正常订单统计列表</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">客户业务详情统计</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">客户线索详情统计列表</a></li>
+                                        <li><a href="#">客户上户详情统计列表</a></li>
+                                        <li><a href="#">带看详情统计报表</a></li>
+                                        <li><a href="#">认购详情统计列表</a></li>
+                                        <li class="last"><a href="#">签约详情统计列表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">客户留电行为详情列表</a></li>
+                                <li><a href="#">消息详情列表</a></li>
+                                <li><a href="#">定时消息详情列表</a></li>
+                                <li><a href="#">重新分配记录报表</a></li>
+                                <li><a href="#">短信记录报表</a></li>
+                                <li><a href="#">订单恢复报表</a></li>
+                                <li><a href="#">线索质量统计报表</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">业务统计报表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">楼盘业务统计</a></li>
+                                        <li><a href="#">渠道业务统计报表</a></li>
+                                        <li><a href="#">喜报业务统计报表</a></li>
+                                        <li><a href="#">咨询师首次正式认购核算报表</a></li>
+                                        <li><a href="#">区域业务统计</a></li>
+                                        <li class="last"><a href="#">订单业务详情统计报表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">楼盘数据维护审核记录</a></li>
+                                <li><a href="#">高端客户详情统计列表</a></li>
+                                <li><a href="#">评价追回客服记录统计</a></li>
+                                <li><a href="#">楼盘信息报表</a></li>
+                                <li><a href="#">市场部咨询合作详情</a></li>
+                                <li class="dropdown-submenu last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">咨询师订单核算详情</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算详情-签约</a></li>
+                                        <li><a href="#">咨询师核算详情-上户</a></li>
+                                        <li><a href="#">咨询师核算详情-带看</a></li>
+                                        <li class="last"><a href="#">咨询师核算详情-认购</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">楼盘管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">楼盘数据维护</a></li>
+                                <li><a href="#">楼盘点评列表</a></li>
+                                <li><a href="#">楼盘商务信息管理</a></li>
+                                <li><a href="#">区域报告楼盘定位</a></li>
+                                <li><a href="#">楼盘维护提醒设置</a></li>
+                                <li><a href="#">楼盘列表</a></li>
+                                <li><a href="#">市调测评</a></li>
+                                <li class="dropdown-submenu last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">楼盘审核</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">楼盘点评审核</a></li>
+                                        <li class="last"><a href="#">楼盘数据维护审核</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">楼盘字典<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="dropdown-submenu first last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">楼盘管理</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">全部楼盘列表</a></li>
+                                        <li><a href="#">创建楼盘</a></li>
+                                        <li class="last"><a href="#">价格维护</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--意见反馈入口-->
+                <div class="nav-feedback">
+                    <span class="btn-feedback">不爽就点我</span>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <ul class="breadcrumb">
+                            <li><a href="#">首页</a></li>
+                            <li class="active">带看记录</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="s1">
+                        <!--基本信息-->
+                        <div class="v-box v-base">
+                            <div class="hd">
+                                <h2>基本信息</h2>
+
+                                <div class="more">
+                                    <a class="link-base" href="#">查看客户历史订单</a>
+                                </div>
+                            </div>
+                            <div class="bd">
+                                <ul class="c-query">
+                                    <li>
+                                        <div class="th">订单ID：</div>
+                                        <div class="td">
+                                            <p class="txt">20107117</p>
+                                            <a class="link-base" href="#">修改客户基本信息</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">订单状态：</div>
+                                        <div class="td">
+                                            <p class="txt">未联系</p>
+                                            <a class="link-base" href="#">订单开关</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">订单开关：</div>
+                                        <div class="td">
+                                            <p class="txt">正常订单</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">所属咨询师：</div>
+                                        <div class="td">
+                                            <p class="txt">张龙</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">姓名：</div>
+                                        <div class="td">
+                                            <p class="txt">林先生</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">性别：</div>
+                                        <div class="td">
+                                            <p class="txt">男</p>
+                                        </div>
+                                    </li>
+                                    <li class="tsbj">
+                                        <div class="th">首要联系方式：</div>
+                                        <div class="td">
+                                            <p class="txt">13023140243 （无法正常接收系统短信）</p>
+                                        </div>
+                                        <span class="ico-zj">被标记为中介</span>
+                                    </li>
+                                    <li>
+                                        <div class="th">分配时间：</div>
+                                        <div class="td">
+                                            <p class="txt">2017-07-18 11:03:01</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">更新时间：</div>
+                                        <div class="td">
+                                            <p class="txt">2017-07-18 11:06:12</p>
+                                        </div>
+                                    </li>
+                                    <li class="fgx"></li>
+                                    <li>
+                                        <div class="th">分配来源：</div>
+                                        <div class="td">
+                                            <p class="txt">线索直接分配</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">渠道：</div>
+                                        <div class="td">
+                                            <p class="txt">360-天津</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">联系途径：</div>
+                                        <div class="td">
+                                            <p class="txt">PC预约看房</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        留电口：<span class="txt">向他咨询-</span><a href="#">华业东方玫瑰</a>,<a href="#">观山源墅（住宅）</a>,<a href="#">天恒金融街公园懿府</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--客户行为-->
+                        <div class="v-box v-box-khxw">
+                            <div class="hd">
+                                <h2>客户行为</h2>
+                            </div>
+                            <div class="bd">
+                                <ul class="c-query">
+                                    <li class="emp">
+                                        客户问题：<span class="txt">非常感谢居理新房网及咨询师许静在我此次买房过程中的帮助和服务，此处点赞一万个[强][强][强]</span>
+                                    </li>
+                                    <li>
+                                        特殊需求字段：<span class="txt">位置2号线；总价600-800万；类型住宅</span>
+                                    </li>
+                                    <li>
+                                        收藏楼盘：<a href="#">绿地海珀云翡；</a><a href="#">中骏·西山天璟</a>
+                                    </li>
+                                    <li>
+                                        浏览最多楼盘：<a href="#">北京城建海梓府；</a><a href="#">恒华湖公馆；</a><a href="#">天恒金融街公园懿府</a>
+                                    </li>
+                                    <li>客服备注：<span class="txt">非常感谢居理新房网及咨询师许静在我此次买房过程中的帮助和服务</span></li>
+                                </ul>
+                                <ul class="c-query">
+                                    <li>通话录音：<span class="txt">来电 2017-06-16  18:40:42</span>
+                                        <div class="audio-area">
+                                            <audio preload="auto" controls>
+                        <source src="../../audio/BlueDucks_FourFlossFiveSix.mp3">
+                        <source src="../../audio/BlueDucks_FourFlossFiveSix.ogg">
+                        <source src="../../audio/BlueDucks_FourFlossFiveSix.wav">
+                    </audio>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--客户的后续C端留电行为-->
+                        <div class="v-box v-box-ldxw">
+                            <div class="hd">
+                                <h2>客户的后续C端留电行为</h2>
+                            </div>
+                            <div class="bd">
+                                <ul class="c-query">
+                                    <li><span class="txt">2017-07-21  18:00:00</span></li>
+                                    <li>留电口：<span class="txt">我要优惠-</span><a href="#">五矿铭品</a></li>
+                                    <li><span class="txt">2017-07-01  12:00:00</span></li>
+                                    <li>
+                                        留电口：<span class="txt">关注开盘时间-</span><a href="#">北京城建琨廷</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--线索质量推荐楼盘-->
+                        <div class="v-box v-box-tjlp">
+                            <div class="hd">
+                                <h2>线索质量推荐楼盘</h2>
+                            </div>
+                            <div class="bd">
+                                <ul class="c-query">
+                                    <li>最佳推荐楼盘：<a href="#">绿地海珀云翡、</a><a href="#">中骏·西山天璟、</a><a href="#">北京城建海梓府、</a><a href="#">亦庄金茂府</a></li>
+                                    <li>次佳推荐楼盘：<a href="#">观山源墅（住宅）、</a><a href="#">北京城建琨廷、</a><a href="#">北京城建世华龙樾、</a><a href="#">恒华湖公馆</a>
+                                    </li>
+                                    <li>其他推荐楼盘：<a href="#">紫金新干线、</a><a href="#">百旺杏林湾、</a><a href="#">新华联YOYO新天地、</a><a href="#">华业东方玫瑰</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="s2">
+                        <div class="panel panel-record">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">带看记录</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="tab tab-record">
+                                    <ul class="nav tab-nav nav-justified">
+                                        <li role="presentation"><a href="contact-record.html"> 联系记录</a></li>
+                                        <li role="presentation" class="active"><a href="dk-record.html">带看记录</a></li>
+                                        <li role="presentation"><a href="#">认购记录</a></li>
+                                        <li role="presentation"><a href="#">签约记录</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" role="tabpanel">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="tab-btn">
+                                                        <a class="btn btn-t03" href="dk-update.html" role="button"><span
+                                                            class="ico ico-eye"></span>更新客户跟进</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--2016.10.21 客户需求-->
+                                            <div class="panel panel-khxq">
+                                                <div class="panel-heading">
+                                                    <div class="panel-heading-wrap">
+                                                        <h2 class="panel-title">客户需求</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="mod2 mod2-baseinfo">
+                                                        <div class="tit">1.关键信息</div>
+                                                        <ul class="con clearfix">
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>客户购房紧迫度：</label>
+
+                                                                    <div class="input-group input-group-sm">
+                                                                        <div class="txr">高</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>购房目的：</label>
+
+                                                                    <div class="input-group input-group-sm">
+                                                                        <div class="txt">投资+自住</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>首付预算：</label>
+
+                                                                    <div class="input-group input-group-sm">
+                                                                        <div class="txt">100万元</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>总价预算：</label>
+
+                                                                    <div class="input-group input-group-sm">
+                                                                        <div class="txt">400-600万元</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>有无资质：</label>
+
+                                                                    <div class="input-group input-group-sm">
+                                                                        <div class="txt">有</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>名下房产：</label>
+
+                                                                    <div class="input-group input-group-sm">
+                                                                        <div class="txt">一套房</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="mod2 mod2-baseinfo">
+                                                        <div class="tit">2.区域需求</div>
+                                                        <ul class="con clearfix">
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>关注区域：</label>
+
+                                                                    <div class="input-group input-group-sm">
+                                                                        <div class="txr">大兴、顺义、房山</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>工作地点：</label>
+
+                                                                    <div class="input-group input-group-sm">
+                                                                        <div class="txt">望京</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>是否接受其他区域：</label>
+
+                                                                    <div class="input-group input-group-sm">
+                                                                        <div class="txt">是</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="mod2 mod2-baseinfo">
+                                                        <div class="tit">3.户型需求</div>
+                                                        <ul class="con clearfix">
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>业态类型：</label>
+
+                                                                    <div class="input-group input-group-sm">
+                                                                        <div class="txr">住宅</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>面积要求：</label>
+
+                                                                    <div class="input-group input-group-sm">
+                                                                        <div class="txt">100m²</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>户型：</label>
+
+                                                                    <div class="input-group input-group-sm">
+                                                                        <div class="txt">两居室 三居室</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="mod2 mod2-baseinfo">
+                                                        <div class="tit">4.个性需求</div>
+                                                        <ul class="con clearfix">
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>可看房时间：</label>
+
+                                                                    <div class="input-group input-group-sm">
+                                                                        <div class="txr">随时</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>配合程度：</label>
+
+                                                                    <div class="input-group input-group-sm">
+                                                                        <div class="txt">高</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>关注点：</label>
+
+                                                                    <div class="input-group input-group-sm">
+                                                                        <div class="txt">无</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>抗性点：</label>
+
+                                                                    <div class="input-group input-group-sm">
+                                                                        <div class="txt">价格不能太高</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="mod2 mod2-baseinfo">
+                                                        <div class="tit">5.相关楼盘</div>
+                                                        <ul class="con clearfix">
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>客户感兴趣楼盘：</label>
+
+                                                                    <div class="input-group input-group-sm">
+                                                                        <div class="txr">旭辉26街区</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>竞品楼盘：</label>
+
+                                                                    <div class="input-group input-group-sm">
+                                                                        <div class="txt">北京新干线</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="mod2 mod2-bzxx">
+                                                        <ul class="con clearfix">
+                                                            <li class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label>备注：</label>
+
+                                                                    <div class="txr">客户很年轻，二十几岁人很好</div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-area">
+                                                        <a href="#" class="link-edit">编辑需求</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2 contactTime">
+                                                    <em>2015-09-05 14:30:00</em> 877
+                                                    <ul class="dk-operation">
+                                                        <li>
+                                                            <a class="btn btn-t04 btn-xs" href="dk-record.html">插入联系记录</a>
+                                                        </li>
+                                                        <li class="msg-tips msg-tips-yp">
+                                                            <a class="btn btn-wcdk btn-xs" href="#">完成带看</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="btn btn-t04 btn-xs" href="appointment-edit.html">编辑预约</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="btn btn-t04 btn-xs" href="appointment-edit.html">邀评带看</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="btn btn-t04 btn-xs" href="dk-cancel.html">取消</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="dk-record clearfix ">
+                                                        <div class="dk-info clearfix">
+                                                            <ul class="dk-info-wrap">
+                                                                <li><label>带看状态：</label><span>已预约带看</span></li>
+                                                                <li><label>带看人：</label><span>井建钊</span></li>
+                                                                <li><label>打车费：</label><span>元</span></li>
+                                                                <li><label>是否有专车：</label><span>没有</span></li>
+                                                                <li><label>看房人数：</label><span>1 人</span></li>
+                                                                <li><label>约见地点：</label><span>8号线回龙观东大街站</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="dk-record-list clearfix ">
+                                                            <div class="dk-record-list-wrap clearfix">
+                                                                <ul class="dkxx">
+                                                                    <li>带看楼盘：<a target="_blank" href="#">首开国风美唐</a></li>
+                                                                    <li>合作方：</li>
+                                                                    <li>报备负责人：</li>
+                                                                    <li>报备负责人电话：</li>
+                                                                    <li>状态：无需报备</li>
+                                                                    <li>
+                                                                        <p class="link-record"><span class="glyphicon glyphicon-menu-down"></span>
+                                                                            <span>楼盘带看备注</span>
+                                                                        </p>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="opr-trash">
+                                                                    <div class="inn">
+                                                                        <a class="btn btn-t04 btn-xs dkSet" href="#">取消</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="record-order">1</div>
+                                                            </div>
+                                                            <div class="record-text">
+                                                                <div class="tit">
+                                                                    <h4>楼盘带看备注:</h4>
+
+                                                                    <div class="date">2015-09-04 16:13 填写</div>
+                                                                </div>
+                                                                <div class="con clearfix">
+                                                                    <div class="record-info"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dk-record-list clearfix ">
+                                                            <div class="dk-record-list-wrap clearfix">
+                                                                <ul class="dkxx">
+                                                                    <li>带看楼盘：<a target="_blank" href="#">领秀慧谷</a></li>
+                                                                    <li>合作方：搜房</li>
+                                                                    <li>报备负责人：冯开凯</li>
+                                                                    <li>报备负责人电话：18701535886</li>
+                                                                    <li>状态：报备完成</li>
+                                                                    <li>
+                                                                        <p class="link-record"><span class="glyphicon glyphicon-menu-down"></span>
+                                                                            <span>楼盘带看备注</span>
+                                                                        </p>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="opr-trash">
+                                                                    <div class="inn">
+                                                                        <a class="btn btn-t04 btn-xs dkSet" href="#">取消</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="record-order">2</div>
+                                                            </div>
+                                                            <div class="record-text">
+                                                                <div class="tit">
+                                                                    <h4>楼盘带看备注:</h4>
+
+                                                                    <div class="date">2015-09-07 20:36 填写</div>
+                                                                </div>
+                                                                <div class="con clearfix">
+                                                                    <div class="record-info"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="record-text record-text-show">
+                                                            <div class="tit">
+                                                                <h4>带看记录:</h4>
+
+                                                                <div class="date">2015-09-04 16:13 填写</div>
+                                                            </div>
+                                                            <div class="con clearfix">
+                                                                <div class="record-info">
+                                                                    <p>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2 contactTime">
+                                                    <em>2015-09-05 14:30:00</em> 877
+                                                    <ul class="dk-operation">
+                                                        <li>
+                                                            <a class="btn btn-t04 btn-xs" href="#">邀评带看</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="dk-record clearfix ">
+                                                        <div class="dk-info clearfix">
+                                                            <ul class="dk-info-wrap">
+                                                                <li><label>带看状态：</label><span>已预约带看</span></li>
+                                                                <li><label>带看人：</label><span>井建钊</span></li>
+                                                                <li><label>打车费：</label><span>元</span></li>
+                                                                <li><label>是否有专车：</label><span>没有</span></li>
+                                                                <li><label>看房人数：</label><span>1 人</span></li>
+                                                                <li><label>约见地点：</label><span>8号线回龙观东大街站</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="dk-record-list clearfix ">
+                                                            <div class="dk-record-list-wrap clearfix">
+                                                                <ul class="dkxx">
+                                                                    <li>带看楼盘：<a target="_blank" href="#">首开国风美唐</a></li>
+                                                                    <li>合作方：</li>
+                                                                    <li>报备负责人：</li>
+                                                                    <li>报备负责人电话：</li>
+                                                                    <li>状态：无需报备</li>
+                                                                    <li>
+                                                                        <p class="link-record"><span class="glyphicon glyphicon-menu-down"></span>
+                                                                            <span>楼盘带看备注</span>
+                                                                        </p>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="opr-trash">
+                                                                    <div class="inn">
+                                                                        <a class="btn btn-wcdk btn-xs" role="button">认购</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="record-order">1</div>
+                                                            </div>
+                                                            <div class="record-text">
+                                                                <div class="tit">
+                                                                    <h4>楼盘带看备注:</h4>
+
+                                                                    <div class="date">2015-09-04 16:13 填写</div>
+                                                                </div>
+                                                                <div class="con clearfix">
+                                                                    <div class="record-info"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dk-record-list clearfix ">
+                                                            <div class="dk-record-list-wrap clearfix">
+                                                                <ul class="dkxx">
+                                                                    <li>带看楼盘：<a target="_blank" href="#">领秀慧谷</a></li>
+                                                                    <li>合作方：搜房</li>
+                                                                    <li>报备负责人：冯开凯</li>
+                                                                    <li>报备负责人电话：18701535886</li>
+                                                                    <li>状态：报备完成</li>
+                                                                    <li>
+                                                                        <p class="link-record"><span class="glyphicon glyphicon-menu-down"></span>
+                                                                            <span>楼盘带看备注</span>
+                                                                        </p>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="opr-trash">
+                                                                    <div class="inn">
+                                                                        <a class="btn btn-wcdk btn-xs" role="button">认购</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="record-order">2</div>
+                                                            </div>
+                                                            <div class="record-text">
+                                                                <div class="tit">
+                                                                    <h4>楼盘带看备注:</h4>
+
+                                                                    <div class="date">2015-09-07 20:36 填写</div>
+                                                                </div>
+                                                                <div class="con clearfix">
+                                                                    <div class="record-info"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="record-text record-text-show">
+                                                            <div class="tit">
+                                                                <h4>带看记录:</h4>
+
+                                                                <div class="date">2015-09-04 16:13 填写</div>
+                                                            </div>
+                                                            <div class="con clearfix">
+                                                                <div class="record-info">
+                                                                    <p>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2 contactTime">
+                                                    <em>2015-08-23 11:29:00</em> 758
+                                                    <ul class="dk-operation">
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="dk-record clearfix dk-record-cancel">
+                                                        <div class="dk-info clearfix">
+                                                            <ul class="dk-info-wrap">
+                                                                <li><label>带看状态：</label><span>取消</span></li>
+                                                                <li><label>带看人：</label><span>孙鑫</span></li>
+                                                                <li><label>打车费：</label><span>元</span></li>
+                                                                <li><label>是否有专车：</label><span>有</span></li>
+                                                                <li><label>看房人数：</label><span>3 人</span></li>
+                                                                <li><label>约见地点：</label><span>鼓楼大街</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="dk-record-list clearfix record-list-cancel">
+                                                            <div class="dk-record-list-wrap clearfix">
+                                                                <ul class="dkxx">
+                                                                    <li>带看楼盘：<a target="_blank" href="http://www.comjia.com/project/view/104">金域公园</a>
+                                                                    </li>
+                                                                    <li>合作方：开发商</li>
+                                                                    <li>报备负责人：冯开凯</li>
+                                                                    <li>报备负责人电话：18701535886</li>
+                                                                    <li>状态：取消</li>
+                                                                    <li>
+                                                                        <p class="link-record"><span class="glyphicon glyphicon-menu-down"></span>
+                                                                            <span>楼盘带看备注</span>
+                                                                        </p>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="opr-trash">
+                                                                </div>
+                                                                <div class="record-order">1</div>
+                                                            </div>
+                                                            <div class="record-text">
+                                                                <div class="tit">
+                                                                    <h4>楼盘带看备注:</h4>
+
+                                                                    <div class="date">2015-10-14 12:17 填写</div>
+                                                                </div>
+                                                                <div class="con clearfix">
+                                                                    <div class="record-info"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="record-text record-text-show">
+                                                            <div class="tit">
+                                                                <h4>带看记录:</h4>
+
+                                                                <div class="date">2015-10-14 12:17 填写</div>
+                                                            </div>
+                                                            <div class="con clearfix">
+                                                                <div class="record-info">
+                                                                    <p>
+                                                                        客户觉得房子还不错，就是位置有点远，回去再比比二手房 </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="page-footer">
+            <p class="copyright"><span>北京高因科技有限公司</span><span>www.comjia.com</span></p>
+        </div>
+    </div>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/common.js"></script>
+</body>
+</html>

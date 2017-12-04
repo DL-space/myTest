@@ -1,0 +1,1052 @@
+@charset "UTF-8";
+body {
+    background: #edeff0;
+}
+.area {
+    clear: both;
+    margin: 0 auto 40px;
+    overflow: hidden;
+}
+.area-crumbs {
+    margin-bottom: 0;
+}
+.b-col, .b-col2 {
+    overflow: hidden;
+}
+.b-col {
+    float: left;
+    width: 220px;
+    margin-right: 20px;
+}
+.icon-fgx {
+    float: left;
+    width: 3px;
+    height: 20px;
+    margin: 14px 10px 0 0;
+    background: #43a4e4;
+    overflow: hidden;
+}
+/*个人信息*/
+.b-user-info {
+    background: #fff;
+}
+.b-user-wrap {
+    width: 160px;
+    margin: 0 auto;
+    padding: 30px 0;
+    overflow: hidden;
+}
+.medal, .medal .pic, .medal .text {
+    text-align: center;
+    width: 100px;
+    overflow: hidden;
+}
+.medal {
+    margin: 0 auto;
+    padding-bottom: 24px;
+}
+.medal .pic, .medal .pic img {
+    width: 100px;
+    height: 100px;
+}
+.medal .pic {
+    background: #e1e9f2;
+    border-radius: 50%;
+}
+.medal .pic img {
+    float: left;
+    overflow: hidden;
+}
+.medal .text {
+    font-size: 14px;
+    color: #888;
+    height: 30px;
+    line-height: 30px;
+}
+.b-consult-info > li {
+    text-align: center;
+    padding: 16px 0 15px;
+    border-top: 1px dashed #edeff0;
+}
+.b-consult-info li p {
+    color: #888;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.b-consult-info li p.consult-h {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    height: 28px;
+    line-height: 28px;
+}
+.consult-rank > li {
+    clear: both;
+    overflow: hidden;
+}
+.consult-rank > li .th, .consult-rank > li .td {
+    color: #666;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.consult-rank > li .th {
+    float: left;
+    font-size: 14px;
+}
+.consult-rank > li .td {
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+/*段位排行*/
+.b-box .hd {
+    height: 48px;
+}
+.b-box .hd h2, .b-box-nav > li {
+    height: 48px;
+    line-height: 48px;
+    overflow: hidden;
+}
+.b-box .hd h2 {
+    float: left;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+.b-box .b-more {
+    float: right;
+}
+.b-col2-task .b-box {
+    margin-bottom: 20px;
+}
+.b-col2-task .b-box .hd {
+    border-bottom: 0;
+}
+.b-box-nav > li {
+    position: relative;
+    float: left;
+    margin-right: 50px;
+}
+.b-box-nav > li a {
+    font-size: 16px;
+    color: #333;
+}
+.b-box-nav > li.on {
+    font-weight: bold;
+    border-bottom: 1px solid #2e9ae1;
+}
+.b-box-nav > li.on a {
+    color: #2e9ae1;
+}
+.b-box-rank .bd {
+    padding-top: 40px;
+}
+.rank-type {
+    float: left;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+.rank-type .txt {
+    float: left;
+    font-size: 14px;
+    color: #888;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.b-sort .b-sel {
+    float: left;
+    width: 214px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #edeff0;
+    background: #fafafa;
+    overflow: hidden;
+}
+.b-sort-fr {
+    float: right;
+}
+.b-sort-fr .b-sel {
+    margin-left: 20px;
+}
+.b-table {
+    clear: both;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.b-table .b-table-body > li {
+    clear: both;
+    padding: 18px 0 19px;
+    border-bottom: 1px solid #edeff0;
+    overflow: hidden;
+}
+.b-table-rank {
+    min-width: 935px;
+    border: 1px solid #edeff0;
+}
+.b-table-nav {
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #edeff0;
+    background: #fafafa;
+    overflow: hidden;
+}
+.b-table-nav > li {
+    font-size: 14px;
+    color: #888;
+}
+.b-table-col, .b-table-col2, .b-table-col3, .b-table-col4, .b-table-col5, .b-table-col6 {
+    float: left;
+    box-sizing: content-box;
+    text-align: center;
+    overflow: hidden;
+}
+.b-table-col {
+    width: 42px;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+.b-table-col2 {
+    width: 112px;
+    margin-right: 25px;
+}
+.b-table-col3 {
+    width: 70px;
+    margin-right: 30px;
+}
+.b-table-col4 {
+    width: 150px;
+    margin-right: 30px;
+}
+.b-table-col5 {
+    width: 240px;
+    margin-right: 47px;
+}
+.b-table-col6 {
+    width: 82px;
+}
+.b-table .b-table-body > li .b-table-col3 .pic, .b-table .b-table-body > li .b-table-col3 .pic img {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+}
+.b-table .b-table-body > li .b-table-col3 .pic {
+    text-align: center;
+    background: #e1e9f2;
+    border-radius: 50%;
+}
+.b-table .b-table-body > li .b-table-col3 .pic img {
+    float: left;
+}
+.b-table .b-table-body > li .b-table-col {
+    position: relative;
+}
+.b-table .b-table-body > li .b-table-col2, .b-table .b-table-body > li .b-table-col4 {
+    font-size: 14px;
+    height: 70px;
+    line-height: 70px;
+}
+.b-box-rank .medal-list > li, .b-box-rank .medal-list > li img {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+.b-box-rank .medal-list > li {
+    float: left;
+    text-align: center;
+    margin: 10px 10px 0 0;
+    background: #e1e9f2;
+    border-radius: 50%;
+}
+.b-table .b-table-body > li .b-table-col6 {
+    height: 70px;
+}
+.b-table .link-honor {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    -webkit-box-shadow: 0 2px 5px 1px #c0e6ff;
+    -moz-box-shadow: 0 2px 5px 1px #c0e6ff;
+    box-shadow: 0 2px 5px 1px #c0e6ff;
+    width: 82px;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 22px;
+    background: #2e9ae1;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.b-table .ico-crown {
+    position: absolute;
+    left: 29px;
+    top: 1px;
+    width: 24px;
+    height: 20px;
+    background: url("../images/icon-crown.png") 0 0 no-repeat;
+    overflow: hidden;
+}
+.b-table .num {
+    display: block;
+    text-align: center;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin: 23px auto 0;
+    background: #97a9bd;
+    overflow: hidden;
+}
+.b-table .b-table-body li:nth-child(1) .num, .b-table .b-table-body li:nth-child(2) .num, .b-table .b-table-body li:nth-child(3) .num {
+    background: #2e9ae1;
+}
+.b-table .b-table-body > li.on {
+    color: #fa7309;
+}
+.b-table .b-table-body > li.on .num {
+    background: #fa6f03;
+}
+/*查看更多*/
+.b-look-more {
+    width: 138px;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 auto 26px;
+    border: 1px solid #edeff0;
+    overflow: hidden;
+}
+.b-look-more a {
+    display: block;
+    font-size: 14px;
+    color: #97a9bd;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*荣誉墙*/
+.b-box-honor .bd {
+    padding-top: 30px;
+}
+.honor-medal-list {
+    clear: both;
+    width: 925px;
+    padding: 0 0 24px 25px;
+    overflow: hidden;
+}
+.honor-medal-list li {
+    float: left;
+    width: 100px;
+    height: 132px;
+    margin: 0 50px 32px 0;
+    overflow: hidden;
+}
+.honor-medal-list .pic {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    padding: 1px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.honor-medal-list .pic:hover {
+    padding: 0;
+    border: 1px solid #c6d6e6;
+}
+.honor-medal-list .txt {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 0;
+}
+/*业务数据排行*/
+.b-table-date {
+    border-top: 1px solid #edeff0;
+    border-left: 1px solid #edeff0;
+    min-width: 935px;
+}
+.b-table-date .thead, .b-table-date .tbody, .b-table-date .tbody li {
+    clear: both;
+    overflow: hidden;
+}
+.b-table-date .thead .th, .b-table-date .tbody .td {
+    float: left;
+    font-size: 14px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 225px;
+    border-right: 1px solid #edeff0;
+    border-bottom: 1px solid #edeff0;
+    overflow: hidden;
+}
+.b-table-date .thead .th {
+    color: #888;
+    height: 38px;
+    line-height: 38px;
+    background: #fafafa;
+}
+.b-table-date .tbody .td {
+    height: 66px;
+    line-height: 66px;
+}
+.b-table-date .thead .last, .b-table-date .tbody .last {
+    width: 224px;
+}
+.b-table-date .ico-crown {
+    position: static;
+}
+.b-table-date .tbody li:nth-of-type(1) .td.first {
+    line-height: 20px;
+}
+.b-table-date .tbody li:nth-of-type(1) .td.first .ico-crown {
+    display: block;
+    margin: 10px auto 0;
+}
+.b-table-date .tbody li:nth-of-type(1) .num {
+    margin-top: 2px;
+}
+.b-table-date .tbody li:nth-of-type(1) .num, .b-table-date .tbody li:nth-of-type(2) .num, .b-table-date .tbody li:nth-of-type(3) .num {
+    background-color: #2e9ae1;
+}
+.b-table-date .tbody li.on .td {
+    color: #fa6f03;
+}
+.b-table-date .tbody li.on .num {
+    background-color: #ff6f00;
+}
+/*日历*/
+.dataRangeSel {
+    position: relative;
+}
+.dataRangeSel i {
+    position: absolute;
+    bottom: 10px;
+    right: 24px;
+    top: auto;
+    cursor: pointer;
+}
+/*弹层*/
+.layui-layer {
+    background-color: transparent;
+}
+.pop-hd, .pop-bd {
+    clear: both;
+    overflow: hidden;
+}
+.pop-hd {
+    height: 50px;
+    background: #fff;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.pop-hd h2 {
+    float: left;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    padding-left: 22px;
+    overflow: hidden;
+}
+.pop-hd .layer-close {
+    float: right;
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 30px;
+    height: 30px;
+    margin: 10px 12px 0 0;
+    background: url("/images/icon-close.png") 0 0 no-repeat;
+    overflow: hidden;
+}
+.pop-bd {
+    padding: 68px 0 60px;
+    background: #f2f4f8;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.popup-medal .honor-medal-list {
+    box-sizing: content-box;
+    width: 510px;
+    margin-bottom: 34px;
+    padding: 0 0 0 70px;
+}
+.popup-medal .honor-medal-list li {
+    height: auto;
+    margin: 0 50px 0 0;
+    width: 120px;
+    text-align: center;
+}
+.popup-medal .honor-medal-list .pic {
+    margin-bottom: 16px;
+}
+.popup-medal .honor-medal-list .txt {
+    height: 22px;
+    line-height: 22px;
+}
+.pop-tips {
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.popup .num {
+    color: #ff6f00;
+}
+.popup-medal-no .pop-bd {
+    padding: 27px 0 45px;
+}
+.medal-rules {
+    clear: both;
+    width: 460px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.medal-rules h4, .medal-rules p {
+    font-size: 14px;
+    margin: 0;
+    overflow: hidden;
+}
+.medal-rules h4 {
+    height: 24px;
+    line-height: 24px;
+}
+.medal-rules p {
+    color: #888;
+    line-height: 22px;
+}
+.popup-medal-no .honor-medal-list {
+    width: 460px;
+    margin: 0 auto;
+    padding-left: 0;
+}
+.popup-medal-no .honor-medal-list li {
+    clear: both;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.popup-medal-no .honor-medal-list .medal-res {
+    display: inline-block;
+    font-size: 22px;
+    color: #afc5da;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 35px;
+    background: url("../images/icon-medal-no.png") 0 0 no-repeat;
+    overflow: hidden;
+}
+.popup-medal-no .honor-medal-list li.txt {
+    font-size: 16px;
+    padding: 0 20px;
+}
+/*本月目标*/
+.b-col2-task .b-box {
+    padding-bottom: 30px;
+}
+.target-list {
+    clear: both;
+    width: 920px;
+    overflow: hidden;
+}
+.target-list li {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    color: #fff;
+    width: 210px;
+    height: 84px;
+    margin-right: 20px;
+    padding: 20px 0 0 20px;
+    background: #f56464 url("../images/icon-task.png") 147px 23px no-repeat;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.target-list li p {
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.target-list li p.num {
+    font-size: 16px;
+    height: 26px;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+.target-list li p.num .big {
+    font-size: 34px;
+}
+.target-list li.t-dkl {
+    background-color: #489adf;
+    background-position: 134px -77px;
+}
+.target-list li.t-rgl {
+    background-color: #51baa2;
+    background-position: 145px -178px;
+}
+.target-list li.t-qyl {
+    background-color: #f0af40;
+    background-position: 149px -274px;
+}
+.target-list .icon-finished {
+    position: absolute;
+    top: 11px;
+    right: 19px;
+    width: 81px;
+    height: 63px;
+    background: url("../images/icon-finished.png") 0 0 no-repeat;
+    overflow: hidden;
+}
+/*任务详单*/
+.task-detail {
+    clear: both;
+    margin-bottom: 20px;
+    border: 1px solid #e9ebec;
+    overflow: hidden;
+}
+.task-detail .tit, .task-detail .con {
+    overflow: hidden;
+}
+.task-detail .tit {
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    width: 90px;
+    height: 100%;
+    background: #f6f6f8;
+    border-right: 1px solid #e9ebec;
+}
+.task-detail .con li {
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.task-detail .con li.last {
+    margin-right: 0;
+}
+.task-detail .con li .num {
+    color: #fff;
+    margin: 0 auto;
+    padding: 1px;
+    background-color: #677da2;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.task-detail .con li .num:hover {
+    padding: 0;
+    border: 1px solid #11b9ff;
+}
+.task-detail .con li .num a {
+    display: block;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.task-detail .con li .num p {
+    font-size: 16px;
+}
+.task-detail .con li .num span.big {
+    font-size: 34px;
+}
+.task-detail .con li a:hover {
+    text-decoration: none;
+}
+.task-detail .con li .txt {
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+}
+.task-detail .con li.task-finished .num {
+    background-color: #e9eff5;
+}
+.task-detail .con li.task-finished .num a {
+    color: #7388aa;
+}
+/*订单跟进*/
+/*.task-fllow {*/
+/*height: 178px;*/
+/*}*/
+/*.task-fllow .tit {*/
+/*line-height: 178px;*/
+/*}*/
+/*.task-fllow .con {*/
+/*padding: 32px 0 0 20px;*/
+/*}*/
+/*.task-fllow .con li {*/
+/*width: 196px;*/
+/*margin-right: 10px;*/
+/*}*/
+/*.task-fllow .con li .num {*/
+/*width: 90px;*/
+/*height: 90px;*/
+/*}*/
+/*.task-fllow .con li .num p{*/
+/*display: inline-block;*/
+/*font-size: 16px;*/
+/*height: 26px;*/
+/*line-height: 26px;*/
+/*margin-top: 31px;*/
+/*overflow: hidden;*/
+/*}*/
+/*.task-fllow .con li .num span.big{*/
+/*font-size: 34px;*/
+/*}*/
+/*.task-fllow .con li .txt {*/
+/*height: 34px;*/
+/*line-height: 34px;*/
+/*}*/
+/*审核驳回*/
+.task-detail {
+    height: 158px;
+}
+.task-project {
+    margin-bottom: 0;
+}
+.task-detail .tit {
+    line-height: 158px;
+}
+.task-detail .con {
+    padding: 34px 0 0 23px;
+}
+.task-detail .con li {
+    width: 154px;
+}
+.task-detail .con li .num {
+    font-size: 34px;
+    width: 70px;
+    height: 70px;
+    line-height: 66px;
+}
+.task-detail .con li .txt {
+    line-height: 24px;
+}
+/*服务质量*/
+.b-box .hd .b-sel {
+    width: 214px;
+    height: 28px;
+    margin-top: 9px;
+    border: 1px solid #e9ebec;
+    border-radius: 0;
+}
+.task-stat {
+    clear: both;
+    height: 108px;
+    border: 1px solid #e9ebec;
+    overflow: hidden;
+}
+.task-stat .tit, .task-stat .stat-list {
+    overflow: hidden;
+}
+.task-stat .tit {
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    width: 90px;
+    height: 108px;
+    line-height: 108px;
+    background: #f6f6f8;
+    border-right: 1px solid #e9ebec;
+}
+.task-stat .stat-list {
+    padding-top: 24px;
+}
+.task-stat .stat-list li {
+    float: left;
+    text-align: center;
+    height: 60px;
+    border-right: 1px solid #e9ebec;
+}
+.task-stat .stat-list li.last {
+    border-right: 0;
+}
+.task-stat p {
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.task-stat .stat-list li p.num {
+    font-size: 28px;
+    color: #7a91b3;
+}
+.task-stat .stat-list li p.txt {
+    font-size: 14px;
+}
+/*延迟统计*/
+.stat-delay {
+    margin-bottom: 20px;
+}
+.stat-delay .stat-list li {
+    width: 160px;
+}
+/*满意度统计*/
+.stat-satisfaction .stat-list li {
+    width: 200px;
+}
+/*个人数据*/
+.b-table3 {
+    min-width: 910px;
+    margin-bottom: 20px;
+    border-left: 1px solid #e9ebec;
+}
+.b-table3 .t-head, .b-table3 .t-body, .b-table3 .t-body li {
+    clear: both;
+    overflow: hidden;
+}
+.b-table3 .th, .b-table3 .td {
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    width: 11%;
+    border-right: 1px solid #e9ebec;
+    border-bottom: 1px solid #e9ebec;
+    overflow: hidden;
+}
+.b-table3 .th {
+    color: #888;
+    font-size: 14px;
+    height: 39px;
+    line-height: 38px;
+    border-top: 1px solid #e9ebec;
+    background-color: #f8f8f8;
+}
+.b-table3 .td {
+    color: #7a91b3;
+    font-size: 28px;
+    height: 66px;
+    line-height: 66px;
+}
+.b-table3 .t-body li.on .td {
+    background: #f3f9fd;
+}
+.b-table3 .t-head li.first, .b-table3 .t-body .first {
+    font-size: 14px;
+    color: #333;
+    /*width: 131px;*/
+    width: 12%;
+}
+.b-table3 .t-head li.first .fgx {
+    /*position: relative;*/
+    /*display: block;*/
+    /*transform-origin: 0 0;*/
+    /*transform:rotate(16deg);*/
+    /*width: 137px;*/
+    /*border-top: 1px solid #e9ecef;*/
+}
+.b-table3 .t-body .highlight {
+    color: #ff6f00;
+}
+.b-data-add {
+    clear: both;
+    overflow: hidden;
+}
+.b-data-add .btn-data-add {
+    float: right;
+    font-size: 14px;
+    color: #7a91b3;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 129px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 46px;
+    background: url("../images/icon-plus.png") 19px 6px no-repeat;
+    border: 1px solid #7388aa;
+}
+.b-data-add .btn-data-add:hover {
+    color: #43a4e4;
+    border-color: #56a3e1;
+    background-position: 19px -34px;
+}
+.b-table3 .btn-del {
+    color: #337ab7;
+    font-size: 14px;
+}
+/*添加对比咨询师弹层*/
+.popup-add-data .compare-consultant, .popup-add-data .pop-consultan-info {
+    clear: both;
+    width: 520px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.popup-add-data .compare-consultant {
+    margin-bottom: 20px;
+}
+.popup-add-data .compare-consultant .th, .popup-add-data .compare-consultant .td, .popup-add-data .pop-consultan-info .td, .popup-add-data .pop-consultan-info .th {
+    font-size: 14px;
+    overflow: hidden;
+}
+.popup-add-data .compare-consultant .th, .popup-add-data .pop-consultan-info .th {
+    float: left;
+    text-align: right;
+    width: 80px;
+    height: 34px;
+    line-height: 34px;
+    margin-right: 10px;
+}
+.popup-add-data .pop-consultan-info li {
+    float: left;
+    width: 50%;
+    height: 34px;
+    line-height: 34px;
+}
+.popup-add-data .btn-area {
+    padding-top: 20px;
+}
+.popup-add-data .btn-default {
+    color: #333;
+}
+/*需求 3.5 咨询师及资讯中心移动端适配 2017.4.27 开始*/
+.date-mobile, .date-mobile1 {
+    display: none;
+    width: 214px;
+    height: 28px;
+    border: 1px solid #e9ebec;
+    border-radius: 0;
+    text-align: center;
+}
+.date-mobile-line {
+    display: none;
+}
+@media screen and (max-width: 750px) {
+    .b-col {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .b-box {
+        padding: 0 10px;
+    }
+    .b-tab-nav li {
+        width: 25%;
+    }
+    .target-list {
+        width: 210px;
+        margin: 0 auto;
+    }
+    .target-list li {
+        float: none;
+        margin-bottom: 10px;
+    }
+    .task-detail .tit, .task-stat .tit {
+        float: none;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        border-right: 0;
+    }
+    .task-fllow, .task-reject, .task-stat {
+        height: auto;
+    }
+    .task-fllow .con, .task-reject .con {
+        padding: 10px 0 0;
+    }
+    .task-fllow .con li, .task-reject .con li, .stat-delay .stat-list li, .stat-satisfaction .stat-list li {
+        width: 100%;
+        border-bottom: 1px solid #e9ebec;
+        margin: 0 0 10px;
+    }
+    .task-fllow .con li.last, .task-reject .con li.last, .stat-delay .stat-list li.last, .stat-satisfaction .stat-list li.last {
+        margin-bottom: 0;
+        border-bottom: 0;
+    }
+    .task-reject .con li {
+        float: none;
+        text-align: center;
+    }
+    .b-box .b-more {
+        float: left;
+        clear: left;
+    }
+    .b-box .hd .b-sel {
+        margin-top: 0;
+    }
+    .b-box-quality .hd, .b-col2-task .b-box .hd {
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .b-box-data .bd, .b-box-data .bd {
+        overflow-x: auto;
+    }
+    .task-stat .stat-list {
+        padding-top: 0;
+    }
+    .stat-delay .stat-list li, .stat-satisfaction .stat-list li {
+        float: none;
+        height: auto;
+        padding-bottom: 10px;
+        border-right: 0;
+        overflow: hidden;
+    }
+    .area {
+        margin-bottom: 0;
+    }
+    .popup-add-data .compare-consultant, .popup-add-data .pop-consultan-info {
+        width: 80%;
+    }
+    .popup-add-data .compare-consultant {
+        margin-bottom: 0;
+    }
+    .popup-add-data .pop-bd {
+        padding: 20px 0;
+    }
+    .popup-add-data .pop-consultan-info li {
+        float: none;
+        width: 100%;
+    }
+    .b-box-rank .bd {
+        padding-top: 10px;
+        overflow-x: auto;
+    }
+    .honor-medal-list {
+        text-align: center;
+        width: auto;
+        padding-left: 0;
+    }
+    .honor-medal-list li {
+        margin-right: 20px;
+    }
+    .b-sort-fr .b-sel {
+        margin: 0 0 10px 0;
+    }
+    .rank-type {
+        margin-bottom: 10px;
+    }
+    .b-table {
+        margin-bottom: 10px;
+    }
+    .popup-medal-no .honor-medal-list, .medal-rules {
+        width: auto;
+    }
+    .medal-rules {
+        padding: 0 10px;
+    }
+    .popup-medal .pop-bd {
+        overflow-x: auto;
+    }
+    .date-pc {
+        display: none;
+    }
+    .date-mobile, .date-mobile1 {
+        display: inline-block;
+        width: 100px;
+    }
+    .date-mobile-line {
+        display: inline-block;
+    }
+    .layer-feedback .layer-footer .layer-btn-reset {
+        margin-bottom: 10px;
+    }
+    .layer-feedback .layer-footer .layer-btn-reset, .layer-feedback .layer-footer .btn-commit {
+        float: none;
+    }
+}
+/*需求 3.5 咨询师及资讯中心移动端适配 2017.4.27 结束*/

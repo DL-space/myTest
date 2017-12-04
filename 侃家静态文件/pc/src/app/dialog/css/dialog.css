@@ -1,0 +1,679 @@
+.dialog {
+    position: relative;
+    width: 500px;
+    border-radius: 15px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.dialog .dialog-close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+}
+.dialog .dialog-close:hover {
+    text-decoration: none;
+}
+.dialog .dialog-close .icon {
+    font-size: 22px;
+    color: #a1a1a1;
+}
+.dialog .ipt-area {
+    overflow: hidden;
+}
+.dialog .ipt-area .ipt {
+    width: 370px;
+    height: 32px;
+    padding: 0 14px;
+    border: solid 1px #eaeaea;
+}
+.dialog .ipt-area .error-msg {
+    clear: both;
+    text-align: center;
+    color: #ff6d6f;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.dialog .ipt-area .error-msg span {
+    display: none;
+}
+.dialog .btn3 {
+    width: 250px;
+    padding: 0;
+    border-radius: 4px;
+    background-color: #48b3e2;
+}
+.dialog .btn3:hover {
+    text-decoration: none;
+    background-color: #64c2eb;
+}
+.consultant-brand {
+    padding: 35px 10px 30px;
+    background-color: #48b3e2;
+    overflow: hidden;
+}
+.consultant-brand > li {
+    float: left;
+    text-align: center;
+    width: 160px;
+}
+.consultant-brand > li > p {
+    color: #fff;
+    font-size: 14px;
+}
+.consultant-brand > li > p.font-b {
+    font-size: 20px;
+}
+.dialog-cons-horizontal .dialog-close .icon {
+    color: #fff;
+}
+.dialog-cons-wrap {
+    padding: 30px 50px 36px;
+}
+.dialog-cons .text {
+    line-height: 24px;
+}
+.dialog-cons .text .name {
+    font-size: 14px;
+}
+.dialog-cons-vertical .dialog-cons .text .name {
+    font-size: 16px;
+}
+.dialog-cons .text .num {
+    color: #0599d9;
+}
+.dialog-cons-horizontal .dialog-cons {
+    text-align: center;
+    width: 310px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.dialog-cons .pic, .dialog-cons .pic img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+.dialog-cons-horizontal .pic, .dialog-cons-horizontal .pic img {
+    width: 50px;
+    height: 50px;
+}
+.dialog-cons-horizontal .pic {
+    float: left;
+    vertical-align: top;
+    margin: 23px 15px 0 0;
+}
+.dialog-cons-horizontal .text {
+    text-align: left;
+    overflow: hidden;
+}
+.dialog .ipt-area input::-webkit-input-placeholder {
+    color: #b7b7b7;
+}
+.dialog-consultant .btn-area {
+    text-align: center;
+}
+.dialog-cons-vertical .dialog-cons {
+    padding-bottom: 20px;
+}
+.dialog-cons-vertical .dialog-cons .pic, .dialog-cons-vertical .dialog-cons .pic img {
+    width: 100px;
+    height: 100px;
+}
+.dialog-cons-vertical .dialog-cons .pic {
+    margin: 0 auto 10px;
+}
+.dialog-cons-vertical .dialog-cons .text {
+    text-align: center;
+}
+/*2017.09.11 订阅成功、预约成功、关注成功的反馈*/
+/*提示成功新弹层*/
+.layer-wrapper {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.layui-anim {
+    background: none !important;
+    box-shadow: none !important;
+}
+.layui-layer-page .layui-layer-content {
+    overflow: visible !important;
+}
+.layer-wrapper .fr-submit-need {
+    padding: 50px 0 47px;
+}
+.layer-wrapper .fr-submit-need .bd .ly-close {
+    margin-top: 50px;
+}
+.layer-wrapper .fr-submit-need .bd .btn-area .ly-close {
+    margin-top: 0;
+}
+.layer-wrapper .fr-order-success {
+    padding: 20px 0 40px;
+}
+.free_apply_boxs {
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+}
+.free_apply_boxs .hd {
+    height: 50px;
+}
+.free_apply_boxs .hd .ly-close {
+    position: absolute;
+    top: 12px;
+    right: -36px;
+}
+.free_apply_boxs .hd .ly-close .icon-close {
+    font-size: 22px;
+    color: #a1a1a1;
+}
+.free_apply_boxs .hd .ly-close:hover {
+    text-decoration: none;
+}
+.free_apply_boxs .bd {
+    margin-top: 15px;
+}
+.free_apply_boxs .bd h3 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #52caa8;
+    font-weight: 200;
+    margin-bottom: 14px;
+}
+.free_apply_boxs .bd p {
+    font-size: 16px;
+    color: #666;
+}
+.free_apply_boxs .bd .p1 {
+    margin-bottom: 25px;
+}
+.free_apply_boxs .bd .p2 {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+.free_apply_boxs .bd .btn-area, .free_apply_boxs .bd .btn-area .ly-submit {
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden;
+}
+.free_apply_boxs .bd .btn-area {
+    margin: 25px auto 0;
+    width: 250px;
+    text-align: center;
+    background-color: #0599d9;
+    border-radius: 3px;
+    border: 0;
+    color: #fff;
+}
+.free_apply_boxs .bd .btn-area .ly-submit {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+    color: #fff;
+}
+.free_apply_boxs .bd .btn-area .ly-submit:hover {
+    background-color: #48b3e2;
+}
+/*下拉框*/
+.free_apply_boxs .look-house .tr {
+    clear: both;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.free_apply_boxs .look-house .input-area {
+    position: relative;
+}
+.free_apply_boxs .look-house .input-area:after {
+    clear: both;
+    content: '.';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.free_apply_boxs .look-house .ico-triangle {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 16px;
+    height: 8px;
+    background: url('../images/ico-layer-down.png') 0 0 no-repeat;
+}
+.free_apply_boxs .look-house .on .ico-triangle {
+    transform: rotate(180deg);
+}
+.free_apply_boxs .look-house .input-area div.ipt {
+    color: #bfbfbf;
+}
+.free_apply_boxs .look-house .input-area .ipt {
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 12px;
+    color: #afafaf;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 12px;
+    text-align: left;
+    border: 1px solid #deddde;
+}
+.free_apply_boxs .dropdown-list {
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    top: 31px;
+    left: 0;
+    width: 100%;
+    max-height: 130px;
+    padding: 5px 0;
+    background: #f5f5f5;
+    border: 1px solid #deddde;
+    z-index: 2;
+    overflow-y: auto;
+}
+.free_apply_boxs .dropdown-list li {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 26px;
+}
+.free_apply_boxs .dropdown-list li:hover {
+    color: #0599d9;
+}
+/*红包弹层样式未领*/
+.red-packet-wl {
+    height: 300px;
+    background: url("../images/red-bg02.png") no-repeat !important;
+    background-size: 100% 100%;
+}
+.red-packet-wl .layer-close {
+    top: 15px;
+}
+.red-packet-wl .red-number {
+    font-size: 0px;
+    color: #fffc00;
+}
+.red-packet-wl .red-number p {
+    font-size: 18px;
+    line-height: 45px;
+}
+.red-packet-wl .red-number span {
+    margin-right: 8px;
+    display: inline-block;
+    width: 30px;
+    height: 45px;
+    background: #fff;
+    color: #e85045;
+}
+.red-packet-wl .red-number span:first-child {
+    margin-left: 16px;
+}
+.red-packet-wl .red-number span:last-child {
+    margin-right: 14px;
+}
+.red-packet-wl .dialog-bd .p2 {
+    margin: 25px 0 15px 0;
+}
+.red-packet-wl .dialog-bd .look-house .btn-area button {
+    margin-top: 0;
+}
+.red-packet-wl .dialog-bd .ipt-area input::-webkit-input-placeholder {
+    color: #e85045;
+}
+.red-packet-wl .dialog-bd .ipt-area input::-moz-placeholder {
+    color: #e85045;
+}
+.red-packet-wl .dialog-bd .ipt-area input:-ms-input-placeholder {
+    color: #e85045;
+}
+/*红包弹层样式已领*/
+.red-packet-yl {
+    height: 375px;
+    background: url("../images/red-bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.red-packet-yl .dialog-close {
+    top: 90px;
+}
+.red-packet-yl .dialog-bd .p2 {
+    margin: 30px 0 10px 0;
+}
+.red-packet {
+    position: relative;
+    width: 500px;
+    text-align: center;
+}
+.red-packet .layer-close {
+    position: absolute;
+    right: 15px;
+}
+.red-packet .dialog-bd {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 43px;
+}
+.red-packet .dialog-bd .p1 {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 18px;
+    color: #fffc00;
+}
+/*红包下拉框*/
+.red-packet .look-house .tr {
+    margin-bottom: 16px;
+}
+.red-packet .look-house .input-area {
+    position: relative;
+}
+.red-packet .look-house .input-area:after {
+    clear: both;
+    content: '.';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.red-packet .look-house .ico-triangle {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 16px;
+    height: 8px;
+    background: url('../images/ico-layer-down.png') 0 0 no-repeat;
+}
+.red-packet .look-house .on .ico-triangle {
+    transform: rotate(180deg);
+}
+.red-packet .look-house .input-area div.ipt {
+    color: #e85045;
+}
+.red-packet .look-house .input-area .ipt {
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 12px;
+    color: #afafaf;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 12px;
+    text-align: left;
+    border: 1px solid #deddde;
+}
+.red-packet .dropdown-list {
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    top: 31px;
+    left: 0;
+    width: 100%;
+    max-height: 130px;
+    padding: 5px 0;
+    background: #f5f5f5;
+    border: 1px solid #deddde;
+    z-index: 2;
+    overflow-y: auto;
+}
+.red-packet .dropdown-list li {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 26px;
+}
+.red-packet .dropdown-list li:hover {
+    color: #0599d9;
+}
+/*通用样式*/
+.red-packet .dialog-bd .p2 {
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+}
+.red-packet .dialog-bd .btn-area button {
+    margin-top: 16px;
+    padding: 0;
+    border: none;
+    width: 70px;
+    height: 70px;
+    font-size: 16px;
+    font-weight: 700;
+    background: #fffc00;
+    border-radius: 50%;
+    color: #e85045;
+    cursor: pointer;
+    outline: 0
+}
+.red-packet .dialog-bd .btn-area button:hover {
+    background: #fffe94;
+}
+.red-packet .dialog-bd .ipt-area .error-msg {
+    color: #fffc00;
+}
+.red-packet .dialog-close .icon {
+    font-size: 22px;
+    color: #fff;
+}
+/*价格分析弹层*/
+.dialog .chart-area {
+    width: 100%;
+    height: 196px;
+    background-color: #48b3e2;
+}
+.dialog .chart-area #chart {
+    width: 100%;
+    height: 100%;
+}
+.dialog .content {
+    text-align: center;
+    padding: 18px 50px 28px 50px;
+    background-color: #fff;
+}
+.dialog .content .con-info {
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.dialog .dialog-close {
+    z-index: 1000;
+}
+.dialog-price-analysis .dialog-close .icon {
+    font-size: 22px;
+    color: #fff;
+}
+.dialog-price-analysis .ipt-area .error-msg {
+    height: 30px;
+    line-height: 30px;
+}
+.dialog-price-analysis-wt .content {
+    padding: 50px 50px 28px 50px;
+}
+.dialog-price-analysis-wt .title {
+    font-size: 18px;
+    margin-bottom: 26px;
+}
+
+/*问问 提问*/
+.dialog-ww-questions .dialog-cons-wrap{
+     padding: 32px 50px 36px;
+ }
+.dialog-ww-questions .dialog-close .icon{
+        color: #fff;
+}
+.dialog-ww-questions .consultant-brand{
+    height: 55px;
+    padding: 40px 50px 20px;
+ }
+.dialog-ww-questions .consultant-brand h3{
+     margin-bottom: 7px;
+     font-size: 20px;
+     text-align: center;
+     color: #fff;
+ }
+.consultant-brand ul{
+     overflow: hidden;
+ }
+.consultant-brand ul li{
+     float: left;
+     width: 33.3%;
+     text-align: center;
+ }
+.consultant-brand ul li .ico-tick{
+     background: url(../images/ico-ww-d.png) no-repeat;
+     vertical-align: sub;
+     width: 15px;
+     height: 15px;
+     border-radius: 50%;
+ }
+.consultant-brand ul li .text{
+     font-size: 14px;
+     color: #fff;
+ }
+.dialog-ww-questions .dialog-bd .dialog-cons{
+     overflow:hidden;
+ }
+.dialog-ww-questions .dialog-bd .dialog-cons .ipt{
+     width: 374px;
+     height: 97px;
+        color: #999;
+     border: 1px solid #e4e4e4;
+     border-radius:0;
+     margin-bottom: 10px;
+     overflow: auto;
+ }
+.dialog-ww-questions .dialog-bd .dialog-cons .ipt:-ms-input-placeholder{
+     color: #b7b7b7;
+ }
+.dialog-ww-questions .dialog-bd .dialog-cons .ipt::-webkit-input-placeholder{
+     color: #b7b7b7;
+ }
+.dialog-ww-questions .ipt-area .ipt{
+    color: #999;
+    border-radius: 0;
+}
+.dialog-ww-questions .ipt-area .ipt:-ms-input-placeholder{
+    color: #b7b7b7;
+}
+.dialog-ww-questions .ipt-area .ipt::-webkit-input-placeholder{
+    color: #b7b7b7;
+}
+.dialog-ww-questions .ipt-area .error-msg{
+     height: 30px;
+     line-height: 30px;
+}
+/*问问 提交成功*/
+.ww-succeed .hd .ly-close .icon-close{
+     color: #0098d8;
+}
+.layer-wrapper .ww-succeed{
+    padding: 50px 0 45px;;
+ }
+.ww-succeed .bd .p1{
+     margin-bottom: 23px;
+ }
+.ww-succeed .bd{
+     margin-top: 10px;
+ }
+.ww-succeed .bd h3{
+    margin-bottom: 10px;
+}
+/*买房知识*/
+.dialog .con-txt{
+    text-align: left;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 24px;
+}
+.dialog .ico-edu{
+    width: 60px;
+    height: 60px;
+    background: url("../images/ico-edu.png") no-repeat;
+    background-size: 100% 100%;
+}
+.dialog .ico-train{
+    width: 60px;
+    height: 60px;
+    background: url("../images/ico-train.png") no-repeat;
+    background-size: 100% 100%;
+}
+.dialog .ico-server{
+    width: 60px;
+    height: 60px;
+    background: url("../images/ico-zan-s.png") no-repeat;
+    background-size: 100% 100%;
+}
+.dialog-mfzs .consultant-brand{
+    padding: 40px 10px 36px;
+}
+.dialog-mfzs .consultant-brand .ico{
+    margin-bottom: 16px;
+}
+.dialog-mfzs .dialog-close .icon-close{
+    color: #fff;
+}
+.dialog .dialog-cons-wrap .btn-area {
+    text-align: center;
+}
+/*政策解读*/
+.dialog-zcjd h3{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 18px;
+    text-align: center;
+    font-weight: normal;
+}
+.dialog-zcjd .data-area{
+    width: 399px;
+    height: 99px;
+    margin: 0 auto;
+}
+.dialog-zcjd .data-area img{
+    width: 399px;
+    height: 99px;
+}
+.dialog-zcjd .consultant-brand{
+    padding: 26px 50px 30px 50px;
+}
+.dialog-zcjd .dialog-close .icon-close{
+    color: #fff;
+}
+/*免费咨询*/
+.dialog-mfzx .dialog-cons-wrap h3{
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 24px;
+}
+.dialog-mfzx .dialog-cons-wrap{
+    padding: 44px 42px;
+}
+/*专车看房*/
+.dialog-zckf .zc,.dialog-zckf .zc img{
+    width: 420px;
+    height: 100px;
+}
+.dialog-zckf h3{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 18px;
+    text-align: center;
+    font-weight: 400;
+}
+.dialog-zckf .consultant-brand{
+    padding: 26px 40px 30px 40px;
+}
+.dialog-zckf .dialog-close .icon-close{
+    color: #fff;
+}
+.dialog .ipt-area .ipt-text{
+    color: #666;
+    margin-top: 20px;
+}
+.dialog-mfzx .ipt-area .ipt{
+    float: none;
+}

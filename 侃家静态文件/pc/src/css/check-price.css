@@ -1,0 +1,732 @@
+.row-crumb{
+    height: 30px;
+    border-bottom: 0;
+}
+/*左右两列*/
+.col-l,.col-r{
+    float: left;
+    box-sizing: border-box;
+}
+.col-l{
+    width: 920px;
+    margin-right: 50px;
+    overflow: hidden;
+}
+.col-r{
+    width: 230px;
+    overflow: hidden;
+}
+/*区域选择*/
+.row-area{
+    margin-bottom: 20px;
+}
+.row-area .plate .sel-value li a{
+    font-size: 12px;
+}
+.select-area{
+    line-height: 30px;
+}
+.select-area .sel-value{
+    overflow: hidden;
+}
+.select-area .sel-value li{
+    float: left;
+    color: #666;
+    margin-right: 10px;
+}
+.select-area .sel-value li a{
+    color: #666;
+    font-size: 14px;
+}
+.select-area .sel-value .checked a{
+    color: #0074c1;
+}
+.select-area .sel-key {
+    float: left;
+    font-size: 14px;
+    color: #999;
+    margin-right: 20px;
+}
+.col-r .box {
+    margin-bottom: 25px;
+    padding-bottom: 30px;
+    background: url("../images/check-price/xie-line.png") 0 bottom repeat-x;
+}
+.col-r .box .hd {
+    height: 32px;
+    line-height: 32px;
+    padding-bottom: 10px;
+}
+.col-r .box .bd{
+    padding-top: 20px;
+}
+.col-r .box-look .bd{
+    padding-top: 0;
+    overflow: visible;
+}
+/*购房早知道*/
+.col-r .box .olist li {
+    clear: both;
+    height: 30px;
+    line-height: 30px;
+    max-width: 230px;
+    overflow: hidden;
+    list-style: none;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.col-r .box .olist li .num {
+    float: left;
+    text-align: center;
+    color: #fff;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin: 7px 15px 0 0;
+    background: #b1b1b1;
+    overflow: hidden;
+}
+.col-r .box .olist li .t-num {
+    background: #0074c1;
+}
+.col-r .box .olist li a {
+    color: #363d40;
+}
+/*高学历咨询师*/
+.col-r .box .gxl {
+    padding-left: 25px;
+    clear: both;
+    overflow: hidden;
+}
+.col-r .box .gxl-bk {
+    margin-right: 10px;
+}
+.col-r .box .gxl-item {
+    float: left;
+    text-align: center;
+    width: 88px;
+}
+.col-r .box .gxl-item img {
+    width: 78px;
+    height: 147px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.col-r .box .gxl-item p {
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.col-r .box .gxl .info {
+    height: 28px;
+    line-height: 28px;
+    padding-left: 8px;
+    clear: both;
+    overflow: hidden;
+}
+.col-r .box .zycd {
+    clear: both;
+    width: 210px;
+    margin: 0 auto;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.col-r .box .zycd .pic {
+    width: 158px;
+    height: 160px;
+    margin: 0 auto 10px;
+    overflow: hidden;
+}
+.col-r .box .zycd .text {
+    text-align: center;
+    line-height: 24px;
+}
+.col-r .box .pj-item .pic,.box .pj-item .pic img {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.col-r .box .pj-item .pic {
+    margin-bottom: 12px;
+    border-radius: 50%;
+}
+.col-r .box .pj-item .info, .box .pj-item .info2 {
+    height: 66px;
+    line-height: 22px;
+    overflow: hidden;
+}
+.col-r .box .pj-item .info {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.col-r .box .pj-item .info2 {
+    height: auto;
+}
+.col-r .box .pj-item .info p {
+    height: 22px;
+    overflow: hidden;
+}
+.col-r .box .info2 .detail {
+    display: none;
+}
+.col-r .box .info2 .click-option-more {
+    height: 24px;
+    line-height: 24px;
+    text-align: right;
+    cursor: pointer;
+}
+/*帮你找房*/
+.col-r .box-look {
+    background: none;
+}
+.look-tips {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.look-tips .pic {
+    width: 112px;
+    height: 121px;
+    margin: 0 5px -7px 0;
+    overflow: hidden;
+}
+.look-tips .info {
+    text-align: left;
+    padding-top: 22px;
+    border-top: 1px solid #deddde;
+}
+.look-tips h3 {
+    font-size: 16px;
+    line-height: 24px;
+}
+.look-tips p {
+    line-height: 20px;
+}
+.look-house .tr {
+    clear: both;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.look-house .input-area {
+    position: relative;
+}
+.look-house .ico-triangle {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    width: 6px;
+    height: 9px;
+    background: url("../images/check-price/bg-triangle3.png") 0 0 no-repeat;
+}
+.look-house .input-area .ipt {
+    float: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #999;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 8px;
+    border-radius: 0;
+    border: 1px solid #deddde;
+}
+.dropdown-list {
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    top: 31px;
+    left: 0;
+    width: 100%;
+    max-height: 150px;
+    padding: 5px 0;
+    background: #f3f3f3;
+    border: 1px solid #deddde;
+    z-index: 2;
+    overflow-y: auto;
+}
+.dropdown-list li {
+    color: #999;
+    cursor: pointer;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 8px;
+}
+.look-house .tr-ecode {
+    margin-bottom: 5px;
+}
+.btn-ecode {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    color: #575757;
+    height: 22px;
+    line-height: 20px;
+    padding: 0 10px;
+    border: 1px solid #deddde;
+    overflow: hidden;
+    cursor: pointer;
+}
+.look-house .tips-info {
+    color: #f44336;
+}
+.look-house .btn-area {
+    clear: both;
+    text-align: center;
+    height: 34px;
+    overflow: hidden;
+}
+.look-house .btn {
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 17px;
+    padding: 0;
+}
+/*北京新房价趋势*/
+.box2 {
+    margin-bottom: 25px;
+}
+.box2 .hd h2 {
+    float: left;
+    font-size: 20px;
+}
+.bom-trend .bd {
+    padding-top: 22px;
+}
+.compare{
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.compare .compare-item{
+    float: left;
+    font-size: 14px;
+    color: #666;
+    margin-right: 34px;
+}
+.compare .compare-item .num{
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+.compare .compare-item .num-up{
+    background: url("../images/check-price/ico-rise.png") right -17px no-repeat;
+    padding-right: 15px;
+}
+.compare .compare-item .num-down{
+    background: url("../images/check-price/ico-rise.png") right 3px no-repeat;
+    padding-right: 15px;
+}
+.bom-trend .legend {
+    float: right;
+}
+.bom-trend .legend .leg-ave {
+    margin-right: 18px;
+}
+.box-trend .legend .leg-volume {
+    background-position: 0 -37px;
+}
+.bom-trend .legend .leg {
+    float: left;
+    padding-left: 40px;
+    background: url("../images/check-price/bg-leg.png") 0 3px no-repeat;
+}
+.data-area {
+    clear: both;
+    width: 920px;
+    overflow: hidden;
+}
+.bom-trend .data-area {
+    height: 275px;
+    margin-bottom: 20px;
+}
+/*新房房价地图*/
+.price-map .hd {
+    border-bottom: 0;
+}
+.price-map .bd {
+    padding-top: 0;
+}
+.price-map .data-area {
+    height: 360px;
+}
+.discuss{
+    margin-bottom: 14px;
+}
+.discuss .title{
+    height: 20px;
+    line-height: 21px;
+    font-size: 18px;
+    color: #333;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    border-left: solid 2px #333;
+    overflow: hidden;
+}
+.discuss .text{
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+.price-find{
+    padding: 9px 12px;
+    border: solid 1px #e7e7e7;
+    box-sizing: border-box;
+}
+.price-find .sel-key{
+    color: #333;
+}
+/*免费咨询*/
+.advice-free {
+    background: #f3f3f3 url("../images/check-price/bg-advice.png") no-repeat;
+}
+.advice-free .pic {
+    margin-right: 28px;
+    padding: 20px 0 0 54px;
+}
+.advice-free .input-area,.advice-free .free-number {
+    padding-top: 32px;
+}
+.advice-free .ipt{
+    width: 306px;
+}
+.advice-free .input-area {
+    margin-right: 30px;
+}
+.advice-free .hot-line{
+    height: 34px;
+    line-height: 34px;
+    font-size: 22px;
+    color: #e85045;
+    overflow: hidden;
+}
+/*区域item*/
+.hot-area .hd{
+    border-bottom: 0;
+}
+.hot-item{
+    border: solid 1px #e7e7e7;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+.hot-item .title{
+    margin-bottom: 14px;
+}
+.hot-item .title h4{
+    font-size: 16px;
+    color: #333;
+    height: 20px;
+    line-height: 20px;
+}
+.hot-item .content{
+    overflow: hidden;
+}
+.hot-item .data{
+    float: left;
+    width: 356px;
+    margin-right: 24px;
+}
+.hot-item .data-area{
+    width: 356px;
+    height: 208px;
+    overflow: hidden;
+}
+.hot-item .compare {
+    margin-bottom: 14px;
+}
+.hot-item .hot-house{
+    float: left;
+    width: 500px;
+    padding-top: 26px;
+    overflow: hidden;
+}
+.hot-item .hot-house .more{
+    float: right;
+}
+.hot-item .hot-house .more .ico-more{
+    margin-left: 10px;
+}
+.hot-item .hot-house .more a{
+    font-size: 14px;
+    color: #888;
+}
+.hot-item .hot-house .area h4{
+    float: left;
+    font-size: 16px;
+}
+.hot-item .hot-house .area{
+    height: 22px;
+    line-height: 22px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+.hot-item .hot-house .house-list{
+    width: 520px;
+    overflow: hidden;
+}
+/*热门楼盘*/
+.item-hot{
+    float: left;
+    width: 156px;
+    margin-right: 16px;
+}
+.item-hot .pic-area{
+    position: relative;
+    width: 156px;
+    height: 110px;
+    margin-bottom: 6px;
+    overflow: hidden;
+}
+.item-hot .pic-area img{
+    width: 156px;
+    height: 110px;
+}
+.item-hot .pic-area .price{
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 6px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #f44336;
+}
+.item-hot .text{
+    font-size: 12px;
+    line-height: 18px;
+}
+.item-hot .text .np{
+    color: #333;
+    font-weight: bold;
+    height: 20px;
+    overflow: hidden;
+}
+.item-hot .text .np .name{
+    float: left;
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.item-hot .text .np .price{
+    float: right;
+    max-width: 66px;
+    overflow: hidden;
+    font-weight: normal;
+}
+.item-hot .text .nj{
+    color: #888;
+    height: 20px;
+    overflow: hidden;
+}
+.item-hot .text .nj span{
+    float: left;
+}
+.item-hot .text .nj .em {
+    padding: 0 4px;
+}
+.item-hot .text .nj .name{
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/*热销楼盘推荐*/
+.groom{
+    margin-bottom: 0;
+}
+.groom .hd{
+    border-bottom: none;
+}
+.groom .house-list{
+    width: 950px;
+    overflow: hidden;
+}
+.groom .house-list .item-hot{
+    width: 215px;
+    margin: 0 20px 20px 0;
+    overflow: hidden;
+}
+.groom .item-hot .pic-area{
+    width: 215px;
+    height: 150px;
+    overflow: hidden;
+}
+.groom .item-hot .pic-area img{
+    width: 215px;
+    height: 150px;
+}
+.groom .item-hot .pic-area .price{
+    bottom: 7px;
+    right: 7px;
+}
+.groom .item-hot .text .nj{
+    color: #363d40;
+}
+.groom .item-hot .text .np .name{
+    max-width: 110px;
+}
+.groom .item-hot .text .np .price{
+    max-width: 100px;
+}
+.groom .item-hot .text .nj .name{
+    max-width: 84px;
+}
+.groom .item-hot .text .nj .jm{
+    max-width: 110px;
+}
+/*涨幅榜*/
+.box-rise{
+    overflow: hidden;
+}
+.box-rise .box-left{
+    float: left;
+    width: 350px;
+}
+.box-rise .box-right{
+    float: right;
+    width: 500px;
+}
+.box-rise .box-hd{
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-bottom: solid 1px #e7e7e7;
+}
+.box-rise .box-hd .title{
+    float: left;
+}
+.box-rise .box-hd a{
+    display: block;
+    float: right;
+    padding-top: 4px;
+    color: #888;
+}
+.data-rise .r-ranking, .data-rise .r-hot, .data-rise .r-price, .data-rise .r-amount,.data-rise .r-area{
+    display: inline-block;
+    font-size: 14px;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    height: 20px;
+    line-height: 21px;
+    overflow: hidden;
+}
+.data-rise .r-amount span{
+    color: #f44336;
+}
+.box-left .data-rise .r-amount span{
+    float: left;
+    padding-right: 10px;
+    background:url('../images/bg-sort.png') right 3px no-repeat;
+}
+.box-left .data-rise .r-amount .on{
+    color: #49D586;
+    padding-right: 10px;
+    background:url('../images/bg-sort.png') right -56px no-repeat;
+}
+.data-rise .r-ranking{
+    width: 60px;
+}
+.data-rise .r-hot{
+    width: 144px;
+}
+.data-rise .r-area{
+    width: 100px;
+}
+.data-rise .r-price{
+    width: 120px;
+}
+.data-rise .r-amount{
+    width: 60px;
+}
+.box-left  .data-rise .r-price{
+    width: 110px;
+}
+.box-left .data-rise .r-hot{
+    width: 98px;
+}
+.box-left .data-rise .r-amount{
+    width: 70px;
+}
+.data-order{
+    margin-top: 13px;
+}
+.data-order li{
+    padding: 8px 0 5px;
+    border-bottom: 1px solid #E8E8E8;
+}
+.data-order li .r-price em {
+    font-style: normal;
+    font-family: "宋体";
+}
+.data-order li:nth-child(1) .r-ranking span{
+    background-color: #F24F45;
+}
+.data-order li:nth-child(2) .r-ranking span{
+    background-color: #FF9600;
+}
+.data-order li:nth-child(3) .r-ranking span{
+    background-color: #FCD41B;
+}
+.data-order .r-ranking span{
+    color: #fff;
+    display: block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    background-color: #B1B1B1;
+}
+/*ab测试*/
+.call-free {
+    text-align: center;
+    padding-bottom: 55px;
+}
+.call-free h3.price-lowest {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+}
+.call-free p {
+    font-size: 16px;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 22px;
+}
+.call-free p.price-lowest {
+    font-size: 12px;
+}
+.call-free .ipt {
+    text-align: center;
+    box-sizing: border-box;
+    color: #999;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    border: 1px solid #f44336;
+    border-radius: 4px;
+}
+.call-free .btn {
+    font-size: 16px;
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    background: #f44336;
+    border-radius: 4px;
+    font-weight: normal;
+    padding: 0;
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>sidebar</title>
+    <link rel="stylesheet" href="../../lib/reset/reset.css">
+    <link rel="stylesheet" href="../icon/css/icon.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="../../lib/mCustomScrollbar/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../login/css/login.css">
+</head>
+<body>
+<div class="right-flow" style="right: -240px">
+    <div class="sidebar">
+        <div class="upper">
+            <div class="s-item s-login">
+                <a href="#" class="bg-img">登录</a>
+                <div class="des">登录</div>
+                <div class="login animated">
+                    <div class="layer-wrapper">
+                        <div class="close">
+                            <span class="ico ico-clear">清空</span>
+                        </div>
+                        <div class="layer-box">
+                            <div class="hd">
+                                <h2>用户登录</h2>
+                                <ul class="more">
+                                    <li>还没有侃家账号？</li>
+                                    <li class="btn-area">
+                                        <a href="#" class="layer-btn layer-btn-reg">马上注册</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bd">
+                                <ul class="user-info">
+                                    <li>
+                                        <div class="ipt-area ipt-mobile">
+                                            <input type="text" placeholder="请输入手机号" class="ipt">
+                                        </div>
+                                        <p class="tips-ipt">手机号不能为空</p>
+                                    </li>
+                                    <li>
+                                        <div class="ipt-area ipt-pwd">
+                                            <input type="password" placeholder="请输入密码"  data-placeholder="请输入密码" class="ipt">
+                                        </div>
+                                        <p class="tips-ipt">密码不能为空</p>
+                                    </li>
+                                    <li>
+                                        <div class="chk">
+                                            <input type="checkbox">下次自动登录
+                                        </div>
+                                        <a href="#" class="link-fpwd">找回密码</a>
+                                    </li>
+                                </ul>
+                                <div class="layer-btn-area">
+                                    <a class="btn4" href="#" id="btn-login">立即登录</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-item s-login1" style="display: none;">
+                <a href="#" class="bg-img">已登录</a>
+                <div class="des">你好，15701201968</div>
+            </div>
+            <div class="s-item s-footprint">
+                <a href="#" class="bg-img">我的足迹</a>
+                <div class="des">我的足迹</div>
+            </div>
+            <div class="s-item s-look">
+                <a href="#" class="bg-img">预约看房</a>
+                <div class="des">预约看房</div>
+            </div>
+            <hr class="s-line">
+            <div class="s-item s-customer">
+                <a href="#" class="bg-img">在线客服</a>
+                <div class="des">在线客服</div>
+            </div>
+        </div>
+        <div class="lower">
+            <div class="s-item s-erweima">
+                <a href="#" class="bg-img">微信二维码</a>
+                <div class="des">
+                    <img src="images/pc_app_qr.png" alt="二维码">
+                    <span class="text">侃家安卓</span>
+                    <span class="text">app下载</span>
+                </div>
+            </div>
+            <div class="s-item s-top">
+                <a href="#" class="bg-img">返回顶部</a>
+                <div class="des">返回顶部</div>
+            </div>
+            <div class="s-item s-survey">
+                <a href="#" class="bg-img">在线调研</a>
+                <div class="des">在线调研</div>
+            </div>
+            <div class="s-item s-feedback">
+                <a href="#" class="bg-img">意见反馈</a>
+                <div class="des">意见反馈</div>
+            </div>
+        </div>
+    </div>
+    <div class="content-sh">
+        <div class="s-look-house animated">
+            <div class="hd">
+                <div class="img-area">
+                    <img src="images/img-head.png" alt="头像">
+                </div>
+                <div class="ipt-area">
+                    <input type="text" class="phone" value="请输入您的手机号">
+                    <button class="ipt-btn">我要预约</button>
+                </div>
+                <p class="hot-line">免费咨询热线：400-080-7815</p>
+            </div>
+            <div class="bd">
+                <h2 class="title">侃家全程服务您看房</h2>
+                <div class="service-list">
+                    <div class="item">
+                        <div class="icon-down"></div>
+                        <div class="img-area">
+                            <img src="images/img-look1.png" alt="咨询">
+                            <div class="name">报名咨询</div>
+                        </div>
+                        <div class="item-des">倾听你的买房需求</div>
+                    </div>
+                    <div class="item">
+                        <div class="icon-down"></div>
+                        <div class="img-area">
+                            <img src="images/img-look2.png" alt="咨询">
+                            <div class="name">专车看房</div>
+                        </div>
+                        <div class="item-des">一对一免费专车全程接送</div>
+                    </div>
+                    <div class="item">
+                        <div class="icon-down"></div>
+                        <div class="img-area">
+                            <img src="images/img-look3.png" alt="咨询">
+                            <div class="name">楼盘解析</div>
+                        </div>
+                        <div class="item-des">市场、区域、政策、楼盘全面解析</div>
+                    </div>
+                    <div class="item">
+                        <div class="icon-down"></div>
+                        <div class="img-area">
+                            <img src="images/img-look4.png" alt="咨询">
+                            <div class="name">签约把关</div>
+                        </div>
+                        <div class="item-des">合同解读免你后顾之忧</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footprint animated">
+            <div class="hd">
+                <a href="#" class="close"></a>
+                <div class="user">
+                    <span class="head"></span>
+                    <span class="name">hi~135...1323</span>
+                </div>
+                <div class="user-none" style="display: none;">
+                    <p class="title">您还没有登录</p>
+                    <div class="content">
+                        <a href="#">登录一下</a>
+                        就能为您记录每天的足迹哟~
+                    </div>
+                </div>
+            </div>
+            <div class="bd">
+                <h2 class="title">我的足迹</h2>
+                <div class="house-list">
+                    <div class="media">
+                        <div class="pic">
+                            <a href="#">
+                                <img src="images/img-house.png" alt="北京城建琨廷">
+                            </a>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4 class="name"><a href="#">泰和中央广场</a></h4>
+                            <p class="total">
+                                11,222-21,589万
+                                <span class="sole">售罄</span>
+                            </p>
+
+
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="pic">
+                            <a href="#">
+                                <img src="images/img-house.png" alt="北京城建琨廷">
+                            </a>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4 class="name"><a href="#">泰和中央广场</a></h4>
+                            <p class="total">122-258万</p>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="pic">
+                            <a href="#">
+                                <img src="images/img-house.png" alt="北京城建琨廷">
+                            </a>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4 class="name"><a href="#">泰和中央广场</a></h4>
+                            <p class="total">122-258万</p>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="pic">
+                            <a href="#">
+                                <img src="images/img-house.png" alt="北京城建琨廷">
+                            </a>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4 class="name"><a href="#">泰和中央广场</a></h4>
+                            <p class="total">122-258万</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="no-list">
+                    <p>没有您的足迹~</p>
+                    <a href="#">去看看房吧</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../lib/jquery/jquery-1.9.1.min.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="../../lib/mCustomScrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
+</body>
+</html>

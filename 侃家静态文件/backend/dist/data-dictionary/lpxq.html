@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>楼盘详情</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/albums-detail2.css">
+    <link href="../css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/d-dictionary.css">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+    <div class="page-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo fl">
+                        <h1><a href="#"><img src="../images/logo.png" alt="欢迎登录侃家网业务管理系统！"></a></h1>
+                        <p class="info">欢迎登录侃家网业务管理系统！</p>
+                    </div>
+                    <div class="h-user">
+                        <div class="link-user">
+                            <span class="ico ico-user"></span>
+
+                            <div class="dropdown-menu-user">
+                                <span class="triangle"></span>
+                                <ul class="dropdown-menu">
+                                    <li class="first"><a href="#"><span class="dropdown-text">个人设置</span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">我的消息</span><span
+                                        class="badge myMsg"></span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">待办事项</span><span
+                                        class="badge toMsg"></span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">个人资料</span></a>
+                                    </li>
+                                    <li class="last"><a href="#"><span class="dropdown-text">退出</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ucenter">
+                            <span class="uname">徐立</span>
+                            <span class="fgx">|</span>
+                            <a class="logout" href="#">退出</a>
+                        </div>
+                        <div class="schedule"><a href="#">我的日程</a></div>
+                        <div class="tips-msg">
+                            <a class="ico ico-msg" href="#" title="消息">
+                            <span class="dot">28</span>
+                        </a>
+                            <a class="ico ico-todo" href="#" title="待办事项">
+                            <span class="dot">65</span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-all-wrap">
+        <div class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">咨询师业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">订单列表</a></li>
+                                <li><a href="#">关键带看管理列表</a></li>
+                                <li><a href="#">联系列表</a></li>
+                                <li><a href="#">带看列表</a></li>
+                                <li><a href="#">认购列表页</a></li>
+                                <li><a href="#">签约列表页</a></li>
+                                <li><a href="#">首次联系延迟列表</a></li>
+                                <li class="last"><a href="#">匹配工具</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">客服业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">客服订单管理</a></li>
+                                <li><a href="#">客服联系记录管理</a></li>
+                                <li><a href="#">带看评价管理</a></li>
+                                <li><a href="#">带看评价回访纪录</a></li>
+                                <li><a href="#">已关闭订单跟进</a></li>
+                                <li><a href="#">已关闭订单跟进回访记录</a></li>
+                                <li><a href="#">无效客户标记</a></li>
+                                <li><a href="#">400电话订单匹配</a></li>
+                                <li><a href="#">评价追回页面</a></li>
+                                <li class="last"><a href="#">投诉列表页</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">驻场拓展业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">报备管理</a></li>
+                                <li><a href="#">楼盘备案管理</a></li>
+                                <li><a href="#">合作方管理</a></li>
+                                <li><a href="#">楼盘拓展相关字段维护</a></li>
+                                <li><a href="#">添加报备</a></li>
+                                <li><a href="#">代理中介管理</a></li>
+                                <li class="last"><a href="#">代理客户订单管理</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">服务管理员业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">服务评价管理</a></li>
+                                <li><a href="#">咨询师带看情况查询</a></li>
+                                <li class="last"><a href="#">咨询师审核</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">系统管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">权限管理</a></li>
+                                <li><a href="#">员工管理</a></li>
+                                <li><a href="#">员工作息时间管理</a></li>
+                                <li><a href="#">咨询师分配管理</a></li>
+                                <li><a href="#">客服分配管理</a></li>
+                                <li><a href="#">用户管理</a></li>
+                                <li><a href="#">短信模板管理</a></li>
+                                <li><a href="#">咨询师分组管理</a></li>
+                                <li><a href="#">员工操作日志</a></li>
+                                <li><a href="#">批量转移咨询师客户</a></li>
+                                <li><a href="#">联系取消</a></li>
+                                <li><a href="#">雨燕档案</a></li>
+                                <li><a href="#">上线日志管理</a></li>
+                                <li><a href="#">城市管理</a></li>
+                                <li class="last"><a href="#">字段常量配置</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">报表管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">客户数据分析</a></li>
+                                <li><a href="#">网站统计报表</a></li>
+                                <li><a href="#">周期维度统计</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">咨询师延迟录入统计</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">联系延迟录入统计</a></li>
+                                        <li><a href="#">带看延迟录入统计</a></li>
+                                        <li><a href="#">咨询师分配时间到首次联系时间超时统计列表</a></li>
+                                        <li><a href="#">咨询师认购超时统计列表</a></li>
+                                        <li class="last"><a href="#">咨询师签约超时统计列表</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">核算日月周年报表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算统计</a></li>
+                                        <li><a href="#">咨询师组核算统计</a></li>
+                                        <li><a href="#">楼盘核算统计</a></li>
+                                        <li><a href="#">区域核算统计</a></li>
+                                        <li class="last"><a href="#">渠道核算统计</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">核算汇总表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算统计汇总表</a></li>
+                                        <li><a href="#">咨询师组核算统计汇总表</a></li>
+                                        <li><a href="#">楼盘核算统计汇总表</a></li>
+                                        <li><a href="#">区域核算统计汇总表</a></li>
+                                        <li><a href="#">渠道核算统计汇总表</a></li>
+                                        <li class="last"><a href="#">资金核算报表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">咨询师满意度表格</a></li>
+                                <li><a href="#">咨询师组满意度表格</a></li>
+                                <li><a href="#">带看评价统计列表</a></li>
+                                <li><a href="#">已关闭订单客户评价统计列表</a></li>
+                                <li><a href="#">成交订单服务评价统计列表</a></li>
+                                <li><a href="#">咨询师楼盘点评统计</a></li>
+                                <li><a href="#">客服首次联系超时统计报表</a></li>
+                                <li><a href="#">带看回访客服联系记录</a></li>
+                                <li><a href="#">已关闭订单回访客服联系记录</a></li>
+                                <li><a href="#">咨询师订单详情统计列表</a></li>
+                                <li><a href="#">咨询师正常订单统计列表</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">客户业务详情统计</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">客户线索详情统计列表</a></li>
+                                        <li><a href="#">客户上户详情统计列表</a></li>
+                                        <li><a href="#">带看详情统计报表</a></li>
+                                        <li><a href="#">认购详情统计列表</a></li>
+                                        <li class="last"><a href="#">签约详情统计列表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">客户留电行为详情列表</a></li>
+                                <li><a href="#">消息详情列表</a></li>
+                                <li><a href="#">定时消息详情列表</a></li>
+                                <li><a href="#">重新分配记录报表</a></li>
+                                <li><a href="#">短信记录报表</a></li>
+                                <li><a href="#">订单恢复报表</a></li>
+                                <li><a href="#">线索质量统计报表</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">业务统计报表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">楼盘业务统计</a></li>
+                                        <li><a href="#">渠道业务统计报表</a></li>
+                                        <li><a href="#">喜报业务统计报表</a></li>
+                                        <li><a href="#">咨询师首次正式认购核算报表</a></li>
+                                        <li><a href="#">区域业务统计</a></li>
+                                        <li class="last"><a href="#">订单业务详情统计报表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">楼盘数据维护审核记录</a></li>
+                                <li><a href="#">高端客户详情统计列表</a></li>
+                                <li><a href="#">评价追回客服记录统计</a></li>
+                                <li><a href="#">楼盘信息报表</a></li>
+                                <li><a href="#">市场部咨询合作详情</a></li>
+                                <li class="dropdown-submenu last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">咨询师订单核算详情</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算详情-签约</a></li>
+                                        <li><a href="#">咨询师核算详情-上户</a></li>
+                                        <li><a href="#">咨询师核算详情-带看</a></li>
+                                        <li class="last"><a href="#">咨询师核算详情-认购</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">楼盘管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">楼盘数据维护</a></li>
+                                <li><a href="#">楼盘点评列表</a></li>
+                                <li><a href="#">楼盘商务信息管理</a></li>
+                                <li><a href="#">区域报告楼盘定位</a></li>
+                                <li><a href="#">楼盘维护提醒设置</a></li>
+                                <li><a href="#">楼盘列表</a></li>
+                                <li><a href="#">市调测评</a></li>
+                                <li class="dropdown-submenu last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">楼盘审核</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">楼盘点评审核</a></li>
+                                        <li class="last"><a href="#">楼盘数据维护审核</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">楼盘字典<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="dropdown-submenu first last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">楼盘管理</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">全部楼盘列表</a></li>
+                                        <li><a href="#">创建楼盘</a></li>
+                                        <li class="last"><a href="#">价格维护</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--意见反馈入口-->
+                <div class="nav-feedback">
+                    <span class="btn-feedback">不爽就点我</span>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <ul class="breadcrumb">
+                            <li><a href="#">首页</a></li>
+                            <li class="active">带看记录</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <!--楼盘基础信息-->
+                        <div class="panel d-panel-lpxx">
+                            <div class="panel-body">
+                                <h2 class="name">华业东方玫瑰（合作）</h2>
+
+                                <div class="nick-name">别名：华业东方、华业玫瑰</div>
+                                <div class="d-lb-area">
+                                    <span class="d-lbl d-lbl-1">限时特惠</span>
+                                    <span class="d-lbl d-lbl-2">花园洋房</span>
+                                    <span class="d-lbl d-lbl-3">大户精品</span>
+                                    <span class="d-lbl d-lbl-4">大户精品</span>
+                                    <span class="d-lbl d-lbl-5">大户精品</span>
+                                </div>
+                                <div class="d-jplp">
+                                    <div class="th">竞品楼盘：</div>
+                                    <div class="td">
+                                        <a href="#">房山超级蜂巢(合作)</a>
+                                        <a href="#">蓝光星华海悦城（商办）(非合作)</a>
+                                        <a href="#">通泰国际公馆(合作)</a>
+                                        <a href="#">华业东方玫瑰(非合作)</a>
+                                        <a href="#">万年广阳郡九号(合作)</a>
+                                        <a href="#">鸿坤七星长安(非合作)</a>
+                                        <a href="#">硅谷SOHO(合作)</a>
+                                        <a href="#">V7荷塘月色(非合作)</a>
+                                        <a href="#">长海御墅(合作)</a>
+                                    </div>
+                                </div>
+                                <ul class="d-fzr">
+                                    <li class="d-t">维护负责人</li>
+                                    <li>宋小丹</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--楼盘详情-->
+                        <div class="panel d-panel-lpxq">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">楼盘详情</h2>
+
+                                    <div class="panel-right">
+                                        <span class="date">最后更新：2016-01-01  12:20  贾雪鹏</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="d-tab d-tab-lpxq">
+                                    <div class="tab-t">
+                                        <ul>
+                                            <li class="on">基础信息</li>
+                                            <li>价格信息</li>
+                                            <li>细节信息</li>
+                                            <li>环境</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-c">
+                                        <div class="nrpart show">
+                                            <div class="link-area">
+                                                <a href="#">维护数据</a>
+                                            </div>
+                                            <div class="d-mod d-mod-1">
+                                                <div class="tr">
+                                                    <div class="th">楼盘类型：</div>
+                                                    <div class="td">住宅</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">地址：</div>
+                                                    <div class="td">通州京通高速耿庄出口向北500米</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">楼盘概述：</div>
+                                                    <div class="td">通州新城改善型精装现房，现所剩房源不多基本尾盘，以140三居为主</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">周边描述：</div>
+                                                    <div class="td">
+                                                        位于耿庄桥附近，靠近温榆河且周围多是住宅区，周边有部分老社区，但数量少，有部分社区商业支持；周边有较少的私立幼儿园，但普通小学、中学缺乏；无大型医疗设施
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-mod d-mod-2">
+                                                <div class="tr">
+                                                    <div class="th">拿地时间：</div>
+                                                    <div class="td">2008-06-01</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">在售期数：</div>
+                                                    <div class="td">2</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">销售状态：</div>
+                                                    <div class="td">在售，未售，售罄</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">楼栋信息：</div>
+                                                    <div class="td"></div>
+                                                </div>
+                                            </div>
+                                            <div class="d-mod d-mod-3">
+                                                <div class="tr">
+                                                    <div class="th">所属区域：</div>
+                                                    <div class="td">通州</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">商圈：</div>
+                                                    <div class="td">上地</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">学区学校（临近学区）：</div>
+                                                    <div class="td">XXX小学</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">相邻地铁：</div>
+                                                    <div class="td">1.6</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">高端板块：</div>
+                                                    <div class="td">中央别墅区</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nrpart">
+                                            <div class="d-mod d-mod-4">
+                                                <div class="tr">
+                                                    <div class="th">当期开盘时间：</div>
+                                                    <div class="td">2008-06-01</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">当期套数：</div>
+                                                    <div class="td">12</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">当期报价：</div>
+                                                    <div class="td">12222</div>
+                                                </div>
+                                                <div class="tr tr-zk">
+                                                    <div class="th">折扣描述：</div>
+                                                    <div class="td">
+                                                        折扣
+                                                    </div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">排卡时间：</div>
+                                                    <div class="td">2008-06-01</div>
+                                                </div>
+                                            </div>
+                                            <div class="d-mod d-mod-5">
+                                                <div class="tr">
+                                                    <div class="th">下次开盘时间：</div>
+                                                    <div class="td">2008-06-01</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">下期套数：</div>
+                                                    <div class="td">12</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">上月成交价格：</div>
+                                                    <div class="td">XXX</div>
+                                                </div>
+                                            </div>
+                                            <div class="d-mod d-mod-jgxq">
+                                                <div class="tit">
+                                                    <h5>价格详情</h5>
+                                                </div>
+                                                <div class="con">
+                                                    <div class="info">
+                                                        <span class="num">第1-3条，共15条数据.</span>
+                                                        <a href="#" class="link-add">添加</a>
+                                                    </div>
+                                                    <div class="d-tb-area">
+                                                        <img src="../images/d-dictionary/img-d.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nrpart">
+                                            <div class="d-mod d-mod-6">
+                                                <div class="tr">
+                                                    <div class="th">开发商：</div>
+                                                    <div class="td">万科</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">业态：</div>
+                                                    <div class="td">别墅</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">建筑风格：</div>
+                                                    <div class="td">欧美</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">交房时间：</div>
+                                                    <div class="td">2008-06-01</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">产权年限：</div>
+                                                    <div class="td">40年</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">是否公园地产：</div>
+                                                    <div class="td">否</div>
+                                                </div>
+                                            </div>
+                                            <div class="d-mod d-mod-6">
+                                                <div class="tr">
+                                                    <div class="th">物业服务：</div>
+                                                    <div class="td">万科</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">物业费：</div>
+                                                    <div class="td">别墅</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">是否私人管家：</div>
+                                                    <div class="td">欧美</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">绿化率：</div>
+                                                    <div class="td">20%</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">容积率：</div>
+                                                    <div class="td">40%</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">水电气：</div>
+                                                    <div class="td">否</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">供暖方式：</div>
+                                                    <div class="td">否</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">车位比：</div>
+                                                    <div class="td">2:1</div>
+                                                </div>
+                                            </div>
+                                            <div class="d-mod d-mod-6">
+                                                <div class="tr">
+                                                    <div class="th">装修情况：</div>
+                                                    <div class="td">别墅</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">装修费用：</div>
+                                                    <div class="td">欧美</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">精装修：</div>
+                                                    <div class="td">是</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nrpart">
+                                            <div class="d-mod d-mod-7">
+                                                <div class="tr">
+                                                    <div class="th">环线：</div>
+                                                    <div class="td">5环至6之间，距5环12.5km，距6环1.5km</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">环境空气指数：</div>
+                                                    <div class="td">欧美</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">环境噪音数值：</div>
+                                                    <div class="td">是</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">环境现状：</div>
+                                                    <div class="td">是</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">环境规划描述：</div>
+                                                    <div class="td">是</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">环境不利因素：</div>
+                                                    <div class="td">是</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--户型详情-->
+                        <div class="panel d-panel-hxxq">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">户型详情</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="d-tab d-tab-hxxq">
+                                    <div class="tab-t">
+                                        <ul>
+                                            <li class="on">一室一厅</li>
+                                            <li>两室一厅</li>
+                                            <li>三室一厅</li>
+                                            <li>三室两厅</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-c">
+                                        <div class="nrpart show">
+                                            <div class="d-tw-hx">
+                                                <div class="pic">
+                                                    <div class="pic-wrap">
+                                                        <img src="../images/d-dictionary/img-01.jpg" alt="">
+                                                    </div>
+                                                    <div class="num">共50套，剩余30套</div>
+                                                </div>
+                                                <div class="text">
+                                                    <div class="name">
+                                                        <h5>一室一厅 商住loft</h5>
+                                                        <span class="d-lb d-lb-on">在售</span>
+
+                                                        <div class="link-area">
+                                                            <a href="#" class="link-update">维护数据</a>
+                                                            <a href="#" class="link-jc">纠错</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-jcxx">
+                                                        <div class="td"><b>总价：</b>167万元</div>
+                                                        <div class="td"><b>成交单价：</b>32,000元/㎡</div>
+                                                        <div class="td"><b>首付：</b>84万元</div>
+                                                        <div class="td"><b>报价单价：</b>37,000元/㎡</div>
+                                                        <div class="td"><b>月供：</b>8,963元</div>
+                                                    </div>
+                                                    <div class="d-jbms">
+                                                        <div class="td"><b>朝向：</b>西南</div>
+                                                        <div class="td"><b>层高：</b>4.2m</div>
+                                                        <div class="td"><b>面积：</b>建面65㎡，套内41m²</div>
+                                                        <div class="td d-ysms"><b>优势描述：</b>南北通透且方正户型；南侧面宽较大，南侧进光量良好；私家电梯入户，且厅室功能区分多，得房率较高。
+                                                        </div>
+                                                        <div class="td d-ylms"><b>劣势描述：</b>户型过于狭长，中部采光效果差；动静未分区且动线较差；卫生间均为暗卫，且主仆未分离。
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nrpart">
+                                            <div class="d-tw-hx">
+                                                <div class="pic">
+                                                    <div class="pic-wrap">
+                                                        <img src="../images/d-dictionary/img-01.jpg" alt="">
+                                                    </div>
+                                                    <div class="num">共50套，剩余30套</div>
+                                                </div>
+                                                <div class="text">
+                                                    <div class="name">
+                                                        <h5>两室一厅 商住loft</h5>
+                                                        <span class="d-lb d-lb-on">在售</span>
+
+                                                        <div class="link-area">
+                                                            <a href="#" class="link-update">维护数据</a>
+                                                            <a href="#" class="link-jc">纠错</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-jcxx">
+                                                        <div class="td"><b>总价：</b>167万元</div>
+                                                        <div class="td"><b>成交单价：</b>32,000元/㎡</div>
+                                                        <div class="td"><b>首付：</b>84万元</div>
+                                                        <div class="td"><b>报价单价：</b>37,000元/㎡</div>
+                                                        <div class="td"><b>月供：</b>8,963元</div>
+                                                    </div>
+                                                    <div class="d-jbms">
+                                                        <div class="td"><b>朝向：</b>西南</div>
+                                                        <div class="td"><b>层高：</b>4.2m</div>
+                                                        <div class="td"><b>面积：</b>建面65㎡，套内41m²</div>
+                                                        <div class="td d-ysms"><b>优势描述：</b>南北通透且方正户型；南侧面宽较大，南侧进光量良好；私家电梯入户，且厅室功能区分多，得房率较高。
+                                                        </div>
+                                                        <div class="td d-ylms"><b>劣势描述：</b>户型过于狭长，中部采光效果差；动静未分区且动线较差；卫生间均为暗卫，且主仆未分离。
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nrpart">
+                                            <div class="d-tw-hx">
+                                                <div class="pic">
+                                                    <div class="pic-wrap">
+                                                        <img src="../images/d-dictionary/img-01.jpg" alt="">
+                                                    </div>
+                                                    <div class="num">共50套，剩余30套</div>
+                                                </div>
+                                                <div class="text">
+                                                    <div class="name">
+                                                        <h5>三室一厅 商住loft</h5>
+                                                        <span class="d-lb d-lb-on">在售</span>
+
+                                                        <div class="link-area">
+                                                            <a href="#" class="link-update">维护数据</a>
+                                                            <a href="#" class="link-jc">纠错</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-jcxx">
+                                                        <div class="td"><b>总价：</b>167万元</div>
+                                                        <div class="td"><b>成交单价：</b>32,000元/㎡</div>
+                                                        <div class="td"><b>首付：</b>84万元</div>
+                                                        <div class="td"><b>报价单价：</b>37,000元/㎡</div>
+                                                        <div class="td"><b>月供：</b>8,963元</div>
+                                                    </div>
+                                                    <div class="d-jbms">
+                                                        <div class="td"><b>朝向：</b>西南</div>
+                                                        <div class="td"><b>层高：</b>4.2m</div>
+                                                        <div class="td"><b>面积：</b>建面65㎡，套内41m²</div>
+                                                        <div class="td d-ysms"><b>优势描述：</b>南北通透且方正户型；南侧面宽较大，南侧进光量良好；私家电梯入户，且厅室功能区分多，得房率较高。
+                                                        </div>
+                                                        <div class="td d-ylms"><b>劣势描述：</b>户型过于狭长，中部采光效果差；动静未分区且动线较差；卫生间均为暗卫，且主仆未分离。
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nrpart">
+                                            <div class="d-tw-hx">
+                                                <div class="pic">
+                                                    <div class="pic-wrap">
+                                                        <img src="../images/d-dictionary/img-01.jpg" alt="">
+                                                    </div>
+                                                    <div class="num">共50套，剩余30套</div>
+                                                </div>
+                                                <div class="text">
+                                                    <div class="name">
+                                                        <h5>三室两厅 商住loft</h5>
+                                                        <span class="d-lb d-lb-on">在售</span>
+
+                                                        <div class="link-area">
+                                                            <a href="#" class="link-update">维护数据</a>
+                                                            <a href="#" class="link-jc">纠错</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-jcxx">
+                                                        <div class="td"><b>总价：</b>167万元</div>
+                                                        <div class="td"><b>成交单价：</b>32,000元/㎡</div>
+                                                        <div class="td"><b>首付：</b>84万元</div>
+                                                        <div class="td"><b>报价单价：</b>37,000元/㎡</div>
+                                                        <div class="td"><b>月供：</b>8,963元</div>
+                                                    </div>
+                                                    <div class="d-jbms">
+                                                        <div class="td"><b>朝向：</b>西南</div>
+                                                        <div class="td"><b>层高：</b>4.2m</div>
+                                                        <div class="td"><b>面积：</b>建面65㎡，套内41m²</div>
+                                                        <div class="td d-ysms"><b>优势描述：</b>南北通透且方正户型；南侧面宽较大，南侧进光量良好；私家电梯入户，且厅室功能区分多，得房率较高。
+                                                        </div>
+                                                        <div class="td d-ylms"><b>劣势描述：</b>户型过于狭长，中部采光效果差；动静未分区且动线较差；卫生间均为暗卫，且主仆未分离。
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--楼盘评论-->
+                        <div class="panel d-panel-lppl">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">楼盘评论</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="d-tab d-tab-lpdp">
+                                    <div class="tab-t">
+                                        <ul>
+                                            <li class="on">楼盘点评</li>
+                                            <li>市调测评</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-c">
+                                        <div class="nrpart show">
+                                            <div class="d-chk"><input type="checkbox" class="chk">仅看最佳</div>
+                                            <div class="d-mod-pl-list">
+                                                <div class="d-mod-pl">
+                                                    <div class="title">
+                                                        <span class="date">2015-10-25</span>
+                                                        <span class="name">咨询师：XXX</span>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>
+                                                            华远西红世项目位于大兴区，处于南五环与京开高速交界的东南角。交通方面，紧邻地铁4号线及规划中的19号线。项目所处区域位于城南“2横3纵”棋盘式交通路网下，新机场高速-京开高速-马家堡西路南延线，通过五环、黄亦路使项目与各重要商圈快速连接。项目所在区域属于大兴新城核心区，政府投资4000亿打造南城，大兴享受了最大政策红利，这个区域将形成高端商务、文化休闲、绿色居住为一体的南城商务区。西红世项目周边配套完善成熟，除了项目自身综合商业，周边还有绿地缤纷城、荟聚购物中心、宜家旗舰店、王府井百货等重要商业中心，日常休闲购物很方便。
+                                                            医疗资源方面，区域内有北大医院南院、首都医科大学附属医院等三甲级医疗配套。教育方面，拥有北京小学、红黄蓝幼儿园、南希双语幼儿园、公安大学等重点教育配套。 项目建筑风格现代简约，外立面整体线条简洁明快,注重细节体现。景观设计里的雕塑,布品,导视,小品有了统一的基调， 组成项目鲜明表情。项目根据功能划分景观空间，有中心内庭、屋顶花园、下沉广场等。借助区域的发展潜力，项目具有一定的升值空间。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-mod-pl">
+                                                    <div class="title">
+                                                        <span class="date">2015-10-25</span>
+                                                        <span class="name">咨询师：XXX</span>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>
+                                                            华远西红世项目位于大兴区，处于南五环与京开高速交界的东南角。交通方面，紧邻地铁4号线及规划中的19号线。项目所处区域位于城南“2横3纵”棋盘式交通路网下，新机场高速-京开高速-马家堡西路南延线，通过五环、黄亦路使项目与各重要商圈快速连接。项目所在区域属于大兴新城核心区，政府投资4000亿打造南城，大兴享受了最大政策红利，这个区域将形成高端商务、文化休闲、绿色居住为一体的南城商务区。西红世项目周边配套完善成熟，除了项目自身综合商业，周边还有绿地缤纷城、荟聚购物中心、宜家旗舰店、王府井百货等重要商业中心，日常休闲购物很方便。
+                                                            医疗资源方面，区域内有北大医院南院、首都医科大学附属医院等三甲级医疗配套。教育方面，拥有北京小学、红黄蓝幼儿园、南希双语幼儿园、公安大学等重点教育配套。 项目建筑风格现代简约，外立面整体线条简洁明快,注重细节体现。景观设计里的雕塑,布品,导视,小品有了统一的基调， 组成项目鲜明表情。项目根据功能划分景观空间，有中心内庭、屋顶花园、下沉广场等。借助区域的发展潜力，项目具有一定的升值空间。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-mod-pl">
+                                                    <div class="title">
+                                                        <span class="date">2015-10-25</span>
+                                                        <span class="name">咨询师：XXX</span>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>
+                                                            华远西红世项目位于大兴区，处于南五环与京开高速交界的东南角。交通方面，紧邻地铁4号线及规划中的19号线。项目所处区域位于城南“2横3纵”棋盘式交通路网下，新机场高速-京开高速-马家堡西路南延线，通过五环、黄亦路使项目与各重要商圈快速连接。项目所在区域属于大兴新城核心区，政府投资4000亿打造南城，大兴享受了最大政策红利，这个区域将形成高端商务、文化休闲、绿色居住为一体的南城商务区。西红世项目周边配套完善成熟，除了项目自身综合商业，周边还有绿地缤纷城、荟聚购物中心、宜家旗舰店、王府井百货等重要商业中心，日常休闲购物很方便。
+                                                            医疗资源方面，区域内有北大医院南院、首都医科大学附属医院等三甲级医疗配套。教育方面，拥有北京小学、红黄蓝幼儿园、南希双语幼儿园、公安大学等重点教育配套。 项目建筑风格现代简约，外立面整体线条简洁明快,注重细节体现。景观设计里的雕塑,布品,导视,小品有了统一的基调， 组成项目鲜明表情。项目根据功能划分景观空间，有中心内庭、屋顶花园、下沉广场等。借助区域的发展潜力，项目具有一定的升值空间。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-mod-pl">
+                                                    <div class="title">
+                                                        <span class="date">2015-10-25</span>
+                                                        <span class="name">咨询师：XXX</span>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>
+                                                            华远西红世项目位于大兴区，处于南五环与京开高速交界的东南角。交通方面，紧邻地铁4号线及规划中的19号线。项目所处区域位于城南“2横3纵”棋盘式交通路网下，新机场高速-京开高速-马家堡西路南延线，通过五环、黄亦路使项目与各重要商圈快速连接。项目所在区域属于大兴新城核心区，政府投资4000亿打造南城，大兴享受了最大政策红利，这个区域将形成高端商务、文化休闲、绿色居住为一体的南城商务区。西红世项目周边配套完善成熟，除了项目自身综合商业，周边还有绿地缤纷城、荟聚购物中心、宜家旗舰店、王府井百货等重要商业中心，日常休闲购物很方便。
+                                                            医疗资源方面，区域内有北大医院南院、首都医科大学附属医院等三甲级医疗配套。教育方面，拥有北京小学、红黄蓝幼儿园、南希双语幼儿园、公安大学等重点教育配套。 项目建筑风格现代简约，外立面整体线条简洁明快,注重细节体现。景观设计里的雕塑,布品,导视,小品有了统一的基调， 组成项目鲜明表情。项目根据功能划分景观空间，有中心内庭、屋顶花园、下沉广场等。借助区域的发展潜力，项目具有一定的升值空间。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-ck-more">
+                                                <a href="#">查看更多</a>
+                                            </div>
+                                        </div>
+                                        <div class="nrpart">
+                                            <div class="d-mod-pl-list">
+                                                <div class="d-mod-pl">
+                                                    <div class="title">
+                                                        <span class="date">2015-10-25</span>
+                                                        <span class="name">咨询师：XXX</span>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>
+                                                            华远西红世项目位于大兴区，处于南五环与京开高速交界的东南角。交通方面，紧邻地铁4号线及规划中的19号线。项目所处区域位于城南“2横3纵”棋盘式交通路网下，新机场高速-京开高速-马家堡西路南延线，通过五环、黄亦路使项目与各重要商圈快速连接。项目所在区域属于大兴新城核心区，政府投资4000亿打造南城，大兴享受了最大政策红利，这个区域将形成高端商务、文化休闲、绿色居住为一体的南城商务区。西红世项目周边配套完善成熟，除了项目自身综合商业，周边还有绿地缤纷城、荟聚购物中心、宜家旗舰店、王府井百货等重要商业中心，日常休闲购物很方便。
+                                                            医疗资源方面，区域内有北大医院南院、首都医科大学附属医院等三甲级医疗配套。教育方面，拥有北京小学、红黄蓝幼儿园、南希双语幼儿园、公安大学等重点教育配套。 项目建筑风格现代简约，外立面整体线条简洁明快,注重细节体现。景观设计里的雕塑,布品,导视,小品有了统一的基调， 组成项目鲜明表情。项目根据功能划分景观空间，有中心内庭、屋顶花园、下沉广场等。借助区域的发展潜力，项目具有一定的升值空间。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-mod-pl">
+                                                    <div class="title">
+                                                        <span class="date">2015-10-25</span>
+                                                        <span class="name">咨询师：XXX</span>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>
+                                                            华远西红世项目位于大兴区，处于南五环与京开高速交界的东南角。交通方面，紧邻地铁4号线及规划中的19号线。项目所处区域位于城南“2横3纵”棋盘式交通路网下，新机场高速-京开高速-马家堡西路南延线，通过五环、黄亦路使项目与各重要商圈快速连接。项目所在区域属于大兴新城核心区，政府投资4000亿打造南城，大兴享受了最大政策红利，这个区域将形成高端商务、文化休闲、绿色居住为一体的南城商务区。西红世项目周边配套完善成熟，除了项目自身综合商业，周边还有绿地缤纷城、荟聚购物中心、宜家旗舰店、王府井百货等重要商业中心，日常休闲购物很方便。
+                                                            医疗资源方面，区域内有北大医院南院、首都医科大学附属医院等三甲级医疗配套。教育方面，拥有北京小学、红黄蓝幼儿园、南希双语幼儿园、公安大学等重点教育配套。 项目建筑风格现代简约，外立面整体线条简洁明快,注重细节体现。景观设计里的雕塑,布品,导视,小品有了统一的基调， 组成项目鲜明表情。项目根据功能划分景观空间，有中心内庭、屋顶花园、下沉广场等。借助区域的发展潜力，项目具有一定的升值空间。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-mod-pl">
+                                                    <div class="title">
+                                                        <span class="date">2015-10-25</span>
+                                                        <span class="name">咨询师：XXX</span>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>
+                                                            华远西红世项目位于大兴区，处于南五环与京开高速交界的东南角。交通方面，紧邻地铁4号线及规划中的19号线。项目所处区域位于城南“2横3纵”棋盘式交通路网下，新机场高速-京开高速-马家堡西路南延线，通过五环、黄亦路使项目与各重要商圈快速连接。项目所在区域属于大兴新城核心区，政府投资4000亿打造南城，大兴享受了最大政策红利，这个区域将形成高端商务、文化休闲、绿色居住为一体的南城商务区。西红世项目周边配套完善成熟，除了项目自身综合商业，周边还有绿地缤纷城、荟聚购物中心、宜家旗舰店、王府井百货等重要商业中心，日常休闲购物很方便。
+                                                            医疗资源方面，区域内有北大医院南院、首都医科大学附属医院等三甲级医疗配套。教育方面，拥有北京小学、红黄蓝幼儿园、南希双语幼儿园、公安大学等重点教育配套。 项目建筑风格现代简约，外立面整体线条简洁明快,注重细节体现。景观设计里的雕塑,布品,导视,小品有了统一的基调， 组成项目鲜明表情。项目根据功能划分景观空间，有中心内庭、屋顶花园、下沉广场等。借助区域的发展潜力，项目具有一定的升值空间。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-mod-pl">
+                                                    <div class="title">
+                                                        <span class="date">2015-10-25</span>
+                                                        <span class="name">咨询师：XXX</span>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>
+                                                            华远西红世项目位于大兴区，处于南五环与京开高速交界的东南角。交通方面，紧邻地铁4号线及规划中的19号线。项目所处区域位于城南“2横3纵”棋盘式交通路网下，新机场高速-京开高速-马家堡西路南延线，通过五环、黄亦路使项目与各重要商圈快速连接。项目所在区域属于大兴新城核心区，政府投资4000亿打造南城，大兴享受了最大政策红利，这个区域将形成高端商务、文化休闲、绿色居住为一体的南城商务区。西红世项目周边配套完善成熟，除了项目自身综合商业，周边还有绿地缤纷城、荟聚购物中心、宜家旗舰店、王府井百货等重要商业中心，日常休闲购物很方便。
+                                                            医疗资源方面，区域内有北大医院南院、首都医科大学附属医院等三甲级医疗配套。教育方面，拥有北京小学、红黄蓝幼儿园、南希双语幼儿园、公安大学等重点教育配套。 项目建筑风格现代简约，外立面整体线条简洁明快,注重细节体现。景观设计里的雕塑,布品,导视,小品有了统一的基调， 组成项目鲜明表情。项目根据功能划分景观空间，有中心内庭、屋顶花园、下沉广场等。借助区域的发展潜力，项目具有一定的升值空间。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-ck-more">
+                                                <a href="#">查看更多</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <!--数据纠错-->
+                        <div class="panel d-panel-sjjc">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">数据纠错</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="d-e-list">
+                                    <li>
+                                        <span class="txt">楼盘已售罄。</span>2016-05-02 徐立
+                                    </li>
+                                    <li>
+                                        <span class="txt">一居室户型价格变化，单价为37000。</span>2016-05-02 徐立
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--商务信息-->
+                        <div class="panel d-panel-swxx">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">商务信息</h2>
+
+                                    <div class="panel-more">
+                                        <a href="#" class="btn-update">更新数据</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="d-hz-mod">
+                                    <div class="tr">
+                                        <div class="td">合作方:开发商</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td">是否刷电商：是</div>
+                                        <div class="td">是否外联：是</div>
+                                    </div>
+                                </div>
+                                <!--报备注意事项-->
+                                <div class="d-bbsx">
+                                    <div class="tit">
+                                        <h4>报备注意事项：</h4>
+                                    </div>
+                                    <ul class="d-list">
+                                        <li>微信提前一小时报备， 到访后找前台报侃家网2；</li>
+                                        <li>填写侃家自带的客户确认单，首页留给案场</li>
+                                    </ul>
+                                    <div class="pic-area d-pic-area">
+                                        <ul class="pic-list">
+                                            <li><img src="../images/d-dictionary/img-1.jpg" alt=""></li>
+                                        </ul>
+                                        <div class="v-picture">
+                                            <div class="v-content">
+                                                <!--幻灯-->
+                                                <div class="v-slide">
+                                                    <ul class="v-slide-ul">
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-1.jpg" alt=""></a>
+                                                        </li>
+                                                    </ul>
+                                                    <!--按钮-->
+                                                    <div>
+                                                        <a class="v-slide-btnz v-slide-btn1" href="javascript:void(0);"><img src="../images/d-dictionary/btnz.png" alt=""></a>
+                                                        <a class="v-slide-btny v-slide-btn1" href="javascript:void(0);"><img src="../images/d-dictionary/btny.png" alt=""></a>
+                                                    </div>
+                                                </div>
+                                                <!--走马灯-->
+                                                <div class="v-zmd">
+                                                    <div class="v-zmd-container">
+                                                        <div class="v-move">
+                                                            <ul class="v-zmd-container-ul">
+                                                                <li class="v-first v-zon">
+                                                                    <a href="javascript:void(0);">
+                                                                    <img class="v-zmd-index" src="../images/d-dictionary/img-1.jpg" alt="">
+                                                                </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <a class="v-zmd-btnz v-zmd-btn2" href="javascript:void(0);">上一个</a>
+                                                        <a class="v-zmd-btny v-zmd-btn2" href="javascript:void(0);">下一个</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--叉-->
+                                            <div>
+                                                <a class="v-cha" href="javascript:void(0);"><img src="../images/d-dictionary/cha.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--动态信息-->
+                        <div class="panel d-panel-dynamic">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">变更/动态信息</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="d-tab tab-dynamic">
+                                    <div class="tab-t">
+                                        <ul>
+                                            <li class="on"><a href="#">变更通知</a></li>
+                                            <li><a href="#">动态信息</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-c">
+                                        <div class="nrpart show">
+                                            <div class="tz-mod tz-bgtz">
+                                                <div class="tit"><span class="date">2015-10-20</span><span class="name">冯开凯</span></div>
+                                                <div class="con">
+                                                    <div class="d-label">
+                                                        <span class="d-lb d-lb-jt">加推</span>
+                                                    </div>
+                                                    <ul class="d-list">
+                                                        <li>炫立方今天加推2套大平米房源：</li>
+                                                        <li>2～544，79.24平米，2133113元；</li>
+                                                        <li>2～644，79.24平米，2210809元；</li>
+                                                        <li>备注：以上两套房源签约时间15～20天。</li>
+                                                    </ul>
+                                                    <div class="pic-area d-pic-area">
+                                                        <ul class="pic-list">
+                                                            <li><img src="../images/d-dictionary/img-01.jpg" alt=""></li>
+                                                        </ul>
+                                                        <div class="v-picture">
+                                                            <div class="v-content">
+                                                                <!--幻灯-->
+                                                                <div class="v-slide">
+                                                                    <ul class="v-slide-ul">
+                                                                        <li>
+                                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-1.jpg" alt=""></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <!--按钮-->
+                                                                    <div>
+                                                                        <a class="v-slide-btnz v-slide-btn1" href="javascript:void(0);"><img src="../images/d-dictionary/btnz.png" alt=""></a>
+                                                                        <a class="v-slide-btny v-slide-btn1" href="javascript:void(0);"><img src="../images/d-dictionary/btny.png" alt=""></a>
+                                                                    </div>
+                                                                </div>
+                                                                <!--走马灯-->
+                                                                <div class="v-zmd">
+                                                                    <div class="v-zmd-container">
+                                                                        <div class="v-move">
+                                                                            <ul class="v-zmd-container-ul">
+                                                                                <li class="v-first v-zon">
+                                                                                    <a href="javascript:void(0);">
+                                                                                    <img class="v-zmd-index" src="../images/d-dictionary/img-1.jpg" alt="">
+                                                                                </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a class="v-zmd-btnz v-zmd-btn2" href="javascript:void(0);">上一个</a>
+                                                                        <a class="v-zmd-btny v-zmd-btn2" href="javascript:void(0);">下一个</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--叉-->
+                                                            <div>
+                                                                <a class="v-cha" href="javascript:void(0);"><img src="../images/d-dictionary/cha.png" alt=""></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tz-mod tz-bgtz">
+                                                <div class="tit"><span class="date">2015-10-06</span><span class="name">赵崇岩</span></div>
+                                                <div class="con">
+                                                    <div class="d-label">
+                                                        <span class="d-lb d-lb-tj">特价</span>
+                                                        <span class="d-lb d-lb-hz">合作变化</span>
+                                                        <span class="d-lb d-lb-hf">恢复带看</span>
+                                                    </div>
+                                                    <div class="d-list">
+                                                        <p>16号楼五套一口价房源：<br> 2-101 面积88.42 总价474<br> 3-501 面积87.67 总价488<br> 3-701 面积87.67 总价492<br> 3-302 面积88.42 总价484<br> 4-301面积88.88 总价498<br> 以上房源均为10万抵一口价
+                                                            <br> 小三居
+                                                            <br> 楼号：3#1单元
+                                                            <br> 面积：90㎡
+                                                            <br> 均价：59500元
+                                                        </p>
+                                                    </div>
+                                                    <div class="pic-area">
+                                                        <ul class="pic-list">
+                                                            <li><img src="../images/d-dictionary/img-01.jpg" alt=""></li>
+                                                        </ul>
+                                                        <div class="v-picture">
+                                                            <div class="v-content">
+                                                                <!--幻灯-->
+                                                                <div class="v-slide">
+                                                                    <ul class="v-slide-ul">
+                                                                        <li><a href="javascript:void(0);"><img
+                                                                            src="../images/d-dictionary/img-5.png" alt=""></a></li>
+                                                                        <li><a href="javascript:void(0);"><img
+                                                                            src="../images/d-dictionary/img-1.jpg" alt=""></a></li>
+                                                                        <li><a href="javascript:void(0);"><img
+                                                                            src="../images/d-dictionary/img-2.jpg" alt=""></a></li>
+                                                                        <li><a href="javascript:void(0);"><img
+                                                                            src="../images/d-dictionary/img-3.jpg" alt=""></a></li>
+                                                                        <li><a href="javascript:void(0);"><img
+                                                                            src="../images/d-dictionary/img-4.jpg" alt=""></a></li>
+                                                                        <li><a href="javascript:void(0);"><img
+                                                                            src="../images/d-dictionary/img-5.png" alt=""></a></li>
+                                                                        <li><a href="javascript:void(0);"><img
+                                                                            src="../images/d-dictionary/img-1.jpg" alt=""></a></li>
+                                                                        <li><a href="javascript:void(0);"><img
+                                                                            src="../images/d-dictionary/img-2.jpg" alt=""></a></li>
+                                                                        <li><a href="javascript:void(0);"><img
+                                                                            src="../images/d-dictionary/img-3.jpg" alt=""></a></li>
+                                                                        <li><a href="javascript:void(0);"><img
+                                                                            src="../images/d-dictionary/img-4.jpg" alt=""></a></li>
+                                                                        <li><a href="javascript:void(0);"><img
+                                                                            src="../images/d-dictionary/img-5.png" alt=""></a></li>
+                                                                        <li><a href="javascript:void(0);"><img
+                                                                            src="../images/d-dictionary/img-1.jpg" alt=""></a></li>
+                                                                    </ul>
+                                                                    <!--按钮-->
+                                                                    <div>
+                                                                        <a class="v-slide-btnz v-slide-btn1 v-zno" href="javascript:void(0);"><img src="../images/d-dictionary/btnz.png"
+                                                                                                       alt=""></a>
+                                                                        <a class="v-slide-btny v-slide-btn1" href="javascript:void(0);"><img src="../images/d-dictionary/btny.png"
+                                                                                                       alt=""></a>
+                                                                    </div>
+                                                                </div>
+                                                                <!--走马灯-->
+                                                                <div class="v-zmd">
+                                                                    <div class="v-zmd-container">
+                                                                        <div class="v-move">
+                                                                            <ul class="v-zmd-container-ul">
+                                                                                <li id="v-first" class="v-zon">
+                                                                                    <a href="javascript:void(0);">
+                                                                                    <img class="v-zmd-index"
+                                                                                         src="../images/d-dictionary/img-11.jpg" alt="">
+                                                                                </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="javascript:void(0);">
+                                                                                    <img src="../images/d-dictionary/img-11.jpg" alt="">
+                                                                                </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="javascript:void(0);">
+                                                                                    <img src="../images/d-dictionary/img-11.jpg" alt="">
+                                                                                </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="javascript:void(0);">
+                                                                                    <img src="../images/d-dictionary/img-11.jpg" alt="">
+                                                                                </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="javascript:void(0);"><img
+                                                                                        src="../images/d-dictionary/img-1.jpg" alt=""></a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="javascript:void(0);"><img
+                                                                                        src="../images/d-dictionary/img-11.jpg" alt=""></a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="javascript:void(0);"><img
+                                                                                        src="../images/d-dictionary/img-1.jpg" alt=""></a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="javascript:void(0);"><img
+                                                                                        src="../images/d-dictionary/img-1.jpg" alt=""></a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="javascript:void(0);"><img
+                                                                                        src="../images/d-dictionary/img-1.jpg" alt=""></a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="javascript:void(0);"><img
+                                                                                        src="../images/d-dictionary/img-1.jpg" alt=""></a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a class="v-zmd-btnz v-zmd-btn2 v-zno" href="javascript:void(0);">上一个</a>
+                                                                        <a class="v-zmd-btny v-zmd-btn2" href="javascript:void(0);">下一个</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--叉-->
+                                                            <div>
+                                                                <a class="v-cha" href="javascript:void(0);"><img
+                                                                    src="../images/d-dictionary/cha.png" alt=""></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-tz-more"><a href="bgtzjjl.html">查看更多&gt;&gt;</a></div>
+                                        </div>
+                                        <div class="nrpart">
+                                            <!--动态信息-->
+                                            <div class="d-bbsx">
+                                                <div class="info"><span class="date">2015-10-20</span><span class="name">阳洋</span></div>
+                                                <div class="tit">
+                                                    <h4>标题标题标题</h4>
+                                                </div>
+                                                <div class="con">
+                                                    <p>炫立方今天加推2套大平米房源：</p>
+                                                    <p>2～544，79.24平米，2133113元；</p>
+                                                    <p>2～644，79.24平米，2210809元；</p>
+                                                    <p>备注：以上两套房源签约时间15～20天。</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-bbsx">
+                                                <div class="info"><span class="date">2015-10-06</span><span class="name">普伦</span></div>
+                                                <div class="tit">
+                                                    <h4>标题标题标题</h4>
+                                                </div>
+                                                <div class="con">
+                                                    <p>16号楼五套一口价房：</p>
+                                                    <p>2-101 面积88.42 总价474</p>
+                                                    <p>3-501 面积87.67 总价488</p>
+                                                    <p>4-301面积88.88 总价498</p>
+                                                    <P>以上房源均为10万抵一口价</P>
+                                                    <P>小三居</P>
+                                                    <P>楼号：3#1单元</P>
+                                                    <P>面积：90㎡</P>
+                                                    <P>均价：59500元</P>
+                                                </div>
+                                            </div>
+                                            <div class="d-bbsx">
+                                                <div class="info"><span class="date">2015-10-06</span><span class="name">邢芮</span></div>
+                                                <div class="tit">
+                                                    <h4>标题标题标题</h4>
+                                                </div>
+                                                <div class="con">
+                                                    <p>明天（10月17日）公园懿府渠道停止带看，具体恢复时间等通知。</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-tz-more"><a href="bgtzjjl.html">查看更多&gt;&gt;</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--图册-->
+                        <div class="panel d-panel-atlas">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">图册</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body d-pic-area">
+                                <ul class="d-tw-list pic-list">
+                                    <li class="d-tw">
+                                        <div class="pic">
+                                            <a href="#"><img src="../images/d-dictionary/img-01.jpg" alt=""></a>
+                                        </div>
+                                        <div class="text"><a href="#">楼盘列表页</a></div>
+                                    </li>
+                                    <li class="d-tw">
+                                        <div class="pic">
+                                            <a href="#"><img src="../images/d-dictionary/img-01.jpg" alt=""></a>
+                                        </div>
+                                        <div class="text"><a href="#">详情页图</a></div>
+                                    </li>
+                                    <li class="d-tw">
+                                        <div class="pic">
+                                            <a href="#"><img src="../images/d-dictionary/img-01.jpg" alt=""></a>
+                                        </div>
+                                        <div class="text"><a href="#">环境规划图</a></div>
+                                    </li>
+                                    <li class="d-tw">
+                                        <div class="pic">
+                                            <a href="#"><img src="../images/d-dictionary/img-01.jpg" alt=""></a>
+                                        </div>
+                                        <div class="text"><a href="#">交通地图</a></div>
+                                    </li>
+                                </ul>
+                                <div class="v-picture">
+                                    <div class="v-content">
+                                        <!--幻灯-->
+                                        <div class="v-slide">
+                                            <ul class="v-slide-ul">
+                                                <li>
+                                                    <a href="javascript:void(0);"><img src="../images/d-dictionary/img-8.jpg" alt=""></a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);"><img src="../images/d-dictionary/img-9.jpg" alt=""></a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);"><img src="../images/d-dictionary/img-10.jpg" alt=""></a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);"><img src="../images/d-dictionary/img-11.jpg" alt=""></a>
+                                                </li>
+                                            </ul>
+                                            <!--按钮-->
+                                            <div>
+                                                <a class="v-slide-btnz v-slide-btn1" href="javascript:void(0);"><img src="../images/d-dictionary/btnz.png" alt=""></a>
+                                                <a class="v-slide-btny v-slide-btn1" href="javascript:void(0);"><img src="../images/d-dictionary/btny.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <!--走马灯-->
+                                        <div class="v-zmd">
+                                            <div class="v-zmd-container">
+                                                <div class="v-move">
+                                                    <ul class="v-zmd-container-ul">
+                                                        <li class="v-first v-zon">
+                                                            <a href="javascript:void(0);">
+                                                            <img class="v-zmd-index" src="../images/d-dictionary/img-8.jpg" alt="">
+                                                        </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);">
+                                                            <img class="v-zmd-index" src="../images/d-dictionary/img-9.jpg" alt="">
+                                                        </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);">
+                                                            <img class="v-zmd-index" src="../images/d-dictionary/img-10.jpg" alt="">
+                                                        </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);">
+                                                            <img class="v-zmd-index" src="../images/d-dictionary/img-11.jpg" alt="">
+                                                        </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <a class="v-zmd-btnz v-zmd-btn2" href="javascript:void(0);">上一个</a>
+                                                <a class="v-zmd-btny v-zmd-btn2" href="javascript:void(0);">下一个</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--叉-->
+                                    <div>
+                                        <a class="v-cha" href="javascript:void(0);"><img src="../images/d-dictionary/cha.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--数据分析-->
+                        <div class="panel d-panel-data">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">数据分析</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="d-date-range">
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="d-hz-mod">
+                                    <div class="tr">
+                                        <div class="td">上户数:200</div>
+                                        <div class="td">带看数:100</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td">认购数：120</div>
+                                        <div class="td">签约数：88</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td">带看率：10%</div>
+                                        <div class="td">认购率：19%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--带看记录-->
+                        <div class="panel d-panel-dkjl">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">带看记录</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="dk-table">
+                                    <ul class="t-head">
+                                        <li class="name">客户姓名</li>
+                                        <li class="d-cons">带看咨询师</li>
+                                        <li class="d-date">带看时间</li>
+                                    </ul>
+                                    <ul class="t-body">
+                                        <li>
+                                            <div class="name">XXXX</div>
+                                            <div class="d-cons">宋小丹</div>
+                                            <div class="d-date">2016-06-15 12:00:03</div>
+                                        </li>
+                                        <li>
+                                            <div class="name">XXXX</div>
+                                            <div class="d-cons">宋小丹</div>
+                                            <div class="d-date">2016-06-15 12:00:03</div>
+                                        </li>
+                                        <li>
+                                            <div class="name">XXXX</div>
+                                            <div class="d-cons">宋小丹</div>
+                                            <div class="d-date">2016-06-15 12:00:03</div>
+                                        </li>
+                                        <li>
+                                            <div class="name">XXXX</div>
+                                            <div class="d-cons">宋小丹</div>
+                                            <div class="d-date">2016-06-15 12:00:03</div>
+                                        </li>
+                                        <li>
+                                            <div class="name">XXXX</div>
+                                            <div class="d-cons">宋小丹</div>
+                                            <div class="d-date">2016-06-15 12:00:03</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="d-tz-more"><a href="bgtzjjl.html">查看更多&gt;&gt;</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="page-footer">
+            <p class="copyright"><span>北京高因科技有限公司</span><span>www.comjia.com</span></p>
+        </div>
+    </div>
+    <!--弹出层-->
+    <div id="v-fade"></div>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.pin.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/albums-detail2.js"></script>
+    <script src="../js/d-dictionary.js"></script>
+</body>
+</html>

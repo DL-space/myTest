@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>写点评页</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/house-detail.css">
+</head>
+<body>
+<div class="container">
+    @@include("./app/header/header2.html")
+    <div class="center">
+        <div class="row row-search">
+            <div class="wrap">
+                @@include("./app/search/search.html")
+            </div>
+        </div>
+        <div class="row row-crumb">
+            @@include("./app/crumbs/crumb.html")
+        </div>
+        <div class="row row-top-nav">
+            @@include("./app/detail-top/index.html")
+        </div>
+        <div class="row">
+            <div class="col7">
+                <!--成交评论-->
+                <div class="tab tab-comment user-revirws user-sentences">
+                    <div class="tab-c">
+                        <div class="nrpart show">
+                            <div class="kf-revirws kf-on">
+                                <div class="tc-revirws tc-on">
+                                    <div class="sentences">
+                                        <div class="cmt-mod-h">
+                                            <h3>我来说两句</h3>
+                                        </div>
+                                        <div class="cmt-mod user-cmd">
+                                            <div class="user-cmd-img">
+                                                <div class="user-h">您对华远西红世的评价：</div>
+                                                <span>
+                                                    <img src="images/ico-xh.png" alt="">
+                                                </span>
+                                            </div>
+                                            <ul class="user-cmt-list">
+                                                <li class="user-chk user-chk-on">
+                                                    <span class="user-ico ico-better ico-better-on">
+                                                    </span>
+                                                    <span class="txt">好评</span>
+                                                </li>
+                                                <li class="user-chk">
+                                                    <span class="user-ico ico-good">
+                                                    </span>
+                                                    <span class="txt">中评</span>
+                                                </li>
+                                                <li class="user-chk">
+                                                     <span class="user-ico ico-bad">
+                                                    </span>
+                                                    <span class="txt">差评</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="cmt-mod user-writing">
+                                            <div class="user-cmd-img">
+                                                <div class="user-h">评价：</div>
+                                                <span>
+                                                    <img src="images/ico-xh.png" alt="">
+                                                </span>
+                                            </div>
+                                            <textarea class="ipt"
+                                                      placeholder="关于这个楼盘、关于看房买房，爽的不爽的，直接说出来，你的评论，有态度！"></textarea>
+                                        </div>
+                                        <div class="cmt-tips writing-tips">评价内容要在10字以上！</div>
+                                        <div class="user-uploading">
+                                            <div class="user-h">上传图片：</div>
+                                            <div class="upload-area">
+                                                <ul class="up-pic-list">
+                                                    <li>
+                                                        <img src="./images/cmt-1.jpg" alt="">
+                                                        <div class="btn-del"><span class="ico ico-del2">删除</span></div>
+                                                    </li>
+                                                    <li>
+                                                        <img src="./images/cmt-2.jpg" alt="">
+                                                        <div class="btn-del"><span class="ico ico-del2">删除</span></div>
+                                                    </li>
+                                                    <li>
+                                                        <img src="./images/cmt-3.jpg" alt="">
+                                                        <div class="btn-del"><span class="ico ico-del2">删除</span></div>
+                                                    </li>
+                                                    <li>
+                                                        <img src="./images/cmt-4.jpg" alt="">
+                                                        <div class="btn-del"><span class="ico ico-del2">删除</span></div>
+                                                    </li>
+                                                    <li>
+                                                        <img src="./images/cmt-1.jpg" alt="">
+                                                        <div class="btn-del"><span class="ico ico-del2">删除</span></div>
+                                                    </li>
+                                                    <li>
+                                                        <img src="./images/cmt-2.jpg" alt="">
+                                                        <div class="btn-del"><span class="ico ico-del2">删除</span></div>
+                                                    </li>
+                                                    <li>
+                                                        <img src="./images/cmt-3.jpg" alt="">
+                                                        <div class="btn-del"><span class="ico ico-del2">删除</span></div>
+                                                    </li>
+                                                    <li>
+                                                        <img src="./images/cmt-4.jpg" alt="">
+                                                        <div class="btn-del"><span class="ico ico-del2">删除</span></div>
+                                                    </li>
+                                                    <li>
+                                                        <img src="./images/cmt-1.jpg" alt="">
+                                                        <div class="btn-del"><span class="ico ico-del2">删除</span></div>
+                                                    </li>
+                                                </ul>
+                                                <div class="btn-area">
+                                                    <input type="file" class="input-file">
+                                                    <span class="input-choose-file">选择文件</span>
+                                                    <div class="user-uploading-m">
+                                                        最多上传9张图片，大小不超过1M
+                                                    </div>
+                                                </div>
+                                                <div class="cmt-tips upload-tips">请在这里展示上传图片的提示信息</div>
+                                            </div>
+                                        </div>
+                                        <div class="cmt-mod user-id">
+                                            <div class="user-h">您的身份：</div>
+                                            <ul class="user-id-list">
+                                                <li class="user-chk">
+                                                    <span class="ico-chk ico-chk-on"></span>
+                                                    <span class="txt">我是业主</span>
+                                                </li>
+                                                <li class="user-chk user-chk-on">
+                                                    <span class="ico-chk"></span>
+                                                    <span class="txt">我看过该楼盘</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="user-submit">
+                                            提交评价
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col8">
+                <!--看过此楼盘的人还看过-->
+                <div class="box4 box-tjlp">
+                    <div class="hd">
+                        <h2>看过此楼盘的人还看过</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="media">
+                            <div class="pic">
+                                <a href="#">
+                                    <img src="images/img-small-house.png" alt="北京城建琨廷">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <h4 class="name"><a href="#">北京城北京城建琨廷北京城建琨廷建琨廷</a></h4>
+                                <p class="total">468-2,899 万</p>
+                            </div>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="pic">
+                                <a href="#">
+                                    <img src="images/img-small-house.png" alt="北京城建琨廷">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <h4 class="name"><a href="#">北京城北京城建琨廷北京城建琨廷建琨廷</a></h4>
+                                <p class="total">468-2,899 万</p>
+                            </div>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="pic">
+                                <a href="#">
+                                    <img src="images/img-small-house.png" alt="北京城建琨廷">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <h4 class="name"><a href="#">北京城北京城建琨廷北京城建琨廷建琨廷</a></h4>
+                                <p class="total">468-2,899 万</p>
+                            </div>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="pic">
+                                <a href="#">
+                                    <img src="images/img-small-house.png" alt="北京城建琨廷">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <h4 class="name"><a href="#">北京城北京城建琨廷北京城建琨廷建琨廷</a></h4>
+                                <p class="total">468-2,899 万</p>
+                            </div>
+                            <div class="price">
+                                53,000元/平
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include("./app/footer/footer.html")
+    @@include("./app/sidebar/sidebar.html")
+    @@include("./app/app-download/app-download.html")
+</div>
+<!--弹出层-->
+<div id="v-fade"></div>
+
+<script src="./js/lib/jquery/jquery-1.9.1.min.js"></script>
+<script src="./js/lib/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/house-detail.js"></script>
+<script src="./js/albums-detail2.js"></script>
+</body>
+</html>

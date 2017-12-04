@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>咨询师主管首页</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/b-module.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+    @@include("../app/header/header.html")
+    <div class="container-all-wrap">
+        @@include("../app/nav/nav.html")
+        <div class="center">
+            <div class="container-fluid">
+                <div class="area area-crumbs">
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="#">首页</a>
+                        </li>
+                        <li class="active">带看记录</li>
+                    </ul>
+                </div>
+                <div class="area">
+                    <div class="s3">
+                        <!--今日任务-->
+                        <div class="b-box task-today">
+                            <div class="hd">
+                                <span class="icon-fgx"></span>
+
+                                <h2>今日任务</h2>
+                            </div>
+                            <div class="bd">
+                                <ul class="list">
+                                    <li>
+                                        <div class="txt">您组咨询师本月目标值还未录入完整</div>
+                                        <a class="link" href="#">点击前往</a>
+                                    </li>
+                                    <li>
+                                        <div class="txt">您组有新的成交订单还未录入认购／签约可能性</div>
+                                        <a class="link" href="#">点击前往</a>
+                                    </li>
+                                    <li>
+                                        <div class="txt">您组有新的退单还未录入退款情况</div>
+                                        <a class="link" href="#">点击前往</a>
+                                    </li>
+                                    <li>
+                                        <div class="txt">您组有新的网签单还未审核</div>
+                                        <a class="link" href="#">点击前往</a>
+                                    </li>
+                                    <li>
+                                        <div class="txt">您组有新的网签单被财务驳回了</div>
+                                        <a class="link" href="#">点击前往</a>
+                                    </li>
+                                    <li>
+                                        <div class="txt">您组有新的网签单被拓展判为无效单了</div>
+                                        <a class="link" href="#">点击前往</a>
+                                    </li>
+                                    <li>
+                                        <div class="txt">您组有新的非5分满意度的订单</div>
+                                        <a class="link" href="#">点击前往</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <!--重要提醒-->
+                        <div class="b-box reminder">
+                            <div class="hd">
+                                <span class="icon-fgx"></span>
+
+                                <h2>重要提醒</h2>
+                            </div>
+                            <div class="bd">
+                                <ul class="list">
+                                    <li>
+                                        <div class="txt">您组在2天内将会有n个认购单要签约您组在2天内将会有n个认购单要签约</div>
+                                        <a class="link" href="#">点击前往</a>
+                                    </li>
+                                    <li>
+                                        <div class="txt">您组2天内当天上户当天关闭的订单达n单</div>
+                                        <a class="link" href="#">点击前往</a>
+                                    </li>
+                                    <li>
+                                        <div class="txt">您组15天内将有X名咨询师入职达到3个月的转正日期</div>
+                                        <a class="link" href="#">点击前往</a>
+                                    </li>
+                                    <li>
+                                        <div class="txt">月初了，请调整组员作息时间表</div>
+                                        <a class="link" href="#">点击前往</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <!--快速链接-->
+                        <div class="b-box link-quick">
+                            <div class="hd">
+                                <span class="icon-fgx"></span>
+
+                                <h2>快速链接</h2>
+                            </div>
+                            <div class="bd">
+                                <ul class="link-quick-area">
+                                    <li>
+                                        <a class="link" href="#">咨询师主管核算统计</a>
+                                    </li>
+                                    <li>
+                                        <a class="link" href="#">咨询师核算统计</a>
+                                    </li>
+                                    <li>
+                                        <a class="link" href="#">咨询师分配管理</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--咨询师排行榜-->
+                        <div class="b-box rank-list">
+                            <div class="hd">
+                                <span class="icon-fgx"></span>
+
+                                <h2>咨询师排行榜</h2>
+                            </div>
+                            <div class="bd">
+                                <div class="c-search">
+                                    <ul class="c-query">
+                                        <li>
+                                            <div class="th">时间</div>
+                                            <div class="td">
+                                                <select class="form-control">
+                                                    <option value="0" selected>本月</option>
+                                                    <option value="1">下月</option>
+                                                    <option value="2">上月</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-chked">
+                                        <li>
+                                            <input class="c-chk" type="radio">组内
+                                        </li>
+                                        <li>
+                                            <input class="c-chk" type="radio">城市
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="rank-table">
+                                    <table class="table table-bordered table-striped">
+                                        <tr>
+                                            <th>序号</th>
+                                            <th>姓名</th>
+                                            <th>静认购</th>
+                                            <th>带看量</th>
+                                            <th>认购率</th>
+                                            <th>上户带看率</th>
+                                            <th>带看认购率</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="page">
+                                    <ul class="pagination">
+                                        <li class="prev disabled">
+                                            <span class="icon icon-left-fill"></span>
+                                        </li>
+                                        <li class="active">
+                                            <a href="#">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">4</a>
+                                        </li>
+                                        <li class="next">
+                                            <a href="#">
+                                                <span class="icon icon-right-fill"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s4">
+                        <!--目标完成度-->
+                        <div class="b-box complet-degree">
+                            <div class="hd">
+                                <h2>目标完成度</h2>
+
+                                <div class="more">
+                                    <ul class="legend">
+                                        <li class="pro">
+                                            当前时间进度：
+                                        </li>
+                                        <li>
+                                            <div class="degree">
+                                                <div class="txt">56/98</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-current" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="query">
+                                        <select class="form-control">
+                                            <option value="1">2017年7月</option>
+                                            <option value="2">2017年8月</option>
+                                            <option value="3">2017年9月</option>
+                                            <option value="4">2017年10月</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bd">
+                                <div class="completion-item">
+                                    <ul class="tit">
+                                        <li class="stat-name">咨询师</li>
+                                        <li>上户量</li>
+                                        <li>带看量</li>
+                                        <li>认购量</li>
+                                        <li>网签量</li>
+                                    </ul>
+                                    <ul class="con">
+                                        <li>
+                                            <div class="stat-name">咨询师师-9999</div>
+                                            <div class="degree">
+                                                <div class="txt">33.987/13</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-slow" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-current" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-slow" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-slow" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="stat-name">咨询师2</div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-current" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-current" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-current" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-current" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="stat-name">咨询师3</div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-current" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-current" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-current" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-current" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="stat-name">咨询师4</div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-current" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-current" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-current" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-current" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="stat-name">咨询师5</div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-slow" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-current" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-slow" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-slow" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="stat-name">咨询师6</div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-current" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-current" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-slow" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="degree">
+                                                <div class="txt">64/90</div>
+                                                <div class="degree-wrap">
+                                                    <span class="inn legend-slow" style="width: 56%;"></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--统计区域-->
+                        <div class="stat-result tab-area">
+                            <div class="tab-menu-wrap">
+                                <ul class="tab-menu">
+                                    <li class="active">直击结果</li>
+                                    <li>定位问题</li>
+                                    <li>头部客户</li>
+                                </ul>
+                                <div class="search-area">
+                                    <ul class="c-query">
+                                        <li>
+                                            <div class="th">时间</div>
+                                            <div class="td">
+                                                <select class="form-control">
+                                                    <option value="0" selected="">本月</option>
+                                                    <option value="1">下月</option>
+                                                    <option value="2">上月</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="tab-content">
+                                <li class="active">
+                                    <div class="stat-area">
+                                        <div class="stat-mod">
+                                            <div class="inn" id="stat-1"></div>
+                                        </div>
+                                        <div class="stat-mod">
+                                            <div class="inn" id="stat-2"></div>
+                                        </div>
+                                        <div class="stat-mod">
+                                            <div class="inn" id="stat-3"></div>
+                                        </div>
+                                        <div class="stat-mod">
+                                            <div class="inn" id="stat-4"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="stat-area">
+                                        <div class="stat-mod">
+                                            <div class="inn" id="stat-10"></div>
+                                        </div>
+                                        <div class="stat-mod">
+                                            <div class="inn" id="stat-11"></div>
+                                        </div>
+                                        <div class="stat-mod-big-wrap">
+                                            <div class="search-area">
+                                                <ul class="c-query">
+                                                    <li>
+                                                        <div class="th">咨询师</div>
+                                                        <div class="td">
+                                                            <select class="form-control">
+                                                                <option value="0" selected="">某某某</option>
+                                                                <option value="1">某某某2</option>
+                                                                <option value="2">某某某3</option>
+                                                            </select>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="th">业态</div>
+                                                        <div class="td">
+                                                            <select class="form-control">
+                                                                <option value="0" selected="">某某某</option>
+                                                                <option value="1">某某某2</option>
+                                                                <option value="2">某某某3</option>
+                                                            </select>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="btn-area">
+                                                    <a class="link-edit" href="#">编辑库存结构分析</a>
+                                                </div>
+                                            </div>
+                                            <div class="stat-mod-big">
+                                                <div class="inn" id="stat-9"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="stat-area">
+                                        <div class="stat-mod">
+                                            <div class="inn" id="stat-5"></div>
+                                        </div>
+                                        <div class="stat-mod">
+                                            <div class="inn" id="stat-6"></div>
+                                        </div>
+                                        <div class="stat-mod">
+                                            <div class="inn" id="stat-7"></div>
+                                        </div>
+                                        <div class="stat-mod">
+                                            <div class="inn" id="stat-8"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        @@include("../app/footer/footer.html")
+    </div>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/jquery.pin.js"></script>
+    <script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/highcharts.js"></script>
+    <script src="../js/treemap.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/consultant-operation/consultant-operation.js"></script>
+</body>
+</html>

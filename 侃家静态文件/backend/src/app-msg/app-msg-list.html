@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>App消息通知列表</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/albums-detail2.css">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">带看记录</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--消息通知列表-->
+                    <div class="panel panel-app-msg">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">消息通知</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="btn-area">
+                                <a href="#" class="btn btn-primary">新增</a>
+                            </div>
+                            <ul class="c-query">
+                                <li>
+                                    <div class="th">城市：</div>
+                                    <div class="td">
+                                        <select class="form-control">
+                                            <option value="0">请选择</option>
+                                            <option value="1">北京</option>
+                                            <option value="2">上海</option>
+                                            <option value="3">天津</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="app-mst-list">
+                                <p class="rst-info">第1-20条，共111条</p>
+                                <div class="app-msg-item">
+                                    <div class="tit">
+                                        <div class="more">发送时间：2017-08-08 22:00:00</div>
+                                        <h4>标题文字标题文字标题文字</h4>
+                                    </div>
+                                    <div class="con d-pic-area">
+                                        <div class="app-msg-detail">
+                                            <p>消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容</p>
+                                        </div>
+                                        <ul class="pic-area pic-list">
+                                            <li><a href="#"><img src="../images/d-dictionary/img-1.jpg" alt=""></a></li>
+                                            <li><a href="#"><img src="../images/d-dictionary/img-2.jpg" alt=""></a></li>
+                                            <li><a href="#"><img src="../images/d-dictionary/img-3.jpg" alt=""></a></li>
+                                            <li><a href="#"><img src="../images/d-dictionary/img-4.jpg" alt=""></a></li>
+                                            <li><a href="#"><img src="../images/d-dictionary/img-5.jpg" alt=""></a></li>
+                                            <li><a href="#"><img src="../images/d-dictionary/img-6.jpg" alt=""></a></li>
+                                        </ul>
+                                        <div class="v-picture">
+                                            <div class="v-content">
+                                                <!--幻灯-->
+                                                <div class="v-slide">
+                                                    <ul class="v-slide-ul">
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-1.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-2.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-3.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-4.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-5.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-6.jpg" alt=""></a>
+                                                        </li>
+                                                    </ul>
+                                                    <!--按钮-->
+                                                    <div>
+                                                        <a class="v-slide-btnz v-slide-btn1" href="javascript:void(0);"><img src="../images/d-dictionary/btnz.png" alt=""></a>
+                                                        <a class="v-slide-btny v-slide-btn1" href="javascript:void(0);"><img src="../images/d-dictionary/btny.png" alt=""></a>
+                                                    </div>
+                                                </div>
+                                                <!--走马灯-->
+                                                <div class="v-zmd">
+                                                    <div class="v-zmd-container">
+                                                        <div class="v-move">
+                                                            <ul class="v-zmd-container-ul">
+                                                                <li class="v-first" class="v-zon">
+                                                                    <a href="javascript:void(0);">
+                                                                        <img class="v-zmd-index" src="../images/d-dictionary/img-1.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="../images/d-dictionary/img-2.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="../images/d-dictionary/img-3.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="../images/d-dictionary/img-4.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="../images/d-dictionary/img-5.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="../images/d-dictionary/img-6.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <a class="v-zmd-btnz v-zmd-btn2" href="javascript:void(0);">上一个</a>
+                                                        <a class="v-zmd-btny v-zmd-btn2" href="javascript:void(0);">下一个</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--叉-->
+                                            <div>
+                                                <a class="v-cha" href="javascript:void(0);"><img src="../images/cha.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="app-msg-item">
+                                    <div class="tit">
+                                        <div class="more">发送时间：2017-08-08 22:00:00</div>
+                                        <h4>标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字标题文字</h4>
+                                    </div>
+                                    <div class="con d-pic-area">
+                                        <div class="app-msg-detail">
+                                            <p>消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文</p>
+                                        </div>
+                                        <ul class="pic-area pic-list">
+                                            <li><a href="#"><img src="../images/d-dictionary/img-1.jpg" alt=""></a></li>
+                                            <li><a href="#"><img src="../images/d-dictionary/img-2.jpg" alt=""></a></li>
+                                            <li><a href="#"><img src="../images/d-dictionary/img-3.jpg" alt=""></a></li>
+                                            <li><a href="#"><img src="../images/d-dictionary/img-4.jpg" alt=""></a></li>
+                                            <li><a href="#"><img src="../images/d-dictionary/img-5.jpg" alt=""></a></li>
+                                            <li><a href="#"><img src="../images/d-dictionary/img-6.jpg" alt=""></a></li>
+                                        </ul>
+                                        <div class="v-picture">
+                                            <div class="v-content">
+                                                <!--幻灯-->
+                                                <div class="v-slide">
+                                                    <ul class="v-slide-ul">
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-1.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-2.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-3.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-4.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-5.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-6.jpg" alt=""></a>
+                                                        </li>
+                                                    </ul>
+                                                    <!--按钮-->
+                                                    <div>
+                                                        <a class="v-slide-btnz v-slide-btn1" href="javascript:void(0);"><img src="../images/d-dictionary/btnz.png" alt=""></a>
+                                                        <a class="v-slide-btny v-slide-btn1" href="javascript:void(0);"><img src="../images/d-dictionary/btny.png" alt=""></a>
+                                                    </div>
+                                                </div>
+                                                <!--走马灯-->
+                                                <div class="v-zmd">
+                                                    <div class="v-zmd-container">
+                                                        <div class="v-move">
+                                                            <ul class="v-zmd-container-ul">
+                                                                <li class="v-first" class="v-zon">
+                                                                    <a href="javascript:void(0);">
+                                                                        <img class="v-zmd-index" src="../images/d-dictionary/img-1.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="../images/d-dictionary/img-2.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="../images/d-dictionary/img-3.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="../images/d-dictionary/img-4.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="../images/d-dictionary/img-5.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="../images/d-dictionary/img-6.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <a class="v-zmd-btnz v-zmd-btn2" href="javascript:void(0);">上一个</a>
+                                                        <a class="v-zmd-btny v-zmd-btn2" href="javascript:void(0);">下一个</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--叉-->
+                                            <div>
+                                                <a class="v-cha" href="javascript:void(0);"><img src="../images/cha.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="app-msg-item">
+                                    <div class="tit">
+                                        <div class="more">发送时间：2017-08-08 22:00:00</div>
+                                        <h4>标题文字标题文字标题文字</h4>
+                                    </div>
+                                    <div class="con d-pic-area">
+                                        <div class="app-msg-detail">
+                                            <p>消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容消息正文内容</p>
+                                        </div>
+                                        <ul class="pic-area pic-list">
+                                            <li><a href="#"><img src="../images/d-dictionary/img-1.jpg" alt=""></a></li>
+                                            <li><a href="#"><img src="../images/d-dictionary/img-2.jpg" alt=""></a></li>
+                                            <li><a href="#"><img src="../images/d-dictionary/img-3.jpg" alt=""></a></li>
+                                            <li><a href="#"><img src="../images/d-dictionary/img-4.jpg" alt=""></a></li>
+                                            <li><a href="#"><img src="../images/d-dictionary/img-5.jpg" alt=""></a></li>
+                                            <li><a href="#"><img src="../images/d-dictionary/img-6.jpg" alt=""></a></li>
+                                        </ul>
+                                        <div class="v-picture">
+                                            <div class="v-content">
+                                                <!--幻灯-->
+                                                <div class="v-slide">
+                                                    <ul class="v-slide-ul">
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-1.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-2.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-3.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-4.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-5.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);"><img src="../images/d-dictionary/img-6.jpg" alt=""></a>
+                                                        </li>
+                                                    </ul>
+                                                    <!--按钮-->
+                                                    <div>
+                                                        <a class="v-slide-btnz v-slide-btn1" href="javascript:void(0);"><img src="../images/d-dictionary/btnz.png" alt=""></a>
+                                                        <a class="v-slide-btny v-slide-btn1" href="javascript:void(0);"><img src="../images/d-dictionary/btny.png" alt=""></a>
+                                                    </div>
+                                                </div>
+                                                <!--走马灯-->
+                                                <div class="v-zmd">
+                                                    <div class="v-zmd-container">
+                                                        <div class="v-move">
+                                                            <ul class="v-zmd-container-ul">
+                                                                <li class="v-first" class="v-zon">
+                                                                    <a href="javascript:void(0);">
+                                                                        <img class="v-zmd-index" src="../images/d-dictionary/img-1.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="../images/d-dictionary/img-2.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="../images/d-dictionary/img-3.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="../images/d-dictionary/img-4.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="../images/d-dictionary/img-5.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        <img src="../images/d-dictionary/img-6.jpg" alt="">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <a class="v-zmd-btnz v-zmd-btn2" href="javascript:void(0);">上一个</a>
+                                                        <a class="v-zmd-btny v-zmd-btn2" href="javascript:void(0);">下一个</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--叉-->
+                                            <div>
+                                                <a class="v-cha" href="javascript:void(0);"><img src="../images/cha.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page">
+                                    <ul class="pagination">
+                                        <li class="prev disabled"><span>«</span></li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">6</a></li>
+                                        <li><a href="#">7</a></li>
+                                        <li><a href="#">8</a></li>
+                                        <li><a href="#">9</a></li>
+                                        <li><a href="#">10</a></li>
+                                        <li class="next"><a href="#">»</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<!--弹出层-->
+<div id="v-fade"></div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/albums-detail2.js"></script>
+</body>
+</html>

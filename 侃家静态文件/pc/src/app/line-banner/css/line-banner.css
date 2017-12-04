@@ -1,0 +1,35 @@
+/*页面整行banner*/
+.line-banner{
+    position: relative;
+}
+.line-banner .order-btn{
+    position: absolute;
+    top: 196px;
+    width: 20px;
+    height: 34px;
+    z-index: 2;
+    cursor: pointer;
+    border: none;
+}
+.line-banner .btn-pre{
+    left: 20px;
+    background: url("../images/bg-control.png") 0 0 no-repeat;
+}
+.line-banner .btn-next{
+    right: 20px;
+    background: url("../images/bg-control.png") 5px -40px no-repeat;
+}
+.line-banner .content-container{
+    width: 1200px;
+    z-index: 1;
+    overflow: hidden;
+}
+.line-banner .content-list{
+    position: relative;
+    width: 20000px;
+}
+.line-banner .content-list .list-item{
+    position: relative;
+    width: 1200px;
+    float: left;
+}

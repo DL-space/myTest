@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>新增本周楼盘</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row row-crumbs">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">楼盘信息编辑</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--新增本周楼盘-->
+                    <div class="panel panel-rc-project">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">新增本周楼盘</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="c-list bd-list">
+                                <div class="tit">
+                                    <div class="list-info">
+                                        <p>编辑20170501-20170507周的预计楼盘成交表(默认楼盘为上一周有成交的楼盘)</p>
+                                    </div>
+                                </div>
+                                <div class="con">
+                                    <table class="table table-bordered table-responsive">
+                                        <tr>
+                                            <th>楼盘</th>
+                                            <th>上周总佣金</th>
+                                            <th>上周成交套数</th>
+                                            <th>上周套佣</th>
+                                            <th>上周带看次数</th>
+                                            <th>可售房源数量</th>
+                                            <th>预计本周成交套数</th>
+                                            <th>预计本周套佣</th>
+                                            <th>操作</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>花雨汀(住宅)</p>
+                                                <p>合作，正常带看</p>
+                                            </td>
+                                            <td>
+                                                <p>1000000</p>
+                                            </td>
+                                            <td>10</td>
+                                            <td>10000</td>
+                                            <td>20</td>
+                                            <td>45套</td>
+                                            <td>
+                                                <input class="form-control" type="text"/>
+                                            </td>
+                                            <td>
+                                                <input class="form-control" type="text"/>
+                                            </td>
+                                            <td>
+                                                <a class="btn-opt btn-del" href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="add-project">
+                                        <ul class="c-query">
+                                            <li>
+                                                <div class="th">新增楼盘：</div>
+                                                <div class="td">
+                                                    <select class="form-control">
+                                                        <option value="0">楼盘1</option>
+                                                        <option value="1">楼盘2</option>
+                                                        <option value="2">楼盘3</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="btn-area">
+                                            <a class="btn btn-primary" href="#">添加</a>
+                                        </div>
+                                    </div>
+                                    <div class="btn-area">
+                                        <a class="btn btn-default" href="#">取消</a>
+                                        <a class="btn btn-primary" href="./recommend-projects.html">保存</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../highchart/js/highcharts.js"></script>
+<script src="../highchart/js/highcharts-more.js"></script>
+<script src="../highchart/js/highcharts-zh_CN.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/recommend-project.js"></script>
+</body>
+</html>

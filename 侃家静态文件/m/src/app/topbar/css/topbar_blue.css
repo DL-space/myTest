@@ -1,0 +1,76 @@
+/*顶部app下载入口*/
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.3333rem;
+    background: rgba(0, 0, 0, 0.7);
+    background: url("../images/bg_blue.png") no-repeat;
+    background-size: 100% 100%;
+    z-index: 20;
+    overflow: hidden;
+}
+.topbar .fl {
+    padding: .2rem 0 0 .48rem;
+}
+.topbar .ico-kan, .topbar .t-text {
+    float: left;
+    overflow: hidden;
+}
+.topbar .ico-kan {
+    margin-right: .37rem;
+}
+.topbar-juli .ico-kan{
+    background-image: url("../images/logo_small.png");
+}
+.topbar h4 {
+    font-size: .373rem;
+    color: #fff;
+    height: .53rem;
+    line-height: .53rem;
+    overflow: hidden;
+}
+.topbar .t-text p {
+    font-size: .293rem;
+    color: #fff;
+    height: .4rem;
+    line-height: .4rem;
+    overflow: hidden;
+}
+.topbar .close, .topbar .download_btn {
+    float: right;
+}
+.download_btn {
+    margin-right: .42rem;
+    padding-top: .36rem;
+}
+.btn-donload {
+    display: block;
+    color: #48b3e2;
+    font-size: .346rem;
+    text-align: center;
+    width: 2rem;
+    height: .66rem;
+    line-height:.7rem;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 0 rgba(72,179,226,0.34);
+    overflow: hidden;
+}
+.topbar .close  {
+    width: .266rem;
+    height: .266rem;
+}
+.topbar .ico-close {
+    float: left;
+    cursor: pointer;
+    width: .266rem;
+    height: .266rem;
+    background-image: url(../images/icon_topbar_close.png);
+    background-position: 50% 50%;
+}
+.topbar .close {
+    margin-right: .13rem;
+    padding: .1rem;
+}

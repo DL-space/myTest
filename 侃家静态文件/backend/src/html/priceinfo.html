@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>价格信息</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/house-manage.css">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container">
+            <!--次导航-->
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="#">基础信息</a></li>
+                    <li><a href="#">细节信息</a></li>
+                    <li><a href="#">环境信息</a></li>
+                    <li><a href="#">户型信息</a></li>
+                    <li class="active"><a href="#">价格信息</a></li>
+                    <li><a href="#">图片信息</a></li>
+                </ul>
+            </nav>
+            <!--实时数据-->
+            <div class="panel panel-data">
+                <div class="panel-heading">
+                    <div class="panel-heading-wrap">
+                        <h2 class="panel-title">实时数据</h2>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="input-grup">
+                        <span>当前开盘时间：</span>
+                        <input type="text">
+                    </div>
+                    <div class="input-grup">
+                        <span>排卡时间：</span>
+                        <input type="text">
+                    </div>
+                    <div class="input-grup">
+                        <span>当期套数：</span>
+                        <input type="text">
+                    </div>
+                    <div class="input-grup">
+                        <span>当期报价（元/m²）：</span>
+                        <input type="text">
+                    </div>
+                    <div class="input-grup lang-input">
+                        <span>折扣描述：</span>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <!--历史数据-->
+            <div class="panel panel-history">
+                <div class="panel-heading">
+                    <div class="panel-heading-wrap">
+                        <h2 class="panel-title">历史数据</h2>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="history-data">
+                        <button class="btn-add">新增</button>
+                        <div class="data-list">
+                            <div class="one-line">
+                                <div class="input-grup">
+                                    <span>时间：</span>
+                                    <input type="text">
+                                </div>
+                                <div class="input-grup lang-data">
+                                    <span class="lang-span">成交价格（元/m²）：</span>
+                                    <input type="text">
+                                </div>
+                                <div class="input-grup">
+                                    <span>成交量：</span>
+                                    <input type="text">
+                                </div>
+                                <div class="input-grup">
+                                    <span>剩余量：</span>
+                                    <input type="text">
+                                </div>
+                                <div class="caozuo">
+                                    <div class="line-del">-</div>
+                                </div>
+                            </div>
+                            <div class="one-line">
+                                <div class="input-grup">
+                                    <span>时间：</span>
+                                    <input type="text">
+                                </div>
+                                <div class="input-grup lang-data">
+                                    <span class="lang-span">成交价格（元/m²）：</span>
+                                    <input type="text">
+                                </div>
+                                <div class="input-grup">
+                                    <span>成交量：</span>
+                                    <input type="text">
+                                </div>
+                                <div class="input-grup">
+                                    <span>剩余量：</span>
+                                    <input type="text">
+                                </div>
+                                <div class="caozuo">
+                                    <div class="line-del">-</div>
+                                </div>
+                            </div>
+                            <div class="one-line">
+                                <div class="input-grup">
+                                    <span>时间：</span>
+                                    <input type="text">
+                                </div>
+                                <div class="input-grup lang-data">
+                                    <span class="lang-span">成交价格（元/m²）：</span>
+                                    <input type="text">
+                                </div>
+                                <div class="input-grup">
+                                    <span>成交量：</span>
+                                    <input type="text">
+                                </div>
+                                <div class="input-grup">
+                                    <span>剩余量：</span>
+                                    <input type="text">
+                                </div>
+                                <div class="caozuo">
+                                    <div class="line-del">-</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-data">
+                        点击展开
+                    </div>
+                    <div class="btn-div">
+                        <button class="btn btn-primary">保存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+</body>
+</html>

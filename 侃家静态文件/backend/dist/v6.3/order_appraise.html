@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>订单评价页面</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+    <div class="page-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo fl">
+                        <h1><a href="#"><img src="../images/logo.png" alt="欢迎登录侃家网业务管理系统！"></a></h1>
+                        <p class="info">欢迎登录侃家网业务管理系统！</p>
+                    </div>
+                    <div class="h-user">
+                        <div class="link-user">
+                            <span class="ico ico-user"></span>
+
+                            <div class="dropdown-menu-user">
+                                <span class="triangle"></span>
+                                <ul class="dropdown-menu">
+                                    <li class="first"><a href="#"><span class="dropdown-text">个人设置</span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">我的消息</span><span
+                                        class="badge myMsg"></span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">待办事项</span><span
+                                        class="badge toMsg"></span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">个人资料</span></a>
+                                    </li>
+                                    <li class="last"><a href="#"><span class="dropdown-text">退出</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ucenter">
+                            <span class="uname">徐立</span>
+                            <span class="fgx">|</span>
+                            <a class="logout" href="#">退出</a>
+                        </div>
+                        <div class="schedule"><a href="#">我的日程</a></div>
+                        <div class="tips-msg">
+                            <a class="ico ico-msg" href="#" title="消息">
+                            <span class="dot">28</span>
+                        </a>
+                            <a class="ico ico-todo" href="#" title="待办事项">
+                            <span class="dot">65</span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-all-wrap">
+        <div class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">咨询师业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">订单列表</a></li>
+                                <li><a href="#">关键带看管理列表</a></li>
+                                <li><a href="#">联系列表</a></li>
+                                <li><a href="#">带看列表</a></li>
+                                <li><a href="#">认购列表页</a></li>
+                                <li><a href="#">签约列表页</a></li>
+                                <li><a href="#">首次联系延迟列表</a></li>
+                                <li class="last"><a href="#">匹配工具</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">客服业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">客服订单管理</a></li>
+                                <li><a href="#">客服联系记录管理</a></li>
+                                <li><a href="#">带看评价管理</a></li>
+                                <li><a href="#">带看评价回访纪录</a></li>
+                                <li><a href="#">已关闭订单跟进</a></li>
+                                <li><a href="#">已关闭订单跟进回访记录</a></li>
+                                <li><a href="#">无效客户标记</a></li>
+                                <li><a href="#">400电话订单匹配</a></li>
+                                <li><a href="#">评价追回页面</a></li>
+                                <li class="last"><a href="#">投诉列表页</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">驻场拓展业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">报备管理</a></li>
+                                <li><a href="#">楼盘备案管理</a></li>
+                                <li><a href="#">合作方管理</a></li>
+                                <li><a href="#">楼盘拓展相关字段维护</a></li>
+                                <li><a href="#">添加报备</a></li>
+                                <li><a href="#">代理中介管理</a></li>
+                                <li class="last"><a href="#">代理客户订单管理</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">服务管理员业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">服务评价管理</a></li>
+                                <li><a href="#">咨询师带看情况查询</a></li>
+                                <li class="last"><a href="#">咨询师审核</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">系统管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">权限管理</a></li>
+                                <li><a href="#">员工管理</a></li>
+                                <li><a href="#">员工作息时间管理</a></li>
+                                <li><a href="#">咨询师分配管理</a></li>
+                                <li><a href="#">客服分配管理</a></li>
+                                <li><a href="#">用户管理</a></li>
+                                <li><a href="#">短信模板管理</a></li>
+                                <li><a href="#">咨询师分组管理</a></li>
+                                <li><a href="#">员工操作日志</a></li>
+                                <li><a href="#">批量转移咨询师客户</a></li>
+                                <li><a href="#">联系取消</a></li>
+                                <li><a href="#">雨燕档案</a></li>
+                                <li><a href="#">上线日志管理</a></li>
+                                <li><a href="#">城市管理</a></li>
+                                <li class="last"><a href="#">字段常量配置</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">报表管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">客户数据分析</a></li>
+                                <li><a href="#">网站统计报表</a></li>
+                                <li><a href="#">周期维度统计</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">咨询师延迟录入统计</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">联系延迟录入统计</a></li>
+                                        <li><a href="#">带看延迟录入统计</a></li>
+                                        <li><a href="#">咨询师分配时间到首次联系时间超时统计列表</a></li>
+                                        <li><a href="#">咨询师认购超时统计列表</a></li>
+                                        <li class="last"><a href="#">咨询师签约超时统计列表</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">核算日月周年报表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算统计</a></li>
+                                        <li><a href="#">咨询师组核算统计</a></li>
+                                        <li><a href="#">楼盘核算统计</a></li>
+                                        <li><a href="#">区域核算统计</a></li>
+                                        <li class="last"><a href="#">渠道核算统计</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">核算汇总表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算统计汇总表</a></li>
+                                        <li><a href="#">咨询师组核算统计汇总表</a></li>
+                                        <li><a href="#">楼盘核算统计汇总表</a></li>
+                                        <li><a href="#">区域核算统计汇总表</a></li>
+                                        <li><a href="#">渠道核算统计汇总表</a></li>
+                                        <li class="last"><a href="#">资金核算报表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">咨询师满意度表格</a></li>
+                                <li><a href="#">咨询师组满意度表格</a></li>
+                                <li><a href="#">带看评价统计列表</a></li>
+                                <li><a href="#">已关闭订单客户评价统计列表</a></li>
+                                <li><a href="#">成交订单服务评价统计列表</a></li>
+                                <li><a href="#">咨询师楼盘点评统计</a></li>
+                                <li><a href="#">客服首次联系超时统计报表</a></li>
+                                <li><a href="#">带看回访客服联系记录</a></li>
+                                <li><a href="#">已关闭订单回访客服联系记录</a></li>
+                                <li><a href="#">咨询师订单详情统计列表</a></li>
+                                <li><a href="#">咨询师正常订单统计列表</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">客户业务详情统计</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">客户线索详情统计列表</a></li>
+                                        <li><a href="#">客户上户详情统计列表</a></li>
+                                        <li><a href="#">带看详情统计报表</a></li>
+                                        <li><a href="#">认购详情统计列表</a></li>
+                                        <li class="last"><a href="#">签约详情统计列表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">客户留电行为详情列表</a></li>
+                                <li><a href="#">消息详情列表</a></li>
+                                <li><a href="#">定时消息详情列表</a></li>
+                                <li><a href="#">重新分配记录报表</a></li>
+                                <li><a href="#">短信记录报表</a></li>
+                                <li><a href="#">订单恢复报表</a></li>
+                                <li><a href="#">线索质量统计报表</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">业务统计报表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">楼盘业务统计</a></li>
+                                        <li><a href="#">渠道业务统计报表</a></li>
+                                        <li><a href="#">喜报业务统计报表</a></li>
+                                        <li><a href="#">咨询师首次正式认购核算报表</a></li>
+                                        <li><a href="#">区域业务统计</a></li>
+                                        <li class="last"><a href="#">订单业务详情统计报表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">楼盘数据维护审核记录</a></li>
+                                <li><a href="#">高端客户详情统计列表</a></li>
+                                <li><a href="#">评价追回客服记录统计</a></li>
+                                <li><a href="#">楼盘信息报表</a></li>
+                                <li><a href="#">市场部咨询合作详情</a></li>
+                                <li class="dropdown-submenu last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">咨询师订单核算详情</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算详情-签约</a></li>
+                                        <li><a href="#">咨询师核算详情-上户</a></li>
+                                        <li><a href="#">咨询师核算详情-带看</a></li>
+                                        <li class="last"><a href="#">咨询师核算详情-认购</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">楼盘管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">楼盘数据维护</a></li>
+                                <li><a href="#">楼盘点评列表</a></li>
+                                <li><a href="#">楼盘商务信息管理</a></li>
+                                <li><a href="#">区域报告楼盘定位</a></li>
+                                <li><a href="#">楼盘维护提醒设置</a></li>
+                                <li><a href="#">楼盘列表</a></li>
+                                <li><a href="#">市调测评</a></li>
+                                <li class="dropdown-submenu last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">楼盘审核</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">楼盘点评审核</a></li>
+                                        <li class="last"><a href="#">楼盘数据维护审核</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">楼盘字典<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="dropdown-submenu first last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">楼盘管理</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">全部楼盘列表</a></li>
+                                        <li><a href="#">创建楼盘</a></li>
+                                        <li class="last"><a href="#">价格维护</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--意见反馈入口-->
+                <div class="nav-feedback">
+                    <span class="btn-feedback">不爽就点我</span>
+                </div>
+            </div>
+        </div>
+        <div class="center order-appraise">
+            <div class="container-fluid">
+                <div class="row row-crumbs">
+                    <div class="col-md-12">
+                        <ul class="breadcrumb">
+                            <li><a href="#">首页</a></li>
+                            <li class="active">订单评价</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!--网签单服务评级-->
+                        <div class="panel panel-rules">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">网签单服务评级</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="c-list c-rule-list">
+                                    <div class="con">
+                                        <table class="table table-bordered table-responsive">
+                                            <tr>
+                                                <th>成交单编号</th>
+                                                <th>网签时间</th>
+                                                <th>楼盘</th>
+                                                <th>所属咨询师</th>
+                                                <th>评论内容</th>
+                                                <th>用户照片</th>
+                                                <th>操作</th>
+                                            </tr>
+                                            <tr>
+                                                <td>[SU]CJ-1007264</td>
+                                                <td>2017-10-27 00:00:00</td>
+                                                <td>大唐印象</td>
+                                                <td>白超超</td>
+                                                <td>
+                                                    看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                </td>
+                                                <td>
+                                                    <img src="../images/addhouse.png" alt="">
+                                                </td>
+                                                <td><a href="###" class="alter_picture">修改照片</a></td>
+                                            </tr>
+                                            <tr class="img_cont">
+                                                <td colspan="7">
+                                                    <img src="../images/addhouse.png" alt="">
+                                                    <button class="btn btn-primary">确定裁剪</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>[SU]CJ-1007264</td>
+                                                <td>2017-10-27 00:00:00</td>
+                                                <td>大唐印象</td>
+                                                <td>白超超</td>
+                                                <td>
+                                                    看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                </td>
+                                                <td>
+                                                    <img src="../images/addhouse.png" alt="">
+                                                </td>
+                                                <td><a href="###" class="alter_picture">修改照片</a></td>
+                                            </tr>
+                                            <tr class="img_cont">
+                                                <td colspan="7">
+                                                    <img src="../images/addhouse.png" alt="">
+                                                    <button class="btn btn-primary">确定裁剪</button>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--带看评价-->
+                        <div class="panel panel-rules">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">带看评价</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="c-list c-rule-list">
+                                    <div class="con">
+                                        <table class="table table-bordered table-responsive">
+                                            <tr>
+                                                <th>带看ID</th>
+                                                <th>带看开始时间</th>
+                                                <th>所属咨询师</th>
+                                                <th>带看咨询师</th>
+                                                <th>带看楼盘</th>
+                                                <th>咨询师评价3满意2一般0不满意</th>
+                                                <th>整体评价</th>
+                                            </tr>
+                                            <tr>
+                                                <td>20020453</td>
+                                                <td>2017-10-27 00:00:01</td>
+                                                <td>徐静文</td>
+                                                <td>徐静文</td>
+                                                <td>中旅水泊堂前，太湖相王府</td>
+                                                <td>6</td>
+                                                <td>很熟悉楼盘的信息，给出的建议非常专业，对我的帮助很大哦。这次体验很满意</td>
+                                            </tr>
+                                            <tr>
+                                                <td>20020453</td>
+                                                <td>2017-10-27 00:00:01</td>
+                                                <td>徐静文</td>
+                                                <td>徐静文</td>
+                                                <td>中旅水泊堂前，太湖相王府</td>
+                                                <td>6</td>
+                                                <td>很熟悉楼盘的信息，给出的建议非常专业，对我的帮助很大哦。这次体验很满意</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--带看评价追回客服联系记录-->
+                        <div class="panel panel-rules">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">带看评价追回客服联系记录</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="c-list c-rule-list">
+                                    <div class="con">
+                                        <table class="table table-bordered table-responsive">
+                                            <tr>
+                                                <th>带看ID</th>
+                                                <th>带看开始时间</th>
+                                                <th>追回评价时间</th>
+                                                <th>所属咨询师</th>
+                                                <th>所属咨询师主管</th>
+                                                <th>带看咨询师</th>
+                                                <th>带看咨询师组长</th>
+                                                <th>追回状态</th>
+                                                <th>满意度</th>
+                                                <th>追回满意度</th>
+                                                <th>绩效满意度</th>
+                                                <th>追回原因类型</th>
+                                                <th>操作者</th>
+                                                <th>操作</th>
+                                            </tr>
+                                            <tr>
+                                                <td>20020454</td>
+                                                <td>2017-10-27 00:00:01</td>
+                                                <td>017-10-27 00:00:22</td>
+                                                <td>徐静文</td>
+                                                <td>孙岩</td>
+                                                <td>高艳波</td>
+                                                <td>孙岩</td>
+                                                <td>已完成</td>
+                                                <td>满意</td>
+                                                <td>满意</td>
+                                                <td>5</td>
+                                                <td>客户点错评价</td>
+                                                <td>郑文豪</td>
+                                                <td><a href="#">查看</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>20020454</td>
+                                                <td>2017-10-27 00:00:01</td>
+                                                <td>017-10-27 00:00:22</td>
+                                                <td>徐静文</td>
+                                                <td>孙岩</td>
+                                                <td>高艳波</td>
+                                                <td>孙岩</td>
+                                                <td>已完成</td>
+                                                <td>满意</td>
+                                                <td>满意</td>
+                                                <td>5</td>
+                                                <td>客户点错评价</td>
+                                                <td>郑文豪</td>
+                                                <td><a href="#">查看</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--已关闭订单服务评价-->
+                        <div class="panel panel-rules">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">已关闭订单服务评价</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="c-list c-rule-list">
+                                    <div class="con">
+                                        <table class="table table-bordered table-responsive">
+                                            <tr>
+                                                <th>订单关闭时间</th>
+                                                <th>所属咨询师</th>
+                                                <th>咨询师评价3满意2一般0不满意</th>
+                                                <th>订单关闭原因</th>
+                                                <th>评价</th>
+                                                <th>1已经回访2回访失败3放弃回访4未回访</th>
+                                                <th>是否仍需要看家侃家服务0未知1不2继续</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2017-10-27 00:00:01</td>
+                                                <td>你猜</td>
+                                                <td>3</td>
+                                                <td>等待购房资质／等待资金</td>
+                                                <td>能针对市场，政策和顾客的世纪提出比较合理的建议</td>
+                                                <td>1</td>
+                                                <td>1</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--已关闭订单回访客服联系记录-->
+                        <div class="panel panel-rules">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">已关闭订单回访客服联系记录</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="c-list c-rule-list">
+                                    <div class="con">
+                                        <table class="table table-bordered table-responsive">
+                                            <tr>
+                                                <th>订单关闭时间</th>
+                                                <th>所属咨询师</th>
+                                                <th>回访时间</th>
+                                                <th>1已经回访2回访失败3放弃回访4未回访</th>
+                                                <th>回访人</th>
+                                                <th>回访记录</th>
+                                                <th>操作</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2017-07-26 13:52:54</td>
+                                                <td>许静</td>
+                                                <td>2017-07-26 13:52:54</td>
+                                                <td>3</td>
+                                                <td>宋朝</td>
+                                                <td>非常满意，服务很周到，很热情</td>
+                                                <td><a href="###">查看</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--订单投诉记录-->
+                        <div class="panel panel-rules">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">订单投诉记录</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="c-list c-rule-list">
+                                    <div class="con">
+                                        <table class="table table-bordered table-responsive">
+                                            <tr>
+                                                <th>投诉时间</th>
+                                                <th>投诉咨询师</th>
+                                                <th>投诉原因／内容</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2017-10-15 15:22:00</td>
+                                                <td>三个字</td>
+                                                <td>
+                                                    看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                    看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系 看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                    看房子也有一段时间了，一直断断续续的，一次无意中在网上留了电话，然后就与我取得了联系
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--订单投诉回访客服联系记录-->
+                        <div class="panel panel-rules">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">订单投诉回访客服联系记录</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="c-list c-rule-list">
+                                    <div class="con">
+                                        <table class="table table-bordered table-responsive">
+                                            <tr>
+                                                <th>投诉时间</th>
+                                                <th>追回评价时间</th>
+                                                <th>所属咨询师</th>
+                                                <th>所属咨询师主管</th>
+                                                <th>追回状态</th>
+                                                <th>追回满意度</th>
+                                                <th>追回原因类型</th>
+                                                <th>操作者</th>
+                                                <th>操作</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2017-10-15 15:22:00</td>
+                                                <td>2017-10-16 15:44:55</td>
+                                                <td>赵明明</td>
+                                                <td>赵明明</td>
+                                                <td>咨询部跟进</td>
+                                                <td>继续投诉</td>
+                                                <td>撤销投诉</td>
+                                                <td>赵明明</td>
+                                                <td><a href="###">查看</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2017-10-15 15:22:00</td>
+                                                <td>2017-10-16 15:44:55</td>
+                                                <td>赵明明</td>
+                                                <td>赵明明</td>
+                                                <td>咨询部跟进</td>
+                                                <td>继续投诉</td>
+                                                <td>撤销投诉</td>
+                                                <td>赵明明</td>
+                                                <td><a href="###">查看</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="page-footer">
+            <p class="copyright"><span>北京高因科技有限公司</span><span>www.comjia.com</span></p>
+        </div>
+    </div>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/jquery.pin.js"></script>
+    <script src="../js/layer/layer.js"></script>
+    <script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.alter_picture').click(function() {
+                $(this).parents('tr').next('.img_cont').show();
+            })
+            $('.btn-primary').click(function() {
+                $(this).parents('.img_cont').hide()
+            })
+        })
+    </script>
+</body>
+</html>

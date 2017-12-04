@@ -1,0 +1,327 @@
+@charset "UTF-8";
+/*顶部app下载入口  2016.11.24*/
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.3333rem;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 20;
+    overflow: hidden;
+}
+.topbar .fl {
+    padding: 0.2rem 0 0 .48rem;
+}
+.topbar .ico-kan, .topbar .t-text {
+    float: left;
+    overflow: hidden;
+}
+.topbar .ico-kan {
+    width: 0.93rem;
+    height: 0.93rem;
+    margin-right: .37rem;
+    background-image: url("../images/ico-kan.png");
+}
+.topbar h4 {
+    font-size: .34rem;
+    color: #fff;
+    height: .42rem;
+    line-height: .42rem;
+    overflow: hidden;
+}
+.topbar .t-text {
+    padding-top: 0.13rem;
+}
+.topbar .t-text p {
+    font-size: .26rem;
+    color: #d1d1d1;
+    height: .32rem;
+    line-height: .32rem;
+    overflow: hidden;
+}
+.topbar .close, .topbar .app-download {
+    float: right;
+}
+.app-download {
+    margin-right: 0.42rem;
+    padding-top: 0.26rem;
+}
+.btn-donload {
+    display: block;
+    color: #fff;
+    font-size: .37rem;
+    text-align: center;
+    width: 2.66rem;
+    height: 0.8rem;
+    line-height: 0.9rem;
+    background-color: #ff6d6f;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.topbar .close, .topbar .ico-close {
+    width: 0.3rem;
+    height: 0.3rem;
+}
+.topbar .ico-close {
+    float: left;
+    cursor: pointer;
+    background-image: url("../images/ico-close.png");
+    background-size: 100% 100%;
+}
+.topbar .close {
+    margin-right: 0.34rem;
+    padding-top: 0.516rem;
+}
+.ico {
+    display: inline-block;
+    text-indent: -9999rem;
+    width: 0.5333rem;
+    height: 0.5333rem;
+    background: url("../images/special-v1.3/ico-edit.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.container {
+    padding:1.3333rem 0 1.17rem;
+}
+.container-special {
+    padding-bottom: 1.6rem;
+    background: #f4f4f4;
+}
+.row {
+    clear: both;
+    width: 10rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.row-list {
+    width: 9.5rem;
+    padding: 0.26rem 0.25rem 0;
+}
+.banner {
+    clear: both;
+    overflow: hidden;
+}
+.banner .pic {
+    width: 10rem;
+    height: 4rem;
+    overflow: hidden;
+}
+.r-list {
+    clear: both;
+    overflow: hidden;
+}
+.r-list li {
+    position: relative;
+    clear: both;
+    margin-bottom: 0.26rem;
+    padding-top: 0.14rem;
+    overflow: hidden;
+}
+.r-list li.last {
+    margin-bottom: 0;
+}
+.r-list li .house-link {
+    position: relative;
+    display: block;
+    height: 5.3rem;
+}
+.r-list li .pic {
+    width: 100%;
+    height: 5.3rem;
+    overflow: hidden;
+}
+.label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #fff;
+    width: 1.8rem;
+    height: 0.6667rem;
+    line-height: 0.6667rem;
+    background: url("../images/special-v1.3/label-sale.png") 0 0 no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+.house-info-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    color: #fff;
+    width: 100%;
+    height: 1.56rem;
+    padding: 0 0.26rem;
+    background: rgba(0,0,0,0.49);
+    overflow: hidden;
+}
+.house-info-wrap .house-info,.house-info-wrap .house-dis {
+    clear: both;
+    overflow: hidden;
+}
+.house-info-wrap .house-info {
+    height: 0.56rem;
+    line-height: 0.56rem;
+    margin-bottom: 0.1067rem;
+    padding-top: 0.1867rem;
+}
+.house-info-wrap .house-name {
+    float: left;
+    font-size: 0.4rem;
+    margin-right: 0.26rem;
+}
+.house-info-wrap .price {
+    font-size: 0.34rem;
+    color: #ff6e72;
+}
+.house-info-wrap .house-dis {
+    font-size: 0.32rem;
+    height: 0.4267rem;
+    line-height: 0.4267rem;
+}
+.ico-dis {
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url("../images/special-v1.3/ico-dis.png") 0 0 no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+.house-info-wrap .house-dis .ico-dis{
+    float: left;
+    margin: 0.0134rem 0.1rem 0 0;
+}
+.r-list li .house-link:hover {
+    text-decoration: none;
+}
+.commment {
+    clear: both;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.26rem  0.26rem 0.28rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+.commment .cons-pic,.commment .text {
+    overflow: hidden;
+}
+.commment .cons-pic,.commment .cons-pic img {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.commment .cons-pic {
+    float: left;
+    margin-right: 0.26rem;
+}
+.commment .cons-name {
+    font-size: 0.32rem;
+    color: #999;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    margin-bottom: 0.1333rem;
+    overflow: hidden;
+}
+.commment .cmt-desc {
+    font-size: 0.3733rem;
+    color: #666;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 1.0667rem;
+    line-height: 0.5333rem;
+    margin-bottom: 0.16rem;
+    overflow: hidden;
+}
+.commment .cmt-more {
+    clear: both;
+    font-size: 0.32rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    overflow: hidden;
+}
+.commment .cmt-more .date {
+    float: left;
+    color: #666;
+}
+.commment .cmt-more .more {
+    float: right;
+    color: #48b3e2;
+}
+.ico-phone2 {
+    width: 0.5333rem;
+    height: 0.5333rem;
+    background-image: url("../images/special-v1.3/ico-phone.png");
+}
+/*底部功能入口*/
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 10rem;
+}
+@media only screen and (min-width: 750px) {
+    .bottom-bar {
+        left: 50%;
+        width: 10rem;
+        margin-left: -5rem;
+    }
+}
+.bot-nav li {
+    float: left;
+    font-size: 0.42rem;
+    box-sizing: border-box;
+    width: 5rem;
+    height: 1.33rem;
+    line-height: 1.33rem;
+    overflow: hidden;
+}
+.bot-nav .ico {
+    float: left;
+    margin: 0.4rem 0.13rem 0 0;
+}
+.bot-nav li a {
+    display: block;
+    color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding-left: 1.32rem;
+    overflow: hidden;
+}
+.bot-nav li a:hover {
+    text-decoration: none;
+}
+.bot-nav li.nav-tel {
+    background: #ff6d6f;
+}
+.bot-nav li.nav-phone2 {
+    background: #48b3e2;
+}
+/*PR 报告*/
+.contaienr-pr img {
+    width: 100%;
+}
+.bot-nav li.nav-call-free {
+    font-size: 0.427rem;
+    width: 10rem;
+    height: 1.33rem;
+    line-height: 1.33rem;
+    padding-left: 2.96rem;
+    background: #48b3e2;
+}
+.bot-nav li.nav-call-free a {
+    color: #fff;
+    padding-left: 0;
+}
+.ico-phone40x40 {
+    width: 0.53rem;
+    height: 0.53rem;
+    margin: 0.41rem 0.14rem 0 0;
+    background: url("../images/ico-phone-40x40.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}

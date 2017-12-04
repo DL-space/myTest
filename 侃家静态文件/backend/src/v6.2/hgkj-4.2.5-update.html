@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>hgkj-4.2.5.html</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!--音频播放器-->
+    <link rel="stylesheet" href="../css/audioplayer.css"/>
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">成交记录</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="s1">
+                    @@include("../app/base-info/index.html")
+                </div>
+                <div class="s2">
+                    <!--导航-->
+                    <ul class="b-tab-nav">
+                        <li><a href="#">跟进记录</a></li>
+                        <li class="on"><a href="../v6.2/hkgj-zsym.html">回款跟进</a></li>
+                        <li><a href="#">成交记录</a></li>
+                    </ul>
+                    <div class="panel hgkj-4">
+                        <div class="panel-body">
+                            <div class="v-box">
+                                <div class="hd">
+                                    <h2>本次跟进记录</h2>
+                                </div>
+                                <!--联系时间／ 联系人-->
+                                <div class="v-box-title">
+                                    <!--联系时间-->
+                                    <div class="con-time">
+                                        <div class="j-ipt-area">
+                                            <label class="j-label" style="color: #888;">联系时间</label>
+                                            <div class="j-ipt-wrap">
+                                                <p class="txt">2017-11-23 09:47:41</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--联系人-->
+                                    <div class="con-name">
+                                        <div class="j-ipt-area">
+                                            <label class="j-label">联系人：</label>
+                                            <div class="j-ipt-wrap">
+                                                <div class="j-select">
+                                                    <input type="text" class="content" placeholder="请选择">
+                                                    <ul class="option">
+                                                        <li>李陶虹</li>
+                                                        <li>李陶虹2</li>
+                                                    </ul>
+                                                    <span class="ico"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bd">
+                                    <!--成交编号列表-->
+                                    <div class="cj-num-cont">
+                                        <div class="cj-list" value="li-1">
+                                            <div class="cj-lc-hd">
+                                                成交单编号： <span class="num">[BJ]CJ-10002774</span>
+                                            </div>
+                                            <div class="cj-lc-bd">
+                                                <ul class="hkzd-cont">
+                                                    <!--收齐首付-->
+                                                    <li>
+                                                        <div class="dksp">
+                                                            <div class="gj-first">本次跟进：</div>
+                                                            <span>收齐首付</span>
+                                                        </div>
+                                                        <div class="dksp-pd">
+                                                            <div class="j-ipt-area">
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-radio gjpd-s checked" data-action="disabled">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">是</span>
+                                                                    </div>
+                                                                    <div class="j-radio gjpd-f" data-action="disabled">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">否</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dksp-time1" style="display:block;">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">首付收齐时间</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-select">
+                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                        <ul class="option">
+                                                                            <li>后天</li>
+                                                                            <li>明天</li>
+                                                                        </ul>
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dksp-time2">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">预计首付收齐时间</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-select">
+                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                        <ul class="option">
+                                                                            <li>后天</li>
+                                                                            <li>明天</li>
+                                                                        </ul>
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--贷款审批通过-->
+                                                    <li>
+                                                        <div class="dksp">
+                                                            <div class="gj-first"></div>
+                                                            <span>贷款审批通过</span>
+                                                        </div>
+                                                        <div class="dksp-pd">
+                                                            <div class="j-ipt-area">
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-radio gjpd-s" data-action="disabled">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">是</span>
+                                                                    </div>
+                                                                    <div class="j-radio gjpd-f checked" data-action="disabled">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">否</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dksp-time1">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">审批通过时间</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-select">
+                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                        <ul class="option">
+                                                                            <li>后天</li>
+                                                                            <li>明天</li>
+                                                                        </ul>
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dksp-time2" style="display:block;">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">预计审批通过时间</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-select">
+                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                        <ul class="option">
+                                                                            <li>后天</li>
+                                                                            <li>明天</li>
+                                                                        </ul>
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--提交完贷款资料-->
+                                                    <li>
+                                                        <div class="dksp">
+                                                            <div class="gj-first"></div>
+                                                            <span>提交完贷款资料</span>
+                                                        </div>
+                                                        <div class="dksp-pd">
+                                                            <div class="j-ipt-area">
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-radio gjpd-s checked" data-action="disabled">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">是</span>
+                                                                    </div>
+                                                                    <div class="j-radio gjpd-f" data-action="disabled">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">否</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dksp-time1" style="display:block;">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">资料提交时间</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-select">
+                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                        <ul class="option">
+                                                                            <li>后天</li>
+                                                                            <li>明天</li>
+                                                                        </ul>
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dksp-time2">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">预计资料提交时间</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-select">
+                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                        <ul class="option">
+                                                                            <li>后天</li>
+                                                                            <li>明天</li>
+                                                                        </ul>
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--全款到账-->
+                                                    <li>
+                                                        <div class="dksp">
+                                                            <div class="gj-first"></div>
+                                                            <span>全款到账</span>
+                                                        </div>
+                                                        <div class="dksp-pd">
+                                                            <div class="j-ipt-area">
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-radio gjpd-s" data-action="disabled">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">是</span>
+                                                                    </div>
+                                                                    <div class="j-radio gjpd-f checked" data-action="disabled">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">否</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dksp-time1">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">全款到账时间</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-select">
+                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                        <ul class="option">
+                                                                            <li>后天</li>
+                                                                            <li>明天</li>
+                                                                        </ul>
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dksp-time2" style="display:block;">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">预计全款到账时间</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-select">
+                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                        <ul class="option">
+                                                                            <li>后天</li>
+                                                                            <li>明天</li>
+                                                                        </ul>
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--第一期到账-->
+                                                    <li>
+                                                        <div class="dksp">
+                                                            <div class="gj-first"></div>
+                                                            <span>第一期到账</span>
+                                                        </div>
+                                                        <div class="dksp-pd">
+                                                            <div class="j-ipt-area">
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-radio gjpd-s checked" data-action="disabled">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">是</span>
+                                                                    </div>
+                                                                    <div class="j-radio gjpd-f" data-action="disabled">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">否</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dksp-time1" style="display:block;">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">到账时间</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-select">
+                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                        <ul class="option">
+                                                                            <li>后天</li>
+                                                                            <li>明天</li>
+                                                                        </ul>
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dksp-time2">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">预计到账时间</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-select">
+                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                        <ul class="option">
+                                                                            <li>后天</li>
+                                                                            <li>明天</li>
+                                                                        </ul>
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--第二期到账-->
+                                                    <li>
+                                                        <div class="dksp">
+                                                            <div class="gj-first"></div>
+                                                            <span>第二期到账</span>
+                                                        </div>
+                                                        <div class="dksp-pd">
+                                                            <div class="j-ipt-area">
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-radio gjpd-s checked" data-action="disabled">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">是</span>
+                                                                    </div>
+                                                                    <div class="j-radio gjpd-f" data-action="disabled">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">否</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dksp-time1" style="display:block;">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">到账时间</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-select">
+                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                        <ul class="option">
+                                                                            <li>后天</li>
+                                                                            <li>明天</li>
+                                                                        </ul>
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dksp-time2">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">预计到账时间</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-select">
+                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                        <ul class="option">
+                                                                            <li>后天</li>
+                                                                            <li>明天</li>
+                                                                        </ul>
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--第三期到账-->
+                                                    <li>
+                                                        <div class="dksp">
+                                                            <div class="gj-first"></div>
+                                                            <span>第三期到账</span>
+                                                        </div>
+                                                        <div class="dksp-pd">
+                                                            <div class="j-ipt-area">
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-radio gjpd-s" data-action="disabled">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">是</span>
+                                                                    </div>
+                                                                    <div class="j-radio gjpd-f checked" data-action="disabled">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">否</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dksp-time1">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">到账时间</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-select">
+                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                        <ul class="option">
+                                                                            <li>后天</li>
+                                                                            <li>明天</li>
+                                                                        </ul>
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dksp-time2" style="display:block;">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">预计到账时间</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-select">
+                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                        <ul class="option">
+                                                                            <li>后天</li>
+                                                                            <li>明天</li>
+                                                                        </ul>
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--第四期到账-->
+                                                    <li>
+                                                        <div class="dksp">
+                                                            <div class="gj-first"></div>
+                                                            <span>第四期到账</span>
+                                                        </div>
+                                                        <div class="dksp-pd">
+                                                            <div class="j-ipt-area">
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-radio gjpd-s" data-action="disabled">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">是</span>
+                                                                    </div>
+                                                                    <div class="j-radio gjpd-f checked" data-action="disabled">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">否</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dksp-time1">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">到账时间</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-select">
+                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                        <ul class="option">
+                                                                            <li>后天</li>
+                                                                            <li>明天</li>
+                                                                        </ul>
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dksp-time2" style="display:block;">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">预计到账时间</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-select">
+                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                        <ul class="option">
+                                                                            <li>后天</li>
+                                                                            <li>明天</li>
+                                                                        </ul>
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="cj-list" value="li-2">
+                                            <div class="cj-lc-hd">
+                                                成交单编号： <span class="num">[BJ]CJ-10002774</span>
+                                            </div>
+                                            <div class="cj-lc-bd">
+                                                <ul class="hkzd-cont">
+                                                    <!--全款到账-->
+                                                    <li>
+                                                        <div class="dksp">
+                                                            <div class="gj-first">本次跟进：</div>
+                                                            <span>全款到账</span>
+                                                        </div>
+                                                        <div class="dksp-pd">
+                                                            <div class="j-ipt-area">
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-radio gjpd-s checked" data-action="disabled">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">是</span>
+                                                                    </div>
+                                                                    <div class="j-radio gjpd-f" data-action="disabled">
+                                                                        <span class="ico"></span>
+                                                                        <span class="txt">否</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dksp-time1" style="display:block;">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">全款到账时间</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-select">
+                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                        <ul class="option">
+                                                                            <li>后天</li>
+                                                                            <li>明天</li>
+                                                                        </ul>
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dksp-time2">
+                                                            <div class="j-ipt-area in-line">
+                                                                <label class="j-label">预计全款到账时间</label>
+                                                                <div class="j-ipt-wrap">
+                                                                    <div class="j-select">
+                                                                        <input type="text" class="content" placeholder="请选择">
+                                                                        <ul class="option">
+                                                                            <li>后天</li>
+                                                                            <li>明天</li>
+                                                                        </ul>
+                                                                        <span class="ico"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--已完成-->
+                                                    <li>
+                                                        <div class="ywc">
+                                                            已完成:<span>首付收齐2017-11-12</span><span>贷款资料提交2017-11-13</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--本次跟进说明-->
+                                    <div class="bcgj-sm">
+                                        <div class="j-ipt-area">
+                                            <label class="j-label">本次跟进说明</label>
+                                            <div class="j-ipt-wrap">
+                                                <textarea class="j-ipt" placeholder="请输入内容"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--提交按钮-->
+                            <div class="jyhy-btn">
+                                <div class="btn-area">
+                                    <button class="j-btn j-btn-gray">取消</button>
+                                    <button class="j-btn j-btn-blue">保存</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/iconfont.js"></script>
+<!--音频播放器-->
+<script src="../js/audioplayer.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/v5.2.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var $gjpd_s = $('.gjpd-s[data-action!="disabled"]');  //单选 左侧项
+        var $gjpd_f = $('.gjpd-f[data-action!="disabled"]');  //单选 右侧项
+        var $jhgj_list = $(".jhgj-list");
+        var $jlxjh_list_li = $('.lxjh-list').find('li:hidden');
+        var $btn_area =  $('.btn-area')
+
+        // 点击 是
+        $gjpd_s.click(function () {
+            var that = $(this);
+            // 显示对应的li
+            that.parents("li").find('.dksp-time1').show();
+            that.parents("li").find('.dksp-time2').hide();
+
+            // 找到 对应 value
+            var $dd_value = that.parents('.cj-list').attr('value');
+            // 寻找所有显示div
+            var $jhgj_list_targetli = $jhgj_list.find('li');
+            // lxjh-list
+            var $lxjh_list_li = $('.lxjh-list').find('li');
+            // 找到所有 gjpd-s
+            var $gjpd_s_all = that.parents('.hkzd-cont').find('.gjpd-s');
+            var $gjpd_s_all_checked = that.parents('.hkzd-cont').find('.gjpd-s.checked');
+
+            // 同时存在的时候 为 都选择是
+            if($gjpd_s_all_checked.length + 1 == $gjpd_s_all.length){
+                $jhgj_list_targetli.each(function () {
+                    if($(this).hasClass($dd_value)){
+                        // 隐藏对应的li
+                        $(this).hide();
+                        // 出去 对应li 的 中所有的选项
+                        $(this).find('.j-check-box').removeClass('.checked')
+                    }else {
+                        return;
+                    }
+                });
+                // 隐藏 二级联动
+                $lxjh_list_li.each(function () {
+                    if($(this).hasClass($dd_value)){
+                        // 隐藏对应的li
+                        $(this).hide()
+                    }else {
+                        return;
+                    }
+                });
+            }
+            // 判断页面全都的是 是否被点击
+            // 页面中的所有是都被点击  改变按钮文案
+            var  $gjpd_s_checked_length = $('.gjpd-s.checked').length;
+            var  $gjpd_s_length = $gjpd_s.length -1;
+            if($gjpd_s_checked_length  >=  $gjpd_s_length){
+                $('.btn-area').find('.j-btn').html('回款跟进完成')
+            }
+
+        });
+
+        // 点击 否
+        $gjpd_f.click(function () {
+            var that = $(this);
+            that.parents("li").find('.dksp-time2').show();
+            that.parents("li").find('.dksp-time1').hide();
+            // 显示对应的 id
+            // 获取对应的输入
+            // 显示对于的 订单编号 并且添加 选择否的值
+            var $dd_id = that.parents('.cj-list');
+            // 对应 value
+            var $dd_value = $dd_id.attr('value');
+            // 显示对应的class
+            var $jhgj_list_targetli = $jhgj_list.find('li:hidden');
+
+            $jhgj_list_targetli.each(function () {
+                if($(this).hasClass($dd_value)){
+                    $(this).show()
+                }else {
+                    return;
+                }
+            });
+            // 每次点击否的时候  直接改变按钮
+            $btn_area.find('.j-btn').html('提交')
+        });
+
+
+        // 计划跟进内容的 按钮点击 显示对应的 跟进成交单 联动2
+        $(document).on('click', '.jhgj-list .j-check-box',function () {
+            var that = $(this);
+            // 显示对于的 订单编号 并且添加 选择否的值
+            var $dd_id = that.parents('li');
+            // 对应 value
+            var $dd_value = $dd_id.attr('class');
+            // 显示对应的 li
+            $jlxjh_list_li.each(function () {
+                if($(this).hasClass($dd_value)){
+                    $(this).show()
+                }else {
+                    return;
+                }
+            });
+            // 全部取消时候 隐藏 lxjh-list li 没写
+
+        })
+    })
+</script>
+</body>
+</html>

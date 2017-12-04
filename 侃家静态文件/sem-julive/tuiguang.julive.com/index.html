@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <title>【北京新房开盘_北京新楼盘信息_北京楼盘】北京房产网-侃家网网</title>
+    <meta name="keywords" content="北京新楼盘,北京新房,房地产信息网">
+    <meta name="description" content="侃家网(www.comjia.com)是最贴近用户的房产信息网，针对北京新房市场痛点，为用户提供透明的新楼盘开盘信息、最新房价走势资讯和一对一定制房产咨询服务。买新房，上侃家网，牛人帮你选！">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/tuiguang.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo"><img src="images/logo.png" alt="侃家网"></div>
+        <div class="city-position city-tip"><span class="ico-pos"></span><span>北京</span></div>
+        <div class="fr">
+            <div class="hot-phone">咨询热线：<span class="phone-txt">400-613-1279</span></div>
+        </div>
+    </div>
+    <div class="header2">
+        <div class="header2-wrap">
+            <div class="search">
+                <input type="text" placeholder="请输入楼盘名称、区域、商圈" id="keywords_layer" class="ipt">
+                <button id="keywords_submit_layer" class="btn btn-search"><span class="ico ico-search"></span>我要找房</button>
+            </div>
+            <div class="hot-phone">咨询热线：<span class="phone-txt">400-613-1279</span></div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="row">
+            <!--计算器-->
+            <div class="cal">
+                <div class="price-calculator">
+                    <div class="price-calculator-set">
+                        <div class="calculator-hd">
+                            <p class="calculator-title">房贷计算器</p>
+                            <p class="calculator-title-text">选择基本情况，帮您快速计算房贷</p>
+                        </div>
+                        <div class="calculator-bd">
+                            <div class="set-item">
+                                <label class="input-text">面&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;积：</label>
+                                <div class="set-item-list price-count-set">
+                                    <input type="text" class="price-count-input calculator_price">
+                                    <span class="price-unit">m²</span>
+                                </div>
+                            </div>
+                            <div class="set-item">
+                                <label class="input-text">单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;价：</label>
+                                <div class="set-item-list price-count-set">
+                                    <input type="text" class="price-count-input calculator_price">
+                                    <span class="price-unit">万</span>
+                                </div>
+                            </div>
+                            <div class="set-item">
+                                <label class="input-text">估算总价：</label>
+                                <div class="set-item-list price-count-set">
+                                    <input type="text" class="price-count-input calculator_price">
+                                    <span class="price-unit">万</span>
+                                </div>
+                            </div>
+                            <div class="set-item">
+                                <label class="input-text" for="first-pay-per">首付成数：</label>
+                                <div class="select-wrap">
+                                    <select class="calculator_first_price" id="first-pay-per" name="">
+                                        <option value="0.1">1成</option>
+                                        <option value="0.2">2成</option>
+                                        <option value="0.3">3成</option>
+                                        <option value="0.4">4成</option>
+                                        <option value="0.5">5成</option>
+                                        <option value="0.6">6成</option>
+                                        <option value="0.7">7成</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="set-item">
+                                <label class="input-text" for="pay-type">贷款类型：</label>
+                                <div class="select-wrap">
+                                    <select class="calculator_money_type" id="pay-type" name="">
+                                        <option value="1">公积金贷款</option>
+                                        <option value="2">商业贷款(非商住)</option>
+                                        <!--<option value="3">组合贷款</option>-->
+                                    </select>
+                                </div>
+                            </div>
+                            <div style="display: none;" id="calculator_hide">
+                                <div class="set-item">
+                                    <label class="input-text">公&nbsp;&nbsp;&nbsp;&nbsp;积金：</label>
+                                    <div class="set-item-list price-count-set">
+                                        <input type="text" class="price-count-input calculator_price_gov">
+                                        <span class="price-unit">万</span>
+                                    </div>
+                                </div>
+                                <div class="set-item">
+                                    <label class="input-text">商&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;贷：</label>
+                                    <div class="set-item-list price-count-set">
+                                        <input type="text" class="price-count-input calculator_price_bus">
+                                        <span class="price-unit">万</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="set-item">
+                                <label class="input-text" for="pay-year">贷款时间：</label>
+                                <div class="select-wrap">
+                                    <select class="calculator_last_time" id="pay-year" name="">
+                                        <option value="2">2年（24期）</option>
+                                        <option value="3">3年（36期）</option>
+                                        <option value="4">4年（48期）</option>
+                                        <option value="5">5年（60期）</option>
+                                        <option value="6">6年（72期）</option>
+                                        <option value="7">7年（84期）</option>
+                                        <option value="8">8年（96期）</option>
+                                        <option value="9">9年（108期）</option>
+                                        <option value="10">10年（120期）</option>
+                                        <option value="20">20年（240期）</option>
+                                        <option value="30">30年（360期）</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator-foot calculator_back_type">
+                            <div class="payback-type-int payback-type"><i data-type="1" class="ico-choose pay-chosen"></i><span>等额本息</span></div>
+                            <div class="payback-type-corpus payback-type"><i id="average-capital" class="ico-choose" data-type="2"></i><span>等额本金</span></div>
+                        </div>
+                    </div>
+                    <div class="price-calculator-btn">
+                        <div class="calculator-btn-left calculator-btn-step">
+                        </div>
+                        <div class="calculator-btn-right calculator-btn-step">
+                        </div>
+                        <div class="calculator-btn calculator-btn-submit calculator_get_my_money">
+                            开始计算
+                        </div>
+                    </div>
+                    <div class="price-calculator-result">
+                        <div class="calculator-hd">
+                            <p class="calculator-title">您的账单</p>
+                            <p class="calculator-title-text">均价：<span class="calculator-result-num"><span class="calculator_offer_price">0.00</span>元/平米</span> 估算总价：<span class="calculator-result-num">约<span class="calculator_price_too">0.00</span>万</span></p>
+                        </div>
+                        <div class="calculator-result-item">
+                            首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;付：<span class="result-item-text"><span class="calculator_real_first_month_pay"></span></span>
+                        </div>
+                        <div class="calculator-result-item">
+                            贷款金额：<span class="result-item-text"><span class="calculator_real_money"></span>万</span>
+                        </div>
+                        <div class="calculator-result-item">
+                            偿还利息：<span class="result-item-text"><span class="calculator_real_rate_money"></span>万</span>
+                        </div>
+                        <div class="show-calculator-result">
+                            <div class="payback-type-corpus-result">
+                                <sapn class="month_pay_type">每月还款</sapn>
+                                ：<span class="payback-type-text"><span class="calculator_real_month_pay">0.00</span>元</span></div>
+                            <div class="rate-desc">*公积金年利率3.25% 商贷年利率4.9% <br>商住房贷款利率上浮10%</div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col7">
+                <div class="box">
+                    <div class="bd">
+                        <div class="house-list-box">
+                            <ul class="house-type-list">
+                                <li class="list-item spread-pro-item">
+                                    <!-- banner图 + 楼盘基本信息 -->
+                                    <div class="row project-simply-info">
+                                        <div class="media4">
+                                            <div class="media4-pic"><img src="images/spread-project-1495.jpg" alt="水色时光"></div>
+                                            <div class="media4-text2">
+                                                <div class="media4-info">
+                                                    <h4>水色时光</h4>
+                                                    <div>
+                                                        <p class="media4-price"><em>26,000</em> 元/平</p>
+                                                        <div class="media4-lb"><span class="media4-item">房源紧张</span><span class="media4-item">紧凑实用</span><span class="media4-item">临学校</span><span class="media4-item">精装修</span></div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="media4-num">已有<span class="font-color-f44336"> 186 </span>人报名看房</p>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="media4-layer">水色时光</div>
+                                        </div>
+                                    </div>
+                                    <!--优惠信息-->
+                                    <div class="discount">
+                                        <div class="tit">楼盘优惠</div>
+                                        <div class="discount-wrap">
+                                            <div class="discount-num">
+                                                <p>二居7万抵10万，三居8万抵12万，按时签约99折</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--楼盘简介-->
+                                    <div class="project-description">
+                                        <div class="project-desc">
+                                            <p class="des-tit">优势：</p>
+                                            <p>1. 精装修准现房，入住快； 2. 性价比高、稀缺性高。</p>
+                                            <p class="des-tit">劣势：</p>
+                                            <p>1.目前交通不是特别便利 2. 项目目前周边配套尚不齐全，学校目前也没有现成的规划；</p>
+                                        </div>
+                                        <div class="project-desc-header">
+                                            <div class="desc-header-img"><img src="images/img01.jpg" alt="井建钊"></div>
+                                            <p class="desc-header-name font-color-0074c1">点评咨询师：井建钊</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="inn">
+            <div class="f-nav">
+                <p class="comjia-about">
+                    <a href="about.html">关于侃家网</a><a href="contact.html">联系我们</a>
+                </p>
+                <ul class="service-online">
+                    <li class="hot-line">热线：<em>400-613-1279</em></li>
+                </ul>
+            </div>
+            <div class="f-link">
+                <div class="fr">
+                    <div class="comjia-wx"><!--<img alt="侃家公众号" src="images/img-wx.png">--></div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>北京侃家科技有限公司</p>
+                <p><a href="http://www.miitbeian.gov.cn" style="color: #999" target="_blank">京ICP备15012099号</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/tuiguang.js"></script>
+</body>
+</html>

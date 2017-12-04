@@ -1,0 +1,158 @@
+/*弹出层*/
+#v-fade {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 99;
+    -moz-opacity: 0.8;
+    opacity: .80;
+    filter: alpha(opacity=80);
+}
+/*内容容器*/
+.pic-area .v-picture {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 556px;
+    margin: -270px 0 0 -300px;
+    z-index: 100;
+}
+.v-picture .v-content {
+    position: relative;
+    width: 600px;
+    height: 556px;
+}
+.v-cha {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 20px;
+    height: 20px;
+}
+.v-cha img {
+    width: 100%;
+    display: block;
+}
+.v-zmd .v-move .v-zmd-container-ul .v-zmd-on {
+    border: 2px solid #ff0000;
+}
+.v-zmd-no {
+    opacity: .3;
+}
+/*轮播图*/
+.v-slide {
+    position: relative;
+    width: 600px;
+    height: 450px;
+    margin-bottom: 10px;
+    background: url("../images/bg-v-pic.jpg") 0 0 no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+.v-content .v-slide .v-slide-ul {
+    width: 2000000%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.v-slide-ul li {
+    float: left;
+    text-align: center;
+    width: 600px;
+    height: 450px;
+    line-height: 446px;
+    overflow: hidden;
+}
+.v-slide-ul li img {
+    vertical-align: middle;
+}
+.v-picture .v-slide-btn1 {
+    position: absolute;
+    top: 205px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    z-index: 999;
+}
+.v-picture .v-slide-btn1 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.v-picture .v-slide-btnz {
+    left: 30px;
+}
+.v-picture .v-slide-btny {
+    right: 30px;
+}
+/*走马灯*/
+.v-zmd {
+    position: relative;
+    width: 100%;
+    height: 96px;
+}
+.v-zmd-container {
+    position: relative;
+    left: 40px;
+    width: 520px;
+    height: 100%;
+    overflow: hidden;
+}
+.v-move {
+    width: 520px;
+    height: 96px;
+    position: relative;
+    left: 0;
+}
+.v-zmd ul {
+    width: 500%;
+}
+.v-content .v-zmd ul li {
+    float: left;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.dp-detail .pic-area  .v-picture .v-zmd .v-first {
+    margin: 0;
+}
+.v-content .v-zmd ul li, .v-content .v-zmd ul li img {
+    width: 96px;
+    height: 70px;
+}
+.v-content .v-zmd ul li.v-zon {
+    border: 3px solid #09f;
+}
+.v-content .v-zmd ul li.v-zon, .v-content .v-zmd ul li.v-zon img {
+    width: 90px;
+    height: 64px;
+}
+/*按钮*/
+.v-zmd-btn2 {
+    position: absolute;
+    top: 0;
+    text-indent: -9999px;
+    width: 30px;
+    height: 70px;
+    background: #fff url("../images/bg-prev.png") 7px 20px no-repeat;
+    background-color: white;
+}
+.v-zmd .v-zmd-btn2 img {
+    width: 20px;
+    height: 20px;
+}
+.v-zmd-btnz {
+    left: 0;
+}
+.v-zmd-btny {
+    right: 0;
+    background-position: -43px 20px;
+}
+.v-zno {
+    opacity: .5;
+}

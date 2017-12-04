@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>首付比例调整</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row row-crumbs">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">线索质量评分分析</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--首付比例调整-->
+                    <div class="b-box b-box-customer b-box-zlfx">
+                        <div class="hd">
+                            <h2>首付比例调整</h2>
+                        </div>
+                        <div class="bd">
+                            <!--首付比例调整列表-->
+                            <div class="tz-list">
+                                <div class="con">
+                                    <div class="btn-area"><a class="btn btn-primary" href="#">新增城市首付配置</a></div>
+                                    <div class="list-info">
+                                        <p>第1-20条，共有345条数据</p>
+                                    </div>
+                                    <div class="tz-table">
+                                        <ul class="tit">
+                                            <li class="tz1">城市</li>
+                                            <li class="tz2">业态</li>
+                                            <li class="tz3">首付比例/%</li>
+                                            <li class="tz4">操作</li>
+                                        </ul>
+                                        <ul class="con clearfix">
+                                            <li>
+                                                <div class="tz1">北京</div>
+                                                <div class="tz2">住宅</div>
+                                                <div class="tz3 cmt-edit">
+                                                    <div class="cmt-txt">5</div>
+                                                    <input class="form-control none" type="text" value="5"/>
+                                                </div>
+                                                <div class="tz4">
+                                                    <a class="link-opt link-update" href="javascript:void(0);">修改</a>
+                                                    <input type="hidden" value="0"/>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="tz1">北京</div>
+                                                <div class="tz2">非住宅</div>
+                                                <div class="tz3 cmt-edit">
+                                                    <div class="cmt-txt">3</div>
+                                                    <input class="form-control none" type="text" value="3"/>
+                                                </div>
+                                                <div class="tz4">
+                                                    <a class="link-opt link-update" href="javascript:void(0);">修改</a>
+                                                    <input type="hidden" value="0"/>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="page">
+                                        <ul class="pagination">
+                                            <li class="prev disabled"><span>«</span></li>
+                                            <li class="active"><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">6</a></li>
+                                            <li><a href="#">7</a></li>
+                                            <li><a href="#">8</a></li>
+                                            <li><a href="#">9</a></li>
+                                            <li><a href="#">10</a></li>
+                                            <li class="next"><a href="#">»</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/echarts.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/v5.3.js"></script>
+</body>
+</html>

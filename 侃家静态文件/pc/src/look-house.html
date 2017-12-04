@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>我要看房</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/look-house.css">
+</head>
+<body>
+<div class="container">
+    @@include("./app/header/header2.html")
+    <div class="center">
+        <div class="row row-search">
+            <div class="wrap">
+                @@include("./app/search/search.html")
+            </div>
+        </div>
+        <div class="row row-crumb">
+            @@include("./app/crumbs/crumb.html")
+        </div>
+        <div class="row row-top-nav">
+            @@include("./app/detail-top/index.html")
+        </div>
+        <div class="row">
+            <div class="line-banner slider">
+                <div class="content-container">
+                    <div class="content-list" style="left: 0;">
+                        <div class="list-item">
+                            <img src="images/look-house/img-step1-juli.png" alt="step1">
+                            <div class="ipt-area">
+                                <input type="text" class="ipt" value="输入您的手机号">
+                                <a href="#" class="btn btn-cons">预约看房</a>
+                                <div class="tips error-tips">您的手机号输入有误，请重新输入</div>
+                                <div class="tips right-tips">预约成功，咨询师会马上联系您</div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <img src="images/look-house/img-step2-juli.png" alt="step2">
+                            <div class="ipt-area">
+                                <input type="text" class="ipt" value="输入您的手机号">
+                                <a href="#" class="btn btn-cons">预约看房</a>
+                                <div class="tips error-tips">您的手机号输入有误，请重新输入</div>
+                                <div class="tips right-tips">预约成功，咨询师会马上联系您</div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <img src="images/look-house/img-step3-juli.png" alt="step3">
+                            <div class="ipt-area">
+                                <input type="text" class="ipt" value="输入您的手机号">
+                                <a href="#" class="btn btn-cons">预约看房</a>
+                                <div class="tips error-tips">您的手机号输入有误，请重新输入</div>
+                                <div class="tips right-tips">预约成功，咨询师会马上联系您</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="order-btn btn-pre btn-hover"></button>
+                <button class="order-btn btn-next btn-hover"></button>
+            </div>
+        </div>
+    </div>
+    @@include("./app/footer/footer.html")
+    @@include("./app/sidebar/sidebar.html")
+    @@include("./app/app-download/app-download.html")
+</div>
+<script src="./js/lib/jquery/jquery-1.9.1.min.js"></script>
+<script src="./js/lib/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/look-house.js"></script>
+</body>
+</html>

@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>员工信息修改</title>
+    <link rel="stylesheet" href="../css/hr.css">
+</head>
+<body>
+<div class="container container-emp">
+    <div class="header">
+        <div class="link-o-list"><a href="#"><span class="icon icon-businesscard"></span></a></div>
+        <h2>小秘密--测试城市</h2>
+        <div class="close"><a href="#"><span class="icon icon-close"></span></a></div>
+    </div>
+    <div class="center center-s">
+        <div class="major-content">
+            <div class="content">
+                <div class="row row-tab">
+                    <ul class="tab">
+                        <li class="active">
+                            <a href="#">个人信息</a>
+                        </li>
+                        <li>
+                            <a href="gw.html">岗位信息</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row row-yg-info">
+                    <div class="yg-info">
+                        <div class="pic-area">
+                            <div class="ipt-area ipt-file-area">
+                                <div class="ipt-file">
+                                    <input type="file" class="input-file">
+                                    <button class="btn btn-file btn-add-file">+</button>
+                                </div>
+                            </div>
+                            <!--<div class="ipt-file">
+                                <img src="../images/hr/face.jpg" alt="" class="face btn-file">
+                                <input type="file" class="input-file">
+                            </div>-->
+                        </div>
+                        <div class="info-detail">
+                            <div class="tr">
+                                <div class="col-45">
+                                    <div class="form-item">
+                                        <div class="title required">姓名</div>
+                                        <div class="con">
+                                            <div class="ipt-area">
+                                                <input type="text" class="ipt" value="小秘密">
+                                                <p class="error-msg">不能为空!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-45">
+                                    <div class="form-item">
+                                        <div class="title">性别</div>
+                                        <div class="con">
+                                            <div class="ipt-area">
+                                                <select class="ipt">
+                                                    <option value="0">请选择</option>
+                                                    <option value="男">男</option>
+                                                    <option value="女">女</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="col-45">
+                                    <div class="form-item">
+                                        <div class="title required">手机</div>
+                                        <div class="con">
+                                            <div class="ipt-area">
+                                                <input type="text" class="ipt" value="13931567889">
+                                                <p class="error-msg">不能为空!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-45">
+                                    <div class="form-item">
+                                        <div class="title">出生日期</div>
+                                        <div class="con">
+                                            <div class="ipt-area">
+                                                <input type="text" class="ipt" value="1987-09-07">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="col-45">
+                                    <div class="form-item">
+                                        <div class="title">最高学历</div>
+                                        <div class="con">
+                                            <div class="ipt-area">
+                                                <div class="ipt-area">
+                                                    <select class="ipt">
+                                                        <option value="0">请选择</option>
+                                                        <option value="初中">初中</option>
+                                                        <option value="高中">高中</option>
+                                                        <option value="大专">大专</option>
+                                                        <option value="本科">本科</option>
+                                                        <option value="硕士">硕士</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-form">
+                    <div class="form-area">
+                        <div class="form-block">
+                            <div class="form-item">
+                                <div class="title">国家/地区</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <select class="ipt">
+                                            <option value="0">大陆</option>
+                                            <option value="1">港澳台及国外</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">证件选择</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <select class="ipt">
+                                            <option value="0">身份证</option>
+                                            <option value="1">护照</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">证件编号</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" value="123456789012345678">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对证件号码</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">证件照</div>
+                                <div class="con">
+                                    <div class="ipt-area ipt-file-area">
+                                        <div class="ipt-file">
+                                            <input type="file" class="input-file">
+                                            <button class="btn btn-file btn-add-file">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="ipt-area ipt-file-area">
+                                        <div class="ipt-file">
+                                            <input type="file" class="input-file">
+                                            <button class="btn btn-file btn-add-file">+</button>
+                                        </div>
+                                        <div class="msg">图片格式为JPG/JPEG/PNG/PDF大小在2MB内</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">民族</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" value="汉族">
+                                        <span class="icon icon-edit"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">英文名</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-20位字符">
+                                        <span class="icon icon-edit"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">婚姻状况</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <select class="ipt">
+                                            <option value="0">请选择</option>
+                                            <option value="1">已婚</option>
+                                            <option value="2">未婚</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">生日</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" value="0704">
+                                        <span class="icon icon-calendar"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">属相</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <select class="ipt">
+                                            <option value="0">请选择</option>
+                                            <option value="1">鼠</option>
+                                            <option value="2" selected>牛</option>
+                                            <option value="2">虎</option>
+                                            <option value="2">兔</option>
+                                            <option value="2">龙</option>
+                                            <option value="2">蛇</option>
+                                            <option value="2">马</option>
+                                            <option value="2">羊</option>
+                                            <option value="2">猴</option>
+                                            <option value="2">鸡</option>
+                                            <option value="2">狗</option>
+                                            <option value="2">猪</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">年龄</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" value="23" readonly="readonly">
+                                        <span class="icon icon-edit"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">星座</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <select class="ipt" readonly="readonly">
+                                            <option value="0">请选择</option>
+                                            <option value="1">白羊座</option>
+                                            <option value="2">金牛座</option>
+                                            <option value="3" selected>双子座</option>
+                                            <option value="4">巨蟹座</option>
+                                            <option value="5">狮子座</option>
+                                            <option value="6">处女座</option>
+                                            <option value="7">天枰座</option>
+                                            <option value="8">天蝎座</option>
+                                            <option value="9">射手座</option>
+                                            <option value="10">摩羯座</option>
+                                            <option value="11">水瓶座</option>
+                                            <option value="12">双鱼座</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">血型</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <select class="ipt">
+                                            <option value="0">请选择</option>
+                                            <option value="1">A型</option>
+                                            <option value="2">B型</option>
+                                            <option value="3">AB型</option>
+                                            <option value="4">O型</option>
+                                            <option value="5">其他血型</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">户籍所在地</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-40位字符">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">政治面貌</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-10位字符">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">入党时间</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt">
+                                        <span class="icon icon-calendar"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">存档机构</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-50位字符">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">子女状态</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-50位字符">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">子女有无商业保险</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <select class="ipt">
+                                            <option value="0">请选择</option>
+                                            <option value="1">有</option>
+                                            <option value="2">无</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">有无违法违纪行为</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-50位字符">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">有无重大病史</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-50位字符">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">是否有外调意愿</div>
+                                <div class="con">
+                                    <div class="ipt-area ipt-radio">
+                                        <div class="radio-item">
+                                            <input type="radio" name="wd">有意愿
+                                        </div>
+                                        <div class="radio-item">
+                                            <input type="radio" name="wd">无意愿
+                                        </div>
+                                        <div class="radio-item">
+                                            <input type="radio" name="wd">不清楚
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">兴趣爱好</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-50位字符">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">擅长方面</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <select class="ipt">
+                                            <option value="0">请选择</option>
+                                            <option value="1">大兴区域分析</option>
+                                            <option value="2">户型分析</option>
+                                            <option value="3">风水分析</option>
+                                            <option value="4">投资分析</option>
+                                            <option value="5">瘦身方法</option>
+                                            <option value="6">其他</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-block">
+                            <div class="form-item">
+                                <div class="title">QQ</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-15位字符">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">微信</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-30位字符">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">居住证城市</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt">
+                                        <span class="icon icon-position"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">居住证办理日期</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt">
+                                        <span class="icon icon-calendar"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">居住证截止日期</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt">
+                                        <span class="icon icon-calendar"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">现居住地</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-40位字符">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">通讯地址</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-40位字符">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">备用联系方式</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="11位正规手机号">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">个人邮箱</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="正规邮箱地址">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">紧急联系人</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-50位字符">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">与本人关系</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <select class="ipt">
+                                            <option value="0">请选择</option>
+                                            <option value="1">家人</option>
+                                            <option value="2">朋友</option>
+                                            <option value="3">同学</option>
+                                            <option value="4">其他</option>
+                                        </select>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">紧急联系电话</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-20位字符">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-block">
+                            <div class="form-item">
+                                <div class="title">社保电脑号</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">公积金账号</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">银行卡号</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="12-20位数字">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请输入正确银行卡号!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">开户行</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="请具体到支行">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-block">
+                            <div class="form-item">
+                                <div class="title">学历类型</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <select class="ipt">
+                                            <option value="0">请选择</option>
+                                            <option value="1">统招</option>
+                                            <option value="2">自考</option>
+                                            <option value="3">成考</option>
+                                            <option value="4">其他</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">毕业学校</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-50位字符">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">入学时间</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt">
+                                        <span class="icon icon-calendar"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">毕业时间</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt">
+                                        <span class="icon icon-calendar"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">专业</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-50位字符">
+                                        <span class="icon icon-edit"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">毕业证书</div>
+                                <div class="con">
+                                    <div class="ipt-area ipt-file-area">
+                                        <div class="ipt-file">
+                                            <input type="file" class="input-file">
+                                            <button class="btn btn-file btn-add-file">+</button>
+                                        </div>
+                                        <div class="msg">图片格式为JPG/JPEG/PNG/PDF大小在2MB内</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">学位证书</div>
+                                <div class="con">
+                                    <div class="ipt-area ipt-file-area">
+                                        <div class="ipt-file">
+                                            <input type="file" class="input-file">
+                                            <button class="btn btn-file btn-add-file">+</button>
+                                        </div>
+                                        <div class="msg">图片格式为JPG/JPEG/PNG/PDF大小在2MB内</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-block">
+                            <div class="form-item">
+                                <div class="title">最后受聘公司</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-50位字符">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">上家公司</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-50位字符">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">职称</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" placeholder="1-50位字符">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">简历</div>
+                                <div class="con">
+                                    <div class="ipt-area ipt-file-area">
+                                        <div class="ipt-file">
+                                            <input type="file" class="input-file">
+                                            <button class="btn btn-file">上传附件</button>
+                                        </div>
+                                        <div class="msg">文件格式为DOC/DOCX/XLS/XLSX/PDF/ZIP/RAR 大小在2M</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">有无竞业限制</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <textarea class="ipt ipt-textarea"></textarea>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">备注</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <textarea class="ipt ipt-textarea" placeholder="1-300位字符"></textarea>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-block">
+                            <div class="form-item">
+                                <div class="title">合同归属</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <select class="ipt">
+                                            <option value="0">请选择</option>
+                                            <option value="1" selected>高因</option>
+                                            <option value="2">侃家</option>
+                                        </select>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">社保及公积金归属</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <select class="ipt">
+                                            <option value="0">请选择</option>
+                                            <option value="1" selected>高因</option>
+                                            <option value="2">侃家</option>
+                                        </select>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">籍贯地址</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" value="吉林">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="title">新最高学历</div>
+                                <div class="con">
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" value="本科">
+                                        <span class="icon icon-edit"></span>
+                                        <p class="error-msg" >请核对输入!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="scroll-bar">
+                        <li class="active">
+                            <a href="javascript:void(0)">基本信息</a>
+                            <span class="circle"></span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">通讯信息</a>
+                            <span class="circle"></span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">账号信息</a>
+                            <span class="circle"></span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">教育信息</a>
+                            <span class="circle"></span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">从业信息</a>
+                            <span class="circle"></span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">自定义信息</a>
+                            <span class="circle"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right-content">
+            <!--成长记录-->
+            <div class="growth-history">
+                <div class="hd">
+                    <h2>个人成长记录</h2>
+                </div>
+                <div class="bd">
+                    <div class="time-line">
+                        <div class="feed-item">
+                            <div class="time-point">2017/08/16</div>
+                            <div class="point"></div>
+                            <div class="feed-content">
+                                <h4>员工部门调整</h4>
+                                <p>由<em>董事长</em>调整为<em>CEO</em></p>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="time-point">2017/08/15</div>
+                            <div class="point"></div>
+                            <div class="feed-content">
+                                <h4>员工岗位调整</h4>
+                                <p>由<em>CEO</em>调整为<em>董事长</em></p>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="time-point">2017/08/14</div>
+                            <div class="point"></div>
+                            <div class="feed-content">
+                                <h4>员工部门录入完成</h4>
+                                <p>部门为总裁办</p>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="time-point">2017/08/16</div>
+                            <div class="point"></div>
+                            <div class="feed-content">
+                                <h4>员工部门调整</h4>
+                                <p>由<em>董事长</em>调整为<em>CEO</em></p>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="time-point">2017/08/15</div>
+                            <div class="point"></div>
+                            <div class="feed-content">
+                                <h4>员工岗位调整</h4>
+                                <p>由<em>CEO</em>调整为<em>董事长</em></p>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="time-point">2017/08/14</div>
+                            <div class="point"></div>
+                            <div class="feed-content">
+                                <h4>员工部门录入完成</h4>
+                                <p>部门为总裁办</p>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="time-point">2017/08/16</div>
+                            <div class="point"></div>
+                            <div class="feed-content">
+                                <h4>员工部门调整</h4>
+                                <p>由<em>董事长</em>调整为<em>CEO</em></p>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="time-point">2017/08/15</div>
+                            <div class="point"></div>
+                            <div class="feed-content">
+                                <h4>员工岗位调整</h4>
+                                <p>由<em>CEO</em>调整为<em>董事长</em></p>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="time-point">2017/08/14</div>
+                            <div class="point"></div>
+                            <div class="feed-content">
+                                <h4>员工部门录入完成</h4>
+                                <p>部门为总裁办</p>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="time-point">2017/08/16</div>
+                            <div class="point"></div>
+                            <div class="feed-content">
+                                <h4>员工部门调整</h4>
+                                <p>由<em>董事长</em>调整为<em>CEO</em></p>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="time-point">2017/08/15</div>
+                            <div class="point"></div>
+                            <div class="feed-content">
+                                <h4>员工岗位调整</h4>
+                                <p>由<em>CEO</em>调整为<em>董事长</em></p>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="time-point">2017/08/14</div>
+                            <div class="point"></div>
+                            <div class="feed-content">
+                                <h4>员工部门录入完成</h4>
+                                <p>部门为总裁办</p>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="time-point">2017/08/16</div>
+                            <div class="point"></div>
+                            <div class="feed-content">
+                                <h4>员工部门调整</h4>
+                                <p>由<em>董事长</em>调整为<em>CEO</em></p>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="time-point">2017/08/15</div>
+                            <div class="point"></div>
+                            <div class="feed-content">
+                                <h4>员工岗位调整</h4>
+                                <p>由<em>CEO</em>调整为<em>董事长</em></p>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="time-point">2017/08/14</div>
+                            <div class="point"></div>
+                            <div class="feed-content">
+                                <h4>员工部门录入完成</h4>
+                                <p>部门为总裁办</p>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="time-point">2017/08/16</div>
+                            <div class="point"></div>
+                            <div class="feed-content">
+                                <h4>员工部门调整</h4>
+                                <p>由<em>董事长</em>调整为<em>CEO</em></p>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="time-point">2017/08/15</div>
+                            <div class="point"></div>
+                            <div class="feed-content">
+                                <h4>员工岗位调整</h4>
+                                <p>由<em>CEO</em>调整为<em>董事长</em></p>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="time-point">2017/08/14</div>
+                            <div class="point"></div>
+                            <div class="feed-content">
+                                <h4>员工部门录入完成－1</h4>
+                                <p>部门为总裁办－1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer footer-fixed">
+        <div class="btn-area">
+            <button class="btn btn-info">保存更新</button>
+            <button class="btn btn-default">关闭</button>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/hr/hr-ui.js"></script>
+<script src="../js/hr/hr-v1.0.js"></script>
+</body>
+</html>

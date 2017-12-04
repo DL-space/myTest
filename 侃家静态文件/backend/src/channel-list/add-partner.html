@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>新增合作方</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/footer/footer.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row row-crumbs">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">签约信息</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--新增合作方-->
+                    <div class="panel panel-bd-partner">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">新增合作方</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body form-mod-single">
+                            <ul class="form-mod">
+                                <li>
+                                    <div class="th">城市：</div>
+                                    <div class="td">
+                                        <select class="form-control">
+                                            <option value="0">请选择</option>
+                                            <option value="1">北京</option>
+                                            <option value="2">上海</option>
+                                            <option value="3">天津</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">合作方名称：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="btn-area">
+                                <button class="btn btn-primary">更新</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/bd.js"></script>
+</body>
+</html>

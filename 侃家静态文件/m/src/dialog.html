@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹层</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="./css/module-new.css">
+</head>
+<body>
+<button class="btn btn-find btn-kp">开盘通知</button>
+<button class="btn btn-find btn-jgbd">价格变动</button>
+<button class="btn btn-find btn-dt">楼盘动态</button>
+<button class="btn btn-find btn-tjcg">提交成功</button>
+<button class="btn btn-find btn-dy">订阅最新情报</button>
+<button class="btn btn-find btn-dycg">订阅最新情报成功</button>
+<button class="btn btn-find btn-lqyh">领取优惠</button>
+<button class="btn btn-find btn-lqyhfk">领取优惠反馈</button>
+<button class="btn btn-find btn-login">手机快捷登录</button>
+<!--开盘通知-->
+<div class="dialog-kp">
+    <div class="dialog6">
+        <div class="dialog-bd">
+            <div class="title">订阅楼盘开盘通知</div>
+            <p class="text">楼盘总是悄无声息的开盘？一键订阅，让你抢占买房先机！</p>
+            <input class="ipt" type="text" placeholder="请输入订阅手机号"/>
+
+            <div class="error-tips"><span>请输入正确的手机号码</span></div>
+            <div class="btn-area">
+                <button class="btn btn-find" disabled>确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--价格变动通知-->
+<div class="dialog-jgbd">
+    <div class="dialog6">
+        <div class="dialog-bd">
+            <div class="title">订阅价格变动通知</div>
+            <p class="text">价格变动这么快？！订阅价格变动通知，涨价降价我们将第一时间通知您，帮你找准买房最佳时机！</p>
+            <input class="ipt" type="text" placeholder="请输入订阅手机号"/>
+
+            <div class="error-tips"><span>请输入正确的手机号码</span></div>
+            <div class="btn-area">
+                <button class="btn btn-find" disabled>确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--楼盘动态-->
+<div class="dialog-dt">
+    <div class="dialog6">
+        <div class="dialog-bd">
+            <div class="title">订阅最新楼盘动态</div>
+            <p class="text">房源变动太频繁，一键订阅楼盘动态，限时折扣、特价房、房源变动我们将第一时间通知您！</p>
+            <input class="ipt" type="text" placeholder="请输入订阅手机号"/>
+
+            <div class="error-tips"><span>请输入正确的手机号码</span></div>
+            <div class="btn-area">
+                <button class="btn btn-find" disabled>确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--提交成功-->
+<div class="dialog-tjcg">
+    <div class="dialog6">
+        <div class="dialog-bd">
+            <span class="ico-success"></span>
+
+            <div class="title">订阅成功</div>
+            <p class="text-imp">填写详细购房需求，将有咨询师为您推荐更多符合需求的楼盘～</p>
+
+            <div class="look-house">
+                <p class="look-house-msg">您还可以填写需求，让咨询师提前为您准备</p>
+
+                <div class="tr">
+                    <div class="input-area">
+                        <span class="ico-triangle"></span>
+
+                        <div class="ipt">您购房总价预算</div>
+                        <ul class="dropdown-list">
+                            <li>500万</li>
+                            <li>1000万</li>
+                            <li>1500万</li>
+                            <li>2000万</li>
+                            <li>2500万</li>
+                            <li>3000万</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tr">
+                    <div class="input-area">
+                        <span class="ico-triangle"></span>
+
+                        <div class="ipt">您购房的目标区域</div>
+                        <ul class="dropdown-list">
+                            <li>朝阳区</li>
+                            <li>通州区</li>
+                            <li>东城区</li>
+                            <li>西城区</li>
+                            <li>海淀区</li>
+                            <li>怀柔区</li>
+                            <li>大兴区</li>
+                            <li>房山区</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-area">
+                <button class="btn btn-find">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--订阅最新情报-->
+<div class="dialog-dy">
+    <div class="dialog6">
+        <div class="dialog-bd">
+            <div class="title">订阅最新情报</div>
+            <p class="text">想要获取第一手房源动态？想要掌握最新的政策变动？订阅最新情报，帮你锁定最佳买房时机！</p>
+            <input class="ipt" type="text" placeholder="请输入订阅手机号"/>
+
+            <div class="error-tips"><span>请输入正确的手机号码</span></div>
+            <div class="btn-area">
+                <button class="btn btn-find" disabled>确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--订阅最新情报成功-->
+<div class="dialog-dycg">
+    <div class="dialog6">
+        <div class="dialog-bd">
+            <span class="ico-success"></span>
+
+            <div class="title">订阅成功</div>
+            <p class="text-imp">填写详细购房需求，将有咨询师为您推荐更多符合需求的楼盘～</p>
+
+            <div class="look-house">
+                <p class="look-house-msg">您还可以填写需求，让咨询师提前为您准备</p>
+
+                <div class="tr">
+                    <div class="input-area">
+                        <span class="ico-triangle"></span>
+
+                        <div class="ipt">您购房总价预算</div>
+                        <ul class="dropdown-list">
+                            <li>500万</li>
+                            <li>1000万</li>
+                            <li>1500万</li>
+                            <li>2000万</li>
+                            <li>2500万</li>
+                            <li>3000万</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tr">
+                    <div class="input-area">
+                        <span class="ico-triangle"></span>
+
+                        <div class="ipt">您购房的目标区域</div>
+                        <ul class="dropdown-list">
+                            <li>朝阳区</li>
+                            <li>通州区</li>
+                            <li>东城区</li>
+                            <li>西城区</li>
+                            <li>海淀区</li>
+                            <li>怀柔区</li>
+                            <li>大兴区</li>
+                            <li>房山区</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-area">
+                <button class="btn btn-find">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--领取优惠-->
+<div class="dialog-lqyh">
+    <div class="dialog8">
+        <div class="dialog-hd">
+            <div class="title red-number" data-value="9256">
+                已有<b></b>人领取成功
+            </div>
+        </div>
+        <div class="dialog-bd">
+            <p class="text-imp">抢楼盘限时优惠！折扣优惠将与您的手机号绑定</p>
+            <input class="ipt" type="text" placeholder="请输入手机号"/>
+
+            <div class="error-tips"><span>请输入正确的手机号码</span></div>
+            <div class="btn-area">
+                <button class="btn btn-find" disabled>抢优惠</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--领取优惠反馈--->
+<div class="dialog-lqyhfk">
+    <div class="dialog6 dialog8 dialog9">
+        <div class="dialog-hd">
+            <p>恭喜您</p>
+
+            <div class="title">获得绿地海珀云翡的限时优惠</div>
+        </div>
+        <div class="dialog-bd dialog-bd-fk">
+            <p class="text-imp">填写详细购房需求，将有咨询师为您推荐更多符合需求的楼盘～</p>
+
+            <div class="look-house">
+                <p class="look-house-msg">您还可以填写需求，让咨询师提前为您准备</p>
+
+                <div class="tr">
+                    <div class="input-area">
+                        <span class="ico-triangle"></span>
+
+                        <div class="ipt">您购房总价预算</div>
+                        <ul class="dropdown-list">
+                            <li>500万</li>
+                            <li>1000万</li>
+                            <li>1500万</li>
+                            <li>2000万</li>
+                            <li>2500万</li>
+                            <li>3000万</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tr">
+                    <div class="input-area">
+                        <span class="ico-triangle"></span>
+
+                        <div class="ipt">您购房的目标区域</div>
+                        <ul class="dropdown-list">
+                            <li>朝阳区</li>
+                            <li>通州区</li>
+                            <li>东城区</li>
+                            <li>西城区</li>
+                            <li>海淀区</li>
+                            <li>怀柔区</li>
+                            <li>大兴区</li>
+                            <li>房山区</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-area">
+                <button class="btn btn-find">完成</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--手机快捷登录-->
+<div class="dialog-login">
+    <div class="dialog6 dialog-login">
+        <div class="dialog-bd">
+            <div class="title">手机快捷登录</div>
+            <p class="text">未注册过的手机号将自动注册为居理新房账号；咨询师不会看到您的</p>
+            <ul class="form-area">
+                <li>
+                    <input class="ipt ipt-mobile" type="text" placeholder=" 请输入手机号码"/>
+                </li>
+                <li class="v-code">
+                    <input class="ipt ipt-ecode" type="text" placeholder="请输入验证码"/>
+                    <button class="btn-get">获取验证码</button>
+                </li>
+                <div class="error-tips"><span>请输入正确的手机号码</span></div>
+                <div class="btn-area">
+                    <button class="btn btn-find" disabled>登录</button>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="js/lib/jquery-2.1.4.min.js"></script>
+<script src="js/lib/layer/layer.js"></script>
+<script>
+    $(".btn-kp").click(function () {
+        showDialog(1, $(".dialog-kp").html());
+    });
+    $(".btn-jgbd").click(function () {
+        showDialog(1, $(".dialog-jgbd").html());
+    });
+    $(".btn-dt").click(function () {
+        showDialog(1, $(".dialog-dt").html());
+    });
+    $(".btn-tjcg").click(function () {
+        showDialog(1, $(".dialog-tjcg").html(), selectMoreCondition);
+    });
+    $(".btn-dy").click(function () {
+        showDialog(1, $(".dialog-dy").html(), selectMoreCondition);
+    });
+    $(".btn-dycg").click(function () {
+        showDialog(1, $(".dialog-dycg").html(), selectMoreCondition);
+    });
+    $(".btn-lqyh").click(function () {
+        showDialog(1, $(".dialog-lqyh").html(), selectMoreCondition);
+    });
+    $(".btn-lqyhfk").click(function () {
+        showDialog(1, $(".dialog-lqyhfk").html(), selectMoreCondition);
+    });
+    /*手机快捷登录*/
+    $(".btn-login").click(function () {
+        showDialog(1, $(".dialog-login").html());
+    });
+    /**
+     * 弹层
+     * @param type number 弹层类型 1:弹出层
+     * @param content string 弹层内容
+     * @param callback function 弹层回调函数
+     */
+    function showDialog(type, content, callback) {
+        closeDialog();
+        layer.open({
+            type: type,
+            title: false,
+            closeBtn: false,
+            shade: 0.6,
+            area: ['auto', 'auto'],
+            shadeClose: true,
+            content: content,
+            success: function () {
+                $(document).on("click", ".dialog-close,.close-dialog", function () {
+                    closeDialog();
+                });
+                if (typeof callback === "function") {
+                    callback();
+                }
+            }
+        });
+    }
+    //关闭弹层
+    function closeDialog() {
+        layer.closeAll();
+    }
+    $(document).on("input", ".dialog6 input.ipt", function() {
+        var iptLength = $(this).val().toString().length;
+        if (iptLength >= 1) {
+            $(this).siblings(".btn-area").children(".btn-find").attr("disabled", false);
+            $(this).parents('.form-area').find(".btn-find").attr("disabled", false)
+        } else {
+            $(this).siblings(".btn-area").children(".btn-find").attr("disabled", true);
+            $(this).parents('.form-area').find(".btn-find").attr("disabled", true)
+        }
+    });
+    /*下拉框*/
+    function selectMoreCondition() {
+        $(".look-house .input-area").each(function () {
+            var _item = $(this);
+            var _ipt = _item.children(".ipt");
+            _ipt.click(function () {
+                if (_ipt.next(".dropdown-list").is(":hidden")) {
+                    _ipt.next(".dropdown-list").stop().slideDown();
+                    _ipt.parents(".input-area").parents(".tr").addClass("on");
+                    _ipt.parents(".input-area").parents(".tr").siblings().removeClass('on');
+                    _ipt.parents(".input-area").parents(".tr").siblings().find(".dropdown-list").slideUp("fast");
+                    _ipt.next(".dropdown-list").children("li").click(function () {
+                        var defaultValue = _ipt.next(".dropdown-list").children("li:first").text();
+                        _ipt.parents(".input-area").parents(".tr").removeClass("on");
+                        _ipt.text($(this).text());
+                        var dataCapture = $(this).attr("data-capture");
+                        var dataKey = $(this).parents(".dropdown-list").prev(".ipt").attr("data-key");
+                        switch (dataKey) {
+                            case 'area':
+                                _ipt.attr('data-area', dataCapture);
+                                break;
+                            case 'budget':
+                                _ipt.attr('data-budget', dataCapture);
+                                break;
+                            case 'house':
+                                _ipt.attr('data-house', dataCapture);
+                                break;
+                            case 'size':
+                                _ipt.attr('data-size', dataCapture);
+                                break;
+                        }
+                        if (_ipt.text() == defaultValue) {
+                            _ipt.css({
+                                color: "#999"
+                            });
+                        } else {
+                            _ipt.css({
+                                color: "#333"
+                            });
+                        }
+                        $(this).parents(".dropdown-list").slideUp("fast");
+                    });
+                } else if (_ipt.next(".dropdown-list").is(":visible")) {
+                    $(".dropdown-list").slideUp("fast");
+                    _ipt.parents(".input-area").parents(".tr").removeClass("on");
+                }
+            });
+
+        });
+    }
+
+    /*字符串解析*/
+    var number_html = '';
+    var $value = $('.red-number').attr("data-value");
+    for (i = 0; i < $value.length; i++) {
+        number_html += '<span>' + $value.charAt(i) + '</span>';
+    }
+    $('.red-number b').append(number_html)
+</script>
+</body>
+</html>

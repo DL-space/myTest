@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>增加员工</title>
+    <link rel="stylesheet" href="../css/hr.css">
+</head>
+<body>
+<div class="container container-emp">
+    <div class="header">
+        <div class="link-o-list"><a href="#"><span class="icon icon-businesscard"></span></a></div>
+        <h2>添加员工</h2>
+        <div class="close"><a href="#"><span class="icon icon-close"></span></a></div>
+    </div>
+    <div class="center">
+        <div class="row row-tab">
+            <ul class="tab">
+                <li class="active">
+                    <a href="#">添加员工</a>
+                </li>
+            </ul>
+        </div>
+        <div class="row add-employee">
+            <div class="special-msg"><span class="icon icon-warn"></span>工资设定后不可更改，调整请使用调薪功能。员工绑定微信后，可以完善员工个人信息，进行打卡、请假等操作。</div>
+            <div class="form-area">
+                <div class="form-item">
+                    <div class="title required">姓名</div>
+                    <div class="con">
+                        <div class="ipt-area">
+                            <input type="text" class="ipt error" placeholder="1-30个字符">
+                            <span class="icon icon-edit"></span>
+                            <p class="error-msg">不能为空!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title required">手机</div>
+                    <div class="con">
+                        <div class="ipt-area">
+                            <input type="text" class="ipt" placeholder="11位正规手机号">
+                            <span class="icon icon-edit"></span>
+                            <p class="error-msg"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title required">入职日期</div>
+                    <div class="con">
+                        <div class="ipt-area">
+                            <input type="text" class="ipt" placeholder="选择日期">
+                            <span class="icon icon-calendar"></span>
+                            <p class="error-msg"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title required">聘用形式</div>
+                    <div class="con">
+                        <div class="ipt-area select-pyxs">
+                            <select class="ipt">
+                                <option value="0">正式</option>
+                                <option value="1">非正式</option>
+                            </select>
+                            <p class="error-msg"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item fzspy">
+                    <div class="title required">非正式类型</div>
+                    <div class="con">
+                        <div class="ipt-area">
+                            <select class="ipt">
+                                <option value="0">实习</option>
+                                <option value="1">劳务</option>
+                                <option value="2">返聘</option>
+                                <option value="3">顾问</option>
+                            </select>
+                            <p class="error-msg"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title required">部门</div>
+                    <div class="con">
+                        <div class="ipt-area">
+                            <input type="text" class="ipt" placeholder='请在"组织架构"处设置部门'>
+                            <span class="icon icon-edit"></span>
+                            <p class="error-msg"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title">管理形式</div>
+                    <div class="con">
+                        <div class="ipt-area">
+                            <select class="ipt">
+                                <option value="0">请选择</option>
+                            </select>
+                            <p class="error-msg"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title required">工作城市</div>
+                    <div class="con">
+                        <div class="ipt-area">
+                            <input type="text" class="ipt" placeholder="请输入要搜索的城市">
+                            <span class="icon icon-edit"></span>
+                            <p class="error-msg"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title required">转正时间</div>
+                    <div class="con">
+                        <div class="ipt-area">
+                            <input type="text" class="ipt" placeholder="选择日期">
+                            <span class="icon icon-calendar"></span>
+                            <p class="error-msg"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title">发送绑定通知短信</div>
+                    <div class="con">
+                        <div class="switch-container msg-checked">
+                            <div class="switch-lb">
+                                <span class="switch-btn"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer footer-fixed">
+        <div class="btn-area">
+            <button class="btn btn-info">提交</button>
+            <button class="btn btn-default">关闭</button>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/hr/hr-ui.js"></script>
+<script src="../js/hr/hr-v1.0.js"></script>
+</body>
+</html>

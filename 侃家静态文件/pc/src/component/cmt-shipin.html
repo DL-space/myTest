@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>组件－视频</title>
+    <link rel="stylesheet" href="../../dist/css/common.css">
+    <link rel="stylesheet" href="../css/component/component.css">
+</head>
+<body>
+    <!--视频组件-->
+    <div class="cmt cmt-video">
+        <ul class="play">
+            <li class="feed-video" data-url="http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4">
+                <img src="./images/img-house2.jpg" alt=""/>
+                <span class="ico ico-video">视频</span>
+            </li>
+        </ul>
+    </div>
+    <!--弹出层遮罩-->
+    <div id="fade"></div>
+    <div id="picture">
+        <div id="middle">
+            <!--图片大小自适应的-->
+            <img class="img" src="" alt="">
+
+            <div id="video"></div>
+            <div>
+                <img class="cha" src="images/cha.png" alt="">
+            </div>
+        </div>
+    </div>
+
+<script src="../lib/jquery/jquery-1.9.1.min.js"></script>
+<script src="../ckplayer/ckplayer.js"></script>
+<script>
+    $(document).on("click", ".feed-video", function () {
+        var con = null;//点击标示，1：视频；0：图片
+        var video = $("#video");
+        var middle = $("#middle");
+        var img = middle.find(".img");
+        var url = $(this).attr("data-url");
+        video.show();
+        img.hide();
+        videoPlay(url, 1, 600, 450);
+        con = 1;
+        /*居中自适应*/
+        changeStyle(con);
+        /*显示弹层*/
+        $("#fade").show(0);
+        $("#picture").show(0)
+    });
+
+    /**
+     * 视频播放：videoPlay(url,play,w,h)
+     * @param: url:视频地址
+     *        play：是否自动播放（0：不播放；1：播放）
+     *          w ：播放器宽度
+     *          h ：播放器高度
+     */
+    function videoPlay(url,play,w,h) {
+        var flashvars={
+            f:url,
+            p:play
+        };
+        var params={
+            bgcolor:'#FFF',
+            allowFullScreen:true,
+            allowScriptAccess:'always',
+            wmode:'transparent'
+        };
+        CKobject.embedSWF("../ckplayer/ckplayer.swf",'video','ckplayer_video',w,h,flashvars,params);
+    }
+</script>
+</body>
+</html>

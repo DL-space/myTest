@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>更新跟进记录-后续动作</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!--音频播放器-->
+    <link rel="stylesheet" href="../css/audioplayer.css"/>
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">联系列表</a></li>
+                        <li class="active">更新</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="s1">
+                    @@include("../app/base-info/index.html")
+                </div>
+                <div class="s2">
+                    <ul class="b-tab-nav">
+                        <li class="on"><a href="#">跟进记录</a></li>
+                        <li><a href="#">成交记录</a></li>
+                    </ul>
+                    <div class="panel panel-follow">
+                        <div class="panel-body">
+                            <!--其他补充记录-->
+                            <div class="mod4 bcjl">
+                                <div class="tit">
+                                    <h4>本次跟进的其他补充记录</h4>
+                                </div>
+                                <div class="con">
+                                    <ul class="jh-info">
+                                        <li class="jh-nr">
+                                            <div class="txt">
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--后续动作-->
+                            <div class="mod4 mod4-hxdz">
+                                <div class="tit">
+                                    <h4>后续动作</h4>
+                                    <ul class="action-sel">
+                                        <li>
+                                            <input type="radio" name="action-sel" data-action="yylx" class="rd" checked>预约联系
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="action-sel" data-action="yydk" class="rd">预约带看
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="con action-yylx">
+                                    <ul class="jh-info">
+                                        <li>
+                                            <div class="lb">联系时间：</div>
+                                            <div class="txt">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lb">联系人：</div>
+                                            <div class="txt">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </li>
+                                        <li class="jh-nr">
+                                            <div class="lb">联系计划：</div>
+                                            <div class="txt">
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="con action-yydk" style="display: none;">
+                                    <ul class="jh-info">
+                                        <li>
+                                            <div class="lb">带看时间：</div>
+                                            <div class="txt">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lb">邀约人：</div>
+                                            <div class="txt">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lb">带看人：</div>
+                                            <div class="txt">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </li>
+                                        <li class="is-car">
+                                            <div class="lb">有无专车：</div>
+                                            <div class="txt">
+                                                <div class="car-checked">
+                                                    <div class="li">
+                                                        <input type="radio" name="car-check" class="rd">无
+                                                    </div>
+                                                    <div class="li">
+                                                        <input type="radio" name="car-check" class="rd">有
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lb">约见地点：</div>
+                                            <div class="txt">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </li>
+                                        <li class="ky-dklp">
+                                            <div class="lb">带看楼盘：</div>
+                                            <div class="txt">
+                                                <input type="text" class="form-control" placeholder="请注意带看楼盘顺序的输入，靠前的是要优先带看的">
+                                            </div>
+                                        </li>
+                                        <li class="jh-nr">
+                                            <div class="lb">TO客户短信：</div>
+                                            <div class="txt">
+                                                您预约看房时间是YYYY年M月D日hh:mm，咨询师【咨询师姓名和电话】将全程陪同您，已对目标区域做足功课，请期待一次愉快的看房之旅吧！
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-area">
+                                    <a class="btn btn-default" href="#">返回上一步</a>
+                                    <button type="button" class="btn btn-primary">提交</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<!--音频播放器-->
+<script src="../js/audioplayer.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/v5.2.js"></script>
+</body>
+</html>

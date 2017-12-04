@@ -1,0 +1,57 @@
+.slider{
+    border: solid 1px #e4e4e4;
+    background-color: #fff;
+}
+/*输入框*/
+.slider .ipt {
+    width: 276px;
+}
+/*免费咨询*/
+.slider .btn{
+    padding: 0 24px;
+}
+.slider .ipt-area{
+    position: absolute;
+    top: 300px;
+    right: 58px;
+}
+/*改版3.4*/
+.zckf{
+    width: 100%;
+    height: 594px;
+    padding-top: 140px;
+    box-sizing: border-box;
+    background: url("../images/banner_3.png") no-repeat;
+    background-size: 100% 100%;
+}
+.zckf .inn{
+    width: 545px;
+    margin: 0 auto;
+    text-align: center;
+}
+.zckf .text{
+    font-family: PingFangSC-Regular;
+    height: 47px;
+    line-height: 47px;
+    font-size: 32px;
+    color: #2A6598;
+    letter-spacing: 0.37px;
+    margin-bottom: 40px;
+}
+.zckf .ipt{
+    width: 366px;
+}
+.zckf .input-area{
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.zckf .btn-cons{
+    float: left;
+    width: 150px;
+    padding: 0;
+}
+.zckf .phone-num{
+    font-family: PingFangSC-Regular;
+    font-size: 26px;
+    color: #FFBB41;
+}

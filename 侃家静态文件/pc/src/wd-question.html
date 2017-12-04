@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>提问页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/wd.css">
+</head>
+<body>
+<div class="container">
+    @@include("./app/header/header.html")
+    <div class="center">
+        <div class="row row-crumb">
+            @@include("./app/crumbs/crumb.html")
+        </div>
+        <div class="row row-wd">
+            <div class="wd-banner">
+                <div class="banner-cont">
+                    <div class="hd">
+                        <h1>买房 · 从问问开始</h1>
+                    </div>
+                    <div class="bd">
+                        <div class="ipt-area">
+                            <input type="text" class="ipt" placeholder="搜你想知道的问题、答案">
+                            <a href="#" class="btn btn-search">
+                                <span class="ico ico-search">搜索</span>
+                                搜 索
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-wd">
+                <div class="hd">
+                    <div class="que-label">
+                        <ul>
+                            <li class="on"><a href="#">购房建议购房建议</a></li>
+                            <li><a href="#">购房建议购房建议</a></li>
+                            <li><a href="#">购议</a></li>
+                            <li><a href="#">购议</a></li>
+                            <li><a href="#">购议</a></li>
+                            <li><a href="#">购房建议购房建议</a></li>
+                            <li><a href="#">购房建议购房建议</a></li>
+                            <li><a href="#">购房建议</a></li>
+                            <li><a href="#">购房建议</a></li>
+                            <li><a href="#">购议</a></li>
+                            <li><a href="#">购议</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bd">
+                    <div class="wd-question">
+                        <div class="qc-title">
+                            <p>
+                                很抱歉没有找到您想要的答案/(ㄒoㄒ)/~~，您可以尝试更改搜索条件再试一次，也可以在下方留下您的问题和联系方式，咨询师会尽快与您联系并为您解答困惑
+                            </p>
+                        </div>
+                        <div class="qc-cont">
+                            <div class="qc-item">
+                                <div class="hd">
+                                    <h4>问题描述</h4>
+                                </div>
+                                <div class="ipt-text">
+                                    <textarea class="ipt" placeholder="在这里输入补充问题~~~~~~~~~"></textarea>
+                                </div>
+                            </div>
+                            <div class="qc-item">
+                                <div class="hd">
+                                    <h4>联系方式</h4>
+                                </div>
+                                <div class="ipt-area">
+                                    <input class="ipt" type="text" placeholder="记得填写手机号哦~">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qc-btn">
+                            <button class="btn">立即提交</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     @@include("./app/footer/footer.html")
+</div>
+<script src="./js/lib/jquery/jquery-1.9.1.min.js"></script>
+<script src="./js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>合作方管理</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row row-crumbs">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">签约信息</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--合作方管理列表-->
+                    <div class="panel panel-bd-partner">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">合作方管理列表</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="btn-opt-area">
+                                <a class="btn btn-primary btn-add" href="#">创建合作方</a>
+                            </div>
+                            <div class="c-list c-list-partner">
+                                <div class="tit">
+                                    <div class="list-info">
+                                        <p>第1-20条，共61条数据</p>
+                                    </div>
+                                </div>
+                                <div class="con">
+                                    <table class="table table-bordered table-responsive">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>城市</th>
+                                            <th>合作方名称</th>
+                                            <th>操作</th>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <select class="form-control">
+                                                    <option value="0">请选择</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <input class="form-control" type="text"/>
+                                            </td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>北京</td>
+                                            <td>房江湖</td>
+                                            <td>
+                                                <a class="link-opt" href="#">编辑</a>
+                                                <a class="link-opt" href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>北京</td>
+                                            <td>房多多</td>
+                                            <td>
+                                                <a class="link-opt" href="#">编辑</a>
+                                                <a class="link-opt" href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/bd.js"></script>
+</body>
+</html>

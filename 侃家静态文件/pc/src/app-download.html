@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>app内部导流落地页</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/app-download.css">
+</head>
+<body>
+<div class="container">
+    @@include("./app/header/header.html")
+    <div class="center">
+        <div class="row row-search">
+            <div class="wrap">
+                @@include("./app/search/search.html")
+                @@include("./app/search/search-nopic.html")
+            </div>
+        </div>
+        <div class="row">
+            <div class="app-txt">
+                <h3>买新房，可以更专业</h3>
+                <p>楼盘动态一手掌握，全网房价一网打尽，</p>
+                <p>成交数据把握市场动向，实用买房干货，</p>
+                <p>让你买房不走弯路，名校咨询师一对一咨询。</p>
+            </div>
+            <div class="app-qr-code">
+                <img src="./images/img-app-qrcode.png" alt="扫码下载app 随时随地任性找房"/>
+                <p class="txt">扫码下载居理新房APP<br>随时随地任性找房</p>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="app-advantage">
+                <li>
+                    <img src="./images/img-app-01.png" alt=""/>
+                </li>
+                <li>
+                    <img src="./images/img-app-02.png" alt=""/>
+                </li>
+                <li>
+                    <img src="./images/img-app-03.png" alt=""/>
+                </li>
+                <li>
+                    <img src="./images/img-app-04.png" alt=""/>
+                </li>
+            </ul>
+        </div>
+    </div>
+    @@include("./app/footer/footer.html")
+</div>
+<script src="./js/lib/jquery/jquery-1.9.1.min.js"></script>
+<script src="./js/lib/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/house-list.js"></script>
+</body>
+</html>

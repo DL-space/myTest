@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>首页调研</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="/css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+    <div class="page-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo fl">
+                        <h1><a href="#"><img src="../images/logo.png" alt="欢迎登录侃家网业务管理系统！"></a></h1>
+                        <p class="info">欢迎登录侃家网业务管理系统！</p>
+                    </div>
+                    <div class="h-user">
+                        <div class="link-user">
+                            <span class="ico ico-user"></span>
+
+                            <div class="dropdown-menu-user">
+                                <span class="triangle"></span>
+                                <ul class="dropdown-menu">
+                                    <li class="first"><a href="#"><span class="dropdown-text">个人设置</span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">我的消息</span><span
+                                        class="badge myMsg"></span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">待办事项</span><span
+                                        class="badge toMsg"></span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">个人资料</span></a>
+                                    </li>
+                                    <li class="last"><a href="#"><span class="dropdown-text">退出</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ucenter">
+                            <span class="uname">徐立</span>
+                            <span class="fgx">|</span>
+                            <a class="logout" href="#">退出</a>
+                        </div>
+                        <div class="schedule"><a href="#">我的日程</a></div>
+                        <div class="tips-msg">
+                            <a class="ico ico-msg" href="#" title="消息">
+                            <span class="dot">28</span>
+                        </a>
+                            <a class="ico ico-todo" href="#" title="待办事项">
+                            <span class="dot">65</span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-all-wrap">
+        <div class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">咨询师业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">订单列表</a></li>
+                                <li><a href="#">关键带看管理列表</a></li>
+                                <li><a href="#">联系列表</a></li>
+                                <li><a href="#">带看列表</a></li>
+                                <li><a href="#">认购列表页</a></li>
+                                <li><a href="#">签约列表页</a></li>
+                                <li><a href="#">首次联系延迟列表</a></li>
+                                <li class="last"><a href="#">匹配工具</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">客服业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">客服订单管理</a></li>
+                                <li><a href="#">客服联系记录管理</a></li>
+                                <li><a href="#">带看评价管理</a></li>
+                                <li><a href="#">带看评价回访纪录</a></li>
+                                <li><a href="#">已关闭订单跟进</a></li>
+                                <li><a href="#">已关闭订单跟进回访记录</a></li>
+                                <li><a href="#">无效客户标记</a></li>
+                                <li><a href="#">400电话订单匹配</a></li>
+                                <li><a href="#">评价追回页面</a></li>
+                                <li class="last"><a href="#">投诉列表页</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">驻场拓展业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">报备管理</a></li>
+                                <li><a href="#">楼盘备案管理</a></li>
+                                <li><a href="#">合作方管理</a></li>
+                                <li><a href="#">楼盘拓展相关字段维护</a></li>
+                                <li><a href="#">添加报备</a></li>
+                                <li><a href="#">代理中介管理</a></li>
+                                <li class="last"><a href="#">代理客户订单管理</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">服务管理员业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">服务评价管理</a></li>
+                                <li><a href="#">咨询师带看情况查询</a></li>
+                                <li class="last"><a href="#">咨询师审核</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">系统管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">权限管理</a></li>
+                                <li><a href="#">员工管理</a></li>
+                                <li><a href="#">员工作息时间管理</a></li>
+                                <li><a href="#">咨询师分配管理</a></li>
+                                <li><a href="#">客服分配管理</a></li>
+                                <li><a href="#">用户管理</a></li>
+                                <li><a href="#">短信模板管理</a></li>
+                                <li><a href="#">咨询师分组管理</a></li>
+                                <li><a href="#">员工操作日志</a></li>
+                                <li><a href="#">批量转移咨询师客户</a></li>
+                                <li><a href="#">联系取消</a></li>
+                                <li><a href="#">雨燕档案</a></li>
+                                <li><a href="#">上线日志管理</a></li>
+                                <li><a href="#">城市管理</a></li>
+                                <li class="last"><a href="#">字段常量配置</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">报表管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">客户数据分析</a></li>
+                                <li><a href="#">网站统计报表</a></li>
+                                <li><a href="#">周期维度统计</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">咨询师延迟录入统计</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">联系延迟录入统计</a></li>
+                                        <li><a href="#">带看延迟录入统计</a></li>
+                                        <li><a href="#">咨询师分配时间到首次联系时间超时统计列表</a></li>
+                                        <li><a href="#">咨询师认购超时统计列表</a></li>
+                                        <li class="last"><a href="#">咨询师签约超时统计列表</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">核算日月周年报表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算统计</a></li>
+                                        <li><a href="#">咨询师组核算统计</a></li>
+                                        <li><a href="#">楼盘核算统计</a></li>
+                                        <li><a href="#">区域核算统计</a></li>
+                                        <li class="last"><a href="#">渠道核算统计</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">核算汇总表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算统计汇总表</a></li>
+                                        <li><a href="#">咨询师组核算统计汇总表</a></li>
+                                        <li><a href="#">楼盘核算统计汇总表</a></li>
+                                        <li><a href="#">区域核算统计汇总表</a></li>
+                                        <li><a href="#">渠道核算统计汇总表</a></li>
+                                        <li class="last"><a href="#">资金核算报表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">咨询师满意度表格</a></li>
+                                <li><a href="#">咨询师组满意度表格</a></li>
+                                <li><a href="#">带看评价统计列表</a></li>
+                                <li><a href="#">已关闭订单客户评价统计列表</a></li>
+                                <li><a href="#">成交订单服务评价统计列表</a></li>
+                                <li><a href="#">咨询师楼盘点评统计</a></li>
+                                <li><a href="#">客服首次联系超时统计报表</a></li>
+                                <li><a href="#">带看回访客服联系记录</a></li>
+                                <li><a href="#">已关闭订单回访客服联系记录</a></li>
+                                <li><a href="#">咨询师订单详情统计列表</a></li>
+                                <li><a href="#">咨询师正常订单统计列表</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">客户业务详情统计</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">客户线索详情统计列表</a></li>
+                                        <li><a href="#">客户上户详情统计列表</a></li>
+                                        <li><a href="#">带看详情统计报表</a></li>
+                                        <li><a href="#">认购详情统计列表</a></li>
+                                        <li class="last"><a href="#">签约详情统计列表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">客户留电行为详情列表</a></li>
+                                <li><a href="#">消息详情列表</a></li>
+                                <li><a href="#">定时消息详情列表</a></li>
+                                <li><a href="#">重新分配记录报表</a></li>
+                                <li><a href="#">短信记录报表</a></li>
+                                <li><a href="#">订单恢复报表</a></li>
+                                <li><a href="#">线索质量统计报表</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">业务统计报表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">楼盘业务统计</a></li>
+                                        <li><a href="#">渠道业务统计报表</a></li>
+                                        <li><a href="#">喜报业务统计报表</a></li>
+                                        <li><a href="#">咨询师首次正式认购核算报表</a></li>
+                                        <li><a href="#">区域业务统计</a></li>
+                                        <li class="last"><a href="#">订单业务详情统计报表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">楼盘数据维护审核记录</a></li>
+                                <li><a href="#">高端客户详情统计列表</a></li>
+                                <li><a href="#">评价追回客服记录统计</a></li>
+                                <li><a href="#">楼盘信息报表</a></li>
+                                <li><a href="#">市场部咨询合作详情</a></li>
+                                <li class="dropdown-submenu last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">咨询师订单核算详情</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算详情-签约</a></li>
+                                        <li><a href="#">咨询师核算详情-上户</a></li>
+                                        <li><a href="#">咨询师核算详情-带看</a></li>
+                                        <li class="last"><a href="#">咨询师核算详情-认购</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">楼盘管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">楼盘数据维护</a></li>
+                                <li><a href="#">楼盘点评列表</a></li>
+                                <li><a href="#">楼盘商务信息管理</a></li>
+                                <li><a href="#">区域报告楼盘定位</a></li>
+                                <li><a href="#">楼盘维护提醒设置</a></li>
+                                <li><a href="#">楼盘列表</a></li>
+                                <li><a href="#">市调测评</a></li>
+                                <li class="dropdown-submenu last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">楼盘审核</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">楼盘点评审核</a></li>
+                                        <li class="last"><a href="#">楼盘数据维护审核</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">楼盘字典<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="dropdown-submenu first last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">楼盘管理</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">全部楼盘列表</a></li>
+                                        <li><a href="#">创建楼盘</a></li>
+                                        <li class="last"><a href="#">价格维护</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--意见反馈入口-->
+                <div class="nav-feedback">
+                    <span class="btn-feedback">不爽就点我</span>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                    </div>
+                </div>
+                <div class="row row-emp">
+                    <div class="col-md-9">
+                        <!--任务详情-->
+                        <div class="panel task-detail">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">任务详情</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <!--客户相关-->
+                                <div class="mod2 customer-rel">
+                                    <div class="tit">客户相关</div>
+                                    <div class="con">
+                                        <ul class="list">
+                                            <li>
+                                                <a href="#">今日分配未跟进:
+                                            <span class="num">0/0</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#">今日未完成预约联系:
+                                                <span class="num">0/0</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/index.php?r=yw-see-project/see-project-list&is_status=30&intent=3&plan_real_begin_datetime=2016-11-09 00:00:00&plan_real_end_datetime=2016-11-09 23:59:59&employee_id=43&contact_employee=selected">今日未完成预约带看:
+                                                <span class="num">0/0</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--审核驳回-->
+                                <div class="mod2 check">
+                                    <div class="tit">审核驳回</div>
+                                    <div class="con">
+                                        <ul class="list">
+                                            <li>
+                                                <a href="/index.php?r=yw-subscribe-list/index&status=-1&review=2&is_cooperate=-1&subscribe_type=-1&subscribe_sign_status=-1&is_timeout=&order_id=&subscribe_name=&subscribe_phone=&employee_id=null&first_pay_datetime_min=&first_pay_datetime_max=&plan_sign_datetime_min=&plan_sign_datetime_max=">认购审核:
+                                                <span class="num">0</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/index.php?r=yw-sign-list/index&status=-1&review=2&sign_type=-1&order_id=&sign_name=&sign_phone=&employee_id=null&grass_sign_datetime_min=&grass_sign_datetime_max=&sign_datetime_min=&sign_datetime_max=&first_pay_datetime_min=&first_pay_datetime_max=&is_comment=&is_timeout=">签约审核:
+                                                <span class="num">0</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/index.php?r=cj-project-audit/index">楼盘信息审核: <span
+                                                    class="num">0</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/index.php?r=yw-project-review/index&YwProjectReviewSearch[status]=0">楼盘点评审核:
+                                                <span class="num">6</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--延迟统计-->
+                                <div class="mod2 mod2-stat">
+                                    <div class="tit">延迟统计</div>
+                                    <div class="con">
+                                        <ul class="list">
+                                            <li>
+                                                <a href="/index.php?r=yw-first-contact-timeout/list&employee_id=43">首次联系:
+                                                <span class="num">124</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/index.php?r=yw-order-contact/contact-list&status=-100&intent=&plan_real_datetime_start=&plan_real_datetime_end=&is_delay=2&employee_id=43&contact_employee=selected">联系录入:
+                                                <span class="num">203</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/index.php?r=yw-see-project/see-project-list&is_status=&intent=&plan_real_begin_datetime=&plan_real_end_datetime=&is_delay=2&employee_id=43&contact_employee=selected">带看录入:
+                                                <span class="num">17</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/index.php?r=yw-subscribe-list/index&status=-1&review=-1&is_cooperate=-1&subscribe_type=-1&subscribe_sign_status=-1&order_id=&subscribe_name=&subscribe_phone=&first_pay_datetime_min=&first_pay_datetime_max=&plan_sign_datetime_min=&plan_sign_datetime_max=&is_timeout=yes&employee_id=43&contact_employee=selected">认购录入:
+                                                <span class="num">9</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/index.php?r=yw-sign-list/index&status=-1&review=-1&sign_type=-1&order_id=&sign_name=&sign_phone=&employee_id=null&grass_sign_datetime_min=&grass_sign_datetime_max=&sign_datetime_min=&sign_datetime_max=&first_pay_datetime_min=&first_pay_datetime_max=&is_comment=&is_timeout=yes&employee_id=43&contact_employee=selected">签约录入:
+                                                <span class="num">7</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--个人日报-->
+                        <div class="panel panel-report">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">个人日报</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="report-tips">
+                                    <p class="info">下面时间范围是指从开始日期0点0分0秒到结束日期的23点59分59秒</p>
+                                    <ul class="date">
+                                        <li class="tit">时间范围：</li>
+                                        <li class="selItems dayGroup">
+                                            <div class="dataRangeSel">
+                                                <input type="text" id="dataRangeSel" class="form-control">
+                                                <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--核算统计-->
+                                <div class="mod2 check" id="day_stat_div">
+                                    <div class="tit">核算统计</div>
+                                    <div class="con">
+                                        <ul class="list">
+                                            <li id="stat_incustom_li">
+                                                上户量: <span class="num">0</span>
+                                            </li>
+                                            <li id="stat_see_project_li">
+                                                带看量: <span class="num">0</span>
+                                            </li>
+                                            <li id="stat_subscribe_li">
+                                                认购量: <span class="num">0</span>
+                                            </li>
+                                            <li id="stat_sign_li">
+                                                签约量: <span class="num">0</span>
+                                            </li>
+                                            <li id="stat_union_subscribe_li">
+                                                合作认购量: <span class="num">0</span>
+                                            </li>
+                                            <!--<li id="stat_ununion_subscribe_li">
+                                            非合作认购量: <span class="num">0</span>
+                                        </li>-->
+                                            <li id="stat_union_sign_li">
+                                                合作签约量: <span class="num">0</span>
+                                            </li>
+                                            <!--<li id="stat_ununion_sign_li">
+                                            非合作签约量: <span class="num">0</span>
+                                        </li>-->
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--转化率统计-->
+                                <div class="mod2 conv-rate" id="day_rate_div">
+                                    <div class="tit">转化率统计</div>
+                                    <div class="con">
+                                        <ul class="list">
+                                            <li id="stat_incustom_see_project_li">上户-带看：<span class="num">0%</span></li>
+                                            <li id="stat_see_project_union_subscribe_li">带看-合作认购：<span class="num">0%</span>
+                                            </li>
+                                            <!--<li id="stat_see_project_ununion_subscribe_li">带看-非合作认购：<span class="num">0%</span></li>-->
+                                            <li id="stat_subscribe_union_sign_li">认购-合作签约：<span class="num">0%</span></li>
+                                            <!--<li id="stat_subscribe_ununion_sign_li">认购-非合作签约：<span class="num">0%</span></li>-->
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--延迟统计-->
+                                <div class="mod2 mod2-stat2" id="day_delayed_div">
+                                    <div class="tit">延迟统计</div>
+                                    <div class="con">
+                                        <ul class="list">
+                                            <li id="stat_first_contact_delayed_li">首次联系：<a href="#"><span
+                                                class="num">0</span></a></li>
+                                            <li id="stat_contact_delayed_li">联系录入：<a href="#"><span class="num">0</span></a>
+                                            </li>
+                                            <li id="stat_see_project_delayed_li">带看录入：<a href="#"><span class="num">0</span></a>
+                                            </li>
+                                            <li id="stat_subscribe_delayed_li">认购录入：<a href="#"><span
+                                                class="num">0</span></a></li>
+                                            <li id="stat_sign_delayed_li">签约录入：<a href="#"><span class="num">0</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <!--快捷入口-->
+                        <div class="panel panel-baseinfo">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">快捷入口</h2>
+                                    <div class="panel-more">
+                                        <a class="containerEdit" href="/index.php?r=yw-quick-entry/index&employee_id=43">编辑</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+
+                            </div>
+                        </div>
+                        <!--排名-->
+                        <div class="panel panel-order">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">排名</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="sort sort-date">
+                                    <li class="on"><a href="javascript:" data-value='1'>昨日</a></li>
+                                    <li><a href="javascript:" data-value='2'>今日</a></li>
+                                    <li><a href="javascript:" data-value='3'>本周</a></li>
+                                    <li><a href="javascript:" data-value='4'>本月</a></li>
+                                    <li><a href="javascript:" data-value='5'>本年</a></li>
+                                    <input type='hidden' value="1" id='datetime'>
+                                </ul>
+                                <ul class="sort sort-order">
+                                    <li class="on"><a href="javascript:" data-value='1'>新增订单</a></li>
+                                    <li><a href="javascript:" data-value='2'>带看次数</a></li>
+                                    <li><a href="javascript:" data-value='3'>认购单量</a></li>
+                                    <li><a href="javascript:" data-value='4'>签约单量</a></li>
+                                    <input type='hidden' value="1" id='detailcounts'>
+                                </ul>
+                                <div class="sort-list">
+                                    <div class="sort-tit">
+                                        新增订单排名
+                                    </div>
+                                    <div class="sort-con">
+                                        <ol class="o-list sort-ol">
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--数据调研-->
+                        <div class="panel panel-sjdy">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">数据调研</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="dy-area">
+                                    <div class="dy-desc">
+                                        <p>数据部将为咨询师提供个人数据分析，现需调研咨询师的数据关注情况</p>
+                                        <p>届时会为参与的咨询师提供个人专属数据分析（仅限填写问卷的咨询师，限前5人）</p>
+                                    </div>
+                                    <div class="dy-form">
+                                        <div class="tr">
+                                            <div class="th">
+                                                <span class="ico-xh"></span>上户量
+                                            </div>
+                                            <div class="td">
+                                                <ul class="c-chked">
+                                                    <li>
+                                                        <input class="c-rd" type="radio">关注
+                                                    </li>
+                                                    <li>
+                                                        <input class="c-rd" type="radio">不关注
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tr">
+                                            <div class="th">
+                                                <span class="ico-xh"></span>邀约率
+                                            </div>
+                                            <div class="td">
+                                                <ul class="c-chked">
+                                                    <li>
+                                                        <input class="c-rd" type="radio">关注
+                                                    </li>
+                                                    <li>
+                                                        <input class="c-rd" type="radio">不关注
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tr">
+                                            <div class="th">
+                                                <span class="ico-xh"></span>带看量
+                                            </div>
+                                            <div class="td">
+                                                <ul class="c-chked">
+                                                    <li>
+                                                        <input class="c-rd" type="radio">关注
+                                                    </li>
+                                                    <li>
+                                                        <input class="c-rd" type="radio">不关注
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tr">
+                                            <div class="th">
+                                                <span class="ico-xh"></span>签约量
+                                            </div>
+                                            <div class="td">
+                                                <ul class="c-chked">
+                                                    <li>
+                                                        <input class="c-rd" type="radio">关注
+                                                    </li>
+                                                    <li>
+                                                        <input class="c-rd" type="radio">不关注
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tr">
+                                            <div class="th">
+                                                <span class="ico-xh"></span>净认购量
+                                            </div>
+                                            <div class="td">
+                                                <ul class="c-chked">
+                                                    <li>
+                                                        <input class="c-rd" type="radio">关注
+                                                    </li>
+                                                    <li>
+                                                        <input class="c-rd" type="radio">不关注
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tr">
+                                            <div class="th">
+                                                <span class="ico-xh"></span>净认购率
+                                            </div>
+                                            <div class="td">
+                                                <ul class="c-chked">
+                                                    <li>
+                                                        <input class="c-rd" type="radio">关注
+                                                    </li>
+                                                    <li>
+                                                        <input class="c-rd" type="radio">不关注
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tr">
+                                            <div class="th">
+                                                <span class="ico-xh"></span>总业绩(净认购+排卡)
+                                            </div>
+                                            <div class="td">
+                                                <ul class="c-chked">
+                                                    <li>
+                                                        <input class="c-rd" type="radio">关注
+                                                    </li>
+                                                    <li>
+                                                        <input class="c-rd" type="radio">不关注
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tr">
+                                            <div class="th">
+                                                <span class="ico-xh"></span>上户时客户预算、业态、区域结构
+                                            </div>
+                                            <div class="td">
+                                                <ul class="c-chked">
+                                                    <li>
+                                                        <input class="c-rd" type="radio">关注
+                                                    </li>
+                                                    <li>
+                                                        <input class="c-rd" type="radio">不关注
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tr tr-remark">
+                                            <div class="th">还关注哪些数据？</div>
+                                            <div class="td">
+                                                <input type="text" class="form-control" placeholder="限20字以内">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-area">
+                                        <a href="#" class="btn btn-primary btn-clear">清空</a>
+                                        <a href="#" class="btn btn-success btn-cmt">提交</a>
+                                    </div>
+                                </div>
+                                <!--调研结束后显示文字-->
+                                <div class="dy-over">
+                                    <p>恭喜你已经提交成功，我们会及时与您联系！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer">
+            <p class="copyright"><span>北京高因科技有限公司</span><span>www.comjia.com</span></p>
+        </div>
+        <!--弹层-->
+        <div class="layer layer-sjdy">
+            <div class="layer-title">
+                <h3>消息提示</h3><a href="javascript:void(0);" target="_self" class="layer-close">Close</a>
+            </div>
+            <div class="layer-body">
+                <div class="layer-con">
+                    <p>恭喜你已经提交成功，我们会及时与您联系！</p>
+                </div>
+            </div>
+            <div class="layer-footer">
+                <button class="btn btn-default layer-btn-reset" type="reset">取消</button>
+                <button class="btn btn-primary btn-commit" type="button">确认</button>
+            </div>
+        </div>
+        <!--弹层背景-->
+        <div class="c-fade"></div>
+    </div>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+    <script src="../js/layer/layer.js"></script>
+    <script src="../js/jquery.pin.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/research/research.js"></script>
+</body>
+</html>

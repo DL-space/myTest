@@ -1,0 +1,480 @@
+/*布局*/
+.container {
+    position: relative;
+    min-height: 100%;
+    min-width: 1200px;
+}
+.row, .wrap {
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.row {
+    margin-bottom: 25px;
+}
+.row-search {
+    width: 100%;
+    min-width: 1200px;
+    height: 45px;
+    margin-bottom: 0;
+    padding-top: 15px;
+    background-color: #eef0f2;
+}
+.col, .col2, .col3, .col4, .col5, .col6, .col7, .col9, .col10, .col11 {
+    float: left;
+    overflow: hidden;
+}
+.col {
+    width: 1020px;
+    margin-right: 40px;
+}
+.col2 {
+    width: 140px;
+}
+.col3 {
+    width: 240px;
+    margin-right: 40px;
+}
+.col4 {
+    width: 920px;
+}
+.col5 {
+    width: 990px;
+    margin-right: 30px;
+}
+.col6 {
+    width: 180px;
+}
+.col7 {
+    width: 980px;
+    margin-right: 30px;
+}
+.col8 {
+    float: right;
+    width: 190px;
+    overflow: hidden;
+}
+.col9 {
+    width: 890px;
+    margin-right: 30px;
+}
+.col10 {
+    width: 280px;
+}
+.col11 {
+    width: 290px;
+}
+/*box*/
+.box .hd, .box .bd {
+    clear: both;
+    overflow: hidden;
+}
+.box .hd, .box2 .hd {
+    height: 28px;
+    line-height: 28px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.box .hd h2, .box .hd h2 a {
+    font-size: 14px;
+    color: #363d40;
+}
+/*box2*/
+.box2 .hd {
+    padding-bottom: 15px;
+}
+.box2 .hd h2, .box2 .hd h2 a {
+    font-size: 18px;
+}
+/*box3*/
+.box3, .box3 .hd, .box3 .bd {
+    clear: both;
+    overflow: hidden;
+}
+.box3 {
+    padding: 20px 30px;
+    border: 1px solid #eaeaea;
+}
+.box3 .hd {
+    height: 38px;
+    line-height: 38px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.box3 .hd h2, .box3 .hd h2 a {
+    font-size: 18px;
+    font-weight: normal;
+}
+.box3 .hd h2 {
+    float: left;
+}
+.box3 .hd .house-type, .box3 .hd .more {
+    float: right;
+}
+.box3 .hd .more a {
+    color: #888;
+}
+.box3 .hd .more a:hover {
+    color: #0074c1;
+}
+.box3 .hd .more a:hover .ico-more {
+    background-position: -40px -720px;
+}
+/*box4*/
+.box4 {
+    padding: 10px 19px 0;
+    border: 1px solid #eaeaea;
+    overflow: hidden;
+}
+.box4 .hd, .box4 .bd {
+    clear: both;
+    overflow: hidden;
+}
+.box4 .hd {
+    height: 32px;
+    line-height: 32px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.box4 .hd h2, .box4 .hd h2 a {
+    font-size: 14px;
+}
+/*tab切换*/
+.nrpart {
+    display: none;
+}
+.show {
+    display: block;
+}
+/*标签*/
+.house-tag {
+    height: 22px;
+    overflow: hidden;
+}
+.house-type {
+    margin-bottom: 8px;
+}
+.house-item .house-type .types {
+    margin-right: 0;
+}
+.house-tag .tag {
+    float: left;
+    padding: 0 10px;
+    margin-right: 10px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #48B3E2;
+}
+.house-tag .tag, .house-tag .tag a {
+    color: #48B3E2;
+}
+.house-tag .active, .house-tag .active a {
+    color: #fff;
+}
+.house-tag .active {
+    line-height: 21px;
+    background-color: #48b3e2;
+    border-color: #48b3e2;
+}
+/*推荐列表item*/
+.media {
+    position: relative;
+    width: 140px;
+}
+.media .pic, .media .pic img {
+    width: 140px;
+    height: 100px;
+    overflow: hidden;
+}
+.media .pic {
+    margin-bottom: 15px;
+}
+.media .price {
+    position: absolute;
+    bottom: 59px;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #394043;
+}
+.media .text .name, .media .text .total {
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+}
+.media .text .name {
+    font-weight: normal;
+}
+.media .text, .media .text a {
+    color: #888;
+}
+/*tab切换*/
+.tab-t, .tab-c {
+    clear: both;
+    overflow: hidden;
+}
+/*输入框*/
+.ipt {
+    float: left;
+    color: #b7b7b7;
+    width: 366px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 12px;
+    border: 1px solid #e4e4e4;
+    border-right: 0;
+    border-radius: 3px 0 0 3px;
+    background: #fff;
+    overflow: hidden;
+}
+/*media2*/
+.media2 {
+    width: 224px;
+    overflow: hidden;
+}
+.media2 .text {
+    color: #888;
+    height: 120px;
+    line-height: 26px;
+    padding: 20px 10px 0 10px;
+    background: #f8f8f8;
+}
+.media2 .text h4, .media2 .text h4 a {
+    color: #363d40;
+}
+.media2 .text h4 {
+    font-size: 16px;
+    white-space: nowrap;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.media2 .text .info {
+    clear: both;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 26px;
+    line-height: 26px;
+    max-width: 190px;
+    overflow: hidden;
+}
+.media2 .pic, .media2 .pic img {
+    width: 224px;
+    height: 160px;
+}
+.media2 .price {
+    height: 26px;
+    overflow: hidden;
+}
+.media2 .price em {
+    float: right;
+    color: #f44336;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 124px;
+    overflow: hidden;
+}
+/*media3*/
+.media3 {
+    position: relative;
+    width: 260px;
+    overflow: hidden;
+}
+.media3 .pic, .media3 .pic img {
+    width: 260px;
+    height: 180px;
+    overflow: hidden;
+}
+.media3 .text {
+    height: 57px;
+    padding: 10px 15px 0 15px;
+    background: #fff;
+}
+.media3 .text .name, .media3 .text .info {
+    clear: both;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.media3 .text .name h4 {
+    float: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 130px;
+    overflow: hidden;
+}
+.media3 .text .name .total {
+    float: right;
+}
+.media3 .unit-price {
+    position: absolute;
+    right: 20px;
+    bottom: 87px;
+    color: #fff;
+    text-align: center;
+    width: 90px;
+    height: 22px;
+    line-height: 22px;
+    background: #e85045;
+    overflow: hidden;
+}
+/*media4*/
+.media4 {
+    position: relative;
+    float: left;
+    width: 265px;
+    height: 228px;
+    overflow: hidden;
+}
+.media4 .pic, .media4 .pic img {
+    width: 263px;
+    height: 188px;
+    overflow: hidden;
+}
+.media4 .pic {
+    margin-bottom: 14px;
+    border: 1px solid #eaeaea;
+}
+.media4 .info {
+    position: absolute;
+    left: 0;
+    bottom: 38px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+.media4 .lbl, .media4 .h-txt {
+    float: left;
+}
+.media4 .info .lbl {
+    margin: 6px 0 0 20px;
+}
+.media4 .info .h-type {
+    float: right;
+    color: #fff;
+    padding-right: 20px;
+}
+.media4 .h-info {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.media4 .h-txt2 {
+    padding-left: 16px;
+}
+/*o-list*/
+.o-list {
+    clear: both;
+    overflow: hidden;
+}
+.o-list li {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.o-list li a {
+    color: #575757;
+}
+.o-list li .num {
+    float: left;
+    color: #fff;
+    text-align: center;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    margin: 8px 18px 0 0;
+    background: #66727a;
+    overflow: hidden;
+}
+/*免费咨询*/
+.ipt-area .tips {
+    display: none;
+}
+.ipt-area .error-tips {
+    color: #f20;
+}
+.ipt-area .right-tips {
+    color: #119a11;
+}
+/*销售状态标签*/
+.lbl {
+    display: inline-block;
+    color: #fff;
+    height: 18px;
+    line-height: 17px;
+    padding: 0 12px;
+    background: #6dafdc;
+    overflow: hidden;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .lbl {
+        line-height: 18px;
+    }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .lbl {
+        line-height: 20px;
+    }
+}
+.lbl-for {
+    background: #6dafdc;
+}
+.lbl-not {
+    background: #6dafdc;
+}
+.lbl-card {
+    background: #6dafdc;
+}
+.lbl-out {
+    background: #aaa;
+}
+/*价格说明*/
+.price-cmt {
+    position: relative;
+    float: right;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.price-cmt .ico-cmt {
+    float: left;
+    margin-top: 1px;
+}
+.price-cmt .tips-price-cmt {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -128px;
+    width: 256px;
+    z-index: 10000;
+}
+.price-cmt .tips-price-cmt .top{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 10px;
+    height: 9px;
+    margin-left: 4px;
+    background: url("../images/icon-top.png") 0 0 no-repeat;
+}
+.price-cmt .tips-price-cmt .txt-cmt{
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    width: 254px;
+    height: 44px;
+    line-height: 44px;
+    margin-top: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}

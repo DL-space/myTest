@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>打车统计</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row row-crumbs">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">打车统计</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--成交单管理-->
+                    <div class="panel panel-deal">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">打车统计</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="c-search">
+                                <ul class="c-query">
+                                    <li>
+                                        <div class="th">城市：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">订单ID：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">带看ID：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">带看人：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">带看人主管：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">带看楼盘：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">用车类型：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">咨询师工作专用车</option>
+                                                <option value="1">加班</option>
+                                                <option value="2">出差</option>
+                                                <option value="3">商务出行</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">叫车人：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">叫车人手机号：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li class="c-ext">
+                                        <div class="th">费用：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                            <span class="ext">-</span>
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li class="c-ext">
+                                        <div class="th">开始时间：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                            <span class="ext">-</span>
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-area">
+                                    <input class="btn btn-default" type="reset" value="重置"/>
+                                    <input class="btn btn-primary" type="button" value="确定"/>
+                                </div>
+                            </div>
+                            <!--打车统计列表-->
+                            <div class="c-list taxi-list">
+                                <div class="tit">
+                                    <div class="list-info">
+                                        <p><span>第1-20条,共356条数据</span><span>当前总金额：121123</span></p>
+                                        <ul class="c-chked">
+                                            <li>
+                                                <input class="c-chk" type="checkbox"/>未做匹配订单
+                                            </li>
+                                            <li>
+                                                <input class="c-chk" type="checkbox"/>已做匹配订单
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="con">
+                                    <table class="table table-bordered table-responsive">
+                                        <tr>
+                                            <th>城市</th>
+                                            <th>订单ID</th>
+                                            <th>带看ID</th>
+                                            <th>带看人</th>
+                                            <th>带看人主管</th>
+                                            <th>带看楼盘</th>
+                                            <th>用车类型</th>
+                                            <th>叫车人</th>
+                                            <th>叫车人手机号</th>
+                                            <th>出发地</th>
+                                            <th>目的地</th>
+                                            <th class="t-date">开始时间</th>
+                                            <th class="t-date">结束时间</th>
+                                            <th class="t-fee">费用</th>
+                                        </tr>
+                                        <tr>
+                                            <td>北京</td>
+                                            <td>20005674</td>
+                                            <td>20005674</td>
+                                            <td>王西西</td>
+                                            <td>王西西</td>
+                                            <td>华业东方玫瑰</td>
+                                            <td>咨询师工作专用车</td>
+                                            <td>小东东</td>
+                                            <td>13209090909</td>
+                                            <td>东城区银河soho</td>
+                                            <td>华业东方玫瑰售楼处</td>
+                                            <td class="t-date">2017-09-09 22:33:24</td>
+                                            <td class="t-date">2017-09-09 22:53:24</td>
+                                            <td class="t-fee">123.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>上海</td>
+                                            <td>20005674</td>
+                                            <td>20005674</td>
+                                            <td>王东东</td>
+                                            <td>王西西</td>
+                                            <td>华业东方玫瑰</td>
+                                            <td>加班</td>
+                                            <td>小东东</td>
+                                            <td>13209090909</td>
+                                            <td>东城区银河soho</td>
+                                            <td>华业东方玫瑰售楼处</td>
+                                            <td class="t-date">2017-09-09 22:33:24</td>
+                                            <td class="t-date">2017-09-09 22:53:24</td>
+                                            <td class="t-fee">123.00</td>
+                                        </tr>
+                                    </table>
+                                    <div class="page">
+                                        <ul class="pagination">
+                                            <ul class="pagination">
+                                                <li class="prev disabled"><span>«</span></li>
+                                                <li class="active"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">6</a></li>
+                                                <li><a href="#">7</a></li>
+                                                <li><a href="#">8</a></li>
+                                                <li><a href="#">9</a></li>
+                                                <li><a href="#">10</a></li>
+                                                <li class="next"><a href="#">»</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<!--弹层-->
+<div class="sign-possibility-wrap">
+    <div class="dialog dialog-sign-possibility">
+        <div class="dialog-header">
+            <h3>编辑成交单签约情况</h3>
+        </div>
+        <div class="dialog-body">
+            <div class="sign-possibility">
+                <div class="th">签约可能性：</div>
+                <div class="td">
+                    <ul class="c-chked">
+                        <li><input class="c-chk" data-check="high-possibility" type="radio" name="possibility">高(待签约)
+                        </li>
+                        <li><input class="c-chk" data-check="middle-possibility" type="radio" name="possibility">中(不确定)
+                        </li>
+                        <li><input class="c-chk" data-check="low-possibility" type="radio" name="possibility">低(可能退)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="c-query sign-date high-possibility">
+                <li>
+                    <div class="th">预计签约时间：</div>
+                    <div class="td">
+                        <input class="form-control" type="text"/>
+                    </div>
+                </li>
+            </ul>
+            <ul class="c-query low-possibility">
+                <li class="remark">
+                    <div class="th">原因说明：</div>
+                    <div class="td">
+                        <textarea class="form-control"></textarea>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="dialog-footer">
+            <button type="reset" class="btn btn-default layer-btn-reset">取消</button>
+            <button type="button" class="btn btn-primary btn-commit fr">保存</button>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/consultant-operation/consultant-operation.js"></script>
+<script src="../js/bill-manage.js"></script>
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>客户备忘</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/albums-detail2.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">订单列表</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--订单列表-->
+                    <div class="panel panel-order-list">
+                        <div class="panel-body">
+                            <div class="all-house-lbs">
+                                <h3>所有标签</h3>
+                                <ul class="house-lb-area">
+                                    <li>头部客户</li>
+                                    <li class="on">我是系统标签2</li>
+                                    <li>我是自定义标签</li>
+                                    <li>我是自定义标签</li>
+                                    <li>我是最长的自定义标签我是最长的自定义标签</li>
+                                    <li>我是最长的自定义标签我是最长的</li>
+                                    <li>我是自定义标签</li>
+                                    <li>我是自定义标签</li>
+                                    <li>我是最长的自定义标签我是最长的自定义标签</li>
+                                    <li>我是最长的自定义标签我是最长的</li>
+                                    <li>我是自定义标签</li>
+                                    <li>我是自定义标签</li>
+                                    <li>我是最长的自定义标签我是最长的自定义标签</li>
+                                    <li>我是最长的自定义标签我是最长的</li>
+                                </ul>
+                                <div class="btn-area">
+                                    <button class="btn btn-default">重置</button>
+                                    <button class="btn btn-primary">搜索</button>
+                                </div>
+                            </div>
+                            <div class="order-list">
+                                <div class="tit">
+                                    <!--订单概要-->
+                                    <div class="order-info">
+                                        <p>共499992个订单，其中可跟进XXX个，认购XXX个，签约XXX个，保留XXX个，已关闭XXX个</p>
+                                    </div>
+                                    <!--排序-->
+                                    <ul class="sort">
+                                        <li class="sort-tit">排序：</li>
+                                        <li>
+                                            <a href="#" class="asc">更新时间</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="desc">分配时间</a>
+                                        </li>
+                                    </ul>
+                                    <!--添加/备忘订单-->
+                                    <div class="order-act">
+                                        <div class="vip-cus">
+                                            <input class="chk" type="checkbox">头部客户
+                                        </div>
+                                        <a href="#" class="link-memo">客户备忘</a>
+                                        <a href="#" class="link-add">添加客户</a>
+                                    </div>
+                                </div>
+                                <div class="con">
+                                    <div class="c-order-item">
+                                        <!--订单状态-->
+                                        <div class="order-status">
+                                            <p class="order-place">北京</p>
+
+                                            <p class="lbl-staus-area">
+                                                <span class="lbl-sta">未分配</span>
+                                            </p>
+                                        </div>
+                                        <!--订单详情-->
+                                        <div class="c-order-detail">
+                                            <div class="tr">
+                                                <div class="td">订单号：2000000</div>
+                                                <div class="td">客户姓名：测试1</div>
+                                                <div class="td">客户性别：男</div>
+                                                <div class="td">客户电话：13493822220</div>
+                                            </div>
+                                            <div class="tr">
+                                                <div class="td c-td-2">订单创建时间：2016-10-01 19:00:00</div>
+                                                <div class="td c-td-2">订单更新时间： 2016-10-01 21:10:02</div>
+                                            </div>
+                                        </div>
+                                        <!--收藏-->
+                                        <div class="link-coll">
+                                            <div class="link-opt">
+                                                <button class="link-collection">备忘标签</button>
+                                                <button class="link-edit-lb">编辑标签</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-order-item">
+                                        <!--订单状态-->
+                                        <div class="order-status">
+                                            <p class="order-place">北京</p>
+
+                                            <p class="lbl-staus-area">
+                                                <span class="lbl-sta">未分配</span>
+                                            </p>
+                                        </div>
+                                        <!--订单详情-->
+                                        <div class="c-order-detail">
+                                            <div class="tr">
+                                                <div class="td">订单号：2000000</div>
+                                                <div class="td">客户姓名：测试1</div>
+                                                <div class="td">客户性别：男</div>
+                                                <div class="td">客户电话：13493822220</div>
+                                            </div>
+                                            <div class="tr">
+                                                <div class="td c-td-2">订单创建时间：2016-10-01 19:00:00</div>
+                                                <div class="td c-td-2">订单更新时间： 2016-10-01 21:10:02</div>
+                                            </div>
+                                        </div>
+                                        <!--收藏-->
+                                        <div class="link-coll">
+                                            <div class="link-opt">
+                                                <button class="link-collection">备忘标签</button>
+                                                <button class="link-edit-lb">编辑标签</button>
+                                            </div>
+                                            <div class="lb-house lb-vip">
+                                                <span class="txt">头部客户</span><span class="ico-del2">x</span></div>
+                                            <div class="lb-house lb-cus">
+                                                <span class="txt">通州商住</span><span class="ico-del2">x</span></div>
+                                            <div class="lb-house lb-type-b">
+                                                <span class="txt">B类客户</span><span class="ico-del2">x</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="c-order-item">
+                                        <!--订单状态-->
+                                        <div class="order-status">
+                                            <p class="order-place">北京</p>
+
+                                            <p class="lbl-staus-area">
+                                                <span class="lbl-sta">无效线索</span>
+                                            </p>
+                                        </div>
+                                        <!--订单详情-->
+                                        <div class="c-order-detail">
+                                            <div class="tr">
+                                                <div class="td">订单号：2000000</div>
+                                                <div class="td">客户姓名：测试1</div>
+                                                <div class="td">客户性别：男</div>
+                                                <div class="td">客户电话：13493822220</div>
+                                            </div>
+                                            <div class="tr">
+                                                <div class="td c-td-2">历史咨询师：张一 21，张二 22，张三 33</div>
+                                            </div>
+                                            <div class="tr">
+                                                <div class="td c-td-2">订单创建时间：2016-10-01 19:00:00</div>
+                                                <div class="td c-td-2">订单分配时间：2016-10-01 21:10:02</div>
+                                                <div class="td c-td-2">订单更新时间： 2016-10-01 21:10:02</div>
+                                            </div>
+                                        </div>
+                                        <!--收藏-->
+                                        <div class="link-coll">
+                                            <div class="link-opt">
+                                                <button class="link-collection">备忘标签</button>
+                                                <button class="link-edit-lb">编辑标签</button>
+                                            </div>
+                                            <div class="lb-house lb-vip">
+                                                <span class="txt">头部客户</span><span class="ico-del2">x</span></div>
+                                            <div class="lb-house lb-cus">
+                                                <span class="txt">通州商住通州商住通州商住</span><span class="ico-del2">x</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-order-item">
+                                        <!--订单状态-->
+                                        <div class="order-status">
+                                            <p class="order-place">北京</p>
+
+                                            <p class="lbl-staus-area">
+                                                <span class="lbl-sta">未确认收到分配</span>
+                                            </p>
+                                        </div>
+                                        <!--订单详情-->
+                                        <div class="c-order-detail">
+                                            <div class="tr">
+                                                <div class="td">订单号：2000000</div>
+                                                <div class="td">客户姓名：测试1</div>
+                                                <div class="td">客户性别：男</div>
+                                                <div class="td">客户电话：13493822220</div>
+                                            </div>
+                                            <div class="tr">
+                                                <div class="td">所属咨询师：张四 34</div>
+                                                <div class="td c-td-2">历史咨询师：张一 21，张二 22，张三 33</div>
+                                            </div>
+                                            <div class="tr">
+                                                <div class="td c-td-2">订单创建时间：2016-10-01 19:00:00</div>
+                                                <div class="td c-td-2">订单分配时间：2016-10-01 21:10:02</div>
+                                                <div class="td c-td-2">订单更新时间： 2016-10-01 21:10:02</div>
+                                            </div>
+                                        </div>
+                                        <!--收藏-->
+                                        <div class="link-coll">
+                                            <div class="link-opt">
+                                                <button class="link-collection">备忘标签</button>
+                                                <button class="link-edit-lb">编辑标签</button>
+                                            </div>
+                                            <div class="lb-house lb-vip">
+                                                <span class="txt">头部客户头部客户</span><span class="ico-del2">x</span></div>
+                                            <div class="lb-house lb-cus">
+                                                <span class="txt">通州商住通州商住通州商住</span><span class="ico-del2">x</span>
+                                            </div>
+                                        </div>
+                                        <!--按钮-->
+                                        <div class="c-btn-area">
+                                            <a href="#" class="btn btn-danger">有新用户分配</a>
+                                            <a href="#" class="btn btn-warning">修改咨询师</a>
+                                        </div>
+                                    </div>
+                                    <div class="c-order-item">
+                                        <!--订单状态-->
+                                        <div class="order-status">
+                                            <p class="order-place">北京</p>
+
+                                            <p class="lbl-staus-area">
+                                                <span class="lbl-sta">未联系</span>
+                                            </p>
+
+                                            <p class="lbl-staus-area">
+                                                <span class="lbl2-sta">正常订单</span>
+                                            </p>
+                                        </div>
+                                        <!--订单详情-->
+                                        <div class="c-order-detail">
+                                            <div class="tr">
+                                                <div class="td">订单号：2000000</div>
+                                                <div class="td">客户姓名：测试1</div>
+                                                <div class="td">客户性别：男</div>
+                                                <div class="td">客户电话：13493822220</div>
+                                            </div>
+                                            <div class="tr">
+                                                <div class="td">所属咨询师：张四 34</div>
+                                                <div class="td c-td-2">历史咨询师：张一 21，张二 22，张三 33</div>
+                                            </div>
+                                            <div class="tr">
+                                                <div class="td c-td-2">订单创建时间：2016-10-01 19:00:00</div>
+                                                <div class="td c-td-2">订单分配时间：2016-10-01 21:10:02</div>
+                                                <div class="td c-td-2">订单更新时间： 2016-10-01 21:10:02</div>
+                                            </div>
+                                            <div class="tr tr-remark">
+                                                <div class="th">最后一次实际联系：</div>
+                                                <div class="td">
+                                                    最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--收藏-->
+                                        <div class="link-coll">
+                                            <div class="link-opt">
+                                                <button class="link-collection">备忘标签</button>
+                                                <button class="link-edit-lb">编辑标签</button>
+                                            </div>
+                                            <div class="lb-house lb-vip">
+                                                <span class="txt">头部客户头部客户头部客户头部客</span><span class="ico-del2">x</span>
+                                            </div>
+                                            <div class="lb-house lb-cus">
+                                                <span class="txt">通州商住通州商住通州商住</span><span class="ico-del2">x</span>
+                                            </div>
+                                        </div>
+                                        <!--按钮-->
+                                        <div class="c-btn-area">
+                                            <a href="#" class="btn btn-info">更新客户跟进</a>
+                                            <a href="#" class="btn btn-warning">修改咨询师</a>
+                                        </div>
+                                    </div>
+                                    <div class="c-order-item">
+                                        <!--订单状态-->
+                                        <div class="order-status">
+                                            <p class="order-place">北京</p>
+
+                                            <p class="lbl-staus-area">
+                                                <span class="lbl-sta">联系未带看</span>
+                                            </p>
+
+                                            <p class="lbl-staus-area">
+                                                <span class="lbl2-sta">保留订单</span>
+                                            </p>
+                                        </div>
+                                        <!--订单详情-->
+                                        <div class="c-order-detail">
+                                            <div class="tr">
+                                                <div class="td">订单号：52345678</div>
+                                                <div class="td">客户姓名：测试1</div>
+                                                <div class="td">客户性别：男</div>
+                                                <div class="td">客户电话：13493822220</div>
+                                            </div>
+                                            <div class="tr">
+                                                <div class="td">所属咨询师：张四 34</div>
+                                                <div class="td c-td-2">历史咨询师：张一 21，张二 22，张三 33</div>
+                                            </div>
+                                            <div class="tr">
+                                                <div class="td c-td-2">订单创建时间：2016-10-01 19:00:00</div>
+                                                <div class="td c-td-2">订单分配时间：2016-10-01 21:10:02</div>
+                                                <div class="td c-td-2">订单更新时间： 2016-10-01 21:10:02</div>
+                                            </div>
+                                            <div class="tr tr-remark">
+                                                <div class="th">最后一次实际联系：</div>
+                                                <div class="td">
+                                                    XXXXXXXXXXXXXXXXXXXXXXXXX
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--收藏-->
+                                        <div class="link-coll">
+                                            <div class="link-opt">
+                                                <button class="link-collection">备忘标签</button>
+                                                <button class="link-edit-lb">编辑标签</button>
+                                            </div>
+                                            <div class="lb-house lb-vip">
+                                                <span class="txt">头部客户头部客户头部客户头部客户头部客户</span><span class="ico-del2">x</span>
+                                            </div>
+                                            <div class="lb-house lb-cus">
+                                                <span class="txt">通州商住通州商住通州商住通州商</span><span class="ico-del2">x</span>
+                                            </div>
+                                            <div class="lb-house lb-cus">
+                                                <span class="txt">通州商住通州商住通州商住通州商</span><span class="ico-del2">x</span>
+                                            </div>
+                                        </div>
+                                        <!--按钮-->
+                                        <div class="c-btn-area">
+                                            <a href="#" class="btn btn-warning">修改咨询师</a>
+                                        </div>
+                                    </div>
+                                    <div class="c-order-item">
+                                        <!--订单状态-->
+                                        <div class="order-status">
+                                            <p class="order-place">北京</p>
+
+                                            <p class="lbl-staus-area">
+                                                <span class="lbl-sta">已带看</span>
+                                            </p>
+
+                                            <p class="lbl-staus-area">
+                                                <span class="lbl2-sta">已关闭订单</span>
+                                            </p>
+                                        </div>
+                                        <!--订单详情-->
+                                        <div class="c-order-detail">
+                                            <div class="tr">
+                                                <div class="td">订单号：2000000</div>
+                                                <div class="td">客户姓名：测试1</div>
+                                                <div class="td">客户性别：男</div>
+                                                <div class="td">客户电话：13493822220</div>
+                                            </div>
+                                            <div class="tr">
+                                                <div class="td">所属咨询师：张四 34</div>
+                                                <div class="td c-td-2">历史咨询师：张一 21，张二 22，张三 33</div>
+                                            </div>
+                                            <div class="tr">
+                                                <div class="td c-td-2">订单创建时间：2016-10-01 19:00:00</div>
+                                                <div class="td c-td-2">订单分配时间：2016-10-01 21:10:02</div>
+                                                <div class="td c-td-2">订单更新时间： 2016-10-01 21:10:02</div>
+                                            </div>
+                                            <div class="tr tr-remark">
+                                                <div class="th">最后一次实际联系：</div>
+                                                <div class="td">
+                                                    XXXXXXXXXXXXXXXXXXXXXXXXX
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--按钮-->
+                                        <div class="c-btn-area">
+                                            <a href="#" class="btn btn-warning">重新上户</a>
+                                            <a href="#" class="btn btn-default">恢复订单</a>
+                                        </div>
+                                    </div>
+                                    <div class="c-order-item">
+                                        <!--订单状态-->
+                                        <div class="order-status">
+                                            <p class="order-place">北京</p>
+
+                                            <p class="lbl-staus-area">
+                                                <span class="lbl-sta">排号</span>
+                                            </p>
+                                        </div>
+                                        <!--订单详情-->
+                                        <div class="c-order-detail">
+                                            <div class="tr">
+                                                <div class="td">订单号：2000000</div>
+                                                <div class="td">客户姓名：测试1</div>
+                                                <div class="td">客户性别：男</div>
+                                                <div class="td">客户电话：13493822220</div>
+                                            </div>
+                                            <div class="tr">
+                                                <div class="td">所属咨询师：张四 34</div>
+                                                <div class="td c-td-2">历史咨询师：张一 21，张二 22，张三 33</div>
+                                            </div>
+                                            <div class="tr">
+                                                <div class="td c-td-2">订单创建时间：2016-10-01 19:00:00</div>
+                                                <div class="td c-td-2">订单分配时间：2016-10-01 21:10:02</div>
+                                                <div class="td c-td-2">订单更新时间： 2016-10-01 21:10:02</div>
+                                            </div>
+                                            <div class="tr tr-remark">
+                                                <div class="th">最后一次实际联系：</div>
+                                                <div class="td">
+                                                    最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致最后一行增加“最后一次实际联系”，最多展示两行文本信息。按钮的展示和逻辑与未联系订单一致
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include("../app/footer/footer.html")
+</div>
+<!--标签弹层-->
+<div class="dialog-lb">
+    <div class="dialog">
+        <div class="dialog-header"><h3>选择标签</h3></div>
+        <div class="dialog-body">
+            <ul class="house-lb-area">
+                <li>头部客户</li>
+                <li class="on">我是系统标签2</li>
+                <li>我是自定义标签</li>
+                <li>我是自定义标签</li>
+                <li>我是最长的自定义标签我是最长的自定义标签</li>
+                <li>我是最长的自定义标签我是最长的</li>
+            </ul>
+            <!--新增标签-->
+            <div class="house-lb-add">
+                <h3>新增收藏标签</h3>
+                <input class="form-control" type="text" placeholder="不得超过15个汉字(30个字符)"/>
+            </div>
+        </div>
+        <div class="dialog-footer">
+            <button type="reset" class="btn btn-default layer-btn-reset">取消</button>
+            <button type="button" class="btn btn-primary btn-commit fr">确定</button>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/order-manage.js"></script>
+<script src="../js/order-2.1.4.js"></script>
+</body>
+</html>

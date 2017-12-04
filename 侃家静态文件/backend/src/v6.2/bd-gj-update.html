@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>修改BD单跟进计划</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">BD详情页</li>
+                        <li class="active">BD单跟进</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="s2">
+                    <div class="panel">
+                        <div class="panel-body lpsw-bj">
+                            <!--BD跟进计划-->
+                            <div class="v-box">
+                                <div class="hd">
+                                    <h2>BD跟进计划</h2>
+                                </div>
+                                <div class="bd">
+                                    <ul class="lpbj-z">
+                                        <li>
+                                            <div class="j-ipt-area">
+                                                <label class="j-label required">跟进时间</label>
+
+                                                <div class="j-ipt-wrap">
+                                                    <div class="j-select">
+                                                        <input type="text" class="content" placeholder="请选择">
+                                                        <ul class="option" style="display: none;">
+                                                            <li>1</li>
+                                                            <li>2</li>
+                                                        </ul>
+                                                        <span class="ico"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="j-ipt-area">
+                                                <label class="j-label required">跟进人</label>
+
+                                                <div class="j-ipt-wrap">
+                                                    <div class="j-select">
+                                                        <input type="text" class="content" placeholder="请选择">
+                                                        <ul class="option" style="display: none;">
+                                                            <li>1</li>
+                                                            <li>2</li>
+                                                        </ul>
+                                                        <span class="ico"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="bd-gj-all">
+                                            <div class="bd-table-cl">
+                                                <div class="j-ipt-area">
+                                                    <label class="j-label required">预计结果</label>
+
+                                                    <div class="j-ipt-wrap">
+                                                        <textarea class="j-ipt" placeholder="请输入内容"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bd-table-cr">
+                                                <div class="j-ipt-area">
+                                                    <label class="j-label required">跟进计划</label>
+
+                                                    <div class="j-ipt-wrap">
+                                                        <textarea class="j-ipt" placeholder="请输入内容"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--取消保存按钮-->
+                            <div class="jyhy-btn">
+                                <div class="btn-area">
+                                    <button class="j-btn j-btn-gray">取消</button>
+                                    <button class="j-btn j-btn-blue">保存</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/Sortable.min.js"></script>
+<script src="../js/iconfont.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/v5.2.js"></script>
+<script src="../js/bd.js"></script>
+</body>
+</html>

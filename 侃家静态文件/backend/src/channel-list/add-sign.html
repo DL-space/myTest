@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>新增/编辑－签约信息</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row row-crumbs">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">签约信息</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-detail">
+                        <div class="content">
+                            <!--合作方-->
+                            <div class="panel panel-bd-partner">
+                                <div class="panel-heading">
+                                    <div class="panel-heading-wrap">
+                                        <h2 class="panel-title">合作方</h2>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="form-mod">
+                                        <li>
+                                            <div class="th"><label class="required"></label>城市：</div>
+                                            <div class="td">
+                                                <select class="form-control">
+                                                    <option value="0">北京</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="th"><label class="required"></label>签约类型：</div>
+                                            <div class="td">
+                                                <select class="form-control">
+                                                    <option value="0">请选择</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="th"><label class="required"></label>合作方：</div>
+                                            <div class="td">
+                                                <select class="form-control">
+                                                    <option value="0">请选择</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="th">决策人：</div>
+                                            <div class="td">
+                                                <div class="txt">张三</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="th">签约跟进：</div>
+                                            <div class="td">
+                                                <div class="txt">赵崇岩</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="th">维护跟进：</div>
+                                            <div class="td">
+                                                <input class="form-control" type="text"/>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="th"></div>
+                                            <div class="td">
+                                                <div class="txt"><a href="#">没找到合作方？请点击</a></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="sign-list">
+                                        <div class="sign-item sign-item-dy">
+                                            <ul class="form-mod form-mod-first">
+                                                <li>
+                                                    <div class="th">楼盘名称：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text" placeholder="输入楼盘名称">
+                                                    </div>
+                                                </li>
+                                                <li class="data-add"><a href="#" class="link-add">添加</a></li>
+                                                <li class="c-ext">
+                                                    <div class="th">合作时间：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"><span class="ext">-</span><input class="form-control" type="text">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <table class="table table-bordered table-responsive">
+                                                <tbody>
+                                                <tr>
+                                                    <th>楼盘ID</th>
+                                                    <th>楼盘名称</th>
+                                                    <th>类型</th>
+                                                    <th>销售状态</th>
+                                                    <th>当前合作状态</th>
+                                                    <th>区域</th>
+                                                    <th>城市</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td><a href="#">华业东方玫瑰</a></td>
+                                                    <td>住宅</td>
+                                                    <td>在售</td>
+                                                    <td>非合作</td>
+                                                    <td>朝阳</td>
+                                                    <td>北京</td>
+                                                    <td>
+                                                        <a class="link-opt" href="#">删除</a>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <ul class="form-mod">
+                                                <li>
+                                                    <div class="th">客户保护期：</div>
+                                                    <div class="td"><select class="form-control">
+                                                        <option value="0">7天</option>
+                                                    </select></div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">保护期判定标准：</div>
+                                                    <div class="td"><select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                    </select></div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">是否有来电来访保护：</div>
+                                                    <div class="td"><select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                    </select></div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">是否刷电商：</div>
+                                                    <div class="td"><select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                    </select></div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">电商费用：</div>
+                                                    <div class="td"><input class="form-control" type="text"></div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">结佣点位：</div>
+                                                    <div class="td"><input class="form-control" type="text"></div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">跳点或奖励：</div>
+                                                    <div class="td"><input class="form-control" type="text"></div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">结佣方式：</div>
+                                                    <div class="td"><select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                    </select></div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">结佣申请日期：</div>
+                                                    <div class="td"><select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                    </select></div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">佣金结算周期：</div>
+                                                    <div class="td"><select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                    </select></div>
+                                                </li>
+                                                <li class="remark">
+                                                    <div class="th">案场其他要求：</div>
+                                                    <div class="td"><textarea class="form-control"></textarea></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="sign-item sign-item-dy">
+                                            <ul class="form-mod form-mod-first">
+                                                <li>
+                                                    <div class="th">楼盘名称：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text" placeholder="输入楼盘名称">
+                                                    </div>
+                                                </li>
+                                                <li class="data-add"><a href="#" class="link-add">添加</a></li>
+                                                <li class="c-ext">
+                                                    <div class="th">合作时间：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"><span class="ext">-</span><input class="form-control" type="text">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <table class="table table-bordered table-responsive">
+                                                <tbody>
+                                                <tr>
+                                                    <th>楼盘ID</th>
+                                                    <th>楼盘名称</th>
+                                                    <th>类型</th>
+                                                    <th>销售状态</th>
+                                                    <th>当前合作状态</th>
+                                                    <th>区域</th>
+                                                    <th>城市</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td><a href="#">华业东方玫瑰</a></td>
+                                                    <td>住宅</td>
+                                                    <td>在售</td>
+                                                    <td>非合作</td>
+                                                    <td>朝阳</td>
+                                                    <td>北京</td>
+                                                    <td>
+                                                        <a class="link-opt" href="#">删除</a>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <ul class="form-mod">
+                                                <li>
+                                                    <div class="th">客户保护期：</div>
+                                                    <div class="td"><select class="form-control">
+                                                        <option value="0">7天</option>
+                                                    </select></div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">保护期判定标准：</div>
+                                                    <div class="td"><select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                    </select></div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">是否有来电来访保护：</div>
+                                                    <div class="td"><select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                    </select></div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">是否刷电商：</div>
+                                                    <div class="td"><select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                    </select></div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">电商费用：</div>
+                                                    <div class="td"><input class="form-control" type="text"></div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">结佣点位：</div>
+                                                    <div class="td"><input class="form-control" type="text"></div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">跳点或奖励：</div>
+                                                    <div class="td"><input class="form-control" type="text"></div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">结佣方式：</div>
+                                                    <div class="td"><select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                    </select></div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">结佣申请日期：</div>
+                                                    <div class="td"><select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                    </select></div>
+                                                </li>
+                                                <li>
+                                                    <div class="th">佣金结算周期：</div>
+                                                    <div class="td"><select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                    </select></div>
+                                                </li>
+                                                <li class="remark">
+                                                    <div class="th">案场其他要求：</div>
+                                                    <div class="td"><textarea class="form-control"></textarea></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-area">
+                                            <input class="btn btn-default" type="button" value="取消"><input class="btn btn-primary" type="button" value="保存">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/bd.js"></script>
+</body>
+</html>

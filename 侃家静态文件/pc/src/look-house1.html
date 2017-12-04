@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>我要看房-改版</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/look-house.css">
+</head>
+<body>
+<div class="container">
+    @@include("./app/header/header2.html")
+    <div class="center">
+        <div class="row row-search">
+            <div class="wrap">
+                @@include("./app/search/search.html")
+            </div>
+        </div>
+        <div class="row row-crumb">
+            @@include("./app/crumbs/crumb.html")
+        </div>
+        <div class="row row-top-nav">
+            @@include("./app/detail-top/index.html")
+        </div>
+        <div class="row">
+            <div class="zckf">
+                <div class="inn">
+                    <div class="text">免费专车·1V1带看·高效省心不受累</div>
+                    <div class="input-area">
+                        <input type="text" class="ipt" value="输入预约手机号">
+                        <a href="#" class="btn btn-cons">立即预约</a>
+                    </div>
+                    <div class="phone-num">或者免费咨询我们：400-080-7815</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include("./app/footer/footer.html")
+    @@include("./app/sidebar/sidebar.html")
+    @@include("./app/app-download/app-download.html")
+</div>
+<script src="./js/lib/jquery/jquery-1.9.1.min.js"></script>
+<script src="./js/lib/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/look-house.js"></script>
+</body>
+</html>

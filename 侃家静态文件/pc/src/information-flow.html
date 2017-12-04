@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>信息流</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/house-list.css">
+</head>
+<body>
+<div class="container">
+    @@include("./app/header/header.html")
+    <div class="center">
+        <div class="row row-search">
+            <div class="wrap">
+                @@include("./app/search/search.html")
+                <!--@@include("./app/search/search-nopic.html")-->
+            </div>
+        </div>
+        <div class="row row-crumb">
+            @@include("./app/crumbs/crumb.html")
+        </div>
+        <div class="row row-nav">
+            <ul class="list-nav">
+                <li><a href="list.html">全部楼盘</a></li>
+                <li class="nav-infomation on"><a href="information-flow.html">新房情报局<span class="ico ico-new">new</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="row row-infomation">
+            <div class="col9">
+                <div class="information-list">
+                    <!--信息筛选标签-->
+                    <ul class="tab-list">
+                        <li class="on"><a href="#">全 部</a></li>
+                        <li><a href="#">侃家头条</a></li>
+                        <li><a href="#">市场情报</a></li>
+                        <li><a href="#">楼盘情报</a></li>
+                        <li><a href="#">楼盘舆论</a></li>
+                        <li><a href="#">消息精选</a></li>
+                        <li><a href="#">热点解读</a></li>
+                        <li class="last"><a href="#">紧急消息</a></li>
+                    </ul>
+                    <div class="timeline">
+                        <div class="feed">
+                            <div class="datetime">
+                                <p class="time">刚刚</p>
+                                <p class="date">3月2日</p>
+                            </div>
+                            <em class="circle"></em>
+                            <div class="feed-detail">
+                                <div class="author">
+                                    <img src="./images/img-face.png" alt="" class="face"/>
+                                    <span class="name">侃家头条</span>
+                                    <span class="des">(虚拟角色描述字段)</span>
+                                    <a href="#" class="a-dy"><em class="ico-plus">+</em>订阅</a>
+                                </div>
+                                <div class="tit">
+                                    <h4>想购买万科想购买万科想购买万科想购买万科中央城想购买万科中央城想购买万科中央城的小伙伴可以准备行动了哟~</h4>
+                                    <span class="info-type">分类1</span>
+                                </div>
+                                <div class="con">
+                                    <p>
+                                        据小侃获得的最新一手消息，万科中央城目前13-1号楼8、13层准备开盘，主力户型为69、78、82平米。其中69平米户型层高4.2米，78和82平米户型层高3.9米，错层部分4.5米。均价38000元-40000元，总价300万左右。感兴趣的小伙伴赶快跟着小侃去看房吧~！<a class="link-all" href="#"><span class="ico ico-link"></span>查看全文</a>
+                                    </p>
+                                </div>
+                                <div class="author-opt">
+                                    <div class="opt-zan">
+                                        <span class="text">有用</span>
+                                        <span class="ico ico-opt-zan">赞</span>
+                                        <span class="num">246</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed">
+                            <div class="datetime">
+                                <p class="time">54分钟前</p>
+                                <p class="date">3月2日</p>
+                            </div>
+                            <em class=" circle"></em>
+                            <div class="feed-detail">
+                                <div class="author">
+                                    <img src="./images/img-face.png" alt="" class="face"/>
+                                    <span class="name">侃家头条</span>
+                                    <span class="des">(虚拟角色描述字段)</span>
+                                    <a href="#" class="a-dy a-ydy">已订阅</a>
+                                </div>
+                                <div class="tit">
+                                    <h4>想购买万科中央城的小伙伴可以准备行动了哟想购买万科中央城的小伙伴可以准备行动了哟~</h4>
+                                    <span class="info-type">分类1</span>
+                                </div>
+                                <div class="con">
+                                    <p>
+                                        据小侃获得的最新一手消息，万科中央城目前13-1号楼8、13层准备开盘，主力户型为69、78、82平米。其中69平米户型层高4.2米，78和82平米户型层高3.9米，错层部分4.5米。均价38000元-40000元，总价300万左右。感兴趣的小伙伴赶快跟着小侃去看房吧~！<a class="link-all" href="#"><span class="ico ico-link"></span>查看全文</a>
+                                    </p>
+                                </div>
+                                <ul class="feed-pic">
+                                    <li class="feed-video" data-url="http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4">
+                                        <img src="./images/img-house2.jpg" alt=""/>
+                                        <span class="ico ico-video">视频</span>
+                                    </li>
+                                    <li><img src="./images/height.jpg" alt=""/></li>
+                                    <li><img src="./images/width.jpg" alt=""/></li>
+                                </ul>
+                                <div class="related-projects">
+                                    <h4>查看相关楼盘详细信息</h4>
+                                    <ul class="project-list">
+                                        <li>
+                                            <a href="#" class="project-link">
+                                                <div class="fl">
+                                                    <span class="pro-name">万科中央城</span>
+                                                    <span class="fgx">|</span>
+                                                    <span class="pro-pos">房山-长阳</span>
+                                                    <span class="fgx">|</span>
+                                                    <span class="pro-price"><em>269-320</em>万</span>
+                                                </div>
+                                                <div class="fr">
+                                                    <span class="link-detail">查看详情</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="last">
+                                            <a href="#" class="project-link">
+                                                <div class="fl">
+                                                    <span class="pro-name">万科中央城</span>
+                                                    <span class="fgx">|</span>
+                                                    <span class="pro-pos">房山-长阳</span>
+                                                    <span class="fgx">|</span>
+                                                    <span class="pro-price"><em>269-320</em>万</span>
+                                                </div>
+                                                <div class="fr">
+                                                    <span class="link-detail">查看详情</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="author-opt">
+                                    <div class="opt-zan opt-yz">
+                                        <span class="text">有用</span>
+                                        <span class="ico ico-opt-zan">赞</span>
+                                        <span class="num">246</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed">
+                            <div class="datetime">
+                                <p class="time">20:46</p>
+                                <p class="date">2017年1月12日</p>
+                            </div>
+                            <em class="circle"></em>
+
+                            <div class="feed-detail">
+                                <div class="author">
+                                    <img src="./images/img-face.png" alt="" class="face"/>
+                                    <span class="name">侃家头条</span>
+                                    <span class="des">(虚拟角色描述字段)</span>
+                                </div>
+                                <div class="tit">
+                                    <h4>想购买万科中央城的小伙伴可以准备行动了哟~</h4>
+                                    <span class="info-type">分类1</span>
+                                </div>
+                                <div class="con">
+                                    <p>
+                                        据小侃获得的最新一手消息，万科中央城目前13-1号楼8、13层准备开盘，主力户型为69、78、82平米。其中69平米户型层高4.2米。<a class="link-all" href="#"><span class="ico ico-link"></span>查看全文</a>
+                                    </p>
+                                </div>
+                                <div class="related-projects">
+                                    <h4>查看相关楼盘详细信息</h4>
+                                    <ul class="project-list">
+                                        <li>
+                                            <a href="#" class="project-link">
+                                                <div class="fl">
+                                                    <span class="pro-name">万科中央城</span>
+                                                    <span class="fgx">|</span>
+                                                    <span class="pro-pos">房山-长阳</span>
+                                                    <span class="fgx">|</span>
+                                                    <span class="pro-price"><em>269-320</em>万</span>
+                                                </div>
+                                                <div class="fr">
+                                                    <span class="link-detail">查看详情</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="last">
+                                            <a href="#" class="project-link">
+                                                <div class="fl">
+                                                    <span class="pro-name">万科中央城</span>
+                                                    <span class="fgx">|</span>
+                                                    <span class="pro-pos">房山-长阳</span>
+                                                    <span class="fgx">|</span>
+                                                    <span class="pro-price"><em>269-320</em>万</span>
+                                                </div>
+                                                <div class="fr">
+                                                    <span class="link-detail">查看详情</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="author-opt">
+                                    <div class="opt-zan">
+                                        <span class="text">有用</span>
+                                        <span class="ico ico-opt-zan">赞</span>
+                                        <span class="num">246</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed feed-last">
+                            <div class="datetime">
+                                <p class="time">20:46</p>
+                                <p class="date">2017年1月12日</p>
+                            </div>
+                            <em class="circle"></em>
+                            <div class="feed-detail">
+                                <div class="author">
+                                    <img src="./images/img-face.png" alt="" class="face"/>
+                                    <span class="name">侃家头条</span>
+                                    <span class="des">(虚拟角色描述字段)</span>
+                                </div>
+                                <div class="tit">
+                                    <h4>想购买万科中央城的小伙伴可以准备行动了哟想购买万科中央城的小伙伴可以准备行动了哟~</h4>
+                                    <span class="info-type">分类1</span>
+                                </div>
+                                <div class="con">
+                                    <p>
+                                        据小侃获得的最新一手消息，万科中央城目前13-1号楼8、13层准备开盘，主力户型为69、78、82平米。其中69平米户型层高4.2米，78和82平米户型层高3.9米，错层部分4.5米。均价38000元-40000元，总价300万左右。感兴趣的小伙伴赶快跟着小侃去看房吧~！<a class="link-all" href="#"><span class="ico ico-link"></span>查看全文</a>
+                                    </p>
+                                </div>
+                                <ul class="feed-pic">
+                                    <li class="feed-video" data-url="http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4">
+                                        <img src="./images/img-house2.jpg" alt=""/>
+                                        <span class="ico ico-video">视频</span>
+                                    </li>
+                                    <li><img src="./images/img-house2.jpg" alt=""/></li>
+                                </ul>
+                                <div class="related-projects">
+                                    <h4>查看相关楼盘详细信息</h4>
+                                    <ul class="project-list">
+                                        <li>
+                                            <a href="#" class="project-link">
+                                                <div class="fl">
+                                                    <span class="pro-name">通泰国际公馆</span>
+                                                    <span class="fgx">|</span>
+                                                    <span class="pro-pos">房山-长阳</span>
+                                                    <span class="fgx">|</span>
+                                                    <span class="pro-price"><em>269-320</em>万</span>
+                                                </div>
+                                                <div class="fr">
+                                                    <span class="link-detail">查看详情</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="project-link">
+                                                <div class="fl">
+                                                    <span class="pro-name">万科中央城</span>
+                                                    <span class="fgx">|</span>
+                                                    <span class="pro-pos">房山-长阳</span>
+                                                    <span class="fgx">|</span>
+                                                    <span class="pro-price"><em>269-320</em>万</span>
+                                                </div>
+                                                <div class="fr">
+                                                    <span class="link-detail">查看详情</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="last">
+                                            <a href="#" class="project-link">
+                                                <div class="fl">
+                                                    <span class="pro-name">中国铁建原香漫谷</span>
+                                                    <span class="fgx">|</span>
+                                                    <span class="pro-pos">房山-长阳</span>
+                                                    <span class="fgx">|</span>
+                                                    <span class="pro-price"><em>269-320</em>万</span>
+                                                </div>
+                                                <div class="fr">
+                                                    <span class="link-detail">查看详情</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="author-opt">
+                                    <div class="opt-zan">
+                                        <span class="text">有用</span>
+                                        <span class="ico ico-opt-zan">赞</span>
+                                        <span class="num">246</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed-more">
+                        <a href="#">浏览更多</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col11">
+                <!--侃家好文-->
+                <div class="box4 kjhw">
+                    <div class="hd">
+                        <h2>不能错过的深度好文</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="list">
+                            <div class="media6">
+                                <div class="pic-area-lg">
+                                    <a href="#">
+                                        <img src="images/img-house2.jpg" alt="house">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <div class="con">
+                                        <p>
+                                            <a href="#">
+                                                <span class="key-word">关键字</span>
+                                                想购买万科中央城的小伙伴可以准备行动了哟~想购买万想购买万科中央城的小伙伴可以准备行动了哟~想购买万
+                                            </a>
+                                        </p>
+                                        <span class="time">3小时前</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media6">
+                                <div class="pic-area">
+                                    <a href="#">
+                                        <img src="images/img-house2.jpg" alt="house">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <div class="con">
+                                        <p>
+                                            <a href="#">
+                                                想2购买万科中央
+                                            </a>
+                                        </p>
+                                        <span class="time">3小时前</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media6 last">
+                                <div class="pic-area">
+                                    <a href="#">
+                                        <img src="images/img-house2.jpg" alt="house">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <div class="con">
+                                        <p>
+                                            <a href="#">
+                                                想购买万科中央城的小伙伴可以准备行动了哟~想购买万想购买万科中央城的小伙伴可以准备行动了哟~想购买万
+                                            </a>
+                                        </p>
+                                        <span class="time">3小时前</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--推荐楼盘-->
+                <div class="box4 info-tjlp">
+                    <div class="hd">
+                        <h2>推荐楼盘</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="list">
+                            <div class="media6">
+                                <div class="pic-area">
+                                    <a href="#">
+                                        <img src="images/img-house2.jpg" alt="house">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <div class="name">
+                                        <a href="#">金泰丽湾月栖山金泰丽湾月栖山山山山山山</a>
+                                    </div>
+                                    <div class="price">120,000元/平</div>
+                                    <div class="total-price">139-413万</div>
+                                </div>
+                            </div>
+                            <div class="media6">
+                                <div class="pic-area">
+                                    <a href="#">
+                                        <img src="images/img-house2.jpg" alt="house">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <div class="name">
+                                        <a href="#">金泰丽湾月栖山金泰丽湾月栖山山山山山山</a>
+                                    </div>
+                                    <div class="price">120,000元/平</div>
+                                    <div class="total-price">139-413万</div>
+                                </div>
+                            </div>
+                            <div class="media6">
+                                <div class="pic-area">
+                                    <a href="#">
+                                        <img src="images/img-house2.jpg" alt="house">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <div class="name">
+                                        <a href="#">金泰丽湾月栖山金泰丽湾月栖山山山山山山</a>
+                                    </div>
+                                    <div class="price">120,000元/平</div>
+                                    <div class="total-price">139-413万</div>
+                                </div>
+                            </div>
+                            <div class="media6">
+                                <div class="pic-area">
+                                    <a href="#">
+                                        <img src="images/img-house2.jpg" alt="house">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <div class="name">
+                                        <a href="#">金泰丽湾月栖山金泰丽湾月栖山山山山山山</a>
+                                    </div>
+                                    <div class="price">120,000元/平</div>
+                                    <div class="total-price">139-413万</div>
+                                </div>
+                            </div>
+                            <div class="media6 last">
+                                <div class="pic-area">
+                                    <a href="#">
+                                        <img src="images/img-house2.jpg" alt="house">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <div class="name">
+                                        <a href="#">金泰丽湾月栖山金泰丽湾月栖山山山山山山</a>
+                                    </div>
+                                    <div class="price">120,000元/平</div>
+                                    <div class="total-price">139-413万</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--感兴趣楼盘-->
+            <div class="box2 box-inter">
+                <div class="hd">
+                    <h2>你可能感兴趣的楼盘</h2>
+                </div>
+                <div class="bd">
+                    <div class="house-list">
+                        <div class="media2">
+                            <div class="pic"><a href="#"><img alt="小房子" src="images/img-house2.jpg"></a></div>
+                            <div class="text">
+                                <h4><a href="#">V7荷塘月色</a></h4>
+
+                                <div class="price">开发商报价：<em>42,000元/平米</em></div>
+                                <div class="info">楼盘户型：一居(2)三居(1),二局(5)</div>
+                                <div class="info">楼盘地址：顺义南法信顺平路与南路</div>
+                            </div>
+                        </div>
+                        <div class="media2">
+                            <div class="pic"><a href="#"><img alt="小房子" src="images/img-house2.jpg"></a></div>
+                            <div class="text">
+                                <h4><a href="#">V7荷塘月色</a></h4>
+
+                                <div class="price">开发商报价：<em>42,000元/平米</em></div>
+                                <div class="info">楼盘户型：一居(2)三居(1),二局(5)</div>
+                                <div class="info">楼盘地址：顺义南法信顺平路与南路</div>
+                            </div>
+                        </div>
+                        <div class="media2">
+                            <div class="pic"><a href="#"><img alt="小房子" src="images/img-house2.jpg"></a></div>
+                            <div class="text">
+                                <h4><a href="#">V7荷塘月色</a></h4>
+
+                                <div class="price">开发商报价：<em>42,000元/平米</em></div>
+                                <div class="info">楼盘户型：一居(2)三居(1),二局(5)</div>
+                                <div class="info">楼盘地址：顺义南法信顺平路与南路</div>
+                            </div>
+                        </div>
+                        <div class="media2">
+                            <div class="pic"><a href="#"><img alt="小房子" src="images/img-house2.jpg"></a></div>
+                            <div class="text">
+                                <h4><a href="#">V7荷塘月色</a></h4>
+
+                                <div class="price">开发商报价：<em>42,000元/平米</em></div>
+                                <div class="info">楼盘户型：一居(2)三居(1),二局(5)</div>
+                                <div class="info">楼盘地址：顺义南法信顺平路与南路</div>
+                            </div>
+                        </div>
+                        <div class="media2">
+                            <div class="pic"><a href="#"><img alt="小房子" src="images/img-house2.jpg"></a></div>
+                            <div class="text">
+                                <h4><a href="#">V7荷塘月色</a></h4>
+
+                                <div class="price">开发商报价：<em>42,000元/平米</em></div>
+                                <div class="info">楼盘户型：一居(2)三居(1),二局(5)</div>
+                                <div class="info">楼盘地址：顺义南法信顺平路与南路</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--弹出层遮罩-->
+    <div id="fade"></div>
+    <div id="picture">
+        <div id="middle">
+            <!--图片大小自适应的-->
+            <img class="img" src="" alt="">
+            <div id="video"></div>
+            <div>
+                <img class="cha" src="images/cha.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    @@include("./app/footer/footer.html")
+    @@include("./app/sidebar/sidebar.html")
+    <!--@@include("./app/app-download/app-download.html")-->
+</div>
+<script type="text/javascript" src="./ckplayer/ckplayer.js" charset="utf-8"></script>
+<script src="./js/lib/jquery/jquery-1.9.1.min.js"></script>
+<script src="./js/lib/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="./js/common.js"></script>
+<script type="text/javascript" src="./js/lib/layer_new/layer.js"></script>
+<script src="./js/house-list.js"></script>
+<script type="text/javascript" src="./js/layer_news.js"></script>
+</body>
+</html>

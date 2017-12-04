@@ -1,0 +1,625 @@
+.top-menu-wrap, .top-menu-banner {
+    padding-top: 20px;
+}
+.top-menu-wrap, .house-name, .detail-nav ul {
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.top-menu-wrap, .house-name, .detail-nav-six ul {
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.house-name {
+    margin-bottom: 20px;
+}
+.house-name h1, .house-name .subtitle, .house-name .house-tag {
+    float: left;
+}
+.house-name .name {
+    clear: both;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.house-name .subtitle {
+    color: #888;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.house-name .house-tag {
+    margin-top: 9px;
+}
+.house-name h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-right: 15px;
+}
+.house-name .house-tag .active {
+    border-color: #73b5e8;
+}
+.house-name .house-tag .active, .house-name .house-tag .active a {
+    color: #73b5e8;
+}
+.house-name .subtitle {
+    margin: 5px 10px 0 0;
+}
+.detail-nav {
+    clear: both;
+    height: 40px;
+    background: url("../images/bg-top-nav.png") 0 0 repeat-x;
+    overflow: hidden;
+}
+.detail-nav li {
+    float: left;
+    font-size: 16px;
+    width: 171px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.detail-nav li.first {
+    border-left: 1px solid #eaeaea;
+}
+.detail-nav li.last {
+    border-right: 1px solid #eaeaea;
+}
+.detail-nav li a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.detail-nav li.on {
+    height: 38px;
+    line-height: 38px;
+    border-top: 1px solid #0074c1;
+    border-bottom: 1px solid #0074c1;
+    background: #0074c1;
+}
+.detail-nav li.last {
+    width: 172px;
+}
+.detail-nav li.on a {
+    color: #fff;
+}
+/*6个li 样式*/
+.detail-nav-six{
+    clear: both;
+    height: 40px;
+    background: url("../images/bg-top-nav.png") 0 0 repeat-x;
+    overflow: hidden;
+}
+.detail-nav-six li{
+    float: left;
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.detail-nav-six li.first {
+    border-left: 1px solid #eaeaea;
+}
+.detail-nav-six li.last {
+    border-right: 1px solid #eaeaea;
+}
+.detail-nav-six li a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.detail-nav-six li.on {
+    height: 38px;
+    line-height: 38px;
+    border-top: 1px solid #0074c1;
+    border-bottom: 1px solid #0074c1;
+    background: #0074c1;
+}
+.detail-nav-six li.last {
+    width: 198px;
+}
+.detail-nav-six li.on a {
+    color: #fff;
+}
+/*楼盘详情页悬浮导航*/
+.top-menu-banner {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*background: rgba(255, 255, 255, 0.98);*/
+    background: #fff;
+    opacity: 0.98;
+    filter: "alpha(opacity=98)";
+    -ms-filter: "alpha(opacity=98)";
+    z-index: 5;
+}
+.top-menu-banner .detail-nav li.first {
+    border-left: 0;
+}
+.top-menu-banner .detail-nav li.last {
+    border-right: 0;
+}
+.top-menu-banner .detail-nav-six li.first {
+    border-left: 0;
+}
+.top-menu-banner .detail-nav-six li.last {
+    width: 198px;
+    border-right: 0;
+}
+.dev-price {
+    float: left;
+    color: #888;
+    line-height: 46px;
+}
+.dev-price em {
+    font-style: normal;
+    color: #e85045;
+    font-size: 22px;
+}
+.top-menu-banner .discount {
+    float: right;
+}
+.top-menu-banner .discount p {
+    float: left;
+    font-size: 16px;
+    color: #e95046;
+    font-weight: bold;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.top-menu-banner .discount .youhui {
+    max-width: 400px;
+    margin-right: 46px;
+}
+.top-menu-banner .discount .hot-phone {
+    margin-right: 20px;
+}
+.top-menu-banner .discount .btn-bm {
+    padding: 0 32px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+/*免费咨询*/
+.advice-free {
+    clear: both;
+    height: 100px;
+    background-color: #f3f3f3;
+    overflow: hidden;
+}
+.advice-free .pic {
+    float: left;
+    margin-right: 32px;
+    padding: 20px 0 0 30px;
+}
+.advice-free .pic img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.advice-free .input-area {
+    float: left;
+    margin-right: 35px;
+    padding-top: 33px;
+}
+.advice-free .input-area .ico-phone {
+    float: left;
+    margin: 8px 10px 0 0;
+}
+.advice-free .free-number {
+    float: left;
+    padding-top: 33px;
+}
+.advice-free .free-number .number {
+    height: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.advice-free .free-number .color-number {
+    color: #e85045;
+}
+.advice-free .tips {
+    display: none;
+}
+.advice-free .error-tips {
+    color: #e85045;
+}
+.advice-free .right-tips {
+    color: #0074c1;
+}
+.no-pic {
+    height: auto;
+    background: none;
+}
+/*楼盘详情页公用样式*/
+.sub-list {
+    clear: both;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.sub-list li {
+    cursor: pointer;
+    color: #666;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+.sub-list li .ico {
+    float: left;
+    margin: 5px 8px 0 0;
+}
+/*楼盘附加信息*/
+.additional {
+    clear: both;
+    padding-top: 35px;
+    border-top: 1px solid #eaeaea;
+    overflow: hidden;
+}
+.additional h4, .additional p {
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+.additional h4 {
+    font-size: 16px;
+}
+.additional p.a {
+    color: #888;
+}
+/*看过此楼盘的人还看过*/
+.box-tjlp .bd {
+    padding-top: 20px;
+}
+/*分页*/
+.tab-comment .page {
+    padding-top: 30px;
+}
+.tab-comment .page .prev, .tab-comment .page .next {
+    display: inline-block;
+    width: 98px;
+    height: 22px;
+    line-height: 22px;
+    margin: 0 8px;
+    border: 1px solid #eaeaea;
+    overflow: hidden;
+}
+.tab-comment .page .prev:hover, .tab-comment .page .next:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #888;
+    border-color: #888;
+}
+.tab-comment .page span.disabled, .tab-comment .page span.disabled:hover {
+    cursor: not-allowed;
+    color: #333;
+    background: none;
+    border-color: #eaeaea;
+}
+/*推荐列表item*/
+.recommend .media {
+    width: 183px;
+}
+.recommend .media .pic {
+    position: relative;
+    margin-bottom: 0;
+}
+.recommend .media .pic, .recommend .media .pic img {
+    width: 184px;
+    height: 124px;
+}
+.recommend .media .price {
+    width: auto;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 8px;
+}
+.recommend .media .text .name, .recommend .media .text .total {
+    color: #666;
+    height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+.recommend .media .text {
+    height: 58px;
+    font-weight: bold;
+    background-color: #f8f8f8;
+    padding: 10px 10px 0 10px;
+}
+.recommend .media .text, .recommend .media .text a {
+    color: #333;
+}
+.recommend .media .text a {
+    background: none;
+}
+.media5 {
+    width: 281px;
+    height: 331px;
+    border: solid 1px #ddd;
+    overflow: hidden;
+}
+.media5 .pic {
+    text-align: center;
+    width: 281px;
+    height: 240px;
+    overflow: hidden;
+}
+.media5 .pic img {
+    width: 100%;
+    height: 240px;
+}
+.media5 .text {
+    background-color: #f8f8f8;
+    height: 71px;
+    padding: 20px 30px 0 30px;
+}
+.media5 .text .row1, .media5 .text .row2 {
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+.media5 .text .row1 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.media5 .text .row1 .status {
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #fff;
+    padding: 0 12px;
+    margin-left: 12px;
+    background: #6dafdc;
+}
+.media5 .text .lbl {
+    float: left;
+    font-weight: normal;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.media5 .text .row1 .sell-out {
+    background-color: #aaa;
+}
+.media5 .text .row2 {
+    font-size: 12px;
+    color: #333;
+}
+.media5 .text .area {
+    float: left;
+    max-width: 100px;
+    overflow: hidden;
+}
+.media5 .text .type-l {
+    float: left;
+    max-width: 90px;
+    overflow: hidden;
+}
+.media5 .text .type-r {
+    float: right;
+}
+.media5 .name {
+    position: absolute;
+    left: -1px;
+    top: 211px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    width: 285px;
+    height: 30px;
+    line-height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    z-index: 2;
+}
+.media5:hover .name {
+    top: 210px;
+    left: -2px;
+}
+.house-analysis .type-list {
+    overflow: hidden;
+    border-bottom: solid 1px #e4e4e4;
+}
+.house-analysis .type-list a {
+    display: block;
+    height: 100%;
+    padding: 0 20px;
+}
+.house-analysis .type-list .active {
+    background-color: #888;
+}
+.house-analysis .type-list .active a {
+    color: #fff;
+}
+.house-analysis .type-list li {
+    float: left;
+    height: 24px;
+    line-height: 24px;
+}
+.house-analysis .house-list {
+    padding: 20px 0 10px 0;
+    min-width: 1220px;
+    overflow: hidden;
+}
+.house-analysis .house-list .media5 {
+    position: relative;
+    float: left;
+    margin: 0 20px 20px 0;
+    padding: 1px;
+}
+.house-analysis .house-list .media5:hover {
+    padding: 0;
+    border: solid 2px #6dafdc;
+}
+.house-analysis .house-list .media5:last-child {
+    margin-right: 0;
+}
+/*单个户型*/
+.house-analysis .house-tags {
+    padding-top: 30px;
+}
+.house-analysis .tags {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.house-analysis .tags li {
+    float: left;
+    font-size: 12px;
+    color: #e4e4e4;
+    margin-right: 15px;
+}
+.house-analysis .tags li a {
+    font-size: 12px;
+    color: #333;
+}
+.house-analysis .tags .active a {
+    color: #0074c1;
+    font-weight: bold;
+}
+.house {
+    padding: 40px 0;
+    border: solid 1px #e4e4e4;
+    overflow: hidden;
+}
+.house .banner {
+    float: left;
+    width: 715px;
+    margin-right: 40px;
+}
+.house .des {
+    float: left;
+    width: 364px;
+    padding-left: 40px;
+    border-left: dashed 1px #e4e4e4;
+    overflow: hidden;
+}
+.house .des-info .hd {
+    padding: 0 0 20px 0;
+    border-bottom: solid 1px #e4e4e4;
+}
+.house .des-info .info {
+    margin: 10px 0;
+}
+.house .des-info .key, .house .des-info .refer .value, .house .des-info .refer .ico {
+    float: left;
+}
+.house .des-info .info .key {
+    min-width: 60px;
+    word-spacing: 20px;
+    text-align: justify;
+}
+.house .des-info .refer .know {
+    font-size: 12px;
+    color: #888;
+    margin-left: 10px;
+}
+.house .des-info .status {
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #fff;
+    margin-right: 20px;
+    background-color: #73b5e8;
+}
+.house .des-info .type {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+.house .des-info li {
+    font-size: 12px;
+    color: #888;
+    height: 24px;
+    line-height: 24px;
+}
+.house .des-info .value {
+    font-size: 12px;
+    color: #333;
+    min-width: 90px;
+}
+.house .des-info .price {
+    color: #e85045;
+}
+.house .des-analysis {
+    padding-top: 30px;
+}
+.house .des-analysis .hd {
+    padding-bottom: 10px;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: solid 1px #e4e4e4;
+}
+.house .des-analysis .bd {
+    padding-top: 15px;
+}
+.house .des-analysis .bd .content {
+    color: #333;
+    font-size: 12px;
+    line-height: 24px;
+}
+.entry {
+    margin-top: 35px;
+    padding: 15px 20px;
+    border: solid 1px #e4e4e4;
+}
+.entry p {
+    color: #888;
+    font-size: 12px;
+}
+.entry .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.entry .hot-line {
+    margin-top: 6px;
+}
+.entry .hot-line .phone {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e85045;
+}
+.entry .ico-phone {
+    float: left;
+    margin: 8px 8px 0 0;
+}
+.entry .btn {
+    font-weight: normal;
+}
+/*输入框*/
+.house .des .entry .ipt {
+    float: left;
+    color: #b7b7b7;
+    width: 186px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 12px;
+    border: 1px solid #e4e4e4;
+    border-right: 0;
+    border-radius: 3px 0 0 3px;
+    background: #fff;
+    overflow: hidden;
+}
+/*免费咨询*/
+.ipt-area .tips {
+    display: none;
+}
+.ipt-area .error-tips {
+    color: #f20;
+}
+.ipt-area .right-tips {
+    color: #119a11;
+}

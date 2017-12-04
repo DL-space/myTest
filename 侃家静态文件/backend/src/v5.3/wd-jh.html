@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>问答聚合页</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!--音频播放器-->
+    <link rel="stylesheet" href="../css/audioplayer.css"/>
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row">
+                <ul class="breadcrumb">
+                    <li><a href="#">首页</a></li>
+                    <li class="active">问答聚合</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="sr">
+                    <div class="rank">
+                        <div class="rank-info">
+                            <div class="zxs-horizon">
+                                <div class="pic"><img src="../images/img-face.png" alt=""/></div>
+                                <div class="text">
+                                    <div class="name">
+                                        <h4>小喵喵</h4>
+                                        <span class="group">咨询师6组</span>
+                                    </div>
+                                    <div class="link-my-ask">
+                                        <a href="#">进入我的问答<span class="icon icon-right"></span></a>
+                                    </div>
+                                </div>
+                                <div class="wd-ipt">
+                                    <a class="ask-ipt" href="#"><span class="icon icon-edit"></span>录入问答<span class="txt">(今日完成：2/3)</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rank-ind rank-wc">
+                            <div class="hd">
+                                <h3>今日问答完成情况</h3>
+                            </div>
+                            <div class="bd">
+                                <ul class="sit-info">
+                                    <li class="dan">
+                                        <span class="num">1234<span class="r">人</span></span>
+                                        <span class="info">未完成</span>
+                                    </li>
+                                    <li class="suc">
+                                        <span class="num">1234<span class="r">人</span></span>
+                                        <span class="info">已完成</span>
+                                    </li>
+                                </ul>
+                                <div class="btn-area">
+                                    <a href="#">查看完成情况</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rank-ind rank-jl">
+                            <div class="hd">
+                                <h3>居理问答榜</h3>
+                            </div>
+                            <div class="bd">
+                                <div class="rank-wd-item">
+                                    <div class="hd">
+                                        <span class="text">日才华榜</span>
+                                        <span class="ico ico-r"></span>
+                                    </div>
+                                    <div class="bd">
+                                        <div class="zxs">
+                                            <img src="../images/img-face.png" alt="">
+
+                                            <div class="name">小喵喵</div>
+                                            <div class="group">王哲强组</div>
+                                        </div>
+                                        <div class="zxs">
+                                            <img src="../images/img-face.png" alt="">
+
+                                            <div class="name">小喵喵</div>
+                                            <div class="group">王哲强组</div>
+                                        </div>
+                                        <div class="zxs">
+                                            <img src="../images/img-face.png" alt="">
+
+                                            <div class="name">小喵喵</div>
+                                            <div class="group">王哲强组</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rank-wd-item">
+                                    <div class="hd">
+                                        <span class="text">周才华榜</span>
+                                        <span class="ico ico-z"></span>
+                                    </div>
+                                    <div class="bd">
+                                        <div class="zxs">
+                                            <img src="../images/img-face.png" alt="">
+
+                                            <div class="name">小喵喵</div>
+                                            <div class="group">王哲强组</div>
+                                        </div>
+                                        <div class="zxs">
+                                            <img src="../images/img-face.png" alt="">
+
+                                            <div class="name">小喵喵</div>
+                                            <div class="group">王哲强组</div>
+                                        </div>
+                                        <div class="zxs">
+                                            <img src="../images/img-face.png" alt="">
+
+                                            <div class="name">小喵喵</div>
+                                            <div class="group">王哲强组</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rank-wd-item">
+                                    <div class="hd">
+                                        <span class="text">学富五车榜</span>
+                                        <span class="ico ico-n"></span>
+                                    </div>
+                                    <div class="bd">
+                                        <div class="zxs">
+                                            <img src="../images/img-face.png" alt="">
+
+                                            <div class="name">小喵喵</div>
+                                            <div class="group">王哲强组</div>
+                                        </div>
+                                        <div class="zxs">
+                                            <img src="../images/img-face.png" alt="">
+
+                                            <div class="name">小喵喵</div>
+                                            <div class="group">王哲强组</div>
+                                        </div>
+                                        <div class="zxs">
+                                            <img src="../images/img-face.png" alt="">
+
+                                            <div class="name">小喵喵</div>
+                                            <div class="group">王哲强组</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sl">
+                    <div class="search">
+                        <ul class="search-term">
+                            <li>
+                                <div class="th">城&nbsp;&nbsp;&nbsp; 市：</div>
+                                <div class="td"><input type="text" class="form-control"></div>
+                            </li>
+                            <li class="li-l">
+                                <div class="th">问题相关楼盘：</div>
+                                <div class="td"><input type="text" class="form-control"></div>
+                            </li>
+                            <li class="last">
+                                <div class="th">问题类型：</div>
+                                <div class="td"><input type="text" class="form-control"></div>
+                            </li>
+                            <li>
+                                <div class="th">咨询师：</div>
+                                <div class="td"><input type="text" class="form-control"></div>
+                            </li>
+                            <li class="li-l">
+                                <div class="th">咨询师主管：</div>
+                                <div class="td"><input type="text" class="form-control"></div>
+                            </li>
+                            <li class="last li-date">
+                                <div class="th">时间：</div>
+                                <div class="td">
+                                    <input type="text" class="form-control"><span class="ext">-</span><input type="text" class="form-control ipt-144">
+                                </div>
+                            </li>
+                            <li class="lang">
+                                <input type="text" class="form-control" placeholder="有问题直接搜，甭客气！">
+                            </li>
+                        </ul>
+                        <div class="btn-area">
+                            <button class="btn btn-cancel">清空</button>
+                            <button class="btn btn-search">搜索</button>
+                        </div>
+                    </div>
+                    <div class="wd-jl">
+                        <div class="hd">
+                            <div class="jl-data">共<span class="num">233524</span>条，第1-20条数据</div>
+                            <div class="px">
+                                <a href="#">更新时间</a>
+                                <a href="#">总点赞数</a>
+                            </div>
+                        </div>
+                        <div class="bd">
+                            <div class="wd-jl-list">
+                                <div class="wd-jl-item">
+                                    <div class="wd-zxs">
+                                        <div class="hd">
+                                            <span class="place">北京</span>
+                                            <span class="date">2017-07-21 22:22:22</span>
+                                        </div>
+                                        <div class="bd">
+                                            <div class="pic-area">
+                                                <img src="../images/img-face.png" alt="face" class="face">
+
+                                                <div class="ico-list">
+                                                    <span class="ico ico-r-nc">日</span>
+                                                    <span class="ico ico-z-nc">周</span>
+                                                    <span class="ico ico-n-nc">牛</span>
+                                                </div>
+                                            </div>
+                                            <div class="zxs-info">
+                                                <span class="name">小喵喵</span>
+                                                <span class="group">咨询师六组（王哲强组）</span>
+                                            </div>
+                                            <ul class="cj">
+                                                <li>成就一：联系<span class="num">30天</span>完成问答任务</li>
+                                                <li>成就二：联系<span class="num">30天</span>完成问答任务</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="wd-content">
+                                        <div class="wd-item2 clearfix">
+                                            <div class="wd-wen">
+                                                <span class="ico ico-w"></span>
+
+                                                <div class="wd-wen-con">
+                                                    <h4 class="wd-tit">
+                                                        这个楼盘的周围有没有好玩的地方？靠地铁近吗？适合我这种喜欢周末出去high的人1233445吗？靠地铁近吗？适合我这种</h4>
+                                                    <!--相关楼盘-->
+                                                    <ul class="xglp">
+                                                        <li><a href="#">绿地海珀云翡</a></li>
+                                                        <li><a href="#">中骏·西山天璟</a></li>
+                                                        <li><a href="#">北京城建海梓府</a></li>
+                                                    </ul>
+                                                    <!--问题类型-->
+                                                    <ul class="wt-type">
+                                                        <li>问题类型1</li>
+                                                        <li>问题类型2</li>
+                                                        <li>问题类型3</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="wd-da">
+                                                <span class="ico ico-da"></span>
+
+                                                <div class="wd-detail wd-hide">
+                                                    <p>
+                                                        有很多好玩的地方，靠近万达等大型商场，周围电影院、电玩城、商场、游乐场，只有你想不到没有它不存在的。离地铁很近，大热天当你快要虚脱的时候保证就走到了，相信很快就…有很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方有很多好玩的地方，靠近万达等大型商场，周围电影院、电玩城、商场、游乐场，只有你想不到没有它不存在的。离地铁很近，大热天当你快要虚脱的时候保证就走到了，相信很快就…有很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方有很多好玩的地方，靠近万达等大型商场，周围电影院、电玩城、商场、游乐场，只有你想不到没有它不存在的。离地铁很近，大热天当你快要虚脱的时候保证就走到了，相信很快就…有很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方</p>
+                                                </div>
+                                            </div>
+                                            <div class="wd-action clearfix">
+                                                <ul class="yd-tj">
+                                                    <li><span class="num">123</span>用户点赞</li>
+                                                    <li class="nbdzs">
+                                                        <span class="num">121</span>个内部点赞
+                                                        <div class="trans-layer">
+                                                            <div class="fans-list">
+                                                                <ul>
+                                                                    <li>喵在乎1，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="bot"></div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="send-again">
+                                                        <a href="#">再次发送用户</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link-like" href="#">给TA点赞</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link-like" href="#">收藏回答</a>
+                                                    </li>
+                                                </ul>
+                                                <a class="show-more" href="javascript:void(0);">展开全部</a>
+                                            </div>
+                                            <div class="annexes">
+                                                <ul class="annexes-list">
+                                                    <li>
+                                                        <svg class="icon" aria-hidden="true">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-doc"></use>
+                                                        </svg>
+                                                        <div class="file-name">
+                                                            <span class="annexes-name">居里入职欢迎新.docx</span>
+                                                            <span class="annexes-size">(56.8K)</span>
+                                                        </div>
+                                                        <ul class="file-opt">
+                                                            <li><a class="file-down" href="#">下载</a></li>
+                                                            <li><a class="file-open" href="#">打开</a></li>
+                                                            <li><a class="file-preview" href="#">预览</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <svg class="icon" aria-hidden="true">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ppt"></use>
+                                                        </svg>
+                                                        <div class="file-name">
+                                                            <span class="annexes-name">居里入职欢迎新.ppt</span>
+                                                            <span class="annexes-size">(56.8K)</span>
+                                                        </div>
+                                                        <ul class="file-opt">
+                                                            <li><a class="file-down" href="#">下载</a></li>
+                                                            <li><a class="file-open" href="#">打开</a></li>
+                                                            <li><a class="file-preview" href="#">预览</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <svg class="icon" aria-hidden="true">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-pdf"></use>
+                                                        </svg>
+                                                        <div class="file-name">
+                                                            <span class="annexes-name">居里入职欢迎新.pdf</span>
+                                                            <span class="annexes-size">(56.8K)</span>
+                                                        </div>
+                                                        <ul class="file-opt">
+                                                            <li><a class="file-down" href="#">下载</a></li>
+                                                            <li><a class="file-open" href="#">打开</a></li>
+                                                            <li><a class="file-preview" href="#">预览</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wd-jl-item">
+                                    <div class="wd-zxs">
+                                        <div class="hd">
+                                            <span class="place">北京</span>
+                                            <span class="date">2017-07-21 22:22:22</span>
+                                        </div>
+                                        <div class="bd">
+                                            <div class="pic-area">
+                                                <img src="../images/img-face.png" alt="face" class="face">
+
+                                                <div class="ico-list">
+                                                    <span class="ico ico-r">日</span>
+                                                    <span class="ico ico-z">周</span>
+                                                    <span class="ico ico-n">牛</span>
+                                                </div>
+                                            </div>
+                                            <div class="zxs-info">
+                                                <span class="name">小喵喵</span>
+                                                <span class="group">咨询师六组（王哲强组）</span>
+                                            </div>
+                                            <ul class="cj">
+                                                <li>成就一：联系<span class="num">30天</span>完成问答任务</li>
+                                                <li>成就二：联系<span class="num">30天</span>完成问答任务</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="wd-content">
+                                        <div class="wd-item2 clearfix">
+                                            <div class="wd-wen">
+                                                <span class="ico ico-w"></span>
+
+                                                <div class="wd-wen-con">
+                                                    <h4 class="wd-tit">
+                                                        这个楼盘的周围有没有好玩的地方？靠地铁近吗？适合我这种喜欢周末出去high的人1233445吗？靠地铁近吗？适合我这种</h4>
+                                                    <!--相关楼盘-->
+                                                    <ul class="xglp">
+                                                        <li><a href="#">绿地海珀云翡</a></li>
+                                                        <li><a href="#">中骏·西山天璟</a></li>
+                                                        <li><a href="#">北京城建海梓府</a></li>
+                                                    </ul>
+                                                    <!--问题类型-->
+                                                    <ul class="wt-type">
+                                                        <li>问题类型1</li>
+                                                        <li>问题类型2</li>
+                                                        <li>问题类型3</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="wd-da">
+                                                <span class="ico ico-da"></span>
+
+                                                <div class="wd-detail wd-hide">
+                                                    <p>
+                                                        有很多好玩的地方，靠近万达等大型商场，周围电影院、电玩城、商场、游乐场，只有你想不到没有它不存在的。离地铁很近，大热天当你快要虚脱的时候保证就走到了，相信很快就</p>
+                                                    <img src="../images/img-wd.jpg" alt=""/>
+                                                    <p>
+                                                        有很多好玩的地方，靠近万达等大型商场，周围电影院、电玩城、商场、游乐场，只有你想不到没有它不存在的。离地铁很近，大热天当你快要虚脱的时候保证就走到了，相信很快就</p>
+                                                    <img src="../images/img-wd.jpg" alt=""/>
+                                                </div>
+                                            </div>
+                                            <div class="wd-action clearfix">
+                                                <ul class="yd-tj">
+                                                    <li><span class="num">123</span>用户点赞</li>
+                                                    <li class="nbdzs">
+                                                        <span class="num">123</span>个内部点赞
+                                                        <div class="trans-layer">
+                                                            <div class="fans-list">
+                                                                <ul>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="bot"></div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="send-again">
+                                                        <a href="#">再次发送用户</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link-like" href="#">给TA点赞</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link-like" href="#">收藏回答</a>
+                                                    </li>
+                                                </ul>
+                                                <a class="show-more" href="javascript:void(0);">展开全部</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wd-jl-item">
+                                    <div class="wd-zxs">
+                                        <div class="hd">
+                                            <span class="place">北京</span>
+                                            <span class="date">2017-07-21 22:22:22</span>
+                                        </div>
+                                        <div class="bd">
+                                            <div class="pic-area">
+                                                <img src="../images/img-face.png" alt="face" class="face">
+
+                                                <div class="ico-list">
+                                                    <span class="ico ico-r">日</span>
+                                                    <span class="ico ico-z">周</span>
+                                                    <span class="ico ico-n">牛</span>
+                                                </div>
+                                            </div>
+                                            <div class="zxs-info">
+                                                <span class="name">小喵喵</span>
+                                                <span class="group">咨询师六组（王哲强组）</span>
+                                            </div>
+                                            <ul class="cj">
+                                                <li>成就一：联系<span class="num">30天</span>完成问答任务</li>
+                                                <li>成就二：联系<span class="num">30天</span>完成问答任务</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="wd-content">
+                                        <div class="wd-item2 clearfix">
+                                            <div class="wd-wen">
+                                                <span class="ico ico-w"></span>
+
+                                                <div class="wd-wen-con">
+                                                    <h4 class="wd-tit">
+                                                        这个楼盘的周围有没有好玩的地方？靠地铁近吗？适合我这种喜欢周末出去high的人1233445吗？靠地铁近吗？适合我这种</h4>
+                                                    <!--相关楼盘-->
+                                                    <ul class="xglp">
+                                                        <li><a href="#">绿地海珀云翡</a></li>
+                                                        <li><a href="#">中骏·西山天璟</a></li>
+                                                        <li><a href="#">北京城建海梓府</a></li>
+                                                    </ul>
+                                                    <!--问题类型-->
+                                                    <ul class="wt-type">
+                                                        <li>问题类型1</li>
+                                                        <li>问题类型2</li>
+                                                        <li>问题类型3</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="wd-da">
+                                                <span class="ico ico-da"></span>
+
+                                                <div class="wd-detail wd-hide">
+                                                    <p>
+                                                        有很多好玩的地方，靠近万达等大型商场，周围电影院、电玩城、商场、游乐场，只有你想不到没有它不存在的。离地铁很近，大热天当你快要虚脱的时候保证就走到了，相信很快就</p>
+                                                    <img src="../images/img-wd.jpg" alt=""/>
+                                                    <p>
+                                                        有很多好玩的地方，靠近万达等大型商场，周围电影院、电玩城、商场、游乐场，只有你想不到没有它不存在的。离地铁很近，大热天当你快要虚脱的时候保证就走到了，相信很快就</p>
+                                                    <img src="../images/img-wd.jpg" alt=""/>
+                                                </div>
+                                            </div>
+                                            <div class="wd-action clearfix">
+                                                <ul class="yd-tj">
+                                                    <li><span class="num">123</span>用户点赞</li>
+                                                    <li class="nbdzs">
+                                                        <span class="num">123</span>个内部点赞
+                                                        <div class="trans-layer">
+                                                            <div class="fans-list">
+                                                                <ul>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎，</li>
+                                                                    <li>喵在乎</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="bot"></div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="send-again">
+                                                        <a href="#">再次发送用户</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link-like" href="#">给TA点赞</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link-like" href="#">收藏回答</a>
+                                                    </li>
+                                                </ul>
+                                                <a class="show-more" href="javascript:void(0);">展开全部</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page">
+                                    <ul class="page-8">
+                                        <li class="prev disabled"><span class="ico ico-prev">prev</span></li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">6</a></li>
+                                        <li><a href="#">7</a></li>
+                                        <li><a href="#">...</a></li>
+                                        <li><a href="#">10</a></li>
+                                        <li class="next"><span class="ico ico-next">next</span></li>
+                                        <li class="total">共10页</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/iconfont.js"></script>
+<!--音频播放器-->
+<script src="../js/audioplayer.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/v5.2.js"></script>
+</body>
+</html>

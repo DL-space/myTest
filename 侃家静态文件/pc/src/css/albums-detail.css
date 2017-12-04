@@ -1,0 +1,148 @@
+/*轮播图样式*/
+.slide {
+    width: 520px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+.focus .slide .slide-ul {
+    width: 200000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slide-ul li, .slide-ul li img {
+    width: 520px;
+    height: 350px;
+    overflow: hidden;
+}
+.slide-ul li {
+    float: left;
+}
+.slide .slide-btn1 {
+    position: absolute;
+    top: 50%;
+    text-indent: -9999px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    background: url("../images/btn-next.png") 0 0 no-repeat;
+    overflow: hidden;
+    z-index: 4;
+}
+.slide .slide-btnz {
+    left: 30px;
+}
+.slide .slide-btnz:hover {
+    background-position: -60px 0;
+}
+.slide .slide-btny {
+    right: 30px;
+    background-position: 0 -60px;
+}
+.slide .slide-btny:hover {
+    background-position: -60px -60px;
+}
+/*走马灯*/
+.zmd {
+    width: 520px;
+    height: 70px;
+    position: relative;
+}
+.zmd-container {
+    width: 520px;
+    overflow: hidden;
+}
+.move {
+    width: 520px;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.zmd ul {
+    width: 500%;
+}
+.content .zmd ul li, .content .zmd ul li img {
+    float: left;
+    width: 96px;
+    height: 70px;
+}
+.zmd ul li.zmd-on, .zmd ul li.zmd-on img {
+    width: 90px;
+    height: 64px;
+}
+.zmd ul li.zmd-on {
+    border: 3px solid #09f;
+}
+.zmd-container p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.zmd .move li {
+    position: relative;
+    margin-right: 10px;
+}
+.zmd-container .move li.zmd-on p {
+    height: 21px;
+    line-height: 22px;
+}
+.zmd ul li img {
+    display: block;
+    width: 100%;
+    height: 108px;
+}
+/*弹出层*/
+#fade {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 99;
+    -moz-opacity: 0.8;
+    opacity: .80;
+    filter: alpha(opacity=80);
+
+}
+#picture {
+    display: none;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    text-align: center;
+}
+#middle {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    left: 0;
+}
+#middle img {
+    max-width: 1200px;
+}
+.cha {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 20px;
+    height: 20px;
+}
+.zmd-no {
+    opacity: .3;
+}

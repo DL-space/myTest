@@ -1,0 +1,165 @@
+.top-menu-wrap, .top-menu-banner {
+    padding-top: 20px;
+}
+.top-menu-wrap, .house-name, .detail-nav ul {
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.house-name {
+    margin-bottom: 20px;
+}
+.house-name h1, .house-name .subtitle, .house-name .house-tag {
+    float: left;
+}
+.house-name .name {
+    clear: both;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.house-name .subtitle {
+    color: #888;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.house-name .house-tag {
+    margin-top: 9px;
+}
+.house-name h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-right: 15px;
+}
+.house-name .house-tag .active {
+    border-color: #73b5e8;
+    background: none;
+}
+.house-name .house-tag .active, .house-name .house-tag .active a {
+    color: #73b5e8;
+}
+.house-name .subtitle {
+    margin: 5px 10px 0 0;
+}
+/*楼盘详情页顶部导航，more位7个导航位*/
+.detail-nav {
+    clear: both;
+    height: 40px;
+    background: url("../images/bg-top-nav.png") 0 0 repeat-x;
+    overflow: hidden;
+}
+.detail-nav li {
+    float: left;
+    font-size: 16px;
+    width: 171px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.detail-nav li.first {
+    border-left: 1px solid #eaeaea;
+}
+.detail-nav li.last {
+    border-right: 1px solid #eaeaea;
+}
+.detail-nav li a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.detail-nav li.on {
+    background: #0074c1;
+}
+.detail-nav li.last {
+    width: 172px;
+}
+.detail-nav li.on a {
+    color: #fff;
+}
+/*8个li 样式*/
+.detail-nav-eight li {
+    width: 150px;
+}
+.detail-nav-eight li.last {
+    width: 148px;
+}
+/*9个li样式*/
+.detail-nav-nine li{
+    position: relative;
+    width: 133px;
+}
+.detail-nav-nine li.last {
+    width: 134px;
+}
+/*10个li样式*/
+.detail-nav10 ul li{
+    width: 120px;
+}
+.detail-nav10 ul .last{
+    width: 118px;
+}
+/*楼盘详情页悬浮导航*/
+.top-menu-banner {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    opacity: 0.98;
+    filter: "alpha(opacity=98)";
+    -ms-filter: "alpha(opacity=98)";
+    z-index: 15;
+}
+.top-menu-banner .detail-nav li.first {
+    border-left: 0;
+}
+.top-menu-banner .detail-nav li.last {
+    border-right: 0;
+}
+.dev-price {
+    float: left;
+    color: #888;
+    line-height: 46px;
+}
+.dev-price em {
+    font-style: normal;
+    color: #e85045;
+    font-size: 22px;
+}
+.top-menu-banner .discount {
+    float: right;
+}
+.top-menu-banner .discount p {
+    float: left;
+    font-size: 16px;
+    color: #e95046;
+    font-weight: bold;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.top-menu-banner .discount .youhui {
+    max-width: 400px;
+    margin-right: 46px;
+}
+.top-menu-banner .discount .hot-phone {
+    margin-right: 20px;
+}
+.top-menu-banner .discount .btn-bm {
+    padding: 0 32px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.ico-new1{
+    position: absolute;
+    width: 25px;
+    height: 16px;
+    top: 3px;
+    right: 10px;
+    background: url(../images/new.gif) no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+}

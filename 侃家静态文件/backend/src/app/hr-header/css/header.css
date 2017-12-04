@@ -1,0 +1,69 @@
+.header {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    background-color: #fff;
+    z-index: 3;
+}
+.logo, .logo .pic, .logo h1 {
+    float: left;
+}
+.logo {
+    padding-top: 7px;
+}
+.logo .pic {
+    width: 100px;
+    margin-right: 10px;
+}
+.logo h1 {
+    font-size: 16px;
+    font-weight: normal;
+    height: 36px;
+    line-height: 35px;
+}
+.header > .user {
+    float: right;
+    font-size: 14px;
+}
+.u-name{
+    position: relative;
+}
+.u-name a:hover{
+    text-decoration: none;
+    color: #26a69a;
+}
+.u-name .icon-user{
+    float: left;
+    margin-right: 2px;
+}
+.u-dropdown{
+    display: none;
+    position: absolute;
+    right: -5px;
+    text-align: center;
+    min-width: 100px;
+    padding: 5px 0;
+    background-color: #fff;
+    border: 1px solid #888;
+    border-radius: 2px;
+    box-shadow: 0 0 2px #666;
+}
+.u-dropdown > li{
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+.u-dropdown > li:hover{
+    background-color: #eef8f7;
+}
+.u-dropdown > li:hover,.u-dropdown > li:hover a{
+    color: #007d73;
+}
+.u-dropdown > li a{
+    text-decoration: none;
+}

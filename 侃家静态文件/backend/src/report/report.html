@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>报备模板</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/albums-detail2.css">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">报备模板</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--报备模板-->
+                    <h2 class="tpl-name">报备模板</h2>
+                    <div class="panel panel-report-tpl">
+                        <div class="panel-body">
+                            <div class="btn-area">
+                                <a href="#" class="btn btn-primary">编辑</a>
+                            </div>
+                            <!--报备信息-->
+                            <div class="v-box bbxx">
+                                <div class="hd">
+                                    <h2>报备信息</h2>
+                                </div>
+                                <div class="bd">
+                                    <ul class="c-query">
+                                        <li>报备时间：<span class="txt">2小时</span></li>
+                                        <li>复访是否报备：<span class="txt">是</span></li>
+                                        <li>报备方式：<span class="txt">微信、短信、邮箱、App、公众号、开发商系统</span></li>
+                                        <li>需要咨询师给合作方报备：<span class="txt">是</span></li>
+                                        <li>咨询师报备方式：<span class="txt">微信</span></li>
+                                        <li>补充：<span class="txt">微信微信微信微信微信微信微信微信微信微信微信微信微信微信微信微信微信微信</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--模板内容-->
+                            <div class="v-box mbnr">
+                                <div class="hd">
+                                    <h2>模板内容</h2>
+                                </div>
+                                <div class="bd">
+                                    <ul class="tpl-tit">
+                                        <li class="type">类型</li>
+                                        <li class="field">字段名称</li>
+                                        <li class="pre-info">预设信息</li>
+                                        <li class="explain">内容说明</li>
+                                    </ul>
+                                    <ul class="tpl-con">
+                                        <li>
+                                            <div class="type">项目</div>
+                                            <div class="field">项目名称</div>
+                                            <div class="pre-info">苏州湾壹号苏州湾壹号苏州湾壹号苏州湾壹号苏州湾壹号苏州湾壹号苏州湾壹号</div>
+                                            <div class="explain">填写项目名称填写项目名称填写项目名称填写项目名称填写项目名称填写项目名称填写项目名称填写项目名称填写项目名称填写项目名称填写项目名称填写项目名称填</div>
+                                        </li>
+                                        <li>
+                                            <div class="type">客户姓名</div>
+                                            <div class="field">客户姓名</div>
+                                            <div class="pre-info"></div>
+                                            <div class="explain">填写客户姓名</div>
+                                        </li>
+                                        <li>
+                                            <div class="type">客户电话</div>
+                                            <div class="field">客户电话</div>
+                                            <div class="pre-info">(前3后4)</div>
+                                            <div class="explain">我是来写字的</div>
+                                        </li>
+                                        <li>
+                                            <div class="type">咨询师姓名</div>
+                                            <div class="field">渠道经纪人</div>
+                                            <div class="pre-info"></div>
+                                            <div class="explain">我是来写字的</div>
+                                        </li>
+                                        <li>
+                                            <div class="type">咨询师电话</div>
+                                            <div class="field">经纪人电话</div>
+                                            <div class="pre-info"></div>
+                                            <div class="explain"></div>
+                                        </li>
+                                        <li>
+                                            <div class="type">预约带看时间</div>
+                                            <div class="field">到访时间</div>
+                                            <div class="pre-info"></div>
+                                            <div class="explain"></div>
+                                        </li>
+                                        <li class="custom-field">
+                                            <div class="type">自定义字段</div>
+                                            <div class="field">预算</div>
+                                            <div class="pre-info"></div>
+                                            <div class="explain"></div>
+                                        </li>
+                                        <li class="custom-field">
+                                            <div class="type">自定义字段</div>
+                                            <div class="field">渠道名称</div>
+                                            <div class="pre-info">居理新房</div>
+                                            <div class="explain"></div>
+                                        </li>
+                                        <li class="custom-field">
+                                            <div class="type">自定义字段</div>
+                                            <div class="field">合作方</div>
+                                            <div class="pre-info">房多多</div>
+                                            <div class="explain"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<!--弹出层-->
+<div id="v-fade"></div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/albums-detail2.js"></script>
+</body>
+</html>

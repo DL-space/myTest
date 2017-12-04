@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>专业区域分析页</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/region-analysis.css">
+</head>
+<body>
+<div class="container">
+    @@include("./app/header/header.html")
+    <div class="center">
+        <div class="row row-search">
+            <div class="wrap">
+                @@include("./app/search/search.html")
+            </div>
+        </div>
+        <div class="row row-crumb">
+            @@include("./app/crumbs/crumb.html")
+        </div>
+        <div class="row row-fixed">
+            <div class="col3">
+                <!--选择区域-->
+                <div class="qyxz">
+                    <div class="hd">
+                        <h2>选择区域</h2>
+                    </div>
+                    <div class="bd">
+                        <ul class="area-list">
+                            <li><a href="#">海 淀</a></li>
+                            <li><a href="#">东 城</a></li>
+                            <li><a href="#">朝 阳</a></li>
+                            <li class="on"><a href="#">通 州</a></li>
+                            <li><a href="#">西 城</a></li>
+                            <li><a href="#">丰 台</a></li>
+                            <li><a href="#">昌 平</a></li>
+                            <li><a href="#">大 兴</a></li>
+                            <li><a href="#">房 山</a></li>
+                            <li><a href="#">顺 义</a></li>
+                            <li class="multiple"><a href="#">门头沟</a></li>
+                            <li class="multiple"><a href="#">石景山</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col4">
+                <!--区域分析-->
+                <div class="qyfx">
+                    <div class="hd">
+                        <h2>通州区域分析</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="pl">
+                            <div class="ana-area">
+                                <p><span class="lb">地理位置：</span>北京市东南部</p>
+                                <p><span class="lb">常住人口：</span><span class="num">135.6万</span>（2014年底）</p>
+                            </div>
+                            <div class="total">
+                                <p>近三个月<span class="num">2315人</span>关注通州</p>
+                                <p><span class="num">353个</span>专业点评通州</p>
+                            </div>
+                        </div>
+                        <div class="pr">
+                            <div class="ana-area">
+                                <p><span class="lb">辖区面积：</span><span class="num">907平方公里</span></p>
+                                <p><span class="lb">下辖地区：</span><span class="num">4个</span>街道、<span
+                                        class="num">10个</span>镇、<span class="num">1个</span>民族乡</p>
+                            </div>
+                            <div class="qrcode">
+                                <div class="pic">
+                                    <img src="images/region-analysis/img-qrcode.jpg" alt="">
+                                </div>
+                                <div class="text">扫我了解更多内容</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--区域简介-->
+                <div class="box-ana box-qyjj">
+                    <div class="hd">
+                        <span class="num t-1">01</span>
+                        <h2>区域简介</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="desc">
+                            <div class="text">
+                                <p>通州区位于北京市东南部，将北京与天津、河北相连。</p>
+                                <p>
+                                    通州新城是距离北京中心城最近的新城，在北京市总体规划“两轴－两带－多中心”的空间格局中，通州位于北京长安街轴线与东部发展带的节点之上，处于环渤海经济圈的核心枢纽位置，连接着首都与环渤海的多个经济中心。</p>
+                                <p>
+                                    十二五期间，通州被明确定位为北京城市副中心。根据发展定位，新城的主要职能是中心区功能疏解的重要承接地、世界城市新功能的重要承载区、宜业宜居的综合性新城市、世界一流水平的现代化国际新城。</p>
+                                <p>最初确定的行政副中心就局限在6平方公里的范围内，后来逐渐扩展到通州老城155平方公里的面积。不过目前，通州区域范围内906平方公里已全部被纳入北京市副中心的范围。</p>
+                            </div>
+                            <div class="pic-area">
+                                <div class="pic">
+                                    <img src="images/region-analysis/img-qyfx.jpg" alt="">
+                                    <div class="legend">图1.通州区地图</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mod-regin jgzd">
+                            <div class="tit">
+                                <h3>推荐通州价格最低楼盘</h3>
+                            </div>
+                            <div class="con">
+                                <div class="house-list">
+                                    <div class="media3">
+                                        <div class="pic">
+                                            <a href="#"><img src="images/img-house2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="text">
+                                            <div class="name">
+                                                <h4><a href="#">金泰丽金泰丽湾悦栖山湾悦栖山</a></h4>
+                                                <span class="total">139-4793万</span>
+                                            </div>
+                                            <p class="info"><a href="#">大兴</a>-大兴新城 | 建面:39,000元/平 42 -125m²</p>
+                                        </div>
+                                        <div class="unit-price">39,000元/平</div>
+                                    </div>
+                                    <div class="media3">
+                                        <div class="pic">
+                                            <a href="#"><img src="images/img-house2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="text">
+                                            <div class="name">
+                                                <h4><a href="#">金泰丽金泰丽湾悦栖山湾悦栖山</a></h4>
+                                                <span class="total">139-4793万</span>
+                                            </div>
+                                            <p class="info"><a href="#">大兴</a>-大兴新城 | 建面:39,000元/平 42 -125m²</p>
+                                        </div>
+                                        <div class="unit-price">39,000元/平</div>
+                                    </div>
+                                    <div class="media3">
+                                        <div class="pic">
+                                            <a href="#"><img src="images/img-house2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="text">
+                                            <div class="name">
+                                                <h4><a href="#">金泰丽金泰丽湾悦栖山湾悦栖山</a></h4>
+                                                <span class="total">139-4793万</span>
+                                            </div>
+                                            <p class="info"><a href="#">大兴</a>-大兴新城 | 建面:39,000元/平 42 -125m²</p>
+                                        </div>
+                                        <div class="unit-price">39,000元/平</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--重点板块-->
+                <div class="box-ana box-zdbk">
+                    <div class="hd">
+                        <span class="num t-2">02</span>
+                        <h2>重点板块</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="desc">
+                            <div class="pic-area">
+                                <div class="pic">
+                                    <img src="images/region-analysis/img-zdbk.jpg" alt="">
+                                    <div class="legend">图2.通州区版块图</div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <div class="text-wrap">
+                                    <h4>三里屯</h4>
+                                    <p>
+                                        三里屯是北京最早的酒吧群落。它从一个重要方面催生了北京的时尚它从一个重要方面催生了北京的时尚三里屯是北京最早的酒吧群落。它从一个重要方面催生了北京的时尚它从一个重要方面催生了北京的时尚... </p>
+                                    <a href="#" class="more">[查看详情]</a>
+                                </div>
+                                <div class="text-wrap">
+                                    <h4>三里屯</h4>
+                                    <p>三里屯是北京最早的酒吧群落。它从一个重要方面催生了北京的时尚它从一个重要方面催生了北京的时尚... </p>
+                                    <a href="#" class="more">[查看详情]</a>
+                                </div>
+                                <div class="text-wrap">
+                                    <h4>三里屯</h4>
+                                    <p>三里屯是北京最早的酒吧群落。它从一个重要方面催生了北京的时尚它从一个重要方面催生了北京的时尚... </p>
+                                    <a href="#" class="more">[查看详情]</a>
+                                </div>
+                                <div class="text-wrap">
+                                    <h4>三里屯</h4>
+                                    <p>三里屯是北京最早的酒吧群落。它从一个重要方面催生了北京的时尚它从一个重要方面催生了北京的时尚... </p>
+                                    <a href="#" class="more">[查看详情]</a>
+                                </div>
+                                <div class="text-wrap last">
+                                    <h4>三里屯</h4>
+                                    <p>三里屯是北京最早的酒吧群落。它从一个重要方面催生了北京的时尚它从一个重要方面催生了北京的时尚... </p>
+                                    <a href="#" class="more">[查看详情]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--免费咨询-->
+                @@include("./app/advice-free/index.html")
+                <!--教育-->
+                <div class="box-ana box-edu">
+                    <div class="hd">
+                        <span class="num t-3">03</span>
+                        <h2>教育</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="desc">
+                            <div class="pic-area">
+                                <div class="pic">
+                                    <img src="images/region-analysis/img-pschool.jpg" alt="">
+                                    <div class="legend">图3.通州区热门小学分布</div>
+                                </div>
+                                <div class="pic">
+                                    <img src="images/region-analysis/img-mschool.jpg" alt="">
+                                    <div class="legend">图4.通州区热门中学分布图</div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>
+                                    北京城市副中心教育发展专题座谈会上，北京市教委线联平主任和通州区岳鹏区长为首都师范大学附属中学（通州校区）、北京市第二中学（通州校区）、中国人民大学附属中学（通州校区）、北京理工大学附属中学（通州校区）揭牌，4所学校正式进驻北京城市副中心办学。</p>
+                                <div class="scl-ana">
+                                    <p>截至2013年年底，全区共有：</p>
+                                    <p>1、幼儿园126所，比上年增加49所，其中市级一级一类园4所，户籍适龄儿童入园率96.6%；</p>
+                                    <p>2、共有小学82所，优质的小学资源主要集中于新城核心区，八通线附近。</p>
+                                    <p>3、初、高中学校42所，优质教育资源集中在新城核心区，八通线沿线区域。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mod-regin xqlp">
+                            <div class="tit">
+                                <h3>推荐通州价格最低楼盘</h3>
+                            </div>
+                            <div class="con">
+                                <div class="house-list">
+                                    <div class="media3">
+                                        <div class="pic">
+                                            <a href="#"><img src="images/img-house2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="text">
+                                            <div class="name">
+                                                <h4><a href="#">金泰丽金泰丽湾悦栖山湾悦栖山</a></h4>
+                                                <span class="total">139-4793万</span>
+                                            </div>
+                                            <p class="info"><a href="#">大兴</a>-大兴新城 | 建面:39,000元/平 42 -125m²</p>
+                                        </div>
+                                        <div class="unit-price">39,000元/平</div>
+                                    </div>
+                                    <div class="media3">
+                                        <div class="pic">
+                                            <a href="#"><img src="images/img-house2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="text">
+                                            <div class="name">
+                                                <h4><a href="#">金泰丽金泰丽湾悦栖山湾悦栖山</a></h4>
+                                                <span class="total">139-4793万</span>
+                                            </div>
+                                            <p class="info"><a href="#">大兴</a>-大兴新城 | 建面:39,000元/平 42 -125m²</p>
+                                        </div>
+                                        <div class="unit-price">39,000元/平</div>
+                                    </div>
+                                    <div class="media3">
+                                        <div class="pic">
+                                            <a href="#"><img src="images/img-house2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="text">
+                                            <div class="name">
+                                                <h4><a href="#">金泰丽金泰丽湾悦栖山湾悦栖山</a></h4>
+                                                <span class="total">139-4793万</span>
+                                            </div>
+                                            <p class="info"><a href="#">大兴</a>-大兴新城 | 建面:39,000元/平 42 -125m²</p>
+                                        </div>
+                                        <div class="unit-price">39,000元/平</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--商业-->
+                <div class="box-ana box-business">
+                    <div class="hd">
+                        <span class="num t-4">04</span>
+                        <h2>商业</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="desc">
+                            <div class="pic-area">
+                                <div class="pic">
+                                    <img src="images/region-analysis/img-business.jpg" alt="">
+                                    <div class="legend">图5.通州区商圈分布图</div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>通州区近几年发展势头迅猛，形成了较多知名新兴商业</p>
+                                <p>目前八通线部分沿线地区（如通州北苑、九棵树等区域）商业已发展得相对成熟，亦庄地区通州部分、通州北关运河新区在未来几年商业规模将得到大幅度提升</p>
+                            </div>
+                        </div>
+                        <div class="mod-regin xqlp">
+                            <div class="tit">
+                                <h3>推荐通州价格最低楼盘</h3>
+                            </div>
+                            <div class="con">
+                                <div class="house-list">
+                                    <div class="media3">
+                                        <div class="pic">
+                                            <a href="#"><img src="images/img-house2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="text">
+                                            <div class="name">
+                                                <h4><a href="#">金泰丽金泰丽湾悦栖山湾悦栖山</a></h4>
+                                                <span class="total">139-4793万</span>
+                                            </div>
+                                            <p class="info"><a href="#">大兴</a>-大兴新城 | 建面:39,000元/平 42 -125m²</p>
+                                        </div>
+                                        <div class="unit-price">39,000元/平</div>
+                                    </div>
+                                    <div class="media3">
+                                        <div class="pic">
+                                            <a href="#"><img src="images/img-house2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="text">
+                                            <div class="name">
+                                                <h4><a href="#">金泰丽金泰丽湾悦栖山湾悦栖山</a></h4>
+                                                <span class="total">139-4793万</span>
+                                            </div>
+                                            <p class="info"><a href="#">大兴</a>-大兴新城 | 建面:39,000元/平 42 -125m²</p>
+                                        </div>
+                                        <div class="unit-price">39,000元/平</div>
+                                    </div>
+                                    <div class="media3">
+                                        <div class="pic">
+                                            <a href="#"><img src="images/img-house2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="text">
+                                            <div class="name">
+                                                <h4><a href="#">金泰丽金泰丽湾悦栖山湾悦栖山</a></h4>
+                                                <span class="total">139-4793万</span>
+                                            </div>
+                                            <p class="info"><a href="#">大兴</a>-大兴新城 | 建面:39,000元/平 42 -125m²</p>
+                                        </div>
+                                        <div class="unit-price">39,000元/平</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--医疗-->
+                <div class="box-ana box-medical">
+                    <div class="hd">
+                        <span class="num t-5">05</span>
+                        <h2>医疗</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="desc">
+                            <div class="pic-area">
+                                <div class="pic">
+                                    <img src="images/region-analysis/img-medical.jpg" alt="">
+                                    <div class="legend">图6.通州区大型医院分布图</div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>
+                                    北京胸科医院、解放军263医院、通州区潞河医院、协和国际医学中心、北大国际肿瘤医院、首尔大学妇产医院等均已落户通州，形成通州新型医疗综合园区，通州居民可就近享受市三级医院的医疗服务，却只用支付二级医院的“优惠”价格。</p>
+                                <p>
+                                    2016年，通州区已与安贞医院达成意向，该院将有可能落户行政办公区，建立行政办公区微型医疗体系。另外，通州区正在洽谈引入首都儿研所、市疾病预防中心。未来五年，通州预计将形成包括安贞医院在内的6家以上三级医院。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--交通-->
+                <div class="box-ana box-traffic">
+                    <div class="hd">
+                        <span class="num t-6">06</span>
+                        <h2>交通</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="desc">
+                            <div class="pic-area">
+                                <div class="pic">
+                                    <img src="images/region-analysis/img-medical.jpg" alt="">
+                                    <div class="legend">图7.通州区大型医院分布图</div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>
+                                    通州属于北京近郊区县中首先大力发展公共交通的区域，总体而言，在北京所有近郊板块中，公共交通最为便利，公交、轨道、路面、其他便民出行措施最为立体复杂，未来应是北京主城最大的卫星城区。</p>
+                                <p>广渠路二期今年国庆节前正式通车，为免费快速路，不设红绿灯，通州市民驾车15分钟可进四环。</p>
+                                <p>但通州由于其发展时间较早，且发展初期缺乏规划，导致路面交通网混乱、道路不规整，尤其是新城核心区的部分，如北苑、双桥等繁华地段，交通常年堵塞，交通环境极差。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--生态-->
+                <div class="box-ana box-ecol">
+                    <div class="hd">
+                        <span class="num t-7">07</span>
+                        <h2>生态</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="desc">
+                            <div class="pic-area">
+                                <div class="pic">
+                                    <img src="images/region-analysis/img-ecol.jpg" alt="">
+                                    <div class="legend">图7.2015年北京市PM2.5分布图</div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>
+                                    通州境内分布着北运河、潮白河、温榆河等13条河流，千年京杭大运河穿城而过。依托温榆河、运河城市段建成的大运河森林公园。截至2013年年底，森林覆盖率为27.26%，城市绿化覆盖面积4343.6公顷，城市绿化覆盖率50.45%。</p>
+                                <p>但通州因处于北京市下风处，空气质量较差。通州北部的空气质量略优于南部，但整体看来，污染情况比较严重。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--更多了解-->
+                <div class="know-more">
+                    <a href="#">进一步了解通州房价 &gt; &gt;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include("./app/footer/footer.html")
+    @@include("./app/sidebar/sidebar.html")
+    @@include("./app/app-download/app-download.html")
+</div>
+<script src="./js/lib/jquery/jquery-1.9.1.min.js"></script>
+<script src="./js/lib/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="./js/lib/jquerypin/jquery.pin.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/house-list.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+@media screen and (min-width: 750px){
+    .container {
+        width: 10rem;
+        margin: 0 auto;
+    }
+}
+.fall{
+    background-color:#57c6ff;
+    padding-bottom: 1.6rem;
+}
+.banner{
+    position: relative;
+    width: 10rem;
+    height: 4.4rem;
+    background: url("../images/fall-banner.png") no-repeat;
+    background-size: 10rem 4.4rem;
+}
+.banner .name{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: .25rem;
+}
+.banner .name p{
+    color: #fff;
+    font-size: .7rem;
+    font-weight: 600;
+}
+.content .title{
+    text-align: center;
+    margin-bottom: .33rem;
+}
+.content .title h1{
+    font-size: .373rem;
+    color: #fff;
+}
+.fall .content{
+    margin: 0 auto;
+    width: 8.56rem;
+    min-height: 7.5rem;
+    overflow: hidden;
+}
+.fall .fall-item{
+    margin-bottom: .4rem;
+    padding: .266rem .4rem;
+    background: #e6f9ff;
+    box-shadow: 0 2px 16px 0 #48b3e2;
+    border-radius: .26rem;
+    overflow: hidden;
+}
+.fall-item .wd-logo{
+    float: left;
+    width: .72rem;
+    height: .53rem;
+}
+.fall-item .wd-logo img{
+    display: block;
+    width: 100%;
+}
+.fall-item .w-con{
+    padding-left: .85rem;
+}
+.fall-item .w-con img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.fall .fall-item .w-con p{
+    color: #555;
+    font-size: .373rem;
+}
+.fall .fall-item .wd-w{
+    margin-bottom: .26rem;
+}
+.fall .fall-item .wd-w p{
+    font-weight: 600;
+}
+.fall .fall-item .wd-d{
+    margin-bottom: .13rem;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 10rem;
+    z-index: 10;
+    background-color: #fff;
+}
+.footer ul{
+    padding: .2rem .53rem;
+    overflow: hidden;
+}
+.footer ul li{
+    float: left;
+    width: 4.25rem;
+    height: 1.06rem;
+    line-height: 1.06rem;
+    text-align: center;
+    font-size: .42rem;
+    border: 2px solid #48b3e2;
+    border-radius: 50px;
+}
+.footer ul .down{
+    float: left;
+    background: #48b3e2;
+}
+.footer ul .phone{
+    float: right;
+    background-color: #fff;
+}
+.footer ul .down a{
+    color: #fff;
+}
+.footer ul .phone a{
+    color: #48b3e2;
+}
+.header{
+    width: 100%;
+    height: 1.17rem;
+    line-height: 1.17rem;
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+}
+.header h1{
+    font-size: .453rem;
+    color: #333333;
+}
+/*遮罩*/
+.pop{
+    display: none;
+    position: fixed;
+    width: 10rem;
+    top:0;
+    height: 100%;
+    background: rgba(0,0,0,1);
+    z-index: 101;
+    text-align: center;
+}
+.pop .img-cont{
+    position: relative;
+    width: 10rem;
+    height: 100%;
+}
+.pop .img-cont img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.pop .return{
+    position: absolute;
+    top: .78rem;
+    left: .5rem;
+    width: .373rem;
+    height: .373rem;
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg); 	/* IE 9 */
+    -moz-transform:rotate(45deg); 	/* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(45deg);
+    overflow: hidden;
+}
+/*图片放大容器*/
+/*该页面做到了M站中，M站有公用的结构，导致了该页面呈现出了一些没有用到的结构，临时的解决方案先把这些没有用到的结构设置为一个display:none;属性，使其隐藏掉*/
+.ly-fade{
+    display: none;
+}

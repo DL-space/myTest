@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手机验证页</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="wap-font-scale" content="no">
+    <script src="../js/flexible.js"></script>
+    <link rel="stylesheet" href="../css/weixin/weixin.css">
+</head>
+<body>
+<div class="container container-yz">
+    <div class="connect">
+        <span class="ico ico-weixin">微信</span>
+        <span class="ico ico-connect">链接</span>
+        <span class="ico ico-phone">手机</span>
+    </div>
+    <div class="connect-msg">
+        <p class="p1">就差一步啦~</p>
+        <p class="p2">
+            绑定手机号码，即可获取看房实时进度和专属购房建议书
+        </p>
+    </div>
+    <div class="form-area">
+        <div class="form-item form-item-phone">
+            <div class="ipt-area">
+                <input type="text" class="ipt" placeholder="请输入手机号" maxlength="11">
+                <span class="ico ico-del">删除</span>
+            </div>
+            <button type="button" class="get-code" disabled="disabled">点击获取验证码</button>
+        </div>
+        <div class="form-item form-item-code">
+            <div class="ipt-area">
+                <input type="text" class="ipt" placeholder="请输入手机验证码" maxlength="4">
+            </div>
+        </div>
+        <p class="error-msg">手机号不得为空</p>
+        <p class="form-msg">居理新房保证用户信息不被泄露和挪用</p>
+    </div>
+    <div class="btn-area">
+        <input type="submit" class="btn btn-sure" disabled="disabled" value="绑定手机号">
+    </div>
+</div>
+<script src="../js/lib/jquery-2.1.4.min.js"></script>
+<script src="../js/weixin/weixin.js"></script>
+</body>
+</html>

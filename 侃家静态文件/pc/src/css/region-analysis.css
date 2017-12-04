@@ -1,0 +1,315 @@
+/*面包屑*/
+.row-crumb {
+    height: auto;
+    padding: 15px 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+/*选择区域*/
+.qyxz {
+    clear: both;
+    background: #f8f8f8;
+    overflow: hidden;
+}
+.qyxz .hd {
+    text-align: center;
+    height: 59px;
+    line-height: 60px;
+    border-bottom: 1px solid #eaeaea;
+    overflow: hidden;
+}
+.qyxz .hd h2, .qyxz .hd h2 a {
+    font-size: 16px;
+    color: #333;
+}
+.qyxz .bd {
+    padding: 20px 0 20px 75px;
+}
+.area-list li, .area-list li a {
+    color: #7c7f80;
+}
+.area-list li {
+    float: left;
+    font-size: 14px;
+    width: 54px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+.area-list li.on a {
+    color: #0074c1;
+}
+.area-list li.multiple {
+    float: none;
+    clear: both;
+}
+/*区域分析*/
+.qyfx {
+    height: 346px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    background: url("../images/region-analysis/bg-qyfx.jpg") 0 0 no-repeat;
+    overflow: hidden;
+}
+.qyfx .hd h2 {
+    text-align: center;
+    font-size: 26px;
+    color: #fff;
+    font-weight: normal;
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+}
+.qyfx .bd {
+    padding-top: 13px;
+}
+.qyfx .pl, .qyfx .pr {
+    float: left;
+    width: 360px;
+    overflow: hidden;
+}
+.qyfx .pl {
+    margin-right: 30px;
+    padding-left: 85px;
+}
+.qyfx .pr {
+    margin-bottom: 30px;
+}
+.qyfx .ana-area {
+    width: 332px;
+    height: 75px;
+    padding: 15px 0 0 28px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.qyfx .ana-area p {
+    color: #fff;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 312px;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+.qyfx .ana-area p span {
+    font-size: 12px;
+}
+.qyfx .ana-area p span.num, .qyfx .total p span.num {
+    font-size: 20px;
+    font-weight: bold;
+}
+.qyfx .pl .ana-area {
+    margin-bottom: 55px;
+}
+.qyfx .pl .total {
+    float: right;
+    width: 185px;
+}
+.qyfx .pl .total P {
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.qyfx .pr .ana-area {
+    margin-bottom: 30px;
+}
+.qyfx .qrcode {
+    width: 101px;
+    padding-left: 40px;
+}
+.qyfx .qrcode .pic, .qyfx .qrcode .pic img {
+    width: 101px;
+    height: 101px;
+    overflow: hidden;
+}
+.qyfx .qrcode .text {
+    text-align: center;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+/*box-ana*/
+.box-ana {
+    clear: both;
+    margin-bottom: 20px;
+    padding: 40px;
+    background: #f8f8f8;
+    overflow: hidden;
+}
+.box-ana .hd {
+    height: 52px;
+    overflow: hidden;
+}
+.box-ana .hd .num {
+    float: left;
+    text-indent: -9999px;
+    width: 75px;
+    height: 50px;
+    margin: 3px 15px 0 0;
+    background: url("../images/region-analysis/bg-num.png") 0 0 no-repeat;
+    overflow: hidden;
+}
+.box-ana .hd .t-2 {
+    background-position: 0 -80px;
+}
+.box-ana .hd .t-3 {
+    background-position: 0 -160px;
+}
+.box-ana .hd .t-4 {
+    background-position: 0 -240px;
+}
+.box-ana .hd .t-5 {
+    background-position: 0 -320px;
+}
+.box-ana .hd .t-6 {
+    background-position: 0 -400px;
+}
+.box-ana .hd .t-7 {
+    background-position: 0 -480px;
+}
+.box-ana .hd h2 {
+    font-size: 26px;
+    font-weight: normal;
+    height: 52px;
+    background: url("../images/region-analysis/bg-hd.png") 0 38px no-repeat;
+    overflow: hidden;
+}
+.box-zdbk .hd h2 {
+    background-position: 0 -40px;
+}
+.box-edu .hd h2 {
+    background-position: 0 -120px;
+}
+.box-business .hd h2 {
+    background-position: 0 -200px;
+}
+.box-medical .hd h2 {
+    background-position: 0 -280px;
+}
+.box-traffic .hd h2 {
+    background-position: 0 -360px;
+}
+.box-ecol .hd h2 {
+    background-position: 0 -440px;
+}
+.box-ana .bd {
+    padding-top: 30px;
+}
+.box-ana .desc .text, .box-ana .desc .pic-area {
+    clear: both;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.box-ana .desc p {
+    clear: both;
+    line-height: 30px;
+    overflow: hidden;
+}
+.box-ana .desc .pic-area {
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #fff;
+}
+.box-ana .desc .pic-area .pic {
+    position: relative;
+}
+.box-ana .desc .pic-area img {
+    max-width: 90%;
+}
+.box-ana .desc .pic-area .legend {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.mod-regin .tit {
+    height: 56px;
+    line-height: 56px;
+    overflow: hidden;
+}
+.mod-regin .tit h3 {
+    font-size: 20px;
+    font-weight: normal;
+}
+.mod-regin .house-list {
+    width: 870px;
+}
+.mod-regin .media3 {
+    float: left;
+    margin-right: 30px;
+}
+.mod-regin .media3 .text .info {
+    font-size: 12px;
+}
+/*重点板块*/
+.text-wrap {
+    clear: both;
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px dashed #eaeaea;
+    overflow: hidden;
+}
+.text-wrap .more {
+    position: absolute;
+    right: 0;
+    bottom: 14px;
+    color: #0074c1;
+}
+.text-wrap h4 {
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.box-ana .desc .text-wrap p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 570px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.box-ana .desc .last {
+    border-bottom: 0;
+}
+/*教育*/
+.box-edu .desc .pic-area .pic {
+    float: left;
+    width: 50%;
+}
+/*底部了解更多*/
+.know-more {
+    width: 876px;
+    height: 76px;
+    padding: 44px 43px 0 0;
+    background: url("../images/region-analysis/img-data-more.jpg") 0 0 no-repeat;
+    overflow: hidden;
+}
+.know-more a {
+    float: right;
+    font-size: 16px;
+    color: #888;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+    border: 1px solid #888;
+    border-radius: 3px;
+    background: #fff;
+    overflow: hidden;
+}
+.know-more a:hover {
+    color: #0074c1;
+    border-color: #0074c1;
+}
+.advice-free {
+    margin-bottom: 20px;
+}
+.advice-free .ipt {
+    width: 322px;
+}

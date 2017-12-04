@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>主推楼盘</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row row-crumbs">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">主推楼盘信息</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--主推楼盘信息-->
+                    <div class="panel panel-rc-project">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">主推楼盘信息</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="c-search">
+                                <ul class="c-query">
+                                    <li>
+                                        <div class="th">城市：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">全国</option>
+                                                <option value="1">北京</option>
+                                                <option value="2">上海</option>
+                                                <option value="3">天津</option>
+                                                <option value="3">广州</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-area">
+                                    <a href="#" class="btn btn-default">修改本周楼盘</a>/<a href="#" class="btn btn-default">新增本周楼盘</a>
+                                </div>
+                            </div>
+                            <!--渠道列表-->
+                            <div class="c-list bd-list">
+                                <div class="tit">
+                                    <div class="list-info">
+                                        <p>本周20170501－20170507主推楼盘表</p>
+                                        <p>更新时间：20170501</p>
+                                        <p>更新人：王小五</p>
+                                    </div>
+                                </div>
+                                <div class="con">
+                                    <table class="table table-bordered table-responsive">
+                                        <tr>
+                                            <th>昌平</th>
+                                            <th>通州</th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><a href="#">花雨汀(住宅)</a></p>
+                                                <p>正常带看，300-500万</p>
+                                                <p>推荐第1</p>
+                                            </td>
+                                            <td>
+                                                <p><a href="#">华业东方玫瑰(住宅)</a></p>
+                                                <p>正常带看,600-800万</p>
+                                                <p>推荐第3</p>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                    <!--本周产品力图-->
+                                    <div class="stat-chart stat-this-week">
+
+                                    </div>
+                                    <!--上周产品力图-->
+                                    <div class="stat-chart stat-last-week">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<!--弹层-->
+<div class="sign-possibility-wrap">
+    <div class="dialog dialog-sign-possibility">
+        <div class="dialog-header">
+            <h3>编辑成交单签约情况</h3>
+        </div>
+        <div class="dialog-body">
+            <div class="sign-possibility">
+                <div class="th">签约可能性：</div>
+                <div class="td">
+                    <ul class="c-chked">
+                        <li><input class="c-chk" data-check="high-possibility" type="radio" name="possibility">高(待签约)</li>
+                        <li><input class="c-chk" data-check="middle-possibility" type="radio" name="possibility">中(不确定)</li>
+                        <li><input class="c-chk" data-check="low-possibility" type="radio" name="possibility">低(可能退)</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="c-query sign-date high-possibility">
+                <li>
+                    <div class="th">预计签约时间：</div>
+                    <div class="td">
+                        <input class="form-control" type="text"/>
+                    </div>
+                </li>
+            </ul>
+            <ul class="c-query low-possibility">
+                <li class="remark">
+                    <div class="th">原因说明：</div>
+                    <div class="td">
+                        <textarea class="form-control"></textarea>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="dialog-footer">
+            <button type="reset" class="btn btn-default layer-btn-reset">取消</button>
+            <button type="button" class="btn btn-primary btn-commit fr">保存</button>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../highchart/js/highcharts.js"></script>
+<script src="../highchart/js/highcharts-more.js"></script>
+<script src="../highchart/js/highcharts-zh_CN.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/recommend-project.js"></script>
+</body>
+</html>

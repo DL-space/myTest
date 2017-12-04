@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>基本信息</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/house-manage.css">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container">
+            <!--次导航-->
+            <nav class="top-nav">
+                <ul>
+                    <li class="active"><a href="#">基础信息</a></li>
+                    <li><a href="#">细节信息</a></li>
+                    <li><a href="#">环境信息</a></li>
+                    <li><a href="#">户型信息</a></li>
+                    <li><a href="#">价格信息</a></li>
+                    <li><a href="#">图片信息</a></li>
+                </ul>
+            </nav>
+            <!--基本信息-->
+            <div class="panel panel-baseinfo">
+                <div class="panel-heading">
+                    <div class="panel-heading-wrap">
+                        <h2 class="panel-title">基本信息</h2>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="select-info">
+                        <div class="input-grup">
+                            <div class="lbl">城市：</div>
+                            <div class="ipt-grup-area">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-grup">
+                            <div class="lbl">区域：</div>
+                            <div class="ipt-grup-area">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-grup">
+                            <div class="lbl">
+                                <span class="require-span">*</span>
+                                楼盘名称：
+                            </div>
+                            <div class="ipt-grup-area">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-grup">
+                            <div class="lbl">楼盘类型：</div>
+                            <div class="ipt-grup-area">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-grup">
+                            <div class="lbl">
+                                <span class="require-span">*</span>
+                                状态：
+                            </div>
+                            <div class="ipt-grup-area">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-grup">
+                            <div class="lbl">错别字别名：</div>
+                            <div class="ipt-grup-area">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-grup">
+                            <div class="lbl">别名：</div>
+                            <div class="ipt-grup-area">
+                                <input type="text">
+                            </div>
+                            <span class="ts-span">（以英文“,”分隔开）</span>
+                        </div>
+                    </div>
+                    <div class="input-grup lang-input">
+                        <div class="lbl">楼盘概述：</div>
+                        <div class="ipt-grup-area">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--区域情况-->
+            <div class="panel panel-localedes">
+                <div class="panel-heading">
+                    <div class="panel-heading-wrap">
+                        <h2 class="panel-title">区域情况</h2>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="select-info">
+                        <div class="one-line">
+                            <div class="input-grup">
+                                <span>高端板块：</span>
+                                <input type="text">
+                            </div>
+                            <div class="input-grup">
+                                <span>区域板块：</span>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="one-line">
+                            <div class="input-grup">
+                                <span>是否学区房：</span>
+                                <input type="text">
+                            </div>
+                            <div class="input-grup">
+                                <span>学区学校：</span>
+                                <input type="text">
+                                <span class="ts-span">（以英文“,”分隔开）</span>
+                            </div>
+                        </div>
+                        <div class="one-line">
+                            <div class="input-grup">
+                            <span>
+                                是否临近地铁：
+                            </span>
+                                <input type="text">
+                            </div>
+                            <div class="input-grup">
+                                <span>临地铁线路：</span>
+                                <input type="text">
+                                <span class="ts-span">（以英文“,”分隔开）</span>
+                            </div>
+                            <div class="input-grup">
+                                <span>地铁站点：</span>
+                                <input type="text">
+                                <span class="ts-span">（以英文“,”分隔开）</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-grup lang-input">
+                        <span>竞品楼盘：</span>
+                        <input type="text" class="lang">
+                    </div>
+                    <div class="btn-div">
+                        <button class="btn btn-primary">保存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+</body>
+</html>

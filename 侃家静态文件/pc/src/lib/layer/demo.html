@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>layer</title>
+<link rel="stylesheet" href="css/c_layer.css">
+<link rel="stylesheet" href="reset.css">
+<script src="../jquery/jquery-1.9.1.min.js"></script>
+<script src="layer.js"></script>
+</head>
+<body>
+<div>
+    <button id="tishi">提示信息</button>
+    <button id="old">页面结构自定义</button>
+</div>
+<script>
+    /**
+     * 新版公用弹层(非iframe弹层)，作用只负责弹出弹层，弹层内部的事件请酌情在相应定义事件位置书写
+     * 注意：只负责弹层效果。（如需要其他参数，后期可酌情添加）
+     * 新版弹层全面使用后，尽量做到整个网站只有一个layer.open()方法，仅需调用popLayer()传递相关参数即可
+     * @param htmlContent 弹层内部显示的结构
+     * @param area_w 弹层的宽度(带单位)
+     * @returns {*}
+     */
+    var layer_hd = ''+
+            '<div class="layer">' +
+            '<div class="close">' +
+            '<a href="javascript:void(0);" target="_self" id="layer-close-btn">Close</a>' +
+            '</div>' ;
+    var layer_bd = ''+
+            '<div class="layer-wrapper">' +
+            '<div class="layer-box">' +
+            '<div class="hd">' +
+            '<h2>用户登录</h2>' +
+            '<ul class="more">' +
+            '<li>还没有侃家账号？</li>' +
+            '<li class="btn-area">' +
+            '<a href="#" class="layer-btn layer-btn-reg">马上注册</a>' +
+            '</li>' +
+            '</ul>' +
+            '</div>' +
+            '<div class="bd">' +
+            '<ul class="user-info">' +
+            '<li>' +
+            '<div class="ipt-area ipt-mobile">' +
+            '<input type="text" placeholder="请输入手机号" class="ipt">' +
+            '</div>' +
+            '<p class="tips-ipt">手机号不能为空</p>' +
+            '</li>' +
+            '<li>' +
+            '<div class="ipt-area ipt-pwd">' +
+            '<input type="password" placeholder="请输入密码"  data-placeholder="请输入密码" class="ipt">' +
+            '</div>' +
+            '<p class="tips-ipt">密码不能为空</p>' +
+            '</li>' +
+            '<li>' +
+            '<div class="chk">' +
+            '<input type="checkbox">下次自动登录' +
+            '</div>' +
+            '<a href="#" class="link-fpwd">找回密码</a>' +
+            '</li>' +
+            '</ul>' +
+            '<div class="layer-btn-area">' +
+            '<a class="btn4" href="#" id="btn-login">立即登录</a>' +
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '</div>' ;
+    var layer_foot = ''+
+            '</div>';
+
+
+    /**
+     * 新版弹层公用方法
+     * 2015-12-10
+     * @param layer_type 弹层类型(1:页面弹层；2、iframe弹层)
+     * @param htmlContent 弹层页面结构(自定义)
+     * @param area 弹层尺寸
+     * @param func
+     * @param data func参数所需的数据，如果需要
+     * @param commit_url  确认按钮的跳转url
+     */
+    function popLayer(layer_type,htmlContent,area,func,data,commit_url){
+        close_layer();  //弹出新弹层之前先清理一下，避免弹出多个弹层
+        var layer_html = '';
+        if(layer_type == 1){
+            layer_html = layer_hd + htmlContent + layer_foot ;
+        }else if(layer_type == 2){
+            layer_html = "demo.html"; //弹出一个新的页面
+        }
+        var layer_content = layer.open({
+            type:layer_type,//弹层类型,必填， 默认0,可传入值：0：信息框，1：页面层，2：iframe层，3：加载层，4：tips层
+            title:false,//是否显示title
+            closeBtn:1,//是否显示关闭按钮（layer自带的按钮）--目前初始化设置为1，自定义了关闭按钮并模拟点击关闭自带关闭按钮
+            area:area,
+            shadeClose:1,//点击阴影区域是否关闭弹层
+            moveType: 1, //拖拽风格，0是默认，1是传统拖动
+            shift: 1, //0-6的动画形式，-1不开启
+            shade:0.7,
+            skin: 'layui-layer-nobg', //没有背景色
+            content:layer_html,
+            success:function(){
+                layer_func(func,data,commit_url);//弹层上的事件
+            }
+        });
+        return layer_content;
+    }
+    /**
+     * 新版公用弹层 关闭弹层方法
+     * 新版所有弹层公用关闭方法，模拟点击弹层插件自身关闭按钮（可以不用定义自己的关闭方法）
+     */
+    function close_layer(){
+        $('.layui-layer-close').trigger('click');
+    }
+    $(document).on('click','.failKnow, .es-goon, .successGo',function () {
+        close_layer();
+    });
+    function layer_func(func,data,commit_url){
+
+    }
+    $(function () {
+        var tishiBtn = $("#tishi");
+        tishiBtn.on("click",function () {
+            var msg = "您确定提交么？";   //提示信息
+            var our = function () {
+                alert(1111);
+            };
+            tishi(msg,our);
+        });
+        function tishi(msg,ourFunction) {
+            layer.confirm(msg, {
+                btn: ['确定', '取消'] //按钮
+            }, function () {
+                ourFunction();
+            }, function () {
+                layer.close();
+            });
+        }
+
+        var oldF = $("#old");
+        oldF.on("click",function () {
+            var htmlContent = ''+
+                    '<div class="layer-wrapper">' +
+                    '<div class="layer-box">' +
+                    '<div class="hd">' +
+                    '<h2>用户登录</h2>' +
+                    '<ul class="more">' +
+                    '<li>还没有侃家账号？</li>' +
+                    '<li class="btn-area">' +
+                    '<a href="#" class="layer-btn layer-btn-reg">马上注册</a>' +
+                    '</li>' +
+                    '</ul>' +
+                    '</div>' +
+                    '<div class="bd">' +
+                    '<ul class="user-info">' +
+                    '<li>' +
+                    '<div class="ipt-area ipt-mobile">' +
+                    '<input type="text" placeholder="请输入手机号" class="ipt">' +
+                    '</div>' +
+                    '<p class="tips-ipt">手机号不能为空</p>' +
+                    '</li>' +
+                    '<li>' +
+                    '<div class="ipt-area ipt-pwd">' +
+                    '<input type="password" placeholder="请输入密码"  data-placeholder="请输入密码" class="ipt">' +
+                    '</div>' +
+                    '<p class="tips-ipt">密码不能为空</p>' +
+                    '</li>' +
+                    '<li>' +
+                    '<div class="chk">' +
+                    '<input type="checkbox">下次自动登录' +
+                    '</div>' +
+                    '<a href="#" class="link-fpwd">找回密码</a>' +
+                    '</li>' +
+                    '</ul>' +
+                    '<div class="layer-btn-area">' +
+                    '<a class="btn4" href="#" id="btn-login">立即登录</a>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' ;
+            var area = ["600px","400px"];
+            popLayer(1,htmlContent,area)
+        });
+        $(document).on('click','#layer-close-btn',function(){
+            close_layer();
+        });
+    });
+</script>
+</body>
+</html>

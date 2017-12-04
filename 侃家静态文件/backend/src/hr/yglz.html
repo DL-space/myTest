@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>员工离职</title>
+    <link rel="stylesheet" href="../css/hr.css">
+</head>
+<body>
+<div class="container container-emp">
+    <div class="header">
+        <div class="link-o-list"><a href="#"><span class="icon icon-businesscard"></span></a></div>
+        <h2>员工离职</h2>
+        <div class="close"><a href="#"><span class="icon icon-close"></span></a></div>
+    </div>
+    <div class="center">
+        <div class="special-msg"><span class="icon icon-warn"></span>此操作将使员工离职，员工账号将不能再登录，且此操作不可撤销；离职后社保、公积金减员月将无法更改，请您认真核对。</div>
+        <div class="row row-yg-info">
+            <div class="yg-info">
+                <div class="pic-area">
+                    <div class="big-name">井</div>
+                </div>
+                <div class="info-detail">
+                    <div class="tr">
+                        <span class="name">井建造</span>
+                    </div>
+                    <div class="tr">
+                        <div class="info-item">
+                            <span class="label">手机</span>
+                            <span class="con">17603806226</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">部门</span>
+                            <span class="con">咨询部</span>
+                        </div>
+                    </div>
+                    <div class="tr">
+                        <div class="info-item">
+                            <span class="label">入职时间</span>
+                            <span class="con">2015-07-13</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-form">
+            <div class="form-area form-yglz">
+                <div class="form-item">
+                    <div class="title required">离职类型</div>
+                    <div class="con">
+                        <div class="ipt-area">
+                            <select class="ipt">
+                                <option value="0">请选择</option>
+                                <option value="1" selected>主动离职</option>
+                                <option value="2">被动离职</option>
+                            </select>
+                            <p class="error-msg" style="display: block">不能为空!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title required">离职时间</div>
+                    <div class="con">
+                        <div class="ipt-area">
+                            <input type="text" class="ipt error" placeholder="选择日期">
+                            <span class="icon icon-calendar"></span>
+                            <p class="error-msg" style="display: block">不能为空!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title">办理离职时间</div>
+                    <div class="con">
+                        <div class="ipt-area">
+                            <input type="text" class="ipt" placeholder="选择日期">
+                            <span class="icon icon-calendar"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title">个人主因</div>
+                    <div class="con">
+                        <div class="ipt-area">
+                            <select class="ipt">
+                                <option value="0">回校深造</option>
+                                <option value="1">个人身体健康因素</option>
+                                <option value="2">家庭原因</option>
+                                <option value="3">交通不便，离住处远</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title">公司主因</div>
+                    <div class="con">
+                        <div class="ipt-area">
+                            <select class="ipt">
+                                <option value="0">请选择</option>
+                                <option value="1">工作量太大，压力大</option>
+                                <option value="2">工资低</option>
+                                <option value="3">福利差</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title">离职原因</div>
+                    <div class="con">
+                        <div class="ipt-area">
+                            <textarea class="ipt ipt-textarea" placeholder="0-300个字符"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title">补偿金</div>
+                    <div class="con">
+                        <div class="ipt-area">
+                            <input class="ipt" type="text" placeholder="大于等于0的数，小数部分最多两位">
+                            <span class="icon icon-rmb"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title">代通知金</div>
+                    <div class="con">
+                        <div class="ipt-area">
+                            <input class="ipt" type="text" placeholder="大于等于0的数，小数部分最多两位">
+                            <span class="icon icon-rmb"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title required">社保减员月</div>
+                    <div class="con">
+                        <div class="ipt-area">
+                            <select class="ipt">
+                                <option value="0">请选择</option>
+                                <option value="1">1月</option>
+                                <option value="2">2月</option>
+                                <option value="3">3月</option>
+                            </select>
+                            <p class="error-msg" style="display: block">不能为空!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title required">公积金减员月</div>
+                    <div class="con">
+                        <div class="ipt-area">
+                            <select class="ipt">
+                                <option value="0">请选择</option>
+                                <option value="1">1月</option>
+                                <option value="2">2月</option>
+                                <option value="3">3月</option>
+                            </select>
+                            <p class="error-msg" style="display: block">不能为空!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title">剩余年假</div>
+                    <div class="con">
+                        <div class="text">7</div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title">剩余调休</div>
+                    <div class="con">
+                        <div class="text">7</div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="title">直属下属数量</div>
+                    <div class="con">
+                        <div class="text">7</div><span class="error-tips">直属下属的汇报对象还未调整</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer footer-fixed">
+        <div class="btn-area">
+            <button class="btn btn-info">确定离职</button>
+            <button class="btn btn-default">关闭</button>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/hr/hr-ui.js"></script>
+<script src="../js/hr/hr-v1.0.js"></script>
+</body>
+</html>

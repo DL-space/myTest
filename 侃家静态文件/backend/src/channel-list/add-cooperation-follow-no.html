@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>无预约添加合作跟进</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row row-crumbs">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">添加跟进</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--新增项目-->
+                    <div class="panel panel-follow-add">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">添加跟进</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="follow-sel">
+                                <li>
+                                    <input class="chk-follow" name="follow" data-check="chk-plan" type="radio"/>添加合作推进计划
+                                </li>
+                                <li>
+                                    <input class="chk-follow" name="follow" data-check="chk-truth" type="radio"/>添加合作实际推进情况
+                                </li>
+                            </ul>
+                            <!--添加合作推进计划-->
+                            <div class="chk-plan">
+                                <div class="c-mod">
+                                    <div class="tit">
+                                        <h4>后续跟进</h4>
+                                    </div>
+                                    <div class="con">
+                                        <ul class="form-mod">
+                                            <li>
+                                                <div class="th">时间：</div>
+                                                <div class="td">
+                                                    <input class="form-control" type="text">
+                                                </div>
+                                            </li>
+                                            <li class="remark">
+                                                <div class="th">跟进动作：</div>
+                                                <div class="td">
+                                                    <textarea class="form-control"></textarea>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <input class="btn btn-default" type="button" value="取消"/>
+                                    <input class="btn btn-primary" type="button" value="保存"/>
+                                </div>
+                            </div>
+                            <!--添加合作实际推进情况-->
+                            <div class="chk-truth">
+                                <div class="c-mod">
+                                    <div class="tit">
+                                        <h4><label class="required"></label>推进结果</h4>
+                                    </div>
+                                    <div class="con">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </div>
+                                <div class="c-mod">
+                                    <div class="tit">
+                                        <h4><label class="required"></label>情况描述</h4>
+                                    </div>
+                                    <div class="con">
+                                        <textarea class="form-control"></textarea>
+                                        <ul class="form-mod">
+                                            <li>
+                                                <div class="th">参与人：</div>
+                                                <div class="td">
+                                                    <input class="form-control" type="text"/>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="th">沟通方式：</div>
+                                                <div class="td">
+                                                    <select class="form-control">
+                                                        <option value="0">膜拜</option>
+                                                        <option value="1">电话沟通</option>
+                                                        <option value="2">独立拜访</option>
+                                                        <option value="3">陪同拜访</option>
+                                                        <option value="4">经理拜访</option>
+                                                        <option value="5">微信邮件沟通</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="th">跟进人：</div>
+                                                <div class="td">
+                                                    <input class="form-control" type="text" value="赵崇岩"/>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="th">决策人：</div>
+                                                <div class="td">
+                                                    <input class="form-control" type="text"/>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="th">决策人联系方式：</div>
+                                                <div class="td">
+                                                    <input class="form-control" type="text"/>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="c-mod">
+                                    <div class="tit">
+                                        <h4>后续跟进</h4>
+                                    </div>
+                                    <div class="con">
+                                        <ul class="form-mod">
+                                            <li>
+                                                <div class="th">时间：</div>
+                                                <div class="td">
+                                                    <input class="form-control" type="text"/>
+                                                </div>
+                                            </li>
+                                            <li class="remark">
+                                                <div class="th">跟进动作：</div>
+                                                <div class="td">
+                                                    <textarea class="form-control"></textarea>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <input class="btn btn-default" type="button" value="取消"/>
+                                    <input class="btn btn-primary" type="button" value="保存"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/bd.js"></script>
+</body>
+</html>

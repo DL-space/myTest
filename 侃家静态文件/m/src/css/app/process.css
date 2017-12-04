@@ -1,0 +1,53 @@
+.container{
+    padding-top: 0;
+}
+.process-banner{
+    margin-bottom: 0.4rem;
+}
+.process-banner img{
+    width: 100%;
+    height: 2rem;
+}
+.process{
+    padding: 0 0.26rem;
+}
+.step{
+    padding-bottom: 0.4rem;
+    overflow: hidden;
+    background: url("../../images/app/bg-process-line.png") 0.5rem 0 repeat-y;
+}
+.step:last-child{
+    background: none;
+}
+.step .logo{
+    float: left;
+    margin-right: 0.26rem;
+}
+.step .logo,.step .logo img{
+    width: 1.06rem;
+    height: 1.06rem;
+}
+.step .text{
+    float: left;
+    width: 8.13rem;
+}
+.step .text h2{
+    font-size: 0.42rem;
+    color: #333;
+    margin-bottom: 0.14rem;
+    font-weight: 700;
+}
+.step .text p{
+    font-size: 0.34rem;
+    color: #666;
+    line-height: 0.5rem;
+}
+.process-footer{
+    text-align: center;
+    margin: 0.8rem 0;
+}
+.process-footer p{
+    font-size: 0.48rem;
+    color: #48B3E2;
+    line-height: 0.8rem;
+}

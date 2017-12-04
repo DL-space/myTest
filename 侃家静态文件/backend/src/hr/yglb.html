@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>员工列表页</title>
+    <link rel="stylesheet" href="../css/hr.css"/>
+</head>
+<body>
+<div class="container">
+    @@include("../app/hr-header/header.html")
+    <div class="center">
+        @@include("../app/hr-sidebar/sidebar.html")
+        <div class="main-content">
+            <!--用户操作-->
+            <ul class="hr-option">
+                <li><a href="zjyg.html" class="btn btn-info link-add-employee"><span class="icon icon-plus"></span>员工</a></li>
+                <li><a href="#" class="btn btn-info link-export">人力月报</a></li>
+            </ul>
+            <!--检索条件-->
+            <div class="hr-search">
+                <ul class="search-item">
+                    <li>
+                        <div class="th">在职情况：</div>
+                        <div class="td">
+                            <select class="ipt">
+                                <option value="0">全部</option>
+                                <option value="1">在职</option>
+                                <option value="2">离职</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <input class="ipt ipt-keywords" placeholder="姓名模糊搜索" type="text"/>
+                    </li>
+                    <li>
+                        <input class="ipt ipt-job-number" placeholder="工号" type="text"/>
+                    </li>
+                    <li>
+                        <input class="ipt ipt-keywords" placeholder="部门搜索" type="text"/>
+                    </li>
+                    <li>
+                        <input class="ipt ipt-keywords" placeholder="岗位搜索" type="text"/>
+                    </li>
+                    <li>
+                        <select class="ipt">
+                            <option value="0">聘用形式</option>
+                            <option value="1">正式</option>
+                            <option value="3">非正式</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select class="ipt">
+                            <option value="0">转正</option>
+                            <option value="1">已转正</option>
+                            <option value="3">未转正</option>
+                        </select>
+                    </li>
+                    <li>
+                        <button class="link-all">其他筛选条件</button>
+                    </li>
+                </ul>
+            </div>
+            <!--筛选条件概要-->
+            <div class="search-summary">
+                <p class="num">有345个员工</p>
+                <div class="selected-filter-content">
+                    <span class="el-tag" title="北京">北京<i class="i-close">X</i></span>
+                    <span class="el-tag" title="北京">男<i class="i-close">X</i></span>
+                    <span class="el-tag" title="北京">正式<i class="i-close">X</i></span>
+                    <span class="el-tag" title="北京">2017/01/01-2017/02/02<i class="i-close">X</i></span>
+                </div>
+                <div class="clear">
+                    <button>取消筛选</button>
+                </div>
+            </div>
+            <!--员工列表-->
+            <div class="table-area">
+                <table class="data-table">
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>姓名</th>
+                        <th>手机号</th>
+                        <th>工号</th>
+                        <th>聘用形式</th>
+                        <th>部门</th>
+                        <th>入职事件</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>小秘密</td>
+                        <td>13800138000</td>
+                        <td>0022</td>
+                        <td>正式</td>
+                        <td>上海/人力资源</td>
+                        <td>2013-09-23</td>
+                        <td class="hr-opt">
+                            <div class="link-opt">
+                                <span class="icon icon-more"></span>
+                                <div class="popover">
+                                    <ul>
+                                        <li><button>转正</button></li>
+                                        <li><button>转正式了</button></li>
+                                        <li><button>调岗</button></li>
+                                        <li><button>离职</button></li>
+                                        <li class="del"><button>删除</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>大秘密</td>
+                        <td>13800138000</td>
+                        <td>0022</td>
+                        <td>正式</td>
+                        <td>上海/人力资源</td>
+                        <td>2013-09-23</td>
+                        <td class="hr-opt">
+                            <div class="link-opt" href="#">
+                                <span class="icon icon-more">
+                                    <div class="popover">
+                                        <ul>
+                                            <li><button>转正</button></li>
+                                            <li><button>调岗</button></li>
+                                            <li><button>离职</button></li>
+                                            <li class="del"><button>删除</button></li>
+                                        </ul>
+                                    </div>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="page">
+                    <ul class="pagination">
+                        <li class="prev disabled"><span>«</span></li>
+                        <li class="active">
+                            <a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#">10</a></li>
+                        <li class="next">
+                            <a href="#">»</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--其他筛选添加-->
+    <div class="prop"></div>
+    <div class="filter-container">
+        <div class="filters">
+            <div class="fi-title">筛选</div>
+            <ul class="filter-item">
+                <li>
+                    <span class="ico-left">性别</span>
+                    <div class="selected-filter-content">
+                    </div>
+                    <div class="item-options">
+                        <div class="th">性别：</div>
+                        <div class="td">
+                            <ul class="d-chked">
+                                <li>
+                                    <input class="d-chk" type="checkbox" name="sex" value="男" />男
+                                </li>
+                                <li>
+                                    <input class="d-chk" type="checkbox" name="sex"  value="女"/>女
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="ico-left">工作城市</span>
+                    <div class="selected-filter-content">
+                        <span class="el-tag" title="北京">北京<i class="i-close">X</i></span>
+                        <span class="el-tag" title="上海">上海<i class="i-close">X</i></span>
+                        <span class="el-tag" title="杭州">杭州<i class="i-close">X</i></span>
+                        <span class="el-tag" title="苏州">苏州<i class="i-close">X</i></span>
+                        <span class="el-tag" title="天津">天津<i class="i-close">X</i></span>
+                    </div>
+                    <div class="item-options">
+                        <div class="th">工作城市：</div>
+                        <div class="td"><input class="ipt" type="text"></div>
+                    </div>
+                </li>
+                <li class="filter-item-time">
+                    <span class="ico-left">入职时间</span>
+                    <div class="selected-filter-content">
+                        <span class="el-tag" title="time">2017/01/01-2017/02/02<i class="i-close">X</i></span>
+                    </div>
+                    <div class="item-options">
+                        <div class="th">入职时间</div>
+                        <div class="td">
+                            <input class="ipt" type="text">
+                            <span class="ext">-</span>
+                            <input class="ipt" type="text">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="ico-left">职级</span>
+                    <div class="selected-filter-content">
+                        <span class="el-tag" title="职级">HR<i class="i-close">X</i></span>
+                    </div>
+                    <div class="item-options">
+                        <div class="th">职级：</div>
+                        <div class="td">
+                            <input class="ipt" type="text" placeholder="1-50个字符">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="ico-left">手机号</span>
+                    <div class="selected-filter-content">
+                        <span class="el-tag" title="phone">13333333333<i class="i-close">X</i></span>
+                    </div>
+                    <div class="item-options">
+                        <div class="th">手机号：</div>
+                        <div class="td">
+                            <input class="ipt" type="text" placeholder="手机号模糊搜索">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="fi-bottom">
+                <div class="btn-area">
+                    <button class="btn btn-info btn-commit">确定</button>
+                    <button class="btn btn-default layer-btn-reset">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include("../app/hr-footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/hr/hr-ui.js"></script>
+<script src="../js/hr/hr-v1.0.js"></script>
+</body>
+</html>

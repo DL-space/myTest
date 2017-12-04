@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>弹层</title>
+    <link rel="stylesheet" href="../css/hr.css" />
+</head>
+<body>
+    <!--模拟弹层事件按钮-->
+    <div class="btn-area">
+        <a class="btn btn-info btn-tjbm" href="javascript:void(0);">添加部门弹层</a>
+        <a class="btn btn-info btn-zsbmyg" href="javascript:void(0);">直属XXX部门的员工</a>
+        <a class="btn btn-info btn-ydbm" href="javascript:void(0);">移动部门</a>
+        <a class="btn btn-info btn-tzbm" href="javascript:void(0);">调整部门</a>
+        <a class="btn btn-info btn-scbm" href="javascript:void(0);">删除部门</a>
+        <a class="btn btn-info btn-tjgwfl" href="javascript:void(0);">添加岗位分类</a>
+        <a class="btn btn-info btn-tjgw" href="javascript:void(0);">添加岗位</a>
+        <a class="btn btn-info btn-ydgw" href="javascript:void(0);">移动岗位</a>
+        <a class="btn btn-info btn-scgwfl" href="javascript:void(0);">删除岗位分类</a>
+        <a class="btn btn-info btn-scgw" href="javascript:void(0);">删除岗位</a>
+        <a class="btn btn-info btn-scyg" href="javascript:void(0);">删除员工</a>
+        <a class="btn btn-info btn-tjyg" href="javascript:void(0);">添加员工成功</a>
+        <a class="btn btn-info btn-lzcg" href="javascript:void(0);">离职成功提示</a>
+        <a class="btn btn-info btn-msg-tips" href="javascript:void(0);">信息提示</a>
+    </div>
+    <!--添加部门弹层-->
+    <div class="add-department dialog-wrap">
+        <div class="dialog dialog-add-department">
+            <div class="dialog-header">
+                <h2>添加部门</h2>
+                <a class="dialog-close layer-close" href="#"><span class="icon icon-close"></span></a>
+            </div>
+            <div class="dialog-body">
+                <ul class="c-query">
+                    <li>
+                        <div class="th required">部门名称</div>
+                        <div class="td">
+                            <input class="ipt" type="text" placeholder="1-50个字符" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="th required">部门类别</div>
+                        <div class="td">
+                            <input class="ipt" type="text" placeholder="部门" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="th">部门负责人</div>
+                        <div class="td">
+                            <input class="ipt" type="text" placeholder="请选择" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="th">部门说明书</div>
+                        <div class="td">
+                            <textarea class="ipt" placeholder="1-300个字符"></textarea>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dialog-footer">
+                <div class="btn-area">
+                    <button class="btn btn-info btn-commit">确定</button>
+                    <button class="btn btn-default layer-btn-reset">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--直属XXX部门的员工-->
+    <div class="department-staff dialog-wrap">
+        <div class="dialog dialog-employee">
+            <div class="dialog-header">
+                <h2>直属XXX部门的员工</h2>
+                <a class="dialog-close layer-close" href="#"><span class="icon icon-close"></span></a>
+            </div>
+            <div class="dialog-body">
+                <div class="table-area">
+                    <table>
+                        <tr>
+                            <th width="20">
+                                <div class="h-chk-area">
+                                    <input type="checkbox" class="h-chk" />
+                                </div>
+                            </th>
+                            <th>
+                                <div class="t-name">姓名</div>
+                            </th>
+                            <th>
+                                <div class="t-job-number">工号</div>
+                            </th>
+                            <th>
+                                <div class="t-post">岗位</div>
+                            </th>
+                            <th>
+                                <div class="t-mobile">手机号</div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td width="20">
+                                <div class="h-chk-area">
+                                    <input type="checkbox" class="h-chk" />
+                                </div>
+                            </td>
+                            <td>
+                                <div class="t-name">姓名001</div>
+                            </td>
+                            <td>
+                                <div class="t-job-number">001</div>
+                            </td>
+                            <td>
+                                <div class="t-post">咨询师</div>
+                            </td>
+                            <td>
+                                <div class="t-mobile">13800138000</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20">
+                                <div class="h-chk-area">
+                                    <input type="checkbox" class="h-chk" />
+                                </div>
+                            </td>
+                            <td>
+                                <div class="t-name">姓名0908</div>
+                            </td>
+                            <td>
+                                <div class="t-job-number">0908</div>
+                            </td>
+                            <td>
+                                <div class="t-post">咨询师主管</div>
+                            </td>
+                            <td>
+                                <div class="t-mobile">13800138000</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20">
+                                <div class="h-chk-area">
+                                    <input type="checkbox" class="h-chk" />
+                                </div>
+                            </td>
+                            <td>
+                                <div class="t-name">姓名006</div>
+                            </td>
+                            <td>
+                                <div class="t-job-number">006</div>
+                            </td>
+                            <td>
+                                <div class="t-post">城市经理</div>
+                            </td>
+                            <td>
+                                <div class="t-mobile">13800138000</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20">
+                                <div class="h-chk-area">
+                                    <input type="checkbox" class="h-chk" />
+                                </div>
+                            </td>
+                            <td>
+                                <div class="t-name">姓名007</div>
+                            </td>
+                            <td>
+                                <div class="t-job-number">007</div>
+                            </td>
+                            <td>
+                                <div class="t-post">咨询师经理</div>
+                            </td>
+                            <td>
+                                <div class="t-mobile">13800138000</div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="page">
+                        <ul class="pagination">
+                            <li class="prev disabled"><span>«</span></li>
+                            <li class="active">
+                                <a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li><a href="#">10</a></li>
+                            <li class="next">
+                                <a href="#">»</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <div class="btn-area">
+                    <button class="btn btn-info btn-commit">调整</button>
+                    <button class="btn btn-default layer-btn-reset">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--移动部门-->
+    <div class="move-department dialog-wrap">
+        <div class="dialog dialog-move-dep">
+            <div class="dialog-header">
+                <h2>移动部门</h2>
+                <a class="dialog-close layer-close" href="#"><span class="icon icon-close"></span></a>
+            </div>
+            <div class="dialog-body">
+                <ul class="c-query">
+                    <li>
+                        <div class="th">上级部门</div>
+                        <div class="td">
+                            <input class="ipt" type="text" placeholder="请选择" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dialog-footer">
+                <div class="btn-area">
+                    <button class="btn btn-info btn-commit">确定</button>
+                    <button class="btn btn-default layer-btn-reset">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--调整部门-->
+    <div class="update-department dialog-wrap">
+        <div class="dialog dialog-update-dep">
+            <div class="dialog-header">
+                <h2>调整部门</h2>
+                <a class="dialog-close layer-close" href="#"><span class="icon icon-close"></span></a>
+            </div>
+            <div class="dialog-body">
+                <ul class="c-query">
+                    <li>
+                        <div class="th">调整后部门</div>
+                        <div class="td">
+                            <input class="ipt" type="text" placeholder="请选择" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dialog-footer">
+                <div class="btn-area">
+                    <button class="btn btn-info btn-commit">确定</button>
+                    <button class="btn btn-default layer-btn-reset">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--删除部门-->
+    <div class="del-department dialog-wrap">
+        <div class="dialog dialog-update-dep">
+            <div class="dialog-header">
+                <h2>提醒</h2>
+                <a class="dialog-close layer-close" href="#"><span class="icon icon-close"></span></a>
+            </div>
+            <div class="dialog-body">
+                <div class="txt-tips">
+                    <p>本部门还有员工尚未移除</p>
+                    <p>请优先更新这些员工的部门信息，然后进行删除部门操作</p>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <div class="btn-area">
+                    <button class="btn btn-info btn-commit">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--添加岗位分类-->
+    <div class="add-post-types dialog-wrap">
+        <div class="dialog dialog-post-types">
+            <div class="dialog-header">
+                <h2>添加岗位分类</h2>
+                <a class="dialog-close layer-close" href="#"><span class="icon icon-close"></span></a>
+            </div>
+            <div class="dialog-body">
+                <ul class="c-query">
+                    <li>
+                        <div class="th">分类名称</div>
+                        <div class="td">
+                            <input class="ipt" type="text" placeholder="1-10个字符" />
+                        </div>
+                        <div class="error-tips">已有该分类名称，请勿重复</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dialog-footer">
+                <div class="btn-area">
+                    <button class="btn btn-info btn-commit">确定</button>
+                    <button class="btn btn-default layer-btn-reset">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--添加岗位-->
+    <div class="add-post dialog-wrap">
+        <div class="dialog dialog-post-add">
+            <div class="dialog-header">
+                <h2>添加岗位</h2>
+                <a class="dialog-close layer-close" href="#"><span class="icon icon-close"></span></a>
+            </div>
+            <div class="dialog-body">
+                <ul class="c-query">
+                    <li>
+                        <div class="th">岗位名称</div>
+                        <div class="td">
+                            <input class="ipt" type="text" placeholder="1-10个字符" />
+                        </div>
+                        <div class="error-tips">已有该分类名称，请勿重复</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dialog-footer">
+                <div class="btn-area">
+                    <button class="btn btn-info btn-commit">确定</button>
+                    <button class="btn btn-default layer-btn-reset">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--移动岗位-->
+    <div class="move-post dialog-wrap">
+        <div class="dialog dialog-post-move">
+            <div class="dialog-header">
+                <h2>移动岗位</h2>
+                <a class="dialog-close layer-close" href="#"><span class="icon icon-close"></span></a>
+            </div>
+            <div class="dialog-body">
+                <ul class="c-query">
+                    <li>
+                        <div class="th">上级岗位分类</div>
+                        <div class="td">
+                            <input class="ipt" type="text" placeholder="1-10个字符" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dialog-footer">
+                <div class="btn-area">
+                    <button class="btn btn-info btn-commit">确定</button>
+                    <button class="btn btn-default layer-btn-reset">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--删除岗位分类-->
+    <div class="del-post-type dialog-wrap">
+        <div class="dialog dialog-post-type-del">
+            <div class="dialog-header">
+                <h2>删除分类</h2>
+                <a class="dialog-close layer-close" href="#"><span class="icon icon-close"></span></a>
+            </div>
+            <div class="dialog-body">
+                <div class="txt-tips">
+                    <p>本次操作将删除此分类，以及对应所有岗位，以及岗位对应的所有员工岗位信息</p>
+                    <p>您确定要执行此操作吗？</p>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <div class="btn-area">
+                    <button class="btn btn-info btn-commit">确定</button>
+                    <button class="btn btn-default layer-btn-reset">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--删除岗位-->
+    <div class="del-post dialog-wrap">
+        <div class="dialog dialog-post-del">
+            <div class="dialog-header">
+                <h2>删除岗位</h2>
+                <a class="dialog-close layer-close" href="#"><span class="icon icon-close"></span></a>
+            </div>
+            <div class="dialog-body">
+                <div class="txt-tips">
+                    <p>本次操作将删除岗位以及岗位对应的所有员工岗位信息</p>
+                    <p>您确定要执行此操作吗？</p>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <div class="btn-area">
+                    <button class="btn btn-info btn-commit">确定</button>
+                    <button class="btn btn-default layer-btn-reset">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--删除员工-->
+    <div class="del-employee dialog-wrap">
+        <div class="dialog dialog-employee-del">
+            <div class="dialog-header">
+                <h2>删除员工</h2>
+                <a class="dialog-close layer-close" href="#"><span class="icon icon-close"></span></a>
+            </div>
+            <div class="dialog-body">
+                <div class="txt-tips">
+                    <span class="ico ico-del"></span>
+                    <p>本次操作将删除员工<span>员工姓名(13800138000)</span>,删除后账号将不可恢复，您确认删除吗？</p>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <div class="btn-area">
+                    <button class="btn btn-info btn-commit">确定</button>
+                    <button class="btn btn-default layer-btn-reset">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--添加员工成功-->
+    <div class="dialog-add-employee dialog-wrap">
+        <div class="dialog dialog-employee-add">
+            <div class="dialog-header">
+                <h2>添加成功</h2>
+            </div>
+            <div class="dialog-body">
+                <div class="txt-tips">
+                    <span class="ico ico-success"></span>
+                    <p>员工添加成功</p>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <div class="btn-area">
+                    <button class="btn btn-primary btn-commit">继续添加员工</button>
+                    <button class="btn btn-primary btn-commit">完善员工信息</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--员工离职成功-->
+    <div class="dialog-success-quit">
+        <p class="txt-tips">离职成功</p>
+    </div>
+    <!--信息提示-->
+    <div class="demo-msg-tips">
+        <div class="layer">
+            <div class="layer-title">
+                <h3>消息提示</h3><a href="javascript:void(0);" target="_self" class="layer-close">Close</a>
+            </div>
+            <div class="layer-body">
+                <div class="layer-con">
+                    <p>首要联系方式不能为空</p>
+                </div>
+            </div>
+            <div class="layer-footer">
+                <button class="btn btn-default layer-btn-reset" type="reset">取消</button>
+                <button class="btn btn-primary btn-commit" type="button">确认</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/layer/layer.js"></script>
+    <script src="../js/hr/hr-ui.js"></script>
+    <script src="../js/hr/hr-v1.0.js"></script>
+</body>
+</html>

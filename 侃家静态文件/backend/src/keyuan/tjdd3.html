@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>添加客户-咨询师</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">订单列表</a></li>
+                        <li class="active">创建订单</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row row-kyyh">
+                <!--基本信息-->
+                <div class="panel panel-customer-info">
+                    <div class="panel-heading">
+                        <div class="panel-heading-wrap">
+                            <h2 class="panel-title">基本信息</h2>
+                            <div class="lb">城市：
+                                <select>
+                                    <option value="1">北京</option>
+                                    <option value="2">上海</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="mod2 mod2-baseinfo">
+                            <ul class="con clearfix">
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label><span>*</span>首要联系方式：</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control auto_complete_user_mobile" disabled>
+                                        </div>
+                                        <div class="input-group input-group-sm">
+                                            <span class="warning_msg"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label>姓名：</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label><span>*</span>性别：</label>
+                                        <div class="input-group input-group-sm">
+                                            <select class="form-control">
+                                                <option value="1">男</option>
+                                                <option value="2">女</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label>备用联系方式：</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label><span>*</span>是否为高端用户：</label>
+                                        <div class="input-group input-group-sm">
+                                            <div class="sel"><input type="radio" class="dx">是</div>
+                                            <div class="sel"><input type="radio" class="dx">否</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label><span>*</span>联系途径：</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--需求信息-->
+                <div class="panel panel-xqxx">
+                    <div class="panel-heading">
+                        <div class="panel-heading-wrap">
+                            <h2 class="panel-title">需求信息</h2>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <!--关键信息-->
+                        <div class="mod2 mod2-baseinfo">
+                            <div class="tit">1.关键信息</div>
+                            <ul class="con clearfix">
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label>客户购房紧迫度：</label>
+                                        <div class="input-group input-group-sm">
+                                            <select class="form-control">
+                                                <option value="1">请选择</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label>购房目的：</label>
+                                        <div class="input-group input-group-sm">
+                                            <select class="form-control">
+                                                <option value="1">请选择</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label>首付预算：</label>
+                                        <div class="input-group input-group-sm ipt-range">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="txt">万元</div>
+                                        <a href="javascript:void(0);" class="link-add">添加范围</a>
+                                    </div>
+                                </li>
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label>总价预算：</label>
+                                        <div class="input-group input-group-sm ipt-range">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="txt">万元</div>
+                                        <a href="javascript:void(0);" class="link-add">添加范围</a>
+                                    </div>
+                                </li>
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label>客户有无资质：</label>
+                                        <div class="input-group input-group-sm">
+                                            <div class="sel"><input type="radio" class="dx">有</div>
+                                            <div class="sel"><input type="radio" class="dx">无</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label>客户名下房产：</label>
+                                        <div class="input-group input-group-sm">
+                                            <div class="sel"><input type="radio" class="dx">名下无房</div>
+                                            <div class="sel"><input type="radio" class="dx">一套房</div>
+                                            <div class="sel"><input type="radio" class="dx">两套房及以上</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--区域需求-->
+                        <div class="mod2 mod2-baseinfo">
+                            <div class="tit">2.区域需求</div>
+                            <ul class="con clearfix">
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label>关注区域：</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label>工作地点：</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label>是否接受其他区域：</label>
+                                        <div class="input-group input-group-sm">
+                                            <div class="sel"><input type="radio" class="dx">是</div>
+                                            <div class="sel"><input type="radio" class="dx">否</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--户型需求-->
+                        <div class="mod2 mod2-baseinfo">
+                            <div class="tit">3.户型需求</div>
+                            <ul class="con clearfix">
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label>业态类型：</label>
+                                        <div class="input-group input-group-sm">
+                                            <select class="form-control">
+                                                <option value="1">请选择</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label>面积要求：</label>
+                                        <div class="input-group input-group-sm ipt-range">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="txt">m²</div>
+                                        <a href="javascript:void(0);" class="link-add">添加范围</a>
+                                    </div>
+                                </li>
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label>户型：</label>
+                                        <div class="input-group input-group-sm">
+                                            <div class="sel"><input type="checkbox" class="dx">一居</div>
+                                            <div class="sel"><input type="checkbox" class="dx">两居</div>
+                                            <div class="sel"><input type="checkbox" class="dx">三居</div>
+                                            <div class="sel"><input type="checkbox" class="dx">四居</div>
+                                            <div class="sel"><input type="checkbox" class="dx">五居及以上</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--个性需求-->
+                        <div class="mod2 mod2-gxxq">
+                            <div class="tit">4.个性需求</div>
+                            <ul class="con clearfix">
+                                <li class="form-inline kkfsj">
+                                    <div class="form-group">
+                                        <label>可看房时间：</label>
+                                        <div class="input-group input-group-sm">
+                                            <div class="sel"><input type="radio" class="dx">工作日</div>
+                                            <div class="sel"><input type="radio" class="dx">周末</div>
+                                            <div class="sel"><input type="radio" class="dx">随时</div>
+                                            <div class="sel"><input type="radio" class="dx">其他 <input type="text" class="ipt"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label>配合程度：</label>
+                                        <div class="input-group input-group-sm">
+                                            <select class="form-control">
+                                                <option value="1">请选择</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-inline gzd">
+                                    <div class="form-group">
+                                        <label>关注点：</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-inline kxd">
+                                    <div class="form-group">
+                                        <label>抗性点：</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--相关楼盘-->
+                        <div class="mod2 mod2-long">
+                            <div class="tit">5.相关楼盘</div>
+                            <ul class="con clearfix">
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label>客户感兴趣楼盘：</label>
+                                        <div class="input-group input-group-sm">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-inline">
+                                    <div class="form-group">
+                                        <label>竞品楼盘：</label>
+                                        <div class="input-group input-group-sm">
+                                            <a href="#">首开万科城市之光（商办）</a><a href="#">华润悦景湾</a><a href="#">北京城建琨廷</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--备注-->
+                        <div class="mod2 mod2-remark">
+                            <div class="tit">备注</div>
+                            <div class="con">
+                                <div class="form-group">
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-area">
+                            <button type="button" class="btn btn-t03 btn-lg">取消</button>
+                            <button type="button" class="btn btn-t01 btn-lg">确定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/DatePicker/WdatePicker.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/kyyh.js"></script>
+</body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>楼盘组审核</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/albums-detail2.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/data-audit.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">楼盘组审核</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--楼盘组审核-->
+                    <div class="panel panel-lpzsh">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">楼盘组审核</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="order-search">
+                                <!--排号订单查询-->
+                                <ul class="c-query house-query">
+                                    <li>
+                                        <div class="th">城市：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">北京</option>
+                                                <option value="1">上海</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">楼盘名称：</div>
+                                        <div class="td">
+                                            <input type="text" class="form-control" placeholder="精确搜索"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">数据源：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">请选择</option>
+                                                <option value="1">侃家网</option>
+                                                <option value="2">搜房网</option>
+                                                <option value="3">搜狐焦点</option>
+                                                <option value="4">安居客</option>
+                                                <option value="5">看房网</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">是否合作：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">请选择</option>
+                                                <option value="1">合作</option>
+                                                <option value="2">非合作</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">审核状态：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">请选择</option>
+                                                <option value="1">待审核</option>
+                                                <option value="2">部分待审核</option>
+                                                <option value="3">待定</option>
+                                                <option value="4">已审核</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="c-ext">
+                                        <div class="th">创建时间：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                            <div class="ext">-</div>
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li class="c-ext">
+                                        <div class="th">更新时间：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                            <div class="ext">-</div>
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-area">
+                                    <input type="button" class="btn btn-default" value="重置">
+                                    <input type="button" class="btn btn-primary" value="搜索">
+                                </div>
+                            </div>
+                            <div class="order-list">
+                                <div class="tit">
+                                    <!--订单概要-->
+                                    <div class="order-info">
+                                        <p>第1-15条，共13890条数据</p>
+                                    </div>
+                                    <!--显示筛选-->
+                                    <div class="xssx">
+                                        <input type="checkbox" class="c-chk">仅显示暂无匹配数据楼盘
+                                    </div>
+                                </div>
+                                <div class="con lpz-list">
+                                    <div class="c-house-item">
+                                        <div class="title">
+                                            <span class="num">#1</span>
+                                            <h4>华业东方玫瑰</h4>
+                                            <div class="t-info">北京 住宅</div>
+                                            <div class="lb-area">
+                                                <span class="lb-check lb-bfdsh">部分待审核</span>
+                                            </div>
+                                            <!--日期-->
+                                            <div class="date">创建时间：2016-12-23 18:20:23</div>
+                                            <!--匹配行为-->
+                                            <div class="match btn-match"><span>手动匹配</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="btn-area">
+                                                <button class="btn btn-primary">通过</button>
+                                                <button class="btn btn-default">待定</button>
+                                            </div>
+                                            <div class="m-area">
+                                                <div class="h-mod">
+                                                    <div class="h-tit">
+                                                        <h5>源数据：</h5>
+                                                    </div>
+                                                    <ul class="h-con">
+                                                        <li class="h-data"><a class="h-link" href="#">华业东方玫瑰（侃家网）</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="h-mod">
+                                                    <div class="h-tit">
+                                                        <h5>精确匹配：</h5>
+                                                    </div>
+                                                    <ul class="h-con">
+                                                        <li class="h-data"><a class="h-link" href="#">华业东方玫瑰（搜房网）</a>
+                                                            <div class="opt-area"><span
+                                                                    class="btn-opt h-del">删除</span><span
+                                                                    class="btn-opt h-again">重新匹配</span></div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="h-mod">
+                                                    <div class="h-tit">
+                                                        <h5>模糊匹配：</h5>
+                                                    </div>
+                                                    <ul class="h-con">
+                                                        <li class="h-data dai"><a class="h-link"
+                                                                                  href="#">华业东方玫瑰（搜狐焦点）</a>
+                                                            <div class="opt-area"><span
+                                                                    class="btn-opt h-del">删除</span><span
+                                                                    class="btn-opt h-again">重新匹配</span></div>
+                                                        </li>
+                                                        <li class="h-data dai"><a class="h-link" href="#">华业东方（安居客）</a>
+                                                            <div class="opt-area"><span
+                                                                    class="btn-opt h-del">删除</span><span
+                                                                    class="btn-opt h-again">重新匹配</span></div>
+                                                        </li>
+                                                        <li class="h-data"><a class="h-link" href="#">华业东方玫瑰（安居客）</a>
+                                                            <div class="opt-area"><span
+                                                                    class="btn-opt h-del">删除</span><span
+                                                                    class="btn-opt h-again">重新匹配</span></div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="h-mod">
+                                                    <div class="h-tit">
+                                                        <h5>人工匹配：</h5>
+                                                    </div>
+                                                    <ul class="h-con">
+                                                        <li class="h-data"><a class="h-link"
+                                                                              href="#">通州东方小区（看房网）</a>
+                                                            <div class="opt-area"><span
+                                                                    class="btn-opt h-del">删除</span><span
+                                                                    class="btn-opt h-again">重新匹配</span></div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="update-info">
+                                                <span class="updater">更新：臧普伦</span><span class="update-date">2016-12-28 18:20:23</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-house-item">
+                                        <div class="title">
+                                            <span class="num">#2</span>
+                                            <h4>华业东方玫瑰</h4>
+                                            <div class="t-info">北京 住宅</div>
+                                            <div class="lb-area">
+                                                <span class="lb-check lb-ysh">已审核</span>
+                                            </div>
+                                            <!--日期-->
+                                            <div class="date">创建时间：2016-12-23 18:20:23</div>
+                                            <!--匹配行为-->
+                                            <div class="match btn-match"><span>手动匹配</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="m-area">
+                                                <div class="h-mod">
+                                                    <div class="h-tit">
+                                                        <h5>源数据：</h5>
+                                                    </div>
+                                                    <ul class="h-con">
+                                                        <li class="h-data"><a class="h-link" href="#">华业东方玫瑰（侃家网）</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="h-mod">
+                                                    <div class="h-tit">
+                                                        <h5>精确匹配：</h5>
+                                                    </div>
+                                                    <ul class="h-con">
+                                                        <li class="h-data"><a class="h-link" href="#">华业东方玫瑰（搜房网）</a>
+                                                            <div class="opt-area">
+                                                                <span class="btn-opt h-del">删除</span>
+                                                                <span class="btn-opt h-again">重新匹配</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="update-info">
+                                                <span class="updater">更新：臧普伦</span><span class="update-date">2016-12-28 18:20:23</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-house-item">
+                                        <div class="title">
+                                            <span class="num">#3</span>
+                                            <h4>华业东方玫瑰</h4>
+                                            <div class="t-info">北京 住宅</div>
+                                            <div class="lb-area">
+                                                <span class="lb-check lb-ysh">已审核</span>
+                                            </div>
+                                            <!--日期-->
+                                            <div class="date">创建时间：2016-12-23 18:20:23</div>
+                                            <!--匹配行为-->
+                                            <div class="match btn-match"><span>手动匹配</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="m-area">
+                                                <div class="h-mod">
+                                                    <div class="h-tit">
+                                                        <h5>源数据：</h5>
+                                                    </div>
+                                                    <ul class="h-con">
+                                                        <li class="h-data"><a class="h-link" href="#">华业东方玫瑰（侃家网）</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="h-mod">
+                                                    <div class="h-tit">
+                                                        <h5>精确匹配：</h5>
+                                                    </div>
+                                                    <ul class="h-con">
+                                                        <li class="h-data"><a class="h-link" href="#">华业东方玫瑰（搜房网）</a>
+                                                            <div class="opt-area">
+                                                                <span class="btn-opt h-del">删除</span>
+                                                                <span class="btn-opt h-again">重新匹配</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="h-mod">
+                                                    <div class="h-tit">
+                                                        <h5>模糊匹配：</h5>
+                                                    </div>
+                                                    <ul class="h-con">
+                                                        <li class="h-data"><a class="h-link" href="#">华业东方玫瑰（搜狐焦点）</a>
+                                                            <div class="opt-area">
+                                                                <span class="btn-opt h-del">删除</span>
+                                                                <span class="btn-opt h-again">重新匹配</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="h-data"><a class="h-link" href="#">华业东方（安居客）</a>
+                                                            <div class="opt-area">
+                                                                <span class="btn-opt h-del">删除</span>
+                                                                <span class="btn-opt h-again">重新匹配</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="h-data"><a class="h-link" href="#">华业东方没鬼（安居客）</a>
+                                                            <div class="opt-area">
+                                                                <span class="btn-opt h-del">删除</span>
+                                                                <span class="btn-opt h-again">重新匹配</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="h-data"><a class="h-link" href="#">华润悦景湾（搜房网）</a>
+                                                            <div class="opt-area">
+                                                                <span class="btn-opt h-del">删除</span>
+                                                                <span class="btn-opt h-again">重新匹配</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="h-data"><a class="h-link" href="#">北京新干线（安居客）</a>
+                                                            <div class="opt-area">
+                                                                <span class="btn-opt h-del">删除</span>
+                                                                <span class="btn-opt h-again">重新匹配</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="h-mod">
+                                                    <div class="h-tit">
+                                                        <h5>人工匹配：</h5>
+                                                    </div>
+                                                    <ul class="h-con">
+                                                        <li class="h-data"><a class="h-link" href="#">通州东方小区（看房网）</a>
+                                                            <div class="opt-area">
+                                                                <span class="btn-opt h-del">删除</span>
+                                                                <span class="btn-opt h-again">重新匹配</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="update-info">
+                                                <span class="updater">更新：臧普伦</span><span class="update-date">2016-12-28 18:20:23</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-house-item">
+                                        <div class="title">
+                                            <span class="num">#4</span>
+                                            <h4>华业东方玫瑰</h4>
+                                            <div class="t-info">北京 住宅</div>
+                                            <div class="lb-area">
+                                                <span class="lb-check lb-dd">待定</span>
+                                            </div>
+                                            <!--日期-->
+                                            <div class="date">创建时间：2016-12-23 18:20:23</div>
+                                            <!--匹配行为-->
+                                            <div class="match btn-match"><span>手动匹配</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="btn-area">
+                                                <button class="btn btn-primary">通过</button>
+                                            </div>
+                                            <div class="m-area">
+                                                <div class="h-mod">
+                                                    <div class="h-tit">
+                                                        <h5>源数据：</h5>
+                                                    </div>
+                                                    <ul class="h-con">
+                                                        <li class="h-data"><a class="h-link" href="#">华业东方玫瑰（侃家网）</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="h-mod">
+                                                    <div class="h-tit">
+                                                        <h5>精确匹配：</h5>
+                                                    </div>
+                                                    <ul class="h-con">
+                                                        <li class="h-data"><a class="h-link" href="#">华业东方玫瑰（搜房网）</a>
+                                                            <div class="opt-area">
+                                                                <span class="btn-opt h-del">删除</span>
+                                                                <span class="btn-opt h-again">重新匹配</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="h-mod">
+                                                    <div class="h-tit">
+                                                        <h5>模糊匹配：</h5>
+                                                    </div>
+                                                    <ul class="h-con">
+                                                        <li class="h-data"><a class="h-link" href="#">华业东方玫瑰（搜狐焦点）</a>
+                                                            <div class="opt-area">
+                                                                <span class="btn-opt h-del">删除</span>
+                                                                <span class="btn-opt h-again">重新匹配</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="h-data dai"><a class="h-link" href="#">华业东方（安居客）</a>
+                                                            <div class="opt-area">
+                                                                <span class="btn-opt h-del">删除</span>
+                                                                <span class="btn-opt h-again">重新匹配</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="h-data"><a class="h-link" href="#">华业东方没鬼（安居客）</a>
+                                                            <div class="opt-area">
+                                                                <span class="btn-opt h-del">删除</span>
+                                                                <span class="btn-opt h-again">重新匹配</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="h-mod">
+                                                    <div class="h-tit">
+                                                        <h5>人工匹配：</h5>
+                                                    </div>
+                                                    <ul class="h-con">
+                                                        <li class="h-data"><a class="h-link" href="#">通州东方小区（看房网）</a>
+                                                            <div class="opt-area">
+                                                                <span class="btn-opt h-del">删除</span>
+                                                                <span class="btn-opt h-again">重新匹配</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="update-info">
+                                                <span class="updater">更新：臧普伦</span><span class="update-date">2016-12-28 18:20:23</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-house-item">
+                                        <div class="title">
+                                            <span class="num">#5</span>
+                                            <h4>华业东方玫瑰</h4>
+                                            <div class="t-info">北京 住宅</div>
+                                            <div class="lb-area">
+                                                <span class="lb-check lb-dsh">待审核</span>
+                                            </div>
+                                            <!--日期-->
+                                            <div class="date">创建时间：2016-12-23 18:20:23</div>
+                                            <!--匹配行为-->
+                                            <div class="match btn-match"><span>手动匹配</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="btn-area">
+                                                <button class="btn btn-primary">通过</button>
+                                            </div>
+                                            <div class="m-area">
+                                                <div class="h-mod">
+                                                    <div class="h-tit">
+                                                        <h5>源数据：</h5>
+                                                    </div>
+                                                    <ul class="h-con">
+                                                        <li class="h-data dai"><a class="h-link"
+                                                                                  href="#">华业东方玫瑰（侃家网）</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="update-info">
+                                                <span class="updater">更新：臧普伦</span><span class="update-date">2016-12-28 18:20:23</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="page">
+                                        <ul class="pagination">
+                                            <li class="prev disabled"><span>«</span></li>
+                                            <li class="active"><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">6</a></li>
+                                            <li><a href="#">7</a></li>
+                                            <li><a href="#">8</a></li>
+                                            <li><a href="#">9</a></li>
+                                            <li><a href="#">10</a></li>
+                                            <li class="next"><a href="#">»</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/data-audit.js"></script>
+</body>

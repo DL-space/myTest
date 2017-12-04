@@ -1,0 +1,55 @@
+/*免费咨询*/
+.advice-free {
+    clear: both;
+    height: 100px;
+    background-color: #f3f3f3;
+    overflow: hidden;
+}
+.advice-free .pic {
+    float: left;
+    margin-right: 32px;
+    padding: 20px 0 0 30px;
+}
+.advice-free .pic img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.advice-free .input-area {
+    float: left;
+    margin-right: 35px;
+    padding-top: 25px;
+}
+.advice-free .btn-cons {
+    margin-left: 0;
+}
+.advice-free .input-area .ico-phone {
+    float: left;
+    margin: 8px 10px 0 0;
+}
+.advice-free .free-number {
+    float: left;
+    padding-top: 25px;
+}
+.advice-free .free-number .number {
+    height: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.advice-free .free-number .color-number {
+    color: #e85045;
+}
+.advice-free .tips {
+    display: none;
+}
+.advice-free .error-tips {
+    color: #e85045;
+}
+.advice-free .right-tips {
+    color: #0074c1;
+}
+.no-pic {
+    height: auto;
+    background: none;
+}

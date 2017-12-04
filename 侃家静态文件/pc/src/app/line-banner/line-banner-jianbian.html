@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/line-banner.css">
+</head>
+<body>
+<div class="line-banner">
+    <button class="order-btn btn-pre btn-hover">《</button>
+    <button class="order-btn btn-next btn-hover">》</button>
+    <div class="content-container">
+        <div class="content-list" style="left: 0;">
+            <div class="list-item" style="background-color: #00aa00">第一个子元素</div>
+            <div class="list-item" style="background-color: red">第二个子元素</div>
+            <div class="list-item" style="background-color: yellow">第三个子元素</div>
+        </div>
+    </div>
+</div>
+<script src="../../lib/jquery/jquery-1.9.1.min.js"></script>
+<script>
+    var lineBanner = $(".line-banner");
+    var orderBtn = $(".order-btn");
+    var contextList = lineBanner.find(".content-list");
+    var listItem = contextList.find(".list-item");
+    var itemNum = contextList.find(".list-item").length;//轮播元素个数
+    var size = 1200;//轮播区域宽度、每次位移宽度
+    /*orderBtn.on('click',function () {
+        var that = $(this);
+        if(!contextList.is(":animated")){
+            that.attr("disabled","disabled");
+        }
+        var left = parseInt(contextList.css("left"));
+            if(that.hasClass("btn-pre")){
+                if(left==0){
+                    alert("已经没有了");
+                    orderBtn.prop("disabled",false);
+                }else{
+                    contextList.animate({left:'+='+size+'px'},1000,function () {
+                        orderBtn.prop("disabled",false);
+                    });
+                }
+            }else if(that.hasClass("btn-next")){
+                if(left==-2400){
+                    alert("已经没有了");
+                    orderBtn.prop("disabled",false);
+                }else{
+                    contextList.animate({left:'-='+size+'px'},1000,function () {
+                        orderBtn.prop("disabled",false);
+                    });
+                }
+            }
+    });*/
+
+    orderBtn.on('click',function () {
+        var that = $(this);
+        var left = parseInt(contextList.css("left"));
+        that.prop("disabled",true);
+        listItem.fadeOut(500,change());
+        function change() {
+            if(that.hasClass("btn-pre")){
+                if(left==0){
+                    contextList.delay(500).animate({left:-(size*(itemNum-1))+"px"},0)
+                }else{
+                    contextList.delay(500).animate({left:'+='+size+'px'},0);
+                }
+            }else if(that.hasClass("btn-next")){
+                if(left==-(size*(itemNum-1))){
+                    contextList.delay(500).animate({left:"0"},0)
+                }else{
+                    contextList.delay(500).animate({left:'-='+size+'px'},0);
+                }
+            }
+        }
+        listItem.fadeIn(500,function () {
+            that.prop("disabled",false);
+        });
+    })
+</script>
+</body>
+</html>

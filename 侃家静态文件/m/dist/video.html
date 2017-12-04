@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <title>侃区域｜侃房山－北京最后的刚需聚集地</title>
+    <script src="./js/flexible.js"></script>
+    <script src="./js/lib/jwplayer/jwplayer.js"></script>
+    <script src="./js/lib/jwplayer/jwpsrv.js"></script>
+    <script>jwplayer.key="Hs2OGjpirgjzcXQncwKYvud2Ex2yJZOVX4QPXw==";</script>
+    <link rel="stylesheet" href="./css/module-new.css"/>
+</head>
+<body>
+<div id="myplayer" class="player" data-file="http://123.57.229.36:81/app/video/video.mp4" data-poster="./images/img-map.jpg">
+</div>
+<div id="myplayer2" class="player" data-file="http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v" data-poster="./images/img-video.jpg">
+</div>
+<script src="./js/lib/jquery-2.1.4.min.js"></script>
+<script>
+    $(".player").each(function () {
+        //视频播放器
+        var _item = $(this);
+        var playerId = _item.attr("id"); //容器ID值
+        var file = _item.attr("data-file"); //视频地址
+        var poster = _item.attr("data-poster"); //视频封面
+        play(playerId, file, poster);
+    });
+
+    function play(id,file,cover){
+        jwplayer(id).setup({
+            width:'10rem',
+            height:'6rem',
+            file:file,
+            image:cover
+        });
+    }
+</script>
+<style type="text/css">
+    #myplayer{
+        margin-bottom: 20px;
+    }
+</style>
+</body>
+</html>

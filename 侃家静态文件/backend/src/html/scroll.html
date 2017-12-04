@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>滚动条美化</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <style type="text/css">
+        #my-echarts{
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- @@include("../app/header/header.html") -->
+    <div class="container-all-wrap">
+        <!-- @@include("../app/nav/nav.html") -->
+        <div class="center">
+            <div class="container-fluid">
+                <div class="row row-crumbs">
+                    <div class="col-md-12">
+                        <ul class="breadcrumb">
+                            <li><a href="#">首页</a></li>
+                            <li><a href="#">特殊线索分配管理</a></li>
+                            <li class="active">添加分配组</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="my-echarts"></div>
+                </div>
+                <div class="row">
+                    <div class="box">
+                        <!--滚动条-->
+                        <div class="scroll-bar">
+                            <p>滚动条美化1</p>
+                            <p>滚动条美化2</p>
+                            <p>滚动条美化3</p>
+                            <p>滚动条美化4</p>
+                            <p>滚动条美化5</p>
+                            <p>滚动条美化6</p>
+                            <p>滚动条美化7</p>
+                            <p>滚动条美化8</p>
+                            <p>滚动条美化9</p>
+                            <p>滚动条美化10</p>
+                            <p>滚动条美化11</p>
+                            <p>滚动条美化12</p>
+                            <p>滚动条美化13</p>
+                            <p>滚动条美化14</p>
+                            <p>滚动条美化15</p>
+                            <p>滚动条美化16</p>
+                            <p>滚动条美化17</p>
+                            <p>滚动条美化18</p>
+                            <p>滚动条美化19</p>
+                            <p>滚动条美化20</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        @@include("../app/footer/footer.html")
+    </div>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/echarts.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+    $(function() {
+        //滚动条美化
+        $(".scroll-bar").mCustomScrollbar();
+        
+        //echars
+        var myEcharts = echarts.init(document.getElementById('my-echarts'));
+        var optionEchart = {
+            title: {
+                text: '楼盘库存历史统计',
+                left:'center'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data: ['华业东方玫瑰', '丽景长安'],
+                bottom:0
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '30px',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['W1', 'W2', 'W3', 'W4']
+            },
+            yAxis: {
+                type: 'value',
+                interval: 5
+            },
+            series: [{
+                    name: '华业东方玫瑰',
+                    type: 'line',
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true
+                            }
+                        }
+                    },
+                    data: [10, 11, 12, 13]
+                },
+                {
+                    name: '丽景长安',
+                    type: 'line',
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true
+                            }
+                        }
+                    },
+                    data: [31, 2, 10, 1]
+                }
+            ]
+
+        };
+        myEcharts.setOption(optionEchart);
+    })
+</script>
+</body>
+</html>

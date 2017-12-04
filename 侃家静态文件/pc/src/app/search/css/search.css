@@ -1,0 +1,163 @@
+/*搜索*/
+.search {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.search-area {
+    float: left;
+    margin-right: 16px;
+}
+.search-area .ico-search {
+    float: left;
+    margin: 8px 6px 0 0;
+}
+.hot-words {
+    float: left;
+    max-width: 330px;
+    margin-right: 15px;
+    margin-top: 4px;
+}
+.hot-words .ico-pos {
+    float: left;
+    margin: 7px 5px 0 0;
+}
+.hot-words a {
+    margin-right: 12px;
+}
+.cj-service {
+    float: right;
+    width: 340px;
+    height: 28px;
+    text-align: center;
+    overflow: hidden;
+    border: solid 1px #e4e4e4;
+    border-radius: 20px;
+    margin-top: 4px;
+    background-color: #fff;
+}
+.cj-service a {
+    display: block;
+    height: 100%;
+    line-height: 28px;
+    font-size: 14px;
+    color: #888;
+}
+.cj-service a:hover {
+    text-decoration: underline;
+}
+.cj-service .ico {
+    margin-left: 10px;
+}
+.cj-service .tit, .cj-service .con {
+    float: left;
+}
+.cj-service .tit {
+    font-family: "黑体";
+    font-size: 14px;
+    font-weight: bold;
+    color: #575757;
+}
+/*没有图片*/
+.search-nopic {
+    display: table;
+    *display: inline-block;
+    margin: 0 auto;
+}
+.search-nopic .hot-words {
+    width: auto;
+    height: 32px;
+    max-width: 500px;
+    overflow: hidden;
+}
+.search-nopic .cj-service {
+    display: none;
+}
+/*按照原来网站修改输入框的高度（并没有修改btn文件）*/
+.search .search-area .ipt {
+    height: 28px;
+    line-height: 28px;
+}
+.search .search-area .btn {
+    height: 30px;
+    line-height: 30px;
+}
+.search .search-area .btn-search .ico {
+    margin: 6px 6px 0 0;
+}
+/*改版v3.4*/
+.row-search{
+    height: 60px;
+    padding: 11px 0;
+    box-sizing: border-box;
+}
+.row-search,.row-search .search,
+.row-search .wrap{
+    overflow: inherit;
+}
+.search .search-area .ipt-area{
+    position: relative;
+    float: left;
+}
+.search .search-area .ipt-area .option{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 38px;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: 0 3px 12px 0 rgba(0,0,0,0.10);
+}
+.search .search-area .ipt-area .option .option-3{
+    display: none;
+}
+.search .search-area .ipt-area .option.ipd .option-3{
+    display: block;
+}
+.search .search-area .ipt-area .option.ipd .option-1,.search .search-area .ipt-area .option.ipd .option-2{
+    display: none;
+}
+.search .search-area .ipt-area .option li{
+    height: 38px;
+    line-height: 38px;
+    cursor: pointer;
+}
+.search .search-area .ipt-area .option li a{
+    display: block;
+}
+.search .search-area .ipt-area .option li a:link{
+    text-decoration: none;
+}
+.search .search-area .ipt-area .option .title{
+    font-size: 12px;
+    color: #aaa;
+}
+.search .search-area .ipt-area .option .title .num{
+    float: right;
+}
+.search .search-area .ipt{
+    width: 460px;
+    height: 38px;
+    padding: 0 12px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+.search .search-area .btn{
+    height: 38px;
+    line-height: 38px;
+    width: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 0;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 5px;
+}
+.search{
+    height: auto;
+}

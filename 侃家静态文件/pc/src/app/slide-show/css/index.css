@@ -1,0 +1,130 @@
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;text-decoration:none;}
+
+/*最大框架*/
+.bannerbox{
+    width: 960px;
+    height: 620px;
+    margin:  50px   auto;
+}
+/*大图容器*/
+.top-container{
+    width: 100%;
+    height: 80%;
+    border: 1px solid red;
+    position: relative;
+}
+/*大图ul容器*/
+.top-container-max{
+    width: 80%;
+    height: 80%;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+/*小图走马灯 容器*/
+.down-container{
+    margin-top: 30px;
+    width: 100%;
+    height: 16.666%;
+}
+/*ul大小*/
+.top-container-ul{
+    width: 1200%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -768px;
+}
+.top-container-ul li{
+    float: left;
+    width: 768px;
+    height: 100%;
+}
+.top-container-ul li img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*按钮大小*/
+.btn{
+    position: absolute;
+    top: 35%;
+    width: 35px;
+    height: 85px;
+    background-color: darkgrey;
+}
+.btn01{
+    left:20px;
+    opacity: 1;
+}
+.btn02{
+    right: 20px;
+    opacity: 1;
+}
+
+.btns{
+    position: absolute;
+    top: 0;
+    width: 4%;
+    height: 100%;
+    border: 1px solid aquamarine;
+    opacity: 1;
+}
+.btn03{  left:0;  }  .btn04{  right: 0;  }
+/*p标签 自适应*/
+#p{
+    text-align: center;
+    margin-bottom: 5px;
+}
+/*下部容器*/
+.down-container{
+    position: relative;
+    width: 100%;
+    border: 1px solid red;
+}
+/*小图片ul*/
+/* 小图片*/
+.down-container-ul{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+/*ul 容器*/
+.move{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.small_list{
+    margin-left: -9px;
+   width: 2000px;
+}
+.down-container ul li{
+    float: left;
+    width: 155px;
+    height: 103px;
+    margin-left: 18px;
+    background-color: red;
+    box-sizing: border-box;
+}
+.down-container ul li img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.down-container-li{
+    margin-left:0;
+}
+.on{
+    border: 3px solid mediumblue;
+}
+.no{
+    opacity:.5;
+}
+

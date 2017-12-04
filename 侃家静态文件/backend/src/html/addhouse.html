@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>创建户型</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/house-manage.css">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container">
+            <!--次导航-->
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="#">基础信息</a></li>
+                    <li><a href="#">细节信息</a></li>
+                    <li><a href="#">环境信息</a></li>
+                    <li class="active"><a href="#">户型信息</a></li>
+                    <li><a href="#">价格信息</a></li>
+                    <li><a href="#">图片信息</a></li>
+                </ul>
+            </nav>
+            <!--户型信息-->
+            <div class="panel panel-housetype">
+                <div class="panel-heading">
+                    <div class="panel-heading-wrap">
+                        <h2 class="panel-title">户型信息</h2>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="select-info">
+                        <div class="input-grup">
+                            <span>户型编号：</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-grup">
+                            <span>户型类型：</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-grup">
+                            <span>层高（m）：</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-grup">
+                            <span>户型业务：</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-grup">
+                            <span>是否展示户型：</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-grup">
+                            <span>展示顺序：</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-grup">
+                            <span>建筑类型：</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-grup">
+                            <span>房屋朝向：</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-grup">
+                            <span>厅室描述：</span>
+                            <select class="sort-select" name="shi">
+                                <option value="">请选择</option>
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                                <option value="1">4</option>
+                            </select>
+                            <span class="sort-span">室</span>
+                            <select class="sort-select" name="ting">
+                                <option value="">请选择</option>
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                                <option value="1">4</option>
+                            </select>
+                            <span class="sort-span">厅</span>
+                        </div>
+                    </div>
+                    <div class="check-info">
+                        <div class="check-title">户型标签：</div>
+                        <div class="check-data">
+                            <span><input type="checkbox" class="check-item">开放厨房</span>
+                            <span><input type="checkbox" class="check-item">户型方正</span>
+                            <span><input type="checkbox" class="check-item">面宽充足</span>
+                            <span><input type="checkbox" class="check-item">复式空间</span>
+                            <span><input type="checkbox" class="check-item">南北通透</span>
+                            <span><input type="checkbox" class="check-item">三面采光</span>
+                            <span><input type="checkbox" class="check-item">高得房率</span>
+                            <span><input type="checkbox" class="check-item">超大赠送</span>
+                            <span><input type="checkbox" class="check-item">动静分区</span>
+                            <span><input type="checkbox" class="check-item">卧室带卫</span>
+                            <span><input type="checkbox" class="check-item">明厨名卫</span>
+                            <span><input type="checkbox" class="check-item">私人电梯</span>
+                            <span><input type="checkbox" class="check-item">地下室</span>
+                            <span><input type="checkbox" class="check-item">私家花园</span>
+                            <span><input type="checkbox" class="check-item">私家车库</span>
+                            <span><input type="checkbox" class="check-item">阳光露台</span>
+                            <span><input type="checkbox" class="check-item">大阳台</span>
+                        </div>
+                    </div>
+                    <div class="input-grup lang-input">
+                        <span>优势描述：</span>
+                        <input type="text" class="lang">
+                    </div>
+                    <div class="input-grup lang-input">
+                        <span>劣势描述：</span>
+                        <input type="text" class="lang">
+                    </div>
+                </div>
+            </div>
+            <!--动态数据-->
+            <div class="panel panel-livedata">
+                <div class="panel-heading">
+                    <div class="panel-heading-wrap">
+                        <h2 class="panel-title">动态数据</h2>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="select-info">
+                        <div class="input-grup">
+                            <span>户型状态：</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-grup">
+                            <span>是否估算：</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-grup">
+                            <span class="lang-span">成交价格（元/m²）：</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-grup">
+                            <span>总套数：</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-grup">
+                            <span>剩余套数：</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-grup">
+                            <span class="lang-span">套内面积（m²）：</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-grup">
+                            <span>建筑面积：</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-grup">
+                            <span>报价：</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-grup">
+                            <span class="lang-span">总价：</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-grup">
+                            <span>首付：</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-grup">
+                            <span>月供：</span>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--户型图-->
+            <div class="panel panel-houseimg">
+                <div class="panel-heading">
+                    <div class="panel-heading-wrap">
+                        <h2 class="panel-title">户型图</h2>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="houseimg">
+                        <img src="../images/addhouse.png" alt="占位图">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+</body>
+</html>

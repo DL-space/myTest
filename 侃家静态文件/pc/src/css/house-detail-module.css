@@ -1,0 +1,108 @@
+/*楼盘详情页公用样式*/
+.sub-list {
+    clear: both;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.sub-list li {
+    cursor: pointer;
+    color: #666;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+.sub-list li .ico {
+    float: left;
+    margin: 5px 8px 0 0;
+}
+/*楼盘附加信息*/
+.additional {
+    clear: both;
+    border-top: 1px solid #eaeaea;
+    overflow: hidden;
+}
+.additional h4, .additional p {
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+.additional h4 {
+    font-size: 16px;
+}
+.additional p.a {
+    color: #888;
+}
+/*看过此楼盘的人还看过*/
+.box-tjlp .bd {
+    padding-top: 20px;
+}
+/*分页*/
+.tab-comment .page {
+    padding-top: 30px;
+}
+.tab-comment .page .prev, .tab-comment .page .next {
+    display: inline-block;
+    width: 98px;
+    height: 22px;
+    line-height: 22px;
+    margin: 0 8px;
+    border: 1px solid #eaeaea;
+    overflow: hidden;
+}
+.tab-comment .page .prev:hover, .tab-comment .page .next:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #888;
+    border-color: #888;
+}
+.tab-comment .page span.disabled, .tab-comment .page span.disabled:hover {
+    cursor: not-allowed;
+    color: #333;
+    background: none;
+    border-color: #eaeaea;
+}
+.tab-comment .page .page-tips {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+/*推荐列表item*/
+.recommend .media {
+    width: 183px;
+}
+.recommend .media .pic {
+    position: relative;
+    margin-bottom: 0;
+}
+.recommend .media .pic, .recommend .media .pic img {
+    width: 184px;
+    height: 124px;
+}
+.recommend .media .price {
+    width: auto;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 8px;
+}
+.recommend .media .text .name, .recommend .media .text .total {
+    color: #666;
+    height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+.recommend .media .text {
+    height: 58px;
+    font-weight: bold;
+    background-color: #f8f8f8;
+    padding: 10px 10px 0 10px;
+}
+.recommend .media .text, .recommend .media .text a {
+    color: #333;
+}
+.recommend .media .text a {
+    background: none;
+}

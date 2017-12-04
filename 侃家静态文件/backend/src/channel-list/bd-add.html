@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>新增BD单</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row row-crumbs">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">BD单列表页</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--新增项目-->
+                    <div class="panel panel-bd-add">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">新增项目</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="c-search">
+                                <ul class="form-mod">
+                                    <li>
+                                        <div class="th">城市：</div>
+                                        <div class="td">
+                                            <select class="form-control">
+                                                <option value="0">全国</option>
+                                                <option value="1">北京</option>
+                                                <option value="2">上海</option>
+                                                <option value="3">天津</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th"><label class="required"></label>项目名称：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">合作跟进BD：</div>
+                                        <div class="td">
+                                            <div class="txt">赵崇岩</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="link-area">
+                                    <button class="j-btn j-btn-green link-add-projects">+添加相关楼盘</button>
+                                </div>
+                                <ul class="bd-projects">
+                                    <li class="bd-projects-item">
+                                        <div class="j-ipt-area">
+                                            <label class="j-label required">相关楼盘</label>
+
+                                            <div class="j-suf">
+                                                <button class="j-btn j-btn-red j-btn-project-del">删除</button>
+                                            </div>
+                                            <div class="j-ipt-wrap">
+                                                <div class="j-select">
+                                                    <input type="text" class="content" placeholder="请选择">
+                                                    <ul class="option">
+                                                        <li>1</li>
+                                                        <li>2</li>
+                                                        <li>3</li>
+                                                        <li>4</li>
+                                                        <li>5</li>
+                                                    </ul>
+                                                    <span class="ico"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="j-ipt-area j-multi-col">
+                                            <label class="j-label required">合作时间</label>
+
+                                            <div class="j-suf">
+                                                <button class="j-btn j-btn-red j-btn-cooperation-date-del">删除</button>
+                                            </div>
+                                            <div class="j-ipt-wrap">
+                                                <div class="j-select">
+                                                    <input type="text" class="content" placeholder="2017-12-23">
+                                                    <ul class="option">
+                                                        <li>2017-12-23</li>
+                                                        <li>2017-12-24</li>
+                                                        <li>2017-12-25</li>
+                                                        <li>2017-12-26</li>
+                                                        <li>2017-12-27</li>
+                                                    </ul>
+                                                    <span class="ico"></span>
+                                                </div>
+                                                <span class="j-ext">-</span>
+
+                                                <div class="j-select">
+                                                    <input type="text" class="content" placeholder="2017-12-28">
+                                                    <ul class="option">
+                                                        <li>2017-12-23</li>
+                                                        <li>2017-12-23</li>
+                                                        <li>2017-12-23</li>
+                                                        <li>2017-12-23</li>
+                                                        <li>2017-12-23</li>
+                                                    </ul>
+                                                    <span class="ico"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn-area">
+                                            <button class="j-btn j-btn-blue btn-cooperation-date-add">添加合作时间</button>
+                                        </div>
+                                    </li>
+                                    <li class="bd-projects-item">
+                                        <div class="j-ipt-area">
+                                            <label class="j-label required">相关楼盘</label>
+
+                                            <div class="j-suf">
+                                                <button class="j-btn j-btn-red j-btn-project-del">删除</button>
+                                            </div>
+                                            <div class="j-ipt-wrap">
+                                                <div class="j-select">
+                                                    <input type="text" class="content" placeholder="请选择">
+                                                    <ul class="option">
+                                                        <li>1</li>
+                                                        <li>2</li>
+                                                        <li>3</li>
+                                                        <li>4</li>
+                                                        <li>5</li>
+                                                    </ul>
+                                                    <span class="ico"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--决策架构-->
+                    <div class="panel panel-bd-decision">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">决策架构</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="form-mod">
+                                <li>
+                                    <div class="th">营销负责人：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">决策人：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </li>
+                                <li class="remark">
+                                    <div class="th">人物关系：</div>
+                                    <div class="td">
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                </li>
+                                <li class="remark">
+                                    <div class="th">组织架构：</div>
+                                    <div class="td">
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--操盘策略-->
+                    <div class="panel panel-bd-strategy">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">操盘策略</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="form-mod">
+                                <li>
+                                    <div class="th">营销费用：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">获客途径：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">任务目标：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">任务完成情况：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">月均去化：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">营销节点：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">渠道公司：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">代理公司：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--产品特点-->
+                    <div class="panel panel-bd-features">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">产品特点</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="form-mod">
+                                <li>
+                                    <div class="th">楼盘业态：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">户型面积：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">在售房源：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">待售房源：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">单价：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="th">总价：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </li>
+                                <li class="remark">
+                                    <div class="th">核心卖点：</div>
+                                    <div class="td">
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--拜访话术-->
+                    <div class="panel panel-bd-talk">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">拜访话术</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="form-mod">
+                                <li class="remark">
+                                    <div class="th">市场：</div>
+                                    <div class="td">
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                </li>
+                                <li class="remark">
+                                    <div class="th">竞品：</div>
+                                    <div class="td">
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                </li>
+                                <li class="remark">
+                                    <div class="th">开发商/项目：</div>
+                                    <div class="td">
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                </li>
+                                <li class="remark">
+                                    <div class="th">任务：</div>
+                                    <div class="td">
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--同类产品-->
+                    <div class="panel panel-bd-similar">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">同类产品</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="add-btn-area">
+                                <input class="btn btn-primary btn-add-similar" type="button" value="新增"/>
+                            </div>
+                            <div class="pro-list">
+                                <ul class="form-mod">
+                                    <li>
+                                        <div class="th">楼盘名称：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">单价：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">户型面积：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">业态：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">房源情况：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">月均去化：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">在用渠道公司：</div>
+                                        <div class="td">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </li>
+                                    <li class="remark">
+                                        <div class="th">优势：</div>
+                                        <div class="td">
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                    </li>
+                                    <li class="remark">
+                                        <div class="th">劣势：</div>
+                                        <div class="td">
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-area">
+                                <input class="btn btn-default" type="button" value="重置"/>
+                                <input class="btn btn-primary" type="button" value="搜索"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/bd.js"></script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>楼盘商务信息</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/d-dictionary.css">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">带看记录</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--搜索-->
+                    <div class="panel d-panel-jcxx d-panel-lpswxx">
+                        <div class="panel-body">
+                            <!--搜索-->
+                            <div class="d-mod-tj d-mod-xgsw">
+                                <div class="title">
+                                    <h4>楼盘商务信息管理</h4>
+                                </div>
+                                <div class="content">
+                                    <div class="d-form-area">
+                                        <ul class="d-query">
+                                            <li>
+                                                <div class="th">城市：</div>
+                                                <div class="td">
+                                                    <select class="form-control">
+                                                        <option value="0">北京</option>
+                                                        <option value="1">天津</option>
+                                                        <option value="2">上海</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="th">楼盘ID：</div>
+                                                <div class="td">
+                                                    <input class="form-control" type="text">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="th">楼盘名称：</div>
+                                                <div class="td">
+                                                    <input class="form-control" type="text">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="th">是否合作：</div>
+                                                <div class="td">
+                                                    <select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                        <option value="1">是</option>
+                                                        <option value="2">否</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="th">是否外联：</div>
+                                                <div class="td">
+                                                    <select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                        <option value="1">是</option>
+                                                        <option value="2">否</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="th">刷电商：</div>
+                                                <div class="td">
+                                                    <select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                        <option value="1">是</option>
+                                                        <option value="2">否</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="th">带看状态：</div>
+                                                <div class="td">
+                                                    <select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                        <option value="1">正常带看</option>
+                                                        <option value="2">暂停带看</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="th">楼盘区域：</div>
+                                                <div class="td">
+                                                    <select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                        <option value="1">北京</option>
+                                                        <option value="2">上海</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="th">合作周期：</div>
+                                                <div class="td">
+                                                    <select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                        <option value="1">在合作周期内</option>
+                                                        <option value="2">在合作周期外</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="c-ext">
+                                                <div class="th">更新时间：</div>
+                                                <div class="td">
+                                                    <input class="form-control" type="text">
+                                                    <span class="ext">-</span>
+                                                    <input class="form-control" type="text">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="th">模板报备：</div>
+                                                <div class="td">
+                                                    <select class="form-control">
+                                                        <option value="0">请选择</option>
+                                                        <option value="1">已录入</option>
+                                                        <option value="2">未录入</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-area">
+                                <a href="#" class="btn btn-return">重置</a>
+                                <a href="#" class="btn btn-save">搜索</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-xssx-area">
+                        <!--基本信息-->
+                        <div class="order-info">
+                            <p>第1-20条，共10960条数据</p>
+                        </div>
+                        <button class="btn btn-primary">导出excel</button>
+                        <!--显示筛选-->
+                        <div class="xssx">
+                            <input type="checkbox" class="d-chk">仅显示标记楼盘
+                        </div>
+                    </div>
+                    <!--基础信息-->
+                    <div class="panel d-panel-jcxx d-panel-lpsw">
+                        <div class="panel-body">
+                            <div class="d-mod-sw">
+                                <ul class="d-sw-info">
+                                    <li><b>城市：</b>北京</li>
+                                    <li><b>楼盘ID：</b>20002774</li>
+                                    <li><b>楼盘名称：</b>华业东方玫瑰</li>
+                                    <li><span class="d-lb d-lb-jt">合作</span></li>
+                                    <li><span class="d-lb d-lb-jt2">正常带看</span></li>
+                                    <li><b>合作周期：</b>在合作周期内</li>
+                                    <li><b>是否外联：</b>是</li>
+                                    <li><b>合作方：</b>房多多</li>
+                                    <li><b>是否刷电商：</b>是</li>
+                                    <li><b>区域：</b>房山</li>
+                                    <li><b>楼盘更新时间：</b>2016-10-10</li>
+                                    <li><b>合作时间：</b>2016-10-10 至 2017-10-10</li>
+                                </ul>
+                                <div class="report-time">
+                                    报备模板更新时间：2017-09-20 13:09:11
+                                </div>
+                                <div class="btn-area">
+                                    <a href="#" class="btn btn-primary">查看该楼盘BD单</a>
+                                    <a href="bjlpsw.html" class="btn btn-info">添加结佣合同</a>
+                                    <a href="bjlpsw.html" class="btn btn-info">结佣合同</a>
+                                    <a href="#" class="btn btn-primary">商务信息</a>
+                                </div>
+                            </div>
+                            <div class="d-mod-sw">
+                                <ul class="d-sw-info">
+                                    <li><b>城市：</b>北京</li>
+                                    <li><b>楼盘ID：</b>20002774</li>
+                                    <li><b>楼盘名称：</b>华业东方玫瑰</li>
+                                    <li><span class="d-lb d-lb-jt">合作</span></li>
+                                    <li><span class="d-lb d-lb-jt2">正常带看</span></li>
+                                    <li><b>合作周期：</b>在合作周期内</li>
+                                    <li><b>是否外联：</b>是</li>
+                                    <li><b>合作方：</b>房多多</li>
+                                    <li><b>是否刷电商：</b>是</li>
+                                    <li><b>区域：</b>房山</li>
+                                    <li><b>楼盘更新时间：</b>2016-10-10</li>
+                                    <li><b>合作时间：</b>2016-10-10 至 2017-10-10</li>
+                                </ul>
+                                <div class="report-time">
+                                    报备模板更新时间：2017-09-20 13:09:11
+                                </div>
+                                <div class="btn-area">
+                                    <a href="#" class="btn btn-primary">查看该楼盘BD单</a>
+                                    <a href="bjlpsw.html" class="btn btn-info">添加结佣合同</a>
+                                    <a href="bjlpsw.html" class="btn btn-info">结佣合同</a>
+                                    <a href="#" class="btn btn-primary">商务信息</a>
+                                </div>
+                            </div>
+                            <div class="d-mod-sw">
+                                <ul class="d-sw-info">
+                                    <li><b>城市：</b>北京</li>
+                                    <li><b>楼盘ID：</b>20002774</li>
+                                    <li><b>楼盘名称：</b>华业东方玫瑰</li>
+                                    <li><span class="d-lb d-lb-jt">合作</span></li>
+                                    <li><span class="d-lb d-lb-jt2">正常带看</span></li>
+                                    <li><b>合作周期：</b>在合作周期内</li>
+                                    <li><b>是否外联：</b>是</li>
+                                    <li><b>合作方：</b>房多多</li>
+                                    <li><b>是否刷电商：</b>是</li>
+                                    <li><b>区域：</b>房山</li>
+                                    <li><b>楼盘更新时间：</b>2016-10-10</li>
+                                    <li><b>合作时间：</b>2016-10-10 至 2017-10-10</li>
+                                </ul>
+                                <div class="report-time">
+                                    报备模板更新时间：2017-09-20 13:09:11
+                                </div>
+                                <div class="btn-area">
+                                    <a href="#" class="btn btn-primary">查看该楼盘BD单</a>
+                                    <a href="bjlpsw.html" class="btn btn-info">添加结佣合同</a>
+                                    <a href="bjlpsw.html" class="btn btn-info">结佣合同</a>
+                                    <a href="#" class="btn btn-primary">商务信息</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/d-dictionary.js"></script>
+</body>
+</html>

@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>跟进记录展示页</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!--音频播放器-->
+    <link rel="stylesheet" href="../css/audioplayer.css" />
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <!--<link type="text/css" rel="stylesheet" href="../css/ie8.css"/>-->
+    <![endif]-->
+</head>
+<body>
+<div class="page-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="logo fl"><h1><a href="#"><img src="../images/logo.png" alt="欢迎登录侃家网业务管理系统！"></a></h1>
+                    <p class="info">欢迎登录侃家网业务管理系统！</p></div>
+                <div class="h-user">
+                    <div class="link-user">
+                        <span class="ico ico-user"></span>
+
+                        <div class="dropdown-menu-user">
+                            <span class="triangle"></span>
+                            <ul class="dropdown-menu">
+                                <li class="first"><a href="#"><span class="dropdown-text">个人设置</span></a></li>
+                                <li><a href="#"><span class="dropdown-text">我的消息</span><span
+                                        class="badge myMsg"></span></a></li>
+                                <li><a href="#"><span class="dropdown-text">待办事项</span><span
+                                        class="badge toMsg"></span></a></li>
+                                <li><a href="#"><span class="dropdown-text">个人资料</span></a>
+                                </li>
+                                <li class="last"><a href="#"><span class="dropdown-text">退出</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ucenter">
+                        <span class="uname">徐立</span>
+                        <span class="fgx">|</span>
+                        <a class="logout" href="#">退出</a>
+                    </div>
+                    <div class="schedule"><a href="#">我的日程</a></div>
+                    <div class="tips-msg">
+                        <a class="ico ico-msg" href="#" title="消息">
+                            <span class="dot">28</span>
+                        </a>
+                        <a class="ico ico-todo" href="#" title="待办事项">
+                            <span class="dot">65</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-all-wrap">
+    <div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">咨询师业务管理<span class="caret"></span> </a>
+                    <ul class="dropdown-menu menu-top">
+                        <li class="first"><a href="#">订单列表</a></li>
+                        <li><a href="#">关键带看管理列表</a></li>
+                        <li><a href="#">联系列表</a></li>
+                        <li><a href="#">带看列表</a></li>
+                        <li><a href="#">认购列表页</a></li>
+                        <li><a href="#">签约列表页</a></li>
+                        <li><a href="#">首次联系延迟列表</a></li>
+                        <li class="last"><a href="#">匹配工具</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">客服业务管理<span class="caret"></span> </a>
+                    <ul class="dropdown-menu menu-top">
+                        <li class="first"><a href="#">客服订单管理</a></li>
+                        <li><a href="#">客服联系记录管理</a></li>
+                        <li><a href="#">带看评价管理</a></li>
+                        <li><a href="#">带看评价回访纪录</a></li>
+                        <li><a href="#">已关闭订单跟进</a></li>
+                        <li><a href="#">已关闭订单跟进回访记录</a></li>
+                        <li><a href="#">无效客户标记</a></li>
+                        <li><a href="#">400电话订单匹配</a></li>
+                        <li><a href="#">评价追回页面</a></li>
+                        <li class="last"><a href="#">投诉列表页</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">驻场拓展业务管理<span class="caret"></span> </a>
+                    <ul class="dropdown-menu menu-top">
+                        <li class="first"><a href="#">报备管理</a></li>
+                        <li><a href="#">楼盘备案管理</a></li>
+                        <li><a href="#">合作方管理</a></li>
+                        <li><a href="#">楼盘拓展相关字段维护</a></li>
+                        <li><a href="#">添加报备</a></li>
+                        <li><a href="#">代理中介管理</a></li>
+                        <li class="last"><a href="#">代理客户订单管理</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">服务管理员业务管理<span class="caret"></span> </a>
+                    <ul class="dropdown-menu menu-top">
+                        <li class="first"><a href="#">服务评价管理</a></li>
+                        <li><a href="#">咨询师带看情况查询</a></li>
+                        <li class="last"><a href="#">咨询师审核</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">系统管理<span class="caret"></span> </a>
+                    <ul class="dropdown-menu menu-top">
+                        <li class="first"><a href="#">权限管理</a></li>
+                        <li><a href="#">员工管理</a></li>
+                        <li><a href="#">员工作息时间管理</a></li>
+                        <li><a href="#">咨询师分配管理</a></li>
+                        <li><a href="#">客服分配管理</a></li>
+                        <li><a href="#">用户管理</a></li>
+                        <li><a href="#">短信模板管理</a></li>
+                        <li><a href="#">咨询师分组管理</a></li>
+                        <li><a href="#">员工操作日志</a></li>
+                        <li><a href="#">批量转移咨询师客户</a></li>
+                        <li><a href="#">联系取消</a></li>
+                        <li><a href="#">雨燕档案</a></li>
+                        <li><a href="#">上线日志管理</a></li>
+                        <li><a href="#">城市管理</a></li>
+                        <li class="last"><a href="#">字段常量配置</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">报表管理<span class="caret"></span> </a>
+                    <ul class="dropdown-menu menu-top">
+                        <li class="first"><a href="#">客户数据分析</a></li>
+                        <li><a href="#">网站统计报表</a></li>
+                        <li><a href="#">周期维度统计</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">咨询师延迟录入统计</a>
+                            <ul class="dropdown-menu">
+                                <li class="first"><a href="#">联系延迟录入统计</a></li>
+                                <li><a href="#">带看延迟录入统计</a></li>
+                                <li><a href="#">咨询师分配时间到首次联系时间超时统计列表</a></li>
+                                <li><a href="#">咨询师认购超时统计列表</a></li>
+                                <li class="last"><a href="#">咨询师签约超时统计列表</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">核算日月周年报表</a>
+                            <ul class="dropdown-menu">
+                                <li class="first"><a href="#">咨询师核算统计</a></li>
+                                <li><a href="#">咨询师组核算统计</a></li>
+                                <li><a href="#">楼盘核算统计</a></li>
+                                <li><a href="#">区域核算统计</a></li>
+                                <li class="last"><a href="#">渠道核算统计</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">核算汇总表</a>
+                            <ul class="dropdown-menu">
+                                <li class="first"><a href="#">咨询师核算统计汇总表</a></li>
+                                <li><a href="#">咨询师组核算统计汇总表</a></li>
+                                <li><a href="#">楼盘核算统计汇总表</a></li>
+                                <li><a href="#">区域核算统计汇总表</a></li>
+                                <li><a href="#">渠道核算统计汇总表</a></li>
+                                <li class="last"><a href="#">资金核算报表</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">咨询师满意度表格</a></li>
+                        <li><a href="#">咨询师组满意度表格</a></li>
+                        <li><a href="#">带看评价统计列表</a></li>
+                        <li><a href="#">已关闭订单客户评价统计列表</a></li>
+                        <li><a href="#">成交订单服务评价统计列表</a></li>
+                        <li><a href="#">咨询师楼盘点评统计</a></li>
+                        <li><a href="#">客服首次联系超时统计报表</a></li>
+                        <li><a href="#">带看回访客服联系记录</a></li>
+                        <li><a href="#">已关闭订单回访客服联系记录</a></li>
+                        <li><a href="#">咨询师订单详情统计列表</a></li>
+                        <li><a href="#">咨询师正常订单统计列表</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">客户业务详情统计</a>
+                            <ul class="dropdown-menu">
+                                <li class="first"><a href="#">客户线索详情统计列表</a></li>
+                                <li><a href="#">客户上户详情统计列表</a></li>
+                                <li><a href="#">带看详情统计报表</a></li>
+                                <li><a href="#">认购详情统计列表</a></li>
+                                <li class="last"><a href="#">签约详情统计列表</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">客户留电行为详情列表</a></li>
+                        <li><a href="#">消息详情列表</a></li>
+                        <li><a href="#">定时消息详情列表</a></li>
+                        <li><a href="#">重新分配记录报表</a></li>
+                        <li><a href="#">短信记录报表</a></li>
+                        <li><a href="#">订单恢复报表</a></li>
+                        <li><a href="#">线索质量统计报表</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">业务统计报表</a>
+                            <ul class="dropdown-menu">
+                                <li class="first"><a href="#">楼盘业务统计</a></li>
+                                <li><a href="#">渠道业务统计报表</a></li>
+                                <li><a href="#">喜报业务统计报表</a></li>
+                                <li><a href="#">咨询师首次正式认购核算报表</a></li>
+                                <li><a href="#">区域业务统计</a></li>
+                                <li class="last"><a href="#">订单业务详情统计报表</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">楼盘数据维护审核记录</a></li>
+                        <li><a href="#">高端客户详情统计列表</a></li>
+                        <li><a href="#">评价追回客服记录统计</a></li>
+                        <li><a href="#">楼盘信息报表</a></li>
+                        <li><a href="#">市场部咨询合作详情</a></li>
+                        <li class="dropdown-submenu last">
+                            <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">咨询师订单核算详情</a>
+                            <ul class="dropdown-menu">
+                                <li class="first"><a href="#">咨询师核算详情-签约</a></li>
+                                <li><a href="#">咨询师核算详情-上户</a></li>
+                                <li><a href="#">咨询师核算详情-带看</a></li>
+                                <li class="last"><a href="#">咨询师核算详情-认购</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">楼盘管理<span class="caret"></span> </a>
+                    <ul class="dropdown-menu menu-top">
+                        <li class="first"><a href="#">楼盘数据维护</a></li>
+                        <li><a href="#">楼盘点评列表</a></li>
+                        <li><a href="#">楼盘商务信息管理</a></li>
+                        <li><a href="#">区域报告楼盘定位</a></li>
+                        <li><a href="#">楼盘维护提醒设置</a></li>
+                        <li><a href="#">楼盘列表</a></li>
+                        <li><a href="#">市调测评</a></li>
+                        <li class="dropdown-submenu last">
+                            <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">楼盘审核</a>
+                            <ul class="dropdown-menu">
+                                <li class="first"><a href="#">楼盘点评审核</a></li>
+                                <li class="last"><a href="#">楼盘数据维护审核</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">楼盘字典<span class="caret"></span> </a>
+                    <ul class="dropdown-menu menu-top">
+                        <li class="dropdown-submenu first last">
+                            <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">楼盘管理</a>
+                            <ul class="dropdown-menu">
+                                <li class="first"><a href="#">全部楼盘列表</a></li>
+                                <li><a href="#">创建楼盘</a></li>
+                                <li class="last"><a href="#">价格维护</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--意见反馈入口-->
+        <div class="nav-feedback">
+            <span class="btn-feedback">不爽就点我</span>
+        </div>
+    </div>
+</div>
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">联系列表</a></li>
+                        <li class="active">更新</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="s1">
+                    <!--基本信息-->
+<div class="v-box v-base">
+    <div class="hd">
+        <h2>基本信息</h2>
+
+        <div class="more">
+            <a class="link-base" href="#">查看客户历史订单</a>
+        </div>
+    </div>
+    <div class="bd">
+        <ul class="c-query">
+            <li>
+                <div class="th">订单ID：</div>
+                <div class="td">
+                    <p class="txt">20107117</p>
+                    <a class="link-base" href="#">修改客户基本信息</a>
+                </div>
+            </li>
+            <li>
+                <div class="th">订单状态：</div>
+                <div class="td">
+                    <p class="txt">未联系</p>
+                    <a class="link-base" href="#">订单开关</a>
+                </div>
+            </li>
+            <li>
+                <div class="th">订单开关：</div>
+                <div class="td">
+                    <p class="txt">正常订单</p>
+                </div>
+            </li>
+            <li>
+                <div class="th">所属咨询师：</div>
+                <div class="td">
+                    <p class="txt">张龙</p>
+                </div>
+            </li>
+            <li>
+                <div class="th">姓名：</div>
+                <div class="td">
+                    <p class="txt">林先生</p>
+                </div>
+            </li>
+            <li>
+                <div class="th">性别：</div>
+                <div class="td">
+                    <p class="txt">男</p>
+                </div>
+            </li>
+            <li class="tsbj">
+                <div class="th">首要联系方式：</div>
+                <div class="td">
+                    <p class="txt">13023140243 （无法正常接收系统短信）</p>
+                </div>
+                <span class="ico-zj">被标记为中介</span>
+            </li>
+            <li>
+                <div class="th">分配时间：</div>
+                <div class="td">
+                    <p class="txt">2017-07-18 11:03:01</p>
+                </div>
+            </li>
+            <li>
+                <div class="th">更新时间：</div>
+                <div class="td">
+                    <p class="txt">2017-07-18 11:06:12</p>
+                </div>
+            </li>
+            <li class="fgx"></li>
+            <li>
+                <div class="th">分配来源：</div>
+                <div class="td"><p class="txt">线索直接分配</p></div>
+            </li>
+            <li>
+                <div class="th">渠道：</div>
+                <div class="td">
+                    <p class="txt">360-天津</p>
+                </div>
+            </li>
+            <li>
+                <div class="th">联系途径：</div>
+                <div class="td">
+                    <p class="txt">PC预约看房</p>
+                </div>
+            </li>
+            <li>
+                留电口：<span class="txt">向他咨询-</span><a href="#">华业东方玫瑰</a>,<a href="#">观山源墅（住宅）</a>,<a href="#">天恒金融街公园懿府</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--客户行为-->
+<div class="v-box v-box-khxw">
+    <div class="hd">
+        <h2>客户行为</h2>
+    </div>
+    <div class="bd">
+        <ul class="c-query">
+            <li class="emp">
+                客户问题：<span class="txt">非常感谢居理新房网及咨询师许静在我此次买房过程中的帮助和服务，此处点赞一万个[强][强][强]</span>
+            </li>
+            <li>
+                特殊需求字段：<span class="txt">位置2号线；总价600-800万；类型住宅</span>
+            </li>
+            <li>
+                收藏楼盘：<a href="#">绿地海珀云翡；</a><a href="#">中骏·西山天璟</a>
+            </li>
+            <li>
+                浏览最多楼盘：<a href="#">北京城建海梓府；</a><a href="#">恒华湖公馆；</a><a href="#">天恒金融街公园懿府</a>
+            </li>
+            <li>客服备注：<span class="txt">非常感谢居理新房网及咨询师许静在我此次买房过程中的帮助和服务</span></li>
+        </ul>
+        <ul class="c-query">
+            <li>通话录音：<span class="txt">来电 2017-06-16  18:40:42</span>
+                <div class="audio-area">
+                    <audio preload="auto" controls>
+                        <source src="../../audio/BlueDucks_FourFlossFiveSix.mp3">
+                        <source src="../../audio/BlueDucks_FourFlossFiveSix.ogg">
+                        <source src="../../audio/BlueDucks_FourFlossFiveSix.wav">
+                    </audio>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--客户的后续C端留电行为-->
+<div class="v-box v-box-ldxw">
+    <div class="hd">
+        <h2>客户的后续C端留电行为</h2>
+    </div>
+    <div class="bd">
+        <ul class="c-query">
+            <li><span class="txt">2017-07-21  18:00:00</span></li>
+            <li>留电口：<span class="txt">我要优惠-</span><a href="#">五矿铭品</a></li>
+            <li><span class="txt">2017-07-01  12:00:00</span></li>
+            <li>
+                留电口：<span class="txt">关注开盘时间-</span><a href="#">北京城建琨廷</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--线索质量推荐楼盘-->
+<div class="v-box v-box-tjlp">
+    <div class="hd">
+        <h2>线索质量推荐楼盘</h2>
+    </div>
+    <div class="bd">
+        <ul class="c-query">
+            <li>最佳推荐楼盘：<a href="#">绿地海珀云翡、</a><a href="#">中骏·西山天璟、</a><a href="#">北京城建海梓府、</a><a href="#">亦庄金茂府</a></li>
+            <li>次佳推荐楼盘：<a href="#">观山源墅（住宅）、</a><a href="#">北京城建琨廷、</a><a href="#">北京城建世华龙樾、</a><a href="#">恒华湖公馆</a>
+            </li>
+            <li>其他推荐楼盘：<a href="#">紫金新干线、</a><a href="#">百旺杏林湾、</a><a href="#">新华联YOYO新天地、</a><a href="#">华业东方玫瑰</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+                </div>
+                <div class="s2">
+                    <!--导航-->
+                    <ul class="b-tab-nav">
+                        <li class="on"><a href="#">跟进记录</a></li>
+                        <li><a href="../v6.2/hkgj-zsym.html">回款跟进</a></li>
+                        <li><a href="#">成交记录</a></li>
+                    </ul>
+                    <div class="panel panel-follow-record">
+                        <div class="panel-body">
+                            <!--客户最新新需求-->
+                            <div class="v-box v-khxxq">
+                                <div class="hd">
+                                    <h2>客户最新新需求</h2>
+                                    <ul class="v-label">
+                                        <li><span class="txt">头部客户2</span><span class="ico-del2">x</span></li>
+                                        <li><span class="txt">头部客户2</span><span class="ico-del2">x</span></li>
+                                        <li><span class="txt">头部客户2</span><span class="ico-del2">x</span></li>
+                                    </ul>
+                                    <div class="more">
+                                        <a href="#" class="link-gj link-remark">添加备忘标签</a>
+                                    </div>
+                                </div>
+                                <div class="bd">
+                                    <ul class="c-query">
+                                        <li>
+                                            总价预算：<span class="txt">600-800万</span>
+                                        </li>
+                                        <li>
+                                            首付预算：<span class="txt">300万</span>
+                                        </li>
+                                        <li>
+                                            感兴趣楼盘：<span class="txt" title="华业东方玫瑰，广阳郡">华业东方玫瑰，广阳郡</span>
+                                        </li>
+                                        <li>
+                                            关注区域：<span class="txt" title="昌平（可接受其他区域）、昌平（可接受其他区域）、昌平（可接受其他区域）、昌平（可接受其他区域）、昌平（可接受其他区域）">昌平（可接受其他区域）、昌平（可接受其他区域</span>
+                                        </li>
+                                        <li>
+                                            业态：<span class="txt">住宅</span>
+                                        </li>
+                                        <li>
+                                            户型：<span class="txt">一居 二居</span>
+                                        </li>
+                                        <li>
+                                            面积：<span class="txt">80-90㎡</span>
+                                        </li>
+                                        <li>
+                                            购房目的：<span class="txt">自住婚房</span>
+                                        </li>
+                                        <li>
+                                            关注点：<span class="txt">区域</span>
+                                        </li>
+                                        <li>
+                                            抗性点：<span class="txt">价格</span>
+                                        </li>
+                                        <li>
+                                            名下房产：<span class="txt">有，在顺义有一套别墅</span>
+                                        </li>
+                                        <li>
+                                            购房资质：<span class="txt">有</span>
+                                        </li>
+                                        <li>
+                                            紧迫度：<span class="txt">高</span>
+                                        </li>
+                                        <li>
+                                            配合度：<span class="txt">低</span>
+                                        </li>
+                                        <li>
+                                            看房时间：<span class="txt">周末</span>
+                                        </li>
+                                        <li>
+                                            出资人：<span class="txt">父母</span>
+                                        </li>
+                                        <li>
+                                            决策人：<span class="txt">自己</span>
+                                        </li>
+                                        <li>
+                                            干扰人：<span class="txt">父母</span>
+                                        </li>
+                                        <li>
+                                            工作地点：<span class="txt">西二旗西二旗西二旗西二旗西二旗西二旗西二旗西二旗西二旗西二旗</span>
+                                        </li>
+                                        <li class="c-li-2">
+                                            家庭及资金：<span class="txt" title="一家三口，自己当老板，资金没问题，什么都是问题，好多的问题一家三口，自己当老板，资金没问题，什么都是问题，好多的问题一家三口，自己当老板，资金没问题，什么都是问题，好多的问题">一家三口，自己当老板，资金没问题</span>
+                                        </li>
+                                        <li class="rmk">
+                                            其他描述：<span class="txt">这次购房有了居理新房的参与，过程非常顺利。几次从家到售楼处都有专车接送，节省了不少成本，在购买过程中刘政还详细的跟我们介绍了北京房价及该楼盘的情况 ，分析各种利弊，有问必答，服务热情周到，期间有任何困难，刘政也都积极的在银行售楼处等之间协调，可以说让我们买房很省心也很放心。这次购房经历体会到了居理新房的专业，下回买新房还得找居理新房。</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--预约下次带看-->
+                            <div class="v-box v-yyxcdk">
+                                <div class="hd">
+                                    <h2>预约下次带看</h2>
+                                    <div class="yydk-time">2017-06-30 13:00:00</div>
+                                    <div class="lr-icon">录入延迟</div>
+                                    <div class="more">
+                                        <a href="#" class="link-gj link-remark">更新客户跟进</a>
+                                    </div>
+                                    <ul class="link-v-yy">
+                                        <li><a href="#">修改本次预约</a></li>
+                                        <li><a href="#">插入实际联系</a></li>
+                                    </ul>
+                                </div>
+                                <div class="bd">
+                                    <ul class="c-query">
+                                        <li>
+                                            带看ID：<span class="txt">20020000</span>
+                                        </li>
+                                        <li>
+                                            邀约人：<span class="txt">张三001</span>
+                                        </li>
+                                        <li>
+                                            带看人：<span class="txt">李四002</span>
+                                        </li>
+                                        <li>
+                                            有无专车：<span class="txt">有</span>
+                                        </li>
+                                        <li>
+                                            约见地点：<span class="txt">银河SOHO楼下</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="v-dkxx">
+                                        <li class="project">
+                                            带看楼盘1：<a href="#">楼盘A（住宅）（合作）</a>
+                                        </li>
+                                        <li>
+                                            带看信息：<span class="txt">正常带看</span>
+                                        </li>
+                                        <li>
+                                            合作方：<span class="txt">房多多</span>
+                                        </li>
+                                        <li class="rmk">
+                                            最新销售信息：<span class="txt">火热顺销中 现推出两套精品房源 2017-07-25 10:52:32 张四004火热顺销中 现推出两套精品房源 2017-07-25 10:52:32 张四004</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="v-dkxx">
+                                        <li class="project">
+                                            带看楼盘2：<a href="#">楼盘B（别墅）（非合作）（外联）</a>
+                                        </li>
+                                        <li>
+                                            带看信息：<span class="txt">暂停带看</span>
+                                        </li>
+                                        <li>
+                                            合作方：<span class="txt">房多多</span>
+                                        </li>
+                                        <li class="rmk">
+                                            最新销售信息：<span class="txt">火热顺销中 现推出两套精品房源 2017-07-25 10:52:32 张四004</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--预约下次联系-->
+                            <div class="v-box v-yyxcdk">
+                                <div class="hd">
+                                    <h2>预约下次联系</h2>
+
+                                    <div class="yydk-time">2017-06-30 13:00:00</div>
+                                    <div class="more">
+                                        <a href="#" class="link-gj link-remark">更新客户跟进</a>
+                                    </div>
+                                    <ul class="link-v-yy">
+                                        <li><a href="#">修改本次预约</a></li>
+                                    </ul>
+                                </div>
+                                <div class="bd">
+                                    <ul class="c-query">
+                                        <li>
+                                            联系ID：<span class="txt">20020000</span>
+                                        </li>
+                                        <li>
+                                            联系人：<span class="txt">张三001</span>
+                                        </li>
+                                        <li>
+                                            约见地点：<span class="txt">银河SOHO楼下</span>
+                                        </li>
+                                        <li class="rmk">
+                                            联系计划：<span class="txt">挖掘更多用户需求挖掘更多用户需求挖掘更多用户需求挖掘更多用户需求挖掘更多用户需求挖掘更多用户需求挖掘更多用户需求挖掘更多用户需求挖掘更多用户需求挖掘更多用户需求挖掘更多用户需求</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--空内容，只有更新客户跟进按钮-->
+                            <div class="v-box v-yyxcdk">
+                                <div class="hd">
+                                    <div class="more">
+                                        <a href="#" class="link-gj link-remark">更新客户跟进</a>
+                                    </div>
+                                </div>
+                                <div class="bd">
+                                </div>
+                            </div>
+                            <!--需求变更记录-->
+                            <div class="v-box v-box-bgjl">
+                                <div class="hd">
+                                    <h2>需求变更记录</h2>
+
+                                    <ul class="dk-option">
+                                        <li><a href="javascript:void(0);" class="link-all-wd">展示全部问答信息</a></li>
+                                        <li><a href="javascript:void(0);" class="link-all-yy">展示全部预约信息</a></li>
+                                    </ul>
+                                    <!--<div class="more">-->
+                                        <!--<a href="javascript:void(0);" class="link-gj link-all-wd">展示全部问答信息</a>-->
+                                        <!--<a href="javascript:void(0);" class="link-gj link-all-yy">展示全部预约信息</a>-->
+                                    <!--</div>-->
+                                </div>
+                                <div class="bd">
+                                    <div class="change-list">
+                                        <div class="change-item change-contact">
+                                            <!--变更该要-->
+                                            <div class="bggy">
+                                                <div class="tit">
+                                                    <h4>需求变更</h4>
+                                                    <a class="link-opt" href="#">修改</a>
+                                                </div>
+                                                <ul class="con">
+                                                    <li>
+                                                        总价预算：<span class="txt">600-800万； </span>
+                                                    </li>
+                                                    <li>
+                                                        家庭及资金情况：<span class="txt">一家三口，有孩子也要买房，自己当老板，资金没问题</span>
+                                                    </li>
+                                                </ul>
+                                                <span class="ico-yan"></span>
+                                            </div>
+                                            <!--变更信息-->
+                                            <div class="change-info">
+                                                <p class="change-time">2017-06-24 13:00:00</p>
+
+                                                <div class="type"><p>联系</p></div>
+                                            </div>
+                                            <!--问答主题内容-->
+                                            <div class="change-main">
+                                                <div class="c-dk-change">
+                                                    <ul class="dk-option">
+                                                        <li><a href="#">修改</a></li>
+                                                    </ul>
+                                                    <ul class="c-query bgxx">
+                                                        <li>联系ID：<span class="txt">20020087</span></li>
+                                                        <li>联系人：<span class="txt">张三001</span></li>
+                                                    </ul>
+                                                    <div class="change-plan-info change-lxjh">
+                                                        联系计划：<span class="txt">1联系计划联系计划联系计划联系计划联系计划联系计划联系计划联系计划联系计划联系计划联系计划</span>
+                                                    </div>
+                                                </div>
+                                                <!--打车记录-->
+                                                <div class="taxi-record clearfix">
+                                                    <div class="th">打车记录：</div>
+                                                    <div class="td">
+                                                        <ul class="taxi-desc">
+                                                            <li>
+                                                                <div class="address">出发地-目的地</div>
+                                                                <div class="date">2017/09/08 22:32:23 - 2017/09/08 23:32:23</div>
+                                                                <div class="price">134.68元</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="address">出发地出发地出发地出发地 - 目的地目的地</div>
+                                                                <div class="date">2017/09/08 22:32:23 - 2017/09/08 23:32:23</div>
+                                                                <div class="price">134.68元</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="rmk">
+                                                    记录：<span class="txt">这次购房有了居理新房的参与，过程非常顺利。几次从家到售楼处都有专车接送，节省了不少成本，在购买过程中刘政还详细的跟我们介绍了北京房价及该楼盘的情况 ，分析各种利弊，有问必答，服务热情周到</span>
+                                                </div>
+                                                <div class="wd-item2 clearfix">
+                                                    <div class="wd-wen">
+                                                        <span class="ico ico-w"></span>
+
+                                                        <div class="wd-wen-con">
+                                                            <h4 class="wd-tit">
+                                                                这个楼盘的周围有没有好玩的地方？靠地铁近吗？适合我这种喜欢周末出去high的人1233445吗？靠地铁近吗？适合我这种</h4>
+                                                            <!--相关楼盘-->
+                                                            <ul class="xglp">
+                                                                <li><a href="#">绿地海珀云翡</a></li>
+                                                                <li><a href="#">中骏·西山天璟</a></li>
+                                                                <li><a href="#">北京城建海梓府</a></li>
+                                                            </ul>
+                                                            <!--问题类型-->
+                                                            <ul class="wt-type">
+                                                                <li>问题类型1</li>
+                                                                <li>问题类型2</li>
+                                                                <li>问题类型3</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wd-da">
+                                                        <span class="ico ico-da"></span>
+
+                                                        <div class="wd-detail wd-hide">
+                                                            <p>
+                                                                1有很多好玩的地方，靠近万达等大型商场，周围电影院、电玩城、商场、游乐场，只有你想不到没有它不存在的。离地铁很近，大热天当你快要虚脱的时候保证就走到了，相信很快就…有很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方有很多好玩的地方，靠近万达等大型商场，周围电影院、电玩城、商场、游乐场，只有你想不到没有它不存在的。离地铁很近，大热天当你快要虚脱的时候保证就走到了，相信很快就…有很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方有很多好玩的地方，靠近万达等大型商场，周围电影院、电玩城、商场、游乐场，只有你想不到没有它不存在的。离地铁很近，大热天当你快要虚脱的时候保证就走到了，相信很快就…有很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wd-action clearfix">
+                                                        <ul class="yd-tj">
+                                                            <li><span class="num">123</span>用户点赞</li>
+                                                            <li class="nbdzs">
+                                                                <span class="num">121</span>个内部点赞
+                                                                <div class="trans-layer">
+                                                                    <div class="fans-list">
+                                                                        <ul>
+                                                                            <li>喵在乎1，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="bot"></div>
+                                                                </div>
+                                                            </li>
+                                                            <li><a class="link-send" href="#">再次发送用户</a></li>
+                                                        </ul>
+                                                        <a class="show-more" href="javascript:void(0);">展开全部</a>
+                                                    </div>
+                                                    <div class="annexes">
+                                                        <ul class="annexes-list">
+                                                            <li>
+                                                                <svg class="icon" aria-hidden="true">
+                                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-doc"></use>
+                                                                </svg>
+                                                                <div class="file-name">
+                                                                    <span class="annexes-name">居里入职欢迎新.docx</span>
+                                                                    <span class="annexes-size">(56.8K)</span>
+                                                                </div>
+                                                                <ul class="file-opt">
+                                                                    <li><a class="file-down" href="#">下载</a></li>
+                                                                    <li><a class="file-open" href="#">打开</a></li>
+                                                                    <li><a class="file-preview" href="#">预览</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" aria-hidden="true">
+                                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ppt"></use>
+                                                                </svg>
+                                                                <div class="file-name">
+                                                                    <span class="annexes-name">居里入职欢迎新.ppt</span>
+                                                                    <span class="annexes-size">(56.8K)</span>
+                                                                </div>
+                                                                <ul class="file-opt">
+                                                                    <li><a class="file-down" href="#">下载</a></li>
+                                                                    <li><a class="file-open" href="#">打开</a></li>
+                                                                    <li><a class="file-preview" href="#">预览</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" aria-hidden="true">
+                                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-pdf"></use>
+                                                                </svg>
+                                                                <div class="file-name">
+                                                                    <span class="annexes-name">居里入职欢迎新.pdf</span>
+                                                                    <span class="annexes-size">(56.8K)</span>
+                                                                </div>
+                                                                <ul class="file-opt">
+                                                                    <li><a class="file-down" href="#">下载</a></li>
+                                                                    <li><a class="file-open" href="#">打开</a></li>
+                                                                    <li><a class="file-preview" href="#">预览</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" aria-hidden="true">
+                                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xls"></use>
+                                                                </svg>
+                                                                <div class="file-name">
+                                                                    <span class="annexes-name">居里入职欢迎新.xls</span>
+                                                                    <span class="annexes-size">(56.8K)</span>
+                                                                </div>
+                                                                <ul class="file-opt">
+                                                                    <li><a class="file-down" href="#">下载</a></li>
+                                                                    <li><a class="file-open" href="#">打开</a></li>
+                                                                    <li><a class="file-preview" href="#">预览</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="fgx"></div>
+                                                </div>
+                                                <div class="wd-item2 clearfix">
+                                                    <div class="wd-wen">
+                                                        <span class="ico ico-w"></span>
+
+                                                        <div class="wd-wen-con">
+                                                            <h4 class="wd-tit">
+                                                                这个楼盘的周围有没有好玩的地方？靠地铁近吗？适合我这种喜欢周末出去high的人1233445吗？靠地铁近吗？适合我这种</h4>
+                                                            <!--相关楼盘-->
+                                                            <ul class="xglp">
+                                                                <li><a href="#">绿地海珀云翡</a></li>
+                                                                <li><a href="#">中骏·西山天璟</a></li>
+                                                                <li><a href="#">北京城建海梓府</a></li>
+                                                            </ul>
+                                                            <!--问题类型-->
+                                                            <ul class="wt-type">
+                                                                <li>问题类型1</li>
+                                                                <li>问题类型2</li>
+                                                                <li>问题类型3</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wd-da">
+                                                        <span class="ico ico-da"></span>
+
+                                                        <div class="wd-detail wd-hide">
+                                                            <p>
+                                                                2有很多好玩的地方，靠近万达等大型商场，周围电影院、电玩城、商场、游乐场，只有你想不到没有它不存在的。离地铁很近，大热天当你快要虚脱的时候保证就走到了，相信很快就…有很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方有很多好玩的地方，靠近万达等大型商场，周围电影院、电玩城、商场、游乐场，只有你想不到没有它不存在的。离地铁很近，大热天当你快要虚脱的时候保证就走到了，相信很快就…有很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方有很多好玩的地方，靠近万达等大型商场，周围电影院、电玩城、商场、游乐场，只有你想不到没有它不存在的。离地铁很近，大热天当你快要虚脱的时候保证就走到了，相信很快就…有很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方很多好玩的地方</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wd-action clearfix">
+                                                        <ul class="yd-tj">
+                                                            <li><span class="num">123</span>用户点赞</li>
+                                                            <li class="nbdzs">
+                                                                <span class="num">122</span>个内部点赞
+                                                                <div class="trans-layer">
+                                                                    <div class="fans-list">
+                                                                        <ul>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="bot"></div>
+                                                                </div>
+                                                            </li>
+                                                            <li><a class="link-send" href="#">再次发送用户</a></li>
+                                                        </ul>
+                                                        <a class="show-more" href="javascript:void(0);">展开全部</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="change-item change-key">
+                                            <!--变更该要-->
+                                            <div class="bggy">
+                                                <div class="tit">
+                                                    <h4>需求变更</h4>
+                                                </div>
+                                                <ul class="con">
+                                                    <li>
+                                                        总价预算：<span class="txt">300-600万； </span>
+                                                    </li>
+                                                    <li>
+                                                        首付预算：<span class="txt">300万； </span>
+                                                    </li>
+                                                    <li>
+                                                        关注区域：<span class="txt">昌平（可接受其他区域）；业态需求：住宅；面积：80-90㎡；户型：一居 二居；</span>
+                                                    </li>
+                                                </ul>
+                                                <span class="ico-yan"></span>
+                                            </div>
+                                            <!--变更信息-->
+                                            <div class="change-info">
+                                                <p class="change-time">2017-06-24 13:00:00</p>
+
+                                                <div class="type"><p>关键带看</p></div>
+                                            </div>
+                                            <!--问答主题内容-->
+                                            <div class="change-main clearfix">
+                                                <div class="c-dk-change">
+                                                    <ul class="dk-option">
+                                                        <li><a href="#">设置为关键带看</a></li>
+                                                        <li><a href="#">修改</a></li>
+                                                        <li><a href="#">邀评带看</a></li>
+                                                        <li><a href="#">查看评价</a></li>
+                                                    </ul>
+                                                    <ul class="c-query bgxx">
+                                                        <li>带看ID：<span class="txt">20020000</span></li>
+                                                        <li>带看状态：<span class="txt">已评价</span></li>
+                                                        <li>邀约人：<span class="txt">张三001</span></li>
+                                                        <li>带看人：<span class="txt">李四002</span></li>
+                                                    </ul>
+                                                    <div class="change-plan-info change-jhdk">
+                                                        计划带看楼盘：<a href="#">绿地海珀云翡</a>，<a href="#">中骏·西山天璟</a>，<a href="#">北京城建海梓府</a>，<a href="#">天恒金融街公园懿府</a>，<a href="#">观山源墅（住宅）</a>
+                                                    </div>
+                                                </div>
+                                                <!--带看楼盘-->
+                                                <ul class="c-query c-change-lp">
+                                                    <li>
+                                                        <div class="c-dk-opt">
+                                                            <a class="btn-df" href="#">定房</a>
+                                                        </div>
+                                                        <div class="c-change-lp-wrap">
+                                                            <div class="c-lpmc">带看楼盘1：<a href="#">楼盘A（住宅）</a></div>
+                                                            <div class="xsxx">销售姓名：<span class="txt">赵五</span></div>
+                                                            <div class="xsxx">销售电话：<span class="txt">13400000000</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="c-dk-opt">
+                                                            <a class="btn-df" href="#">定房</a>
+                                                        </div>
+                                                        <div class="c-change-lp-wrap">
+                                                            <div class="c-lpmc">带看楼盘2：<a href="#">楼盘B（住宅）</a></div>
+                                                            <div class="xsxx">销售姓名：<span class="txt">赵五</span></div>
+                                                            <div class="xsxx">销售电话：<span class="txt">13400000000</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <!--关键带看-->
+                                                <div class="rmk c-change-gjdk">
+                                                    关键带看核查进度：<span class="txt">王星火(通过) 井建钊(拒绝)</span>
+                                                </div>
+                                                <div class="rmk">
+                                                    记录：<span class="txt">和小苏认识是一个朋友介绍的，电话交流下就根据我的需求进行了匹配，整个北京的帮我分析什么房子适合我，第二天就带着我的朋友去了通州看房，房子很满意，后来又带着我的妹妹去看，当场就交了定金；但是因为新政策的原因，中间有些波折，但是最后结果都是好的；</span>
+                                                </div>
+                                                <div class="wd-item2 clearfix">
+                                                    <div class="wd-wen">
+                                                        <span class="ico ico-w"></span>
+
+                                                        <div class="wd-wen-con">
+                                                            <h4 class="wd-tit">
+                                                                这个楼盘的周围有没有好玩的地方？靠地铁近吗？适合我这种喜欢周末出去high的人1233445吗？靠地铁近吗？适合我这种</h4>
+                                                            <!--相关楼盘-->
+                                                            <ul class="xglp">
+                                                                <li><a href="#">绿地海珀云翡</a></li>
+                                                                <li><a href="#">中骏·西山天璟</a></li>
+                                                                <li><a href="#">北京城建海梓府</a></li>
+                                                            </ul>
+                                                            <!--问题类型-->
+                                                            <ul class="wt-type">
+                                                                <li>问题类型1</li>
+                                                                <li>问题类型2</li>
+                                                                <li>问题类型3</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wd-da">
+                                                        <span class="ico ico-da"></span>
+
+                                                        <div class="wd-detail wd-hide">
+                                                            <p>
+                                                                3有很多好玩的地方，靠近万达等大型商场，周围电影院、电玩城、商场、游乐场，只有你想不到没有它不存在的。离地铁很近，大热天当你快要虚脱的时候保证就走到了，相信很快就</p>
+                                                            <img src="../images/img-wd.jpg" alt=""/>
+                                                            <p>
+                                                                有很多好玩的地方，靠近万达等大型商场，周围电影院、电玩城、商场、游乐场，只有你想不到没有它不存在的。离地铁很近，大热天当你快要虚脱的时候保证就走到了，相信很快就</p>
+                                                            <img src="../images/img-wd.jpg" alt=""/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wd-action clearfix">
+                                                        <ul class="yd-tj">
+                                                            <li><span class="num">123</span>用户点赞</li>
+                                                            <li class="nbdzs">
+                                                                <span class="num">123</span>个内部点赞
+                                                                <div class="trans-layer">
+                                                                    <div class="fans-list">
+                                                                        <ul>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎，</li>
+                                                                            <li>喵在乎</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="bot"></div>
+                                                                </div>
+                                                            </li>
+                                                            <li><a class="link-send" href="#">再次发送用户</a></li>
+                                                        </ul>
+                                                        <a class="show-more" href="javascript:void(0);">展开全部</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="change-item change-see">
+                                            <!--变更该要-->
+                                            <div class="bggy">
+                                                <span class="ico-yan"></span>
+                                            </div>
+                                            <!--变更信息-->
+                                            <div class="change-info">
+                                                <p class="change-time">2017-06-24 13:00:00</p>
+
+                                                <div class="type"><p>带看</p></div>
+                                            </div>
+                                            <!--问答主题内容-->
+                                            <div class="change-main">
+                                                <div class="c-dk-change">
+                                                    <ul class="dk-option">
+                                                        <li><a href="#">设置为关键带看</a></li>
+                                                        <li><a href="#">修改</a></li>
+                                                        <li><a href="#">邀评</a></li>
+                                                    </ul>
+                                                    <ul class="c-query bgxx">
+                                                        <li>带看ID：<span class="txt">20020000</span></li>
+                                                        <li>带看状态：<span class="txt">已评价</span></li>
+                                                        <li>邀约人：<span class="txt">张三001</span></li>
+                                                        <li>带看人：<span class="txt">李四002</span></li>
+                                                    </ul>
+                                                    <div class="change-plan-info change-jhdk">
+                                                        计划带看楼盘：<a href="#">绿地海珀云翡</a>，<a href="#">中骏·西山天璟</a>，<a href="#">北京城建海梓府</a>，<a href="#">天恒金融街公园懿府</a>，<a href="#">观山源墅（住宅）</a>
+                                                    </div>
+                                                </div>
+                                                <!--带看楼盘-->
+                                                <ul class="c-query c-change-lp">
+                                                    <li>
+                                                        <div class="c-dk-opt">
+                                                            <a class="btn-df" href="#">定房</a>
+                                                        </div>
+                                                        <div class="c-change-lp-wrap">
+                                                            <div class="c-lpmc">带看楼盘1：<a href="#">楼盘A（住宅）</a></div>
+                                                            <div class="xsxx">销售姓名：<span class="txt">赵五</span></div>
+                                                            <div class="xsxx">销售电话：<span class="txt">13400000000</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="c-dk-opt">
+                                                            <a class="btn-df" href="#">定房</a>
+                                                        </div>
+                                                        <div class="c-change-lp-wrap">
+                                                            <div class="c-lpmc">带看楼盘2：<a href="#">楼盘B（住宅）</a></div>
+                                                            <div class="xsxx">销售姓名：<span class="txt">赵五</span></div>
+                                                            <div class="xsxx">销售电话：<span class="txt">13400000000</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <!--关键带看-->
+                                                <div class="rmk c-change-gjdk">
+                                                    关键带看核查进度：<span class="txt">王星火(通过) 井建钊(拒绝)</span>
+                                                </div>
+                                                <div class="rmk">
+                                                    记录：<span class="txt">和小苏认识是一个朋友介绍的，电话交流下就根据我的需求进行了匹配，整个北京的帮我分析什么房子适合我，第二天就带着我的朋友去了通州看房，房子很满意，后来又带着我的妹妹去看，当场就交了定金；但是因为新政策的原因，中间有些波折，但是最后结果都是好的；</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="change-item change-invalid">
+                                            <!--变更该要-->
+                                            <div class="bggy">
+                                                <div class="tit">
+                                                    <h4>需求变更</h4>
+                                                </div>
+                                                <ul class="con">
+                                                    <li>
+                                                        总价预算：<span class="txt">300-600万； </span>
+                                                    </li>
+                                                </ul>
+                                                <span class="ico-yan"></span>
+                                            </div>
+                                            <!--变更信息-->
+                                            <div class="change-info">
+                                                <p class="change-time">2017-06-24 13:00:00</p>
+
+                                                <div class="type"><p>无效带看</p></div>
+                                            </div>
+                                            <!--问答主题内容-->
+                                            <div class="change-main">
+                                                <div class="c-dk-change">
+                                                    <ul class="dk-option">
+                                                        <li><a href="#">修改</a></li>
+                                                    </ul>
+                                                    <ul class="c-query bgxx">
+                                                        <li>带看ID：<span class="txt">20020000</span></li>
+                                                        <li>联系人：<span class="txt">张三001</span></li>
+                                                    </ul>
+                                                    <div class="change-plan-info change-jhdk">
+                                                        计划带看楼盘：<a href="#">绿地海珀云翡</a>，<a href="#">中骏·西山天璟</a>，<a href="#">北京城建海梓府</a>，<a href="#">天恒金融街公园懿府</a>，<a href="#">观山源墅（住宅）</a>
+                                                    </div>
+                                                </div>
+                                                <div class="rmk">
+                                                    记录：<span class="txt">和小苏认识是一个朋友介绍的，电话交流下就根据我的需求进行了匹配，整个北京的帮我分析什么房子适合我，第二天就带着我的朋友去了通州看房，房子很满意，后来又带着我的妹妹去看，当场就交了定金；但是因为新政策的原因，中间有些波折，但是最后结果都是好的；</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="page-footer">
+    <p class="copyright"><span>北京高因科技有限公司</span><span>www.comjia.com</span></p>
+</div>
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/iconfont.js"></script>
+<!--音频播放器-->
+<script src="../js/audioplayer.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/v5.2.js"></script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>后续动作-实际带看记录、实际联系记录-拖拽效果</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!--音频播放器-->
+    <link rel="stylesheet" href="../css/audioplayer.css"/>
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">联系列表</a></li>
+                        <li class="active">更新</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="s1">
+                    @@include("../app/base-info/index.html")
+                </div>
+                <div class="s2">
+                    <!--导航-->
+                    <ul class="b-tab-nav">
+                        <li class="on"><a href="#">跟进记录</a></li>
+                        <li><a href="#">成交记录</a></li>
+                    </ul>
+                    <div class="panel panel-follow">
+                        <div class="panel-body">
+                            <!--后续动作-->
+                            <div class="mod4 mod4-hxdz">
+                                <div class="tit">
+                                    <ul class="action-sel">
+                                        <li>
+                                            <input type="radio" name="action-sel" data-action="sjdk" class="rd" checked>实际带看记录
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="action-sel" data-action="sjlx" class="rd">实际联系记录
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="con action-sjdk">
+                                    <ul class="dk-info">
+                                        <li>
+                                            <div class="lb">带看时间：</div>
+                                            <div class="txt">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lb">邀约人：</div>
+                                            <div class="txt">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lb">带看人：</div>
+                                            <div class="txt">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="dk-lp" id="handle-lp">
+                                        <li>
+                                            <!--<div class="handle-drag"><span class="icon icon-caidan"></span></div>-->
+                                            <!--<div class="btn-area"><button class="btn-sy">带看顺序上移</button></div>-->
+                                            <div class="dk-wrap">
+                                                <div class="lp-name">
+                                                    <input type="checkbox">
+                                                    实际带看楼盘<span class="num">1</span>：<span class="name">华业东方玫瑰1（住宅）</span>
+                                                </div>
+                                                <div class="xs-info">
+                                                    <div class="lb">销售姓名：</div>
+                                                    <div class="txt">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="xs-info">
+                                                    <div class="lb">电话：</div>
+                                                    <div class="txt">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="dk-taxi">
+                                                    <div class="lb">是否有专车：</div>
+                                                    <div class="td">
+                                                        <ul class="action-sel">
+                                                            <li>
+                                                                <input type="radio" name="taxi" class="rd" checked="">有
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" name="taxi" class="rd">无
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="passenger">
+                                                    <div class="lb required">打车人姓名：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                    </div>
+                                                </div>
+                                                <div class="dd-order">
+                                                    <div class="lb required">滴滴订单：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                    </div>
+                                                </div>
+                                                <div class="dd-link">
+                                                    <a href="#">找不到打车记录，需要去打车统计页更换</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <!--<div class="handle-drag"><span class="icon icon-caidan"></span></div>-->
+                                            <div class="btn-area"><button class="btn-sy">带看顺序上移</button></div>
+                                            <div class="dk-wrap">
+                                                <div class="lp-name">
+                                                    <input type="checkbox">
+                                                    实际带看楼盘<span class="num">2</span>：<span class="name">华业东方玫瑰2（住宅）</span>
+                                                </div>
+                                                <div class="xs-info">
+                                                    <div class="lb">销售姓名：</div>
+                                                    <div class="txt">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="xs-info">
+                                                    <div class="lb">电话：</div>
+                                                    <div class="txt">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="dk-taxi">
+                                                    <div class="lb">是否有专车：</div>
+                                                    <div class="td">
+                                                        <ul class="action-sel">
+                                                            <li>
+                                                                <input type="radio" name="taxi" class="rd" checked="">有
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" name="taxi" class="rd">无
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="passenger">
+                                                    <div class="lb required">打车人姓名：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                    </div>
+                                                </div>
+                                                <div class="dd-order">
+                                                    <div class="lb required">滴滴订单：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                    </div>
+                                                </div>
+                                                <div class="dd-link">
+                                                    <a href="#">找不到打车记录，需要去打车统计页更换</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <!--<div class="handle-drag"><span class="icon icon-caidan"></span></div>-->
+                                            <div class="btn-area"><button class="btn-sy">带看顺序上移</button></div>
+                                            <div class="dk-wrap">
+                                                <div class="lp-name">
+                                                    <input type="checkbox">
+                                                    实际带看楼盘<span class="num">3</span>：<span class="name">华业东方玫瑰3（住宅）</span>
+                                                </div>
+                                                <div class="xs-info">
+                                                    <div class="lb">销售姓名：</div>
+                                                    <div class="txt">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="xs-info">
+                                                    <div class="lb">电话：</div>
+                                                    <div class="txt">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="dk-taxi">
+                                                    <div class="lb">是否有专车：</div>
+                                                    <div class="td">
+                                                        <ul class="action-sel">
+                                                            <li>
+                                                                <input type="radio" name="taxi" class="rd" checked="">有
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" name="taxi" class="rd">无
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="passenger">
+                                                    <div class="lb required">打车人姓名：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                    </div>
+                                                </div>
+                                                <div class="dd-order">
+                                                    <div class="lb required">滴滴订单：</div>
+                                                    <div class="td">
+                                                        <input class="form-control" type="text"/>
+                                                    </div>
+                                                </div>
+                                                <div class="dd-link">
+                                                    <a href="#">找不到打车记录，需要去打车统计页更换</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="add-lp">
+                                            <div class="lb">新增楼盘：</div>
+                                            <div class="txt">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="btn-area">
+                                                <button class="btn-add">添加</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="con action-sjlx" style="display: none;">
+                                    <ul class="dk-info">
+                                        <li>
+                                            <div class="lb">联系时间：</div>
+                                            <div class="txt">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lb">联系人：</div>
+                                            <div class="txt">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-area">
+                                    <a class="btn btn-default" href="#">返回上一步</a>
+                                    <button type="button" class="btn btn-primary">提交</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<!--新增内容结构-->
+<div class="add-html" style="display: none">
+    <li>
+        <!--<div class="handle-drag"><span class="icon icon-caidan"></span></div>-->
+        <div class="btn-area"><button class="btn-sy">带看顺序上移</button></div>
+        <div class="dk-wrap">
+            <div class="lp-name">
+                <input type="checkbox">
+                实际带看楼盘<span class="num">1</span>：<span class="name">华业东方玫瑰（住宅）</span>
+            </div>
+            <div class="xs-info">
+                <div class="lb">销售姓名：</div>
+                <div class="txt">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="xs-info">
+                <div class="lb">电话：</div>
+                <div class="txt">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="dk-taxi">
+                <div class="lb">是否有专车：</div>
+                <div class="td">
+                    <ul class="action-sel">
+                        <li>
+                            <input type="radio" name="taxi" class="rd" checked="">有
+                        </li>
+                        <li>
+                            <input type="radio" name="taxi" class="rd">无
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="passenger">
+                <div class="lb required">打车人姓名：</div>
+                <div class="td">
+                    <input class="form-control" type="text"/>
+                </div>
+            </div>
+            <div class="dd-order">
+                <div class="lb required">滴滴订单：</div>
+                <div class="td">
+                    <input class="form-control" type="text"/>
+                </div>
+            </div>
+            <div class="dd-link">
+                <a href="#">找不到打车记录，需要去打车统计页更换</a>
+            </div>
+        </div>
+    </li>
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<!--音频播放器-->
+<script src="../js/audioplayer.js"></script>
+<!--拖拽-->
+<script src="../js/Sortable.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/v5.2.js"></script>
+</body>
+</html>

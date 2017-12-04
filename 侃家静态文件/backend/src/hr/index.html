@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/hr.css"/>
+</head>
+<body>
+<div class="container">
+    @@include("../app/hr-header/header.html")
+    <div class="center">
+        @@include("../app/hr-sidebar/sidebar.html")
+        <div class="main-content">
+            <div class="organization-box">
+                <!--操作-->
+                <div class="operation-box">
+                    <div class="tabs-header">
+                        <div class="tabs-nav botton">
+                            <div class="tabs-item-bot"></div>
+                            <div class="tabs-item"><a href="index.html">组织架构</a></div>
+                        </div>
+                        <div class="tabs-nav">
+                            <div class="tabs-item-bot"></div>
+                            <div class="tabs-item"><a href="index-gw.html">岗位词典</a></div>
+                        </div>
+                    </div>
+                    <div class="search-box">
+                        <div class="search-box-input">
+                            <input type="text" placeholder="搜索">
+                            <button class="btn-search"><span class="icon icon-search1"></span></button>
+                        </div>
+                    </div>
+                    <div class="topRight">
+                        <ul class="quick-in">
+                            <li><button><span class="icon icon-import"></span>导入</button></li>
+                            <li><button><span class="icon icon-export"></span>导出</button></li>
+                            <li><button><span class="icon icon-folder"></span>历史归档</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--tabs-->
+                <div class="org-tabs">
+                    <div class="tabs-content">
+                        <div class="tabs-pane">
+                            <ul class="root">
+                                <li class="department-li root-li no-child">
+                                    <div class="department-content">
+                                        <div class="f1">
+                                            <span class="ico icon icon-house"></span>
+                                            <span class="name">北京居理科技有限公司</span>
+                                            <span class="num">(3人)</span>
+                                            <label class="org-label">组织架构</label>
+                                        </div>
+                                        <div class="news">
+                                            <span class="adminName">王鹏</span>
+                                            <span class="job-count">在职
+                                                <span>96 ( 66 / 15 ) </span>
+                                            </span>
+                                            <span class="icon icon-tips"></span>
+                                            <a href="###" class="structure-map"><span class="icon icon-organization"></span></a>
+
+                                            <div class="popover-btn">
+                                                <span class="icon icon-more"></span>
+                                                <div class="popover">
+                                                    <ul>
+                                                        <li><button>添加子部门</button></li>
+                                                        <li><button>编辑部门</button></li>
+                                                        <li><button>查看待分配员工</button></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="department-li">
+                                    <div class="department-content">
+                                        <div class="f1">
+                                            <span class="ico unfold"></span>
+                                            <span class="name">北京</span>
+                                            <span class="num">(1人)</span>
+                                        </div>
+                                        <div class="news">
+                                            <span class="adminName">张超</span>
+                                        <span class="job-count">
+                                                在职 <span>96 ( 88 / 8 ) </span>
+                                            </span>
+                                            <a href="###" class="structure-map"><span class="icon icon-organization"></span></a>
+
+                                            <div class="popover-btn">
+                                                <span class="icon icon-more"></span>
+                                                <div class="popover">
+                                                    <ul>
+                                                        <li><button>添加子部门</button></li>
+                                                        <li><button>编辑部门</button></li>
+                                                        <li><button>查看员工</button></li>
+                                                        <li><button>移动部门</button></li>
+                                                        <li><button>删除</button></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="root">
+                                        <li class="department-li">
+                                            <div class="department-content">
+                                                <div class="f1">
+                                                    <span class="ico unfold"></span>
+                                                    <span class="name">北京</span>
+                                                    <span class="num">(1人)</span>
+                                                </div>
+                                                <div class="news">
+                                                    <span class="adminName">张超</span>
+                                                <span class="job-count">
+                                                在职 <span>96 ( 88 / 8 ) </span>
+                                            </span>
+                                                    <a href="###" class="structure-map"><span class="icon icon-organization"></span></a>
+
+                                                    <div class="popover-btn">
+                                                        <span class="icon icon-more"></span>
+                                                        <div class="popover">
+                                                            <ul>
+                                                                <li><button>添加子部门</button></li>
+                                                                <li><button>编辑部门</button></li>
+                                                                <li><button>查看员工</button></li>
+                                                                <li><button>移动部门</button></li>
+                                                                <li><button>删除</button></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul class="root">
+                                                <li class="department-li no-child">
+                                                    <div class="department-content">
+                                                        <div class="f1">
+                                                            <span class="ico unfold"></span>
+                                                            <span class="name">上海市</span>
+                                                            <span class="num">(1人)</span>
+                                                        </div>
+                                                        <div class="news">
+                                                            <span class="adminName">张超</span>
+                                                        <span class="job-count">
+                                                在职 <span>96 ( 88 / 8 ) </span>
+                                            </span>
+                                                            <a href="###" class="structure-map"><span class="icon icon-organization"></span></a>
+
+                                                            <div class="popover-btn">
+                                                                <span class="icon icon-more"></span>
+                                                                <div class="popover">
+                                                                    <ul>
+                                                                        <li><button>添加子部门</button></li>
+                                                                        <li><button>编辑部门</button></li>
+                                                                        <li><button>查看员工</button></li>
+                                                                        <li><button>移动部门</button></li>
+                                                                        <li><button>删除</button></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="department-li no-child">
+                                                    <div class="department-content">
+                                                        <div class="f1">
+                                                            <span class="ico unfold"></span>
+                                                            <span class="name" title="一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十">一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</span>
+                                                            <span class="num">(1人)</span>
+                                                        </div>
+                                                        <div class="news">
+                                                            <span class="adminName">测试名称</span>
+                                                        <span class="job-count">
+                                                在职 <span>96 ( 88 / 8 ) </span>
+                                            </span>
+                                                            <a href="###" class="structure-map"><span class="icon icon-organization"></span></a>
+
+                                                            <div class="popover-btn">
+                                                                <span class="icon icon-more"></span>
+                                                                <div class="popover">
+                                                                    <ul>
+                                                                        <li><button>添加子部门</button></li>
+                                                                        <li><button>编辑部门</button></li>
+                                                                        <li><button>查看员工</button></li>
+                                                                        <li><button>移动部门</button></li>
+                                                                        <li><button>删除</button></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include("../app/hr-footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/hr/hr-ui.js"></script>
+<script type="text/javascript" src="../js/hr/hr-v1.0.js"></script>
+</body>
+</html>

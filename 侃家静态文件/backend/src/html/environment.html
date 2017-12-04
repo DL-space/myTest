@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>环境信息</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/house-manage.css">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container">
+            <!--次导航-->
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="#">基础信息</a></li>
+                    <li><a href="#">细节信息</a></li>
+                    <li class="active"><a href="#">环境信息</a></li>
+                    <li><a href="#">户型信息</a></li>
+                    <li><a href="#">价格信息</a></li>
+                    <li><a href="#">图片信息</a></li>
+                </ul>
+            </nav>
+            <!--环线信息-->
+            <div class="panel panel-envi">
+                <div class="panel-heading">
+                    <div class="panel-heading-wrap">
+                        <h2 class="panel-title">环线分析</h2>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="input-grup">
+                        <span>环线：</span>
+                        <input type="text">
+                    </div>
+                    <div class="input-grup">
+                        <span>距近环（km）：</span>
+                        <input type="text">
+                    </div>
+                    <div class="input-grup">
+                        <span>距远环（km）：</span>
+                        <input type="text">
+                    </div>
+                    <div class="input-grup lang-input">
+                        <span>位置描述：</span>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <!--周边分析-->
+            <div class="panel panel-surround">
+                <div class="panel-heading">
+                    <div class="panel-heading-wrap">
+                        <h2 class="panel-title">周边分析</h2>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="input-grup">
+                        <span>环线：</span>
+                        <input type="text">
+                    </div>
+                    <div class="input-grup">
+                        <span>环线：</span>
+                        <input type="text">
+                    </div>
+                    <div class="input-grup lang-input">
+                        <span>周边描述：</span>
+                        <input type="text">
+                    </div>
+                    <div class="input-grup lang-input">
+                        <span>环境现状：</span>
+                        <input type="text">
+                    </div>
+                    <div class="input-grup lang-input">
+                        <span>环境不利因素：</span>
+                        <input type="text">
+                    </div>
+                    <div class="input-grup lang-input">
+                        <span>环境规划描述：</span>
+                        <input type="text">
+                    </div>
+                    <div class="btn-div">
+                        <button class="btn btn-primary">保存</button>
+                    </div>
+                </div>
+            </div>
+            <!--位置信息-->
+            <div class="panel panel-position">
+                <div class="panel-heading">
+                    <div class="panel-heading-wrap">
+                        <h2 class="panel-title">位置信息</h2>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="position">
+                        <p>楼盘位置:</p>
+                        <div class="position-img">
+                            <img src="../images/weizhi.png" alt="占位图片">
+                        </div>
+                        <div class="change">
+                            <div class="change-position">
+                                <span>经度：</span>
+                                <input type="text">
+                            </div>
+                            <div class="change-position">
+                                <span>纬度：</span>
+                                <input type="text">
+                            </div>
+                            <div class="my-sbtn">
+                                <button class="btn-update">更新</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position">
+                        <p>售楼处位置:</p>
+                        <div class="position-img">
+                            <img src="../images/weizhi.png" alt="占位图片">
+                        </div>
+                        <div>
+                            <div class="change-position">
+                                <span>经度：</span>
+                                <input type="text">
+                            </div>
+                            <div class="change-position">
+                                <span>纬度：</span>
+                                <input type="text">
+                            </div>
+                            <div class="my-sbtn">
+                                <button class="btn-update">更新</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+</body>
+</html>

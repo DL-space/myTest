@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>icon</title>
+    <link rel="stylesheet" href="../css/hr.css">
+</head>
+<body>
+    <input type="hidden" value="2" class="hidden" />
+    <button class="btn">asdfasdf</button>
+    <span class="icon icon-edit"></span>
+    <span class="icon icon-organization"></span>
+    <span class="icon icon-folder"></span>
+    <span class="icon icon-other"></span>
+    <span class="icon icon-calendar"></span>
+    <span class="icon icon-p-user"></span>
+    <span class="icon icon-plus"></span>
+    <span class="icon icon-notice"></span>
+    <span class="icon icon-house"></span>
+    <span class="icon icon-position"></span>
+    <span class="icon icon-report"></span>
+    <span class="icon icon-tips"></span>
+    <span class="icon icon-setting"></span>
+    <span class="icon icon-warn"></span>
+    <span class="icon icon-ulist"></span>
+    <span class="icon icon-triangle"></span>
+    <span class="icon icon-user"></span>
+    <span class="icon icon-close"></span>
+    <span class="icon icon-addition"></span>
+    <span class="icon icon-delete"></span>
+    <span class="icon icon-search1"></span>
+    <span class="icon icon-more"></span>
+    <span class="icon icon-import"></span>
+    <span class="icon icon-export"></span>
+    <span class="icon icon-businesscard"></span>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script>
+        $(".btn").click(function() {
+            $(".hidden").val("89");
+            $(".hidden").trigger("change");
+        });
+        $(".hidden").change(function() {
+            alert($(this).val());
+        });
+    </script>
+</body>
+</html>

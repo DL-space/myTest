@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>结佣合同展示页</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active"><a href="#">结佣合同详情</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row row-jyht">
+                <div class="s2">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <!--楼盘-->
+                            <div class="v-box">
+                                <div class="hd">
+                                    <h2>华业东方玫瑰（住宅）</h2>
+                                    <div class="more">
+                                        <a href="#" class="link-gj link-remark">
+                                            <span class="ico icon-xz"></span>
+                                            新增补充合同
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bd">
+                                    <ul class="c-query">
+                                        <li class="rmk">
+                                            回款负责人：<span class="txt">张三-001</span>
+                                            <a href="#" class="change"><span class="ico icon-change"></span>修改回款负责人</a>
+                                        </li>
+                                        <li class="c-li-2">
+                                            合同时间：<span class="txt">2015-01-01至2016-01-01，2017-01-01至2018-01-01  </span>
+                                        </li>
+                                        <li>
+                                            合作方式：<span class="txt">直签</span>
+                                        </li>
+                                        <li>
+                                            合作方：<span class="txt">XXXXXXXXXX</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-jyht">
+                <div class="s2">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <!--合同-->
+                            <div class="v-box">
+                                <div class="bd">
+                                    <ul class="c-query">
+                                        <li class="rmk htbh">
+                                            合同编号：<span class="txt">002</span>
+                                            <a href="#" class="change"><span class="ico icon-change"></span>修改</a>
+                                        </li>
+                                        <li>
+                                            合同适用时间：<span class="txt">2016-01-01 至 2019-01-01</span>
+                                        </li>
+                                        <li>
+                                            成交确认关键节点：<span class="txt">网签</span>
+                                        </li>
+                                        <li>
+                                            佣金类型：<span class="txt">前置电商，后置返费</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-query">
+                                        <li>
+                                            电商金额：<span class="txt">24000元/套</span>
+                                        </li>
+                                        <li>
+                                            电商结佣分阶段情况：<span class="txt">分阶段结</span>
+                                        </li>
+                                        <li>
+                                            电商结佣阶段：<span class="txt">排号，认购，草签，网签</span>
+                                        </li>
+                                        <li>
+                                            排号刷电商：<span class="txt">1000元/套</span>
+                                        </li>
+                                        <li>
+                                            认购刷电商：<span class="txt">1000元/套</span>
+                                        </li>
+                                        <li>
+                                            草签刷电商：<span class="txt">1000元/套</span>
+                                        </li>
+                                        <li>
+                                            网签刷电商：<span class="txt">1000元/套</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-query">
+                                        <li>
+                                            返费金额算法：<span class="txt">按成交额点位结佣</span>
+                                        </li>
+                                        <li>
+                                            返费金额：<span class="txt">按房价的2%</span>
+                                        </li>
+                                        <li>
+                                            是否有垫佣：<span class="txt">是（垫佣打折比90% ）</span>
+                                        </li>
+                                        <li>
+                                            返费结算方式：<span class="txt">按批次结佣（次月5日）</span>
+                                        </li>
+                                        <li>
+                                            返费到账时长：<span class="txt">60天</span>
+                                        </li>
+                                        <li>
+                                            返费申请分阶段情况：<span class="txt">分阶段申请结</span>
+                                        </li>
+                                        <li>
+                                            返费申请阶段：<span class="txt">草签，网签，网签且全款到账（全款可分期3次）</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-query">
+                                        <li>
+                                            <span class="txt">草签返费20%</span>
+                                        </li>
+                                        <li>
+                                            <span class="txt">网签返费20%</span>
+                                        </li>
+                                        <li>
+                                            <span class="txt">网签且首付交齐返费20%</span>
+                                        </li>
+                                        <li>
+                                            <span class="txt">网签首付后提交完贷款资料返费20%</span>
+                                        </li>
+                                        <li>
+                                            <span class="txt">网签且贷款审批通过返费20%</span>
+                                        </li>
+                                        <li>
+                                            <span class="txt">网签且全款到账返费20%</span>
+                                        </li>
+                                        <li>
+                                            <span class="txt">全款分期第2次交钱返费20%</span>
+                                        </li>
+                                        <li>
+                                            <span class="txt">全款分期第3次交钱返费20%</span>
+                                        </li>
+                                        <li class="rmk">
+                                            该楼盘有跳点/跳佣：<span class="txt">这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX</span>
+                                        </li>
+                                        <li class="rmk">
+                                            该楼盘有其他特殊规则：<span class="txt">这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX</span>
+                                        </li>
+                                        <li class="htfj">
+                                            <div class="leb">合同附件：</div>
+                                            <div class="annexes">
+                                                <ul class="annexes-list">
+                                                        <li>
+                                                            <svg class="icon" aria-hidden="true">
+                                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-doc"></use>
+                                                            </svg>
+                                                            <div class="file-name">
+                                                                <span class="annexes-name">居里入职欢迎新.docx</span>
+                                                                <span class="annexes-size">(56.8K)</span>
+                                                            </div>
+                                                            <ul class="file-opt">
+                                                                <li><a class="file-down" href="#">下载</a></li>
+                                                                <li><a class="file-open" href="#">打开</a></li>
+                                                                <li><a class="file-preview" href="#">预览</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <svg class="icon" aria-hidden="true">
+                                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ppt"></use>
+                                                            </svg>
+                                                            <div class="file-name">
+                                                                <span class="annexes-name">居里入职欢迎新.ppt</span>
+                                                                <span class="annexes-size">(56.8K)</span>
+                                                            </div>
+                                                            <ul class="file-opt">
+                                                                <li><a class="file-down" href="#">下载</a></li>
+                                                                <li><a class="file-open" href="#">打开</a></li>
+                                                                <li><a class="file-preview" href="#">预览</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <svg class="icon" aria-hidden="true">
+                                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-pdf"></use>
+                                                            </svg>
+                                                            <div class="file-name">
+                                                                <span class="annexes-name">居里入职欢迎新.pdf</span>
+                                                                <span class="annexes-size">(56.8K)</span>
+                                                            </div>
+                                                            <ul class="file-opt">
+                                                                <li><a class="file-down" href="#">下载</a></li>
+                                                                <li><a class="file-open" href="#">打开</a></li>
+                                                                <li><a class="file-preview" href="#">预览</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <svg class="icon" aria-hidden="true">
+                                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xls"></use>
+                                                            </svg>
+                                                            <div class="file-name">
+                                                                <span class="annexes-name">居里入职欢迎新.xls</span>
+                                                                <span class="annexes-size">(56.8K)</span>
+                                                            </div>
+                                                            <ul class="file-opt">
+                                                                <li><a class="file-down" href="#">下载</a></li>
+                                                                <li><a class="file-open" href="#">打开</a></li>
+                                                                <li><a class="file-preview" href="#">预览</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-jyht">
+                <div class="s2">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <!--合同-->
+                            <div class="v-box">
+                                <div class="bd">
+                                    <ul class="c-query">
+                                        <li class="htbh">
+                                            合同编号：<span class="txt">001</span>
+                                            <a href="#" class="change"><span class="ico icon-change"></span>修改</a>
+                                        </li>
+                                        <li>
+                                            合同适用时间：<span class="txt">2016-01-01 至 2019-01-01</span>
+                                        </li>
+                                        <li>
+                                            成交确认关键节点：<span class="txt">网签</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-query">
+                                        <li class="htbh">
+                                            分类1
+                                        </li>
+                                        <li>
+                                            楼栋类型：<span class="txt">小高层，洋房</span>
+                                        </li>
+                                        <li>
+                                            楼栋号码：<span class="txt">4号楼，7号楼</span>
+                                        </li>
+                                        <li>
+                                            户型类型：<span class="txt">平层，复式</span>
+                                        </li>
+                                        <li>
+                                            户型居室：<span class="txt">三室一厅，四室一厅</span>
+                                        </li>
+                                        <li>
+                                            建筑面积：<span class="txt">大于等于60㎡</span>
+                                        </li>
+                                        <li>
+                                            佣金类型：<span class="txt">后置返费</span>
+                                        </li>
+                                        <li>
+                                            电商金额：<span class="txt">24000元/套</span>
+                                        </li>
+                                        <li>
+                                            电商结佣分阶段情况：<span class="txt">分阶段结</span>
+                                        </li>
+                                        <li>
+                                            电商结佣阶段：<span class="txt">排号，认购，草签，网签</span>
+                                        </li>
+                                        <li>
+                                            排号刷电商：<span class="txt">1000元/套</span>
+                                        </li>
+                                        <li>
+                                            认购刷电商：<span class="txt">1000元/套</span>
+                                        </li>
+                                        <li>
+                                            草签刷电商：<span class="txt">1000元/套</span>
+                                        </li>
+                                        <li>
+                                            网签刷电商：<span class="txt">1000元/套</span>
+                                        </li>
+                                        <li class="fgx"></li>
+                                    </ul>
+                                    <ul class="c-query">
+                                        <li class="htbh">
+                                            分类2
+                                        </li>
+                                        <li>
+                                            楼栋类型：<span class="txt">小高层，洋房</span>
+                                        </li>
+                                        <li>
+                                            楼栋号码：<span class="txt">4号楼，7号楼</span>
+                                        </li>
+                                        <li>
+                                            户型类型：<span class="txt">平层，复式</span>
+                                        </li>
+                                        <li>
+                                            户型居室：<span class="txt">三室一厅，四室一厅</span>
+                                        </li>
+                                        <li>
+                                            建筑面积：<span class="txt">大于等于60㎡</span>
+                                        </li>
+                                        <li>
+                                            佣金类型：<span class="txt">后置返费</span>
+                                        </li>
+                                        <li>
+                                            返费金额算法：<span class="txt">按成交额点位结佣</span>
+                                        </li>
+                                        <li>
+                                            返费金额：<span class="txt">按房价的2%</span>
+                                        </li>
+                                        <li>
+                                            是否有垫佣：<span class="txt">是（垫佣打折比90% ）</span>
+                                        </li>
+                                        <li>
+                                            返费结算方式：<span class="txt">按批次结佣（次月5日）</span>
+                                        </li>
+                                        <li>
+                                            返费到账时长：<span class="txt">60天</span>
+                                        </li>
+                                        <li>
+                                            返费申请分阶段情况：<span class="txt">分阶段申请结</span>
+                                        </li>
+                                        <li class="c-li-2">
+                                            返费申请阶段：<span class="txt">草签，网签，网签且全款到账（全款可分期3次）</span>
+                                        </li>
+                                        <li>
+                                            <span class="txt">草签返费20%</span>
+                                        </li>
+                                        <li>
+                                            <span class="txt">网签返费20%</span>
+                                        </li>
+                                        <li>
+                                            <span class="txt">网签且首付交齐返费20%</span>
+                                        </li>
+                                        <li>
+                                            <span class="txt">网签首付后提交完贷款资料返费20%</span>
+                                        </li>
+                                        <li>
+                                            <span class="txt">网签且贷款审批通过返费20%</span>
+                                         </li>
+                                        <li>
+                                            <span class="txt">网签且全款到账返费20% </span>
+                                        </li>
+                                        <li>
+                                            <span class="txt">全款分期第2次交钱返费20%</span>
+                                        </li>
+                                        <li>
+                                            <span class="txt">全款分期第3次交钱返费20%</span>
+                                        </li>
+                                        <li class="rmk">
+                                            该楼盘有跳点/跳佣：<span class="txt">这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX</span>
+                                        </li>
+                                        <li class="rmk">
+                                            该楼盘有其他特殊规则：<span class="txt">这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX这里是详情XXXXXX</span>
+                                        </li>
+                                        <li class="htfj">
+                                            <div class="leb">合同附件：</div>
+                                            <div class="annexes">
+                                                <ul class="annexes-list">
+                                                    <li>
+                                                        <svg class="icon" aria-hidden="true">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-doc"></use>
+                                                        </svg>
+                                                        <div class="file-name">
+                                                            <span class="annexes-name">居里入职欢迎新.docx</span>
+                                                            <span class="annexes-size">(56.8K)</span>
+                                                        </div>
+                                                        <ul class="file-opt">
+                                                            <li><a class="file-down" href="#">下载</a></li>
+                                                            <li><a class="file-open" href="#">打开</a></li>
+                                                            <li><a class="file-preview" href="#">预览</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <svg class="icon" aria-hidden="true">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ppt"></use>
+                                                        </svg>
+                                                        <div class="file-name">
+                                                            <span class="annexes-name">居里入职欢迎新.ppt</span>
+                                                            <span class="annexes-size">(56.8K)</span>
+                                                        </div>
+                                                        <ul class="file-opt">
+                                                            <li><a class="file-down" href="#">下载</a></li>
+                                                            <li><a class="file-open" href="#">打开</a></li>
+                                                            <li><a class="file-preview" href="#">预览</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <svg class="icon" aria-hidden="true">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-pdf"></use>
+                                                        </svg>
+                                                        <div class="file-name">
+                                                            <span class="annexes-name">居里入职欢迎新.pdf</span>
+                                                            <span class="annexes-size">(56.8K)</span>
+                                                        </div>
+                                                        <ul class="file-opt">
+                                                            <li><a class="file-down" href="#">下载</a></li>
+                                                            <li><a class="file-open" href="#">打开</a></li>
+                                                            <li><a class="file-preview" href="#">预览</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <svg class="icon" aria-hidden="true">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xls"></use>
+                                                        </svg>
+                                                        <div class="file-name">
+                                                            <span class="annexes-name">居里入职欢迎新.xls</span>
+                                                            <span class="annexes-size">(56.8K)</span>
+                                                        </div>
+                                                        <ul class="file-opt">
+                                                            <li><a class="file-down" href="#">下载</a></li>
+                                                            <li><a class="file-open" href="#">打开</a></li>
+                                                            <li><a class="file-preview" href="#">预览</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/iconfont.js"></script>
+<!--音频播放器-->
+<script src="../js/audioplayer.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/v5.2.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>新增App消息通知</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/albums-detail2.css">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">带看记录</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--新增消息通知-->
+                    <div class="panel panel-app-msg-add">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">新增通知</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="c-query c-query-edit">
+                                <li>
+                                    <div class="th">城市：</div>
+                                    <div class="td">
+                                        <select class="form-control">
+                                            <option value="0">请选择</option>
+                                            <option value="1">北京</option>
+                                            <option value="2">上海</option>
+                                            <option value="3">天津</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="rmk">
+                                    <div class="th">标题：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text" placeholder="标题内容是纯文字"/>
+                                    </div>
+                                </li>
+                                <li class="rmk">
+                                    <div class="th">正文：</div>
+                                    <div class="td td-edit">
+                                        <textarea class="form-control" style="height: 240px;" placeholder="正文内容可以放文字、超链接，而且可以换行噢"></textarea>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="msg-upload clearfix">
+                                <div class="btn-upload clearfix">
+                                    <div class="up-area">
+                                        <input class="input-file" type="file">
+                                        <button class="btn-input-file">上传图片</button>
+                                    </div>
+                                    <p class="tips">最多5张，当前<span class="num">1/5</span>。</p>
+                                </div>
+                                <div class="c-upload-pic">
+                                    <div class="td">
+                                        <ul class="c-upload-pic-list">
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-1-small.jpg" rel="../images/order-manage/img-1-big.jpg">
+                                                <span class="c-ico-del">删除</span>
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-2-small.jpg" rel="../images/order-manage/img-2-big.jpg">
+                                                <span class="c-ico-del">删除</span>
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-3-small.jpg" rel="../images/order-manage/img-3-big.jpg">
+                                                <span class="c-ico-del">删除</span>
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-4-small.jpg" rel="../images/order-manage/img-4-big.jpg">
+                                                <span class="c-ico-del">删除</span>
+                                            </li>
+                                            <li>
+                                                <img class="c-thumb-pic" src="../images/order-manage/img-5-small.jpg" rel="../images/order-manage/img-5-big.jpg">
+                                                <span class="c-ico-del">删除</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-area">
+                                <a class="btn btn-default" href="#">取消</a>
+                                <a class="btn btn-primary" href="#">提交</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<!--弹出层-->
+<div id="v-fade"></div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/albums-detail2.js"></script>
+</body>
+</html>

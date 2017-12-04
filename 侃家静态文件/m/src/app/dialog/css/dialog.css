@@ -1,0 +1,504 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, li, ol {
+    list-style: none;
+}
+/*提问弹窗*/
+.dialog {
+    width: 8.4rem;
+    padding: 0.4rem;
+    background-color: #f4f4f4;
+    border-radius: 0.11rem;
+}
+.dialog-bd {
+    font-size: 0;
+}
+.dialog .dialog-text, .dialog .ipt {
+    clear: both;
+    box-sizing: border-box;
+    font-size: 0.37rem;
+    width: 100%;
+    border: 1px solid #d8d8d8;
+}
+.dialog .ipt::-webkit-input-placeholder, .dialog .dialog-text::-webkit-input-placeholder {
+    color: #999;
+}
+.dialog .dialog-text {
+    height: 2.5rem;
+    line-height: 1.5;
+    margin-bottom: 0.4rem;
+    padding: 0.26rem;
+}
+.dialog .ipt {
+    height: 1.17rem;
+    line-height: 1.16rem;
+    padding: 0 0.26rem;
+}
+.dialog .error-tips {
+    font-size: 0.2667rem;
+    color: #ff6e72;
+    height: 0.4rem;
+    line-height: 0.4rem;
+}
+.dialog .error-tips span {
+    display: none;
+}
+.dialog .btn-find {
+    width: 100%;
+    opacity: 0.7;
+}
+.dialog3 {
+    position: relative;
+    box-sizing: border-box;
+    width: 8rem;
+    margin: 0 auto;
+    padding: 0.53rem;
+    border-radius: 5px;
+    background: #fff;
+}
+.layui-layer{
+    border-radius: 5px!important;
+}
+.dialog3 .dialog-body .app-tips{
+    text-align: center;
+}
+.dialog3 .dialog-body .app-tips .ico-success{
+    display: inline-block;
+    width: 1.34rem;
+    height: 1.34rem;
+    background: url("../images/ico-success.png") no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 0.3rem;
+}
+.dialog3 .dialog-body .app-tips .title{
+    font-size: 0.48rem;
+    color: #6ad1b4;
+    margin-bottom: 0.18rem;
+}
+.dialog3 .dialog-body .app-tips .msg{
+    width: 100%;
+    line-height: 0.56rem;
+    font-size: 0.4rem;
+    color: #666;
+    margin: 0 auto 0.48rem;
+    overflow: hidden;
+}
+.dialog3 .look-house{
+    margin-bottom: 0.45rem;
+}
+.dialog3 .look-house .look-house-msg{
+    font-size: 0.32rem;
+    color: #888;
+    margin-bottom: 0.26rem;
+}
+.dialog3 .look-house .tr {
+    margin-bottom: .26rem;
+}
+.dialog3 .look-house .tr.on .ico-triangle{
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+}
+.dialog3 .look-house .input-area{
+    position: relative;
+}
+.dialog3 .look-house .input-area .ipt {
+    box-sizing: border-box;
+    width: 100%;
+    height: 1.06rem;
+    line-height: 1.06rem;
+    padding: 0 .36rem;
+    font-size: .34rem;
+    color: #bbb;
+    text-align: left;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+    overflow: hidden;
+    cursor: pointer;
+}
+.dialog3 .look-house .input-area .ico-triangle{
+    display: inline-block;
+    position: absolute;
+    right: 0.4rem;
+    top: 0.48rem;
+    width: 0.34rem;
+    height: 0.17rem;
+    background: url("../images/ico-more-down9.png") no-repeat;
+    background-size: 100% 100%;
+}
+.dialog3 .look-house .dropdown-list{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-height: 3.46rem;
+    font-size: 0.34rem;
+    color: #666;
+    margin-top: 1px;
+    padding-top: 0.2rem;
+    border: solid 1px #e6e6e6;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+    overflow-y: scroll;
+    z-index: 10;
+}
+.dialog3 .look-house .dropdown-list li{
+    height: 0.64rem;
+    line-height: 0.64rem;
+}
+.dialog3 .dialog-btn-commit{
+    width: 4rem;
+    height: 1.06rem;
+    line-height: 1rem;
+    font-size: 0.45rem;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    background-color: #48b3e2;
+    cursor: pointer;
+}
+.dialog3 .download-app{
+    text-align: center;
+    padding: 0.4rem 0 0.53rem 0;
+    border: solid 1px #e6e6e6;
+}
+.dialog3 .download-app .download-msg{
+    font-size: 0.32rem;
+    color: #888;
+    margin-bottom: 0.32rem;
+}
+.dialog3 .download-app .download-img{
+    display: block;
+    width: 6.29rem;
+    height: 1.48rem;
+    margin: 0 auto 0.52rem;
+}
+.dialog3 .download-app .ico-download-app{
+    float: left;
+    margin: 0.24rem 0.21rem 0 0.71rem;
+    width: 0.42rem;
+    height: 0.45rem;
+    background: url("../images/ico-download-app9.png") no-repeat;
+    background-size: 100% 100%;
+}
+.dialog3 .download-app .txt{
+    float: left;
+}
+/*close*/
+.dialog3 .close-dialog {
+    position: absolute;
+    top: -1rem;
+    right: 2px;
+}
+.dialog3 .close-dialog a {
+    display: block;
+    width: .53rem;
+    height: .53rem;
+    background: url("../images/ico-close-layer2.png") no-repeat;
+    background-size: 100% 100%;
+}
+.dialog3 .close-dialog .line {
+    width: 2px;
+    background: #fff;
+    color: #fff;
+    height: .5rem;
+    margin: 0 0 0 0.24rem;
+}
+.layui-layer-page .layui-layer-content{
+    overflow: inherit!important;
+}
+/*弹窗*/
+.dialog6 {
+    width: 8rem;
+    padding: 0.66rem;
+    background-color: #fff;
+    border-radius: 0.11rem;
+    box-sizing: border-box;
+}
+.dialog6 .dialog-bd {
+    font-size: 0;
+}
+.dialog6 .dialog-text, .dialog6 .ipt {
+    clear: both;
+    box-sizing: border-box;
+    font-size: 0.37rem;
+    width: 100%;
+    border: 1px solid #d8d8d8;
+    overflow: hidden;
+}
+.dialog6 .ipt::-webkit-input-placeholder, .dialog6 .dialog-text::-webkit-input-placeholder {
+    color: #999;
+}
+.dialog6 .dialog-text {
+    height: 4rem;
+    line-height: 1.5;
+    margin-bottom: 0.4rem;
+    padding: 0.26rem;
+}
+.dialog6 .ipt {
+    height: 1.17rem;
+    padding: 0 0.26rem;
+    border-radius: 4px;
+}
+.dialog6 .error-tips {
+    font-size: 0.2667rem;
+    color: #ff6e72;
+    height: 0.4rem;
+    line-height: 0.4rem;
+}
+.dialog6 .error-tips span {
+    display: none;
+}
+.dialog6 .btn-find{
+    width: 100%;
+    border-radius: 4px;
+}
+.dialog6 .btn-find[disabled] {
+    opacity: 0.7;
+}
+
+.dialog6 .title{
+    font-size: 0.48rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 0.4rem;
+}
+.dialog6 .text{
+    font-size: 0.32rem;
+    color: #666;
+    line-height: 0.4rem;
+    text-align: center;
+    margin-bottom: 0.4rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+}
+.dialog6 .text-imp{
+    font-size: 0.4rem;
+    color: #666;
+    line-height: 0.53rem;
+    text-align: center;
+    margin-bottom: 0.4rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+}
+.dialog6 .ico-success {
+    display: block;
+    width: 1.34rem;
+    height: 1.34rem;
+    background: url("../images/ico-success.png") no-repeat;
+    background-size: 100% 100%;
+    margin:0 auto 0.4rem;
+}
+.dialog6 .look-house {
+    margin-bottom: 0.4rem;
+}
+.dialog6 .look-house .tr {
+    margin-bottom: 0.26rem;
+}
+.dialog6 .look-house .input-area {
+    position: relative;
+}
+.dialog6 .look-house .input-area .ico-triangle {
+    display: inline-block;
+    position: absolute;
+    right: 0.4rem;
+    top: 0.48rem;
+    width: 0.34rem;
+    height: 0.17rem;
+    background: url("../images/ico-more-down9.png") no-repeat;
+    background-size: 100% 100%;
+}
+.dialog6 .look-house .tr.on .ico-triangle {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.dialog6 .look-house .input-area .ipt {
+    box-sizing: border-box;
+    width: 100%;
+    height: 1.06rem;
+    line-height: 1.06rem;
+    padding: 0 .36rem;
+    font-size: 0.34rem;
+    color: #bbb;
+    text-align: left;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+    overflow: hidden;
+    cursor: pointer;
+}
+.dialog6 .look-house .dropdown-list {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-height: 3.46rem;
+    font-size: 0.34rem;
+    color: #666;
+    margin-top: 1px;
+    padding-top: 0.2rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+    overflow-y: scroll;
+    z-index: 10;
+}
+.dialog6 .look-house .dropdown-list li {
+    height: 0.64rem;
+    line-height: 0.64rem;
+    text-align: center;
+}
+/*红包样式*/
+.dialog8{
+    width: 8rem;
+    padding: .82rem 0 .45rem;
+    background: url("../images/red-packet01.png") no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+.dialog8 .dialog-hd .title,.dialog8 .dialog-hd p{
+    font-size:.346rem;
+    color: #fffc00 ;
+}
+.dialog8 .dialog-hd .title{
+    margin-bottom: .53rem;
+}
+.dialog8 .title span{
+    margin: 0 .13rem;
+    display: inline-block;
+    width: .53rem;
+    height: .666rem;
+    line-height: .666rem;
+    text-align: center;
+    color: #e85045;
+    background: #fff;
+}
+.dialog8 .dialog-bd .text-imp{
+    margin-bottom: .3rem;
+    font-size: .3rem;
+    color: #fff;
+}
+.dialog8 .ipt{
+    color: #e85045;
+}
+.dialog8 .error-tips {
+    font-size: 0.2667rem;
+    color: #ff6e72;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    margin-bottom: .26rem;
+}
+.dialog8 .error-tips span{
+    display: none;
+    font-size:.26rem;
+    color: #FFFC00;
+}
+.dialog8 .dialog-bd{
+    text-align: center;
+}
+.dialog8 .dialog-bd .btn-find{
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: .34rem;
+    background: #fffe94;
+    border-radius: 50%;
+    color: #e85045 ;
+}
+.dialog8 .dialog-bd .ipt{
+    margin-bottom: .133rem;
+    width: 6.66rem;
+    height: .8rem;
+    font-size: .32rem;
+    padding: 0 .26rem;
+    color: #333333;
+    border: none;
+    border-radius: 4px;
+}
+.dialog8 .dialog-bd .ipt::-webkit-input-placeholder{
+    color: #e85045;
+}
+.dialog8 .ipt {
+    height: 1.17rem;
+    padding: 0 0.26rem;
+    border-radius: 4px;
+}
+.dialog9{
+    padding:.9rem .66rem .6rem;
+    background: url("../images/red-packet02.png") no-repeat;
+    background-size: 100% 100%;
+}
+.dialog9 .dialog-bd .text-imp{
+    margin-bottom: .26rem;
+}
+.dialog9 .dialog-hd .title{
+    margin-bottom: .4rem;
+}
+.dialog9 .look-house .input-area .ipt{
+    height: .8rem;
+    line-height: .8rem;
+    font-size: .32rem;
+    color: #e85045;
+}
+.dialog9 .dialog-bd .ipt{
+    margin-bottom: 0;
+}
+.dialog9 .look-house .input-area .ico-triangle{
+    display: inline-block;
+    position: absolute;
+    right: .4rem;
+    top: .35rem;
+    width: .28rem;
+    height: .17rem;
+    background: url(../images/iocn_triangle.png) no-repeat;
+    background-size: 100% 100%;
+}
+.dialog9 .dialog-bd .btn-find{
+    background: #fffc00;
+    box-shadow: 2px 2px 4px 0 rgba(232,80,69,0.60);
+}
+.layui-layer{
+    background: none!important;
+}
+.form-area > li{
+    margin-bottom: 0.4rem;
+}
+.form-area > li.v-code{
+    height: 1.17rem;
+    margin-bottom: 0;
+    padding: 0 0.26rem;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+}
+.form-area > li.v-code .ipt{
+    float: left;
+    width: 3.8rem;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+}
+.form-area > li.v-code .btn-get{
+    float: right;
+    text-align: center;
+    color: #888;
+    font-size: 0.35rem;
+    width: 2.133rem;
+    height: 0.6667rem;
+    line-height: 0.6667rem;
+    margin-top: 0.26rem;
+    border: 1px solid #c6c6c6;
+    overflow: hidden;
+}

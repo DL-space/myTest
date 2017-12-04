@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="wap-font-scale" content="no">
+    <title>网站新上户 系统自动生成的订单</title>
+    <!--<script src="../js/flexible.js"></script>-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    <div class="page-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo fl">
+                        <h1><a href="#"><img src="../images/logo.png" alt="欢迎登录侃家网业务管理系统！"></a></h1>
+                        <p class="info">欢迎登录侃家网业务管理系统！</p>
+                    </div>
+                    <div class="h-user">
+                        <div class="link-user">
+                            <span class="ico ico-user"></span>
+
+                            <div class="dropdown-menu-user">
+                                <span class="triangle"></span>
+                                <ul class="dropdown-menu">
+                                    <li class="first"><a href="#"><span class="dropdown-text">个人设置</span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">我的消息</span><span
+                                        class="badge myMsg"></span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">待办事项</span><span
+                                        class="badge toMsg"></span></a></li>
+                                    <li><a href="#"><span class="dropdown-text">个人资料</span></a>
+                                    </li>
+                                    <li class="last"><a href="#"><span class="dropdown-text">退出</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ucenter">
+                            <span class="uname">徐立</span>
+                            <span class="fgx">|</span>
+                            <a class="logout" href="#">退出</a>
+                        </div>
+                        <div class="schedule"><a href="#">我的日程</a></div>
+                        <div class="tips-msg">
+                            <a class="ico ico-msg" href="#" title="消息">
+                            <span class="dot">28</span>
+                        </a>
+                            <a class="ico ico-todo" href="#" title="待办事项">
+                            <span class="dot">65</span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-all-wrap">
+        <div class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">咨询师业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">订单列表</a></li>
+                                <li><a href="#">关键带看管理列表</a></li>
+                                <li><a href="#">联系列表</a></li>
+                                <li><a href="#">带看列表</a></li>
+                                <li><a href="#">认购列表页</a></li>
+                                <li><a href="#">签约列表页</a></li>
+                                <li><a href="#">首次联系延迟列表</a></li>
+                                <li class="last"><a href="#">匹配工具</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">客服业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">客服订单管理</a></li>
+                                <li><a href="#">客服联系记录管理</a></li>
+                                <li><a href="#">带看评价管理</a></li>
+                                <li><a href="#">带看评价回访纪录</a></li>
+                                <li><a href="#">已关闭订单跟进</a></li>
+                                <li><a href="#">已关闭订单跟进回访记录</a></li>
+                                <li><a href="#">无效客户标记</a></li>
+                                <li><a href="#">400电话订单匹配</a></li>
+                                <li><a href="#">评价追回页面</a></li>
+                                <li class="last"><a href="#">投诉列表页</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">驻场拓展业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">报备管理</a></li>
+                                <li><a href="#">楼盘备案管理</a></li>
+                                <li><a href="#">合作方管理</a></li>
+                                <li><a href="#">楼盘拓展相关字段维护</a></li>
+                                <li><a href="#">添加报备</a></li>
+                                <li><a href="#">代理中介管理</a></li>
+                                <li class="last"><a href="#">代理客户订单管理</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">服务管理员业务管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">服务评价管理</a></li>
+                                <li><a href="#">咨询师带看情况查询</a></li>
+                                <li class="last"><a href="#">咨询师审核</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">系统管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">权限管理</a></li>
+                                <li><a href="#">员工管理</a></li>
+                                <li><a href="#">员工作息时间管理</a></li>
+                                <li><a href="#">咨询师分配管理</a></li>
+                                <li><a href="#">客服分配管理</a></li>
+                                <li><a href="#">用户管理</a></li>
+                                <li><a href="#">短信模板管理</a></li>
+                                <li><a href="#">咨询师分组管理</a></li>
+                                <li><a href="#">员工操作日志</a></li>
+                                <li><a href="#">批量转移咨询师客户</a></li>
+                                <li><a href="#">联系取消</a></li>
+                                <li><a href="#">雨燕档案</a></li>
+                                <li><a href="#">上线日志管理</a></li>
+                                <li><a href="#">城市管理</a></li>
+                                <li class="last"><a href="#">字段常量配置</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">报表管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">客户数据分析</a></li>
+                                <li><a href="#">网站统计报表</a></li>
+                                <li><a href="#">周期维度统计</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">咨询师延迟录入统计</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">联系延迟录入统计</a></li>
+                                        <li><a href="#">带看延迟录入统计</a></li>
+                                        <li><a href="#">咨询师分配时间到首次联系时间超时统计列表</a></li>
+                                        <li><a href="#">咨询师认购超时统计列表</a></li>
+                                        <li class="last"><a href="#">咨询师签约超时统计列表</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">核算日月周年报表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算统计</a></li>
+                                        <li><a href="#">咨询师组核算统计</a></li>
+                                        <li><a href="#">楼盘核算统计</a></li>
+                                        <li><a href="#">区域核算统计</a></li>
+                                        <li class="last"><a href="#">渠道核算统计</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">核算汇总表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算统计汇总表</a></li>
+                                        <li><a href="#">咨询师组核算统计汇总表</a></li>
+                                        <li><a href="#">楼盘核算统计汇总表</a></li>
+                                        <li><a href="#">区域核算统计汇总表</a></li>
+                                        <li><a href="#">渠道核算统计汇总表</a></li>
+                                        <li class="last"><a href="#">资金核算报表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">咨询师满意度表格</a></li>
+                                <li><a href="#">咨询师组满意度表格</a></li>
+                                <li><a href="#">带看评价统计列表</a></li>
+                                <li><a href="#">已关闭订单客户评价统计列表</a></li>
+                                <li><a href="#">成交订单服务评价统计列表</a></li>
+                                <li><a href="#">咨询师楼盘点评统计</a></li>
+                                <li><a href="#">客服首次联系超时统计报表</a></li>
+                                <li><a href="#">带看回访客服联系记录</a></li>
+                                <li><a href="#">已关闭订单回访客服联系记录</a></li>
+                                <li><a href="#">咨询师订单详情统计列表</a></li>
+                                <li><a href="#">咨询师正常订单统计列表</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">客户业务详情统计</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">客户线索详情统计列表</a></li>
+                                        <li><a href="#">客户上户详情统计列表</a></li>
+                                        <li><a href="#">带看详情统计报表</a></li>
+                                        <li><a href="#">认购详情统计列表</a></li>
+                                        <li class="last"><a href="#">签约详情统计列表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">客户留电行为详情列表</a></li>
+                                <li><a href="#">消息详情列表</a></li>
+                                <li><a href="#">定时消息详情列表</a></li>
+                                <li><a href="#">重新分配记录报表</a></li>
+                                <li><a href="#">短信记录报表</a></li>
+                                <li><a href="#">订单恢复报表</a></li>
+                                <li><a href="#">线索质量统计报表</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">业务统计报表</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">楼盘业务统计</a></li>
+                                        <li><a href="#">渠道业务统计报表</a></li>
+                                        <li><a href="#">喜报业务统计报表</a></li>
+                                        <li><a href="#">咨询师首次正式认购核算报表</a></li>
+                                        <li><a href="#">区域业务统计</a></li>
+                                        <li class="last"><a href="#">订单业务详情统计报表</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">楼盘数据维护审核记录</a></li>
+                                <li><a href="#">高端客户详情统计列表</a></li>
+                                <li><a href="#">评价追回客服记录统计</a></li>
+                                <li><a href="#">楼盘信息报表</a></li>
+                                <li><a href="#">市场部咨询合作详情</a></li>
+                                <li class="dropdown-submenu last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">咨询师订单核算详情</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">咨询师核算详情-签约</a></li>
+                                        <li><a href="#">咨询师核算详情-上户</a></li>
+                                        <li><a href="#">咨询师核算详情-带看</a></li>
+                                        <li class="last"><a href="#">咨询师核算详情-认购</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">楼盘管理<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="first"><a href="#">楼盘数据维护</a></li>
+                                <li><a href="#">楼盘点评列表</a></li>
+                                <li><a href="#">楼盘商务信息管理</a></li>
+                                <li><a href="#">区域报告楼盘定位</a></li>
+                                <li><a href="#">楼盘维护提醒设置</a></li>
+                                <li><a href="#">楼盘列表</a></li>
+                                <li><a href="#">市调测评</a></li>
+                                <li class="dropdown-submenu last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">楼盘审核</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">楼盘点评审核</a></li>
+                                        <li class="last"><a href="#">楼盘数据维护审核</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">楼盘字典<span class="caret"></span> </a>
+                            <ul class="dropdown-menu menu-top">
+                                <li class="dropdown-submenu first last">
+                                    <a href="#" class="dropdown-toggle" tabindex="-1" data-toggle="dropdown">楼盘管理</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="first"><a href="#">全部楼盘列表</a></li>
+                                        <li><a href="#">创建楼盘</a></li>
+                                        <li class="last"><a href="#">价格维护</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--意见反馈入口-->
+                <div class="nav-feedback">
+                    <span class="btn-feedback">不爽就点我</span>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <ul class="breadcrumb">
+                            <li><a href="#">首页</a></li>
+                            <li><a href="#">订单列表</a></li>
+                            <li class="active">创建订单</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 p-kf-order">
+                        <!--基本信息-->
+                        <div class="panel panel-kf-jbxx">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">基本信息</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <!--基本信息条件-->
+                                <ul class="c-query kf-base-query">
+                                    <li class="kf-q-col-1">
+                                        <div class="th"><label class="required"></label>首要联系方式：</div>
+                                        <div class="td">
+                                            <input type="text" class="form-control" placeholder="13500000000" disabled/>
+                                        </div>
+                                    </li>
+                                    <li class="kf-q-col-2">
+                                        <div class="th">姓名：</div>
+                                        <div class="td">
+                                            <input type="text" class="form-control" placeholder="精确搜索" />
+                                        </div>
+                                    </li>
+                                    <li class="kf-q-col-3">
+                                        <div class="th"><label class="required"></label>性别：</div>
+                                        <div class="td sel-area">
+                                            <div class="sel"><input type="radio" class="dx">男</div>
+                                            <div class="sel"><input type="radio" class="dx">女</div>
+                                        </div>
+                                    </li>
+                                    <li class="kf-q-col-4">
+                                        <div class="th">备用联系方式：</div>
+                                        <div class="td">
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="c-query kf-base-query">
+                                    <li class="kf-q-col-1">
+                                        <div class="th"><label class="required"></label>设备来源：</div>
+                                        <div class="td">
+                                            <input type="text" class="form-control" placeholder="PC" disabled>
+                                        </div>
+                                    </li>
+                                    <li class="kf-q-col-2">
+                                        <div class="th"><label class="required"></label>联系途径：</div>
+                                        <div class="td sel-area">
+                                            <input type="text" class="form-control" placeholder="微信预约看房" disabled>
+                                        </div>
+                                    </li>
+                                    <li class="kf-q-col-4">
+                                        <div class="th"><label class="required"></label>了解途径：</div>
+                                        <div class="td">
+                                            <input type="text" class="form-control" placeholder="百度PC" disabled>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--需求信息-->
+                        <div class="panel panel-kf-xqxx">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">需求信息</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="fm-add-area tsxq">
+                                    <li>
+                                        <div class="th">留电口信息：</div>
+                                        <div class="td">关注开盘时间-<a href="#">五和万科长阳天地(非合作)</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="th">特殊需求字段：</div>
+                                        <div class="td">位置2号线；总价600-800万；类型住宅</div>
+                                    </li>
+                                </ul>
+                                <ul class="fm-add-area kf-xq-query">
+                                    <li>
+                                        <div class="th">面积需求：</div>
+                                        <div class="td">
+                                            <input type="text" class="form-control ipt-range" />
+
+                                            <div class="txt">m²</div>
+                                            <div class="link-add">添加范围</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">总价预算：</div>
+                                        <div class="td">
+                                            <input type="text" class="form-control ipt-range">
+
+                                            <div class="txt">万元</div>
+                                            <div class="link-add">添加范围</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">首付预算：</div>
+                                        <div class="td sel-area">
+                                            <input type="text" class="form-control ipt-range">
+
+                                            <div class="txt">万元</div>
+                                            <div class="link-add">添加范围</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="kf-gzqy">
+                                    <div class="th">关注区域：</div>
+                                    <div class="td">
+                                        <div class="sel-vsb">
+                                            <div class="sel"><input type="checkbox" class="dx">全选</div>
+                                            <div class="sel"><input type="checkbox" class="dx">房山</div>
+                                            <div class="sel"><input type="checkbox" class="dx">大兴</div>
+                                            <div class="sel"><input type="checkbox" class="dx">通州</div>
+                                            <div class="sel"><input type="checkbox" class="dx">顺义</div>
+                                            <div class="sel"><input type="checkbox" class="dx">昌平</div>
+                                            <div class="sel"><input type="checkbox" class="dx">朝阳</div>
+                                            <div class="sel"><input type="checkbox" class="dx">海淀</div>
+                                            <div class="sel"><input type="checkbox" class="dx">门头沟</div>
+                                            <div class="sel"><input type="checkbox" class="dx">石景山</div>
+                                            <div class="sel"><input type="checkbox" class="dx">丰台</div>
+                                            <div class="sel"><input type="checkbox" class="dx">东城</div>
+                                        </div>
+                                        <div class="sel-vsb sel-vsb-more">
+                                            <div class="sel"><input type="checkbox" class="dx">西城</div>
+                                            <div class="sel"><input type="checkbox" class="dx">密云</div>
+                                            <div class="sel"><input type="checkbox" class="dx">怀柔</div>
+                                            <div class="sel"><input type="checkbox" class="dx">平谷</div>
+                                            <div class="sel"><input type="checkbox" class="dx">延庆</div>
+                                            <div class="sel"><input type="checkbox" class="dx">燕郊</div>
+                                        </div>
+                                        <div class="opt-show-more">打开隐藏区域</div>
+                                    </div>
+                                </div>
+                                <div class="kf-inter">
+                                    <div class="th">客户感兴趣楼盘：</div>
+                                    <div class="td">
+                                        <input class="form-control" type="text" />
+                                    </div>
+                                </div>
+                                <div class="kf-link-list">
+                                    <div class="th">感兴趣楼盘链接：</div>
+                                    <div class="td">
+                                        <ul class="lp-list">
+                                            <li><a href="#">五和万科长阳天地(非合作)</a></li>
+                                            <li><a href="#">华业东方玫瑰(合作)</a></li>
+                                            <li><a href="#">帅府园二期(非合作)</a></li>
+                                            <li><a href="#">五和万科长阳天地(非合作)</a></li>
+                                            <li><a href="#">华业东方玫瑰(合作)</a></li>
+                                            <li><a href="#">帅府园二期(非合作)</a></li>
+                                            <li><a href="#">五和万科长阳天地(非合作)</a></li>
+                                            <li><a href="#">华业东方玫瑰(合作)</a></li>
+                                            <li><a href="#">帅府园二期(非合作)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="kf-link-list kf-link-jp">
+                                    <div class="th">竟品楼盘：</div>
+                                    <div class="td">
+                                        <ul class="lp-list">
+                                            <li><a href="#">五和万科长阳天地(非合作)</a></li>
+                                            <li><a href="#">华业东方玫瑰(合作)</a></li>
+                                            <li><a href="#">帅府园二期(非合作)</a></li>
+                                            <li><a href="#">五和万科长阳天地(非合作)</a></li>
+                                            <li><a href="#">华业东方玫瑰(合作)</a></li>
+                                            <li><a href="#">帅府园二期(非合作)</a></li>
+                                            <li><a href="#">五和万科长阳天地(非合作)</a></li>
+                                            <li><a href="#">华业东方玫瑰(合作)</a></li>
+                                            <li><a href="#">帅府园二期(非合作)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="fm-remark">
+                                    <div class="th">备注：</div>
+                                    <div class="td">
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <ul class="kf-order-select">
+                                    <li>
+                                        <div class="th"><label class="required"></label>是否进行分配：</div>
+                                        <div class="td sel-area">
+                                            <div class="sel"><input type="radio" name="distribution" class="dx" value="1">是</div>
+                                            <div class="sel"><input type="radio" name="distribution" class="dx" value="2">否</div>
+                                            <div class="select-box not-allocated">
+                                                <div class="txt">
+                                                    <span class="text">请选择不分配原因</span>
+                                                    <span class="ico ico-triangle"></span>
+                                                </div>
+                                                <ul class="dropdown-menu2">
+                                                    <li><span class="lb-txt">联系不成功</span>
+                                                        <ul class="dropdown-menu2">
+                                                            <li><span class="lb-txt">首次联系不成功</span></li>
+                                                            <li><span class="lb-txt">二次联系不成功</span></li>
+                                                            <li><span class="lb-txt">三次联系不成功</span></li>
+                                                            <li><span class="lb-txt">四次联系不成功</span></li>
+                                                            <li><span class="lb-txt">最终挂断拒接</span></li>
+                                                            <li><span class="lb-txt">最终占线/无人接听</span></li>
+                                                            <li><span class="lb-txt">最终关机/停机</span></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><span class="lb-txt">非房产用户</span>
+                                                        <ul class="dropdown-menu2">
+                                                            <li><span class="lb-txt">咨询合作</span></li>
+                                                            <li><span class="lb-txt">房产中介</span></li>
+                                                            <li><span class="lb-txt">骚扰</span></li>
+                                                            <li><span class="lb-txt">错号</span></li>
+                                                            <li><span class="lb-txt">最终空号</span></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><span class="lb-txt">不关注新房</span>
+                                                        <ul class="dropdown-menu2">
+                                                            <li><span class="lb-txt">非本人注册</span></li>
+                                                            <li><span class="lb-txt">无意点错</span></li>
+                                                            <li><span class="lb-txt">关注二手房</span></li>
+                                                            <li><span class="lb-txt">关注租房</span></li>
+                                                            <li><span class="lb-txt">已买房售后</span></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><span class="lb-txt">拒绝服务</span>
+                                                        <ul class="dropdown-menu2">
+                                                            <li><span class="lb-txt">不愿留信息</span></li>
+                                                            <li><span class="lb-txt">只找售楼处</span></li>
+                                                            <li><span class="lb-txt">只关注售罄</span></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><span class="lb-txt">达不到上户标准</span>
+                                                        <ul class="dropdown-menu2">
+                                                            <li><span class="lb-txt">资质不足</span></li>
+                                                            <li><span class="lb-txt">预算不足</span></li>
+                                                            <li><span class="lb-txt">超区域</span></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><span class="lb-txt">内部原因</span>
+                                                        <ul class="dropdown-menu2">
+                                                            <li><span class="lb-txt">城市分配错误</span></li>
+                                                            <li><span class="lb-txt">当地方言</span></li>
+                                                            <li><span class="lb-txt">系统测试</span></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sign-chance">
+                                        <div class="th"><label class="required"></label>是否还有机会上户：</div>
+                                        <div class="td sel-area">
+                                            <div class="sel"><input type="radio" name="sign-chance" class="dx">是</div>
+                                            <div class="sel"><input type="radio" name="sign-chance" class="dx">否</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="th">是否来自当期主推楼盘：</div>
+                                        <div class="td">是</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--按钮-->
+                        <div class="btn-area">
+                            <input type="button" class="btn btn-primary" value="取消">
+                            <input type="button" class="btn btn-success" value="确定">
+                        </div>
+                        <div class="cotact-list">
+                            <div class="tit"><span class="btn-ck">历史跟进记录</span></div>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th class="th1">修改时间</th>
+                                    <th class="th2">操作人</th>
+                                    <th>修改后的备注内容</th>
+                                </tr>
+                                <tr>
+                                    <td>2017-01-01 08:23:29</td>
+                                    <td>张三 022</td>
+                                    <td colspan="3">啊啊啊</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><span>暂时还没有历史跟进记录。</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer">
+            <p class="copyright"><span>北京高因科技有限公司</span><span>www.comjia.com</span></p>
+        </div>
+    </div>
+</body>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/kf-order.js"></script>
+</html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="wap-font-scale" content="no">
+    <title>楼盘问答列表页</title>
+    <script src="../js/flexible.js"></script>
+    <link rel="stylesheet" href="../css/swiper-3.4.0.min.css">
+    <link rel="stylesheet" href="../css/module-new.css">
+    <link rel="stylesheet" href="../css/ask.css">
+</head>
+<body>
+@@include("../app/topbar/topbar.html")
+<div class="container container-ask">
+    @@include("../app/header/header.html")
+    <div class="center">
+        <!--banner-->
+        <div class="ask-banner">
+            <div class="pic"><img src="../images/img-ask-banner.png" alt=""/></div>
+            <h4>买房，从问问开始</h4>
+            <p>居理承诺：所有问答均来自真实用户和咨询师购房交流过程中</p>
+        </div>
+        <!--搜索-->
+        <div class="search-wrap">
+            <div class="search">
+                <div class="ipt-area">
+                    <input type="text" class="ipt" placeholder="搜你想知道的问题、答案">
+                </div>
+                <div class="btn-area">
+                    <button type="button" class="btn-search"><span class="icon icon-search"></span></button>
+                </div>
+            </div>
+        </div>
+        <!--问答列表-->
+        <div class="ask-list">
+            <!--检索条件-->
+            <div class="filter">
+                <div class="swiper-container swiper-nav">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide on">全部</div>
+                        <div class="swiper-slide spe">有图</div>
+                        <div class="swiper-slide">流程解答</div>
+                        <div class="swiper-slide">购房资质</div>
+                        <div class="swiper-slide">政策解读</div>
+                        <div class="swiper-slide">政策解读</div>
+                        <div class="swiper-slide">政策解读</div>
+                    </div>
+                </div>
+                <div class="right-mask"></div>
+            </div>
+            <div class="ask-item-wrap" style="display: none;">
+                <div class="ask-item">
+                    <div class="ask-tit">
+                        <a href="#">
+                            <span class="ico ico-ask">问</span>
+
+                            <div class="ask-tit-wrap">
+                                <h4>给我一个亿，我能不能买了天安门，如果不能，能不能买故宫，或者颐和园？或者颐和园？</h4>
+
+                                <div class="ask-info">
+                                    <div class="asker-info">
+                                        <div class="asker">王先生</div>
+                                        <div class="project-budget">300-500万预算</div>
+                                    </div>
+                                    <div class="ask-source">来自6分钟前电话咨询</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ask-con">
+                        <a href="#"><span class="ico ico-ask">答</span></a>
+
+                        <div class="ask-answer">
+                            <a href="#">
+                                <div class="ask-detail">
+                                    <div class="pic">
+                                        <img src="../images/img-news.jpg" alt=""/>
+                                    </div>
+                                    <div class="text">
+                                        给我一个亿，我能不能买了天安门，如果不能，能不能买故宫给我一个亿，我能不能买了天安门，如果不能，能不能买故宫给我一个亿，我能不能买了天安门，如果不能，能不能买故宫
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="interactive">
+                                <!--回答者信息-->
+                                <div class="answerer">
+                                    <div class="pic"><img src="../images/img-consultant.jpg" alt=""/></div>
+                                    <div class="name">赵之媛</div>
+                                    <div class="edu">毕业于东北农业大学毕业于东北农业大学毕业于东北农业大学</div>
+                                </div>
+                                <!--赞-->
+                                <div class="zan" style="display: none;">
+                                    <img src="../images/ico-like.png" class="ico-like" alt=""/>
+                                    <span class="num">有用(20)</span>
+                                </div>
+                                <div class="zan">
+                                    <img src="../images/icon_like.gif" class="ico-like ico-zan-nc" alt=""/>
+                                    <span class="num">有用(20)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ask-item">
+                    <div class="ask-tit">
+                        <a href="#">
+                            <span class="ico ico-ask">问</span>
+
+                            <div class="ask-tit-wrap">
+                                <h4>给我一个亿，我能不能买了天安门，如果不能，能不能买故宫，或者颐和园？或者颐和园？</h4>
+
+                                <div class="ask-info">
+                                    <div class="asker-info">
+                                        <div class="asker">王先生</div>
+                                        <div class="project-budget">300-500万预算</div>
+                                    </div>
+                                    <div class="ask-source">来自6分钟前电话咨询</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ask-con">
+                        <a href="#"><span class="ico ico-ask">答</span></a>
+
+                        <div class="ask-answer">
+                            <a href="#">
+                                <div class="ask-detail">
+                                    <div class="pic">
+                                        <img src="../images/img-news.jpg" alt=""/>
+                                    </div>
+                                    <div class="text">
+                                        给我一个亿，我能不能买了天安门，如果不能，能不能买故宫给我一个亿，我能不能买了天安门，如果不能，能不能买故宫给我一个亿，我能不能买了天安门，如果不能，能不能买故宫
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="interactive">
+                                <!--回答者信息-->
+                                <div class="answerer">
+                                    <div class="pic"><img src="../images/img-consultant.jpg" alt=""/></div>
+                                    <div class="name">赵之媛</div>
+                                    <div class="edu">毕业于东北农业大学毕业于东北农业大学毕业于东北农业大学</div>
+                                </div>
+                                <!--赞-->
+                                <div class="zan">
+                                    <img src="../images/ico-like.png" class="ico-like" alt=""/>
+                                    <span class="num">有用(20)</span>
+                                </div>
+                                <div class="zan" style="display: none;">
+                                    <img src="../images/icon_like.gif" class="ico-like ico-zan-nc" alt=""/>
+                                    <span class="num">有用(20)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ask-item">
+                    <div class="ask-tit">
+                        <a href="#">
+                            <span class="ico ico-ask">问</span>
+
+                            <div class="ask-tit-wrap">
+                                <h4>给我一个亿，我能不能买了天安门，如果不能，能不能买故宫，或者颐和园？或者颐和园？</h4>
+
+                                <div class="ask-info">
+                                    <div class="asker-info">
+                                        <div class="asker">王先生</div>
+                                        <div class="project-budget">300-500万预算</div>
+                                    </div>
+                                    <div class="ask-source">来自6分钟前电话咨询</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ask-con">
+                        <a href="#"><span class="ico ico-ask">答</span></a>
+
+                        <div class="ask-answer">
+                            <a href="#">
+                                <div class="ask-detail">
+                                    <div class="pic pic-b">
+                                        <img src="../images/img-video.jpg" alt=""/>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="interactive">
+                                <!--回答者信息-->
+                                <div class="answerer">
+                                    <div class="pic"><img src="../images/img-consultant.jpg" alt=""/></div>
+                                    <div class="name">赵之媛</div>
+                                    <div class="edu">毕业于东北农业大学毕业于东北农业大学毕业于东北农业大学</div>
+                                </div>
+                                <!--赞-->
+                                <div class="zan">
+                                    <img src="../images/ico-like.png" class="ico-like" alt=""/>
+                                    <span class="num">有用(20)</span>
+                                </div>
+                                <div class="zan" style="display: none;">
+                                    <img src="../images/icon_like.gif" class="ico-like ico-zan-nc" alt=""/>
+                                    <span class="num">有用(20)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ask-item">
+                    <div class="ask-tit">
+                        <a href="#">
+                            <span class="ico ico-ask">问</span>
+
+                            <div class="ask-tit-wrap">
+                                <h4>给我一个亿，我能不能买了天安门，如果不能，能不能买故宫，或者颐和园？或者颐和园？</h4>
+
+                                <div class="ask-info">
+                                    <div class="asker-info">
+                                        <div class="asker">王先生</div>
+                                        <div class="project-budget">300-500万预算</div>
+                                    </div>
+                                    <div class="ask-source">来自6分钟前电话咨询</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ask-con">
+                        <a href="#"><span class="ico ico-ask">答</span></a>
+
+                        <div class="ask-answer">
+                            <a href="#">
+                                <div class="ask-detail">
+                                    <div class="text">
+                                        给我一个亿，我能不能买了天安门，如果不能，能不能买故宫给我一个亿，我能不能买了天安门，如果不能，能不能买故宫给我一个亿，我能不能买了天安门，如果不能，能不能买故宫
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="interactive">
+                                <!--回答者信息-->
+                                <div class="answerer">
+                                    <div class="pic"><img src="../images/img-consultant.jpg" alt=""/></div>
+                                    <div class="name">赵之媛</div>
+                                    <div class="edu">毕业于东北农业大学毕业于东北农业大学毕业于东北农业大学</div>
+                                </div>
+                                <!--赞-->
+                                <div class="zan">
+                                    <img src="../images/ico-like.png" class="ico-like" alt=""/>
+                                    <span class="num">有用(20)</span>
+                                </div>
+                                <div class="zan" style="display: none;">
+                                    <img src="../images/icon_like.gif" class="ico-like ico-zan-nc" alt=""/>
+                                    <span class="num">有用(20)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ask-item">
+                    <div class="ask-tit">
+                        <a href="#">
+                            <span class="ico ico-ask">问</span>
+
+                            <div class="ask-tit-wrap">
+                                <h4>给我一个亿，我能不能买了天安门，如果不能，能不能买故宫，或者颐和园？或者颐和园？</h4>
+
+                                <div class="ask-info">
+                                    <div class="asker-info">
+                                        <div class="asker">王先生</div>
+                                        <div class="project-budget">300-500万预算</div>
+                                    </div>
+                                    <div class="ask-source">来自6分钟前电话咨询</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ask-con">
+                        <a href="#"><span class="ico ico-ask">答</span></a>
+
+                        <div class="ask-answer">
+                            <a href="#">
+                                <div class="ask-detail">
+                                    <div class="pic">
+                                        <img src="../images/img-news.jpg" alt=""/>
+                                    </div>
+                                    <div class="text">
+                                        给我一个亿，我能不能买了天安门，如果不能，能不能买故宫给我一个亿，我能不能买了天安门，如果不能，能不能买故宫给我一个亿，我能不能买了天安门，如果不能，能不能买故宫
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="interactive">
+                                <!--回答者信息-->
+                                <div class="answerer">
+                                    <div class="pic"><img src="../images/img-consultant.jpg" alt=""/></div>
+                                    <div class="name">赵之媛</div>
+                                    <div class="edu">毕业于东北农业大学毕业于东北农业大学毕业于东北农业大学</div>
+                                </div>
+                                <!--赞-->
+                                <div class="zan">
+                                    <img src="../images/ico-like.png" class="ico-like" alt=""/>
+                                    <span class="num">有用(20)</span>
+                                </div>
+                                <div class="zan" style="display: none;">
+                                    <img src="../images/icon_like.gif" class="ico-like ico-zan-nc" alt=""/>
+                                    <span class="num">有用(20)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ask-item">
+                    <div class="ask-tit">
+                        <a href="#">
+                            <span class="ico ico-ask">问</span>
+
+                            <div class="ask-tit-wrap">
+                                <h4>给我一个亿，我能不能买了天安门，如果不能，能不能买故宫，或者颐和园？或者颐和园？</h4>
+
+                                <div class="ask-info">
+                                    <div class="asker-info">
+                                        <div class="asker">王先生</div>
+                                        <div class="project-budget">300-500万预算</div>
+                                    </div>
+                                    <div class="ask-source">来自6分钟前电话咨询</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ask-con">
+                        <a href="#"><span class="ico ico-ask">答</span></a>
+
+                        <div class="ask-answer">
+                            <a href="#">
+                                <div class="ask-detail">
+                                    <div class="pic">
+                                        <img src="../images/img-news.jpg" alt=""/>
+                                    </div>
+                                    <div class="text">
+                                        给我一个亿，我能不能买了天安门，如果不能，能不能买故宫给我一个亿，我能不能买了天安门，如果不能，能不能买故宫给我一个亿，我能不能买了天安门，如果不能，能不能买故宫
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="interactive">
+                                <!--回答者信息-->
+                                <div class="answerer">
+                                    <div class="pic"><img src="../images/img-consultant.jpg" alt=""/></div>
+                                    <div class="name">赵之媛</div>
+                                    <div class="edu">毕业于东北农业大学毕业于东北农业大学毕业于东北农业大学</div>
+                                </div>
+                                <!--赞-->
+                                <div class="zan">
+                                    <img src="../images/ico-like.png" class="ico-like" alt=""/>
+                                    <span class="num">有用(20)</span>
+                                </div>
+                                <div class="zan" style="display: none;">
+                                    <img src="../images/icon_like.gif" class="ico-like ico-zan-nc" alt=""/>
+                                    <span class="num">有用(20)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ask-item">
+                    <div class="ask-tit">
+                        <a href="#">
+                            <span class="ico ico-ask">问</span>
+
+                            <div class="ask-tit-wrap">
+                                <h4>给我一个亿，我能不能买了天安门，如果不能，能不能买故宫，或者颐和园？或者颐和园？</h4>
+
+                                <div class="ask-info">
+                                    <div class="asker-info">
+                                        <div class="asker">王先生</div>
+                                        <div class="project-budget">300-500万预算</div>
+                                    </div>
+                                    <div class="ask-source">来自6分钟前电话咨询</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ask-con">
+                        <a href="#"><span class="ico ico-ask">答</span></a>
+
+                        <div class="ask-answer">
+                            <a href="#">
+                                <div class="ask-detail">
+                                    <div class="pic">
+                                        <img src="../images/img-news.jpg" alt=""/>
+                                    </div>
+                                    <div class="text">
+                                        给我一个亿，我能不能买了天安门，如果不能，能不能买故宫给我一个亿，我能不能买了天安门，如果不能，能不能买故宫给我一个亿，我能不能买了天安门，如果不能，能不能买故宫
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="interactive">
+                                <!--回答者信息-->
+                                <div class="answerer">
+                                    <div class="pic"><img src="../images/img-consultant.jpg" alt=""/></div>
+                                    <div class="name">赵之媛</div>
+                                    <div class="edu">毕业于东北农业大学毕业于东北农业大学毕业于东北农业大学</div>
+                                </div>
+                                <!--赞-->
+                                <div class="zan">
+                                    <img src="../images/ico-like.png" class="ico-like" alt=""/>
+                                    <span class="num">有用(20)</span>
+                                </div>
+                                <div class="zan" style="display: none;">
+                                    <img src="../images/icon_like.gif" class="ico-like ico-zan-nc" alt=""/>
+                                    <span class="num">有用(20)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ask-item">
+                    <div class="ask-tit">
+                        <a href="#">
+                            <span class="ico ico-ask">问</span>
+
+                            <div class="ask-tit-wrap">
+                                <h4>给我一个亿，我能不能买了天安门，如果不能，能不能买故宫，或者颐和园？或者颐和园？</h4>
+
+                                <div class="ask-info">
+                                    <div class="asker-info">
+                                        <div class="asker">王先生</div>
+                                        <div class="project-budget">300-500万预算</div>
+                                    </div>
+                                    <div class="ask-source">来自6分钟前电话咨询</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ask-con">
+                        <a href="#"><span class="ico ico-ask">答</span></a>
+
+                        <div class="ask-answer">
+                            <a href="#">
+                                <div class="ask-detail">
+                                    <div class="pic">
+                                        <img src="../images/img-news.jpg" alt=""/>
+                                    </div>
+                                    <div class="text">
+                                        给我一个亿，我能不能买了天安门，如果不能，能不能买故宫给我一个亿，我能不能买了天安门，如果不能，能不能买故宫给我一个亿，我能不能买了天安门，如果不能，能不能买故宫
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="interactive">
+                                <!--回答者信息-->
+                                <div class="answerer">
+                                    <div class="pic"><img src="../images/img-consultant.jpg" alt=""/></div>
+                                    <div class="name">赵之媛</div>
+                                    <div class="edu">毕业于东北农业大学毕业于东北农业大学毕业于东北农业大学</div>
+                                </div>
+                                <!--赞-->
+                                <div class="zan">
+                                    <img src="../images/ico-like.png" class="ico-like" alt=""/>
+                                    <span class="num">有用(20)</span>
+                                </div>
+                                <div class="zan" style="display: none;">
+                                    <img src="../images/icon_like.gif" class="ico-like ico-zan-nc" alt=""/>
+                                    <span class="num">有用(20)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--没有查询结果信息提示-->
+        <div class="no-result">
+            <div class="pic">
+                <img src="../images/img-ask-noresult.png" alt="没有找到相关问答"/>
+            </div>
+            <div class="no-result-tips">
+                <h4>没有找到相关问答</h4>
+                <p>点击按钮查看更多优质问答~</p>
+            </div>
+            <div class="btn-area">
+                <button class="btn btn-find">查看更多问答</button>
+            </div>
+        </div>
+        <!--页面底部去提问入口-->
+        <div class="go-ask" style="display: none">
+            <p>没有更多本楼盘的问答啦，去看看大家在问什么?</p>
+
+            <div class="btn-area">
+                <button class="btn btn-find">去看看</button>
+            </div>
+        </div>
+        <!--页面悬浮提问入口-->
+        <div class="float-ask" style="display: none">
+            <button class="btn btn-ask"><span class="icon icon-plus"></span>我要问问</button>
+        </div>
+    </div>
+    <!--返回按钮-->
+    <div class="return-top">
+        <span class="icon icon-return-top"></span>
+    </div>
+    <!--提示弹层-->
+    <div class="prop-msg-ask">
+        <div class="msg-content">
+            <span class="ico ico-msg">提示信息</span>
+
+            <div class="text">
+                已为你找到<span class="num">2</span>条"<span class="msg-filter">青浦买房</span>"相关问答
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/lib/jquery-2.1.4.min.js"></script>
+<script src="../js/lib/swiper.min.js"></script>
+<script src="../js/lib/jquery.pin.min.js"></script>
+<script src="../js/j-ui.js"></script>
+<script src="../js/ask.js"></script>
+<script>
+    $(function () {
+        $(function () {
+            $(document).on("click", ".swiper-slide-active", function () {
+                showPropAskMsg("北京别墅", 2);
+            });
+
+            $(document).on("click", ".zan", function (e) {
+                var _item = $(event.target || event.srcElement);
+                if (_item.parents(".zan").children(".ico-like").hasClass("ico-zan-nc")) {
+                    _item.parents(".zan").children(".ico-like").attr("src", "../images/ico-like.png");
+                    _item.parents(".zan").children(".ico-like").removeClass("ico-zan-nc");
+                } else {
+                    _item.parents(".zan").children(".ico-like").attr("src", "../images/icon_like.gif")
+                    _item.parents(".zan").children(".ico-like").addClass("ico-zan-nc");
+                }
+            })
+        });
+    });
+</script>
+</body>
+</html>

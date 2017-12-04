@@ -1,0 +1,100 @@
+@charset "UTF-8";
+.feedback, .feedback li {
+    clear: both;
+    overflow: hidden;
+}
+.feedback {
+    width: 580px;
+    margin: 0 auto;
+    padding-top: 70px;
+    overflow: hidden;
+}
+.feedback-form li {
+    margin-bottom: 25px;
+}
+.feedback-form li.txt {
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+}
+.feedback-form li .label {
+    clear: both;
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.feedback-form li .ipt {
+    color: #999;
+    width: 551px;
+    border-radius: 3px;
+    border-right: 1px solid #e4e4e4;
+}
+.feedback-form li textarea.ipt {
+    height: 158px;
+    line-height: 22px;
+    overflow-y: auto;
+}
+.feedback-form .require{
+    color: #f5564c;
+    padding-left: 2px;
+}
+.feedback-form li.v-code {
+    margin-bottom: 15px;
+}
+.feedback-form li.v-code .ipt, .feedback-form li.v-code .v-pic {
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.feedback-form li.v-code .ipt {
+    width: 96px;
+}
+.feedback-form li.v-code .v-pic {
+    width: 70px;
+    height: 22px;
+    padding-top: 5px;
+}
+.change-v-code {
+    float: left;
+    color: #0074c1;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+}
+.error-tips {
+    clear: both;
+    color: #f20;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.feedback .btn-area {
+    text-align: center;
+}
+.btn-confirm {
+    width: 96px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 auto;
+    background-color: #0074c1;
+    border-radius: 2px;
+}
+.btn-confirm:hover {
+    background-color: #157cc1;
+}
+.feedback-error .btn-area .btn-confirm,.feedback-error .btn-area .tips {
+    float: left;
+}
+.feedback-error .btn-area .btn-confirm {
+    margin-right: 20px;
+}
+.feedback-error .btn-area .tips {
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+}
+.feedback-error .btn-area .tips a {
+    color: #0074c1;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>楼盘参考信息BD页面－编辑页面</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row row-crumbs">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">项目信息</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-detail">
+                        <div class="title">
+                            <h2>楼盘参考信息-华业东方玫瑰</h2>
+                        </div>
+                        <div class="content">
+                            <!--基本信息-->
+                            <div class="panel panel-business-info">
+                                <div class="panel-heading">
+                                    <div class="panel-heading-wrap">
+                                        <h2 class="panel-title">基本信息</h2>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="form-mod">
+                                        <li>
+                                            <div class="th th-mul">楼盘相关资料(电子+纸质)：</div>
+                                            <div class="td">
+                                                <input class="form-control" type="text"/>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="th">开发商：</div>
+                                            <div class="td">
+                                                <input class="form-control" type="text"/>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="th">产品业态：</div>
+                                            <div class="td">
+                                                <input class="form-control" type="text"/>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="th">均价：</div>
+                                            <div class="td">
+                                                <input class="form-control" type="text"/>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="th">总价：</div>
+                                            <div class="td">
+                                                <input class="form-control" type="text"/>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="th">有无燃气：</div>
+                                            <div class="td">
+                                                <input class="form-control" type="text"/>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="th">层高：</div>
+                                            <div class="td">
+                                                <input class="form-control" type="text"/>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="th">销售状态：</div>
+                                            <div class="td">
+                                                <input class="form-control" type="text"/>
+                                            </div>
+                                        </li>
+                                        <li class="remark">
+                                            <div class="th">户型和面积：</div>
+                                            <div class="td">
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </li>
+                                        <li class="remark">
+                                            <div class="th">在售楼栋：</div>
+                                            <div class="td">
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </li>
+                                        <li class="remark">
+                                            <div class="th">备注：</div>
+                                            <div class="td">
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--项目优惠-->
+                            <div class="panel panel-project-discount">
+                                <div class="panel-heading">
+                                    <div class="panel-heading-wrap">
+                                        <h2 class="panel-title">项目优惠</h2>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="form-mod">
+                                        <li class="remark">
+                                            <div class="th">团购优惠：</div>
+                                            <div class="td">
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </li>
+                                        <li class="remark">
+                                            <div class="th">项目折扣：</div>
+                                            <div class="td">
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </li>
+                                        <li class="remark">
+                                            <div class="th">其他优惠：</div>
+                                            <div class="td">
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--项目地址-->
+                            <div class="panel panel-project-address">
+                                <div class="panel-heading">
+                                    <div class="panel-heading-wrap">
+                                        <h2 class="panel-title">项目地址</h2>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="form-mod">
+                                        <li class="remark">
+                                            <div class="th">售楼处地址：</div>
+                                            <div class="td">
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </li>
+                                        <li class="remark">
+                                            <div class="th">楼盘地址：</div>
+                                            <div class="td">
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="btn-area">
+                                <input class="btn btn-default" type="button" value="重置">
+                                <input class="btn btn-primary" type="button" value="搜索">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/bd.js"></script>
+</body>
+</html>

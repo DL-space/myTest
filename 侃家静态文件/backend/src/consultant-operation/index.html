@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>我的战绩</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/b-module.css"/>
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="area area-crumbs">
+                <ul class="breadcrumb">
+                    <li><a href="#">首页</a></li>
+                    <li class="active">带看记录</li>
+                </ul>
+            </div>
+            <div class="area">
+                <div class="b-col">
+                    <!--个人信息-->
+                    <div class="b-user-info">
+                        <div class="b-user-wrap">
+                            <!--奖牌-->
+                            <div class="medal">
+                                <div class="pic">
+                                    <img src="../images/img-jp.png" alt="奖牌"/>
+                                </div>
+                                <div class="text">不屈白银</div>
+                            </div>
+                            <ul class="b-consult-info">
+                                <li>
+                                    <p class="consult-h">袁雪婷</p>
+                                    <p>咨询师五组（英顺组）</p>
+                                </li>
+                                <li>
+                                    <p>财富值</p>
+                                    <p class="consult-h">3893.56 万元</p>
+                                </li>
+                                <li>
+                                    <p>视察楼盘</p>
+                                    <p class="consult-h">98 次</p>
+                                </li>
+                                <li>
+                                    <p>客户拜访</p>
+                                    <p class="consult-h">123834 次</p>
+                                </li>
+                                <li>
+                                    <p>我的排名</p>
+                                    <ul class="consult-rank">
+                                        <li>
+                                            <div class="th">组内排行</div>
+                                            <div class="td">10</div>
+                                        </li>
+                                        <li>
+                                            <div class="th">城市内排行</div>
+                                            <div class="td">123</div>
+                                        </li>
+                                        <li>
+                                            <div class="th">侃家排行</div>
+                                            <div class="td">1234</div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-col2">
+                    <ul class="b-tab-nav">
+                        <li class="on"><a href="index.html">排行榜</a></li>
+                        <li><a href="honor-wall.html">荣誉墙</a></li>
+                        <li><a href="task.html">任务中心</a></li>
+                    </ul>
+                    <!--段位排行-->
+                    <div class="b-box b-box-rank">
+                        <div class="hd">
+                            <ul class="b-box-nav">
+                                <li class="on"><a href="index.html">段位排行</a></li>
+                                <li><a href="data-rank.html">业务数据排行</a></li>
+                            </ul>
+                        </div>
+                        <div class="bd">
+                            <!--排行榜类型-->
+                            <div class="b-sort">
+                                <div class="rank-type">
+                                    <span class="txt">排行榜类型</span>
+                                    <select class="b-sel">
+                                        <option value="0">组内排行</option>
+                                        <option value="1">国内排行</option>
+                                        <option value="2">公司内部排行</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--排行明细-->
+                            <div class="b-table b-table-rank">
+                                <ul class="b-table-nav">
+                                    <li class="b-table-col">排名</li>
+                                    <li class="b-table-col2">咨询师</li>
+                                    <li class="b-table-col3">段位</li>
+                                    <li class="b-table-col4">成交金额</li>
+                                    <li class="b-table-col5">已有勋章</li>
+                                    <li class="b-table-col6">相关</li>
+                                </ul>
+                                <ul class="b-table-body">
+                                    <li>
+                                        <div class="b-table-col">
+                                            <span class="ico ico-crown">皇冠</span>
+                                            <span class="num">1</span>
+                                        </div>
+                                        <div class="b-table-col2">袁雪婷</div>
+                                        <div class="b-table-col3">
+                                            <div class="pic"><img src="../images/img-jp.png" alt=""/></div>
+                                        </div>
+                                        <div class="b-table-col4">4130.13万元</div>
+                                        <div class="b-table-col5">
+                                            <ul class="medal-list">
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                            </ul>
+                                        </div>
+                                        <div class="b-table-col6">
+                                            <a class="link-honor" href="#">荣誉详情</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="b-table-col">
+                                            <span class="num">2</span>
+                                        </div>
+                                        <div class="b-table-col2">袁雪婷婷（男）</div>
+                                        <div class="b-table-col3">
+                                            <div class="pic"><img src="../images/img-jp.png" alt=""/></div>
+                                        </div>
+                                        <div class="b-table-col4">41万元</div>
+                                        <div class="b-table-col5">
+                                            <ul class="medal-list">
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                            </ul>
+                                        </div>
+                                        <div class="b-table-col6">
+                                            <a class="link-honor" href="#">荣誉详情</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="b-table-col">
+                                            <span class="num">3</span>
+                                        </div>
+                                        <div class="b-table-col2">袁雪婷</div>
+                                        <div class="b-table-col3">
+                                            <div class="pic"><img src="../images/img-jp.png" alt=""/></div>
+                                        </div>
+                                        <div class="b-table-col4">4万元</div>
+                                        <div class="b-table-col5">
+                                            <ul class="medal-list">
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                            </ul>
+                                        </div>
+                                        <div class="b-table-col6">
+                                            <a class="link-honor" href="#">荣誉详情</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="b-table-col">
+                                            <span class="num">4</span>
+                                        </div>
+                                        <div class="b-table-col2">袁雪婷</div>
+                                        <div class="b-table-col3">
+                                            <div class="pic"><img src="../images/img-jp.png" alt=""/></div>
+                                        </div>
+                                        <div class="b-table-col4">4132.13万元</div>
+                                        <div class="b-table-col5">
+                                            <ul class="medal-list">
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                            </ul>
+                                        </div>
+                                        <div class="b-table-col6">
+                                            <a class="link-honor" href="#">荣誉详情</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="b-table-col">
+                                            <span class="num">5</span>
+                                        </div>
+                                        <div class="b-table-col2">袁雪婷</div>
+                                        <div class="b-table-col3">
+                                            <div class="pic"><img src="../images/img-jp.png" alt=""/></div>
+                                        </div>
+                                        <div class="b-table-col4">4132.13万元</div>
+                                        <div class="b-table-col5">
+                                            <ul class="medal-list">
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                            </ul>
+                                        </div>
+                                        <div class="b-table-col6">
+                                            <a class="link-honor" href="#">荣誉详情</a>
+                                        </div>
+                                    </li>
+                                    <li class="on">
+                                        <div class="b-table-col">
+                                            <span class="num">6</span>
+                                        </div>
+                                        <div class="b-table-col2">袁雪婷</div>
+                                        <div class="b-table-col3">
+                                            <div class="pic"><img src="../images/img-jp.png" alt=""/></div>
+                                        </div>
+                                        <div class="b-table-col4">4132.13万元</div>
+                                        <div class="b-table-col5">
+                                            <ul class="medal-list">
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                            </ul>
+                                        </div>
+                                        <div class="b-table-col6">
+                                            <a class="link-honor" href="#">荣誉详情</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="b-table-col">
+                                            <span class="num">7</span>
+                                        </div>
+                                        <div class="b-table-col2">袁雪婷</div>
+                                        <div class="b-table-col3">
+                                            <div class="pic"><img src="../images/img-jp.png" alt=""/></div>
+                                        </div>
+                                        <div class="b-table-col4">4132.13万元</div>
+                                        <div class="b-table-col5">
+                                            <ul class="medal-list">
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                            </ul>
+                                        </div>
+                                        <div class="b-table-col6">
+                                            <a class="link-honor" href="#">荣誉详情</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="b-table-col">
+                                            <span class="num">8</span>
+                                        </div>
+                                        <div class="b-table-col2">袁雪婷</div>
+                                        <div class="b-table-col3">
+                                            <div class="pic"><img src="../images/img-jp.png" alt=""/></div>
+                                        </div>
+                                        <div class="b-table-col4">4132.13万元</div>
+                                        <div class="b-table-col5">
+                                            <ul class="medal-list">
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                            </ul>
+                                        </div>
+                                        <div class="b-table-col6">
+                                            <a class="link-honor" href="#">荣誉详情</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="b-table-col">
+                                            <span class="num">9</span>
+                                        </div>
+                                        <div class="b-table-col2">袁雪婷</div>
+                                        <div class="b-table-col3">
+                                            <div class="pic"><img src="../images/img-jp.png" alt=""/></div>
+                                        </div>
+                                        <div class="b-table-col4">4132.13万元</div>
+                                        <div class="b-table-col5">
+                                            <ul class="medal-list">
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                            </ul>
+                                        </div>
+                                        <div class="b-table-col6">
+                                            <a class="link-honor" href="#">荣誉详情</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="b-table-col">
+                                            <span class="num">99</span>
+                                        </div>
+                                        <div class="b-table-col2">袁雪婷</div>
+                                        <div class="b-table-col3">
+                                            <div class="pic"><img src="../images/img-jp.png" alt=""/></div>
+                                        </div>
+                                        <div class="b-table-col4">4132.13万元</div>
+                                        <div class="b-table-col5">
+                                            <ul class="medal-list">
+                                                <li><img src="../images/img-medal.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                                <li><img src="../images/img-medal-default.png" alt=""/></li>
+                                            </ul>
+                                        </div>
+                                        <div class="b-table-col6">
+                                            <a class="link-honor" href="#">荣誉详情</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--查看更多-->
+                            <div class="b-look-more">
+                                <a href="#">查看下10条</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>创建/编辑户型</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/d-dictionary.css">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+    <!--为处理订单重新录入提示-->
+    <button class="btn btn-primary btn-reinput">重新输入订单</button>
+    <!--为处理订单重新录入提示-->
+    <div class="dialog-wrap dialog-order-reinput">
+        <div class="dialog dialog-reinput-order">
+            <div class="dialog-header">
+                <h3>消息提示</h3>
+                <a class="layer-close" href="javascript:void(0);">X</a>
+            </div>
+            <div class="dialog-body">
+                <div class="tips-text">
+                    <p>手机号［<em>18586653320</em>］已于 <em>2017-08-15 10:32:46</em> 生成 <em>未处理</em></p>
+                    <p><a href="#">编辑用户需求</a></p>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <button type="reset" class="btn btn-default layer-btn-reset">取消</button>
+                <button type="button" class="btn btn-primary btn-commit">确认</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/layer/layer.js"></script>
+    <script src="../js/common.js"></script>
+    <script>
+        $(".btn-reinput").click(function() {
+            popup($(".dialog-order-reinput").html(), 2, null, null, "", "500px");
+        });
+    </script>
+</body>
+</html>

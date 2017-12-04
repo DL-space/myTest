@@ -1,0 +1,81 @@
+body, .container{
+    background: #f4f1ea;
+}
+.center{
+    padding-bottom: 0;
+}
+.row-user {
+    padding: 0;
+}
+.tab-user .tab-nav {
+    margin-bottom: 0.26rem;
+    background-color: #fff;
+    border-top: 1px solid #d8d8d8;
+    overflow: hidden;
+}
+.tab-user .tab-nav li {
+    float: left;
+    text-align: center;
+    width: 5rem;
+    height: 0.53rem;
+    padding: 0.2rem 0;
+    color: #999;
+}
+.tab-user .tab-nav li .txt {
+    display: block;
+    font-size: 0.43rem;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+.tab-user .tab-nav li:nth-of-type(1) .txt {
+    border-right: 1px solid #e2e2e2;
+}
+.tab-user .tab-nav li.selected {
+    color: #48b3e2;
+}
+.tab-user .tab-con {
+    padding: 0 0.26rem;
+}
+.user-feedback {
+    position: relative;
+    margin-top: .8rem;
+}
+.user-feedback .owl {
+    position: absolute;
+    top: 0.13rem;
+    left: -0.08rem;
+    width: 1.53rem;
+    height: 2.0667rem;
+}
+.user-feedback .ipt {
+    float: left;
+    font-size: 0.35rem;
+    color: #333;
+    width: 100%;
+    height: 6.67rem;
+    line-height: 1.2;
+    padding: 0.26rem;
+    border: 1px solid #c5c5c5;
+    border-radius: 0.06rem;
+    background: #fff;
+    overflow-y: auto;
+}
+.user-feedback .ipt::-webkit-input-placeholder {
+    color: #bbb;
+    padding: 0.93rem 0 0 1.6rem;
+}
+.error-tips {
+    clear: both;
+    font-size: 0.2667rem;
+    color: #ff6e72;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    overflow: hidden;
+}
+.error-tips span {
+    display: none;
+}
+.user-feedback .btn-find {
+    width: 100%;
+}

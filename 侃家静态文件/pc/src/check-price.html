@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>查房价</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/check-price.css">
+</head>
+<body>
+<div class="container">
+    @@include("./app/header/header2.html")
+    <div class="center">
+        <div class="row row-search">
+            <div class="wrap">
+                @@include("./app/search/search.html")
+            </div>
+        </div>
+        <div class="row row-crumb">
+            @@include("./app/crumbs/crumb.html")
+        </div>
+        <div class="row row-area">
+            <div class="select-area">
+                <div class="sel-key">区域</div>
+                <div class="sel-item">
+                    <ul class="sel-value">
+                        <li class="checked">
+                            <a href="#">全部</a>
+                        </li>
+                        <li>
+                            <a href="#">朝阳</a>
+                        </li>
+                        <li>
+                            <a href="#">海淀</a>
+                        </li>
+                        <li>
+                            <a href="#">丰台</a>
+                        </li>
+                        <li>
+                            <a href="#">东城</a>
+                        </li>
+                        <li>
+                            <a href="#">西城</a>
+                        </li>
+                        <li>
+                            <a href="#">石景山</a>
+                        </li>
+                        <li>
+                            <a href="#">昌平</a>
+                        </li>
+                        <li>
+                            <a href="#">大兴</a>
+                        </li>
+                        <li>
+                            <a href="#">顺义</a>
+                        </li>
+                        <li>
+                            <a href="#">房山</a>
+                        </li>
+                        <li>
+                            <a href="#">门头沟</a>
+                        </li>
+                        <li>
+                            <a href="#">怀柔</a>
+                        </li>
+                        <li>
+                            <a href="#">密云</a>
+                        </li>
+                        <li>
+                            <a href="#">平谷</a>
+                        </li>
+                        <li>
+                            <a href="#">延庆</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-l">
+                <!--北京新房价趋势-->
+                <div class="box2 bom-trend">
+                    <div class="hd">
+                        <h2>北京新房价格趋势</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="compare">
+                            <div class="compare-item">11月均价<span class="num">37813元/㎡</span>，环比上月<span class="num num-up">+3%</span></div>
+                            <div class="compare-item">11月成交量<span class="num">7619套</span>，环比上月<span class="num num-down">-41%</span></div>
+                        </div>
+                        <div class="data-area">
+                            <img src="images/check-price/img-price-trend1.png" alt="价格趋势">
+                        </div>
+                        <div class="discuss">
+                            <div class="title">咨询师评市场</div>
+                            <p class="text">本月受政策影响，北京市商品房的成交量大幅下跌，环比下跌41.23%，成交均价有所回落；在成交量大减，成交均价只小幅回落，说明整体市场信心充足。</p>
+                        </div>
+                        <div class="price-find">
+                            <div class="select-area">
+                                <div class="sel-key">北京按价格找房</div>
+                                <div class="sel-item">
+                                    <ul class="sel-value">
+                                        <li class="checked">
+                                            <a href="#">100万以下</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">100-150万</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">150-200万</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">250-300万</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">300-500万</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">500-800万</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">800-1000万</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">1000万以上</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--免费咨询-->
+                <div class="box2 advice-free">
+                    <div class="pic">
+                        <img src="images/check-price/img-person.png" alt="">
+                    </div>
+                    <div class="input-area">
+                        <input class="ipt" value="专业咨询师帮您解答价格变动趋势" type="text">
+                        <button class="btn btn-cons"><span class="ico ico-phone">电话</span>免费咨询</button>
+                        <div class="tips error-tips">您输入的手机号码格式有误，请核对后重新输入</div>
+                        <div class="tips right-tips">留电成功</div>
+                    </div>
+                    <div class="free-number">
+                        <p class="hot-line">咨询热线：400-613-1279</p>
+                    </div>
+                </div>
+                <!--新房房价地图-->
+                <div class="box2 price-map">
+                    <div class="hd">
+                        <h2>北京5月新房房价地图</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="data-area">
+                            <img src="images/check-price/img-map.jpg" alt="房价地图">
+                        </div>
+                    </div>
+                </div>
+                <!--热门区域-->
+                <div class="box2 hot-area">
+                    <div class="hd">
+                        <h2>热门区域</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="hot-item">
+                            <div class="title">
+                                <h4>海淀新房价格趋势</h4>
+                            </div>
+                            <div class="content">
+                                <div class="data">
+                                    <div class="compare">
+                                        <div class="compare-item">11月均价<span class="num">37813元/㎡</span>，环比上月<span class="num num-down">-3%</span></div>
+                                    </div>
+                                    <div class="data-area">
+                                        <img src="images/check-price/img-price-trend2.png" alt="价格趋势">
+                                    </div>
+                                </div>
+                                <div class="hot-house">
+                                    <div class="area">
+                                        <h4>海淀热门楼盘</h4>
+                                        <div class="more">
+                                            <a href="#">更多海淀楼盘<span class="ico ico-more"></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="house-list">
+                                        <div class="item-hot">
+                                            <div class="pic-area">
+                                                <a href="#">
+                                                    <img src="images/check-price/img-hot-house.png" alt="hot-house">
+                                                    <span class="price">39,000元/平</span>
+                                                </a>
+                                            </div>
+                                            <div class="text">
+                                                <p class="np">
+                                                    <span class="name">金泰丽湾悦栖山山山</span>
+                                                </p>
+                                                <p class="nj">
+                                                    <span class="name">朝阳-亚奥奥奥</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="item-hot">
+                                            <div class="pic-area">
+                                                <a href="#">
+                                                    <img src="images/check-price/img-hot-house.png" alt="hot-house">
+                                                    <span class="price">39,000元/平</span>
+                                                </a>
+                                            </div>
+                                            <div class="text">
+                                                <p class="np">
+                                                    <span class="name">金泰丽湾悦栖山山山</span>
+                                                </p>
+                                                <p class="nj">
+                                                    <span class="name">朝阳-亚奥奥奥</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="item-hot">
+                                            <div class="pic-area">
+                                                <a href="#">
+                                                    <img src="images/check-price/img-hot-house.png" alt="hot-house">
+                                                    <span class="price">39,000元/平</span>
+                                                </a>
+                                            </div>
+                                            <div class="text">
+                                                <p class="np">
+                                                    <span class="name">金泰丽湾悦栖山山山</span>
+                                                </p>
+                                                <p class="nj">
+                                                    <span class="name">朝阳-亚奥奥奥</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hot-item">
+                            <div class="title">
+                                <h4>门头沟房价格趋势</h4>
+                            </div>
+                            <div class="content">
+                                <div class="data">
+                                    <div class="compare">
+                                        <div class="compare-item">11月均价<span class="num">37813元/㎡</span>，环比上月<span class="num num-down">-3%</span></div>
+                                    </div>
+                                    <div class="data-area">
+                                        <img src="images/check-price/img-price-trend2.png" alt="价格趋势">
+                                    </div>
+                                </div>
+                                <div class="hot-house">
+                                    <div class="area">
+                                        <h4>门头沟热门楼盘</h4>
+                                        <div class="more">
+                                            <a href="#">更多门头沟楼盘<span class="ico ico-more"></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="house-list">
+                                        <div class="item-hot">
+                                            <div class="pic-area">
+                                                <a href="#">
+                                                    <img src="images/check-price/img-hot-house.png" alt="hot-house">
+                                                    <span class="price">39,000元/平</span>
+                                                </a>
+                                            </div>
+                                            <div class="text">
+                                                <p class="np">
+                                                    <span class="name">金泰丽</span>
+                                                </p>
+                                                <p class="nj">
+                                                    <span class="name">朝阳-双井</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="item-hot">
+                                            <div class="pic-area">
+                                                <a href="#">
+                                                    <img src="images/check-price/img-hot-house.png" alt="hot-house">
+                                                    <span class="price">39,000元/平</span>
+                                                </a>
+                                            </div>
+                                            <div class="text">
+                                                <p class="np">
+                                                    <span class="name">金泰丽湾悦栖山山山</span>
+                                                </p>
+                                                <p class="nj">
+                                                    <span class="name">朝阳-亚奥奥奥</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="item-hot">
+                                            <div class="pic-area">
+                                                <a href="#">
+                                                    <img src="images/check-price/img-hot-house.png" alt="hot-house">
+                                                    <span class="price">39,000元/平</span>
+                                                </a>
+                                            </div>
+                                            <div class="text">
+                                                <p class="np">
+                                                    <span class="name">金泰丽湾悦栖山山山</span>
+                                                </p>
+                                                <p class="nj">
+                                                    <span class="name">朝阳亚奥奥奥</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hot-item">
+                            <div class="title">
+                                <h4>海淀新房价格趋势</h4>
+                            </div>
+                            <div class="content">
+                                <div class="data">
+                                    <div class="compare">
+                                        <div class="compare-item">11月均价<span class="num">37813元/㎡</span>，环比上月<span class="num num-down">-3%</span></div>
+                                    </div>
+                                    <div class="data-area">
+                                        <img src="images/check-price/img-price-trend2.png" alt="价格趋势">
+                                    </div>
+                                </div>
+                                <div class="hot-house">
+                                    <div class="area">
+                                        <h4>海淀热门楼盘</h4>
+                                        <div class="more">
+                                            <a href="#">更多海淀楼盘<span class="ico ico-more"></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="house-list">
+                                        <div class="item-hot">
+                                            <div class="pic-area">
+                                                <a href="#">
+                                                    <img src="images/check-price/img-hot-house.png" alt="hot-house">
+                                                    <span class="price">39,000元/平</span>
+                                                </a>
+                                            </div>
+                                            <div class="text">
+                                                <p class="np">
+                                                    <span class="name">金泰丽湾悦栖山山山</span>
+                                                </p>
+                                                <p class="nj">
+                                                    <span class="name">朝阳-亚奥奥奥</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="item-hot">
+                                            <div class="pic-area">
+                                                <a href="#">
+                                                    <img src="images/check-price/img-hot-house.png" alt="hot-house">
+                                                    <span class="price">39,000元/平</span>
+                                                </a>
+                                            </div>
+                                            <div class="text">
+                                                <p class="np">
+                                                    <span class="name">金泰丽湾悦栖山山山</span>
+                                                </p>
+                                                <p class="nj">
+                                                    <span class="name">朝阳-亚奥奥奥</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="item-hot">
+                                            <div class="pic-area">
+                                                <a href="#">
+                                                    <img src="images/check-price/img-hot-house.png" alt="hot-house">
+                                                    <span class="price">39,000元/平</span>
+                                                </a>
+                                            </div>
+                                            <div class="text">
+                                                <p class="np">
+                                                    <span class="name">金泰丽湾悦栖山山山</span>
+                                                </p>
+                                                <p class="nj">
+                                                    <span class="name">朝阳-亚奥奥奥</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-r">
+                <!--购房早知道-->
+                <div class="box zzd">
+                    <div class="hd">
+                        <h2>购房早知道</h2>
+                    </div>
+                    <div class="bd">
+                        <ol class="olist">
+                            <li><span class="num t-num">1</span><a href="#">买房注意了 这12种房买了铁定赔死</a></li>
+                            <li><span class="num t-num">2</span><a href="#">2016年房地产市场最该降价的20场最该降价的</a></li>
+                            <li><span class="num t-num">3</span><a href="#">最新一、二、三线城市 你的家乡排…</a></li>
+                            <li><span class="num">4</span><a href="#">北京2016年教育新规多校划片 学区</a></li>
+                            <li><span class="num">5</span><a href="#">丰台懋源钓云台三居半到四居在售 </a></li>
+                            <li><span class="num">6</span><a href="#">土豪居住的标准是啥样？看五环外</a></li>
+                            <li><span class="num">7</span><a href="#">燕郊房价迈入2万+ 买房你还等吗?</a></li>
+                            <li><span class="num">8</span><a href="#">中国房价真跌了 你还敢买房吗?</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <!--观楼市-->
+                <div class="box zxs">
+                    <div class="hd">
+                        <h2>观楼市，找侃家咨询师</h2>
+                    </div>
+                    <div class="bd">
+                        <!--高学历咨询师-->
+                        <div class="gxl">
+                            <div class="gxl-item gxl-bk">
+                                <img alt="70%本科学历" src="images/check-price/img-bk.png">
+                                <p>70%本科学历</p>
+                            </div>
+                            <div class="gxl-item gxl-ss">
+                                <img alt="30%硕士学历" src="images/check-price/img-ss.png">
+                                <p>30%硕士学历</p>
+                            </div>
+                            <div class="info">累计咨询置业金额超过8000万</div>
+                        </div>
+                        <!--专业沉淀-->
+                        <div class="zycd">
+                            <div class="pic">
+                                <img alt="专业沉淀" src="images/check-price/img-zy.png">
+                            </div>
+                            <div class="text">
+                                <h4>背诵万字房产字典，实地勘察百个楼盘</h4>
+                                <p>累计咨询满意度不低于99%</p>
+                                <p>遵循侃家誓言</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--客户评价-->
+                <div class="box pjzxs">
+                    <div class="hd">
+                        <h2>客户这样评价咨询师…</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="pj-list">
+                            <div class="pj-item">
+                                <div class="pic">
+                                    <a href="#"><img alt="" src="images/check-price/img-r6.jpg"></a>
+                                </div>
+                                <div class="info">
+                                    <p><a href="#">新地国际家园</a></p>
+                                    <p>时间：2016/07/04</p>
+                                    <p>用户：张女士一家</p>
+                                </div>
+                                <div class="info2">
+                                    <div class="simple">
+                                        6月12号老公通过网上查找，找到了侃家网，我也是抱着试试看的态度拨打了电话，他们给我推荐了钱敏，钱敏...
+                                    </div>
+                                    <div class="detail">
+                                        6月12号老公通过网上查找，找到了侃家网，我也是抱着试试看的态度拨打了电话，他们给我推荐了钱敏，钱敏很专业，首先她会先了解你的需求，是否有购买资质等等，我们约着第二天去看房，没想到他们会有专车去看房子，车接车送，全程陪同的这种服务，这些是别的网站或是链家，我爱我家，搜房都没有的服务，钱敏很热情，服务周到，业务水平熟练，问她的所有问题都能帮你解答，我们当天下午就定了房子，很开心，定了房子他们也不会就不理你了，时不时的还问问钱敏还会问，手续办理的怎么样啊？什么时候签合同啊？7月3日我们去签合同，他们还是一如既往的帮着约车，钱敏很忙抽不开身，还找了她的同事李佳陪着我们一同去，她也是个不错的姑娘，很热情，从他们的身上就能看出侃家网是一个很专业的团队，我们的合同签的很顺利，最让我惊讶的是，签完合同的时候，李佳拿出了精美包装的花束，还是我特别喜欢的粉色，我知道这肯定是钱敏特意精心准备的，很开心认识你们，很开心你们帮我买到了合适的房子，如果我的朋友也要买房的话，我肯定会推荐你们的，谢谢侃家网培养出这么专业的咨询师，最重要的是，他们全程下来没有收取任何费用，再次表示感谢！[抱拳][强]
+                                    </div>
+                                    <div class="click-option-more">阅读全文</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--帮您找房-->
+                <div class="box box-look">
+                    <div class="bd">
+                        <div class="look-tips">
+                            <img src="images/check-price/img-look.png" alt="" class="pic">
+                            <div class="info">
+                                <h3>还找不到合适的房子吗？</h3>
+                                <p>写下您的需求，让我们的咨询师来帮您吧！</p>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <!--帮您找房-->
+                            <div class="look-house">
+                                <div class="tr">
+                                    <div class="input-area area">
+                                        <span class="ico-triangle"></span>
+                                        <div class="ipt">您想在哪里买房</div>
+                                        <ul class="dropdown-list">
+                                            <li>不限</li>
+                                            <li>海淀</li>
+                                            <li>东城</li>
+                                            <li>朝阳</li>
+                                            <li>通州</li>
+                                            <li>西城</li>
+                                            <li>丰台</li>
+                                            <li>昌平</li>
+                                            <li>大兴</li>
+                                            <li>房山</li>
+                                            <li>门头沟</li>
+                                            <li>石景山</li>
+                                            <li>顺义</li>
+                                            <li>密云</li>
+                                            <li>燕郊</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="input-area budget">
+                                        <span class="ico-triangle"></span>
+                                        <div class="ipt">您的购房预算</div>
+                                        <ul class="dropdown-list" style="">
+                                            <li>不限</li>
+                                            <li>&lt;100万</li>
+                                            <li>100-150万</li>
+                                            <li>150-200万</li>
+                                            <li>200-250万</li>
+                                            <li>250-300万</li>
+                                            <li>300-500万</li>
+                                            <li>500-800万</li>
+                                            <li>800-1000万</li>
+                                            <li>&gt;1000万</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="input-area house">
+                                        <span class="ico-triangle"></span>
+                                        <div class="ipt">您想买几居</div>
+                                        <ul class="dropdown-list" style="">
+                                            <li>不限</li>
+                                            <li>一居</li>
+                                            <li>二居</li>
+                                            <li>三居</li>
+                                            <li>四居</li>
+                                            <li>五居及以上</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="input-area size">
+                                        <span class="ico-triangle"></span>
+                                        <div class="ipt">您想买多大面积</div>
+                                        <ul class="dropdown-list" style="">
+                                            <li>不限</li>
+                                            <li>&lt; 50m²</li>
+                                            <li>50m²-80m²</li>
+                                            <li>80m²-120m²</li>
+                                            <li>120m²-140m²</li>
+                                            <li>140m²-160m²</li>
+                                            <li>&gt; 160m²</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="input-area">
+                                        <input type="text" value="您的手机号码" class="ipt">
+                                    </div>
+                                </div>
+                                <div class="tr tr-ecode">
+                                    <div class="input-area">
+                                        <input type="text" value="请输入验证码" class="ipt">
+                                        <a class="btn-ecode" href="#">获取验证码</a>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="tips-info">验证码错误！</div>
+                                </div>
+                                <div class="btn-area">
+                                    <a class="btn btn01 btn-send" href="javascript:void(0)">发送给咨询师</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--ab测试-->
+                <div class="i-box mfzx">
+                    <div class="bd">
+                        <div class="call-free">
+                            <h3 class="price-lowest">怕买贵？怕被坑？</h3>
+                            <p class="price-lowest">侃家咨询师帮您越过营销陷阱，拿新房底价</p>
+                            <input type="text" class="ipt free-call-input" value="请输入您的手机号码">
+                            <a href="javascript:void(0)" class="btn btn-call free-call-btn ake_call_for_free2" >报名拿底价</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include("./app/footer/footer.html")
+    @@include("./app/sidebar/sidebar.html")
+    @@include("./app/app-download/app-download.html")
+</div>
+<script src="./js/lib/jquery/jquery-1.9.1.min.js"></script>
+<script src="./js/lib/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/check-price.js"></script>
+</body>
+</html>

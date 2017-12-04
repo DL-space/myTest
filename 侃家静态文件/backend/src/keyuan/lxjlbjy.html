@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>联系记录编辑页</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">带看记录</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="s1">
+                    @@include("../app/base-info/index.html")
+                </div>
+                <div class="s2">
+                    <div class="panel panel-record">
+                        <div class="panel-heading">
+                            <div class="panel-heading-wrap">
+                                <h2 class="panel-title">带看记录</h2>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="tab tab-record tab-kyyh">
+                                <ul class="nav tab-nav nav-justified">
+                                    <li role="presentation"><a href="contact-record.html"> 联系记录</a></li>
+                                    <li role="presentation" class="active"><a href="dk-record.html">带看记录</a></li>
+                                    <li role="presentation"><a href="#">认购记录</a></li>
+                                    <li role="presentation"><a href="#">签约记录</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="tab-btn">
+                                                    <a class="btn btn-t03" href="dk-update.html" role="button"><span
+                                                            class="ico ico-eye"></span>更新客户跟进</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--2016.10.21 客户需求-->
+                                        <div class="panel panel-khxq">
+                                            <div class="panel-heading">
+                                                <div class="panel-heading-wrap">
+                                                    <h2 class="panel-title">客户需求</h2>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="mod2 mod2-baseinfo">
+                                                    <div class="tit">1.关键信息</div>
+                                                    <ul class="con clearfix">
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>客户购房紧迫度：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <select class="form-control">
+                                                                        <option value="1">高</option>
+                                                                        <option value="2">低</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>购房目的：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <select class="form-control">
+                                                                        <option value="1">投资</option>
+                                                                        <option value="2">自住</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>首付预算：</label>
+
+                                                                <div class="input-group input-group-sm ipt-range">
+                                                                    <input class="form-control" type="text">
+                                                                </div>
+                                                                <div class="txt">万元</div>
+                                                                <a href="javascript:void(0);" class="link-add">添加范围</a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>客户有无资质：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <select class="form-control">
+                                                                        <option value="1">有</option>
+                                                                        <option value="2">无</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>名下房产：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <select class="form-control">
+                                                                        <option value="1">一套房</option>
+                                                                        <option value="2">两套房</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="mod2 mod2-baseinfo">
+                                                    <div class="tit">2.区域需求</div>
+                                                    <ul class="con clearfix">
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>关注区域：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <input class="form-control" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>工作地点：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <input class="form-control" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>是否接受其他区域：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <select class="form-control">
+                                                                        <option value="1">是</option>
+                                                                        <option value="2">否</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="mod2 mod2-baseinfo">
+                                                    <div class="tit">3.个性需求</div>
+                                                    <ul class="con clearfix">
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>可看房时间：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <select class="form-control">
+                                                                        <option value="1">随时</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>面积要求：</label>
+
+                                                                <div class="input-group input-group-sm ipt-range">
+                                                                    <input class="form-control" type="text">
+                                                                </div>
+                                                                <div class="txt">m²</div>
+                                                                <a href="javascript:void(0);" class="link-add">添加范围</a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>配合程度：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <select class="form-control">
+                                                                        <option value="1">高</option>
+                                                                        <option value="2">低</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>关注点：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <input class="form-control" type="text" placeholder="无">
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>抗性点：</label>
+
+                                                                <div class="input-group input-group-sm">
+                                                                    <input class="form-control" type="text"
+                                                                           placeholder="价格不能太高">
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="mod2 mod2-bzxx">
+                                                    <ul class="con clearfix">
+                                                        <li class="form-inline">
+                                                            <div class="form-group">
+                                                                <label>备注：</label>
+                                                                <textarea class="form-control"></textarea>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="btn-area">
+                                                    <a href="#" class="link-edit">编辑完整需求</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <!--编辑需求计划-->
+                                            <div class="ky-bjxq">
+                                                <!--原计划-->
+                                                <div class="mod4 mod4-yjh">
+                                                    <div class="tit">
+                                                        <h4>原计划</h4>
+                                                    </div>
+                                                    <div class="con">
+                                                        <ul class="jh-info">
+                                                            <li>
+                                                                <div class="lb">联系时间：</div>
+                                                                <div class="txt">2016-10-18</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="lb">联系人：</div>
+                                                                <div class="txt">袁雪婷</div>
+                                                            </li>
+                                                            <li class="jh-nr">
+                                                                <div class="lb">计划联系内容：</div>
+                                                                <div class="txt">
+                                                                    <textarea class="form-control"></textarea>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--实际联系记录-->
+                                                <div class="mod4 mod4-sjlx">
+                                                    <div class="tit">
+                                                        <h4>实际联系记录</h4>
+                                                    </div>
+                                                    <div class="con">
+                                                        <ul class="jh-info">
+                                                            <li>
+                                                                <div class="lb">联系时间：</div>
+                                                                <div class="txt">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="lb">联系人：</div>
+                                                                <div class="txt">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </li>
+                                                            <li class="jh-nr">
+                                                                <div class="lb">联系记录：</div>
+                                                                <div class="txt">
+                                                                    <textarea class="form-control"></textarea>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--后续动作-->
+                                                <div class="mod4 mod4-hxdz">
+                                                    <div class="tit">
+                                                        <h4>后续动作</h4>
+                                                        <ul class="action-sel">
+                                                            <li>
+                                                                <input type="radio" name="action-sel" class="rd rd-jxlx" checked>继续联系
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" name="action-sel" class="rd rd-yydk">预约带看
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="con action-jxlx">
+                                                        <ul class="jh-info">
+                                                            <li>
+                                                                <div class="lb">联系时间：</div>
+                                                                <div class="txt">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="lb">联系人：</div>
+                                                                <div class="txt">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </li>
+                                                            <li class="jh-nr">
+                                                                <div class="lb">联系记录：</div>
+                                                                <div class="txt">
+                                                                    <textarea class="form-control"></textarea>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="con action-yydk">
+                                                        <ul class="jh-info">
+                                                            <li>
+                                                                <div class="lb">预计带看时间：</div>
+                                                                <div class="txt">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="lb">邀约人：</div>
+                                                                <div class="txt">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="lb">带看人：</div>
+                                                                <div class="txt">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="lb">看房人数：</div>
+                                                                <div class="txt">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </li>
+                                                            <li class="is-car">
+                                                                <div class="lb">有无专车：</div>
+                                                                <div class="txt">
+                                                                    <div class="car-checked">
+                                                                        <div class="li">
+                                                                            <input type="radio" name="car-check" class="rd">无
+                                                                        </div>
+                                                                        <div class="li">
+                                                                            <input type="radio" name="car-check" class="rd">有
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="lb">约见地点：</div>
+                                                                <div class="txt">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </li>
+                                                            <li class="ky-dklp">
+                                                                <div class="lb">带看楼盘：</div>
+                                                                <div class="txt">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </li>
+                                                            <li class="jh-nr">
+                                                                <div class="lb">TO客户短信：</div>
+                                                                <div class="txt">
+                                                                    您预约看房时间是YYYY年M月D日hh:mm，咨询师【咨询师姓名和电话】将全程陪同您，已对目标区域做足功课，请期待一次愉快的看房之旅吧！
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-area">
+                                                        <button type="button" class="btn btn-t03 btn-lg">取消</button>
+                                                        <button type="button" class="btn btn-t01 btn-lg">确定</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/kyyh.js"></script>
+</body>
+</html>

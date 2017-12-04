@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="wap-font-scale" content="no">
+    <title>弹层</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/module-new.css">
+</head>
+<body>
+    <div class="ly-fade layer-app">
+        <div class="layer-new">
+            <h1>APP端才能查看哦！</h1>
+            <p>快去下载APP，解锁更多买房技能！</p>
+
+            <div class="layer-service">
+                <img src="images/layer-service1.png" alt="">
+            </div>
+            <div class="layer-phone">
+                <img src="images/layer-phone1.png" alt="">
+            </div>
+            <div class="btn-area">
+                <a href="#" class="btn">下载APP查看</a>
+            </div>
+            <div class="close-layer">
+                <a href="#"></a>
+
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="ly-fade layer-collect">
+        <div class="layer-new">
+            <h1>收藏成功</h1>
+            <p>快去下载APP，查看收藏楼盘吧！</p>
+
+            <div class="layer-service">
+                <img src="images/layer-service2.png" alt="">
+            </div>
+            <div class="layer-phone">
+                <img src="images/layer-phone2.png" alt="">
+            </div>
+            <div class="btn-area">
+                <a href="#" class="btn">下载APP查看</a>
+            </div>
+            <div class="close-layer">
+                <a href="#"></a>
+
+                <div class="line"></div>
+            </div>
+            <div class="close-layer">
+                <a href="#"></a>
+
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="ly-fade layer-dy">
+        <div class="layer-new">
+            <h1>订阅成功</h1>
+            <p>快去下载APP，查看订阅内容吧！</p>
+
+            <div class="layer-service">
+                <img src="images/layer-service3.png" alt="">
+            </div>
+            <div class="layer-phone">
+                <img src="images/layer-phone3.png" alt="">
+            </div>
+            <div class="btn-area">
+                <a href="#" class="btn">下载APP查看</a>
+            </div>
+            <div class="close-layer">
+                <a href="#"></a>
+
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="ly-fade layer-com">
+        <div class="layer-new">
+            <h1>下载APP端与咨询师1v1沟通 </h1>
+            <p>快去下载APP，解锁更多买房技能！</p>
+
+            <div class="layer-service">
+                <img src="images/layer-service4.png" alt="">
+            </div>
+            <div class="layer-phone">
+                <img src="images/layer-phone4.png" alt="">
+            </div>
+            <div class="btn-area">
+                <a href="#" class="btn">下载APP查看</a>
+            </div>
+            <div class="close-layer">
+                <a href="#"></a>
+
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="ly-fade layer-collected">
+        <div class="layer-new">
+            <h1>您已收藏此楼盘！</h1>
+            <p>快去下载APP，查看收藏楼盘吧！</p>
+
+            <div class="layer-service">
+                <img src="images/layer-service2.png" alt="">
+            </div>
+            <div class="layer-phone">
+                <img src="images/layer-phone2.png" alt="">
+            </div>
+            <div class="btn-area">
+                <a href="#" class="btn">下载APP查看</a>
+            </div>
+            <div class="close-layer">
+                <a href="#"></a>
+
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="ly-fade layer-ope">
+        <div class="layer-operation">
+            <h1>手机号验证</h1>
+            <p>验证登录后才能进行点评、点赞和收藏哦～</p>
+            <ul class="input-area">
+                <li>
+                    <input type="text" placeholder="请输入您的手机号码">
+                    <a href="#" class="code">获取验证码</a>
+                </li>
+                <li>
+                    <input type="text" placeholder="请输入验证码">
+                </li>
+            </ul>
+            <div class="btn-area">
+                <a href="#" class="btn btn-cancel">取消</a>
+                <a href="#" class="btn btn-submit">提交</a>
+            </div>
+        </div>
+    </div>
+    <div class="ly-fade layer-msg">
+        <div class="layer-message">
+            <div class="layer-content">
+                <p>检测到您已下载居理新房APP</p>
+                <p>是否直接在APP中打开当前页面？</p>
+            </div>
+            <div class="btn-area">
+                <a href="#" class="btn btn-cancel">继续浏览网页</a>
+                <a href="#" class="btn btn-submit">好的，打开APP</a>
+            </div>
+        </div>
+    </div>
+    <button class="btn1">app端才能查看</button>
+    <button class="btn2">收藏成功</button>
+    <button class="btn3">订阅成功</button>
+    <button class="btn4">下载APP端与咨询师1v1沟通</button>
+    <button class="btn5">手机号验证</button>
+    <button class="btn6">已下载app</button>
+    <button class="btn7">您已收藏此楼盘！</button>
+    <script src="js/lib/jquery-2.1.4.min.js"></script>
+    <script src="js/j-ui.js"></script>
+    <script>
+        var layerApp = $(".layer-app");
+        var layerCollect = $(".layer-collect");
+        var layerDy = $(".layer-dy");
+        var layerCollected = $(".layer-collected");
+        var layerTel = $(".layer-ope");
+        var layerMessage = $(".layer-msg");
+        var layerCom = $(".layer-com");
+        $(".btn1").on("click", function() {
+            layerApp.addClass("ly-fade-show");
+        });
+        $(".btn2").on("click", function() {
+            layerCollect.addClass("ly-fade-show");
+        });
+        $(".btn3").on("click", function() {
+            layerDy.addClass("ly-fade-show");
+        });
+        $(".btn4").on("click", function() {
+            layerCom.addClass("ly-fade-show");
+        });
+        $(".btn5").on("click", function() {
+            layerTel.addClass("ly-fade-show");
+        });
+        $(".btn6").on("click", function() {
+            layerMessage.addClass("ly-fade-show");
+        });
+        $(".btn7").on("click", function() {
+            layerCollected.addClass("ly-fade-show");
+        });
+
+        /*关闭*/
+        $(document).on("click", ".close-layer a, .btn-cancel", function() {
+            var layer = $(this).parents(".ly-fade");
+            layerClose(layer);
+        });
+
+        function layerClose(layer) {
+            layer.removeClass("ly-fade-show");
+        }
+    </script>
+</body>
+</html>

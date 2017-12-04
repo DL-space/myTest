@@ -1,0 +1,43 @@
+.btn-area {
+    font-size: 0;
+}
+button{
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    background: none;
+}
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 15px;
+    border: 0;
+    border-radius: 2px;
+}
+.btn:hover{
+    text-decoration: none;
+}
+.btn-default {
+    color: #333;
+    background-color: #eee;
+}
+.btn-default:hover{
+    background-color: #dddbdb;
+}
+.btn-primary {
+    background-color: #286090;
+}
+.btn-primary:hover{
+background-color: #2b6da6;
+}
+.btn-info {
+    background-color: #20becc;
+}
+.btn-info:hover{
+    background-color: #20becc;
+}

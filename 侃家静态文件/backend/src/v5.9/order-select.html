@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>选择订单</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+@@include("../app/header/header.html")
+    <div class="container-all-wrap">
+        @@include("../app/nav/nav.html")
+        <div class="center">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <ul class="breadcrumb">
+                            <li><a href="#">首页</a></li>
+                            <li class="active">订单列表</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!--选择订单-->
+                        <div class="panel panel-order-select">
+                            <div class="panel-heading">
+                                <div class="panel-heading-wrap">
+                                    <h2 class="panel-title">选择订单</h2>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="c-search">
+                                    <ul class="c-query">
+                                        <li>
+                                            <div class="th">订单ID：</div>
+                                            <div class="td">
+                                                <input class="form-control" type="text" placeholder="精确搜索"/>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="th">客户姓名：</div>
+                                            <div class="td">
+                                                <input class="form-control" type="text" placeholder="模糊搜索"/>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="th">客户手机号：</div>
+                                            <div class="td">
+                                                <input class="form-control" type="text" placeholder="模糊搜索"/>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="btn-area">
+                                        <input class="btn btn-default" type="reset" value="重置"/>
+                                        <input class="btn btn-primary" type="button" value="搜索"/>
+                                    </div>
+                                </div>
+                                <div class="c-list order-select-list">
+                                    <div class="tit">
+                                        <div class="list-info">
+                                            <p>第1-20条，共100个可跟进订单</p>
+                                        </div>
+                                    </div>
+                                    <div class="con">
+                                        <table class="table table-bordered table-responsive">
+                                            <tr>
+                                                <th>订单ID</th>
+                                                <th>客户姓名</th>
+                                                <th>客户手机号</th>
+                                                <th>首付预算</th>
+                                                <th>总价预算</th>
+                                                <th>关注区域</th>
+                                                <th>感兴趣楼盘</th>
+                                                <th class="t-date">更新时间</th>
+                                                <th class="u-act">操作</th>
+                                            </tr>
+                                            <tr>
+                                                <td>20005678</td>
+                                                <td>王先生</td>
+                                                <td>13290989875</td>
+                                                <td>200万</td>
+                                                <td>700万</td>
+                                                <td>大兴</td>
+                                                <td>万科新里程</td>
+                                                <td class="t-date"><div class="t-date">2017-08-18 10:00:00</div></td>
+                                                <td class="u-act">
+                                                    <a class="btn-opt" href="#">录入问答</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>20005679</td>
+                                                <td>王女士</td>
+                                                <td>13290989875</td>
+                                                <td>200万</td>
+                                                <td>700万</td>
+                                                <td>大兴</td>
+                                                <td>万科新里程</td>
+                                                <td class="t-date"><div class="t-date">2017-08-18 10:00:00</div></td>
+                                                <td class="u-act">
+                                                    <a class="btn-opt" href="#">录入问答</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>20005680</td>
+                                                <td>王先生</td>
+                                                <td>13290989875</td>
+                                                <td>200万</td>
+                                                <td>700万</td>
+                                                <td>大兴</td>
+                                                <td>万科新里程</td>
+                                                <td class="t-date"><div class="t-date">2017-08-18 10:00:00</div></td>
+                                                <td class="u-act">
+                                                    <a class="btn-opt" href="#">录入问答</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>20005681</td>
+                                                <td>王女士</td>
+                                                <td>13290989875</td>
+                                                <td>200万</td>
+                                                <td>700万</td>
+                                                <td>大兴</td>
+                                                <td>万科新里程</td>
+                                                <td class="t-date"><div class="t-date">2017-08-18 10:00:00</div></td>
+                                                <td class="u-act">
+                                                    <a class="btn-opt" href="#">录入问答</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div class="page">
+                                            <ul class="pagination">
+                                                <ul class="pagination">
+                                                    <li class="prev disabled"><span>«</span></li>
+                                                    <li class="active"><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li><a href="#">6</a></li>
+                                                    <li><a href="#">7</a></li>
+                                                    <li><a href="#">8</a></li>
+                                                    <li><a href="#">9</a></li>
+                                                    <li><a href="#">10</a></li>
+                                                    <li class="next"><a href="#">»</a></li>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        @@include("../app/footer/footer.html")
+    </div>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/jquery.pin.js"></script>
+    <script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/common.js"></script>
+</body>
+</html>

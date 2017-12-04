@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>需求4.2交互效果演示页面</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+    <h1>退单到账编辑提示弹层</h1>
+    <button class="btn-edit">编辑</button>
+    <button class="btn-xzlp">新增楼盘</button>
+    <button class="btn-pic-upload">图片上传提示</button>
+    <button class="btn-zxsmbz">咨询师目标值弹层1</button>
+    <button class="btn-zxsmbz2">咨询师目标值弹层2</button>
+    <button class="btn-zxsmbz3">咨询师目标值弹层3</button>
+    <button class="btn-zxsmbz4">咨询师目标值弹层4</button>
+    <!--退单到账管理弹层-->
+    <div class="dialog-tddzgl" style="display: none;">
+        <div class="dialog dialog-tddz">
+            <div class="dialog-body">
+                <ul class="skxx">
+                    <li>
+                        <div class="th">退款是否到账：</div>
+                        <div class="td">
+                            <ul class="sel-value">
+                                <li><input type="radio">是</li>
+                                <li><input type="radio">否</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="rmk">
+                        <div class="th">备注说明：</div>
+                        <div class="td">
+                            <textarea class="form-control" placeholder="非必填，最多20个字"></textarea>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dialog-footer">
+                <button type="reset" class="btn btn-default layer-btn-reset">取消</button>
+                <button type="button" class="btn btn-primary btn-commit fr">保存</button>
+            </div>
+        </div>
+    </div>
+    <!--复制新增楼盘优化提示弹层-->
+    <div class="dialog-xzlp" style="display: none;">
+        <div class="dialog dialog-fzlp">
+            <div class="dialog-body">
+                <ul class="fzlp">
+                    <li class="rmk">
+                        <div class="td">选择您要复制的楼盘以及模块</div>
+                    </li>
+                    <li class="d-li-2">
+                        <div class="th">城市</div>
+                        <div class="td">
+                            <select class="form-control">
+                            <option value="0">北京</option>
+                            <option value="1">上海</option>
+                            <option value="2">天津</option>
+                        </select>
+                        </div>
+                    </li>
+                    <li class="d-li-2 last">
+                        <div class="th">楼盘</div>
+                        <div class="td">
+                            <select class="form-control">
+                            <option value="0">绿地海珀云翡</option>
+                            <option value="1">北京城建海梓府</option>
+                            <option value="2">紫金新干线</option>
+                        </select>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="fzmk">
+                    <li>
+                        <div class="th">复制模块</div>
+                        <div class="td">
+                            <ul class="sel-value">
+                                <li class="r-s"><input type="checkbox">基础信息(楼盘名称、区域、销售状态除外，且默认隐藏)</li>
+                                <li><input type="checkbox">实时数据</li>
+                                <li><input type="checkbox">户型信息</li>
+                                <li><input type="checkbox">历史价格</li>
+                                <li><input type="checkbox">动态信息</li>
+                                <li><input type="checkbox">图片信息</li>
+                                <li><input type="checkbox">其他信息</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="fgx"></li>
+                    <li class="r-s">
+                        <div class="th">新楼盘的名称</div>
+                        <div class="td">
+                            <input class="form-control" type="text" />
+                        </div>
+                    </li>
+                    <li class="r-s">
+                        <div class="th">新楼盘的区域</div>
+                        <div class="td">
+                            <select class="form-control">
+                            <option value="0">朝阳</option>
+                            <option value="1">通州</option>
+                            <option value="2">房山</option>
+                        </select>
+                        </div>
+                    </li>
+                    <li class="r-s">
+                        <div class="th">新楼盘的销售状态</div>
+                        <div class="td">
+                            <select class="form-control">
+                            <option value="0">售罄</option>
+                            <option value="1">未售</option>
+                            <option value="2">待售</option>
+                        </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dialog-footer">
+                <button type="reset" class="btn btn-primary layer-btn-reset">取消</button>
+                <button type="button" class="btn btn-success btn-commit fr">保存</button>
+            </div>
+        </div>
+    </div>
+    <!--图片上传提示-->
+    <div class="pic-upload-tips" style="display: none;">
+        <div class="dialog">
+            <div class="dialog-body dialog-hk">
+                <div class="pic-tips-txt">
+                    <p>您还有图片尚未上传！</p>
+                    <p>请先点击图片下方的［上传］，然后再［保存］</p>
+                    <p>否则视为放弃保存图片</p>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <button type="reset" class="btn btn-default">放弃图片直接保存</button>
+                <button type="button" class="btn btn-default fr">返回上传图片</button>
+            </div>
+        </div>
+    </div>
+    <!--咨询师目标值管理提示弹层-->
+    <div class="zxs-mbz-tips" style="display: none;">
+        <div class="dialog dialog-mbz">
+            <div class="dialog-body">
+                <div class="pic-tips-txt">
+                    <p>您本月的咨询师目标值还未录入，请尽快录入</p>
+                    <p>不然我们的咨询师怎么能有目标感呢！</p>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <a href="#" class="btn btn-lg btn-primary">现在着急别的事情<br>一会儿肯定录</a>
+                <a href="#" class="btn btn-lg btn-success fr">立即前往录入</a>
+            </div>
+        </div>
+    </div>
+    <!--咨询师目标值管理提示弹层2-->
+    <div class="zxs-mbz-tips2" style="display: none;">
+        <div class="dialog dialog-mbz2">
+            <div class="dialog-body">
+                <div class="pic-tips-txt">
+                    <p>您本月的咨询师目标值还未录入，请尽快录入</p>
+                    <p>真的不能再拖了！！！</p>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <a href="#" class="btn btn-lg btn-success">立即前往录入</a>
+            </div>
+        </div>
+    </div>
+    <!--咨询师目标值管理提示弹层3-->
+    <div class="zxs-mbz-tips3" style="display: none;">
+        <div class="dialog dialog-mbz3">
+            <div class="dialog-body">
+                <div class="pic-tips-txt">
+                    <p>您组咨询师又有新的成交单了</p>
+                    <p>您需要录入该成交单的认购/签约可能性</p>
+                    <p>你都48个小时没管了！不管不是好主管！</p>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <a href="#" class="btn btn-lg btn-primary">现在着急别的事情<br>一会儿肯定录</a>
+                <a href="#" class="btn btn-lg btn-success fr">立即前往录入</a>
+            </div>
+        </div>
+    </div>
+    <!--咨询师目标值管理提示弹层4-->
+    <div class="zxs-mbz-tips4" style="display: none;">
+        <div class="dialog dialog-mbz4">
+            <div class="dialog-body">
+                <div class="pic-tips-txt">
+                    <p>您组咨询师还有成交单没有录入认购/签约可能性</p>
+                    <p>真的不能再拖了！！！</p>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <a href="#" class="btn btn-lg btn-success">立即前往录入</a>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/jquery.pin.js"></script>
+    <script src="../js/layer/layer.js"></script>
+    <script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/v4.2.js"></script>
+</body>
+</html>

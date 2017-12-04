@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>回款信息管理-详情页</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active"><a href="#">回款信息管理</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row hk-detail">
+                <div class="s2">
+                    <!--导航-->
+                    <ul class="b-tab-nav">
+                        <li>按照合同应收总佣金＊＊＊＊元，当前应收总佣金＊＊元，当前实收总佣金＊＊元</li>
+                    </ul>
+                    <div class="panel panel-follow-record">
+                        <div class="panel-body">
+                            <!--订单基本信息-->
+                            <div class="v-box">
+                                <div class="hd">
+                                    <h2>订单基本信息</h2>
+                                </div>
+                                <div class="bd">
+                                    <ul class="c-query">
+                                        <li>
+                                            <span class="txt">北京</span>
+                                        </li>
+                                        <li>
+                                            <span class="txt">已网签</span>
+                                        </li>
+                                        <li>
+                                            订单id：<span class="txt">2000</span>
+                                        </li>
+                                        <li>
+                                            成交编号：<span class="txt">001</span>
+                                        </li>
+                                        <li>
+                                            <span class="txt">华业东方玫瑰 小高层 1号楼</span>
+                                        </li>
+                                        <li>
+                                            <span class="txt">平层 F户型三室二厅</span>
+                                        </li>
+                                        <li>
+                                            建筑面积：<span class="txt">98㎡</span>
+                                        </li>
+                                        <li>
+                                            成交价格：<span class="txt">300000000元</span>
+                                        </li>
+                                        <li>
+                                            所属咨询师：<span class="txt">张三李四</span>
+                                        </li>
+                                        <li>
+                                            回款负责人：<span class="txt">张三李四</span>
+                                        </li>
+                                        <li>
+                                            网签客户姓名：<span class="txt">张三李四</span>
+                                        </li>
+                                        <li>
+                                            认购日期：<span class="txt">2017-12-31</span>
+                                        </li>
+                                        <li>
+                                            网签日期：<span class="txt">2017-12-31</span>
+                                        </li>
+                                        <li>
+                                            预计网签且首付交付日期：<span class="txt">2017-12-31</span>
+                                        </li>
+                                        <li>
+                                            预计网签且贷款审批通过日期：<span class="txt">2017-12-31</span>
+                                        </li>
+                                        <li>
+                                            预计全款到账日期：<span class="txt">2017-12-31</span>
+                                        </li>
+                                        <li>
+                                            预计全款分期第1次交钱日期：<span class="txt">2017-12-31</span>
+                                        </li>
+                                        <li>
+                                            预计全款分期第2次交钱日期：<span class="txt">2017-12-31</span>
+                                        </li>
+                                        <li>
+                                            预计全款分期第3次交钱日期：<span class="txt">2017-12-31</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--成交单对应的合同信息-->
+                            <div class="v-box">
+                                <div class="hd">
+                                    <h2>成交单对应的合同信息</h2>
+                                    <div class="more">
+                                        <a href="#" class="link-gj link-remark">
+                                            <span class="ico icon-seek"></span>
+                                            查看结佣合同
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bd">
+                                    <ul class="c-query">
+                                        <li>
+                                            佣金类型：<span class="txt">前置电商，后置返费</span>
+                                        </li>
+                                        <li>
+                                            电商金额：<span class="txt">250000元／套</span>
+                                        </li>
+                                        <li>
+                                            返费金额：<span class="txt">按房价20%</span>
+                                        </li>
+                                        <li>
+                                            是否有垫佣：：<span class="txt">是（垫佣打折笔90%）</span>
+                                        </li>
+                                        <li>
+                                            电商金额：<span class="txt">按批次结佣（次月5日）</span>
+                                        </li>
+                                        <li>
+                                            佣金到账时长：：<span class="txt">60天</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="c-query c-query-all">
+                                        <li>
+                                            <span class="txt"> 注：该楼盘有跳点／佣，有其他特殊规则</span>
+                                        </li>
+                                    </ul>
+                                    <div class="amend">
+                                        <div class="amend-hd">
+                                            <div class="more">
+                                                <a href="#" class="link-gj link-remark">修改本套佣金</a>
+                                            </div>
+                                        </div>
+                                        <div class="amend-bd">
+                                            <div class="amend-bd-logo">
+                                                <h3>修改日志</h3>
+                                                <div class="logo-time">
+                                                    修改时间：<span>2017-12-21 21:00:00</span>
+                                                </div>
+                                            </div>
+                                            <div class="amend-logo-cont">
+                                                <h3>修改前内容</h3>
+                                                <ul class="c-query">
+                                                    <li>
+                                                        电商金额：<span class="txt">20000元／套</span>
+                                                    </li>
+                                                    <li>
+                                                        返费金额：<span class="txt">按房价的2%</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--回款详情-->
+                            <div class="v-box">
+                                <div class="hd">
+                                    <h2>回款详情</h2>
+                                    <div class="more">
+                                        <a href="#" class="link-gj link-remark">
+                                            <span class="ico icon-income"></span>
+                                            回款跟进
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bd">
+                                    <table class="table hk-detail-table">
+                                        <tbody>
+                                            <tr>
+                                                <th class="table-k"></th>
+                                                <th>合同预测回款</th>
+                                                <th>人工预测</th>
+                                                <th>实际回款</th>
+                                                <th>实际回款财务审核状态</th>
+                                            </tr>
+                                            <tr>
+                                               <td>
+                                                   总回款:
+                                                </td>
+                                                <td>
+                                                    应收总佣金＊＊元（电商费＊＊元，返费＊＊元）
+                                                </td>
+                                                <td>
+                                                    应收总佣金＊＊元（电商费＊＊元，返费＊＊元）
+                                                </td>
+                                                <td>
+                                                    实收入总佣金＊＊元（电商费＊＊元，返费＊＊元）
+                                                </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    第1笔回款:
+                                                </td>
+                                                <td>
+                                                    应收总佣金＊＊元（电商费＊＊元，返费＊＊元）
+                                                </td>
+                                                <td>
+                                                    应收总佣金＊＊元（电商费＊＊元，返费＊＊元）
+                                                </td>
+                                                <td>
+                                                    实收入总佣金＊＊元（电商费＊＊元，返费＊＊元）
+                                                </td>
+                                                <td>
+                                                    财务审核通过
+                                                </td>
+                                            </tr>
+                                            <!--多列 自行合并单元格-->
+                                            <tr>
+                                                <td rowspan="3">
+                                                    第2笔回款:
+                                                </td>
+                                                <td rowspan="3">
+                                                    应收总佣金＊＊元（电商费＊＊元，返费＊＊元）
+                                                </td>
+                                                <td>
+                                                    应收总佣金＊＊元（电商费＊＊元，返费＊＊元）
+                                                </td>
+                                                <td>
+                                                    实收入总佣金＊＊元（电商费＊＊元，返费＊＊元）
+                                                </td>
+                                                <td>
+                                                   <span class="error">
+                                                       财务审核驳回：驳回原因＊＊＊＊
+                                                   </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    应收总佣金＊＊元（电商费＊＊元，返费＊＊元）
+                                                </td>
+                                                <td>
+                                                    实收入总佣金＊＊元（电商费＊＊元，返费＊＊元）
+                                                </td>
+                                                <td>
+                                                    财务审核通过
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    应收总佣金＊＊元（电商费＊＊元，返费＊＊元）
+                                                </td>
+                                                <td>
+                                                    实收入总佣金＊＊元（电商费＊＊元，返费＊＊元）
+                                                </td>
+                                                <td>
+                                                   <span class="error">
+                                                       财务审核驳回：驳回原因＊＊＊＊
+                                                   </span>
+                                                </td>
+                                            </tr>
+                                            <!--多列-->
+                                            <!--多列 ul结构-->
+                                            <tr class="tr-merge">
+                                                <td>
+                                                    第2.1笔回款:
+                                                </td>
+                                                <td>
+                                                    2017年12月31日（网签）应收电商费10000元
+                                                </td>
+                                                <td class="td-merge">
+                                                    <ul>
+                                                        <li>
+                                                            ＊年＊月＊日应收电商费10000元
+                                                        </li>
+                                                        <li>
+                                                            ＊年＊月＊日应收电商费10000元
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td class="td-merge">
+                                                    <ul>
+                                                        <li>
+                                                            ＊年＊月＊日应收电商费10000元
+                                                        </li>
+                                                        <li>
+                                                            ＊年＊月＊日应收电商费10000元
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td class="td-merge">
+                                                    <ul>
+                                                        <li>
+                                                            <span class="error">财务审核驳回：驳回原因＊＊＊＊</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>财务审核通过</span>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <!--多列 ul结构-->
+                                            <tr>
+                                                <td>
+                                                    第3笔回款:
+                                                </td>
+                                                <td>
+                                                    2017年12月31日（网签后30天）应收返费费10000元
+                                                </td>
+                                                <td>
+                                                    应收总佣金＊＊元（电商费＊＊元，返费＊＊元）
+                                                </td>
+                                                <td>
+                                                    实收入总佣金＊＊元（电商费＊＊元，返费＊＊元）
+                                                </td>
+                                                <td>
+                                                    财务审核通过
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    第4笔回款:
+                                                </td>
+                                                <td>
+                                                    预计2017年12月31日（网签且交付交齐的次月5日后n天）应收返费10000元
+                                                </td>
+                                                <td>
+                                                    ＊年＊月＊日应收返费10000元，状态：财务出款
+                                                </td>
+                                                <td>
+                                                </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    第5笔回款:
+                                                </td>
+                                                <td>
+                                                    时间待定（网签且全款到账的次月5日后n天）应收电返费10000元
+                                                </td>
+                                                <td>
+                                                    ＊年＊月＊日应收返费10000元，状态：审核客户
+                                                </td>
+                                                <td>
+                                                </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="remarks">
+                                    <p>
+                                        <span class="remarks-t">备注:</span>
+                                        备注备注备注备注备注 备注备注备注备注备注 备注备注备注备注备注 备注备注备注备注备注 备注备注备注备注备注 备注备注备注备注备注 备注备注备注备注备注 备注备注备注备注备注
+                                        备注备注备注备注备注 备注备注备注备注备注 备注备注备注备注备注 备注备注备注备注备注 备注备注备注备注备注 备注备注备注备注备注 备注备注备注备注备注 备注备注备注备注备注
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<script src="../js/iconfont.js"></script>
+<!--音频播放器-->
+<script src="../js/audioplayer.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/v5.2.js"></script>
+</body>
+</html>

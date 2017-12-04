@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>组件页</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/component/component.css">
+</head>
+<body>
+<div class="container">
+    @@include("../app/header/header.html")
+    <div class="center-c">
+        <div class="row row-search">
+            <div class="wrap">
+                <!-- @@include("../app/search/search.html")-->
+                <div class="search search-nopic">
+                    <!--找房-->
+                    <div class="search-area">
+                        <input type="text" class="ipt" value="请输入楼盘名、区域">
+                        <a href="#" class="btn btn-search"><span class="ico ico-search">搜索</span>我要找房</a>
+                    </div>
+                    <!--热词-->
+                    <div class="hot-words">
+                        <span class="ico ico-pos"></span>
+                        <a href="#">小户型</a>
+                        <a href="#">loft</a>
+                        <a href="#">小户型</a>
+                        <a href="#">loft</a>
+                        <a href="#">小户型</a>
+                        <a href="#">loft</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--banner 组件-->
+    <div class="cmt-banner">
+        <img src="../images/component/c-banner.png" alt="banner">
+    </div>
+    <div class="cmt-center">
+        <!--固定卯点-->
+        <div class="fixed">
+            <ul>
+                <li value="0"><a href="###">特惠爆款</a></li>
+                <li value="1"><a href="###">专享房源</a></li>
+                <li value="2"><a href="###">品牌地产</a></li>
+                <li value="3"><a href="###">人气楼盘</a></li>
+            </ul>
+        </div>
+        <!--时间组件01-->
+        <div class="cmt-t cmt-time time-one">
+            <div class="time-box">
+                <p>活动剩余<span class="day">12</span>天<span class="hour">8</span>时<span class="minute">19</span>分<span class="second">3</span>秒</p>
+            </div>
+        </div>
+        <!--时间组件02-->
+        <div class="cmt-t cmt-time time-two">
+            <div class="time-box">
+                <p>活动剩余<span class="day">12</span>天<span class="hour">8</span>时<span class="minute">19</span>分<span class="second">3</span>秒</p>
+            </div>
+        </div>
+        <!--动态滚动组件-->
+        <div class="cmt-t cmt-roll">
+            <ul class="scrollDiv">
+                <li>
+                    <a href="javascript:video(0);"><span>1小时前，</span>手机尾号****的李女士实地观看了***楼盘</a>
+                    <a href="javascript:video(0);"><span>1小时前，</span>手机尾号****的李女士实地观看了***楼盘</a>
+                </li>
+                <li>
+                    <a href="javascript:video(0);"><span>1小时前，</span>手机尾号****的李女士实地观看了***楼盘</a>
+                    <a href="javascript:video(0);"><span>1小时前，</span>手机尾号****的李女士实地观看了***楼盘</a>
+                </li>
+            </ul>
+        </div>
+        <!--导航组件-->
+        <div class="cmt-n cmt-nav">
+            <ul class="cmt-fixed-nav">
+                <li value="0">
+                    <a href="###">
+                        <div class="bt">
+                            <h3>特惠爆款楼盘</h3>
+                            <h4>居里独家专享楼盘</h4>
+                        </div>
+                        <div class="go">
+                            <p>GO>></p>
+                        </div>
+                    </a>
+                </li>
+                <li value="1">
+                    <a href="###">
+                        <div class="bt">
+                            <h3>特惠爆款楼盘</h3>
+                            <h4>居里独家专享楼盘</h4>
+                        </div>
+                        <div class="go">
+                            <p>GO>></p>
+                        </div>
+                    </a>
+                </li>
+                <li value="2">
+                    <a href="###">
+                        <div class="bt">
+                            <h3>特惠爆款楼盘</h3>
+                            <h4>居里独家专享楼盘</h4>
+                        </div>
+                        <div class="go">
+                            <p>GO>></p>
+                        </div>
+                    </a>
+                </li>
+                <li value="3">
+                    <a href="###">
+                        <div class="bt">
+                            <h3>特惠爆款楼盘</h3>
+                            <h4>居里独家专享楼盘</h4>
+                        </div>
+                        <div class="go">
+                            <p>GO>></p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--新增标题组件-->
+        <div id="0" class="cmt-n cmt-title-mon">
+            <h1>专享房源</h1>
+        </div>
+        <!--楼盘卡片+问答组件-->
+        <div class="cmt-n">
+            <div class="item-big">
+                <div class="pic">
+                    <img src="../images/cmt-1.jpg" alt="pic">
+                    <div class="location">
+                        <div class="location-lb">
+                            <span>排卡中</span>
+                            <span>新品</span>
+                            <span>商住</span>
+                        </div>
+                        <div class="location-info">
+                            <h4>骏豪中央公园广场园广场园广场</h4>
+                            <span class="price">1,9000元/平</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-cont">
+                    <div class="item-cont-hd">
+                        <h3>十天交齐首付送你一个地中海</h3>
+                        <span>仅剩余26套</span>
+                        <div class="price">
+                            <a href="###">马上抢</a>
+                        </div>
+                    </div>
+                    <div class="item-cont-bd">
+                        <div class="bd-pic">
+                            <img src="../images/zxs.jpg" alt="">
+                        </div>
+                        <div class="intro">
+                            <p class="name">咨询师-王宝强</p>
+                            <p class="intor-c">
+                                泽信公馆位于西南四环，您可以一起看一下天悦一号和天恒金融街公园懿府，将三个楼盘进行一下对比 。一下街公园懿府，将三个楼盘进行一下对比 。一下…
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-wd">
+                <div class="wd-hd">
+                    <h2>关于优惠楼盘，大家都在问</h2>
+                </div>
+                <div class="wd-bd">
+                    <div class="list">
+                        <a href="###">
+                            <div class="list-hd">
+                                <div class="wd-que">
+                                    问
+                                </div>
+                                <span>华业东方玫瑰卖得咋样呀？</span>
+                            </div>
+                            <div class="list-bd">
+                                <div class="wd-logo">
+                                    <img src="../images/img-head.png" alt="">
+                                </div>
+                                <div class="wd-cont">
+                                    <h3>咨询师-王宝强</h3>
+                                    <div class="wd-cont-details">
+                                        <p>卖得好到不行我天吧啦啦吧啦啊吧啦卖得好到不行我天吧啦啦吧啦啊吧啦</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list">
+                        <a href="###">
+                            <div class="list-hd">
+                                <div class="wd-que">
+                                    问
+                                </div>
+                                <span>华业东方玫瑰卖得咋样呀？</span>
+                            </div>
+                            <div class="list-bd">
+                                <div class="wd-logo">
+                                    <img src="../images/img-head.png" alt="">
+                                </div>
+                                <div class="wd-cont">
+                                    <h3>咨询师-王宝强</h3>
+                                    <div class="wd-cont-details">
+                                        <p>卖得好到不行我天吧啦啦吧啦啊吧啦卖得好到不行我天吧啦啦吧啦啊吧啦</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list">
+                        <a href="###">
+                            <div class="list-hd">
+                                <div class="wd-que">
+                                    问
+                                </div>
+                                <span>华业东方玫瑰卖得咋样呀？</span>
+                            </div>
+                            <div class="list-bd">
+                                <div class="wd-logo">
+                                    <img src="../images/img-head.png" alt="">
+                                </div>
+                                <div class="wd-cont">
+                                    <h3>咨询师-王宝强</h3>
+                                    <div class="wd-cont-details">
+                                        <p>卖得好到不行我天吧啦啦吧啦啊吧啦卖得好到不行我天吧啦啦吧啦啊吧啦</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--新增标题组件-->
+        <div id="1" class="cmt-n cmt-title-mon">
+            <h1>人气楼盘</h1>
+        </div>
+        <!--左右两排卡片01-->
+        <div class="cmt-n">
+            <div class="item">
+                <div class="item-t">
+                    <div class="pic">
+                        <img src="../images/cmt-1.jpg" alt="pic">
+                    </div>
+                    <div class="item-cont">
+                        <h4>骏豪中央公园广场</h4>
+                        <div class="position-des">
+                            <span>[大兴-瀛海]</span>
+                            大兴亦庄经济开发区.
+                        </div>
+                        <div class="data">
+                            近三个月 301人 关注
+                        </div>
+                        <div class="price">
+                            <span>1,9000元/平</span>
+                        </div>
+                        <a href="###" class="item-label">抢专车看房</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-t">
+                    <div class="pic">
+                        <img src="../images/cmt-1.jpg" alt="pic">
+                    </div>
+                    <div class="item-cont">
+                        <h4>骏豪中央公园广场</h4>
+                        <div class="position-des">
+                            <span>[大兴-瀛海]</span>
+                            大兴亦庄经济开发区.
+                        </div>
+                        <div class="data">
+                            近三个月 301人 关注
+                        </div>
+                        <div class="price">
+                            <span>1,9000元/平</span>
+                        </div>
+                        <a href="###" class="item-label">抢专车看房</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--新增查看更多-->
+        <div class="cmt-t cmt-title-mon">
+            <h3>查看更多楼盘</h3>
+        </div>
+        <!--新增留电组件-->
+        <div class="cmt cmt-ld ld01">
+            <div class="ld-one">
+                <input type="text" class="ipt" placeholder="请输入您的手机号">
+                <a class="btn-dy" href="#">
+                    <span class="ico ico-phone">电话</span>
+                    留点获取优惠
+                </a>
+            </div>
+        </div>
+        <!--新增标题组件-->
+        <div id="2"  class="cmt-n cmt-title-mon">
+            <h1>专享房源</h1>
+        </div>
+        <!--左右三排卡片01-->
+        <div class="cmt-n">
+            <div class="item-big item-three">
+                <div class="pic">
+                    <img src="../images/cmt-1.jpg" alt="pic">
+                    <div class="location">
+                        <div class="location-lb">
+                            <a href="###">排卡中</a>
+                            <a href="###">新品</a>
+                            <a href="###">商住</a>
+                        </div>
+                        <div class="location-info">
+                            <h4>骏豪中央公园广场</h4>
+                            <span class="price">1,9000元/平</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-cont">
+                    <div class="item-cont-hd">
+                        <h3>十天交齐首付送你一个地中海</h3>
+                        <span>仅剩余26套</span>
+                        <div class="price">
+                            <a href="###">马上抢</a>
+                        </div>
+                    </div>
+                    <div class="item-cont-bd">
+                        <div class="bd-pic">
+                            <img src="../images/zxs.jpg" alt="">
+                        </div>
+                        <div class="intro">
+                            <p class="name">咨询师-王宝强</p>
+                            <p class="intor-c">
+                                泽信公馆位于西南四环，您可以一起看一下天悦一号和天恒金融街公园懿府，将三个楼盘进行一下对比 。一下…
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-big item-three">
+                <div class="pic">
+                    <img src="../images/cmt-1.jpg" alt="pic">
+                    <div class="location">
+                        <div class="location-lb">
+                            <a href="###">排卡中</a>
+                            <a href="###">新品</a>
+                            <a href="###">商住</a>
+                        </div>
+                        <div class="location-info">
+                            <h4>骏豪中央公园广场</h4>
+                            <span class="price">1,9000元/平</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-cont">
+                    <div class="item-cont-hd">
+                        <h3>十天交齐首付送你一个地中海</h3>
+                        <span>仅剩余26套</span>
+                        <div class="price">
+                            <a href="###">马上抢</a>
+                        </div>
+                    </div>
+                    <div class="item-cont-bd">
+                        <div class="bd-pic">
+                            <img src="../images/zxs.jpg" alt="">
+                        </div>
+                        <div class="intro">
+                            <p class="name">咨询师-王宝强</p>
+                            <p class="intor-c">
+                                泽信公馆位于西南四环，您可以一起看一下天悦一号和天恒金融街公园懿府，将三个楼盘进行一下对比 。一下…
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-big item-three">
+                <div class="pic">
+                    <img src="../images/cmt-1.jpg" alt="pic">
+                    <div class="location">
+                        <div class="location-lb">
+                            <a href="###">排卡中</a>
+                            <a href="###">新品</a>
+                            <a href="###">商住</a>
+                        </div>
+                        <div class="location-info">
+                            <h4>骏豪中央公园广场</h4>
+                            <span class="price">1,9000元/平</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-cont">
+                    <div class="item-cont-hd">
+                        <h3>十天交齐首付送你一个地中海</h3>
+                        <span>仅剩余26套</span>
+                        <div class="price">
+                            <a href="###">马上抢</a>
+                        </div>
+                    </div>
+                    <div class="item-cont-bd">
+                        <div class="bd-pic">
+                            <img src="../images/zxs.jpg" alt="">
+                        </div>
+                        <div class="intro">
+                            <p class="name">咨询师-王宝强</p>
+                            <p class="intor-c">
+                                泽信公馆位于西南四环，您可以一起看一下天悦一号和天恒金融街公园懿府，将三个楼盘进行一下对比 。一下…
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--新增标题组件-->
+        <div id="3" class="cmt-n cmt-title-mon">
+            <h1>专享房源</h1>
+        </div>
+        <!--左右三排卡片02 + 问答-->
+        <div class="cmt-n">
+            <div class="item-big item-three">
+                <div class="pic">
+                    <img src="../images/cmt-1.jpg" alt="pic">
+                    <div class="location">
+                        <div class="location-lb">
+                            <a href="###">排卡中</a>
+                            <a href="###">新品</a>
+                            <a href="###">商住</a>
+                        </div>
+                        <div class="location-info">
+                            <h4>骏豪中央公园广场</h4>
+                            <span class="price">1,9000元/平</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-cont no-zxs">
+                    <div class="item-cont-hd">
+                        <h3>十天交齐首付送你一个地中海</h3>
+                        <span>仅剩余26套</span>
+                        <div class="price">
+                            <a href="###">马上抢</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-big item-three">
+                <div class="pic">
+                    <img src="../images/cmt-1.jpg" alt="pic">
+                    <div class="location">
+                        <div class="location-lb">
+                            <a href="###">排卡中</a>
+                            <a href="###">新品</a>
+                            <a href="###">商住</a>
+                        </div>
+                        <div class="location-info">
+                            <h4>骏豪中央公园广场</h4>
+                            <span class="price">1,9000元/平</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-cont no-zxs">
+                    <div class="item-cont-hd">
+                        <h3>十天交齐首付送你一个地中海</h3>
+                        <span>仅剩余26套</span>
+                        <div class="price">
+                            <a href="###">马上抢</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-big item-three">
+                <div class="item-wd">
+                    <div class="wd-hd">
+                        <h2>关于优惠楼盘，大家都在问</h2>
+                    </div>
+                    <div class="wd-bd">
+                        <div class="list">
+                            <a href="###">
+                                <div class="list-hd">
+                                    <div class="wd-que">
+                                        问
+                                    </div>
+                                    <span>华业东方玫瑰卖得咋样呀？</span>
+                                </div>
+                                <div class="list-bd">
+                                    <div class="wd-logo">
+                                        <img src="../images/img-head.png" alt="">
+                                    </div>
+                                    <div class="wd-cont">
+                                        <h3>咨询师-王宝强</h3>
+                                        <div class="wd-cont-details">
+                                            <p>卖得好到不行我天吧啦啦吧啦啊吧啦卖得好到不行我天吧啦啦吧啦啊吧啦</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list">
+                            <a href="###">
+                                <div class="list-hd">
+                                    <div class="wd-que">
+                                        问
+                                    </div>
+                                    <span>华业东方玫瑰卖得咋样呀？</span>
+                                </div>
+                                <div class="list-bd">
+                                    <div class="wd-logo">
+                                        <img src="../images/img-head.png" alt="">
+                                    </div>
+                                    <div class="wd-cont">
+                                        <h3>咨询师-王宝强</h3>
+                                        <div class="wd-cont-details">
+                                            <p>卖得好到不行我天吧啦啦吧啦啊吧啦卖得好到不行我天吧啦啦吧啦啊吧啦</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--新增标题组件-->
+        <div class="cmt-n cmt-title-mon">
+            <h1>人气楼盘</h1>
+        </div>
+        <!--左右两排卡片02-->
+        <div class="cmt-n">
+            <div class="item">
+                <div class="item-hasp">
+                    <div class="pic">
+                        <img src="../images/cmt-1.jpg" alt="pic">
+                    </div>
+                    <div class="item-cont">
+                        <h4>骏豪中央公园广场</h4>
+                        <div class="position-des">
+                            <span>[大兴-瀛海]</span>
+                            大兴亦庄经济开发区.
+                        </div>
+                        <div class="price">
+                            <span>1,9000元/平</span>
+                        </div>
+                        <div class="num">
+                            <span> 仅剩余26套</span>居理专享优惠
+                        </div>
+                        <a href="###" class="item-label">抢专车看房</a>
+                    </div>
+                    <div class="payment">
+                        <span>十天交齐首付送你一个地中海</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-hasp">
+                    <div class="pic">
+                        <img src="../images/cmt-1.jpg" alt="pic">
+                    </div>
+                    <div class="item-cont">
+                        <h4>骏豪中央公园广场</h4>
+                        <div class="position-des">
+                            <span>[大兴-瀛海]</span>
+                            大兴亦庄经济开发区.
+                        </div>
+                        <div class="price">
+                            <span>1,9000元/平</span>
+                        </div>
+                        <div class="num">
+                            <span> 仅剩余26套</span>居理专享优惠
+                        </div>
+                        <a href="###" class="item-label">抢专车看房</a>
+                    </div>
+                    <div class="payment">
+                        <span>十天交齐首付送你一个地中海</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--新增标题组件-->
+        <div class="cmt-n cmt-title-mon">
+            <h1>专享房源</h1>
+        </div>
+        <!--左右三排卡片03 + 咨询-->
+        <div class="cmt-n">
+            <div class="item-big item-three">
+                <div class="pic">
+                    <img src="../images/cmt-1.jpg" alt="pic">
+                    <div class="location">
+                        <div class="location-lb">
+                            <a href="###">排卡中</a>
+                            <a href="###">新品</a>
+                            <a href="###">商住</a>
+                        </div>
+                        <div class="location-info">
+                            <h4>骏豪中央公园广场</h4>
+                            <span class="price">1,9000元/平</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-cont no-zxs">
+                    <div class="item-cont-hd">
+                        <h3>十天交齐首付送你一个地中海</h3>
+                        <span>仅剩余26套</span>
+                        <div class="price">
+                            <a href="###">马上抢</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-big item-three">
+                <div class="pic">
+                    <img src="../images/cmt-1.jpg" alt="pic">
+                    <div class="location">
+                        <div class="location-lb">
+                            <a href="###">排卡中</a>
+                            <a href="###">新品</a>
+                            <a href="###">商住</a>
+                        </div>
+                        <div class="location-info">
+                            <h4>骏豪中央公园广场</h4>
+                            <span class="price">1,9000元/平</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-cont no-zxs">
+                    <div class="item-cont-hd">
+                        <h3>十天交齐首付送你一个地中海</h3>
+                        <span>仅剩余26套</span>
+                        <div class="price">
+                            <a href="###">马上抢</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-big item-three">
+                <ul class="slide">
+                    <li><a href="###">1分钟前，手机尾号***的黄先生预约了**楼…</a></li>
+                    <li><a href="###">2分钟前，手机尾号***的黄先生预约了**楼…</a></li>
+                    <li><a href="###">3分钟前，手机尾号***的黄先生预约了**楼…</a></li>
+                    <li><a href="###">4分钟前，手机尾号***的黄先生预约了**楼…</a></li>
+                    <li><a href="###">5分钟前，手机尾号***的黄先生预约了**楼…</a></li>
+                    <li><a href="###">6分钟前，手机尾号***的黄先生预约了**楼…</a></li>
+                    <li><a href="###">7分钟前，手机尾号***的黄先生预约了**楼…</a></li>
+                    <li><a href="###">8分钟前，手机尾号***的黄先生预约了**楼…</a></li>
+                    <li><a href="###">9分钟前，手机尾号***的黄先生预约了**楼…</a></li>
+                    <li><a href="###">10分钟前，手机尾号***的黄先生预约了**楼…</a></li>
+                    <li><a href="###">11分钟前，手机尾号***的黄先生预约了**楼…</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--新增标题组件-->
+        <div class="cmt-n cmt-title-mon">
+            <h1>人气楼盘</h1>
+        </div>
+        <!--左右两排卡片03-->
+        <div class="cmt-n">
+            <div class="item">
+                <div class="item-hasp02">
+                    <div class="pic">
+                        <img src="../images/cmt-1.jpg" alt="pic">
+                    </div>
+                    <div class="item-cont">
+                        <h4>骏豪中央公园广场</h4>
+                        <div class="position-des">
+                            <span>[大兴-瀛海]</span>
+                            大兴亦庄经济开发区.
+                        </div>
+                        <div class="data">
+                            近三个月 301人 关注
+                        </div>
+                        <div class="price">
+                            <span>1,9000元/平</span>
+                        </div>
+                        <a href="###" class="item-label">抢专车看房</a>
+                    </div>
+                    <div class="payment">
+                        <img src="../images/dual/item-bg.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-hasp02">
+                    <div class="pic">
+                        <img src="../images/cmt-1.jpg" alt="pic">
+                    </div>
+                    <div class="item-cont">
+                        <h4>骏豪中央公园广场</h4>
+                        <div class="position-des">
+                            <span>[大兴-瀛海]</span>
+                            大兴亦庄经济开发区.
+                        </div>
+                        <div class="data">
+                            近三个月 301人 关注
+                        </div>
+                        <div class="price">
+                            <span>1,9000元/平</span>
+                        </div>
+                        <a href="###" class="item-label">抢专车看房</a>
+                    </div>
+                    <div class="payment">
+                        <img src="../images/dual/item-bg.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--新增标题组件-->
+        <div class="cmt-n cmt-title-mon">
+            <h1>想了解更多特惠楼盘详细信息？</h1>
+        </div>
+        <!--新增咨询师+留点-->
+        <div class="cmt-t cmt-input">
+            <div class="cmt-input-l">
+                <div class="pic">
+                    <img src="../images/zxs.jpg" alt="">
+                </div>
+                <div class="des">
+                    <div class="name">咨询师-王宝强</div>
+                    <div class="school">毕业于英国曼彻斯特大学</div>
+                    <div class="num"><span>2347人</span>曾向ta咨询</div>
+                </div>
+            </div>
+            <div class="cmt-input-r">
+                <input class="ipt" placeholder="请输入您的手机号">
+                <a class="btn-dy" href="#">立即咨询</a>
+                <span>免费咨询：400-080-6715</span>
+            </div>
+        </div>
+        <!--标题组件-->
+        <div class="cmt cmt-title">
+            <div class="title-hd">
+                <div class="line"></div>
+                <div class="con">
+                    <a class="title" href="#">上海热销楼盘查询楼盘</a>
+                </div>
+            </div>
+        </div>
+        <!--楼盘组件-->
+        <div class="cmt cmt-house">
+            <div class="pic-area">
+                <img src="../images/cmt-2.jpg" alt="house">
+            </div>
+            <div class="info-area">
+                <div class="tr">
+                    <h3 class="name">路劲上海院子</h3>
+                    <span class="lbs lbs-will">待售</span>
+                </div>
+                <div class="price"><p>参考报价：128万-129万</p></div>
+                <div class="bj"><p>开发商报价：32000元/平米</p></div>
+                <div class="pla">
+                    <span class="ico ico-dw"></span>
+                    <a href="#">嘉定-安亭汽车城</a>
+                </div>
+                <div class="tr">
+                    <div class="gz">
+                        近三个月 <span class="num">103人</span>关注
+                    </div>
+                    <div class="dp">
+                        <span class="num">7位</span>专业咨询师点评
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--最新资讯-->
+        <div class="cmt cmt-news">
+            <div class="news-l">
+                <span>最新</span>
+            </div>
+            <div class="news-r">
+                <div class="news-name">
+                    <h1>路劲上海院子在售叠加别墅，均价约32000元/平</h1>
+                </div>
+                <div class="news-data">
+                    <p>2017-06-26</p>
+                </div>
+                <div class="news-cont">
+                    <p>
+                        路劲上海院子目前有联排别墅在售，建筑面积约为131平、143平，均价约为30000元/平；项目还有叠加别墅在售，建筑面积约121平、126平，单价32000-33000元/平，总价380万起，具体一房一价，以最终报价为准。具体房源掌握在咨询师手中，立即留电，最新房源信息实时推送~路劲上海院子目前有联排别墅在售，建筑面积约为131平、143平，均价约为30000元/平；项目还有叠加别墅在售
+                        路劲上海院子目前有联排别墅在售，建筑面积约为131平、143平，均价约为30000元/平；项目还有叠加别墅在售，建筑面积约121平、126平，单价32000-33000元/平，总价380万起，具体一房一价，以最终报价为准。具体房源掌握在咨询师手中，立即留电，最新房源信息实时推送~路劲上海院子目前有联排别墅在售，建筑面积约为131平、143平，均价约为30000元/平；项目还有叠加别墅在售
+                    </p>
+                </div>
+                <div class="show-more">
+                    <a href="javascript:void(0);" class="ico-showmore">查看全文</a>
+                    <span class="ico ico-more"></span>
+                </div>
+            </div>
+        </div>
+        <!--楼盘组件-->
+        <div class="cmt cmt-house">
+            <div class="pic-area">
+                <img src="../images/cmt-2.jpg" alt="house">
+            </div>
+            <div class="info-area">
+                <div class="tr">
+                    <h3 class="name">路劲上海院子</h3>
+                    <span class="lbs lbs-will">待售</span>
+                </div>
+                <div class="price"><p>参考报价：128万-129万</p></div>
+                <div class="bj"><p>开发商报价：32000元/平米</p></div>
+                <div class="pla">
+                    <span class="ico ico-dw"></span>
+                    <a href="#">嘉定-安亭汽车城</a>
+                </div>
+                <div class="tr">
+                    <div class="gz">
+                        近三个月 <span class="num">103人</span>关注
+                    </div>
+                    <div class="dp">
+                        <span class="num">7位</span>专业咨询师点评
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--咨询师点评组件-->
+        <div class="cmt cmt-dp">
+            <div class="dp-list">
+                <div class="dp-item">
+                    <div class="fwzxs">
+                        <div class="inn">
+                            <div class="pic">
+                                <a href="#"><img src="../images/zxs.jpg" alt=""></a>
+
+                                <div class="ico-zjdp">最佳点评</div>
+                            </div>
+                            <div class="text">
+                                <h4 class="name"><a href="#">王珊珊</a></h4>
+                                <p class="info">已为<em>1261</em>人提供帮助</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--点评内容-->
+                    <div class="dp-detail">
+                        <p class="date">2016-04-27</p>
+                        <!--基本评论-->
+                        <div class="dp-base data-short">
+                            <p>项目位于地铁亦庄线经海路站西南角100米。</p>
+                            <p>
+                                开发商是通泰，<span class="fc-pink">通泰投资集团</span>继天津，辽宁，内蒙古，<span class="fc-pink">福建四地</span>之后，首次在北京地区地区开发的开发通泰投资集团继天津，辽宁，内蒙古，福建四地之后，首次在北京地区地区开发的开发
+                            </p>
+                        </div>
+                        <div class="dp-base data-detail">
+                            <p>项目位于地铁亦庄线经海路站西南角100米。</p>
+                            <p>
+                                开发商是通泰，<span class="fc-pink">通泰投资集团</span>继天津，辽宁，内蒙古，<span class="fc-pink">福建四地</span>之后，首次在北京地区地区开发的开发开发商是通泰，通泰投资集团继天津，辽宁，内蒙古，福建四地之后，首次在北京地区地区开发的开发
+                            </p>
+                        </div>
+                        <!--优势-->
+                        <div class="dp-advantage">
+                            <h4>基本优势：</h4>
+
+                            <div class="dp-con data-short">
+                                <p>1、价格优势。亦庄内单价算是比较低的新盘，相比其他楼盘，价格便宜不少；</p>
+                                <p>
+                                    2、交通优势。特别是地铁，距经海路地铁站就是100米，地铁房。小区周围公路发达公路发达路发达特别是地铁，距经海路地铁站就是100米，地铁房。小区周围公路发达公路发达路发达</p>
+                            </div>
+                            <div class="dp-con data-detail">
+                                <p>1、价格优势。亦庄内单价算是比较低的新盘，相比其他楼盘，价格便宜不少；</p>
+                                <p>
+                                    2、交通优势。特别是地铁，距经海路地铁站就是100米，地铁房。小区周围公路发达公路发达路发达交通优势。特别是地铁，距经海路地铁站就是100米，地铁房。小区周围公路发达公路发达路发达</p>
+                            </div>
+                        </div>
+                        <div class="show-more">
+                            <a href="javascript:void(0);">
+                                <span class="text">查看全文</span>
+                                <span class="ico ico-triangle"></span></a>
+                        </div>
+                    </div>
+                    <!--互动-->
+                    <div class="interaction">
+                        <div class="inn">
+                            <div class="act act-zan">
+                                <a href="#" class="zan"><span class="ico ico-zan"></span></a>
+                                <p>(<span>118</span>个赞)</p>
+                            </div>
+                            <div class="act act-zx"><a href="#">我要咨询</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--留电组件01-->
+        <div class="cmt cmt-ld">
+            <div class="ld-one">
+                <input type="text" class="ipt" placeholder="请输入您的手机号">
+                <a class="btn-dy" href="#">
+                    <span class="ico ico-phone">电话</span>
+                    留点获取优惠
+                </a>
+            </div>
+        </div>
+        <!--标题组件-->
+        <div class="cmt cmt-title">
+            <div class="title-hd">
+                <div class="line"></div>
+                <div class="con">
+                    <a class="title" href="#">上海热销户型</a>
+                </div>
+            </div>
+        </div>
+        <!--户型组件-->
+        <div class="cmt cmt-hx">
+            <div class="pic-area">
+                <div class="pic-img">
+                    <img src="../images/cmt-3.jpg" alt="hux">
+                </div>
+            </div>
+            <div class="des">
+                <div class="tr">
+                    <div class="type">2房2厅 B2户型</div>
+                    <div class="lb-area">
+                        <span class="lbs">在售</span>
+                    </div>
+                </div>
+                <div class="total">
+                    <span class="num">参考总价：277万元</span>
+                </div>
+                <div class="price">
+                    参考单价：<span>35000元/㎡</span>
+                </div>
+                <div class="area">
+                    <span>面积：建面69m2</span>
+                </div>
+                <div class="more-hx">
+                    <a href="#">
+                        了解路劲上海院子更多户型信息
+                        <span class="ico ico-right"></span>
+                    </a>
+                </div>
+                <div class="rx">
+                    <span>全国免费服务热线：</span>
+                </div>
+                <div class="phone">
+                    <span>400-002-7302</span>
+                </div>
+            </div>
+        </div>
+        <!--最新资讯-->
+        <div class="cmt cmt-news">
+            <div class="news-l">
+                <span>最新</span>
+            </div>
+            <div class="news-r">
+                <div class="news-name">
+                    <h1>路劲上海院子在售叠加别墅，均价约32000元/平</h1>
+                </div>
+                <div class="news-data">
+                    <p>2017-06-26</p>
+                </div>
+                <div class="news-cont">
+                    <p>
+                        路劲上海院子目前有联排别墅在售，建筑面积约为131平、143平，均价约为30000元/平；项目还有叠加别墅在售，建筑面积约121平、126平，单价32000-33000元/平，总价380万起，具体一房一价，以最终报价为准。具体房源掌握在咨询师手中，立即留电，最新房源信息实时推送~路劲上海院子目前有联排别墅在售，建筑面积约为131平、143平，均价约为30000元/平；项目还有叠加别墅在售
+                        路劲上海院子目前有联排别墅在售，建筑面积约为131平、143平，均价约为30000元/平；项目还有叠加别墅在售，建筑面积约121平、126平，单价32000-33000元/平，总价380万起，具体一房一价，以最终报价为准。具体房源掌握在咨询师手中，立即留电，最新房源信息实时推送~路劲上海院子目前有联排别墅在售，建筑面积约为131平、143平，均价约为30000元/平；项目还有叠加别墅在售
+                    </p>
+                </div>
+                <div class="show-more">
+                    <a href="javascript:void(0);" class="ico-showmore">查看全文</a>
+                    <span class="ico ico-more"></span>
+                </div>
+            </div>
+        </div>
+        <!--标题组件-->
+        <div class="cmt cmt-title">
+            <div class="title-hd">
+                <div class="line"></div>
+                <div class="con">
+                    <a class="title" href="#">居理专业咨询师</a>
+                </div>
+            </div>
+        </div>
+        <!--咨询师组件-->
+        <div class="cmt cmt-zxs">
+            <div class="consultant-item show-hide">
+                <div class="pic">
+                    <img src="../images/zxs.jpg" alt="">
+                </div>
+                <div class="consultant-bd">
+                    <div class="consultant-info">
+                        <h4 class="name">赵之媛</h4>
+
+                        <div class="lb-area">
+                            <span class="lb lb1">负责</span>
+                            <span class="lb lb2">专业</span>
+                            <span class="lb lb3">友善</span>
+                        </div>
+                    </div>
+                    <div class="sch">毕业于东北农业大学 <span>本科学位</span></div>
+                    <div class="number">
+                        <p>累计服务<em>2405人</em></p>
+                        <p>满意度<em>99.24%</em></p>
+                    </div>
+                    <div class="note">
+                        <h4>个人简介</h4>
+
+                        <div class="note-detail">
+                            <p>
+                                侃家网是一家专做新房的互联网服务平台，我们的服务范围包括北京、上海、天津等城市的数百个合作楼盘。从我第一次打给您电话提供客观专业购房建议，到后续免费专车接送看房，都是一让您满意为最终目的。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--留点组件02-->
+        <div class="cmt cmt-ld">
+            <div class="ld-two">
+                <input type="text" class="ipt" placeholder="请输入您的手机号">
+                <a class="btn-dy" href="#">立即咨询专业建议</a>
+                <a class="btn-dy" href="#">立即获取免费服务</a>
+            </div>
+        </div>
+        <!--标题组件-->
+        <div class="cmt cmt-title">
+            <div class="title-hd">
+                <div class="line"></div>
+                <div class="con">
+                    <a class="title" href="#">买房知识</a>
+                </div>
+            </div>
+        </div>
+        <!--买房知识-->
+        <div class="cmt cmt-knowledge">
+            <div class="i-media2">
+                <div class="pic">
+                    <a href="#">
+                        <img src="../images/img-info.png" alt="#">
+                    </a>
+                </div>
+                <div class="text">
+                    <h3>新房开盘购买流程的简单介绍和说明</h3>
+
+                    <div class="info">
+                        <p>
+                            路劲上海院子目前有联排别墅在售，建筑面积约为131平、143平，均价约为30000元/平；项目还有叠加别墅在售，建筑面积约121平、126平，单价32000-33000元/平，总价380万起，具体一房一价，以最终报价为准。具约为131平、143平，均价约为30000元/平；项目还有叠加别墅在售…
+                        </p>
+                    </div>
+                    <div class="ilb-area">
+                        <a href="#">专业术语</a>
+                        <a href="#">注意事项</a>
+                        <a href="#">小产权</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--投票组件-->
+        <div class="cmt cmt-tp">
+            <div class="cmt-tpcont">
+                <h3>两篇文章您觉得哪篇对您来说更有用？</h3>
+                <div class="cmt-tp-con">
+                    <div class="tp">
+                        <div class="tp-item">
+                            <span class="checked checked-on"></span>
+                            <span class="con">第一篇实在是太有用了</span>
+                        </div>
+                        <div class="tp-item">
+                            <span class="checked checked-on"></span>
+                            <span class="con">第二篇实在是太有用了</span>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <a href="javascript:void(0)" class="btn-commit">提 交</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--问卷组件-->
+        <div class="cmt cmt-wj">
+            <div class="cmt-tpcont">
+                <h3>两篇文章您觉得哪篇对您来说更有用？</h3>
+                <div class="cmt-tp-con">
+                    <textarea placeholder="请输入您想要了解的房产信息" class="text-area"></textarea>
+                </div>
+                <div class="btn-area">
+                    <a href="javascript:void(0)" class="btn-commit">提 交</a>
+                </div>
+            </div>
+        </div>
+        <!--留点组件01-->
+        <div class="cmt cmt-ld">
+            <div class="ld-one">
+                <input type="text" class="ipt" placeholder="请输入您的手机号">
+                <a class="btn-dy" href="#">
+                    <span class="ico ico-phone">电话</span>
+                    留点获取优惠
+                </a>
+            </div>
+        </div>
+        <!--视频组件-->
+        <div class="cmt cmt-video">
+            <ul class="play">
+                <li class="feed-video" data-url="http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4">
+                    <img src="../images/bg-video.jpg" alt=""/>
+                    <span class="ico ico-video">视频</span>
+
+                    <div id="video"></div>
+                </li>
+            </ul>
+        </div>
+        <!--图片组件-->
+        <div class="cmt tp">
+            <img src="../images/component/component-img01.png" alt="">
+        </div>
+    </div>
+    <!--弹出层遮罩-->
+    <div id="fade"></div>
+    @@include("../app/footer/footer.html")
+</div>
+<script src="../js/lib/jquery/jquery-1.9.1.min.js"></script>
+<script src="../ckplayer/ckplayer.js"></script>
+<script src="../js/lib/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../js/common.js"></script>
+<script type="text/javascript" src="../js/component/component.js"></script>
+<script type="text/javascript">
+    $(function () {
+        countDown("2017/12/12 23:55:00");
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+.row-search {
+    margin-bottom: 20px;
+}
+.col{
+    width: 1010px;
+    margin-right: 50px;
+}
+.city-map{
+    text-align: center;
+}
+.city-map img.pic{
+    width: 963px;
+    height: 807px;
+}
+.map-city-list{
+    padding-top: 62px;
+}
+.map-city-list li{
+    clear: both;
+    font-size: 14px;
+    color: #888;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.map-city-list li .dot{
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 9px 10px 0 0;
+    border: 2px solid #079cda;
+    border-radius: 50%;
+}

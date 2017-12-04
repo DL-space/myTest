@@ -1,0 +1,16 @@
+body, .container {
+    background-color: #f4f1ea;
+}
+.row {
+    margin-bottom: 0;
+    padding: 0 0.26rem;
+}
+.roll{
+    width: 9.47rem;
+    padding: 0.265rem;
+    border-top: 0;
+    background-color: #fff;
+}
+.roll-center{
+    width: 60%;
+}

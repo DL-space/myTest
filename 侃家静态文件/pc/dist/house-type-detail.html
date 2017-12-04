@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>户型分析详情页</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/analysis-list.css">
+    <link rel="stylesheet" href="./css/house-type-detail.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header header-juli">
+            <div class="inn">
+                <div class="logo">
+                    <a href="#">
+                <img src="./images/logo-juli.png" alt="侃家网">
+            </a>
+                </div>
+                <div class="city-position city-tip">
+                    <span class="ico ico-city"></span><span class="text">北京</span>
+                    <div class="city-change-list">
+                        <div class="top"></div>
+                        <ul class="city-list">
+                            <li class="tit">选择城市</li>
+                            <li><a href="#">北京</a></li>
+                            <li><a href="#">上海</a></li>
+                            <li><a href="#">其他城市陆续开放，见列表！</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">楼盘查询</a></li>
+                    <li><a href="#">咨询师</a></li>
+                    <li><a href="#">成交记录</a></li>
+                    <li><a href="#">买房问问 <span class="ico ico-ww-d"></span></a></li>
+                    <li><a href="#">买房知识</a></li>
+                </ul>
+                <div class="fr">
+                    <div class="hot-phone">咨询热线：<span class="phone-txt">400-080-7815</span></div>
+                    <div class="online-ask"><span class="ico ico-server"></span>在线咨询</div>
+                    <div class="user-set">
+                        <!--登录状态显示手机号-->
+                        <div class="user-option" style="display: none;">
+                            <a href="#" class="link-reg"><span class="ico ico-user"></span>注册</a>
+                            <a href="#" class="link-login">登录</a>
+                        </div>
+                        <!--登录后-->
+                        <div class="user-phone">
+                            <a href="#"><span class="ico ico-user"></span>132****0804</a>
+                        </div>
+                        <div class="exit"><a href="#">退出</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="row row-search">
+                <div class="wrap">
+                    <!--搜索-->
+                    <div class="search">
+                        <!--找房-->
+                        <div class="search-area">
+                            <div class="ipt-area">
+                                <input type="text" class="ipt" placeholder="请输入楼盘名、区域">
+                                <div class="option">
+                                    <ul class="option-1">
+                                        <li class="title">热门搜索</li>
+                                        <li>
+                                            <a href="#">五和万科长阳天地</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">中骏·西山天璟</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">北京城建海梓府</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">金樾和著</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">中海·国际城</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="option-2">
+                                        <li class="title">历史搜索</li>
+                                        <li>
+                                            <a href="#">中海·国际城</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">泰禾拾景园</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">中骏·西山天璟</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">泰和中央广场</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="option-3">
+                                        <li class="title">与“<span class="name">中骏</span>”相关的新房<span class="num">约2条</span></li>
+                                        <li>
+                                            <a href="#">中海·国际城</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">泰禾拾景园</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">中骏·西山天璟</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">泰和中央广场</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-search">搜索</a>
+                        </div>
+                        <!--热词-->
+                        <div class="hot-words">
+                            <span class="ico ico-pos"></span>
+                            <a href="#">小户型</a>
+                            <a href="#">loft</a>
+                        </div>
+                        <!--侃家服务-->
+                        <div class="cj-service">
+                            <a href="#">每4位购房者中，就有1位接受过侃家服务<span class="ico ico-more"></span></a>
+                        </div>
+                    </div>
+
+                    <!--无右侧搜索-->
+                    <div class="search search-nopic" style="display: none">
+                        <!--找房-->
+                        <div class="search-area">
+                            <div class="ipt-area">
+                                <input type="text" class="ipt" placeholder="请输入楼盘名、区域">
+                                <div class="option">
+                                    <ul class="option-1">
+                                        <li class="title">热门搜索</li>
+                                        <li>五和万科长阳天地</li>
+                                        <li>中骏·西山天璟</li>
+                                        <li>北京城建海梓府</li>
+                                        <li>金樾和著</li>
+                                        <li>中海·国际城</li>
+                                    </ul>
+                                    <ul class="option-2">
+                                        <li class="title">历史搜索</li>
+                                        <li>中海·国际城</li>
+                                        <li>泰禾拾景园</li>
+                                        <li>中骏·西山天璟</li>
+                                        <li>泰和中央广场</li>
+                                    </ul>
+                                    <ul class="option-3">
+                                        <li class="title">与“<span class="name">中骏</span>”相关的新房<span class="num">约2条</span></li>
+                                        <li>中海·国际城</li>
+                                        <li>泰禾拾景园</li>
+                                        <li>中骏·西山天璟</li>
+                                        <li>泰和中央广场</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-search">搜索</a>
+                        </div>
+                        <!--热词-->
+                        <div class="hot-words">
+                            <span class="ico ico-pos"></span>
+                            <a href="#">小户型</a>
+                            <a href="#">loft</a>
+                            <a href="#">小户型</a>
+                            <a href="#">loft</a>
+                            <a href="#">小户型</a>
+                            <a href="#">loft</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-crumb">
+                <!--面包屑-->
+                <ul class="crumb">
+                    <li class="icon"><span class="icon icon-coordinates_fill"></span></li>
+                    <li><a href="#">侃家网</a></li>
+                    <li class="fgx">&gt;</li>
+                    <li><a href="#">我要找房</a></li>
+                </ul>
+            </div>
+            <div class="row row-top-nav">
+                <div class="top-menu-wrap">
+                    <div class="house-name">
+                        <div class="name">
+                            <h1>华远西红世</h1>
+                            <ul class="house-tag">
+                                <li class="tag active"><a href="#">排卡中</a></li>
+                                <li class="tag"><a href="#">精品</a></li>
+                                <li class="tag"><a href="#">商住</a></li>
+                                <li class="tag"><a href="#">小户型</a></li>
+                            </ul>
+                        </div>
+                        <div class="subtitle">别名：花园西红柿花园西红柿花园西红柿花园西红柿</div>
+                    </div>
+                    <div class="detail-nav detail-nav-nine">
+                        <ul>
+                            <li class="first"><a href="#">楼盘主页</a></li>
+                            <li>
+                                <a href="#">楼盘问问<span class="ico ico-new1">new</span></a>
+                            </li>
+                            <li class="on"><a href="#">楼盘动态</a></li>
+                            <li><a href="#">用户点评</a></li>
+                            <li><a href="#">楼盘详情</a></li>
+                            <li><a href="#">户型分析</a></li>
+                            <!-- <li><a href="#">价格走势</a></li> -->
+                            <li><a href="#">周边分析</a></li>
+                            <li><a href="#">楼盘图册</a></li>
+                            <li class="last"><a href="#">我要看房</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--通栏-->
+                <div class="top-menu-banner">
+                    <div class="house-name">
+                        <div class="name">
+                            <h1>华远西红世</h1>
+                            <div class="dev-price">开发商报价：<em>48000元/m²</em></div>
+                            <div class="discount">
+                                <p class="youhui" title="电商4万抵12万；全款96折；按揭98折">电商4万抵12万；全款96折；按揭98折</p>
+                                <p class="hot-phone">咨询热线：400-080-7815</p>
+                                <a href="#" class="btn btn-bm">报名看房</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-nav detail-nav-nine">
+                        <ul>
+                            <li class="first"><a href="#">楼盘主页</a></li>
+                            <li><a href="#">楼盘问问<span class="ico ico-new1">new</span></a></li>
+                            <li class="on"><a href="#">楼盘动态</a></li>
+                            <li><a href="#">用户点评</a></li>
+                            <li><a href="#">楼盘详情</a></li>
+                            <li><a href="#">户型分析</a></li>
+                            <!-- <li><a href="#">价格走势</a></li> -->
+                            <li><a href="#">周边分析</a></li>
+                            <li><a href="#">楼盘图册</a></li>
+                            <li class="last"><a href="#">我要看房</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="house-analysis">
+                    <div class="bd">
+                        <ul class="type-list">
+                            <li class="active"><a href="#">全部（23）</a></li>
+                            <li><a href="#">一居（5）</a></li>
+                            <li><a href="#">二居（5）</a></li>
+                            <li><a href="#">三居（5）</a></li>
+                            <li><a href="#">四居（5）</a></li>
+                            <li><a href="#">五居及以上（5）</a></li>
+                        </ul>
+                        <div class="house-tags">
+                            <ul class="tags">
+                                <li class="active"><a href="#">32m²-A1户型</a></li>
+                                <li>|</li>
+                                <li><a href="#">32m²-A1户型</a></li>
+                                <li>|</li>
+                                <li><a href="#">32m²-A1户型</a></li>
+                                <li>|</li>
+                                <li><a href="#">47m²-B1户型</a></li>
+                                <li>|</li>
+                                <li><a href="#">57m²-A1户型</a></li>
+                            </ul>
+                        </div>
+                        <div class="house">
+                            <div class="banner">
+                                <div class="carousel">
+                                    <!--轮播图容器-->
+                                    <div class="carousel-left">
+                                        <!--大图片-->
+                                        <div class="top-container-max">
+                                            <ul class="top-container-ul">
+                                                <li>
+                                                    <a href="">
+                                                    <img class="thumb" src="images/1.jpg" alt="">
+                                                </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                    <img class="thumb" src="images/2.jpg" alt="">
+                                                </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                    <img class="thumb" src="images/3.jpg" alt="">
+                                                </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                    <img class="thumb" src="images/4.jpg" alt="">
+                                                </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                    <img class="thumb" src="images/5.jpg" alt="">
+                                                </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                    <img class="thumb" src="images/6.jpg" alt="">
+                                                </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                    <img class="thumb" src="images/7.jpg" alt="">
+                                                </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                    <img class="thumb" src="images/8.jpg" alt="">
+                                                </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                    <img class="thumb" src="images/9.jpg" alt="">
+                                                </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                    <img class="thumb" src="images/9.jpg" alt="">
+                                                </a>
+                                                </li>
+                                            </ul>
+                                            <div>
+                                                <span class="hous-btnz hous-btn1">前一个</span>
+                                                <span class="hous-btny hous-btn1">后一个</span>
+                                            </div>
+                                        </div>
+                                        <!--小图片-->
+                                        <div class="down-container">
+                                            <div class="move">
+                                                <ul class="small_list">
+                                                    <li id="list-first" class="hous-on">
+                                                        <a href="javascript:void(0);"><img src="images/1.jpg" alt=""></a>
+                                                        <span class="small_list_span">
+                                                        1层
+                                                    </span>
+                                                    </li>
+                                                    <li><a href="javascript:void(0);"><img src="images/2.jpg" alt=""></a>
+                                                        <span class="small_list_span">
+                                                        2层
+                                                    </span>
+                                                    </li>
+                                                    <li><a href="javascript:void(0);"><img src="images/3.jpg" alt=""></a>
+                                                        <span class="small_list_span">
+                                                        111
+                                                    </span>
+                                                    </li>
+                                                    <li><a href="javascript:void(0);"><img src="images/4.jpg" alt=""></a>
+                                                        <span class="small_list_span">
+                                                        负1层
+                                                    </span>
+                                                    </li>
+                                                    <li><a href="javascript:void(0);"><img src="images/5.png" alt=""></a>
+                                                        <span class="small_list_span">
+                                                        负2层
+                                                    </span>
+                                                    </li>
+                                                    <li><a href="javascript:void(0);"><img class="thumb"
+                                                                                                    src="images/1.jpg"
+                                                                                                    alt=""></a>
+                                                        <span class="small_list_span">
+                                                        1层
+                                                    </span></li>
+                                                    <li><a href="javascript:void(0);"><img class="thumb"
+                                                                                                    src="images/2.jpg"
+                                                                                                    alt=""></a>
+                                                        <span class="small_list_span">
+                                                        1层
+                                                    </span></li>
+                                                    <li><a href="javascript:void(0);"><img class="thumb"
+                                                                                                    src="images/3.jpg"
+                                                                                                    alt=""></a>
+                                                        <span class="small_list_span">
+                                                        111
+                                                    </span></li>
+                                                    <li><a href="javascript:void(0);"><img class="thumb"
+                                                                                                    src="images/4.jpg"
+                                                                                                    alt=""></a>
+                                                        <span class="small_list_span">
+                                                        负1层
+                                                    </span></li>
+                                                    <li><a href="javascript:void(0);"><img class="thumb"
+                                                                                                    src="images/5.png"
+                                                                                                    alt=""></a>
+                                                        <span class="small_list_span">
+                                                        负2层
+                                                    </span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="des">
+                                <div class="des-info">
+                                    <div class="hd">
+                                        <span class="status">在售</span>
+                                        <span class="type">一室一厅A1户型</span>
+                                    </div>
+                                    <div class="bd">
+                                        <ul class="info">
+                                            <li>
+                                                <span class="key">朝 向：</span>
+                                                <span class="value">南</span>
+                                            </li>
+                                            <li>
+                                                <span class="key"> 面 积：</span>
+                                                <span class="value">建面56m²，套内38m²</span>
+                                            </li>
+                                            <li>
+                                                <span class="key">层 高：</span>
+                                                <span class="value">3.1m</span>
+                                            </li>
+                                            <li>
+                                                <span class="key">类 型：</span>
+                                                <span class="value">非loft</span>
+                                            </li>
+                                        </ul>
+                                        <ul class="refer">
+                                            <li>
+                                                <span class="key">参考总价：</span>
+                                                <span class="price">140万元</span>
+                                            </li>
+                                            <li>
+                                                <span class="key">参考单价：</span>
+                                                <span class="value">25,000元/m²</span>
+                                                <span class="ico ico-offer">报价</span>
+                                                <a href="#" class="know">了解最新报价</a>
+                                            </li>
+                                            <li>
+                                                <span class="key">参考首付：</span>
+                                                <span class="value">59万元</span>
+                                                <span class="ico ico-payment">首付</span>
+                                                <a href="#" class="know">了解最新首付金额</a>
+                                            </li>
+                                            <li>
+                                                <span class="key">参考月供：</span>
+                                                <span class="value">6,371元（商住10年）</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="des-analysis">
+                                    <div class="hd">户型分析</div>
+                                    <div class="bd">
+                                        <p class="content">共三层，属于复试户型；属于难得的南北通透型loft，功能分区明显，实现了较好的动静分离。</p>
+                                    </div>
+                                </div>
+                                <div class="entry">
+                                    <p class="title">了解此户型的详细分析</p>
+                                    <div class="ipt-area">
+                                        <input type="text" class="ipt" value="输入您的手机号">
+                                        <a href="#" class="btn btn-cons"><span class="ico ico-phone">电话</span>了解一下</a>
+                                        <div class="tips error-tips">您输入的手机号码格式有误，请核对后重新输入</div>
+                                        <div class="tips right-tips">预约成功，我们将用010-89191132号码联系您免费专车带您看房！</div>
+                                    </div>
+                                    <p class="hot-line">免费咨询热线：
+                                        <span class="phone">400-080-7815</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="inn">
+                <div class="f-nav">
+                    <p class="comjia-about">
+                        <a href="#">关于侃家网</a>
+                        <a href="#">联系我们</a>
+                        <a href="#">招聘信息</a>
+                        <a href="#">服务声明</a>
+                        <a href="#">网站地图</a>
+                    </p>
+                    <ul class="service-online">
+                        <li class="hot-line">热线：<em>400-080-7815</em></li>
+                        <li class="call-free"><a href="#">免费通话</a></li>
+                        <li class="comjia-wb"><a href="#">侃家网官方微博</a></li>
+                    </ul>
+                </div>
+                <div class="f-link">
+                    <div class="fr">
+                        <div class="m-link"><a href="#"><img src="./images/bg-mobile.png" alt="移动版居理新房"/></a></div>
+                        <div class="comjia-wx"><img src="./images/img-qrcode.png" alt="侃家公众号"></div>
+                    </div>
+                    <div class="footer-hot">
+                        <ul class="flink">
+                            <li><a href="#"><img src="./images/img-ifeng.png" alt="凤凰网"></a></li>
+                            <li><a href="#"><img src="./images/img-caijing.png" alt="第一财经"></a></li>
+                            <li><a href="#"><img src="./images/img-36k.png" alt="36氪"></a></li>
+                            <li><a href="#"><img src="./images/img-chinadaily.png" alt="中国日报"></a></li>
+                            <li><a href="#"><img src="./images/img-ly.png" alt="猎云网"></a></li>
+                        </ul>
+                        <div class="tab tab-hot">
+                            <div class="tab-t">
+                                <ul>
+                                    <li class="on">北京区域楼盘</li>
+                                    <li>手机找房</li>
+                                    <li>北京房价走势</li>
+                                    <li>大兴房价</li>
+                                    <li>顺义房价</li>
+                                    <li>房山房价</li>
+                                </ul>
+                            </div>
+                            <div class="tab-c">
+                                <div class="nrpart">
+                                    <ul class="link-hot">
+                                        <li><a href="#">通州楼盘</a></li>
+                                        <li><a href="#">房山楼盘</a></li>
+                                        <li><a href="#">大兴楼盘</a></li>
+                                        <li><a href="#">门头沟楼盘</a></li>
+                                        <li><a href="#">昌平楼盘</a></li>
+                                        <li><a href="#">顺义楼盘</a></li>
+                                        <li><a href="#">朝阳楼盘</a></li>
+                                        <li><a href="#">海淀楼盘</a></li>
+                                        <li><a href="#">丰台楼盘</a></li>
+                                        <li><a href="#">东城楼盘</a></li>
+                                        <li><a href="#">西城楼盘</a></li>
+                                        <li><a href="#">密云楼盘</a></li>
+                                        <li><a href="#">石景山楼盘</a></li>
+                                        <li><a href="#">燕郊楼盘</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nrpart">
+                                    <ul class="link-hot">
+                                        <li><a href="#">通州新房</a></li>
+                                        <li><a href="#">大兴新房</a></li>
+                                        <li><a href="#">房山新房</a></li>
+                                        <li><a href="#">顺义新房</a></li>
+                                        <li><a href="#">丰台新房</a></li>
+                                        <li><a href="#">昌平新房</a></li>
+                                        <li><a href="#">海淀新房</a></li>
+                                        <li><a href="#">朝阳新房</a></li>
+                                        <li><a href="#">西城新房</a></li>
+                                        <li><a href="#">东城新房</a></li>
+                                        <li><a href="#">门头沟新房</a></li>
+                                        <li><a href="#">密云新房</a></li>
+                                        <li><a href="#">石景山新房</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nrpart">
+                                    <ul class="link-hot">
+                                        <li><a href="#">北京房价</a></li>
+                                        <li><a href="#">通州房价走势</a></li>
+                                        <li><a href="#">朝阳房价走势</a></li>
+                                        <li><a href="#">东城房价走势</a></li>
+                                        <li><a href="#">西城房价走势</a></li>
+                                        <li><a href="#">海淀房价走势</a></li>
+                                        <li><a href="#">石景山房价走势</a></li>
+                                        <li><a href="#">门头沟房价走势</a></li>
+                                        <li><a href="#">丰台房价走势</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nrpart">
+                                    <ul class="link-hot">
+                                        <li><a href="#">黄村房价</a></li>
+                                        <li><a href="#">亦庄房价</a></li>
+                                        <li><a href="#">西红门房价</a></li>
+                                        <li><a href="#">大兴新城</a></li>
+                                        <li><a href="#">孙村房价</a></li>
+                                        <li><a href="#">庞各庄房价</a></li>
+                                        <li><a href="#">旧宫房价</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nrpart">
+                                    <ul class="link-hot">
+                                        <li><a href="#">顺义主城区房价</a></li>
+                                        <li><a href="#">中央别墅区房价</a></li>
+                                        <li><a href="#">空港开发区房价</a></li>
+                                        <li><a href="#">潮白河别墅区房价</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nrpart">
+                                    <ul class="link-hot">
+                                        <li><a href="#">阎村房价</a></li>
+                                        <li><a href="#">长阳房价</a></li>
+                                        <li><a href="#">长辛店房价</a></li>
+                                        <li><a href="#">良乡房价</a></li>
+                                        <li><a href="#">窦店房价</a></li>
+                                        <li><a href="#">房山老城区房价</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--友情链接-->
+                        <ul class="f-flink">
+                            <li><a href="#">绿地诺亚方舟</a></li>
+                            <li><a href="#">远洋新仕界（商住）</a></li>
+                            <li><a href="#">智汇雅苑</a></li>
+                            <li><a href="#">北京城建北京密码</a></li>
+                            <li><a href="#">恒华湖公馆</a></li>
+                            <li><a href="#">鑫苑鑫都汇</a></li>
+                            <li><a href="#">澜馨墅</a></li>
+                            <li><a href="#">江南山水</a></li>
+                            <li><a href="#">银河湾</a></li>
+                            <li><a href="#">翠林漫步</a></li>
+                            <li><a href="#">胜古誉园</a></li>
+                            <li><a href="#">华侨城</a></li>
+                            <li><a href="#">夏威夷蓝湾</a></li>
+                            <li><a href="#">金地世家广场MINI墅</a></li>
+                            <li><a href="#">远洋万和公馆</a></li>
+                            <li><a href="#">爱上岛</a></li>
+                            <li><a href="#">玫瑰SOHO</a></li>
+                            <li><a href="#">天和嘉园</a></li>
+                            <li><a href="#">美林君渡</a></li>
+                        </ul>
+                    </div>
+                    <!--友情链接-->
+                    <ul class="flink2">
+                        <li>友情链接:</li>
+                        <li><a href="#">北京个人房源</a></li>
+                        <li><a href="#">朝阳购房</a></li>
+                        <li><a href="#">朝阳装修</a></li>
+                        <li><a href="#">北京日租房</a></li>
+                        <li><a href="#">装修效果图</a></li>
+                        <li><a href="#">北京天气预报30天</a></li>
+                        <li><a href="#">安康论坛</a></li>
+                        <li><a href="#">宝鸡房产</a></li>
+                        <li><a href="#">宜春房产网</a></li>
+                        <li><a href="#">搜房源网</a></li>
+                        <li><a href="#">装修效果图</a></li>
+                        <li><a href="#">北京装修网</a></li>
+                        <li><a href="#">北京搜房源</a></li>
+                        <li><a href="#">哈尔滨58同城</a></li>
+                        <li><a href="#">北京家装</a></li>
+                        <li><a href="#">民生信息网</a></li>
+                        <li><a href="#">北京写字楼出租</a></li>
+                        <li><a href="#">北京装修公司</a></li>
+                        <li><a href="#">北京装修网</a></li>
+                        <li><a href="#">天津装修</a></li>
+                        <li><a href="#">衡水二手房</a></li>
+                        <li><a href="#">北京租房网</a></li>
+                        <li><a href="#">武汉装修网</a></li>
+                        <li><a href="#">深圳写字楼出租</a></li>
+                        <li><a href="#">苏州房产网</a></li>
+                        <li><a href="#">北京租房网</a></li>
+                        <li><a href="#">土地转让</a></li>
+                        <li><a href="#">北京房贷利率</a></li>
+                        <li><a href="#">中央净水</a></li>
+                        <li><a href="#">吴江房产网</a></li>
+                        <li><a href="#">南昌二手房</a></li>
+                        <li><a href="#">澳洲房产网</a></li>
+                        <li><a href="#">北京装修</a></li>
+                        <li><a href="#">家居产品</a></li>
+                        <li><a href="#">整体橱柜</a></li>
+                        <li><a href="#">哈尔滨房地产门户</a></li>
+                        <li><a href="#">宿迁房产网</a></li>
+                        <li><a href="#">房产信息</a></li>
+                        <li><a href="#">六安房产网</a></li>
+                        <li><a href="#">沈阳房产网</a></li>
+                        <li><a href="#">商丘房产网</a></li>
+                        <li><a href="#">长沙家装公司</a></li>
+                        <li><a href="#">西安房地产门户</a></li>
+                        <li><a href="#">北京装修网</a></li>
+                        <li><a href="#">厦门装修公司</a></li>
+                        <li><a href="#">简约风格装修效果图</a></li>
+                        <li><a href="#">石家庄装修网</a></li>
+                        <li><a href="#">盐城房产网</a></li>
+                        <li><a href="#">卧室装修效果图</a></li>
+                    </ul>
+                    <div class="original-copy-left">
+                        北京房产网-侃家网提供2016北京楼盘动态，包括北京新楼盘、在售楼盘信息、新房开盘和北京房价查询等信息。真实的北京新房数据和实时北京新楼盘信息，尽在侃家网北京楼盘栏目！
+                    </div>
+                    <div class="original-copy-right">本站所有点评内容均为独家原创内容，请勿转载</div>
+                </div>
+                <div class="copyright">
+                    <p>北京侃家科技有限公司</p>
+                    <p>&copy;2014-2016 comjia.com, all rights reversed. <a href="http://www.miitbeian.gov.cn">京ICP备15012099号</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!--Popup-->
+    <!--弹出层-->
+    <div id="popup"></div>
+    <!--图片-->
+    <div id="popup-box">
+        <div id="middle">
+            <a href="javascript:void(0);"><img class="img tp" src="images/11.jpg" alt=""></a>
+            <a href="javascript:void(0);"><img class="img tp" src="images/2.jpg" alt=""></a>
+            <a href="javascript:void(0);"><img class="img tp" src="images/3.jpg" alt=""></a>
+            <a href="javascript:void(0);"><img class="img tp" src="images/44.jpg" alt=""></a>
+            <a href="javascript:void(0);"><img class="img tp" src="images/505.jpg" alt=""></a>
+            <a href="javascript:void(0);"><img class="img tp" src="images/11.jpg" alt=""></a>
+            <a href="javascript:void(0);"><img class="img tp" src="images/2.jpg" alt=""></a>
+            <a href="javascript:void(0);"><img class="img tp" src="images/33.jpg" alt=""></a>
+            <a href="javascript:void(0);"><img class="img tp" src="images/44.jpg" alt=""></a>
+            <a href="javascript:void(0);"><img class="img tp" src="images/505.jpg" alt=""></a>
+            <div>
+                <a href="javascript:void(0);"><img id="cha" src="images/cha.png" alt=""></a>
+            </div>
+            <div class="prev m-btn" href="###"></div>
+            <div class="next m-btn" href="###"></div>
+        </div>
+    </div>
+    <script src="./js/lib/jquery/jquery-1.9.1.min.js"></script>
+    <script src="./js/lib/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="./js/common.js"></script>
+    <!--<script type="text/javascript" src="./js/popup.js"></script>-->
+    <script src="./js/house-type-detail.js"></script>
+</body>
+</html>

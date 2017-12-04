@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>更新跟进记录</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!--音频播放器-->
+    <link rel="stylesheet" href="../css/audioplayer.css"/>
+    <link href="../css/common.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8.css"/>
+    <![endif]-->
+</head>
+<body>
+@@include("../app/header/header.html")
+<div class="container-all-wrap">
+    @@include("../app/nav/nav.html")
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">联系列表</a></li>
+                        <li class="active">更新</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="s1">
+                    @@include("../app/base-info/index.html")
+                </div>
+                <div class="s2">
+                    <!--导航-->
+                    <ul class="b-tab-nav">
+                        <li class="on"><a href="#">跟进记录</a></li>
+                        <li><a href="#">成交记录</a></li>
+                    </ul>
+                    <div class="panel panel-record">
+                        <div class="panel-body">
+                            <!--此处添加内容-->
+                            <div class="mod4 mod4-sjdkjl">
+                                <div class="tit">
+                                    <h4>实际带看记录</h4>
+                                </div>
+                                <div class="con con-jl">
+                                    <ul class="dk-info">
+                                        <li>
+                                            <div class="lb">带看时间：</div>
+                                            <div class="txt">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lb">邀约人：</div>
+                                            <div class="txt">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lb">带看人：</div>
+                                            <div class="txt">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="dk-lp">
+                                        <li>
+                                            <div class="lp-name">
+                                                <input type="checkbox">
+                                                实际带看楼盘<span class="num">1</span>：<span class="name">华业东方玫瑰（住宅）</span>
+                                            </div>
+                                            <div class="xs-info">
+                                                <div class="lb">销售姓名：</div>
+                                                <div class="txt">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="xs-info">
+                                                <div class="lb">电话：</div>
+                                                <div class="txt">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lp-name">
+                                                <input type="checkbox">
+                                                实际带看楼盘 <span class="num">2</span>：<span class="name">广阳郡9号（别墅）</span>
+                                            </div>
+                                            <div class="xs-info">
+                                                <div class="lb">销售姓名：</div>
+                                                <div class="txt">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="xs-info">
+                                                <div class="lb">电话：</div>
+                                                <div class="txt">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="btn-area">
+                                                <button class="btn-sy">带看顺序上移</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lp-name">
+                                                <input type="checkbox">
+                                                实际带看楼盘<span class="num">3</span>：<span class="name">新天地美域（别墅）</span>
+                                            </div>
+                                            <div class="xs-info">
+                                                <div class="lb">销售姓名：</div>
+                                                <div class="txt">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="xs-info">
+                                                <div class="lb">电话：</div>
+                                                <div class="txt">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="btn-area">
+                                                <button class="btn-sy">带看顺序上移</button>
+                                            </div>
+                                        </li>
+                                        <li class="add-lp">
+                                            <div class="lb">新增楼盘：</div>
+                                            <div class="txt">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="btn-area">
+                                                <button class="btn-add">添加</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mod4 mod-wd">
+                                <p class="special-msg">注：与客户的交流记录、客户的需求变更，以及其他补充记录这3类内容必须填写/更新至少一类</p>
+
+                                <div class="tit">
+                                    <h5>与客户的交流记录</h5>
+                                    <p class="ope-msg">
+                                        提交后问答内容将会<span class="special-msg">呈现在我们的用户网站上</span>，请认真填写，并<span class="special-msg">注意用户隐私</span>，禁止出现用户电话号码或者包含用户隐私的信息和图片
+                                    </p>
+                                </div>
+                                <div class="wd-list">
+                                    <div class="wd-item">
+                                        <div class="wd-info wd-ques">
+                                            <div class="lb">客户的问题：</div>
+                                            <div class="con">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="wd-info wd-ques-type">
+                                            <div class="lb">问题类型 <span class="ts-msg">（最多选3项）</span>：</div>
+                                            <div class="con">
+                                                <ul class="ques-type-list">
+                                                    <li><input type="checkbox">买房资质</li>
+                                                    <li><input type="checkbox">贷款交易</li>
+                                                    <li><input type="checkbox">楼盘资讯</li>
+                                                    <li><input type="checkbox">政策解读</li>
+                                                    <li><input type="checkbox">房价行情</li>
+                                                    <li><input type="checkbox">购房建议</li>
+                                                    <li><input type="checkbox">纠纷维权</li>
+                                                    <li><input type="checkbox">流程材料</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="wd-info wd-xglp">
+                                            <div class="lb">相关楼盘：</div>
+                                            <div class="con">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="wd-info wd-ans">
+                                            <div class="look-ans">
+                                                <a href="#">查看推荐答案</a>
+                                                <span>（不可完全复用已有答案）</span>
+                                            </div>
+                                        </div>
+                                        <div class="wd-info wd-my-ans">
+                                            <div class="lb">我的回答：</div>
+                                            <div class="con">
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="wd-num">1</div>
+                                    </div>
+                                    <div class="wd-item">
+                                        <div class="wd-info wd-ques">
+                                            <div class="lb">客户的问题：</div>
+                                            <div class="con">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="wd-info wd-ques-type">
+                                            <div class="lb">问题类型 <span class="ts-msg">（最多选3项）</span>：</div>
+                                            <div class="con">
+                                                <ul class="ques-type-list">
+                                                    <li><input type="checkbox">买房资质</li>
+                                                    <li><input type="checkbox">贷款交易</li>
+                                                    <li><input type="checkbox">楼盘资讯</li>
+                                                    <li><input type="checkbox">政策解读</li>
+                                                    <li><input type="checkbox">房价行情</li>
+                                                    <li><input type="checkbox">购房建议</li>
+                                                    <li><input type="checkbox">纠纷维权</li>
+                                                    <li><input type="checkbox">流程材料</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="wd-info wd-xglp">
+                                            <div class="lb">相关楼盘：</div>
+                                            <div class="con">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="wd-info wd-ans">
+                                            <div class="look-ans">
+                                                <a href="#">查看推荐答案</a>
+                                                <span>（不可完全复用已有答案）</span>
+                                            </div>
+                                        </div>
+                                        <div class="wd-info wd-my-ans">
+                                            <div class="lb">我的回答：</div>
+                                            <div class="con">
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="wd-num">2</div>
+                                    </div>
+                                    <div class="btn-area">
+                                        <button class="btn-add">新增问答</button>
+                                        <button class="btn-del">删除最后一条问答</button>
+                                    </div>
+                                </div>
+                                <div class="wd-msg">
+                                    <p>你录入的问答内容将会在提交本次实际跟进记录后发送给用户（已短信形式发送给用户，短信中添加链接到落地页）<a href="#">预览落地页</a></p>
+                                    <p>发送手机号：13500000000（首要联系方式），还可以再添加发送手机号 <input type="tel" class="form-control"></p>
+                                </div>
+                            </div>
+                            <div class="btn-area">
+                                <a href="#" type="button" class="btn btn-primary">保存并进入下一步</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    @@include("../app/footer/footer.html")
+</div>
+<!--新增内容结构-->
+<div class="add-html" style="display: none">
+    <div class="wd-item">
+        <div class="wd-info wd-ques">
+            <div class="lb">客户的问题：</div>
+            <div class="con">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="wd-info wd-ques-type">
+            <div class="lb">问题类型 <span class="ts-msg">（最多选3项）</span>：</div>
+            <div class="con">
+                <ul class="ques-type-list">
+                    <li><input type="checkbox">买房资质</li>
+                    <li><input type="checkbox">贷款交易</li>
+                    <li><input type="checkbox">楼盘资讯</li>
+                    <li><input type="checkbox">政策解读</li>
+                    <li><input type="checkbox">房价行情</li>
+                    <li><input type="checkbox">购房建议</li>
+                    <li><input type="checkbox">纠纷维权</li>
+                    <li><input type="checkbox">流程材料</li>
+                </ul>
+            </div>
+        </div>
+        <div class="wd-info wd-xglp">
+            <div class="lb">相关楼盘：</div>
+            <div class="con">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="wd-info wd-ans">
+            <div class="look-ans">
+                <a href="#">查看推荐答案</a>
+                <span>（不可完全复用已有答案）</span>
+            </div>
+        </div>
+        <div class="wd-info wd-my-ans">
+            <div class="lb">我的回答：</div>
+            <div class="con">
+                <textarea class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="wd-num">1</div>
+    </div>
+    <li>
+        <div class="lp-name">
+            <input type="checkbox">
+            实际带看楼盘<span class="num">3</span>：<span class="name">新天地美域（别墅）</span>
+        </div>
+        <div class="xs-info">
+            <div class="lb">销售姓名：</div>
+            <div class="txt">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="xs-info">
+            <div class="lb">电话：</div>
+            <div class="txt">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="btn-area">
+            <button class="btn-sy">带看顺序上移</button>
+        </div>
+    </li>
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.bootstrap-dropdown-on-hover.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.pin.js"></script>
+<!--音频播放器-->
+<!--<script src="../js/audioplayer.js"></script>-->
+<script src="../js/common.js"></script>
+<script src="../js/kyyh.js"></script>
+<script src="../js/v5.2.js"></script>
+</body>
+</html>

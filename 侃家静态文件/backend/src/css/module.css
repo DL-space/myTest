@@ -1,0 +1,264 @@
+body {
+    background-color: #eff3f6;
+}
+/*输入框*/
+.j-ipt-area {
+    overflow: hidden;
+}
+.j-ipt-area .j-label {
+    display: block;
+    position: relative;
+    height: 34px;
+    line-height: 34px;
+    color: #68768C;
+    font-size: 12px;
+}
+.j-ipt-area .j-label.required {
+    padding-left: 12px;
+}
+.j-ipt-area .j-label.required:before {
+    content: '*';
+    position: absolute;
+    left: 4px;
+}
+.j-ipt-area.in-line .j-label {
+    float: left;
+    margin-right: 10px;
+}
+.j-ipt-area .j-ipt {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px;
+    border: 1px solid #DFE3E9;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #354052;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    outline: none;
+}
+.j-ipt-area .j-ipt.focused {
+    border: 1px solid #8D98A9;
+}
+.j-ipt-area .j-ipt-error .j-ipt {
+    border: 1px solid #ED1C24;
+}
+.j-ipt-area .j-ipt-error .ico {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    background: url("../images/Cross.png") no-repeat;
+    background-size: 100% 100%;
+}
+.j-ipt-area .j-ipt-success .j-ipt {
+    border: 1px solid #1BB934;
+}
+.j-ipt-area .j-ipt-success .ico {
+    display: block;
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    background: url("../images/Check.png") no-repeat;
+    background-size: 100% 100%;
+}
+.j-ipt-area .j-ipt-error .j-ipt, .j-ipt-area .j-ipt-success .j-ipt {
+    padding-right: 38px;
+}
+.j-ipt-area .j-ipt-wrap {
+    height: 100%;
+    line-height: 36px;
+    overflow: hidden;
+    z-index: 3;
+}
+.j-ipt-area .j-ipt::-webkit-input-placeholder {
+    opacity: 0.5;
+    font-size: 14px;
+    color: #9A9FA8;
+}
+.j-ipt-area .j-ipt-wrap .ico {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    width: 18px;
+    height: 18px;
+}
+.j-select, .j-ipt-form {
+    position: relative;
+}
+.j-ipt-area .ico {
+    position: absolute;
+}
+.j-ipt-area .j-select .content {
+    width: 100%;
+    height: 36px;
+    line-height: 34px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #354052;
+    border: 1px solid #CED0DA;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+    background-image: linear-gradient(0deg, #F2F4F7 0%, #FFFFFF 100%);
+}
+.j-ipt-area .j-select .content::-webkit-input-placeholder {
+    opacity: 0.5;
+    font-size: 14px;
+    color: #354052;
+}
+.j-ipt-area .j-select .content.selected {
+    color: #354052;
+}
+.option {
+    display: none;
+    margin-top: 0;
+    border-radius: 4px;
+    border: 1px solid #CED0DA;
+    background: #f0f4f7;
+}
+.option li {
+    float: none;
+    padding: 0 10px;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.option li:hover {
+    background-color: #CED0DA;
+}
+.j-ipt-area .j-select .ico {
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    background: url("../images/triangle.png") no-repeat;
+    background-size: 100% 100%;
+}
+.j-ipt-area textarea.j-ipt {
+    height: 108px;
+    line-height: 18px;
+    padding: 10px;
+    background: #FFFFFF;
+    border: 1px solid #CED0DA;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    font-family: -webkit-body;
+}
+/*按钮*/
+.j-btn {
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+.j-btn-green {
+    background-image: linear-gradient(-180deg, #39B54A 0%, #34AA44 98%);
+    background: #34AA44 \9;
+}
+.j-btn-green:active {
+    background-image: linear-gradient(-1deg, #1E930B 3%, #1E9D09 100%);
+    background: #1E9D09 \9;
+}
+.j-btn-blue {
+    background-image: linear-gradient(-1deg, #1991EB 2%, #2DA1F8 98%);
+    background: #2DA1F8 \9;
+}
+.j-btn-blue:active {
+    background-image: linear-gradient(-180deg, #1584D7 2%, #2184CF 98%);
+    background: #2184CF \9;
+}
+.j-btn-red {
+    background: #FF4B64;
+}
+.j-btn-red:active {
+    background: #DC1A35;
+}
+.j-btn-gray {
+    background: #A8AAB7;
+}
+.j-btn-gray:active {
+    background: #898C9C;
+}
+/*复选框*/
+.j-check-box, .j-radio {
+    display: inline-block;
+    position: relative;
+    padding-left: 26px;
+    font-size: 14px;
+    color: #354052;
+    line-height: 20px;
+    cursor: pointer;
+}
+.j-radio[data-action='disabled'],.j-check-box[data-action='disabled']{
+    cursor: default;
+}
+.j-ipt-area .j-ipt-wrap .j-check-box .ico {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    background: url("../images/Checkbox.png") no-repeat;
+    background-size: 100% 100%;
+}
+.j-check-box.checked {
+    font-weight: bold;
+}
+.j-ipt-area .j-ipt-wrap .j-check-box.checked .ico {
+    background: url("../images/Active.png") no-repeat;
+    background-size: 100% 100%;
+}
+.j-ipt-area .j-ipt-wrap .j-radio .ico {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    background: url("../images/oval_gray.png") no-repeat;
+    background-size: 100% 100%;
+}
+.j-radio.checked {
+    font-weight: bold;
+}
+.j-ipt-area .j-ipt-wrap .j-radio.checked .ico {
+    background: url("../images/oval_green.png") no-repeat;
+    background-size: 100% 100%;
+}
+.j-ipt-area .j-ipt-wrap .j-radio.checked[data-action='disabled'] .ico{
+    background: url("../images/oval_default.png") 0 0 no-repeat;
+}
+.j-multi-col .j-select,.j-multi-col .j-ipt-form {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0 -3px;
+    padding: 0 3px;
+}
+.j-multi-col .j-ext {
+    float: left;
+    text-align: center;
+    width: 12px;
+}
+.j-suf {
+    float: right;
+    height: 34px;
+    line-height: 34px;
+    color: #68768c;
+    margin-left: 6px;
+}

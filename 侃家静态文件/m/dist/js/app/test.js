@@ -1,0 +1,1 @@
+$(function(){$(".btn-ld").click(function(){showDialog(1,telHtml)}),$(".btn-success").click(function(){showDialog(1,dyHtml)});var c=0;$(".btn-yycg").click(function(){c=showDialog(1,appHtml,null)}),$(document).on("click",".css-btn-commit",function(){closeDialog(c)})});
